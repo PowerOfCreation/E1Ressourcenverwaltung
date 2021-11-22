@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+    php-apache-environment:
+        container_name: php-apache
+        image: ulsmith/alpine-apache-php7
+        volumes:
+            - ./webserver:/app/public
+        ports:
+            - 80:80
+    database-environment:
+        container_name: database
+        image: woahbase/alpine-mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PWD: MYSQL_ROOT_PASSWORD
+            MYSQL_DATABASE: MY_DATABASE
+            MYSQL_USER: MYSQL_USER
+            MYSQL_USER_PWD: MYSQL_PASSWORD
+        ports:
+            - 3306:3306
