@@ -83,7 +83,8 @@ Beispiel
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 |T-Systems Multimedia Solutions GmbH 	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
-|Nutzer| |
+|Verwaltungsleiter||
+|Mitarbeiter| |
 |Serverdienstleister||
 |Gesetz||
 |===
