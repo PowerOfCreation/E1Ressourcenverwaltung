@@ -10,8 +10,15 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: ...
-* *UC02*: ...
+* *UC01*: Abteilung erstellen/bearbeiten/löschen
+* *UC02*: Benutzer erstellen/bearbeiten/löschen
+* *UC03*: Tagesplan/Wochenplan einsehen
+* *UC04*: Mitarbeiterstatus erstellen/vergeben
+* *UC05*: Feiertage importieren und/oder händisch anlegen
+* *UC06*: importierten Feiertage bearbeiten/löschen
+* *UC07*: Passwort anlegen
+** *UC07.1*: Passwort ändern
+
 
 == Use Case Diagramm
 // ...
@@ -21,9 +28,9 @@ include::../_includes/default-attributes.inc.adoc[]
 <<<
 include::use_case_01.inc.adoc[]
 //<<<
-//include::use_case_02.inc.adoc[]
+include::use_case_02.inc.adoc[]
 //<<<
-//include::use_case_03.inc.adoc[]
+include::use_case_03.inc.adoc[]
 //<<<
 //include::use_case_04.inc.adoc[]
 //<<<
@@ -31,7 +38,7 @@ include::use_case_01.inc.adoc[]
 //<<<
 //include::use_case_06.inc.adoc[]
 //<<<
-//include::use_case_07.inc.adoc[]
+include::use_case_07.inc.adoc[]
 //<<<
 //include::use_case_08.inc.adoc[]
 //<<<

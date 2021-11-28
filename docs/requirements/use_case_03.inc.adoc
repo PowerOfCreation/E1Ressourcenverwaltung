@@ -2,7 +2,8 @@
 == Use-Case: <use-case name>
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Abteilung erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Eine Abteilung kann mehreren Benutzern zugeordnet werden.
+In der Planungsübersicht soll die Kalenderwoche angezeigt werden. Man soll einfach durch die Kalenderwochen scrollen können und dabei immer die aktuelle Planung sehen. Die Eingaben aus der letzten KW sollen mit einem Klick in die aktuell angezeigte KW übernommen werden können.
+
 
 ===	Kurzbeschreibung der Akteure
 ==== <Akteur 1 Name>

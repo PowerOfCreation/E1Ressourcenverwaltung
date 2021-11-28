@@ -2,7 +2,8 @@
 == Use-Case: <use-case name>
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Abteilung erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Eine Abteilung kann mehreren Benutzern zugeordnet werden.
+Jeder Mitarbeiter soll sein eigenes Passwort haben, welches er selber wählen kann. (Vielleicht ein Wechsel des Passworts im Monatsrythmus z.B.). Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Mitarbeiter/Benutzer machen.
+
 
 ===	Kurzbeschreibung der Akteure
 ==== <Akteur 1 Name>
@@ -50,3 +51,4 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
 ==== <Besondere Anforderung 1>
+Das Passwort sollte mind. 8 Zeichen lang sein

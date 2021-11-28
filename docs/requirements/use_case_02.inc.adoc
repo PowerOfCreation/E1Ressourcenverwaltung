@@ -2,7 +2,7 @@
 == Use-Case: <use-case name>
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Abteilung erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Eine Abteilung kann mehreren Benutzern zugeordnet werden.
+Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehrern Projekten zugeordnet. Auch hier gibtz es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen.
 
 ===	Kurzbeschreibung der Akteure
 ==== <Akteur 1 Name>
