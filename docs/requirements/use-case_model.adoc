@@ -10,14 +10,14 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: Abteilung erstellen/bearbeiten/löschen
-* *UC02*: Benutzer erstellen/bearbeiten/löschen
+* *UC01*: Abteilung bearbeiten
+* *UC02*: Benutzer bearbeiten
 * *UC03*: Tagesplan/Wochenplan einsehen
 * *UC04*: Mitarbeiterstatus erstellen/vergeben
 * *UC05*: Feiertage importieren und/oder händisch anlegen
 * *UC06*: importierten Feiertage bearbeiten/löschen
-* *UC07*: Passwort anlegen
-** *UC07.1*: Passwort ändern
+
+
 
 
 == Use Case Diagramm
