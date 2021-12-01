@@ -2,7 +2,7 @@
 == Use-Case: <use-case name>
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehrern Projekten zugeordnet. Auch hier gibtz es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen.
+Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehrern Projekten zugeordnet. Auch hier gibtz es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Mitarbeiter soll sein eigenes Passwort haben, welches er selber wählen kann. (Vielleicht ein Wechsel des Passworts im Monatsrythmus z.B.). Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Mitarbeiter/Benutzer machen.
 
 ===	Kurzbeschreibung der Akteure
 ==== <Akteur 1 Name>
