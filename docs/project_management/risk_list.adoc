@@ -30,7 +30,7 @@ Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum de
 // table risks
 [#table_risks]
 .Risiken
-[%header, format="csv", separator=";", cols="^1,^2,3,4,3,^1,^1,^1,3,4"]
+[%header, format="csv", separator=","]
 |===
 include::risks.csv[]
 |===
