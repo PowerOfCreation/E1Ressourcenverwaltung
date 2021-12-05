@@ -24,6 +24,7 @@ Siehe <<#glossary, Glossar>>.
 
 == Positionierung
 === Fachliche Motivation
+
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
 === Problem Statement
@@ -32,11 +33,12 @@ Siehe <<#glossary, Glossar>>.
 
 [cols="1,3"]
 |===
-|Das Problem |	[beschreiben Sie das Problem]
-|betrifft |	[die Stakeholder, die vom Problem betroffen sind]
-|die Auswirkung davon ist |	[welche Auswirkungen hat das Problem?]
-|eine erfolgreiche Lösung wäre |	[Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
+|Das Problem |	fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
+|betrifft | Mitarbeiter bei T-Systems Multimedia Solutions GmbH
+|die Auswirkung davon ist |	Koordinierung der Mitarbeiter sowie Beschaffung von Informationen bezüglich aktueller Projekte und Tätigkeiten sehr aufwändig und 
+|eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Aufgaben und Verfügbarkeiten der Mitarbeiter
 |===
+
 
 ////
 Beispiel
@@ -58,10 +60,10 @@ Beispiel
 [cols="1,3"]
 |===
 |Für|	T-Systems Multimedia Solutions GmbH 
-|der / die|	[Angabe des Bedarfs oder Chance]
-|Das Produkt / die Lösung ist ein | [Produktkategorie]
-|Die / Das	|[Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-|Im Gegensatz zu	|[wesentliche Lösungsalternative]
+|die|	ihre Projekte und Ressourcen besser planen und verwalten wollen
+|Das Produkt / die Lösung ist ein | Software mit kalendarischer Übersicht
+|Die 	| ein besser Zeitmanagement und leichtern Informationsausstausch ermöglicht
+|Im Gegensatz zur	| 
 |Unser Produkt|	[Aussage zum Hauptunterschied]
 |===
 
@@ -83,8 +85,10 @@ Beispiel
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 |T-Systems Multimedia Solutions GmbH 	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
-|Verwaltungsleiter||
-|Mitarbeiter| |
+|Projektleiter
+|Verantwortlich für den erfolgreichen Abschluss des Projektes
+|leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben sowie , Berreitstellung 
+|Mitarbeiter|  |
 |Serverdienstleister||
 |Gesetz||
 |===
@@ -93,17 +97,26 @@ Beispiel
 //Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?   
    * Von November bis Januar sind an dem Projekt 8 Teammitglieder beteiligt. 
    * Ab Januar sind wir noch 7, da Helena Rubein unser Team verlässt.
-. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das? 
+. Wie lange dauert die Bearbeitung der Aufgabe?
+//Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das? //
    * Die Bearbeitungsdauer ist von Mitte November bis Mitte Juni.
-   * <wird ergänzt>
-. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
+. Gibt es besondere Umgebungsbedingungen?
+//, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
+   * Synchronietät zwischen den einzelnen Benutzern 
+   * Nutzung über Computer erforderlich
+   * mobile Nutzbarkeit soll ggf folgen
+   * Nutzung für Personen mit Behinderung erwünscht aber nicht notwendig
+//. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
+//   * bisher keine Anwendung im Einsatz
+//   * die zu entwickelnde Anwendung soll es keine Einschränkung bezüblich des
 . Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
-
-Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+   * keine Anbindung an Drittsysteme
+   * nur Importierung der Feiertage    
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 == Produkt-/Lösungsüberblick
 === Bedarfe und Hauptfunktionen
@@ -113,10 +126,12 @@ Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigra
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|xx|xx|xx|xx
+|Benutzerkonto|hoch|Bearbeitung von Benutzerkonto und Passwort|xx | Kalender |hoch
+|Darstellung und Austausch von Informationen | xx
+|Datenschutz| mittel| Standard-Sicherheitsvorkehrungen | xx
 |===
 
-
+////
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 Hinweise:
@@ -126,9 +141,12 @@ Hinweise:
 . Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
 . Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
 . Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
-
+////
 [%header, cols="4,1,1"]
 |===
 |Anforderung|	Priorität|	Geplantes Release
-|xx|xx|xx|
+|Übersichtliche Darstellung | hoch | xx
+|Zuverlässige Lauffähigkeit(Daten dürfen nicht verloren gehen) | hoch | xx
+|Nutzung nur von Mitarbeitern der Firma | mitel | xx
+|einfache Bedienbarkeit | mittel |xx
 |===
