@@ -35,9 +35,9 @@ das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht w
 
 [cols="1,3"]
 |===
-|Das Problem |	fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
+|Das Problem |	umständliche Ressourcenverwaltung sowie fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
 |betrifft | Mitarbeiter bei T-Systems Multimedia Solutions GmbH
-|die Auswirkung davon ist |	Koordinierung der Mitarbeiter sowie Beschaffung von Informationen bezüglich aktueller Projekte und Tätigkeiten sehr aufwändig und 
+|die Auswirkung davon ist |	Koordinierung der Mitarbeiter sowie Beschaffung von Informationen bezüglich aktueller Projekte und Tätigkeiten sehr aufwändig
 |eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen oder Dokumente
 |===
 
@@ -64,7 +64,7 @@ Beispiel
 |Für|	T-Systems Multimedia Solutions GmbH 
 |die|	ihre Projekte und Ressourcen besser planen und verwalten wollen
 |Das Produkt / die Lösung ist eine | Software mit kalendarischer Übersicht
-|Die 	| ein besseres Zeitmanagement und einen leichtern Informationsausstausch ermöglicht
+|Die 	| eine bessere Ressourcenverwaltung einen leichtern Informationsausstausch ermöglicht
 //|Im Gegensatz zur	| 
 //|Unser Produkt|	[Aussage zum Hauptunterschied]
 |===
@@ -110,10 +110,12 @@ Beispiel
    * Die Bearbeitungsdauer ist von Mitte November bis Mitte Juni.
 . Gibt es besondere Umgebungsbedingungen?
 //, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-   * Synchronietät zwischen den einzelnen Benutzern 
+   * Verfügbarkeit der Anwendung im Internet
+   * Anwendung unabhängig vom Betriebssystem des Ziel Systems(Docker)
    * Nutzung über Computer erforderlich
    * mobile Nutzbarkeit soll ggf folgen
    * Nutzung für Personen mit Behinderung erwünscht aber nicht notwendig
+   * Synchronietät zwischen den einzelnen Benutzern 
 //. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
 //   * bisher keine Anwendung im Einsatz
 //   * die zu entwickelnde Anwendung soll es keine Einschränkung bezüblich des
