@@ -24,7 +24,9 @@ Siehe <<#glossary, Glossar>>.
 
 == Positionierung
 === Fachliche Motivation
-
+Das Ziel dieses Projektes ist die verbesserte wöchentliche Ressourcenplanung. Dies soll erfolgen, indem jedem Mitarbeiter Projekte zugeteilt und die Verfügbarkeit (Urlaub, Feiertage) erfasst wird.
+Des weiteren soll ein Informationsaustausch bezüglich der Projekte möglich sein. Dadurch soll
+das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht werden.
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
 
 === Problem Statement
@@ -36,7 +38,7 @@ Siehe <<#glossary, Glossar>>.
 |Das Problem |	fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
 |betrifft | Mitarbeiter bei T-Systems Multimedia Solutions GmbH
 |die Auswirkung davon ist |	Koordinierung der Mitarbeiter sowie Beschaffung von Informationen bezüglich aktueller Projekte und Tätigkeiten sehr aufwändig und 
-|eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Aufgaben und Verfügbarkeiten der Mitarbeiter
+|eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen oder Dokumente
 |===
 
 
@@ -61,10 +63,10 @@ Beispiel
 |===
 |Für|	T-Systems Multimedia Solutions GmbH 
 |die|	ihre Projekte und Ressourcen besser planen und verwalten wollen
-|Das Produkt / die Lösung ist ein | Software mit kalendarischer Übersicht
-|Die 	| ein besser Zeitmanagement und leichtern Informationsausstausch ermöglicht
-|Im Gegensatz zur	| 
-|Unser Produkt|	[Aussage zum Hauptunterschied]
+|Das Produkt / die Lösung ist eine | Software mit kalendarischer Übersicht
+|Die 	| ein besseres Zeitmanagement und einen leichtern Informationsausstausch ermöglicht
+//|Im Gegensatz zur	| 
+//|Unser Produkt|	[Aussage zum Hauptunterschied]
 |===
 
 
@@ -84,13 +86,15 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|T-Systems Multimedia Solutions GmbH 	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+|Geschäftsleistung |Person/-en mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
+//[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+|Abteilungsleiter|leitet die Organisation einer Abteilung|Verwaltung der Mitarbeiter, die dieser Abteilung zugehören sowie aller Tätigkeiten und Projekte
 |Projektleiter
 |Verantwortlich für den erfolgreichen Abschluss des Projektes
 |leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben sowie , Berreitstellung 
-|Mitarbeiter|  |
-|Serverdienstleister||
-|Gesetz||
+|Mitarbeiter| Angestellter bei T-Systems MMS | Erledigung zugewiesener Aufgaben und Bereitstellung von Informationen über aktuellen Fortschritt
+//|Serverdienstleister||
+//|Gesetz||
 |===
 
 === Benutzerumgebung
