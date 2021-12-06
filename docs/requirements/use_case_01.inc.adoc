@@ -27,6 +27,7 @@ Benutzer ist angemeldet
 .. Benutzer ordnet andere Benutzer der Abteilung zu
 . Abteilung wird erstellt
 .. Abteilung kann im Anschluss bearbeitet werden
+. Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
