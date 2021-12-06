@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: Abteilung bearbeiten
+== Use-Case UC01: Abteilung bearbeiten
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Abteilung erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Eine Abteilung kann mehreren Benutzern zugeordnet werden.
