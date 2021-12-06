@@ -15,7 +15,7 @@ include::../_includes/default-attributes.inc.adoc[]
 * *UC03*: Tagesplan/Wochenplan einsehen
 * *UC04*: Mitarbeiterstatus erstellen/vergeben
 * *UC05*: Feiertage importieren und/oder händisch anlegen
-* *UC06*: importierte Feiertage bearbeiten/löschen
+* *UC06*: Importierte Feiertage bearbeiten/löschen
 
 
 
