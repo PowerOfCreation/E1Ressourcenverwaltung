@@ -21,6 +21,7 @@ Benutzer is angemeldet
 . Benutzer gibt Passwort ein
 . Benutzen wählt aus der Liste eine Abteilung aus
 . Benutzer erstellt einen neuen Benutzer
+. Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
