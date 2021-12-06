@@ -93,6 +93,8 @@ Beispiel
 |Verantwortlich für den erfolgreichen Abschluss des Projektes
 |leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben sowie , Berreitstellung 
 |Mitarbeiter| Angestellter bei T-Systems MMS | Erledigung zugewiesener Aufgaben und Bereitstellung von Informationen über aktuellen Fortschritt
+| Telekom ||
+| Gesetzgeber | | Datenschutzrichtlinien
 //|Serverdienstleister||
 //|Gesetz||
 |===
@@ -115,7 +117,7 @@ Beispiel
    * Nutzung über Computer erforderlich
    * mobile Nutzbarkeit soll ggf folgen
    * Nutzung für Personen mit Behinderung erwünscht aber nicht notwendig
-   * Synchronietät zwischen den einzelnen Benutzern 
+   * Synchronietät zwischen den einzelnen Benutzern fakultativ 
 //. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
 //   * bisher keine Anwendung im Einsatz
 //   * die zu entwickelnde Anwendung soll es keine Einschränkung bezüblich des
@@ -134,7 +136,8 @@ Beispiel
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |Benutzerkonto|hoch|Bearbeitung von Benutzerkonto und Passwort|xx | Kalender |hoch
 |Darstellung und Austausch von Informationen | xx
-|Datenschutz| mittel| Standard-Sicherheitsvorkehrungen | xx
+|Projektverwaltung|||
+|Abteilungsverwaltung |||
 |===
 
 ////
@@ -152,7 +155,9 @@ Hinweise:
 |===
 |Anforderung|	Priorität|	Geplantes Release
 |Übersichtliche Darstellung | hoch | xx
-|Zuverlässige Lauffähigkeit(Daten dürfen nicht verloren gehen) | hoch | xx
-|Nutzung nur von Mitarbeitern der Firma | mitel | xx
-|einfache Bedienbarkeit | mittel |xx
+|Zuverlässige Lauffähigkeit | mittel | xx
+|Nutzung nur von Mitarbeitern der Firma | mittel | xx
+|einfache Bedienbarkeit | niedrig |xx
+| Datensicherheit | hoch | xx 
+| Datenintegrietät | hoch | xx
 |===
