@@ -1,32 +1,44 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case: <use-case name>
+== Use-Case: Abteilung bearbeiten
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Abteilung erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Eine Abteilung kann mehreren Benutzern zugeordnet werden.
 
 ===	Kurzbeschreibung der Akteure
-==== <Akteur 1 Name>
-Mitarbeiter der T-Systems Multimedia Solutions GmbH 
+==== <Akteur Benutzer>
+. Mitarbeiter der T-Systems Multimedia Solutions GmbH
+
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer is angemeldet
+Benutzer ist angemeldet
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn <akteur> <macht>…
-. <Standardablauf Schritt 1>
-. 	…
-. <Standardablauf Schritt n>
-. Der Use Case ist abgeschlossen.
+//. Der Use Case beginnt, wenn <akteur> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn ein Benutzer auf den Knopf "Abteilung erstellen" gedrückt hat
+. WHILE Abteilung ist nicht erstellt
+.. Benutzer gibt einen Namen für die Abteilung ein
+.. Benutzer ordnet andere Benutzer der Abteilung zu
+. Abteilung wird erstellt
+.. Abteilung kann im Anschluss bearbeitet werden
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
 ==== <Alternativer Ablauf 1>
-Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
-. <Ablauf beschreiben>
-. Der Use Case wird im Schritt <y> fortgesetzt.
+Wenn Benutzer im Schritt 3a. des Standardablauf eine Abteilung bearbeitet, dann
+. kann der Name der Abteilung geändert werden
+
+==== <Alternativer Ablauf 2>
+Wenn Benutzer im Schritt 3a. des Standardablauf eine Abteilung bearbeitet, dann
+. Neue Benutzer können einer Abteilung zugeordnet werden.
+//. Der Use Case wird im Schritt <y> fortgesetzt.
 
 === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -46,6 +58,9 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== <Nachbedingung 1>
+Die Abteilung wurde erstellt
+==== <Nachbedingung 2>
+Jeder Benutzer wurde einer Abteilung zugeordnet
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
