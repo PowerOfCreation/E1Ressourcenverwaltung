@@ -59,6 +59,7 @@ Wenn Benutzer im Schritt 3a. des Standardablauf eine Abteilung bearbeitet, dann
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== <Nachbedingung 1>
 Die Abteilung wurde erstellt
+
 ==== <Nachbedingung 2>
 Jeder Benutzer wurde einer Abteilung zugeordnet
 
