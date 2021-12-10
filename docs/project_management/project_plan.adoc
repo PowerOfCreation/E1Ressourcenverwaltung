@@ -1,14 +1,28 @@
-= Projektplan: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+= Projektplan: Ressourcenverwaltung
+Helena Rubein,    s81097@htw-dresden.de; 
+Nick Kemter,      s82068@htw-dresden.de; 
+Justus Beck,      s82023@htw-dresden.de; 
+Niklas Werner,    s82076@htw-dresden.de; 
+Jonas Keil,       s81910@htw-dresden.de;
+Carl Kirchhoff,   s82087@htw-dresden.de 
+Aleksandra Tartz, s80433@htw-dresden.de; 
+Vitali Tichonow,  s82591@htw-dresden.de;
+
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Einführung
 //Briefly describe the content of the project plan.
+Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung. Dabei werden Meilensteine definiert und terminiert. Zudem wird in diesem Projektplan die gesamte Projektorganisation beschreiben. 
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt.
+
+Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die zu erldigenden Aufgaben zu sprechen. Meistens sind alle Teammitgleider bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
+
+Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Probleme werden offen kommuniziert. Außerdem achten wir auf eine gleichmäßige Arbeitsverteilung. 
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
