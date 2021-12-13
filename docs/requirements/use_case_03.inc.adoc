@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case UC03: Tagesplan/Wochenplan einsehen
+== Use-Case UC03: Wochenplan einsehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 In der Planungsübersicht soll die Kalenderwoche angezeigt werden. Man soll einfach durch die Kalenderwochen scrollen können und dabei immer die aktuelle Planung sehen. Die Eingaben aus der letzten KW sollen mit einem Click in die aktuell angezeigte KW übernommen werden können.
