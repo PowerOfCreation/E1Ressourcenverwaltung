@@ -1,6 +1,17 @@
 = Vision: Ressourcenverwaltung
-Helena Rubein s81097@htw-dresden.de; Nick Kemter s82068@htw-dresden.de; Justus Beck s82023@htw-dresden.de; Niklas Werner; Jonas Keil s81910@htw-dresden.de;
+
+Helena Rubein s81097@htw-dresden.de; Nick Kemter s82068@htw-dresden.de; Justus Beck s82023@htw-dresden.de; Niklas Werner; Jonas Keil;
 Carl Kirchhoff; Aleksandra Tartz; Vitali Tichonow ; {localdatetime}
+=======
+Helena Rubein,    s81097@htw-dresden.de; 
+Nick Kemter,      s82068@htw-dresden.de; 
+Justus Beck,      s82023@htw-dresden.de; 
+Niklas Werner,    s82076@htw-dresden.de; 
+Jonas Keil,       s81910@htw-dresden.de;
+Carl Kirchhoff,   s82087@htw-dresden.de 
+Aleksandra Tartz, s80433@htw-dresden.de; 
+Vitali Tichonow,  s82591@htw-dresden.de; {localdatetime}
+
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
@@ -8,8 +19,9 @@ include::../_includes/default-attributes.inc.adoc[]
 == Einführung
 Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Ressourcenverwaltungssystems zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das Ressourcenverwaltungssystems diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
 
-=== Zweck
+=== Zweck 
 Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
+//Überarbeiten
 
 === Gültigkeitsbereich (Scope)
 Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das von <Team> entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personellen Ressourcen besser zu verwalten, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
@@ -63,8 +75,8 @@ Beispiel
 |===
 |Für|	T-Systems Multimedia Solutions GmbH 
 |die|	ihre Projekte und Ressourcen besser planen und verwalten wollen
-|Das Produkt / die Lösung ist eine | Software mit kalendarischer Übersicht
-|Die 	| eine bessere Ressourcenverwaltung einen leichtern Informationsausstausch ermöglicht
+|Das Produkt / die Lösung ist eine | ermöglicht eine kalendarischer Übersicht
+|Die 	| eine bessere Ressourcenverwaltung und einen leichtern Informationsausstausch ermöglicht
 //|Im Gegensatz zur	| 
 //|Unser Produkt|	[Aussage zum Hauptunterschied]
 |===

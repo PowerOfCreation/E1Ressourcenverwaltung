@@ -1,5 +1,12 @@
 = Use-Case Model: Ressourcenverwaltung
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Helena Rubein,    s81097@htw-dresden.de; 
+Nick Kemter,      s82068@htw-dresden.de; 
+Justus Beck,      s82023@htw-dresden.de; 
+Niklas Werner,    s82076@htw-dresden.de; 
+Jonas Keil,       s81910@htw-dresden.de;
+Carl Kirchhoff,   s82087@htw-dresden.de; 
+Aleksandra Tartz, s80433@htw-dresden.de; 
+Vitali Tichonow,  s82591@htw-dresden.de;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -10,12 +17,12 @@ include::../_includes/default-attributes.inc.adoc[]
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
-* *UC01*: Abteilung bearbeiten
+* *UC01*: Projekte bearbeiten
 * *UC02*: Benutzer bearbeiten
-* *UC03*: Tagesplan/Wochenplan einsehen
-* *UC04*: Mitarbeiterstatus erstellen/vergeben
+* *UC03*: Wochenplan einsehen
+* *UC04*: Mitarbeiterstatus vergeben
 * *UC05*: Feiertage importieren und/oder händisch anlegen
-* *UC06*: Importierte Feiertage bearbeiten/löschen
+//* *UC06*: Importierte Feiertage bearbeiten/löschen
 
 
 
