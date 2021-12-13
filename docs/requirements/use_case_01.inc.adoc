@@ -2,10 +2,10 @@
 == Use-Case UC01: Projekte bearbeiten
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Abteilung erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Eine Abteilung kann mehreren Benutzern zugeordnet werden.
+Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
 
 ===	Kurzbeschreibung der Akteure
-==== <Akteur Benutzer>
+==== Akteur Mitarbeiter
 . Mitarbeiter der T-Systems Multimedia Solutions GmbH
 
 
@@ -21,49 +21,69 @@ Benutzer ist angemeldet
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn ein Benutzer auf den Knopf "Abteilung erstellen" gedrückt hat
-. WHILE Abteilung ist nicht erstellt
-.. Benutzer gibt einen Namen für die Abteilung ein
-.. Benutzer ordnet andere Benutzer der Abteilung zu
-. Abteilung wird erstellt
-.. Abteilung kann im Anschluss bearbeitet werden
+. Der Use Case beginnt, wenn ein Mitarbeiter auf den Knopf "Projektverwaltung" gedrückt hat
+. WHILE Mitarbeiter nicht zugewiesen
+.. Das Projekt wird ausgewählt
+.. Im rechten Fenster werden die zuzuweisenden Mitarbeiter angeklickt
+.. Im Anschluss wird auf den Button "Zuweisen" geklickt
 . Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== <Alternativer Ablauf 1>
-Wenn Benutzer im Schritt 3a. des Standardablauf eine Abteilung bearbeitet, dann
-. kann der Name der Abteilung geändert werden
+==== Alternativer Ablauf 1: Mitarbeiter entziehen
+Wenn Mitarbeiter im Schritt 2a. des Standardablaufs ein Projekt bearbeitet, dann
 
-==== <Alternativer Ablauf 2>
-Wenn Benutzer im Schritt 3a. des Standardablauf eine Abteilung bearbeitet, dann
-. Neue Benutzer können einer Abteilung zugeordnet werden.
-//. Der Use Case wird im Schritt <y> fortgesetzt.
+. Kann neben einem Mitarbeiter das Häckchen durch ein Klicken auf das Kästchen abgewählt werden
+. der Use Case wird bei dem Schritt 2c des Standardablaufs fortgesetzt
 
-=== Unterabläufe (subflows)
+==== Alternativer Ablauf 2: Projekt erstellen
+Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt verwaltet, dann
+
+. kann ein neues Projekt, durch Klicken auf den Button "Projekt erstellen", erstellt werden
+. WHILE Projekt ist nicht erstellt
+.. Müssen alle Felder ausgefüllt werden
+.. Es wird auf den Button "Projekt erstellen" geklickt
+. Der Use Case wird im Schritt 2 fortgesetzt.
+
+==== Alternativer Ablauf 3: Projekt löschen
+Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt löschen will, dann
+. Müssen die zu löschenden Projekte durch das Setzen eines Häckchens ausgewählt werden
+. Es wird auf den Button "Projekt Löschen" geklickt
+.. Es erscheint ein Fenster, wo das Löschen des Projektes bestätigt werden soll
+. Der Use Case wird im Schritt 3 fortgesetzt.
+
+
+// === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n> 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== <Szenario 1>
-. <Szenario 1, Schritt 1>
-. 	…
-. <Szenario 1, Schritt n>
+==== Szenario 1: Mitarbeiter einem Projekt zuweisen/entziehen
+*Sc1:* Mitarbeiter A wählt Projekt Y aus. Im Anschluss weist er die Mitarbeiter B und C dem Projekt Y zu, entzieht Mitarbeiter D diesem Projekt und klickt auf "Zuweisen".
+
+==== Szenario 2: Projekt erstellen
+*Sc2*: Mitarbeiter A klickt auf den Button "Projekt erstellen". Im geöffneten Fenster wählt er als Projektnamen "Urlaub", Mitarbeiter U als Verantwortlichen, Thema "Urlaub einteilen". Dafür hat er 2 Wochen Zeit und im Abgabedatum-Feld wird der 27.12.21 eingetragen. Danach klickt er auf "Projekt erstellen".
+
+==== Szenario 3: Projekt löschen
+*Sc3*: Mitarbeiter A wählt Projekt "Urlaub" aus und klickt auf den Button "Projekt Löschen". Er bestätigt das Löschen.
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== <Nachbedingung 1>
-Die Abteilung wurde erstellt
+==== Nachbedingung 1
+Das Projekt wurde erstellt
 
-==== <Nachbedingung 2>
-Jeder Benutzer wurde einer Abteilung zugeordnet
+==== Nachbedingung 2
+Ein odere mehrere Mitarbeiter wurden einem Projekt zugewiesen und/oder entzogen
 
-=== Besondere Anforderungen
+==== Nachbedingung 3
+Ein überflüssiges Projekt wurde gelöscht
+
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+//==== <Besondere Anforderung 1>
