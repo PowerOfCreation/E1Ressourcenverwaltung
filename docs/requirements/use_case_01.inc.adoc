@@ -11,7 +11,7 @@ Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Projekte e
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer ist angemeldet
+Mitarbeiter ist angemeldet
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -84,6 +84,8 @@ Ein odere mehrere Mitarbeiter wurden einem Projekt zugewiesen und/oder entzogen
 ==== Nachbedingung 3
 Ein überflüssiges Projekt wurde gelöscht
 
-//=== Besondere Anforderungen
+=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+. Projektname ist nicht vergeben
+. Das Abgabedatum liegt in Zukunft
 //==== <Besondere Anforderung 1>

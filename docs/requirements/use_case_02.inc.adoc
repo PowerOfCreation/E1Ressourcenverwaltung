@@ -2,63 +2,60 @@
 == Use-Case UC02: Benutzer bearbeiten
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Mitarbeiter soll sein eigenes Passwort haben, welches er selber wählen kann. (Vielleicht ein Wechsel des Passworts im Monatsrythmus z.B.). Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Mitarbeiter/Benutzer machen.
+Man soll Mitarbeiter anlegen/bearbeiten und löschen können. Dabei wird jedem Mitarbeiter genau eine Abteilung zugeordnet. Ein Mitarbeiter wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Mitarbeiter ist dazu befugt. Jeder Mitarbeiter muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Mitarbeiter soll sein eigenes Passwort haben, welches er selber wählen kann. Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Mitarbeiter machen.
 
 ===	Kurzbeschreibung der Akteure
-==== Benutzer
+==== Mitarbeiter
 Mitarbeiter der T-Systems Multimedia Solutions GmbH 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer is angemeldet
+Mitarbeiter is angemeldet
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Benutzer auf den Knopf "Neuer Benutzer" drückt
-. Benutzer gibt Benutzernamen ein
-. Benutzer gibt Name- und Vorname ein
-. Benutzer gibt Passwort ein
-. Benutzen wählt aus der Liste eine Abteilung aus
-. Benutzer erstellt einen neuen Benutzer
+. Der Use Case beginnt, wenn Mitarbeiter auf den Knopf "Mitarbeiter hinzufügen" klickt
+. WHILE Mitarbeiter ist nicht erstellt
+.. Mitarbeiter gibt Benutzernamen ein
+.. Mitarbeiter gibt Name- und Vorname ein
+.. Mitarbeiter gibt Passwort ein
+... Mitarbeiter gibt erneut das Passwort ein
+.. Mitarbeiter wählt aus der Liste eine Abteilung aus
+. Mitarbeiter erstellt einen neuen Mitarbeiter durch Klicken auf "Benutzer Erstellen"
 . Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== <Alternativer Ablauf 1>
-Wenn Benutzer im Schritt 6 des Standardablauf einen neuen Benutzer angelegt hat, dann
-. kann dem neuen Benutzer ein oder mehrere Projekte zugeordnet werden
+==== Alternativer Ablauf 1
+Wenn Mitarbeiter im Schritt 2c des Standardablauf ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
+. wird eine Fehlermeldung angezeigt
+. Mitarbeiter wird zur erneuten Eingabe aufgefordert
 
-==== <Alternativer Ablauf 2>
-Wenn Benutzer im Schritt 6 des Standardablauf einen neuen Benutzer angelegt hat, dann
-. kann jeder Benutzer das Passwort eines anderen Benutzers ändern
+==== Alternativer Ablauf 2
+Wenn Mitarbeiter im Schritt 1 des Standardablauf auf den Knopf "Neuer Benutzer" gedrückt hat, dann 
+. kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
 
-==== <Alternativer Ablauf 3>
-Wenn Benutzer im Schritt 6 des Standardablauf einen neuen Benutzer angelegt hat, dann
-. kann jeder Benutzer einen anderen Benutzer löschen
-//. Der Use Case wird im Schritt <y> fortgesetzt.
-
-==== <Alternativer Ablauf 4>
-Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Neuer Benutzer" gedrückt hat, dann 
-. kann der Vorgang durch das Drücken auf Taste "Abbrechen" abgebrochen werden.
-
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Anlegen eines neuen Benutzers
-. *Sc1:* Benutzer 1 legt einen neuen Benutzer an. Dafür muss er einen Benutzernamen, seinen Vor- und Nachname une das Passwort eingeben. Der Benutzer muss einer Abteilung zugeordnet werden.
+. *Sc1:* Mitarbeiter A klickt in der Wochenansicht auf den Button "Mitarbeiter hinzufügen". Er wählt B66 Benutzernamen für den Mitarbeiter Max Mustermann. Er wird der Abteilung "Marketing" zugeordnet. Als E-Mail gibt er Max@t-systems.de ein. Er vergibt ein Passwort unter Beachtung der Mindestanforderungen. Danach klickt er auf "Benutzer erstellen".
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== <Nachbedingung 1>
-Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder ausgefüllt sein
+==== Nachbedingung 1
+Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den Anforderungen ausgefüllt sein
+
 === Besondere Anforderungen
-//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+. Alle Felder müssen ausgefüllt werden
+. Der Benutzername ist nicht vergeben
+. Das Passwort wurde zwei Mal richtig eingegeben
+. Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen
