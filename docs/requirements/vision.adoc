@@ -21,7 +21,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 //Überarbeiten
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das von <Team> entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personellen Ressourcen besser zu verwalten, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das von E1_Ressourcenverwaltung entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personelle Ressourcen besser zu verwalten und das Zeitmanagement zu erleichtern. Damit können allgemein Zeit und Aufwand eingespart sowie suboptimale Belegungnen besser erkannt werden.
 
 === Definitionen, Akronyme und Abkürzungen
 // Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -35,7 +35,7 @@ Siehe <<#glossary, Glossar>>.
 === Fachliche Motivation
 Das Ziel dieses Projektes ist die verbesserte wöchentliche Ressourcenplanung. Dies soll erfolgen, indem jedem Mitarbeiter Projekte zugeteilt und die Verfügbarkeit (Urlaub, Feiertage) erfasst wird.
 Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht werden.
-//Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
@@ -45,8 +45,8 @@ Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und 
 |===
 |Das Problem |	umständliche Ressourcenverwaltung sowie fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
 |betrifft | Mitarbeiter bei T-Systems Multimedia Solutions GmbH
-|die Auswirkung davon ist |	Koordinierung der Mitarbeiter sowie Beschaffung von Informationen bezüglich aktueller Projekte und Tätigkeiten sehr aufwändig
-|eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen oder Dokumente
+|die Auswirkung davon ist |	Koordinierung der Mitarbeiter und ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte sehr aufwendig
+|eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Projekte, Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen
 |===
 
 
@@ -71,10 +71,9 @@ Beispiel
 |===
 |Für|	T-Systems Multimedia Solutions GmbH 
 |die|	ihre Projekte und Ressourcen besser planen und verwalten wollen
-|Das Produkt / die Lösung ist eine | ermöglicht eine kalendarischer Übersicht
-|Die 	| eine bessere Ressourcenverwaltung und einen leichtern Informationsausstausch ermöglicht
-//|Im Gegensatz zur	| 
-//|Unser Produkt|	[Aussage zum Hauptunterschied]
+|Das Produkt / die Lösung | ist eine kalendarischer Übersicht
+|Die 	| eine bessere Ressourcenverwaltung und Projektplanung ermöglicht
+|Im Gegensatz zur	| aktuellen Situation, da zu diesem Zweck kein System vorhanden
 |===
 
 
@@ -94,17 +93,14 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
+| Telekom | Serviceanbieter im Telekommunikationsbereich| Bereitstellung des Servers über den das System genutzt werden soll
+| Gesetzgeber | verbindliche Vorgabe von allgemeingültigen Rahmenbedingungen | Datenschutzrichtlinien
 |Geschäftsleistung |Person/-en mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
-//[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 |Abteilungsleiter|leitet die Organisation einer Abteilung|Verwaltung der Mitarbeiter, die dieser Abteilung zugehören sowie aller Tätigkeiten und Projekte
 |Projektleiter
 |Verantwortlich für den erfolgreichen Abschluss des Projektes
 |leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben sowie , Berreitstellung 
 |Mitarbeiter| Angestellter bei T-Systems MMS | Erledigung zugewiesener Aufgaben und Bereitstellung von Informationen über aktuellen Fortschritt
-| Telekom ||
-| Gesetzgeber | | Datenschutzrichtlinien
-//|Serverdienstleister||
-//|Gesetz||
 |===
 
 === Benutzerumgebung
@@ -114,14 +110,14 @@ Beispiel
 
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?   
    * Von November bis Januar sind an dem Projekt 8 Teammitglieder beteiligt. 
-   * Ab Januar sind wir noch 7, da Helena Rubein unser Team verlässt.
+   * Ab Februar sind wir noch 7, da Helena Rubein unser Team verlässt.
 . Wie lange dauert die Bearbeitung der Aufgabe?
 //Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das? //
    * Die Bearbeitungsdauer ist von Mitte November bis Mitte Juni.
 . Gibt es besondere Umgebungsbedingungen?
 //, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
    * Verfügbarkeit der Anwendung im Internet
-   * Anwendung unabhängig vom Betriebssystem des Ziel Systems(Docker)
+   * Anwendung unabhängig vom Betriebssystem des Ziel-Systems(Docker)
    * Nutzung über Computer erforderlich
    * mobile Nutzbarkeit soll ggf folgen
    * Nutzung für Personen mit Behinderung erwünscht aber nicht notwendig
@@ -144,8 +140,8 @@ Beispiel
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |Benutzerkonto|hoch|Bearbeitung von Benutzerkonto und Passwort|xx | Kalender |hoch
 |Darstellung und Austausch von Informationen | xx
-|Projektverwaltung|||
-|Abteilungsverwaltung |||
+|Projektverwaltung|hoch| Erstellung neuer Projekte, Zuweisung von Mitarbeitern und Verfügbarkeiten| xx
+|Abteilungsverwaltung |niedrig| Darstellung der internen Abteilungsstruktur| xx
 |===
 
 ////
@@ -163,9 +159,9 @@ Hinweise:
 |===
 |Anforderung|	Priorität|	Geplantes Release
 |Übersichtliche Darstellung | hoch | xx
+| Datensicherheit | hoch | xx 
+| Datenintegrietät | hoch | xx
 |Zuverlässige Lauffähigkeit | mittel | xx
 |Nutzung nur von Mitarbeitern der Firma | mittel | xx
 |einfache Bedienbarkeit | niedrig |xx
-| Datensicherheit | hoch | xx 
-| Datenintegrietät | hoch | xx
 |===
