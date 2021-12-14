@@ -1,8 +1,5 @@
 = Vision: Ressourcenverwaltung
 
-Helena Rubein s81097@htw-dresden.de; Nick Kemter s82068@htw-dresden.de; Justus Beck s82023@htw-dresden.de; Niklas Werner; Jonas Keil;
-Carl Kirchhoff; Aleksandra Tartz; Vitali Tichonow ; {localdatetime}
-=======
 Helena Rubein,    s81097@htw-dresden.de; 
 Nick Kemter,      s82068@htw-dresden.de; 
 Justus Beck,      s82023@htw-dresden.de; 
