@@ -14,7 +14,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Dieses Dokument soll einen Überblick über die Problemstellung verbunden mit der fachlichen Motivation sowie über die Anfroderungen der angestrebten Lösung geben.
+Dieses Dokument soll einen Überblick über die Problemstellung verbunden mit der fachlichen Motivation, über die Stakeholder sowie über die Anfroderungen der angestrebten Lösung geben.
 
 === Zweck 
 Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Ressourcenverwaltungssystems zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die Details, wie das Ressourcenverwaltungssystems diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
