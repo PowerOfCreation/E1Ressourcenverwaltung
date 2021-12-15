@@ -20,7 +20,7 @@ Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung.
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt.
 
-Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die zu erldigenden Aufgaben zu sprechen. Meistens sind alle Teammitgleider bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
+Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitgleider bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
 
 Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Probleme werden offen kommuniziert. Außerdem achten wir auf eine gleichmäßige Arbeitsverteilung. 
 
@@ -41,12 +41,19 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 
 | I1
 |
-* Mitigate Risk1
-* Develop Use Case 3, Scenario 2
-| Date from/Date to
-| 15
+* ersten Überblick über das Projekt bekommen 
+* Risiko von unklaren Rollen im Projekt und unklarer Zieldefinition wird verringert 
+| 15.11.21 - 29.11.21
+| -
 
 | I2
+|
+* Vision und Use Cases mit Wireframes werden entwickelt 
+* Die Risiken eines unzureichenden Entwurfes und einer falschen Zieldefinition werden stark limitiert. 
+| 29.11.21 - 20.12.21
+| 16
+
+| I3
 |
 * Mitigate Risk 2
 * Develop Use Case 1, Scenario 2
