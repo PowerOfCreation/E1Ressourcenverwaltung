@@ -46,7 +46,7 @@ Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und 
 |Das Problem |	umständliche Ressourcenverwaltung sowie fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
 |betrifft | Mitarbeiter bei T-Systems Multimedia Solutions GmbH
 |die Auswirkung davon ist |	Koordinierung der Mitarbeiter und ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte sehr aufwendig
-|eine erfolgreiche Lösung wäre |kalenadrische Darstellung der Projekte, Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen
+|eine erfolgreiche Lösung wäre |kalendarische Darstellung der Projekte, Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen
 |===
 
 
