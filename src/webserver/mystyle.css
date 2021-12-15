@@ -1,0 +1,61 @@
+h1 {
+    display:inline;
+}
+
+td {
+    font-size: large;
+}
+
+header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+#div-search-weekly-report-wrapper
+{
+    flex-grow: 1;
+    margin-left: 20px;
+    justify-content: right;
+    align-items: center;
+    display: flex;
+}
+
+#input-search-weekly-report
+{
+    width: 450px;
+    height: 50px;
+    /*margin-right: 200px;*/
+}
+
+#div-buttons-weekly-report-header
+{
+    width: 100%;
+    display: flex;
+    column-gap: 100px;
+    margin-bottom: 50px;
+}
+
+#div-buttons-weekly-report-header button {
+    flex-grow: 1;
+    height: 60px;
+}
+
+#table-weekly-report
+{
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table-weekly-report thead
+{
+    border-bottom: 1px solid black;
+}
+
+#table-weekly-report td
+{
+    border: 1px solid black;
+    padding: 5px;
+}
