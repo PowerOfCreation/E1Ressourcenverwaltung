@@ -27,6 +27,8 @@ Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das v
 // Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
 Siehe <<#glossary, Glossar>>.
 
+//das hier mehr nutzen
+
 
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
@@ -89,39 +91,41 @@ Beispiel
 
 ==	Stakeholder Beschreibungen
 ===	Zusammenfassung der Stakeholder
-
+//ist der Geschäftsleiter wirklich ein Stakeholder?
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 | Telekom | Serviceanbieter im Telekommunikationsbereich| Bereitstellung des Servers über den das System genutzt werden soll
 | Gesetzgeber | verbindliche Vorgabe von allgemeingültigen Rahmenbedingungen | Datenschutzrichtlinien
-|Geschäftsleistung |Person/-en mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
+|Geschäftsleiter |Person/-en mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
 |Abteilungsleiter|leitet die Organisation einer Abteilung|Verwaltung der Mitarbeiter, die dieser Abteilung zugehören sowie aller Tätigkeiten und Projekte
 |Projektleiter
 |Verantwortlich für den erfolgreichen Abschluss des Projektes
 |leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben sowie , Berreitstellung 
 |Mitarbeiter| Angestellter bei T-Systems MMS | Erledigung zugewiesener Aufgaben und Bereitstellung von Informationen über aktuellen Fortschritt
 |===
-
+//Benutzer ist Abteilungs- und Projektleiter und Mitarbeiter
 === Benutzerumgebung
 //Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 
 . Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?   
+//die Frage bezieht sich eher auf die Nutzer bei der Telekom als auf uns
    * Von November bis Januar sind an dem Projekt 8 Teammitglieder beteiligt. 
    * Ab Februar sind wir noch 7, da Helena Rubein unser Team verlässt.
 . Wie lange dauert die Bearbeitung der Aufgabe?
 //Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das? //
+//die Frage bezieht sich eher auf die Nutzer bei der Telekom als auf uns -> 1 Woche 
    * Die Bearbeitungsdauer ist von Mitte November bis Mitte Juni.
 . Gibt es besondere Umgebungsbedingungen?
 //, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-   * Verfügbarkeit der Anwendung im Internet
+   * Verfügbarkeit der Anwendung nur im Intranet
    * Anwendung unabhängig vom Betriebssystem des Ziel-Systems(Docker)
    * Nutzung über Computer erforderlich
    * mobile Nutzbarkeit soll ggf folgen
    * Nutzung für Personen mit Behinderung erwünscht aber nicht notwendig
-   * Synchronietät zwischen den einzelnen Benutzern fakultativ 
+   * Synchronität zwischen den einzelnen Benutzern fakultativ 
 //. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
 //   * bisher keine Anwendung im Einsatz
 //   * die zu entwickelnde Anwendung soll es keine Einschränkung bezüblich des
@@ -134,7 +138,7 @@ Beispiel
 === Bedarfe und Hauptfunktionen
 //Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
 
-
+//evtl Kalender und Benutzerkonto tauschen, da Kalender wichtiger?
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
@@ -162,6 +166,7 @@ Hinweise:
 | Datensicherheit | hoch | xx 
 | Datenintegrietät | hoch | xx
 |Zuverlässige Lauffähigkeit | mittel | xx
+//Nutzung ist eigentlich mehr Datensicherheit
 |Nutzung nur von Mitarbeitern der Firma | mittel | xx
 |einfache Bedienbarkeit | niedrig |xx
 |===
