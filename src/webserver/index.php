@@ -50,34 +50,12 @@
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">
-                        <!-- Example -->
-                        <tr>
-                            <td class="td-entry-employee">Max Mustermann</td>
-                            <td class="td-entry-monday">Webentwicklung</td>
-                            <td class="td-entry-tuesday">Webentwicklung</td>
-                            <td class="td-entry-wednesday">Dokumentation</td>
-                            <td class="td-entry-thursday">Dokumentation<br>Webentwicklung</td>
-                            <td class="td-entry-friday">Abwesend</td>
-                        </tr>
-                        <tr>
-                            <td class="td-entry-employee">Max Mustermann</td>
-                            <td class="td-entry-monday">Webentwicklung</td>
-                            <td class="td-entry-tuesday">Webentwicklung</td>
-                            <td class="td-entry-wednesday">Dokumentation</td>
-                            <td class="td-entry-thursday">Dokumentation<br>Webentwicklung</td>
-                            <td class="td-entry-friday">Abwesend</td>
-                        </tr>
-                        <tr>
-                            <td class="td-entry-employee">Max Mustermann</td>
-                            <td class="td-entry-monday">Webentwicklung</td>
-                            <td class="td-entry-tuesday">Webentwicklung</td>
-                            <td class="td-entry-wednesday">Dokumentation</td>
-                            <td class="td-entry-thursday">Dokumentation<br>Webentwicklung</td>
-                            <td class="td-entry-friday">Abwesend</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="js/weekly-report.js"></script>
 </body>
