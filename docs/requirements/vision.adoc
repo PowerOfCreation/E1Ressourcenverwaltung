@@ -21,7 +21,7 @@ Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäte
 //Überarbeiten
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das von E1_Ressourcenverwaltung entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personelle Ressourcen besser zu verwalten und das Zeitmanagement zu erleichtern. Damit können allgemein Zeit und Aufwand eingespart sowie suboptimale Belegungnen besser erkannt werden.
+Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das von E1_Ressourcenverwaltung entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personelle Ressourcen besser zu verwalten und das Zeitmanagement zu erleichtern. Damit können allgemein Zeit und Aufwand eingespart sowie suboptimale Belegungen besser erkannt werden.
 
 === Definitionen, Akronyme und Abkürzungen
 // Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -31,11 +31,11 @@ Siehe <<#glossary, Glossar>>.
 
 
 === Referenzen
-(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
+//(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
 == Positionierung
 === Fachliche Motivation
-Das Ziel dieses Projektes ist die verbesserte wöchentliche Ressourcenplanung. Dies soll erfolgen, indem jedem Mitarbeiter Projekte zugeteilt und die Verfügbarkeit (Urlaub, Feiertage) erfasst wird.
+Das Ziel dieses Projektes ist die verbesserte wöchentliche Ressourcenplanung. Dies soll erfolgen, indem jedem Mitarbeiter Projekte zugeteilt und der Mitarbeiterstatus (Urlaub, Feiertage) erfasst wird.
 Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht werden.
 
 
@@ -45,10 +45,10 @@ Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und 
 
 [cols="1,3"]
 |===
-|Das Problem |	umständliche Ressourcenverwaltung sowie fehlende Übersicht über Tätigkeiten und Verfügbarkeiten der einzelnen Mitarbeiter 
+|Das Problem |	umständliche Ressourcenverwaltung sowie fehlende Übersicht über Tätigkeiten und Status der einzelnen Mitarbeiter 
 |betrifft | Mitarbeiter bei T-Systems Multimedia Solutions GmbH
 |die Auswirkung davon ist |	Koordinierung der Mitarbeiter und ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte sehr aufwendig
-|eine erfolgreiche Lösung wäre |kalendarische Darstellung der Projekte, Aufgaben und Verfügbarkeiten der Mitarbeiter sowie beifügen wichtiger Informationen
+|eine erfolgreiche Lösung wäre |kalendarische Darstellung der Projekte, Aufgaben und Status der Mitarbeiter sowie beifügen wichtiger Informationen
 |===
 
 
@@ -97,12 +97,13 @@ Beispiel
 |Name|	Beschreibung	| Verantwortlichkeiten
 | Telekom | Serviceanbieter im Telekommunikationsbereich| Bereitstellung des Servers über den das System genutzt werden soll
 | Gesetzgeber | verbindliche Vorgabe von allgemeingültigen Rahmenbedingungen | Datenschutzrichtlinien
-|Geschäftsleiter |Person/-en mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
+|Geschäftsleiter |Person/-en die mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
 |Abteilungsleiter|leitet die Organisation einer Abteilung|Verwaltung der Mitarbeiter, die dieser Abteilung zugehören sowie aller Tätigkeiten und Projekte
 |Projektleiter
 |Verantwortlich für den erfolgreichen Abschluss des Projektes
-|leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben sowie , Berreitstellung 
+|leitet das Team während des Projektes, Koordinierung der Mitarbeiter und ihrer Aufgaben
 |Mitarbeiter| Angestellter bei T-Systems MMS | Erledigung zugewiesener Aufgaben und Bereitstellung von Informationen über aktuellen Fortschritt
+| Benutzer | Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.  | 
 |===
 //Benutzer ist Abteilungs- und Projektleiter und Mitarbeiter
 === Benutzerumgebung
@@ -110,14 +111,10 @@ Beispiel
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
 
-. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?   
+. Welche Personen sollen die Anwendung benutzen und welche Berechtigungen sollen sie haben?
 //die Frage bezieht sich eher auf die Nutzer bei der Telekom als auf uns
-   * Von November bis Januar sind an dem Projekt 8 Teammitglieder beteiligt. 
-   * Ab Februar sind wir noch 7, da Helena Rubein unser Team verlässt.
-. Wie lange dauert die Bearbeitung der Aufgabe?
-//Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das? //
-//die Frage bezieht sich eher auf die Nutzer bei der Telekom als auf uns -> 1 Woche 
-   * Die Bearbeitungsdauer ist von Mitte November bis Mitte Juni.
+   * alle Benutzer haben gleichberechtigten Zugriff auf die Anwendung
+   * Änderungen der Benutzeranzahl treten nur im Kündigungs- oder Einstellungsfall auf 
 . Gibt es besondere Umgebungsbedingungen?
 //, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
    * Verfügbarkeit der Anwendung nur im Intranet
@@ -138,14 +135,24 @@ Beispiel
 === Bedarfe und Hauptfunktionen
 //Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
 
-//evtl Kalender und Benutzerkonto tauschen, da Kalender wichtiger?
+
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|Benutzerkonto|hoch|Bearbeitung von Benutzerkonto und Passwort|xx | Kalender |hoch
-|Darstellung und Austausch von Informationen | xx
-|Projektverwaltung|hoch| Erstellung neuer Projekte, Zuweisung von Mitarbeitern und Verfügbarkeiten| xx
+|Kalender |hoch | wöchentliche Darstellung von Status und Tätigkeiten der Mitarbeiter | xx
+|Benutzerkonto|hoch| Erstellen, bearbeiten und löschen von Benutzerkonten und Passwörter | xx 
+|Projektverwaltung|hoch| Erstellen und löschen von Projekten sowie Zuweisung von Mitarbeitern | xx
 |Abteilungsverwaltung |niedrig| Darstellung der internen Abteilungsstruktur| xx
+|===
+
+[%header, cols="4,1,1"]
+|===
+|Anforderung|	Priorität|	Geplantes Release
+|Übersichtliche Darstellung | hoch | xx
+| Datensicherheit | hoch | xx 
+| Datenintegrietät | hoch | xx
+|Zuverlässige Lauffähigkeit | mittel | xx
+|einfache Bedienbarkeit | niedrig | xx
 |===
 
 ////
@@ -159,14 +166,4 @@ Hinweise:
 . Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
 . Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
 ////
-[%header, cols="4,1,1"]
-|===
-|Anforderung|	Priorität|	Geplantes Release
-|Übersichtliche Darstellung | hoch | xx
-| Datensicherheit | hoch | xx 
-| Datenintegrietät | hoch | xx
-|Zuverlässige Lauffähigkeit | mittel | xx
-//Nutzung ist eigentlich mehr Datensicherheit
-|Nutzung nur von Mitarbeitern der Firma | mittel | xx
-|einfache Bedienbarkeit | niedrig |xx
-|===
+
