@@ -7,13 +7,7 @@
     //These are the defined authentication environment in the db service
 
     // The MySQL service named in the docker-compose.yml.
-    $host = 'database';
-
-    // Database use name
-    $user = 'MYSQL_USER';
-
-    //database user password
-    $pass = 'MYSQL_PASSWORD';
+    include("/app/config/credentials.php");
 
     // check the MySQL connection status
     $conn = new mysqli($host, $user, $pass);
@@ -22,6 +16,10 @@
     } else {
         //echo "Connected to MySQL server successfully!";
     }
+
+    unset($host, $user, $pass, $dbname);
+
+    include("database_structure.php");
     ?>
 
     <div>

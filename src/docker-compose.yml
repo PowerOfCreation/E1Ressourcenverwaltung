@@ -5,6 +5,7 @@ services:
         image: ulsmith/alpine-apache-php7
         volumes:
             - ./webserver:/app/public
+            - ./config:/app/config
         ports:
             - 80:80
     database-environment:
@@ -13,7 +14,7 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PWD: MYSQL_ROOT_PASSWORD
-            MYSQL_DATABASE: MY_DATABASE
+            MYSQL_USER_DB: MY_DATABASE
             MYSQL_USER: MYSQL_USER
             MYSQL_USER_PWD: MYSQL_PASSWORD
         ports:
