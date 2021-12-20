@@ -22,7 +22,7 @@ Benutzer is angemeldet
 .. Benutzer gibt Passwort ein
 ... Benutzer gibt erneut das Passwort ein
 .. Benutzer wählt aus der Liste eine Abteilung aus
-. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Erstellen"
+. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Mitarbeiter Hinzufügen"
 . Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
