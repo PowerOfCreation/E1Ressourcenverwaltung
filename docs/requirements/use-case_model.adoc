@@ -22,8 +22,8 @@ include::../_includes/default-attributes.inc.adoc[]
 //entscheiden für Benutzer oder Mitarbeiter, sonst verwirrend
 Es folgt eine priorisierte Liste der Use-Cases
 
-* *UC01*: Projekte bearbeiten
-* *UC02*: Benutzer bearbeiten 
+* *UC01*: Projektverwaltung
+* *UC02*: Benutzer erstellen und editieren
 //Benutzer erstellen und editieren
 * *UC03*: Wochenplan einsehen
 * *UC04*: Mitarbeiterstatus vergeben

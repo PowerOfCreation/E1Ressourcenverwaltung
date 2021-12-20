@@ -1,17 +1,17 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case UC01: Projekte bearbeiten
+== Use-Case UC01: Projekteverwaltung
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Arbeitsverwaltung soll in das Sytem integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
+Die Projektverwaltung soll in das Sytem integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
 
 ===	Kurzbeschreibung der Akteure
-==== Akteur Mitarbeiter
-. Mitarbeiter der T-Systems Multimedia Solutions GmbH
+==== Benutzer
+. Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
 
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Mitarbeiter ist angemeldet
+Benutzer ist angemeldet
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -21,10 +21,10 @@ Mitarbeiter ist angemeldet
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn ein Mitarbeiter auf den Knopf "Projektverwaltung" gedrückt hat
-. WHILE Mitarbeiter nicht zugewiesen
+. Der Use Case beginnt, wenn ein Benutzer auf den Knopf "Projektverwaltung" gedrückt hat
+. WHILE Benutzer nicht zugewiesen
 .. Das Projekt wird ausgewählt
-.. Im rechten Fenster werden die zuzuweisenden Mitarbeiter angeklickt
+.. Im rechten Fenster werden die zuzuweisenden Benutzer angeklickt
 .. Im Anschluss wird auf den Button "Zuweisen" geklickt
 . Der Use Case ist abgeschlossen
 
@@ -32,13 +32,13 @@ Mitarbeiter ist angemeldet
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
 ==== Alternativer Ablauf 1: Mitarbeiter entziehen
-Wenn Mitarbeiter im Schritt 2a. des Standardablaufs ein Projekt bearbeitet, dann
+Wenn Benutzer im Schritt 2a. des Standardablaufs ein Projekt bearbeitet, dann
 
-. Kann neben einem Mitarbeiter das Häckchen durch ein Klicken auf das Kästchen abgewählt werden
+. Kann neben einem Benutzer das Häckchen durch ein Klicken auf das Kästchen abgewählt werden
 . der Use Case wird bei dem Schritt 2c des Standardablaufs fortgesetzt
 
 ==== Alternativer Ablauf 2: Projekt erstellen
-Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt verwaltet, dann
+Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt verwaltet, dann
 
 . kann ein neues Projekt, durch Klicken auf den Button "Projekt erstellen", erstellt werden
 . WHILE Projekt ist nicht erstellt
@@ -47,7 +47,7 @@ Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt verwaltet, dann
 . Der Use Case wird im Schritt 2 fortgesetzt.
 
 ==== Alternativer Ablauf 3: Projekt löschen
-Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt löschen will, dann
+Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt löschen will, dann
 . Müssen die zu löschenden Projekte durch das Setzen eines Häckchens ausgewählt werden
 . Es wird auf den Button "Projekt Löschen" geklickt
 .. Es erscheint ein Fenster, wo das Löschen des Projektes bestätigt werden soll
@@ -65,13 +65,13 @@ Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt löschen will, dann
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Szenario 1: Mitarbeiter einem Projekt zuweisen/entziehen
-*Sc1:* Mitarbeiter A wählt Projekt Y aus. Im Anschluss weist er die Mitarbeiter B und C dem Projekt Y zu, entzieht Mitarbeiter D diesem Projekt und klickt auf "Zuweisen".
+*Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt und klickt auf "Zuweisen".
 
 ==== Szenario 2: Projekt erstellen
-*Sc2*: Mitarbeiter A klickt auf den Button "Projekt erstellen". Im geöffneten Fenster wählt er als Projektnamen "Urlaub", Mitarbeiter U als Verantwortlichen, Thema "Urlaub einteilen". Dafür hat er 2 Wochen Zeit und im Abgabedatum-Feld wird der 27.12.21 eingetragen. Danach klickt er auf "Projekt erstellen".
+*Sc2*: Benutzer A klickt auf den Button "Projekt erstellen". Im geöffneten Fenster wählt er als Projektnamen "Urlaub", Benutzer U als Verantwortlichen, Thema "Urlaub einteilen". Dafür hat er 2 Wochen Zeit und im Abgabedatum-Feld wird der 27.12.21 eingetragen. Danach klickt er auf "Projekt erstellen".
 
 ==== Szenario 3: Projekt löschen
-*Sc3*: Mitarbeiter A wählt Projekt "Urlaub" aus und klickt auf den Button "Projekt Löschen". Er bestätigt das Löschen.
+*Sc3*: Benutzer A wählt Projekt "Urlaub" aus und klickt auf den Button "Projekt Löschen". Er bestätigt das Löschen.
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
@@ -79,7 +79,7 @@ Wenn Mitarbeiter im Schritt 1 des Standardablauf ein Projekt löschen will, dann
 Das Projekt wurde erstellt
 
 ==== Nachbedingung 2
-Ein odere mehrere Mitarbeiter wurden einem Projekt zugewiesen und/oder entzogen
+Ein odere mehrere Benutzer wurden einem Projekt zugewiesen und/oder entzogen
 
 ==== Nachbedingung 3
 Ein überflüssiges Projekt wurde gelöscht

@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case UC03: Wochenplan einsehen
+== Use-Case UC03: Kalender einsehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 In der Planungsübersicht soll die Kalenderwoche angezeigt werden. Man soll einfach durch die Kalenderwochen scrollen können und dabei immer die aktuelle Planung sehen. Die Eingaben aus der letzten KW sollen mit einem Click in die aktuell angezeigte KW übernommen werden können.
@@ -7,7 +7,7 @@ In der Planungsübersicht soll die Kalenderwoche angezeigt werden. Man soll einf
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
-Mitarbeiter der T-Systems Multimedia Solutions GmbH 
+Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
@@ -18,8 +18,8 @@ Benutzer is angemeldet
 
 . Der Use Case beginnt, wenn Benutzer zur Planungsübersicht wechselt
 . System zeigt aktuelle Woche
-.. Eingaben aus der letzten Woche können durch einen Click in die aktuelle Woche übernommen werden
-. Durch Kalenderwochen kann gescrollt werden
+.. Eingaben aus der letzten Woche können durch einen Klick auf "Vorwoche übernehmen" in die aktuelle Woche übernommen werden
+. Durch Kalenderwochen kann durch Klicks auf linken oder rechten Pfeil navigiert werden
 . Der Use Case ist abgeschlossen.
 
 === Alternative Abläufe
@@ -29,23 +29,23 @@ Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 . <Ablauf beschreiben>
 . Der Use Case wird im Schritt <y> fortgesetzt.
 
-=== Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
-==== <Unterablauf 1>
-. <Unterablauf 1, Schritt 1>
-. …
-. <Unterablauf 1, Schritt n>
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Planung aus der letzten Woche übernehmen
-. *Sc1:* Ein Benutzer kann alle Ereignisse aus der letzten Woche durch einen Click in die aktuelle Woche übernehmen. 
+. *Sc1:* Ein Benutzer A kann alle Ereignisse aus der letzten Woche durch einen Click in die aktuelle Woche übernehmen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
-==== <Nachbedingung 1>
-
-=== Besondere Anforderungen
+==== Nachbedingung 1
+Falls alle Ereignisse aus der letzten Woche übernommen wurden, sollen diese in der aktuellen Woche angezeigt werden.
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-==== <Besondere Anforderung 1>
+//==== <Besondere Anforderung 1>
