@@ -96,7 +96,7 @@ Beispiel
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
 | Telekom | Serviceanbieter im Telekommunikationsbereich| Bereitstellung des Servers über den das System genutzt werden soll
-| Gesetzgeber | verbindliche Vorgabe von allgemeingültigen Rahmenbedingungen | Datenschutzrichtlinien
+| Gesetzgeber | verbindliche Vorgabe von allgemeingültigen Rahmenbedingungen | Vorgabe der Datenschutzrichtlinien
 |Geschäftsleiter |Person/-en die mit der Führung der Geschäfte betraut sind | Verantwortungs- & Entscheidungsträger der Gesellschaft. Besonderes Interesse an effizientem Arbeiten und übersichtlicher Informationen über die Tätigkeiten der Mitarbeiter sowie dem Fortschritt der Projekte
 |Abteilungsleiter|leitet die Organisation einer Abteilung|Verwaltung der Mitarbeiter, die dieser Abteilung zugehören sowie aller Tätigkeiten und Projekte
 |Projektleiter
@@ -113,6 +113,7 @@ Beispiel
 
 . Welche Personen sollen die Anwendung benutzen und welche Berechtigungen sollen sie haben?
 //die Frage bezieht sich eher auf die Nutzer bei der Telekom als auf uns
+   * 40 bis 50 Benutzer ??
    * alle Benutzer haben gleichberechtigten Zugriff auf die Anwendung
    * Änderungen der Benutzeranzahl treten nur im Kündigungs- oder Einstellungsfall auf 
 . Gibt es besondere Umgebungsbedingungen?
@@ -135,12 +136,13 @@ Beispiel
 === Bedarfe und Hauptfunktionen
 //Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
 
+Die Bedarfe und Anforderungen sind nach Prioritäten geordnet. Innerhalb einer Priorität bestimmt die Reihenfolge die genaue Gewichtung.
 
 [%header, cols="4,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
 |Kalender |hoch | wöchentliche Darstellung von Status und Tätigkeiten der Mitarbeiter | xx
-|Benutzerkonto|hoch| Erstellen, bearbeiten und löschen von Benutzerkonten und Passwörter | xx 
+|Benutzerverwaltung|hoch| Erstellen, bearbeiten und löschen von Benutzerkonten und Passwörter | xx 
 |Projektverwaltung|hoch| Erstellen und löschen von Projekten sowie Zuweisung von Mitarbeitern | xx
 |Abteilungsverwaltung |niedrig| Darstellung der internen Abteilungsstruktur| xx
 |===
@@ -150,7 +152,7 @@ Beispiel
 |Anforderung|	Priorität|	Geplantes Release
 |Übersichtliche Darstellung | hoch | xx
 | Datensicherheit | hoch | xx 
-| Datenintegrietät | hoch | xx
+| Datenintegrität | hoch | xx
 |Zuverlässige Lauffähigkeit | mittel | xx
 |einfache Bedienbarkeit | niedrig | xx
 |===
