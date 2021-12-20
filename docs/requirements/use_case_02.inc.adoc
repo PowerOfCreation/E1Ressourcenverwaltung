@@ -15,14 +15,14 @@ Benutzer is angemeldet
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Benutzer auf den Knopf "Mitarbeiter hinzufügen" klickt
+. Der Use Case beginnt, wenn Benutzer auf den Knopf "Benutzer hinzufügen" klickt
 . WHILE Benutzer ist nicht erstellt
 .. Benutzer gibt Benutzernamen ein
 .. Benutzer gibt Name- und Vorname ein
 .. Benutzer gibt Passwort ein
 ... Benutzer gibt erneut das Passwort ein
 .. Benutzer wählt aus der Liste eine Abteilung aus
-. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Mitarbeiter Hinzufügen"
+. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen"
 . Der Use Case ist abgeschlossen
 
 === Alternative Abläufe
@@ -33,7 +33,7 @@ Wenn Benutzer im Schritt 2c des Standardablauf ein Passwort eingegeben hat, was 
 . Benutzer wird zur erneuten Eingabe aufgefordert
 
 ==== Alternativer Ablauf 2
-Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Mitarbeiter hinzufügen" gedrückt hat, dann 
+Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
 . kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
 
 //=== Unterabläufe (subflows)
@@ -47,7 +47,7 @@ Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Mitarbeiter hinzuf�
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Anlegen eines neuen Benutzers
-. *Sc1:* Benutzer A klickt in der Wochenansicht auf den Button "Mitarbeiter hinzufügen". Er wählt B66 Benutzernamen für den Benutzer Max Mustermann. Er wird der Abteilung "Marketing" zugeordnet. Als E-Mail gibt er Max@t-systems.de ein. Er vergibt ein Passwort unter Beachtung der Mindestanforderungen. Danach klickt er auf "Benutzer erstellen".
+. *Sc1:* Benutzer A klickt in der Wochenansicht auf den Button "Benutzer hinzufügen". Er wählt B66 Benutzernamen für den Benutzer Max Mustermann. Er wird der Abteilung "Marketing" zugeordnet. Als E-Mail gibt er Max@t-systems.de ein. Er vergibt ein Passwort unter Beachtung der Mindestanforderungen. Danach klickt er auf "Benutzer erstellen".
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
