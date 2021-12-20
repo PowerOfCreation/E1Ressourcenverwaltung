@@ -10,11 +10,9 @@
     include("/app/config/credentials.php");
 
     // check the MySQL connection status
-    $conn = new mysqli($host, $user, $pass);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    } else {
-        //echo "Connected to MySQL server successfully!";
+    $connection = new mysqli($host, $user, $pass, $dbname);
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
     }
 
     unset($host, $user, $pass, $dbname);
