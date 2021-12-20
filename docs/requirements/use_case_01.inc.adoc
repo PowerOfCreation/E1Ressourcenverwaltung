@@ -1,91 +1,51 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case UC01: Projekteverwaltung
+== Use-Case UC01: Kalender einsehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Projektverwaltung soll in das Sytem integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
+In der Planungsübersicht soll die Kalenderwoche angezeigt werden. Man soll einfach durch die Kalenderwochen scrollen können und dabei immer die aktuelle Planung sehen. Die Eingaben aus der letzten KW sollen mit einem Click in die aktuell angezeigte KW übernommen werden können.
+
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
-. Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
-
+Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer ist angemeldet
+Benutzer is angemeldet
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-//. Der Use Case beginnt, wenn <akteur> <macht>…
-//. <Standardablauf Schritt 1>
-//. 	…
-//. <Standardablauf Schritt n>
-//. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn ein Benutzer auf den Knopf "Projektverwaltung" gedrückt hat
-. WHILE Benutzer nicht zugewiesen
-.. Das Projekt wird ausgewählt
-.. Im rechten Fenster werden die zuzuweisenden Benutzer angeklickt
-.. Im Anschluss wird auf den Button "Zuweisen" geklickt
-. Der Use Case ist abgeschlossen
+. Der Use Case beginnt, wenn Benutzer zur Wochenansicht wechselt
+. System zeigt aktuelle Woche
+.. Eingaben aus der letzten Woche können durch einen Klick auf "Vorwoche übernehmen" in die aktuelle Woche übernommen werden
+. Durch Kalenderwochen kann durch Klicks auf linken oder rechten Pfeil navigiert werden
+. Der Use Case ist abgeschlossen.
 
-=== Alternative Abläufe
+//=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+// Der Use Case wird im Schritt <y> fortgesetzt.
 
-==== Alternativer Ablauf 1: Mitarbeiter entziehen
-Wenn Benutzer im Schritt 2a. des Standardablaufs ein Projekt bearbeitet, dann
-
-. Kann neben einem Benutzer das Häckchen durch ein Klicken auf das Kästchen abgewählt werden
-. der Use Case wird bei dem Schritt 2c des Standardablaufs fortgesetzt
-
-==== Alternativer Ablauf 2: Projekt erstellen
-Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt verwaltet, dann
-
-. kann ein neues Projekt, durch Klicken auf den Button "Projekt erstellen", erstellt werden
-. WHILE Projekt ist nicht erstellt
-.. Müssen alle Felder ausgefüllt werden
-.. Es wird auf den Button "Projekt erstellen" geklickt
-. Der Use Case wird im Schritt 2 fortgesetzt.
-
-==== Alternativer Ablauf 3: Projekt löschen
-Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt löschen will, dann
-. Müssen die zu löschenden Projekte durch das Setzen eines Häckchens ausgewählt werden
-. Es wird auf den Button "Projekt Löschen" geklickt
-.. Es erscheint ein Fenster, wo das Löschen des Projektes bestätigt werden soll
-. Der Use Case wird im Schritt 3 fortgesetzt.
-
-
-// === Unterabläufe (subflows)
+//=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
 //==== <Unterablauf 1>
 //. <Unterablauf 1, Schritt 1>
 //. …
-//. <Unterablauf 1, Schritt n> 
+//. <Unterablauf 1, Schritt n>
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== Szenario 1: Mitarbeiter einem Projekt zuweisen/entziehen
-*Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt und klickt auf "Zuweisen".
-
-==== Szenario 2: Projekt erstellen
-*Sc2*: Benutzer A klickt auf den Button "Projekt erstellen". Im geöffneten Fenster wählt er als Projektnamen "Urlaub", Benutzer U als Verantwortlichen, Thema "Urlaub einteilen". Dafür hat er 2 Wochen Zeit und im Abgabedatum-Feld wird der 27.12.21 eingetragen. Danach klickt er auf "Projekt erstellen".
-
-==== Szenario 3: Projekt löschen
-*Sc3*: Benutzer A wählt Projekt "Urlaub" aus und klickt auf den Button "Projekt Löschen". Er bestätigt das Löschen.
+==== Planung aus der letzten Woche übernehmen
+. *Sc1:* Ein Benutzer A kann alle Ereignisse aus der letzten Woche durch einen Click in die aktuelle Woche übernehmen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== Nachbedingung 1
-Das Projekt wurde erstellt
-
-==== Nachbedingung 2
-Ein odere mehrere Benutzer wurden einem Projekt zugewiesen und/oder entzogen
-
-==== Nachbedingung 3
-Ein überflüssiges Projekt wurde gelöscht
-
-=== Besondere Anforderungen
+Falls alle Ereignisse aus der letzten Woche übernommen wurden, sollen diese in der aktuellen Woche angezeigt werden.
+//=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
-. Projektname ist nicht vergeben
-. Das Abgabedatum liegt in Zukunft
 //==== <Besondere Anforderung 1>
