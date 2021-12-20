@@ -25,11 +25,10 @@ Es folgt eine priorisierte Liste der Use-Cases
 * *UC01*: Projektverwaltung
 * *UC02*: Benutzer erstellen und editieren
 //Benutzer erstellen und editieren
-* *UC03*: Wochenplan einsehen
+* *UC03*: Kalender einsehen
 * *UC04*: Mitarbeiterstatus vergeben
 * *UC05*: Feiertage importieren und/oder händisch anlegen
-* *UC06*: Mitarbeiter löschen
-
+//* *UC06*: Mitarbeiter löschen
 //* *UC06*: Importierte Feiertage bearbeiten/löschen
 
 

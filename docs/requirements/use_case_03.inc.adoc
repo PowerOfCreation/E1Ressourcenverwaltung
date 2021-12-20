@@ -16,7 +16,7 @@ Benutzer is angemeldet
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Benutzer zur Planungsübersicht wechselt
+. Der Use Case beginnt, wenn Benutzer zur Wochenansicht wechselt
 . System zeigt aktuelle Woche
 .. Eingaben aus der letzten Woche können durch einen Klick auf "Vorwoche übernehmen" in die aktuelle Woche übernommen werden
 . Durch Kalenderwochen kann durch Klicks auf linken oder rechten Pfeil navigiert werden
