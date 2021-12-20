@@ -20,20 +20,15 @@ include::../_includes/default-attributes.inc.adoc[]
 //priorisierung stimmt nicht ganz mit den anforderungen aus vision überein 
 //Syntax der Bezeichnungen/Use-Cases stimmt nicht immer überein mit Vision zb bearbeiten und verwalten
 //entscheiden für Benutzer oder Mitarbeiter, sonst verwirrend
-Es folgt eine priorisierte Liste der Use-Cases
+Es folgt eine priorisierte Liste der Use-Cases:
 
-* *UC01*: Projekte bearbeiten
-* *UC02*: Benutzer bearbeiten 
-//Benutzer erstellen und editieren
-* *UC03*: Wochenplan einsehen
-* *UC04*: Mitarbeiterstatus vergeben
-* *UC05*: Feiertage importieren und/oder händisch anlegen
-* *UC06*: Mitarbeiter löschen
+* *UC01*: Kalender einsehen
+* *UC02*: Benutzer erstellen und editieren
+* *UC03*: Projektverwaltung
+* *UC04*: Feiertage importieren und/oder händisch anlegen
 
+//* *UC06*: Mitarbeiter löschen
 //* *UC06*: Importierte Feiertage bearbeiten/löschen
-
-
-
 
 == Use Case Diagramm
 // ...
@@ -54,7 +49,7 @@ include::use_case_03.inc.adoc[]
 //<<<
 //include::use_case_06.inc.adoc[]
 //<<<
-include::use_case_07.inc.adoc[]
+//include::use_case_07.inc.adoc[]
 //<<<
 //include::use_case_08.inc.adoc[]
 //<<<
