@@ -15,4 +15,19 @@ else
 {
     echo $connection->error;
 }*/
+
+/*if(*/$connection->query("
+CREATE TABLE IF NOT EXISTS Status(
+StatusId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+UserId int NOT NULL,
+ProjectId int NOT NULL,
+day date NOT NULL,
+FOREIGN KEY(UserId) REFERENCES User(UserId));"); /* === TRUE)
+{
+    echo "Successfully executed create table Status";
+}
+else
+{
+    echo "$connection->error";
+}*/
 ?>
