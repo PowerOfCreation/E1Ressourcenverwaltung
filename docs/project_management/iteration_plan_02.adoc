@@ -64,7 +64,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 * alle angefertigten Dokumente erfüllen die Anforderungen laut open UP 
 * Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
+* positives Feedback des Themenstellers auf gezeigte Ergebnisse 
 
 
 == Assessment
