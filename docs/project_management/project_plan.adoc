@@ -1,12 +1,5 @@
 = Projektplan: Ressourcenverwaltung
-Helena Rubein,    s81097@htw-dresden.de; 
-Nick Kemter,      s82068@htw-dresden.de; 
-Justus Beck,      s82023@htw-dresden.de; 
-Niklas Werner,    s82076@htw-dresden.de; 
-Jonas Keil,       s81910@htw-dresden.de;
-Carl Kirchhoff,   s82087@htw-dresden.de 
-Aleksandra Tartz, s80433@htw-dresden.de; 
-Vitali Tichonow,  s82591@htw-dresden.de;
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -43,21 +36,35 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 |
 * ersten Überblick über das Projekt bekommen 
 * Risiko von unklaren Rollen im Projekt und unklarer Zieldefinition wird verringert 
-| 15.11.21 - 29.11.21
+| 29.11.21 - 05.12.21
 | -
 
 | I2
 |
 * Vision und Use Cases mit Wireframes werden entwickelt 
 * Die Risiken eines unzureichenden Entwurfes und einer falschen Zieldefinition werden stark limitiert. 
-| 29.11.21 - 20.12.21
+| 06.12.21 - 12.12.21
 | 16
 
 | I3
 |
+* Use Cases, Vision und Wireframes werden nach Gespräch mit Themensteller überarbeitet
+* Dadurch wird das Risko minimiert, dass der Kunde den Entwurf nicht akzeptieren könnte. 
+| 13.12.21 - 19.12.21
+| 16
+
+| I4
+|
+* Use Cases und Vision werden nach Anmerkungen von Herrn Zirkelbach fertiggestellt. 
+* Das Risiko von Missverständnissen oder Unklarheiten wird minimiert. 
+| 20.12.21 - 26.12.21
+| 16
+
+| I5
+|
 * Mitigate Risk 2
 * Develop Use Case 1, Scenario 2
-| Date from/Date to
+| 27.12.21 - 09.01.22
 | 16
 |===
 

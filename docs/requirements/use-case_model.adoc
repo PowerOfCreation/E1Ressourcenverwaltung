@@ -23,9 +23,10 @@ include::../_includes/default-attributes.inc.adoc[]
 Es folgt eine priorisierte Liste der Use-Cases:
 
 * *UC01*: Kalender einsehen
-* *UC02*: Benutzer erstellen und editieren
-* *UC03*: Projektverwaltung
-* *UC04*: Feiertage importieren und/oder händisch anlegen
+* *UC02*: Benutzerstatus ändern
+* *UC03*: Benutzer erstellen und editieren
+* *UC04*: Projektverwaltung
+* *UC05*: Feiertage importieren und/oder händisch anlegen
 
 //* *UC06*: Mitarbeiter löschen
 //* *UC06*: Importierte Feiertage bearbeiten/löschen
@@ -43,9 +44,9 @@ include::use_case_02.inc.adoc[]
 //<<<
 include::use_case_03.inc.adoc[]
 //<<<
-//include::use_case_04.inc.adoc[]
+include::use_case_04.inc.adoc[]
 //<<<
-//include::use_case_05.inc.adoc[]
+include::use_case_05.inc.adoc[]
 //<<<
 //include::use_case_06.inc.adoc[]
 //<<<

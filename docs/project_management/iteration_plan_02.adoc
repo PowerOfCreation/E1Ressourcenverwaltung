@@ -1,6 +1,5 @@
 = Iteration Plan 02: {E1_Ressourcenverwaltung}
-Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner; Jonas Keil;
-Carl Kirchhoff; Aleksandra Tartz; Vitali Tichonow
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -38,15 +37,15 @@ Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestel
 _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]
 |===
-| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (Punkte) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
+| Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (T-Shirt-Größen) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Mockup erstellen [#1] | 1 | x | x |  | 2 | Nick, Alexandra | x | x
+| Mockup erstellen [#1] | 1 | M | muss nochmal überarbeitet werden |  | 2 | Nick, Alexandra | 4 | 3
 
-|use cases weiter ausarbeiten | 2 | x | x | x | 2 | Vitali, Jonas | x | x
+|use cases weiter ausarbeiten | 2 | M | in Arbeit  | x | 2 | Vitali, Jonas | 2 | 2
 
-|Risikoanalyse erarbeiten  | 2 | x | x | x | 2 | Carl, Niklas | x | x
+|Risikoanalyse erarbeiten  | 2 | M | erledigt | x | 2 | Carl, Niklas | 1,5 | 1
 
-|Vision fortführen   | 2 | x | x | x | 2 | Justus | x | x
+|Vision fortführen   | 2 | M | muss noch verbessert werden | x | 2 | Justus, Helena | 1,5 | 1
 |===
 
 == Probleme (optional)
@@ -64,7 +63,7 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 * alle angefertigten Dokumente erfüllen die Anforderungen laut open UP 
 * Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) ergibt positive Rückmeldung.
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
+* positives Feedback des Themenstellers auf gezeigte Ergebnisse 
 
 
 == Assessment
@@ -72,21 +71,24 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+| Assessment Ziel | Erfüllung der gesamten Iteration 
 | Assessment Datum | 06.12.21
 | Teilnehmer | alle Teammitglieder 
-| Projektstatus	| Zum Beispiel ausgedrückt als rot, gelb oder grün.
+| Projektstatus	| gelb 
 |===
 
-* Beurteilung im Vergleich zu den Zielen
+* Beurteilung im Vergleich zu den Zielen:
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
+Die gesetzten Ziele wurden erfüllt. Bei der gemeinsamen Begutachtung der Ergebnisse wurden aber noch Mengel oder Änderungswünsche festgestellt. 
 
-* Geplante vs. erledigte Aufgaben
+* Geplante vs. erledigte Aufgaben:
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+Alle geplanten Aufgaben wurden auch erledigt. 
 
-* Beurteilung im Vergleich zu den Bewertungskriterien
+* Beurteilung im Vergleich zu den Bewertungskriterien:
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+Alle präsentiereten Ergebnisse haben sowohl bei den Teammitgliedern als auch beim Themensteller ein positives Feedback erhalten. Es sind lediglich kleine Änderungen zu berücksichtigen.  
 
-* Andere Belange und Abweichungen
+//* Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
