@@ -50,6 +50,8 @@ CREATE TABLE IF NOT EXISTS Project(
 ProjectId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 Projectname varchar(255) NOT NULL UNIQUE,
 Projectowner int NOT NULL,
+Topic varchar(255),
+End date,
 User int,
 FOREIGN KEY(ProjectId) REFERENCES Status(ProjectId),
 FOREIGN KEY(Projectowner) REFERENCES User(UserId),
@@ -84,4 +86,5 @@ if($result->fetch_array()[0] == 0)
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('IronMan', 'Toni', 'Stark', 3, 't.stark@mail.de', '123456');");
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Spiderman', 'Peter', 'Parker', 2, 't.stark@mail.de', '123456');");
 }
+
 ?>
