@@ -1,4 +1,17 @@
 <?php
+
+function execute_sql_query($connection, $queryString)
+{
+    if($connection->query($queryString) === TRUE)
+    {
+        echo "successfully executed query";
+    }
+    else
+    {
+        echo $connection->error;
+    }
+}
+
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS User(
 UserId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
