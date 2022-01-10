@@ -1,0 +1,62 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+== Use-Case UC05: Feiertage importieren und/oder händisch anlegen
+===	Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Es soll eine Funktion geben, Feiertage mittels einer API (https://feiertage-api.de) in das Kalender importieren zu können. Außrdem soll es möglich sein, die Feiertage bundesländerspezifisch importieren zu können. Außerdem soll es eine Funktion geben, Feiertage oder Brückentage händisch anlegen zu können oder diese zu löschen.
+
+===	Kurzbeschreibung der Akteure
+==== Benutzer
+. Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
+
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+Benutzer ist angemeldet
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+//. Der Use Case beginnt, wenn <akteur> <macht>…
+//. <Standardablauf Schritt 1>
+//. 	…
+//. <Standardablauf Schritt n>
+//. Der Use Case ist abgeschlossen.
+. Der Use Case beginnt, wenn ein Benutzer in der Kalendereinsicht auf den Knopf "Feiertage" klickt
+. Im neuen Fenster wir durch Häckchensetzen ausgewählt, aus welchem Bundesland die Feiertage impoertiert werden sollen.
+. Durch das Kicken auf den Knopf "ausgewählte Feiertage impoertieren" werden die Feiertage im Kalenderfenster angezeigt
+. Durch Klicken auf einzelne Tage kann ein Feiertag gelöscht oder erneut hinzugefügt werden
+. Übernommene Feiertage werden durch Klicken auf den Knopf "Feiertage speichern" gespeichert und in das Kalender übertragen
+. Der Use Case ist abgeschlossen
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== Alternativer Ablauf 1: Abbruch der Impoertierung
+Wenn Benutzer im Schritt 2 des Standardablaufs doch keine Feiertage importieren möchte,
+
+. Kann auf den Knopf "Zurück" geklickt werden und der Benutzer zurück zur Kalendereinsicht weitergeleitet wird
+. Der Use Case wird im Schritt 6 abgeschlossen
+
+
+// === Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n> 
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+==== Szenario 1: Feiertage impoprtieren
+*Sc1:* Benutzer A möchte für das Jahr alle Feiertage aus Sachsen importieren. Dafür klickt er in der Kalendereinsicht auf den Button "Feiertage". Dort wählt er das Bundesland "Sachsen" und durch Klicken auf den Knopf "ausgewählte Feiertage importieren" lässt er sich alle Feiertage aus Sachsen anzeigen. Da er weiß, dass zwischen Weihnachten und Silvester alle Mitarbeiter Urlaub haben, markiert er diese Tage händisch als Feiertage.
+
+===	Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+==== Nachbedingung 1
+Die Feiertage wurden erfolgreich impoertiert und werden im Kalender angezeigt
+
+//=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+//==== <Besondere Anforderung 1>
