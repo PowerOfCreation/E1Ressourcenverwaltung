@@ -11,7 +11,6 @@ services:
     database-environment:
         container_name: database
         image: woahbase/alpine-mysql
-        restart: always
         environment:
             MYSQL_ROOT_PWD: MYSQL_ROOT_PASSWORD
             MYSQL_USER_DB: MY_DATABASE
