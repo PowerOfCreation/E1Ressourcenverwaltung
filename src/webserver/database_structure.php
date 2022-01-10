@@ -39,10 +39,10 @@ Projectname varchar(255) NOT NULL UNIQUE,
 Projectowner int NOT NULL,
 Topic varchar(255),
 End date,
-User int,
+UserId int,
 FOREIGN KEY(ProjectId) REFERENCES Status(ProjectId),
 FOREIGN KEY(Projectowner) REFERENCES User(UserId),
-FOREIGN KEY(User) REFERENCES User(UserId);"); /* === TRUE)
+FOREIGN KEY(UserId) REFERENCES User(UserId));"); /* === TRUE)
 {
     echo "Successfully executed create table User";
 }
