@@ -32,7 +32,7 @@ else
 }*/
 
 
-/*if($connection->query("
+/*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Project(
 ProjectId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 Projectname varchar(255) NOT NULL UNIQUE,
