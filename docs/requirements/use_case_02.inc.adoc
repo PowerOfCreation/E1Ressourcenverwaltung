@@ -1,8 +1,9 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case UC02: Benutzer erstellen und editieren
+== Use-Case UC02: Benutzerstatus ändern
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Benutzer soll sein eigenes Passwort haben, welches er selber wählen kann. Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Benutzer machen.
+Jeder Benutzer soll über die Möglichkeit verfügen, einen Status zu setzen oder ihn zu ändern. Somit kann jeder Benutzer anderen Benutzern zeigen, dass er oder sie sich im Urlaub befindet oder im Falle einer Krankheit am Arbeitsplatz abwesend ist.
+
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
@@ -15,26 +16,20 @@ Benutzer is angemeldet
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Benutzer auf den Knopf "Benutzer hinzufügen" klickt
-. WHILE Benutzer ist nicht erstellt
-.. Benutzer gibt Benutzernamen ein
-.. Benutzer gibt Name- und Vorname ein
-.. Benutzer gibt Passwort ein
-... Benutzer gibt erneut das Passwort ein
-.. Benutzer wählt aus der Liste eine Abteilung aus
-. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen"
-. Der Use Case ist abgeschlossen
+. Der Use Case beginnt, wenn Benutzer im System eingeloggt ist
+. Benutzer klickt auf sein Profil
+. Es öffnet sich ein Dropdown-Menü
+. Im Dropdown-Menü klickt der Benutzer auf den Knopf "Status"
+. Benutzer klickt auf den passenden Status
+. Der Statur wird automatisch gespeichert
+. Der Use Case ist abgeschlossen.
 
-=== Alternative Abläufe
+//=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Alternativer Ablauf 1
-Wenn Benutzer im Schritt 2c des Standardablauf ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
-. wird eine Fehlermeldung angezeigt
-. Benutzer wird zur erneuten Eingabe aufgefordert
-
-==== Alternativer Ablauf 2
-Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
-. kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+// Der Use Case wird im Schritt <y> fortgesetzt.
 
 //=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -46,16 +41,13 @@ Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Benutzer hinzufüge
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== Anlegen eines neuen Benutzers
-. *Sc1:* Benutzer A klickt in der Wochenansicht auf den Button "Benutzer hinzufügen". Er wählt B66 Benutzernamen für den Benutzer Max Mustermann. Er wird der Abteilung "Marketing" zugeordnet. Als E-Mail gibt er Max@t-systems.de ein. Er vergibt ein Passwort unter Beachtung der Mindestanforderungen. Danach klickt er auf "Benutzer erstellen".
+==== Benutzer hat Urlaub
+. *Sc1:* Ein Benutzer A hat diese Woche Urlaub und möchte anderen Benutzern signalisieren, dass er abwesend ist und ihm keine Aufgaben zugeteilt werden sollen. Dafür ändert er seinen Status auf "Urlaub"
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== Nachbedingung 1
-Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den Anforderungen ausgefüllt sein
-
-=== Besondere Anforderungen
-. Alle Felder müssen ausgefüllt werden
-. Der Benutzername ist nicht vergeben
-. Das Passwort wurde zwei Mal richtig eingegeben
-. Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen
+Der Status soll in die Kalendereinsicht übernommen werden
+//=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+//==== <Besondere Anforderung 1>
