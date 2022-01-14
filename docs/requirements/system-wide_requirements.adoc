@@ -1,4 +1,4 @@
-= System-Wide Requirements: {project-name}
+= System-Wide Requirements: {E1_Ressourcenverwaltung}
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -27,11 +27,15 @@ Zur Überprüfung werden alle möglichen Funktionen nacheinander ausgeführt und
 
 NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
 
+NFAU-3: Dem Benutzer soll es möglich sein bundeslandspezifische Feiertage aus einer API zu importieren. 
+Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext
+angezeigt wird. 
+
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 NFAR-1: Es darf kein falscher Kundenname oder falsches Passwort angegeben werden
 Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext
-angezeigt wird
+angezeigt wird. 
 
 NFAR-2: Die E-Mail-Adresse darf nur in einem gültigen Format eingegeben werden.
 Zur Überprüfung wird getestet, ob in diesem Anwendungsfall ein entsprechender Hinweistext
@@ -47,22 +51,20 @@ angezeigt wird.
 == Zusätzliche Anforderungen
 === Einschränkungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Ressourcenbegrenzungen
-* zu nutzende Komponenten / Bibliotheken / Frameworks
-* Vorgaben für die Programmiersprache
-* zu unterstützende Plattformen / Betriebssysteme
-* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
+//* Ressourcenbegrenzungen
+//* zu nutzende Komponenten / Bibliotheken / Frameworks
+//* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
 * Software soll im Web verfügbar sein 
 * die Anwendung soll mittels Docker auf dem Zielsystem verwendet werden können
-* Feiertage sollen aus einer API (https://feiertage-api.de) importiert werden können
+//* Feiertage sollen aus einer API (https://feiertage-api.de) importiert werden können
 
 === Organisatorische Randbedingungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Anforderungen an Betrieb, Management und Wartung der Anwendung
-* zu beachtende Standards, Normen und Regeln
+//* Anforderungen an Betrieb, Management und Wartung der Anwendung
+* System soll nur intern nutzbar sein
 
 === Rechtliche Anforderungen
 //Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
-* Lizensierung der Anwendung
-* Datenschutz
+//* Lizensierung der Anwendung
+* Datenschutz muss beachtet werden 

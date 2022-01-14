@@ -54,11 +54,13 @@ _alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 == Bewertungskriterien
 //Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
-Beispiele:
 
-* 97% der Testfälle auf Systemebene sind erfolgreich.
-* Gemeinsame Inspektion der Iterations-Ergebnisses 
-* Technische Präsentation / Demo erhält positive Rückmeldungen.
+
+* 90% der vorgenommenen Aufgaben wurden erfüllt
+* gemeinsame Inspektion der Iterations-Ergebnisses 
+* Technische Präsentation / Demo erhält Rückmeldungen
+* Kritiken und Änderungsvorschläge wurden zeitnah umgestzt 
+* Probleme werden besprochen und es wird gemeinsam nach einer Lösung gesucht.
 
 
 == Assessment

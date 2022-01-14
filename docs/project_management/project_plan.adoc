@@ -19,7 +19,10 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
-Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. Deshalb ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitgleider bei diesen Meetings anwesend. Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
+Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. 
+* wöchentlich Stand des Projektes abgleichen 
+Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
+* Bewetung der Iterationen erfolgt in der Gruppe. 
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
@@ -45,32 +48,40 @@ Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. Deshalb 
 * Vision und Use Cases mit Wireframes werden entwickelt 
 * Die Risiken eines unzureichenden Entwurfes und einer falschen Zieldefinition werden stark limitiert. 
 | 06.12.21 - 12.12.21
-| 16
+| -
 
 | I3
 |
 * Use Cases, Vision und Wireframes werden nach Gespräch mit Themensteller überarbeitet
 * Dadurch wird das Risko minimiert, dass der Kunde den Entwurf nicht akzeptieren könnte. 
 | 13.12.21 - 19.12.21
-| 16
+| -
 
 | I4
 |
 * Use Cases und Vision werden nach Anmerkungen von Herrn Zirkelbach fertiggestellt. 
 * Das Risiko von Missverständnissen oder Unklarheiten wird minimiert. 
 | 20.12.21 - 26.12.21
-| 16
+| -
 
 | I5
 |
 * Datenbanktabellen sollen angelegt und "Mitarbeiter hinzufügen"- Ansicht sollen implementiert werden
-* welches risiko? 
+* Das Riskio eines unvollständigen und fehlerhaften Sytems wird dadurch verringert. 
 | 27.12.21 - 09.01.22
-| 16
+| -
+
+| I6
+|
+* Sytemweite Anforderungen, VM beantragt, Funktionserweiterung 
+* Das Risiko fahlerhafter Funktionen wird reduziert. 
+| 10.01.22 - 16.01.22
+| - 
 |===
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
+Die Übergabe der Software an den Auftraggeber erfolgt über GitHub.
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
