@@ -17,7 +17,7 @@
 
 	$result = $connection->query("SELECT * FROM User ORDER BY Username;");
     while($row = $result->fetch_object()){      
-        $daten[] = $row;
+        $users[] = $row;
 	}
     ?>
 
@@ -47,13 +47,13 @@
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">
-                        <?php foreach ($daten as $inhalt) { ?>
+                        <?php foreach ($users as $inhalt) { ?>
                         <tr>
                             <td>
                                 <?php echo $inhalt->Username; ?>
                             </td> 
                         </tr>       
-                        <?php } ?>    
+                        <?php } ?>                        
                     </tbody>
                 </table>
             </div>
