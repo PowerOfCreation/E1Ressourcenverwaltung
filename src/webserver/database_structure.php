@@ -35,7 +35,8 @@ StatusId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 UserId int NOT NULL,
 ProjectId int NOT NULL,
 day date NOT NULL,
-FOREIGN KEY(UserId) REFERENCES User(UserId));"); /* === TRUE)
+FOREIGN KEY(UserId) REFERENCES User(UserId),
+FOREIGN KEY(PorjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
 {
     echo "Successfully executed create table Status";
 }
@@ -44,7 +45,6 @@ else
     echo "$connection->error";
 }*/
 
-
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Project(
 ProjectId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -52,22 +52,16 @@ Projectname varchar(255) NOT NULL UNIQUE,
 Projectowner int NOT NULL,
 Topic varchar(255),
 End date,
-UserId int,
-FOREIGN KEY(ProjectId) REFERENCES Status(ProjectId),
+UserId int NOT NULL,
 FOREIGN KEY(Projectowner) REFERENCES User(UserId),
-FOREIGN KEY(UserId) REFERENCES User(UserId));"); /* === TRUE)
+FOREIGN KEY(UserId) REFERENCES User(UserId));");/*  === TRUE)
 {
-    echo "Successfully executed create table User";
+    echo "Successfully executed create table Project";
 }
 else
 {
     echo $connection->error;
 }*/
-
-/*
-Topic varchar(255),
-End date,
-*/
 
 $result = $connection->query("SELECT count(*) from User;");
 

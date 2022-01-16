@@ -16,14 +16,15 @@ if (!empty($_POST["Username"])) {
 	echo "EMail: " . htmlspecialchars($_POST["EMail"]) . "</br>";
 	echo "Password: " . htmlspecialchars($_POST["Password"]) . "</br>";
 
+	
 	// Just an example how to do database queries
-	$result = $connection->query("SELECT * FROM User;");
+    $result = $connection->query("SELECT * FROM User;");
+    echo "Alle Nutzer:</br>";
 
-	echo "Alle Nutzer:</br>";
+    while ($row = mysqli_fetch_array($result)) {
+        echo $row["Username"] . "</br>";
+    }
 
-	while ($row = mysqli_fetch_array($result)) {
-		echo $row["Username"] . "</br>";
-	}
 }
 ?>
 

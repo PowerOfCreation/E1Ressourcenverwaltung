@@ -14,6 +14,11 @@
     include("/app/config/credentials.php");
 
     include("database_structure.php");
+
+	$result = $connection->query("SELECT * FROM User ORDER BY Username;");
+    while($row = $result->fetch_object()){      
+        $daten[] = $row;
+	}
     ?>
 
     <div>
@@ -42,7 +47,13 @@
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">
-                        
+                        <?php foreach ($daten as $inhalt) { ?>
+                        <tr>
+                            <td>
+                                <?php echo $inhalt->Username; ?>
+                            </td> 
+                        </tr>       
+                        <?php } ?>    
                     </tbody>
                 </table>
             </div>
