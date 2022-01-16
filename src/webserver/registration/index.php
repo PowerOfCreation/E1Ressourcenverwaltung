@@ -9,22 +9,26 @@ if (!empty($_POST["Username"])) {
 	require_once("/app/config/credentials.php");
 
 	// Example how to use POST'ed values
-	echo "Username: " . htmlspecialchars($_POST["Username"]) . "</br>";
-	echo "Forename: " . htmlspecialchars($_POST["Forename"]) . "</br>";
-	echo "Surname: " . htmlspecialchars($_POST["Surname"]) . "</br>";
-	echo "DepartmentId: " . htmlspecialchars($_POST["DepartmentId"]) . "</br>";
-	echo "EMail: " . htmlspecialchars($_POST["EMail"]) . "</br>";
-	echo "Password: " . htmlspecialchars($_POST["Password"]) . "</br>";
+	$username = htmlspecialchars($_POST["Username"]);
+	$forename = htmlspecialchars($_POST["Forename"]);
+	$surname = htmlspecialchars($_POST["Surname"]);
+	$departmentId = htmlspecialchars($_POST["DepartmentId"]);
+	$e_mail = htmlspecialchars($_POST["EMail"]);
+	$password = password_hash(htmlspecialchars($_POST["Password"]), PASSWORD_DEFAULT);
 
-	
-	// Just an example how to do database queries
-    $result = $connection->query("SELECT * FROM User;");
-    echo "Alle Nutzer:</br>";
+	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
 
-    while ($row = mysqli_fetch_array($result)) {
-        echo $row["Username"] . "</br>";
-    }
+	$add_user_statement->bind_param('sssiss', $username, $forename, $surname, $departmentId, $e_mail, $password);
 
+	if($add_user_statement->execute())
+	{
+		echo "Nutzer " . $username . " erfolgreich angelegt.";
+	}
+	else
+	{
+		echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
+		echo $connection->error;
+	}
 }
 ?>
 
