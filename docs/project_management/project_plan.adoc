@@ -11,14 +11,18 @@ Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung.
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
-Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt.
+Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt. Die Rolle des Analysten übernehmen Frau Rubein und Frau Tartz. Verantwortlich für die Architektur der Software sind Herr Werner und Herr Kirchhoff. Hauptverantwortlich für die Implikation in diesem Projekt sind Herr Keil und Herr Beck. Für die Tests sind Herr Tichonow und Herr Kemter zuständig. 
 
 Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitgleider bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
 
-Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Probleme werden offen kommuniziert. Außerdem achten wir auf eine gleichmäßige Arbeitsverteilung. 
+Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Probleme werden offen kommuniziert. Außerdem achten wir auf eine gleichmäßige Arbeitsverteilung. Um das nachzuvollziehen, trägt jedes Teammitgleid am Ende einer Interation seine/ihre benötigte Arbeitszeit ein. 
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. 
+* wöchentlich Stand des Projektes abgleichen 
+Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
+* Bewetung der Iterationen erfolgt in der Gruppe. 
 
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
@@ -44,32 +48,40 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 * Vision und Use Cases mit Wireframes werden entwickelt 
 * Die Risiken eines unzureichenden Entwurfes und einer falschen Zieldefinition werden stark limitiert. 
 | 06.12.21 - 12.12.21
-| 16
+| -
 
 | I3
 |
 * Use Cases, Vision und Wireframes werden nach Gespräch mit Themensteller überarbeitet
 * Dadurch wird das Risko minimiert, dass der Kunde den Entwurf nicht akzeptieren könnte. 
 | 13.12.21 - 19.12.21
-| 16
+| -
 
 | I4
 |
 * Use Cases und Vision werden nach Anmerkungen von Herrn Zirkelbach fertiggestellt. 
 * Das Risiko von Missverständnissen oder Unklarheiten wird minimiert. 
 | 20.12.21 - 26.12.21
-| 16
+| -
 
 | I5
 |
-* Mitigate Risk 2
-* Develop Use Case 1, Scenario 2
+* Datenbanktabellen sollen angelegt und "Mitarbeiter hinzufügen"- Ansicht sollen implementiert werden
+* Das Riskio eines unvollständigen und fehlerhaften Sytems wird dadurch verringert. 
 | 27.12.21 - 09.01.22
-| 16
+| -
+
+| I6
+|
+* Sytemweite Anforderungen, VM beantragt, Funktionserweiterung 
+* Das Risiko fahlerhafter Funktionen wird reduziert. 
+| 10.01.22 - 16.01.22
+| - 
 |===
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
+Die Übergabe der Software an den Auftraggeber erfolgt über GitHub.
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.

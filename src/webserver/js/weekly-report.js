@@ -38,6 +38,6 @@ $()
     }
 
     $("#btn-add-employee").click(function () {
-        addEmployee(Math.random(), "Max Mustermann");
+        window.location.href = "registration";
     });
 }
