@@ -34,53 +34,67 @@ if (!empty($_POST["Username"])) {
 
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
 	<style>
 		div {
-			box-sizing: border-box;
 			width: 100%;
-			border: 100px solid black;
-			float: left;
+			border: 1px solid rgb(255, 255, 255);
 			align-content: center;
 			align-items: center;
+            white-space: pre-line;
+            display: inline-block;
 		}
-
 		form {
 			margin: 0 auto;
-			width: 600px;
-		}
-	</style>
+			width: 500px;
+
+    	}
+	</style> 
+    <script type="text/javascript">
+    var repeatPw = function() {
+     if (document.getElementById('registrierung').elements["Password"].value == document.getElementById('registrierung').elements["repeatPassword"].value) {
+         document.getElementById('message').style.color = 'green';
+         document.getElementById('message').innerHTML = 'Das Passwort stimmt überein';
+     } 
+     else {
+             document.getElementById('message').style.color = 'red';
+         document.getElementById('message').innerHTML = 'Das Passwort stimmt nicht überein';
+     }
+ }
+</script>
+
 </head>
 
 <body>
 	<main>
 		<h1 style="text-align: justify;">Mitarbeiter Hinzufügen</h1>
-		<form name="RegForm" method="post">
-			<p>Benutzername: <input type="text" size="60" name="Username" /></p>
-			<br />
-			<p>Vorname: <input type="text" size="65" name="Forename" /></p>
-			<br />
-			<p>Nachname: <input type="text" size="65" name="Surname" /></p>
-			<br />
-			<p>Abteilung: <input type="text" size="65" name="DepartmentId" /></p>
-			<br />
-			<p>E-mail: <input type="text" size="65" name="EMail" /></p>
-			<br />
-			<p>Passwort: <input type="password" size="65" name="Password" /></p>
-			<br />
+		<form name="RegForm" id="registrierung" method="post">
+			
+        <div>
+            Benutzername: <input type="text" size="65" name="Username" />
 
+			Vorname: <input type="text" size="65" name="Forename" />
+			
+			Nachname: <input type="text" size="65" name="Surname" />
+			
+			Abteilung: <input type="text" size="65" name="DepartmentId" />
+			
+			E-mail: <input type="text" size="65" name="EMail" />
+			
+			Passwort: <input type="password" size="65" name="Password" onkeyup='repeatPw();' />
 
-			<br />
-			<br />
-			<p>
-				<input type="submit" value="Benutzer erstellen" name="Submit" />
-			</p>
+            Passwort wiederholen: <input type="password" size="65" name="repeatPassword" onkeyup='repeatPw();' />
+			<span id='message'></span>
+
+            
+			<input type="submit" value="Benutzer erstellen" name="Submit" />
 		</form>
 		<button onclick="history.back()">Abbrechen und zurück</button>
+    </div>
 	</main>
+    
 </body>
 
 </html>
