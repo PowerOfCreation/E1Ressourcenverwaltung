@@ -48,7 +48,7 @@
 
                         while ($row = $result->fetch_object()) {
                             echo "<tr>";
-                            echo "<td class='td-entry-employee'>" . $row->Username . "</td>";
+                            echo "<td class='td-entry-employee'>" . $row->Forename . " " . $row->Surname . "</td>";
                             echo "<td class='td-entry-weekday td-entry-monday'></td>";
                             echo "<td class='td-entry-weekday td-entry-tuesday'></td>";
                             echo "<td class='td-entry-weekday td-entry-wednesday'></td>";
