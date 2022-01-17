@@ -2,6 +2,8 @@ $()
 {
     $employeeEntries = $("#tbody-employee-entries");
 
+    $employeeEntries.find(".td-entry-weekday").click(onWeekdayClick);
+
     function addEmployee(employeeId, employeeName) {
         $employeeElement = $(` 
             <tr> \
