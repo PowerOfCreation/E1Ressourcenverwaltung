@@ -16,6 +16,8 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |einfache Bedienbarkeit | mit wenigen Klicks zur gewünschten Stelle im System kommen|
 |Mitarbeiterstatus | Arbeitszustand eines Mitarbeiters an einem bestimmten Tag, z.B. Projekt 1 oder Urlaub oder Krank ... | Verfügbarkeit  
 |Projekt |Ein Projekt ist ein zielgerichtetes, einmaliges Vorhaben, das aus einem Satz von abgestimmten, gesteuerten Tätigkeiten besteht und durchgeführt werden kann, um unter Berücksichtigung von Vorgaben das gewünschte Ziel zu erreichen  |
+|Docker | Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung.|
+|
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
 
 |===
@@ -28,6 +30,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |UP|Unified Process|Vorgehensmodell für die Softwareentwicklung
 |T-Systems MMS |T-Sytems Multimedia Solutions| Name des Themenstellers 
 |VM | virtuelle Maschine | VM ist eine Umgebung, die als virtuelles Computersystem fungiert. VMs sind vom Rest des Systems isoliert. Dazu können mehrere von ihnen auf einer einzigen Hardware-Komponente existieren, z. B. einem Server. Sie lassen sich nach Bedarf zwischen den Host-Servern verschieben, um Ressourcen besser zu nutzen.
+| API | application programming interface | Ein API ist also eine Schnittstelle, welche zum Beispiel Anwendungen, Festplatten oder Benutzeroberflächen verbindet.
 |===
 
 == Verzeichnis der Datenstrukturen

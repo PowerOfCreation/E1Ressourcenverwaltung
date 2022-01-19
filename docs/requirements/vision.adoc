@@ -1,13 +1,6 @@
-= Vision: Ressourcenverwaltung
-
-Helena Rubein,    s81097@htw-dresden.de; 
-Nick Kemter,      s82068@htw-dresden.de; 
-Justus Beck,      s82023@htw-dresden.de; 
-Niklas Werner,    s82076@htw-dresden.de; 
-Jonas Keil,       s81910@htw-dresden.de;
-Carl Kirchhoff,   s82087@htw-dresden.de 
-Aleksandra Tartz, s80433@htw-dresden.de; 
-Vitali Tichonow,  s82591@htw-dresden.de; {localdatetime}
+= Vision: E1_Ressourcenverwaltung
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
+{localdatetime}
 
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -113,7 +106,7 @@ Beispiel
 
 . Welche Personen sollen die Anwendung benutzen und welche Berechtigungen sollen sie haben?
 //die Frage bezieht sich eher auf die Nutzer bei der Telekom als auf uns
-   * 40 bis 50 Benutzer ??
+   * ca. 50 Benutzer 
    * alle Benutzer haben gleichberechtigten Zugriff auf die Anwendung
    * Änderungen der Benutzeranzahl treten nur im Kündigungs- oder Einstellungsfall auf 
 . Gibt es besondere Umgebungsbedingungen?
