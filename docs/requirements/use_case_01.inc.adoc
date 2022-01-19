@@ -2,7 +2,7 @@
 == Use-Case UC01: Kalender einsehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-In der Planungsübersicht soll die Kalenderwoche angezeigt werden. Man soll einfach durch die Kalenderwochen scrollen können und dabei immer die aktuelle Planung sehen. Die Eingaben aus der letzten KW sollen mit einem Click in die aktuell angezeigte KW übernommen werden können.
+In der Planungsübersicht soll die Kalenderwoche(KW) angezeigt werden. Man soll einfach durch die Kalenderwochen scrollen können und dabei immer die aktuelle Planung sehen. Die Eingaben aus der letzten KW sollen mit einem Click in die aktuell angezeigte KW übernommen werden können.
 
 
 ===	Kurzbeschreibung der Akteure

@@ -18,15 +18,23 @@ Benutzer is angemeldet
 
 . Der Use Case beginnt, wenn Benutzer im System eingeloggt ist
 . Benutzer klickt auf sein Profil
+//eher auf den passenden Tag im Kalender in seiner Zeile 
 . Es öffnet sich ein Dropdown-Menü
-. Im Dropdown-Menü klickt der Benutzer auf den Knopf "Status"
+. Im Dropdown-Menü klickt der Benutzer auf den Knopf "Status" 
+//es gibt keinen Knopf Status
 . Benutzer klickt auf den passenden Status
-. Der Statur wird automatisch gespeichert
+. Der Status wird automatisch gespeichert
 . Der Use Case ist abgeschlossen.
 
-//=== Alternative Abläufe
+=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-//==== <Alternativer Ablauf 1>
+==== Alternativer Ablauf 1
+. Der Use Case beginnt, wenn Benutzer im System eingeloggt ist
+. Benutzer klickt auf sein Profil
+. Wenn noch kein passender Status angelegt ist, dann
+. Benutzer muss erst neues Projekt anlegen. 
+. Der Use Case wird ab 3. erneut ausgeführt.
+. Der Use Case ist abgeschlossen, wenn der Benutzer den richtigen Status auswälen kann.  
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 //. <Ablauf beschreiben>
 // Der Use Case wird im Schritt <y> fortgesetzt.

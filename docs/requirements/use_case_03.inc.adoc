@@ -52,7 +52,7 @@ Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Benutzer hinzufüge
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== Nachbedingung 1
-Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den Anforderungen ausgefüllt sein
+Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den Anforderungen ausgefüllt sein.
 
 === Besondere Anforderungen
 . Alle Felder müssen ausgefüllt werden
