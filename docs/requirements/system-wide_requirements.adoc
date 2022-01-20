@@ -17,35 +17,52 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 == Systemweite funktionale Anforderungen
 //Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
 
+SWFA-1: Alle Daten (Benutzer und Projekt) sollen persistent gespeichert werden.
+
+Zur Überprüfung wird die Datenbank mit Testdaten gefüllt. Anschließend wird das System ausgeschaltet. Die Daten sollten bei Wiederinbetriebnahme vollständig vorhanden sein
+
+SWFA-2: Jeder Benutzer darf alle Daten bearbeiten.
+
+Zur Überprüfung soll ein beliebiger Nutzer die Daten verändern.
+
+SWFA-3: Das System muss die eingegeben Daten korrekt und vollständig in die Datenbank übermitteln.
+
+Zur Überprüfung werden Daten eingetragen und danach auf Plausibilität und Korrektheit überprüft.
+
 == Qualitätsanforderungen für das Gesamtsystem
 //Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
 NFAU-1: Der Benutzer sollte so wenig Klicks wie möglich für alle Funktionen der Anwendung benötigen.
-Zur Überprüfung werden alle möglichen Funktionen nacheinander ausgeführt und die Anzahl der klicks gezählt. 
+Zur Überprüfung werden alle möglichen Funktionen nacheinander ausgeführt und die Anzahl der Klicks gezählt. 
 
 NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
 
 NFAU-3: Dem Benutzer soll es möglich sein bundeslandspezifische Feiertage aus einer API zu importieren. 
-Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext
-angezeigt wird. 
+Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext angezeigt wird. 
+
+
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
 NFAR-1: Es darf kein falscher Kundenname oder falsches Passwort angegeben werden
-Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext
-angezeigt wird. 
+Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext angezeigt wird. 
 
 NFAR-2: Die E-Mail-Adresse darf nur in einem gültigen Format eingegeben werden.
-Zur Überprüfung wird getestet, ob in diesem Anwendungsfall ein entsprechender Hinweistext
-angezeigt wird.
+Zur Überprüfung wird getestet, ob in diesem Anwendungsfall ein entsprechender Hinweistext angezeigt wird.
+
 
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+NFAP-1: Das Aufrufen von neuen Seiten und das Speichern/Abschicken von Daten soll eine angemessene Geschwindigkeit haben.
+//Vllt eine genauere Formulierung
+Zur Überprüfung wird eine manuelle Überprüfung feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit unter optimalen Bedingungen ablaufen.
 
 === Wartbarkeit (Supportability)
+//Hier noch was überlegen
+
 // Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
 
 == Zusätzliche Anforderungen
