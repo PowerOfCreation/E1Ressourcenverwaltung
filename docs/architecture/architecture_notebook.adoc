@@ -13,12 +13,38 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 //Anmerkung: Die Architektur legt wesentliche EINSCHRÄNKUNGEN für den Systementwurf fest und ist ein Schlüssel für die Erfüllung nicht-funktionaler Eigenschaften!
 
 == Architekturziele und Philosophie
+
+Das System ist eine Webanwendung für das Verwalten und Planen von Mitarbeitern und Projekten. Die Webanwendung kann bloß aus dem Intranet benutzt werden und erfordert ein Login. Es wird maximal von 50 Benutern gleichzeitig genutzt, jedoch ist dies realistisch gesehen nicht zu erwarten. In der Realität werden es vermutlich nicht mehr als 7 Benutzer gleichzeitig sein. Der Zugriff erfolgt über Computer über die keine Spezifiktationen bekannt sind.
+
+Da mit dem System geplant werden soll, ist die Datenkorrektheit und -integretät wichtig, sowie eine hohe Verfügbarkeit. Die Auslieferung bzw. die Benutzung erfolgt über GitHub und Docker. Es gibt kein Altsystem mit dem das neue Synchrönisiert werden soll. Personenbezogene Daten müssen im einklang mit der DSGVO behandelt werden, ebenso soll die Webanwendung grundlegende Sicherheitskonzepte erfüllen. 
+
+Als Vorraussetzung ist eine schnelle und simple Navigation bzw. Anlegung von Projekten bzw. Benutzern erforderlich. 
+Da in der gegebenen Zeit nicht klar ist, ob das System in den geforderten Umfang realisierbar ist, soll es erweiterbar sein. Außerdem soll es rudimentär Wartbar sein
 //Hinweise: Beschreiben Sie die Philosophie der Architektur, d.h. den zentralen Ansatz für ihre Architektur. Identifizieren Sie alle Aspekte, die die Philosophie beeinflussen, z.B. komplexe Auslieferung Aspekte, Anpassung von Altsystemen oder besondere Geschwindigkeitsanforderungen. Muss es besonders robust sein, um eine langfristige Wartung und Pflege zu ermöglichen?
 
 //Formulieren Sie eine Reihe von Zielen, die die Architektur in ihrer Struktur und ihrem Verhalten erfüllen muss. Identifizieren Sie kritische Fragen, die von der Architektur adressiert werden müssen, z.B. besondere Hardware-Abhängigkeiten, die vom Rest des Systems isoliert werden sollten oder Sicherstellung der Funktionsfähigkeit unter besonderen Bedingungen (z.B. Offline-Nutzung).
 
 
 == Annahmen und Abhängigkeiten
+
+[.underline]#Annahmen:#
+
+* Die Benutzer Verfügen über einen stabilen Intranetzugang mit ausreichender Bandbreite.
+
+* Der Browser unterützt HTML5-fähigen Browser
+
+* Zur Benutzung wird ein Login u.a. mit einer Emailadresse benötigt.
+
+* Die genutzten Frameworks funktionieren nahezu fehlerfrei und werden in Zukunft gepflegt.
+
+[.underline]#Abhängigkeiten:#
+
+* Die Webanwendung ist von dem selbstgehosteten Server abhängig.
+
+* Die Benutzten Frameworks funktionieren ohne Bugs u.ä.
+
+//Ist framework hier überhaupt richtig?
+
 //[List the assumptions and dependencies that drive architectural decisions. This could include sensitive or critical areas, dependencies on legacy interfaces, the skill and experience of the team, the availability of important resources, and so forth]
 
 == Architektur-relevante Anforderungen
@@ -28,9 +54,13 @@ Dieses Dokument beschreibt die Philosophie, Entscheidungen, Nebenbedingungen, Be
 == Entscheidungen, Nebenbedingungen und Begründungen
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
-. Entscheidung oder Einschränkung oder Begründung 1
 
-. Entscheidung oder Einschränkung oder Begründung 2
+//Niklas hat davon mehr als Ahnung
+* Wir benutzen eine relationales Datenbankmodel, da sich unsere Datenobjekte dafür anbieten.
+
+*
+
+* Wir nutzen ein ORM, um die Verbindung zwischen relationalen Daten in unserer Datenbank und objektorientierten Daten in unserem Programm zu verbinden.
 
 
 == Architekturmechanismen
@@ -41,13 +71,20 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 
 //Beschreiben Sie den Zweck, Eigenschaften und Funktion der Architekturmechanismen.
 
-. Architekturmechanismus 1
+1. Es wurde vorgegeben, dass die Daten persistent gespeichert (SWFA-1) werden sollen und jeder Nutzer zugriff auf alle hat (SWFA-2). Daher braucht es einen zeitgleichen Zugriff auf Daten. Dies ist möglich mit SQL-Datenbanken, wofür wir auch das Verständnis haben. 
+//konkrete Implementierung??? zb mit server und docker??
 
-. Architekturmechanismus 2
+2. Jeder Mitarbeiter sollte einen eigenen Account besitzen mit dem er die Daten bearbeiten kann. Daher brauchte es eine Anmeldung. Dies ging am einfachsten mit einem klassischen Login mit Email und Passwort.
 
 
 == Wesentliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
+* User: Die Datenbanktabelle beinhalt die Informationen über jeden Benutzer, wie    z.B. Emailadresse und vollständigen Namen
+
+* Status: enthält alle Informationen zu den Stati, z.B. welcher Mitarbeiter welchen konkreten Projekten zugeordnet ist.
+
+* Projekt: enthält konkrete Informationen zu den Projekten, z.B. Name, Erstelldatum, Benutzer
+//ist status und projekt richtig?
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
