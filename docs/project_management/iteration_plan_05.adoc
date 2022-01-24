@@ -89,3 +89,5 @@ Bezogen auf die Bewertungskriterien war die Iteration erfolgreich. Die Ergebniss
 
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+image::5.Itaration.jpg[]

@@ -92,3 +92,5 @@ Alle präsentiereten Ergebnisse haben sowohl bei den Teammitgliedern als auch be
 
 //* Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+image::2.Itaration.jpg[]
