@@ -2,6 +2,7 @@
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -26,7 +27,7 @@ Es folgt eine priorisierte Liste der Use-Cases:
 
 == Use Case Diagramm
 // ...
-image::images/ressourcenplanung.jpg[]
+image::Ressourcenplanung.jpg[]
 
 //Fügen Sie nachfolgend alle detailierten Use-Cases per Include ein.
 //Dafür sollten Sie pro Use-Case eine Datei anlegen, die auf dem use_case_01.inc.adoc Template basiert.
