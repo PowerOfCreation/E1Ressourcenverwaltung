@@ -1,7 +1,8 @@
-= Iteration Plan 01: {E1_Ressourcenverwaltung}
+= Iteration Plan 02: {E1_Ressourcenverwaltung}
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -13,8 +14,8 @@ include::../_includes/default-attributes.inc.adoc[]
 | Meilenstein
 | Datum
 
-| Beginn der Iteration | 06.12.21
-| Ende der Iteration | 12.12.21
+| Beginn der Iteration | 13.12.21
+| Ende der Iteration | 19.12.21
 |===
 
 
@@ -22,81 +23,66 @@ include::../_includes/default-attributes.inc.adoc[]
 //Nennen Sie 1-5 wesentliche Ziele für die Iteration.
 
 
-* Wissen über Docker aneignen  
-* mit der Erarbeitung einer Vision beginnen 
-* use cases anhand von Steakholdern ableiten 
-* Informationen zur Risikoanalyse sammeln 
-* Server bei der HTW beantragen 
-* Notizen aufbereiten 
+* erstes Mockup erstellen 
+* use cases weiter ausarbeiten 
+* Vision fortführen 
+* Risikoanalyse erarbeiten 
 
 == Aufgabenzuordnung
 //Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
 
-//Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (hier Verweis einfügen).
+Die in dieser Iteration geplanten Aufgaben sind in der Work Items List dargestellt (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/projects/1). 
 
-Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
+_alternativ:_ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 [%header, cols="3,1,1,1,2,1,1,1,1"]
 |===
 | Aufgabe bzw. Beschreibung | Priorität |Schätzung der Größe (T-Shirt-Größen) |Status | Referenzen |geplante Iteration | Zugewiesen (Name) | Gearbeite Stunden | Schätzung der verbleibenden Stunden
 
-| Wissen über Docker aneignen  | 2 | S | erledigt |  | 2 | Niklas | 1,25 | x
+| Mockup erstellen [#1] | 1 | M | muss nochmal überarbeitet werden |  | 3 | Nick, Alexandra | 4 | 3
 
-| mit der Erarbeitung einer Vision beginnen  | 1 | M | erledigt |  | 2 | Nick, Justus | 1,5 | 2
+|use cases weiter ausarbeiten | 2 | M | in Arbeit  | x | 3 | Vitali, Jonas | 2 | 2
 
-| use cases anhand von Steakholdern ableiten  | 1 | M | erledigt |  | 2 | Jonas | 0,5 | 1
+|Risikoanalyse erarbeiten  | 2 | M | erledigt | x | 3 | Carl, Niklas | 1,5 | 1
 
-| Informationen zur Risikoanalyse sammeln | 1 | M | erledigt |  | 2 | Carl | 0,5 | x
-
-| Server bei der HTW beantragen  | 2 | S | erledigt |  | 2 | Vitali | 0,3 | x
-
-| Notizen aufbereiten  | 2 | S | erledigt |  | 2 | Alexandra | 1,25 | x
+|Vision fortführen   | 2 | M | muss noch verbessert werden | x | 3 | Justus, Helena | 1,5 | 1
 |===
 
 
-//// 
-== Probleme (optional)
-//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
 
-[%header, cols="2,1,3"]
-|===
-| Problem | Status | Notizen
-| x | x | x
-|===
-//// 
 
 == Bewertungskriterien
-//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen. 
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen
 
-* 90% der vorgenommenen Aufgaben wurden erfüllt
-* gemeinsame Inspektion der Iterations-Ergebnisses 
-* Kritiken und Änderungsvorschläge wurden zeitnah umgestzt 
-* Probleme werden besprochen und es wird gemeinsam nach einer Lösung gesucht
+* alle angefertigten Dokumente erfüllen die Anforderungen laut open UP 
+* Gemeinsame Inspektion des Iterations-Ergebnisses (Inkrement) ergibt positive Rückmeldung.
+* positives Feedback des Themenstellers auf gezeigte Ergebnisse 
+
 
 == Assessment
 //In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
 
 [%header, cols="1,3"]
 |===
-| Assessment Ziel | gesamte Iteration 
-| Assessment Datum | 13.12.21
-| Teilnehmer | alle Teammitglieder außer Carl 
-| Projektstatus	| Grün
+| Assessment Ziel | Erfüllung der gesamten Iteration 
+| Assessment Datum | 20.12.21
+| Teilnehmer | alle Teammitglieder 
+| Projektstatus	| gelb 
 |===
 
-** Beurteilung im Vergleich zu den Zielen: 
-
+* Beurteilung im Vergleich zu den Zielen:
 //Dokumentieren Sie, ob die angestrebten Ziele des Iterationsplans erreicht wurden.
-Alle Ziele der Interation wurden errreicht. 
+Die gesetzten Ziele wurden erfüllt. Bei der gemeinsamen Begutachtung der Ergebnisse wurden aber noch Mengel oder Änderungswünsche festgestellt. 
 
 * Geplante vs. erledigte Aufgaben:
-
 //Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
-Alle Aufgaben die geplant wurden, wurden auch erledigt. 
+Alle geplanten Aufgaben wurden auch erledigt. 
 
 * Beurteilung im Vergleich zu den Bewertungskriterien:
 //Document whether you met the evaluation criteria as specified in the Iteration Plan.
 //Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
-Alle Ergebnise wurden in der Gruppe bessprochen und Verbesserungsvorschläge unterbreitet, welche gemeinsam diskutiert wurden. 
+Alle präsentiereten Ergebnisse haben sowohl bei den Teammitgliedern als auch beim Themensteller ein positives Feedback erhalten. Es sind lediglich kleine Änderungen zu berücksichtigen.  
 
 //* Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+image::3.Iteration.jpg[]

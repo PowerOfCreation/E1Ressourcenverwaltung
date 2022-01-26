@@ -3,6 +3,7 @@ Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Just
 
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
+:imagesdir: images
 // Platzhalter für weitere Dokumenten-Attribute
 
 
@@ -60,7 +61,7 @@ Die in dieser Iteration geplanten Aufgaben sind durch Issues in Projekt 5 in Git
 * gemeinsame Inspektion der Iterations-Ergebnisses 
 * Technische Präsentation / Demo erhält Rückmeldungen
 * Kritiken und Änderungsvorschläge wurden zeitnah umgestzt 
-* Probleme werden besprochen und es wird gemeinsam nach einer Lösung gesucht.
+* Probleme werden besprochen und es wird gemeinsam nach einer Lösung gesucht
 
 
 == Assessment
@@ -90,4 +91,4 @@ Bezogen auf die Bewertungskriterien war die Iteration erfolgreich. Die Ergebniss
 * Andere Belange und Abweichungen
 //Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
 
-image::5.Itaration.jpg[]
+image::5.Iteration.jpg[]

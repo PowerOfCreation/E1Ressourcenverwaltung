@@ -7,7 +7,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Allgemeine Informationen
-// ...
+In diesem Dokument werden alle Use Cases beschrieben, die für dieses System relevant sind. 
 
 == Identifizierte Use Cases
 // Liste aller identifizierten Use Cases (priorisiert)
