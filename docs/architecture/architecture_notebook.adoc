@@ -32,7 +32,7 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 
 * Die Benutzer verfügen über einen stabilen Intranetzugang mit ausreichender Bandbreite.
 
-* Der Browser unterstützt HTML5-fähigen Browser
+* Der Browser unterstützt HTML5-fähigen Browser und Javascript ist aktiviert.
 
 * Zur Benutzung wird ein Login unter anderem mit einer E-Mail-Adresse benötigt.
 
@@ -71,18 +71,15 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
 
-//NIKLAS HAT DAVON MEHR AHNUNG (FF.)
-* Auf dem genutzten Server wurde ein Docker installiert. Dies hat den Grund, dass die erstellte Anwendung universell angewendet werden kann.
+* Zur Bereitstellung der Anwendung wird Docker benutzt. Somit kann die Anwendung ohne manuelle Installation von Abhängigkeiten schnell deployed werden. Docker ist ein gängiger Industriestandard und der Einsatz von Docker wurde vom Kunden gewünscht.
 
-* Wir benutzen eine relationales Datenbankmodell (MariaDB auf dem Server installiert), da sich unsere Datenobjekte dafür anbieten.
-
-* Wir nutzen ein ORM, um die Verbindung zwischen relationalen Daten in unserer Datenbank und objektorientierten Daten in unserem Programm zu verbinden.
-
-* Um die Daten und Aktionen von dem Benutzer auf der Webseite in die Datenbank zu übertragen wird PHP genutzt. PHP ist einfach zu benutzen und kostenlos. 
+* Wir benutzen eine relationales Datenbankmodell (MariaDB auf dem Server installiert), da sich unsere Datenstruktur dafür anbieten und unsere Entwickler bereits Erfahrung mit relationalen Datenbankmodellen haben.
 
 *Als Server nutzen wir einen Apache HTTP Server, da dieser einer der meistbenutzten Webserver im Internet ist. Und unser Team bereits Erfahrung mit der Nutzung hatte.
 
+* Um die Daten und Aktionen von dem Benutzer auf der Webseite in die Datenbank zu übertragen wird PHP genutzt. PHP ist kostenlos, weit verbreitet und es sind viele Hilfestellungen und Foreneinträge dazu zu finden. Außerdem habe unsere Entwickler bereits Vorkenntnisse mit PHP.
 
+* In Betracht gezogen wurde das Python Framework Django, da es ebenfalls sehr populär ist und sich für Webanwendungen eignet. Es wurde sich dagegen entschieden, da im Team keine Vorkenntnisse mit diesem Framework bestehen und das Risiko bei Nutzung eines komplett unbekannten Frameworks zu hoch ist. 
 
 == Architekturmechanismen
 https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
@@ -100,12 +97,11 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 
 == Wesentliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
-* User: Die Datenbanktabelle beinhaltet die Informationen über jeden Benutzer, wie zum Beispiel E-Mail-Adresse und vollständigen Namen
+* User: Die Datenbanktabelle beinhaltet die Informationen über jeden Benutzer, wie zum Beispiel E-Mail-Adresse und vollständigen Namen.
 
-* Status: enthält alle Informationen zu den Stati, zum Beispiel welcher Mitarbeiter welchen konkreten Projekten zugeordnet ist.
+* Status: Enthält alle Informationen zu den Stati, zum Beispiel welche Projekte ein User an einem Tag hat.
 
-* Projekt: enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Erstelldatum, Benutzer
-//ist status und projekt richtig?
+* Projekt: Enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Benutzer und eine Farbe. Für Urlaub/Krankheit wird jeweils ein Projekt angelegt, um dies auch als Status realisiere zu können.
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
