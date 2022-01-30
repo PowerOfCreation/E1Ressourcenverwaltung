@@ -116,7 +116,7 @@ Folgende Sichten werden empfohlen:
 
 Unsere logische Sicht beinhaltet die Ebenen, auf denen die Daten bearbeitet werden. Unsere Datenobjekte befinden sich im Hintergrund auf der Maria DB. Mittels PHP können sie an den Apache Server übertragen werden. Dabei vereinfacht der Docker die Bereitstellung der Anwendungen.
 
-image::Diagramm.png[]
+//image::Diagramm.png[]
 
 
 === Physische Sicht (Betriebssicht)

@@ -1,9 +1,9 @@
 // --- 1. Projektthema -------------------------
 = SE I - Belegabgabe: {project-name}
 // --- 2. Teammitglieder -----------------------
-Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>; Vorname Nachname <s00000@htw-dresden.de>
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 // --- 3. Abgabedatum --------------------------
-01. Januar 2020
+31. Januar 2020
 // ---------------------------------------------
 :docs: ../docs
 include::{docs}/_includes/default-attributes.inc.adoc[]
@@ -47,7 +47,7 @@ include::{docs}/_includes/default-attributes.inc.adoc[]
 :imagesdir: {docs-requirements}/images
 
 // Vision
-include::{docs-requirements}/Vision.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-requirements}/vision.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Use Case Model (inkludiert selbst die einzelnen usecase_spec_x.adoc Dateien)
 include::{docs-requirements}/use-case_model.adoc[lines=1..1;4..-1,leveloffset=+1]
@@ -78,7 +78,9 @@ include::{docs-project-management}/project_plan.adoc[lines=1..1;4..-1,leveloffse
 include::{docs-project-management}/risk_list.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 1
-include::{docs-project-management}/iteration_plan_01.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/iteration_plan_03.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::{docs-project-management}/iteration_plan_05.adoc[lines=1..1;4..-1,leveloffset=+1]
 <<<
 // Iteration 2
 //include::{docs-project-management}/iteration_plan_02.adoc[lines=1..1;4..-1,leveloffset=+1]
