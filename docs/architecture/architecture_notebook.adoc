@@ -99,7 +99,7 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 
 * Status: Enthält alle Informationen zu den Stati, zum Beispiel welche Projekte ein User an einem Tag hat.
 
-* Projekt: Enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Benutzer und eine Farbe. Für Urlaub/Krankheit wird jeweils ein Projekt angelegt, um dies auch als Status realisiere zu können.
+* Projekt: Enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Benutzer und eine Farbe. Für Urlaub/Krankheit wird jeweils ein Projekt angelegt, um dies auch als Status realisieren zu können.
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
