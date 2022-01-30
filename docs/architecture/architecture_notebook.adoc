@@ -72,11 +72,14 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 
 
 //NIKLAS HAT DAVON MEHR AHNUNG (FF.)
-* Wir benutzen eine relationales Datenbankmodell, da sich unsere Datenobjekte dafür anbieten.
+* Auf dem genutzten Server wurde ein Docker installiert. Dies hat den Grund, dass die erstellte Anwendung universell angewendet werden kann.
 
-*
+* Wir benutzen eine relationales Datenbankmodell (MariaDB auf dem Server installiert), da sich unsere Datenobjekte dafür anbieten.
 
 * Wir nutzen ein ORM, um die Verbindung zwischen relationalen Daten in unserer Datenbank und objektorientierten Daten in unserem Programm zu verbinden.
+
+* Um die Daten und Aktionen von dem Benutzer auf der Webseite in die Datenbank zu übertragen wird PHP genutzt. PHP ist einfach zu benutzen und kostenlos. 
+
 
 
 == Architekturmechanismen
@@ -88,7 +91,7 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 //Beschreiben Sie den Zweck, Eigenschaften und Funktion der Architekturmechanismen.
 
 1. Es wurde vorgegeben, dass die Daten persistent gespeichert (SWFA-1) werden sollen und jeder Nutzer Zugriff auf alle hat (SWFA-2). Daher braucht es einen zeitgleichen Zugriff auf Daten. Dies ist möglich mit SQL-Datenbanken, wofür wir auch das Verständnis haben. 
-//konkrete Implementierung??? zb mit server und docker??
+
 
 2. Jeder Mitarbeiter sollte einen eigenen Account besitzen, mit dem er die Daten bearbeiten kann. Daher brauchte es eine Anmeldung. Dies ging am einfachsten mit einem klassischen Login mit E-Mail und Passwort.
 
@@ -117,5 +120,12 @@ Folgende Sichten werden empfohlen:
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
+* Server-Client
+
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
+* Use-Case UC01: Kalender einsehen
+* Use-Case UC02: Benutzerstatus ändern
+* Use-Case UC02: Benutzer erstellen und editieren
+* Use-Case UC04: Projekteverwaltung
+* Use-Case UC05: Feiertage importieren und/oder händisch anlegen
