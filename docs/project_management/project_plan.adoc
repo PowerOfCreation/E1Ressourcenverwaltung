@@ -1,6 +1,5 @@
 = Projektplan: E1_Ressourcenverwaltung
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
-
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -84,6 +83,13 @@ Die Bewetung der Iterationen erfolgt in der Gruppe.
 * Unklare Strukturen der Softwäre werden aufgedeckt und es wird ein Gerüst für die Software geschaffen. 
 | 17.01.22 - 23.01.22
 | - 
+
+| I8
+|
+* Test Cases werden beschreiben und letzte Verbesserungen an den Dokumenten werden durchgeführt. 
+* Das Risiko von Unklarheiten in der Projektstruktur wird minimiert und es wird eine Basis für die Weiterarbeit im nächsten Semester geschaffen.  
+| 24.01.22 - 30.01.22
+| - 
 |===
 
 == Deployment
@@ -92,3 +98,6 @@ Die Übergabe der Software an den Auftraggeber erfolgt über GitHub.
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+Bei den ersten paar Teammeetings wurden alle Ergenisse der Iteration ausführlich diskutiert und zusammen verbessert. Dadurch gingen die Meetings meist länger als eine Stunde, was die Arbeitsmoral schmälerte. Um in diesem Punkt mehr Effizienz zu erzielen, wurden dann nur noch Verbesserungsvorschläge unterbreitet und die verantwortliche Person hat die Änderungen selbstständig ausgeführt. 
+
+Zu Beginn des Projektes wurden Aufgaben in den Meetings zugewiesen und die Verantwortlichkeit dann im Meetingprotokoll dokumentiert. Das stellte sich als unüberlichtlich heraus und benachteiligte Personen, die nicht am Meeting teilnehmen konnten. Um diesen Ablauf zu verbessern, sind wir nach zwei Wochen dazu übergegangen die anstehenden Aufgaben über GitHub Issues zu organisieren, was auch den Vorteil hat, dass sich jeder seine Aufgabe selbst ausuchen kann. 
