@@ -1,4 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+:imagesdir: images
 == Use-Case UC01: Kalender einsehen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -13,6 +14,10 @@ Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Ges
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
 Benutzer is angemeldet
 
+Es folgt ein Bild wie der Benutzer den Login sehen könnte. 
+
+image::Login.jpg[]
+
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
@@ -21,6 +26,11 @@ Benutzer is angemeldet
 .. Eingaben aus der letzten Woche können durch einen Klick auf "Vorwoche übernehmen" in die aktuelle Woche übernommen werden
 . Durch Kalenderwochen kann durch Klicks auf linken oder rechten Pfeil navigiert werden
 . Der Use Case ist abgeschlossen.
+
+
+=== zugehöriger Wireframe 
+
+image::Wochenansicht.jpg[] 
 
 //=== Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf

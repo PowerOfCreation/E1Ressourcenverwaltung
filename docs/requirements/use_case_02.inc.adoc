@@ -1,4 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+:imagesdir: images
 == Use-Case UC02: Benutzerstatus ändern
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -17,14 +18,12 @@ Benutzer is angemeldet
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
 . Der Use Case beginnt, wenn Benutzer im System eingeloggt ist
-. Benutzer klickt auf sein Profil
-//eher auf den passenden Tag im Kalender in seiner Zeile 
+. Benutzer klickt auf auf den passenden Tag in der Kalenderansicht in seiner Zeile 
 . Es öffnet sich ein Dropdown-Menü
-. Im Dropdown-Menü klickt der Benutzer auf den Knopf "Status" 
-//es gibt keinen Knopf Status
 . Benutzer klickt auf den passenden Status
 . Der Status wird automatisch gespeichert
 . Der Use Case ist abgeschlossen.
+
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf

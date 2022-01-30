@@ -1,4 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+:imagesdir: images
 == Use-Case UC02: Benutzer erstellen und editieren
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -24,6 +25,18 @@ Benutzer is angemeldet
 .. Benutzer wählt aus der Liste eine Abteilung aus
 . Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen"
 . Der Use Case ist abgeschlossen
+
+=== zugehörige Wireframes 
+
+Auf diesem Bild ist die Benutzeroberfläche für eine Mitarbeitererstellung zu sehen.
+
+image::Mitarbeitererstellung.jpg[]
+ 
+Das nächste Bild zeigt das Profil eines Benutzers, indem Einstellungen geändert werden können. 
+
+image::Mitarbeiteransicht.jpg[]
+
+
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf

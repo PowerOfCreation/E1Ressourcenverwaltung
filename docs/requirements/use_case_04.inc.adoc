@@ -1,4 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+:imagesdir: images
 == Use-Case UC04: Projekteverwaltung
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -27,6 +28,16 @@ Benutzer ist angemeldet
 .. Im rechten Fenster werden die zuzuweisenden Benutzer angeklickt
 .. Im Anschluss wird auf den Button "Zuweisen" geklickt
 . Der Use Case ist abgeschlossen
+
+=== zugehörige Wireframes 
+
+Dieses Bild zeigt die Benutzeroberfläche in der Projekte erstellt werden können.  
+
+image::Projekterstellung.jpg[]
+
+Auf dem nächsten Bild ist zusehen, wie ein Benutzer Projekte verwalten kann. 
+
+image::Projektverwaltung.jpg[]
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf

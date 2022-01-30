@@ -1,4 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+:imagesdir: images
 == Use-Case UC05: Feiertage importieren und/oder händisch anlegen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
@@ -27,6 +28,12 @@ Benutzer ist angemeldet
 . Durch Klicken auf einzelne Tage kann ein Feiertag gelöscht oder erneut hinzugefügt werden
 . Übernommene Feiertage werden durch Klicken auf den Knopf "Feiertage speichern" gespeichert und in das Kalender übertragen
 . Der Use Case ist abgeschlossen
+
+=== zugehörige Wireframes 
+
+Auf diesem Bild ist dargestellt, wie die Oberfläche für die Importierung von Feiertagen für einen Benutzer aussehen kann. 
+
+image::Feiertagsimportierung.jpg[]
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf

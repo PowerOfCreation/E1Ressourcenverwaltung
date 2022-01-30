@@ -1,6 +1,5 @@
 = Iteration Plan 05: E1_Ressourcenverwaltung
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
-
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 :imagesdir: images
@@ -42,15 +41,6 @@ Die in dieser Iteration geplanten Aufgaben sind durch Issues in Projekt 5 in Git
 //| x | x | x | x | x | x | x | x | x
 //|===
 
-
-== Probleme (optional)
-//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
-
-[%header, cols="2,1,3"]
-|===
-| Problem | Status | Notizen
-| x | x | x
-|===
 
 
 == Bewertungskriterien
