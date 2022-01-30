@@ -1,5 +1,5 @@
 // Meta
-:project-name: <E1 Ressourcenverwaltung>
+:project-name: <Ressourcenverwaltung E01>
 // Settings:
 :toc:
 :toc-title: Inhaltsverzeichnis
