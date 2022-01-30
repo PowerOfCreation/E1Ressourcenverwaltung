@@ -75,7 +75,7 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 
 * Wir benutzen eine relationales Datenbankmodell (MariaDB auf dem Server installiert), da sich unsere Datenstruktur dafür anbieten und unsere Entwickler bereits Erfahrung mit relationalen Datenbankmodellen haben.
 
-*Als Server nutzen wir einen Apache HTTP Server, da dieser einer der meistbenutzten Webserver im Internet ist. Und unser Team bereits Erfahrung mit der Nutzung hatte.
+* Als Server nutzen wir einen Apache HTTP Server, da dieser einer der meistbenutzten Webserver im Internet ist. Und unser Team bereits Erfahrung mit der Nutzung hatte.
 
 * Um die Daten und Aktionen von dem Benutzer auf der Webseite in die Datenbank zu übertragen wird PHP genutzt. PHP ist kostenlos, weit verbreitet und es sind viele Hilfestellungen und Foreneinträge dazu zu finden. Außerdem habe unsere Entwickler bereits Vorkenntnisse mit PHP.
 
