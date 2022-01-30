@@ -32,7 +32,7 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 
 * Die Benutzer verfügen über einen stabilen Intranetzugang mit ausreichender Bandbreite.
 
-* Der Browser unterstützt HTML5-fähigen Browser und Javascript ist aktiviert.
+* Der Browser ist HTML5-fähig und Javascript ist aktiviert.
 
 * Zur Benutzung wird ein Login unter anderem mit einer E-Mail-Adresse benötigt.
 
