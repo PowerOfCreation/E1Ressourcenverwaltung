@@ -2,7 +2,7 @@
 == Use-Case UC04: Projekteverwaltung
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Die Projektverwaltung soll in das Sytem integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
+Die Projektverwaltung soll in das System integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
@@ -11,7 +11,7 @@ Die Projektverwaltung soll in das Sytem integriert werden, sodass man Projekte e
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer ist angemeldet
+Benutzer ist angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
@@ -21,16 +21,16 @@ Benutzer ist angemeldet
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn ein Benutzer auf den Knopf "Projektverwaltung" gedrückt hat
+. Der Use Case beginnt, wenn ein Benutzer die Projektverwaltung geöffnet hat.
 . WHILE Benutzer nicht zugewiesen
-.. Das Projekt wird ausgewählt
-.. Im rechten Fenster werden die zuzuweisenden Benutzer angeklickt
-.. Im Anschluss wird auf den Button "Zuweisen" geklickt
-. Der Use Case ist abgeschlossen
+.. Das Projekt wird ausgewählt.
+.. Die zuzuweisenden Benutzer werden selektiert.
+.. Im Anschluss wird die Auswahl bestätigt.
+. Der Use Case ist abgeschlossen.
 
 === zugehörige Wireframes 
 
-Dieses Bild zeigt die Benutzeroberfläche in der Projekte erstellt werden können.  
+Dieses Bild zeigt die Benutzeroberfläche, in der Projekte erstellt werden können.  
 
 image::Projekterstellung.jpg[]
 
@@ -48,19 +48,19 @@ Wenn Benutzer im Schritt 2a. des Standardablaufs ein Projekt bearbeitet, dann
 . der Use Case wird bei dem Schritt 2c des Standardablaufs fortgesetzt
 
 ==== Alternativer Ablauf 2: Projekt erstellen
-Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt verwaltet, dann
+Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt verwaltet, dann
 
-. kann ein neues Projekt, durch Klicken auf den Button "Projekt erstellen", erstellt werden
+. kann auch die Erstellung eines neuen Projektes initiiert werden.
 . WHILE Projekt ist nicht erstellt
-.. Müssen alle Felder ausgefüllt werden
-.. Es wird auf den Button "Projekt erstellen" geklickt
+.. Projektinformationen wie Name oder Verantwortlicher müssen ausgefüllt werden.
+.. Projekterstellung wird bestätigt.
 . Der Use Case wird im Schritt 2 fortgesetzt.
 
 ==== Alternativer Ablauf 3: Projekt löschen
-Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt löschen will, dann
-. Müssen die zu löschenden Projekte durch das Setzen eines Häckchens ausgewählt werden
-. Es wird auf den Button "Projekt Löschen" geklickt
-.. Es erscheint ein Fenster, wo das Löschen des Projektes bestätigt werden soll
+Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
+. müssen die zu löschenden Projekte ausgewählt werden.
+. Es wird der Löschvorgang gestartet.
+.. Das Löschen muss bestätigt werden.
 . Der Use Case wird im Schritt 3 fortgesetzt.
 
 
@@ -86,13 +86,13 @@ Wenn Benutzer im Schritt 1 des Standardablauf ein Projekt löschen will, dann
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== Nachbedingung 1
-Das Projekt wurde erstellt
+Das Projekt wurde erstellt.
 
 ==== Nachbedingung 2
-Ein odere mehrere Benutzer wurden einem Projekt zugewiesen und/oder entzogen
+Ein oder mehrere Benutzer wurden einem Projekt zugewiesen und/oder entzogen.
 
 ==== Nachbedingung 3
-Ein überflüssiges Projekt wurde gelöscht
+Ein überflüssiges Projekt wurde gelöscht.
 
 === Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
