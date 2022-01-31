@@ -11,9 +11,9 @@ Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Ges
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer is angemeldet
+Benutzer ist angemeldet.
 
-Es folgt ein Bild wie der Benutzer den Login sehen könnte. 
+Es folgt ein Bild, wie der Benutzer den Login sehen könnte. 
 
 image::Login.jpg[]
 
@@ -22,8 +22,8 @@ image::Login.jpg[]
 
 . Der Use Case beginnt, wenn Benutzer zur Wochenansicht wechselt
 . System zeigt aktuelle Woche
-.. Eingaben aus der letzten Woche können durch einen Klick auf "Vorwoche übernehmen" in die aktuelle Woche übernommen werden
-. Durch Kalenderwochen kann durch Klicks auf linken oder rechten Pfeil navigiert werden
+.. Eingaben aus der letzten Woche können durch einen in die aktuelle Woche übernommen werden
+. Durch die Kalenderwochen kann navigiert werden
 . Der Use Case ist abgeschlossen.
 
 
@@ -49,7 +49,7 @@ image::Wochenansicht.jpg[]
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Planung aus der letzten Woche übernehmen
-. *Sc1:* Ein Benutzer A kann alle Ereignisse aus der letzten Woche durch einen Click in die aktuelle Woche übernehmen. 
+. *Sc1:* Ein Benutzer A kann alle Ereignisse aus der letzten Woche in die aktuelle Woche übernehmen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
