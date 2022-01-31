@@ -49,7 +49,7 @@ image::Wochenansicht.jpg[]
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Planung aus der letzten Woche übernehmen
-. *Sc1:* Ein Benutzer A kann alle Ereignisse aus der letzten Woche durch einen Klick in die aktuelle Woche übernehmen. 
+. *Sc1:* Ein Benutzer A kann alle Ereignisse aus der letzten Woche in die aktuelle Woche übernehmen. 
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
