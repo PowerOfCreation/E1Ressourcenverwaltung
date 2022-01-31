@@ -1,5 +1,5 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use Case UC02: Benutzer erstellen und editieren
+== Use-Case UC03: Benutzer erstellen und editieren
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
 Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Benutzer soll sein eigenes Passwort haben, welches er selber wählen kann. Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Benutzer machen.
