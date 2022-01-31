@@ -10,7 +10,7 @@ Ein Domänenmodell ist die grafische Darstellung von Beziehungen zwischen den En
 
 In diesem konkreten Fall beschreibt das Domänenmodell grafisch die Funktionsweise und die Abhängigkeiten innerhalb der Software für die Ressourcenverwaltung.
 
-Das Ziel ist es zu zeigen, dass Benutzer andere Benutzerkonten anlegen und Projekte erstellen können. Die angelegten Benutzer werden im Kalender angezeigt. Projekte können durch den Status an Benutzer vergeben werden. Darüber hinaus kann der Satus eines Benutzers auch die Abwesendheit dessen signalisieren. Außerdem ist es wichtig, dass Feiertage in den Kalender implementiert werden können. Damit wird mehr Übersichtlichkeit und eine bessere Wochenplanbarkeit garantiert.
+Das Ziel ist es zu zeigen, dass Benutzer andere Benutzerkonten anlegen und Projekte erstellen können. Die angelegten Benutzer werden im Kalender angezeigt. Projekte können durch den Status an Benutzer vergeben werden. Darüber hinaus kann der Status eines Benutzers auch die Abwesenheit dessen signalisieren. Außerdem ist es wichtig, dass Feiertage in den Kalender implementiert werden können. Damit wird mehr Übersichtlichkeit und eine bessere Wochenplanung garantiert.
 
 image::Domain_Model.jpg[]
 

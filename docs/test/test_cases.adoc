@@ -11,27 +11,27 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Test Case 01
 
-* Beim Anlegen eines neuen Benutzer muss das eingegebene Passwort im Backend bzw. im Frontend auf die Mindestlänge verglichen werden.
+* Beim Anlegen eines neuen Benutzers muss das eingegebene Passwort im Backend bzw. im Frontend auf die Mindestlänge verglichen werden.
 * Wenn es zu kurz ist, muss im Frontend eine passende Fehlermeldung ausgegeben werden und darf nicht als Passwort in der Datenbank gespeichert werden. Der Prozess muss wiederholbar sein.
 * Wenn das Passwort lang genug ist, darf der Benutzer mit dem Passwort angelegt werden.
 
 === Test Case 02
 
-* Beim Anlegen eines neuen Benutzer darf der Benutzername noch nicht vergeben sein. Dies muss im Backend verglichen werden. 
+* Beim Anlegen eines neuen Benutzers darf der Benutzername noch nicht vergeben sein. Dies muss im Backend verglichen werden. 
 * Wenn er bereits vergeben ist, muss im Frontend eine passende Fehlermeldung ausgegeben werden und darf nicht als Benutzername in der Datenbank gespeichert werden. Der Prozess muss wiederholbar sein.
 
 * Wenn Benutzername noch nicht vergeben ist, darf der Benutzer mit diesem Benutzernamen angelegt werden.
 
 === Test Case 03
 
-* Beim Anlegen eines neuen Benutzer darf der Benutzername nicht zu kurz sein. Dies muss im Backend verglichen werden. 
+* Beim Anlegen eines neuen Benutzers darf der Benutzername nicht zu kurz sein. Dies muss im Backend verglichen werden. 
 * Wenn es zu kurz ist, muss im Frontend eine passende Fehlermeldung ausgegeben werden und darf nicht als Benutzername in der Datenbank gespeichert werden. Der Prozess muss wiederholbar sein.
 * Wenn Benutzername  nicht zu kurz ist, darf der Benutzer mit diesem Benutzernamen angelegt werden.
 
 === Test Case 04
 
 * Beim Anmelden eines Benutzers darf kein falsches Passwort zu dem Benutzernamen eingegeben werden. Dies muss im Backend verglichen werden. 
-* Wenn die beiden Daten nicht zusammenpassen, muss eine entsprechenden Fehlermeldung ausgeben werden. Der Benutzer darf dann nicht eingeloggt werden. Der Prozess muss wiederholbar sein.
+* Wenn die beiden Daten nicht zusammenpassen, muss eine entsprechende Fehlermeldung ausgegeben werden. Der Benutzer darf dann nicht eingeloggt werden. Der Prozess muss wiederholbar sein.
 * Bei übereinstimmenden Daten, darf der Benutzer angemeldet werden.
 
 === Test Case 05
@@ -46,7 +46,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Test Case 07
 
-* Beim Anlegen eines neuen Benutzer muss jedes Feld ausgefüllt sein. Das Überprüfen muss nach dem drücken des Knopf "Benutzer anlegen" stattfinden. 
+* Beim Anlegen eines neuen Benutzers muss jedes Feld ausgefüllt sein. Das Überprüfen muss nach dem Drücken des Knopf "Benutzer anlegen" stattfinden. 
 * Wenn dies nicht der Fall ist, muss eine Fehlermeldung ausgeben werden und die unvollständigen Daten dürfen nicht an das Backend übermittelt werden. Eventuell werden auch ausgefüllte Felder durch andere Test Cases abgelehnt.
 * Wenn alle Felder ausgefüllt sind, wird kein Fehler ausgegeben. Jedoch kann durch einen anderen Testfall ein Fehler ausgegeben werden.
 

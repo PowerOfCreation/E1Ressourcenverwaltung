@@ -47,9 +47,9 @@ Die in dieser Iteration geplanten Aufgaben sind durch Issues in Projekt 5 in Git
 
 
 * 90% der vorgenommenen Aufgaben wurden erfüllt
-* gemeinsame Inspektion der Iterations-Ergebnisses 
+* gemeinsame Inspektion der Iterations-Ergebnissen 
 * Technische Präsentation / Demo erhält Rückmeldungen
-* Kritiken und Änderungsvorschläge wurden zeitnah umgestzt 
+* Kritikpunkte und Änderungsvorschläge wurden zeitnah umgesetzt 
 * Probleme werden besprochen und es wird gemeinsam nach einer Lösung gesucht
 
 

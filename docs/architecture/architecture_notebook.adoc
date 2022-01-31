@@ -79,7 +79,7 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 
 * Um die Daten und Aktionen von dem Benutzer auf der Webseite in die Datenbank zu übertragen wird PHP genutzt. PHP ist kostenlos, weit verbreitet und es sind viele Hilfestellungen und Foreneinträge dazu zu finden. Außerdem habe unsere Entwickler bereits Vorkenntnisse mit PHP.
 
-* In Betracht gezogen wurde das Python Framework Django, da es ebenfalls sehr populär ist und sich für Webanwendungen eignet. Es wurde sich dagegen entschieden, da im Team keine Vorkenntnisse mit diesem Framework bestehen und das Risiko bei Nutzung eines komplett unbekannten Frameworks zu hoch ist. 
+* In Betracht gezogen wurde das Python-Framework Django, da es ebenfalls sehr populär ist und sich für Webanwendungen eignet. Es wurde sich dagegen entschieden, da im Team keine Vorkenntnisse mit diesem Framework bestehen und das Risiko bei Nutzung eines komplett unbekannten Frameworks zu hoch ist. 
 
 == Architekturmechanismen
 https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
@@ -99,7 +99,7 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
 * User: Die Datenbanktabelle beinhaltet die Informationen über jeden Benutzer, wie zum Beispiel E-Mail-Adresse und vollständigen Namen.
 
-* Status: Enthält alle Informationen zu den Stati, zum Beispiel welche Projekte ein User an einem Tag hat.
+* Status: Enthält alle Informationen zu den Status, zum Beispiel welche Projekte ein User an einem Tag hat.
 
 * Projekt: Enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Benutzer und eine Farbe. Für Urlaub/Krankheit wird jeweils ein Projekt angelegt, um dies auch als Status realisieren zu können.
 
@@ -125,7 +125,7 @@ image::Diagramm.png[]
 * Server-Client
 
 === Use cases
-//Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
+//Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten.
 * Use-Case UC01: Kalender einsehen
 * Use-Case UC02: Benutzerstatus ändern
 * Use-Case UC02: Benutzer erstellen und editieren
