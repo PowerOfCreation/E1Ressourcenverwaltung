@@ -47,14 +47,14 @@ Die in dieser Iteration geplanten Aufgaben sind durch Issues in Projekt 5 in Git
 
 
 * 90% der vorgenommenen Aufgaben wurden erfüllt
-* gemeinsame Inspektion der Iterations-Ergebnisses 
+* gemeinsame Inspektion der Iterationsergebnisse 
 * Technische Präsentation / Demo erhält Rückmeldungen
-* Kritiken und Änderungsvorschläge wurden zeitnah umgestzt 
+* Kritikpunkte und Änderungsvorschläge wurden zeitnah umgesetzt 
 * Probleme werden besprochen und es wird gemeinsam nach einer Lösung gesucht
 
 
 == Assessment
-//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommunziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
 
 [%header, cols="1,3"]
 |===
