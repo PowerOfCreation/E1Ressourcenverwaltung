@@ -1,11 +1,16 @@
 = Domain Model: {project-name}
-Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; 
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 
 == Allgemeine Informationen
+Ein Domänenmodell ist die grafische Darstellung von Beziehungen zwischen den Entitäten mit zugehörigen Attributen.
+
+In diesem konkreten Fall beschreibt das Domänenmodell grafisch die Funktionsweise und die Abhängigkeiten innerhalb der Software für die Ressourcenverwaltung.
+
+Das Ziel ist zu zeigen, dass Benutzer andere Benutzerkonten anlegen und Projekte erstellen können. Die angelegten Benutzer werden im Kalender angezeigt. Projekte können an Benutzer pro Tag durch einen Status vergeben werden. Darüber hinaus können Stati anderen Benutzern die Abwesendheit eines anderen Benutzers signalisieren. Außerdem ist es wichtig, dass Feiertage in das Kalender zu implementiert werden. Damit wird Übersichtlichkeit und bessere Wochenplanbarkeit garantiert.
 
 image::Domain_Model.jpg[]
 
