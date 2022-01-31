@@ -2,8 +2,7 @@
 == Use-Case UC02: Benutzerstatus ändern
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Jeder Benutzer soll über die Möglichkeit verfügen, einen Status zu setzen oder ihn zu ändern. Somit kann jeder Benutzer anderen Benutzern zeigen, dass er oder sie sich im Urlaub befindet oder im Falle einer Krankheit am Arbeitsplatz abwesend ist.
-
+Ein Status signalisiert die Verfügbarkeit eines Benutzers. Dadurch wird allen Benutzern angezeigt, ob dieser eine Benutzer an einem bestimmten Tag verfügbar oder abwesend ist. Zudem kann ein Benutzer an einem Tag an einem oder mehreren Projekt arbeiten, diese werden jeweils durch einen anderen Status repräsentiert.
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
