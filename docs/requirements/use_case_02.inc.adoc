@@ -2,7 +2,7 @@
 == Use-Case UC02: Benutzerstatus ändern
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Ein Status signalisiert die Verfügbarkeit eines Benutzers. Dadurch wird allen Benutzern angezeigt, ob dieser eine Benutzer an einem bestimmten Tag verfügbar oder abwesend ist. Zudem kann ein Benutzer an einem Tag an einem oder mehreren Projekt arbeiten, diese werden jeweils durch einen anderen Status repräsentiert.
+Ein Status signalisiert die Verfügbarkeit eines Benutzers. Dadurch wird allen Benutzern angezeigt, ob dieser eine Benutzer an einem bestimmten Tag verfügbar oder abwesend ist. Zudem kann ein Benutzer an einem Tag an einem oder mehreren Projekten arbeiten, diese werden jeweils durch einen anderen Status repräsentiert.
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
@@ -14,10 +14,10 @@ Benutzer ist angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
-
-. Benutzer klickt auf auf den passenden Tag in der Kalenderansicht in seiner Zeile. 
+. Der Use Case beginnt, wenn der Benutzer in der Kalenderansicht ist.
+. Benutzer klickt auf den passenden Tag in der Kalenderansicht in seiner Zeile. 
 . Es öffnet sich ein Auswahl-Menü.
-. Benutzer klickt auf den passenden Status.
+. Benutzer klickt auf das passende Projekt für den Status.
 . Der Status wird automatisch gespeichert.
 . Der Use Case ist abgeschlossen.
 
@@ -25,12 +25,13 @@ Benutzer ist angemeldet.
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Alternativer Ablauf 1
-
-. Benutzer klickt auf sein Profil.
-. Wenn noch kein passender Status angelegt ist, dann
-. Benutzer muss erst neues Projekt anlegen. 
-. Der Use Case wird ab 3. erneut ausgeführt.
-. Der Use Case ist abgeschlossen, wenn der Benutzer den richtigen Status auswälen kann.  
+. Der Use Case beginnt, wenn der Benutzer in der Kalenderansicht ist.
+. Benutzer klickt auf den passenden Tag in der Kalenderansicht in seiner Zeile. 
+. Es öffnet sich ein Auswahl-Menü.
+. WENN noch kein passendes Projekt angelegt ist, dann
+.. Projekterstellung in Use Case 4 beginnen.  
+.. Der Use Case wird als Standardablauf erneut ausgeführt.
+ 
 //Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
 //. <Ablauf beschreiben>
 // Der Use Case wird im Schritt <y> fortgesetzt.
