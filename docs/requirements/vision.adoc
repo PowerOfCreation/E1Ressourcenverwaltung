@@ -7,14 +7,14 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Dieses Dokument soll einen Überblick über die Problemstellung verbunden mit der fachlichen Motivation, über die Stakeholder sowie über die Anfroderungen der angestrebten Lösung geben.
+Dieses Dokument soll einen Überblick über die Problemstellung verbunden mit der fachlichen Motivation, über die Stakeholder sowie über die Anforderungen der angestrebten Lösung geben.
 
 === Zweck 
 Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des Ressourcenverwaltungssystems zu sammeln, zu analysieren und zu definieren. Es ist eine Grundlage für detaillierte technische Anforderungen und soll als Input für die Kommunikation des „Was und Warum“ für das Projekt dienen. Alle späteren Entscheidungen müssen im Einklang mit der aktuellen Vision stehen.
 //Überarbeiten
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystems, das von E1_Ressourcenverwaltung entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personelle Ressourcen besser zu verwalten und das Zeitmanagement zu erleichtern. Damit können allgemein Zeit und Aufwand eingespart sowie suboptimale Belegungen besser erkannt werden.
+Dieses Visions-Dokument bezieht sich auf das Ressourcenverwaltungssystem, welches von E1_Ressourcenverwaltung entwickelt wird. Das System wird es T-Systems Multimedia Solutions GmbH erlauben, personelle Ressourcen besser zu verwalten und das Zeitmanagement zu erleichtern. Damit können allgemein Zeit und Aufwand eingespart, sowie suboptimale Belegungen besser erkannt werden.
 
 === Definitionen, Akronyme und Abkürzungen
 // Verweis passend zum Belegabgabe-Template se1_belegabgabe_t00.adoc
@@ -114,8 +114,8 @@ Beispiel
    * Verfügbarkeit der Anwendung nur im Intranet
    * Anwendung unabhängig vom Betriebssystem des Ziel-Systems(Docker)
    * Nutzung über Computer erforderlich
-   * mobile Nutzbarkeit soll ggf folgen
-   * Nutzung für Personen mit Behinderung erwünscht aber nicht notwendig
+   * mobile Nutzbarkeit soll ggf. folgen
+   * Nutzung für Personen mit Behinderung erwünscht, aber nicht notwendig
    * Synchronität zwischen den einzelnen Benutzern fakultativ 
 //. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
 //   * bisher keine Anwendung im Einsatz
