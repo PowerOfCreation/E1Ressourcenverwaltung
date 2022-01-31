@@ -12,9 +12,9 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
-|Benutzer| alle Menschen, die in einem Arbeitsverhältnis zu T-Systems MMS stehen und zugriff auf dieses System haben | Mitarbeiter 
+|Benutzer| alle Menschen, die in einem Arbeitsverhältnis zu T-Systems MMS stehen und Zugriff auf dieses System haben | Mitarbeiter 
 |einfache Bedienbarkeit | mit wenigen Klicks zur gewünschten Stelle im System kommen|
-|Mitarbeiterstatus | Arbeitszustand eines Mitarbeiters an einem bestimmten Tag, z.B. Projekt 1 oder Urlaub oder Krank ... | Verfügbarkeit  
+|Mitarbeiterstatus | Arbeitszustand eines Mitarbeiters an einem bestimmten Tag, z.B. Projekt 1 oder Urlaub oder Krank ... | Status, Verfügbarkeit  
 |Projekt |Ein Projekt ist ein zielgerichtetes, einmaliges Vorhaben, das aus einem Satz von abgestimmten, gesteuerten Tätigkeiten besteht und durchgeführt werden kann, um unter Berücksichtigung von Vorgaben das gewünschte Ziel zu erreichen  |
 |Docker | Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung.|
 |
@@ -37,7 +37,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 |Bezeichnung|	Definition |	Format | Gültigkeitsregeln | Aliase
-|Benutzerkonto |Zusammensetzung von Benutzername, Vorname, Nachname und Passwort.|String|Emailadresse muss @-Zeichen und Punkt enthalten. Passwort muss min. 8 Zeichen lang sein und min. ein Sonderzeichen besitzen. |Login
+|Benutzerkonto |Zusammensetzung von Benutzername, Vorname, Nachname und Passwort.|String|E-Mailadresse muss @-Zeichen und Punkt enthalten. Passwort muss min. 8 Zeichen lang sein und min. ein Sonderzeichen besitzen. |Login
 |xx|xx|xx|xx|xx|
 |===
 

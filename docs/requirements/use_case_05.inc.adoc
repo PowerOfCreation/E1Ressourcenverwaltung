@@ -2,7 +2,7 @@
 == Use-Case UC05: Feiertage importieren und/oder händisch anlegen
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Es soll eine Funktion geben, Feiertage mittels einer API (https://feiertage-api.de) in das Kalender importieren zu können. Außrdem soll es möglich sein, die Feiertage bundesländerspezifisch importieren zu können. Außerdem soll es eine Funktion geben, Feiertage oder Brückentage händisch anlegen zu können oder diese zu löschen.
+Es soll eine Funktion geben, Feiertage mittels einer API (https://feiertage-api.de) in den Kalender importieren zu können. Außerdem soll es möglich sein, die Feiertage bundesländerspezifisch importieren zu können. Außerdem soll es eine Funktion geben, Feiertage oder Brückentage händisch anlegen zu können oder diese zu löschen.
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
@@ -21,12 +21,12 @@ Benutzer ist angemeldet
 //. 	…
 //. <Standardablauf Schritt n>
 //. Der Use Case ist abgeschlossen.
-. Der Use Case beginnt, wenn ein Benutzer in der Kalendereinsicht auf den Knopf "Feiertage" klickt
-. Im neuen Fenster wir durch Häckchensetzen ausgewählt, aus welchem Bundesland die Feiertage impoertiert werden sollen.
-. Durch das Kicken auf den Knopf "ausgewählte Feiertage impoertieren" werden die Feiertage im Kalenderfenster angezeigt
-. Durch Klicken auf einzelne Tage kann ein Feiertag gelöscht oder erneut hinzugefügt werden
-. Übernommene Feiertage werden durch Klicken auf den Knopf "Feiertage speichern" gespeichert und in das Kalender übertragen
-. Der Use Case ist abgeschlossen
+. Der Use Case beginnt, wenn ein Benutzer in der Kalenderansicht die Feiertagsverwaltung öffnet.
+. Im neuen Fenster kann der Benutzer dann auswählen, aus welchem Bundesland die Feiertage importiert werden sollen.
+. Hat der Benutzer sich für ein Bundesland entschieden, werden die Feiertage im Kalenderfenster angezeigt.
+. Sollten Änderungen an einzelnen Tagen erwünscht sein, kann der Benutzer einen Feiertag auch selbst löschen oder hinzufügen.
+. Übernommene Feiertage werden gespeichert und in den Kalender übertragen.
+. Der Use Case ist damit abgeschlossen.
 
 === zugehörige Wireframes 
 
@@ -37,10 +37,10 @@ image::Feiertagsimportierung.jpg[]
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 
-==== Alternativer Ablauf 1: Abbruch der Impoertierung
+==== Alternativer Ablauf 1: Abbruch der Importierung
 Wenn Benutzer im Schritt 2 des Standardablaufs doch keine Feiertage importieren möchte,
 
-. Kann auf den Knopf "Zurück" geklickt werden und der Benutzer zurück zur Kalendereinsicht weitergeleitet wird
+. kann der Prozess abgebrochen werden und der Benutzer wird zurück zur Kalenderansicht weitergeleitet.
 . Der Use Case wird im Schritt 6 abgeschlossen
 
 
@@ -54,13 +54,13 @@ Wenn Benutzer im Schritt 2 des Standardablaufs doch keine Feiertage importieren 
 
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
-==== Szenario 1: Feiertage impoprtieren
-*Sc1:* Benutzer A möchte für das Jahr alle Feiertage aus Sachsen importieren. Dafür klickt er in der Kalendereinsicht auf den Button "Feiertage". Dort wählt er das Bundesland "Sachsen" und durch Klicken auf den Knopf "ausgewählte Feiertage importieren" lässt er sich alle Feiertage aus Sachsen anzeigen. Da er weiß, dass zwischen Weihnachten und Silvester alle Mitarbeiter Urlaub haben, markiert er diese Tage händisch als Feiertage.
+==== Szenario 1: Feiertage importieren
+*Sc1:* Benutzer A möchte für das Jahr alle Feiertage aus Sachsen importieren. Dafür geht er in die Kalenderansicht und öffnet die Feiertagsverwaltung. Dort wählt er das Bundesland "Sachsen" aus und lässt sich alle Feiertage aus Sachsen anzeigen. Da er weiß, dass zwischen Weihnachten und Silvester alle Mitarbeiter Urlaub haben, markiert er diese Tage händisch als Feiertage.
 
 ===	Nachbedingungen
 //Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
 ==== Nachbedingung 1
-Die Feiertage wurden erfolgreich impoertiert und werden im Kalender angezeigt
+Die Feiertage wurden erfolgreich importiert und werden im Kalender angezeigt.
 
 //=== Besondere Anforderungen
 //Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
