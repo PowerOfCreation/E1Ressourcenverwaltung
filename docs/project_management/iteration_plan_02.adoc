@@ -24,7 +24,7 @@ include::../_includes/default-attributes.inc.adoc[]
 
 * Wissen über Docker aneignen  
 * Erarbeitung einer Vision 
-* Use-Cases anhand von Stakeholdern ableiten 
+* Use Cases anhand von Stakeholdern ableiten 
 * Informationen zur Risikoanalyse sammeln 
 * Server bei der HTW beantragen 
 * Notizen aufbereiten 
@@ -43,7 +43,7 @@ Die folgenden Aufgaben werden in dieser Iteration bearbeitet:
 
 | mit der Erarbeitung einer Vision beginnen  | 1 | M | erledigt |  | 2 | Nick, Justus | 1,5 | 2
 
-| Use-Cases anhand von Stakeholdern ableiten  | 1 | M | erledigt |  | 2 | Jonas | 0,5 | 1
+| Use Cases anhand von Stakeholdern ableiten  | 1 | M | erledigt |  | 2 | Jonas | 0,5 | 1
 
 | Informationen zur Risikoanalyse sammeln | 1 | M | erledigt |  | 2 | Carl | 0,5 | x
 
