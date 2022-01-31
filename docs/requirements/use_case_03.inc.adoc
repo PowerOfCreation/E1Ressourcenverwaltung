@@ -10,20 +10,20 @@ Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Ges
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer ist angemeldet
+Benutzer ist angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Benutzer auf den Knopf "Benutzer hinzufügen" klickt
-. WHILE Benutzer ist nicht erstellt
-.. Benutzer gibt Benutzernamen ein
-.. Benutzer gibt Name und Vorname ein
-.. Benutzer gibt Passwort ein
-... Benutzer gibt erneut das Passwort ein
-.. Benutzer wählt aus der Liste eine Abteilung aus
-. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen"
-. Der Use Case ist abgeschlossen
+. Der Use Case beginnt, wenn Benutzer auf den Knopf "Benutzer hinzufügen" klickt.
+. WHILE Benutzer ist nicht erstellt.
+.. Benutzer gibt Benutzernamen ein.
+.. Benutzer gibt Name und Vorname ein.
+.. Benutzer gibt Passwort ein.
+... Benutzer gibt erneut das Passwort ein.
+.. Benutzer wählt aus der Liste eine Abteilung aus.
+. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen".
+. Der Use Case ist abgeschlossen.
 
 === zugehörige Wireframes 
 
@@ -41,8 +41,8 @@ image::Mitarbeiteransicht.jpg[]
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Alternativer Ablauf 1
 Wenn Benutzer im Schritt 2c des Standardablaufs ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
-. wird eine Fehlermeldung angezeigt
-. Benutzer wird zur erneuten Eingabe aufgefordert
+. wird eine Fehlermeldung angezeigt.
+. Benutzer wird zur erneuten Eingabe aufgefordert.
 
 ==== Alternativer Ablauf 2
 Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
@@ -67,7 +67,7 @@ Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufüg
 Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den Anforderungen ausgefüllt sein.
 
 === Besondere Anforderungen
-. Alle Felder müssen ausgefüllt werden
-. Der Benutzername ist nicht vergeben
-. Das Passwort wurde zweimal richtig eingegeben
-. Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen
+. Alle Felder müssen ausgefüllt werden.
+. Der Benutzername ist nicht vergeben.
+. Das Passwort wurde zweimal richtig eingegeben.
+. Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen.
