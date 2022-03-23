@@ -30,22 +30,6 @@ else
 }*/
 
 /*if(*/$connection->query("
-CREATE TABLE IF NOT EXISTS Status(
-StatusId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-UserId int NOT NULL,
-ProjectId int NOT NULL,
-Day date NOT NULL,
-FOREIGN KEY(UserId) REFERENCES User(UserId),
-FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
-{
-    echo "Successfully executed create table Status";
-}
-else
-{
-    echo "$connection->error";
-}*/
-
-/*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Project(
 ProjectId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 ProjectName varchar(255) NOT NULL UNIQUE,
@@ -61,6 +45,22 @@ FOREIGN KEY(Projectowner) REFERENCES User(UserId))");/*  === TRUE)
 else
 {
     echo $connection->error;
+}*/
+
+/*if(*/$connection->query("
+CREATE TABLE IF NOT EXISTS Status(
+StatusId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+UserId int NOT NULL,
+ProjectId int NOT NULL,
+Day date NOT NULL,
+FOREIGN KEY(UserId) REFERENCES User(UserId),
+FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
+{
+    echo "Successfully executed create table Status";
+}
+else
+{
+    echo "$connection->error";
 }*/
 
 $result = $connection->query("SELECT count(*) from User;");
