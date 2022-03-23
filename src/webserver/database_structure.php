@@ -37,7 +37,6 @@ ProjectOwner int NOT NULL,
 Color varchar(6),
 Topic varchar(255),
 End date,
-UserId int NOT NULL,
 FOREIGN KEY(Projectowner) REFERENCES User(UserId))");/*  === TRUE)
 {
     echo "Successfully executed create table Project";
