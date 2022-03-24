@@ -1,6 +1,6 @@
 <?php
 //More checks required...
-if (!empty($_POST["Username"])) {
+if (!empty(htmlspecialchars($_POST["Username"]))) {
 
 	ini_set('display_startup_errors', 1);
 	ini_set('display_errors', 1);
