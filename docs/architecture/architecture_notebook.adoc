@@ -71,6 +71,12 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
 
+// mail -> analysis 
+// communication -> implementation
+// availability -> 
+//persistence
+
+
 * Zur Bereitstellung der Anwendung wird Docker benutzt. Somit kann die Anwendung ohne manuelle Installation von Abhängigkeiten schnell deployed werden. Docker ist ein gängiger Industriestandard und der Einsatz von Docker wurde vom Kunden gewünscht.
 
 * Wir benutzen eine relationales Datenbankmodell (MariaDB auf dem Server installiert), da sich unsere Datenstruktur dafür anbieten und unsere Entwickler bereits Erfahrung mit relationalen Datenbankmodellen haben.
@@ -114,20 +120,15 @@ Folgende Sichten werden empfohlen:
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
-Unsere logische Sicht beinhaltet die Ebenen, auf denen die Daten bearbeitet werden. Unsere Datenobjekte befinden sich im Hintergrund auf der Maria DB. Mittels PHP können sie an den Apache Server übertragen werden. Dabei vereinfacht der Docker die Bereitstellung der Anwendungen.
 
-image::Diagramm.png[]
 
 
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
-* Server-Client
+
 
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten.
-* Use-Case UC01: Kalender einsehen
-* Use-Case UC02: Benutzerstatus ändern
-* Use-Case UC02: Benutzer erstellen und editieren
-* Use-Case UC04: Projekteverwaltung
-* Use-Case UC05: Feiertage importieren und/oder händisch anlegen
+
+image::Ressourcenplanung.jpg[]

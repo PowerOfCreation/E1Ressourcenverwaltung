@@ -23,6 +23,15 @@ Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen.
 Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
 Die Bewertung der Iterationen erfolgt in der Gruppe. 
 
+//Iterationspläne mit Bewertung wie gut was geklappt hat und was noch weitergeführt werden muss 
+// -> dadurch konnte man die meisten aufgaben innerhalb einer woche erfüllen und jeder wurde "gezwungen" seine aufgaben bis zum nächsten meeting zu erfüllen bzw. bei größeren aufgaben wenigstens anfangen
+// hatte dadurch auch einen guten überblick, wer was macht
+
+//projekt in mehrere phasen einteilen 
+
+//"whole team"
+// -> jeder kann nach hilfe fragen bzw die meinung zu den teammeetings
+// -> aufgaben meistens ziemlich klein und nie zu viel -> sustainable pace
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
 

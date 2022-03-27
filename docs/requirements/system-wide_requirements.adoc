@@ -39,10 +39,6 @@ Zur Überprüfung werden alle möglichen Funktionen nacheinander ausgeführt und
 
 NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
 
-NFAU-3: Dem Benutzer soll es möglich sein bundeslandspezifische Feiertage aus einer API zu importieren. 
-Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext angezeigt wird. 
-
-
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
@@ -72,7 +68,7 @@ Zur Überprüfung wird eine manuelle Überprüfung feststellen, ob alle Anforder
 //* zu nutzende Komponenten / Bibliotheken / Frameworks
 //* Physische Begrenzungen für Hardware, auf der das System betrieben werden soll
 
-* Software soll im Web verfügbar sein 
+* Software soll eine Webandwendung sein, welche bloß über das Intranet aufgerufen werden kann 
 * die Anwendung soll mittels Docker auf dem Zielsystem verwendet werden können
 //* Feiertage sollen aus einer API (https://feiertage-api.de) importiert werden können
 
