@@ -99,6 +99,15 @@ Die Bewertung der Iterationen erfolgt in der Gruppe.
 * Das Risiko von Unklarheiten in der Projektstruktur wird minimiert und es wird eine Basis für die Weiterarbeit im nächsten Semester geschaffen.  
 | 24.01.22 - 30.01.22
 | - 
+
+|I9
+|
+* Verbesserung bzw. Korrektur des Beleges hat begonnen
+* Dadurch wird fehlerhafte bzw. unklaren Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
+* Erweiterung der Funktionen der Webanwendung
+* Damit wird das Risiko eines nicht fertigen Systems minimiert
+| 23.03.22 - 28.03.22
+| - 
 |===
 
 == Deployment
