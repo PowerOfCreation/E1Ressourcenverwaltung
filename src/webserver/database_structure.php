@@ -63,6 +63,13 @@ else
     echo $connection->error;
 }*/
 
+$connection->query("
+CREATE TABLE IF NOT EXISTS Department(
+DepartId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+DepartName varchar(255) NOT NULL UNIQUE,
+DepartColor varchar(255),
+FOREIGN KEY(DepartId) REFERENCES User(DepartmentId));");
+
 $result = $connection->query("SELECT count(*) from User;");
 
 if($result->fetch_array()[0] == 0)
@@ -79,6 +86,17 @@ if($result->fetch_array()[0] == 0)
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('verdienterWeltmeister', 'Matze', 'Ginter', 1, 'm.ginter@mail.de', '123456');");
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('IronMan', 'Toni', 'Stark', 3, 't.stark@mail.de', '123456');");
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Spiderman', 'Peter', 'Parker', 2, 't.stark@mail.de', '123456');");
+}
+
+$result = $connection->query("SELECT count(*) from Department;");
+
+if($result->fetch_array()[0] == 0)
+{
+    $connection->query("Insert into Department(DepartName, DepartColor) Values('Marketing', 'gelb');");
+    $connection->query("Insert into Department(DepartName, DepartColor) Values('Vertrieb',  'blau');");
+    $connection->query("Insert into Department(DepartName, DepartColor) Values('Personal',  'rot');");
+    $connection->query("Insert into Department(DepartName, DepartColor) Values('Entwicklung','gruen');");
+    $connection->query("Insert into Department(DepartName, DepartColor) Values('Produktion', 'violett');");
 }
 
 ?>
