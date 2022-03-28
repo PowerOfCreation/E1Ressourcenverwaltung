@@ -103,7 +103,7 @@ Die Bewertung der Iterationen erfolgt in der Gruppe.
 |I9
 |
 * Verbesserung bzw. Korrektur des Beleges hat begonnen
-* Dadurch wird fehlerhafte bzw. unklaren Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
+* Dadurch wird fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
 * Erweiterung der Funktionen der Webanwendung
 * Damit wird das Risiko eines nicht fertigen Systems minimiert
 | 23.03.22 - 28.03.22
