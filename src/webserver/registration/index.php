@@ -81,11 +81,11 @@ if (!empty(htmlspecialchars($_POST["Username"]))) {
 			
 			Abteilung: <input type="text" size="65" name="DepartmentId" />
 			
-			E-mail: <input type="text" size="65" name="EMail" />
+			E-mail: <input type="text" size="65" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
 			
-			Passwort: <input type="password" size="65" name="Password" onkeyup='repeatPw();' />
+			Passwort: <input type="password" size="65" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minddestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich" onkeyup='repeatPw();' />
 
-            Passwort wiederholen: <input type="password" size="65" name="repeatPassword" onkeyup='repeatPw();' />
+            Passwort wiederholen: <input type="password" size="65" name="repeatPassword" onkeyup='repeatPw();'/>
 			<span id='message'></span>
 
             
