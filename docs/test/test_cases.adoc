@@ -1,5 +1,5 @@
 = Test Cases: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -11,4 +11,50 @@ include::../_includes/default-attributes.inc.adoc[]
 
 === Test Case 01
 
+* Beim Anlegen eines neuen Benutzers muss das eingegebene Passwort im Backend bzw. im Frontend auf die Mindestlänge verglichen werden.
+* Wenn es zu kurz ist, muss im Frontend eine passende Fehlermeldung ausgegeben werden und darf nicht als Passwort in der Datenbank gespeichert werden. Der Prozess muss wiederholbar sein.
+* Wenn das Passwort lang genug ist, darf der Benutzer mit dem Passwort angelegt werden.
+
 === Test Case 02
+
+* Beim Anlegen eines neuen Benutzers darf der Benutzername noch nicht vergeben sein. Dies muss im Backend verglichen werden. 
+* Wenn er bereits vergeben ist, muss im Frontend eine passende Fehlermeldung ausgegeben werden und darf nicht als Benutzername in der Datenbank gespeichert werden. Der Prozess muss wiederholbar sein.
+
+* Wenn Benutzername noch nicht vergeben ist, darf der Benutzer mit diesem Benutzernamen angelegt werden.
+
+=== Test Case 03
+
+* Beim Anlegen eines neuen Benutzers darf der Benutzername nicht zu kurz sein. Dies muss im Backend verglichen werden. 
+* Wenn es zu kurz ist, muss im Frontend eine passende Fehlermeldung ausgegeben werden und darf nicht als Benutzername in der Datenbank gespeichert werden. Der Prozess muss wiederholbar sein.
+* Wenn Benutzername  nicht zu kurz ist, darf der Benutzer mit diesem Benutzernamen angelegt werden.
+
+=== Test Case 04
+
+* Beim Anmelden eines Benutzers darf kein falsches Passwort zu dem Benutzernamen eingegeben werden. Dies muss im Backend verglichen werden. 
+* Wenn die beiden Daten nicht zusammenpassen, muss eine entsprechende Fehlermeldung ausgegeben werden. Der Benutzer darf dann nicht eingeloggt werden. Der Prozess muss wiederholbar sein.
+* Bei übereinstimmenden Daten, darf der Benutzer angemeldet werden.
+
+=== Test Case 05
+
+* Beim Button "Abbrechen und Zurück" dürfen bereits eingegebene Daten nicht an das Backend übermittelt werden 
+
+=== Test Case 06
+//wo wird das überprüft? 
+* Bei Freitextfeldern darf keine SQL-Injection möglich sein.
+* Bei jeder SQL-Abfrage mit Nutzerparametern muss ein SQL Prepared Statement eingesetzt sein.
+* Wenn eine SQL-Injection festgestellt wird, wird die SQL-Injection als Text übernommen.
+
+=== Test Case 07
+
+* Beim Anlegen eines neuen Benutzers muss jedes Feld ausgefüllt sein. Das Überprüfen muss nach dem Drücken des Knopf "Benutzer anlegen" stattfinden. 
+* Wenn dies nicht der Fall ist, muss eine Fehlermeldung ausgeben werden und die unvollständigen Daten dürfen nicht an das Backend übermittelt werden. Eventuell werden auch ausgefüllte Felder durch andere Test Cases abgelehnt.
+* Wenn alle Felder ausgefüllt sind, wird kein Fehler ausgegeben. Jedoch kann durch einen anderen Testfall ein Fehler ausgegeben werden.
+
+=== Test Case 08
+
+* Ein Benutzer darf auch für andere Benutzer die Daten ändern.
+
+=== Test Case 09
+ 
+* Ein Benutzer darf die Status der anderen ändern.
+

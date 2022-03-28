@@ -1,6 +1,5 @@
-= Projektplan: E1_Ressourcenverwaltung
+= Projektplan: {project-name}
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
-
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -13,17 +12,26 @@ Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung.
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
 Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt. Die Rolle des Analysten übernehmen Frau Rubein und Frau Tartz. Verantwortlich für die Architektur der Software sind Herr Werner und Herr Kirchhoff. Hauptverantwortlich für die Implikation in diesem Projekt sind Herr Keil und Herr Beck. Für die Tests sind Herr Tichonow und Herr Kemter zuständig. 
 
-Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitgleider bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
+Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur Verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitglieder bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
 
-Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Probleme werden offen kommuniziert. Außerdem achten wir auf eine gleichmäßige Arbeitsverteilung. Um das nachzuvollziehen, trägt jedes Teammitgleid am Ende einer Interation seine/ihre benötigte Arbeitszeit ein. 
+Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Probleme werden offen kommuniziert. Außerdem achten wir auf eine gleichmäßige Arbeitsverteilung. Um das nachzuvollziehen, trägt jedes Teammitglied am Ende einer Iteration seine/ihre benötigte Arbeitszeit ein. 
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. 
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen.
 Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
-Die Bewetung der Iterationen erfolgt in der Gruppe. 
+Die Bewertung der Iterationen erfolgt in der Gruppe. 
 
+//Iterationspläne mit Bewertung wie gut was geklappt hat und was noch weitergeführt werden muss 
+// -> dadurch konnte man die meisten aufgaben innerhalb einer woche erfüllen und jeder wurde "gezwungen" seine aufgaben bis zum nächsten meeting zu erfüllen bzw. bei größeren aufgaben wenigstens anfangen
+// hatte dadurch auch einen guten überblick, wer was macht
+
+//projekt in mehrere phasen einteilen 
+
+//"whole team"
+// -> jeder kann nach hilfe fragen bzw die meinung zu den teammeetings
+// -> aufgaben meistens ziemlich klein und nie zu viel -> sustainable pace
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
 
@@ -38,51 +46,67 @@ Die Bewetung der Iterationen erfolgt in der Gruppe.
 
 | I1
 |
-* ersten Überblick über das Projekt bekommen 
-* Risiko von unklaren Rollen im Projekt und unklarer Zieldefinition wird verringert 
+* Das Team verschafft sich einen ersten Überblick über das Projekt.
+* Das Risiko von unklaren Rollen im Projekt und unklarer Zieldefinition wird verringert. 
 | 29.11.21 - 05.12.21
 | -
 
 | I2
 |
-* Vision und Use Cases mit Wireframes werden entwickelt 
+* Vision und Use Cases mit Wireframes werden entwickelt. 
 * Die Risiken eines unzureichenden Entwurfes und einer falschen Zieldefinition werden stark limitiert. 
 | 06.12.21 - 12.12.21
 | -
 
 | I3
 |
-* Use Cases, Vision und Wireframes werden nach Gespräch mit Themensteller überarbeitet
-* Dadurch wird das Risko minimiert, dass der Kunde den Entwurf nicht akzeptieren könnte. 
+* Use Cases, Vision und Wireframes werden nach Gespräch mit Themensteller überarbeitet.
+* Dadurch wird das Risiko minimiert, dass der Kunde den Entwurf nicht akzeptieren könnte. 
 | 13.12.21 - 19.12.21
 | -
 
 | I4
 |
-* Use Cases und Vision werden nach Anmerkungen von Herrn Zirkelbach fertiggestellt. 
+* Use Cases und Vision werden nach Anmerkungen von Herrn Zirkelbach fertiggestellt.
 * Das Risiko von Missverständnissen oder Unklarheiten wird minimiert. 
 | 20.12.21 - 26.12.21
 | -
 
 | I5
 |
-* Datenbanktabellen sollen angelegt und "Mitarbeiter hinzufügen"- Ansicht sollen implementiert werden
-* Das Riskio eines unvollständigen und fehlerhaften Sytems wird dadurch verringert. 
+* Datenbanktabellen sollen angelegt und "Mitarbeiter hinzufügen"- Ansicht sollen implementiert werden.
+* Das Risiko eines unvollständigen und fehlerhaften Systems wird dadurch verringert. 
 | 27.12.21 - 09.01.22
 | -
 
 | I6
 |
-* Sytemweite Anforderungen werden beschreiben, VM wird beantragen, Funktionserweiterung der Softwäre wird durchgeführt
-* Das Risiko fahlerhafter Funktionen wird reduziert. 
+* Systemweite Anforderungen werden beschrieben, eine VM wird beantragen und Funktionserweiterungen der Software werden durchgeführt.
+* Das Risiko fehlerhafter Funktionen wird reduziert. 
 | 10.01.22 - 16.01.22
 | - 
 
 | I7
 |
-* architecture Notebook und Domainmodell werden entwickelt
-* Unklare Strukturen der Softwäre werden aufgedeckt und es wird ein Gerüst für die Software geschaffen. 
+* Architecture Notebook und Domainmodell werden entwickelt.
+* Unklare Strukturen der Software werden aufgedeckt und es wird ein Gerüst für die Software geschaffen. 
 | 17.01.22 - 23.01.22
+| - 
+
+| I8
+|
+* Test Cases werden beschreiben und letzte Verbesserungen an den Dokumenten werden durchgeführt. 
+* Das Risiko von Unklarheiten in der Projektstruktur wird minimiert und es wird eine Basis für die Weiterarbeit im nächsten Semester geschaffen.  
+| 24.01.22 - 30.01.22
+| - 
+
+|I9
+|
+* Verbesserung bzw. Korrektur des Beleges hat begonnen
+* Dadurch wird fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
+* Erweiterung der Funktionen der Webanwendung
+* Damit wird das Risiko eines nicht fertigen Systems minimiert
+| 23.03.22 - 28.03.22
 | - 
 |===
 
@@ -92,3 +116,6 @@ Die Übergabe der Software an den Auftraggeber erfolgt über GitHub.
 
 == Erkenntnisse (Lessons learned)
 //List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+Bei den ersten paar Teammeetings wurden alle Ergebnisse der Iteration ausführlich diskutiert und zusammen verbessert. Dadurch gingen die Meetings meist länger als eine Stunde, was die Arbeitsmoral schmälerte. Um in diesem Punkt mehr Effizienz zu erzielen, wurden dann nur noch Verbesserungsvorschläge unterbreitet und die verantwortliche Person hat die Änderungen selbstständig ausgeführt. 
+
+Zu Beginn des Projektes wurden Aufgaben in den Meetings zugewiesen und die Verantwortlichkeit dann im Meetingprotokoll dokumentiert. Das stellte sich als unübersichtlich heraus und benachteiligte Personen, die nicht am Meeting teilnehmen konnten. Um diesen Ablauf zu verbessern, sind wir nach zwei Wochen dazu übergegangen, die anstehenden Aufgaben über GitHub Issues zu organisieren, was auch den Vorteil hat, dass sich jeder seine Aufgabe selbst aussuchen kann. 

@@ -1,8 +1,8 @@
 //Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
-== Use-Case UC02: Benutzer erstellen und editieren
+== Use-Case UC03: Benutzer erstellen und editieren
 ===	Kurzbeschreibung
 //<Kurze Beschreibung des Use Case>
-Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen Individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Benutzer soll sein eigenes Passwort haben, welches er selber wählen kann. Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Benutzer machen.
+Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Benutzer soll sein eigenes Passwort haben, welches er selber wählen kann. Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Benutzer machen.
 
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
@@ -10,30 +10,42 @@ Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Ges
 
 === Vorbedingungen
 //Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
-Benutzer is angemeldet
+Benutzer ist angemeldet.
 
 === Standardablauf (Basic Flow)
 //Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
 
-. Der Use Case beginnt, wenn Benutzer auf den Knopf "Benutzer hinzufügen" klickt
-. WHILE Benutzer ist nicht erstellt
-.. Benutzer gibt Benutzernamen ein
-.. Benutzer gibt Name- und Vorname ein
-.. Benutzer gibt Passwort ein
-... Benutzer gibt erneut das Passwort ein
-.. Benutzer wählt aus der Liste eine Abteilung aus
-. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen"
-. Der Use Case ist abgeschlossen
+. Der Use Case beginnt, wenn Benutzer auf den Knopf "Benutzer hinzufügen" klickt.
+. WHILE Benutzer ist nicht erstellt.
+.. Benutzer gibt Benutzernamen ein.
+.. Benutzer gibt Name und Vorname ein.
+.. Benutzer gibt Passwort ein.
+... Benutzer gibt erneut das Passwort ein.
+.. Benutzer wählt aus der Liste eine Abteilung aus.
+. Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen".
+. Der Use Case ist abgeschlossen.
+
+=== zugehörige Wireframes 
+
+Auf diesem Bild ist die Benutzeroberfläche für eine Mitarbeitererstellung zu sehen.
+
+image::Mitarbeitererstellung.jpg[]
+ 
+Das nächste Bild zeigt das Profil eines Benutzers, indem Einstellungen geändert werden können. 
+
+image::Mitarbeiteransicht.jpg[]
+
+
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
 ==== Alternativer Ablauf 1
-Wenn Benutzer im Schritt 2c des Standardablauf ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
-. wird eine Fehlermeldung angezeigt
-. Benutzer wird zur erneuten Eingabe aufgefordert
+Wenn Benutzer im Schritt 2c des Standardablaufs ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
+. wird eine Fehlermeldung angezeigt.
+. Benutzer wird zur erneuten Eingabe aufgefordert.
 
 ==== Alternativer Ablauf 2
-Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
+Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
 . kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
 
 //=== Unterabläufe (subflows)
@@ -55,7 +67,7 @@ Wenn Benutzer im Schritt 1 des Standardablauf auf den Knopf "Benutzer hinzufüge
 Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den Anforderungen ausgefüllt sein.
 
 === Besondere Anforderungen
-. Alle Felder müssen ausgefüllt werden
-. Der Benutzername ist nicht vergeben
-. Das Passwort wurde zwei Mal richtig eingegeben
-. Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen
+. Alle Felder müssen ausgefüllt werden.
+. Der Benutzername ist nicht vergeben.
+. Das Passwort wurde zweimal richtig eingegeben.
+. Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen.

@@ -1,4 +1,4 @@
-= Architecture Notebook: E1_Ressourcenverwaltung
+= Architecture Notebook: {project-name}
 Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
@@ -32,7 +32,7 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 
 * Die Benutzer verfügen über einen stabilen Intranetzugang mit ausreichender Bandbreite.
 
-* Der Browser unterstützt HTML5-fähigen Browser
+* Der Browser ist HTML5-fähig und Javascript ist aktiviert.
 
 * Zur Benutzung wird ein Login unter anderem mit einer E-Mail-Adresse benötigt.
 
@@ -71,13 +71,21 @@ Da in der gegebenen Zeit nicht klar ist, ob das System in dem geforderten Umfang
 //[List the decisions that have been made regarding architectural approaches and the constraints being placed on the way that the developers build the system. These will serve as guidelines for defining architecturally significant parts of the system. Justify each decision or constraint so that developers understand the importance of building the system according to the context created by those decisions and constraints. This may include a list of DOs and DON’Ts to guide the developers in building the system.]
 
 
-//NIKLAS HAT DAVON MEHR AHNUNG (FF.)
-* Wir benutzen eine relationales Datenbankmodell, da sich unsere Datenobjekte dafür anbieten.
+// mail -> analysis 
+// communication -> implementation
+// availability -> 
+//persistence
 
-*
 
-* Wir nutzen ein ORM, um die Verbindung zwischen relationalen Daten in unserer Datenbank und objektorientierten Daten in unserem Programm zu verbinden.
+* Zur Bereitstellung der Anwendung wird Docker benutzt. Somit kann die Anwendung ohne manuelle Installation von Abhängigkeiten schnell deployed werden. Docker ist ein gängiger Industriestandard und der Einsatz von Docker wurde vom Kunden gewünscht.
 
+* Wir benutzen eine relationales Datenbankmodell (MariaDB auf dem Server installiert), da sich unsere Datenstruktur dafür anbieten und unsere Entwickler bereits Erfahrung mit relationalen Datenbankmodellen haben.
+
+* Als Server nutzen wir einen Apache HTTP Server, da dieser einer der meistbenutzten Webserver im Internet ist. Und unser Team bereits Erfahrung mit der Nutzung hatte.
+
+* Um die Daten und Aktionen von dem Benutzer auf der Webseite in die Datenbank zu übertragen wird PHP genutzt. PHP ist kostenlos, weit verbreitet und es sind viele Hilfestellungen und Foreneinträge dazu zu finden. Außerdem habe unsere Entwickler bereits Vorkenntnisse mit PHP.
+
+* In Betracht gezogen wurde das Python-Framework Django, da es ebenfalls sehr populär ist und sich für Webanwendungen eignet. Es wurde sich dagegen entschieden, da im Team keine Vorkenntnisse mit diesem Framework bestehen und das Risiko bei Nutzung eines komplett unbekannten Frameworks zu hoch ist. 
 
 == Architekturmechanismen
 https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/concepts/arch_mechanism_2932DFB6.html[Doku "Concept: Architectural Mechanism"]
@@ -88,19 +96,18 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 //Beschreiben Sie den Zweck, Eigenschaften und Funktion der Architekturmechanismen.
 
 1. Es wurde vorgegeben, dass die Daten persistent gespeichert (SWFA-1) werden sollen und jeder Nutzer Zugriff auf alle hat (SWFA-2). Daher braucht es einen zeitgleichen Zugriff auf Daten. Dies ist möglich mit SQL-Datenbanken, wofür wir auch das Verständnis haben. 
-//konkrete Implementierung??? zb mit server und docker??
+
 
 2. Jeder Mitarbeiter sollte einen eigenen Account besitzen, mit dem er die Daten bearbeiten kann. Daher brauchte es eine Anmeldung. Dies ging am einfachsten mit einem klassischen Login mit E-Mail und Passwort.
 
 
 == Wesentliche Abstraktionen
 //[List and briefly describe the key abstractions of the system. This should be a relatively short list of the critical concepts that define the system. The key abstractions will usually translate to the initial analysis classes and important patterns.]
-* User: Die Datenbanktabelle beinhaltet die Informationen über jeden Benutzer, wie zum Beispiel E-Mail-Adresse und vollständigen Namen
+* User: Die Datenbanktabelle beinhaltet die Informationen über jeden Benutzer, wie zum Beispiel E-Mail-Adresse und vollständigen Namen.
 
-* Status: enthält alle Informationen zu den Stati, zum Beispiel welcher Mitarbeiter welchen konkreten Projekten zugeordnet ist.
+* Status: Enthält alle Informationen zu den Status, zum Beispiel welche Projekte ein User an einem Tag hat.
 
-* Projekt: enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Erstelldatum, Benutzer
-//ist status und projekt richtig?
+* Projekt: Enthält konkrete Informationen zu den Projekten, zum Beispiel Name, Benutzer und eine Farbe. Für Urlaub/Krankheit wird jeweils ein Projekt angelegt, um dies auch als Status realisieren zu können.
 
 == Schichten oder Architektur-Framework
 //[Describe the architectural pattern that you will use or how the architecture will be consistent and uniform. This could be a simple reference to an existing or well-known architectural pattern, such as the Layer framework, a reference to a high-level model of the framework, or a description of how the major system components should be put together.]
@@ -114,8 +121,14 @@ Folgende Sichten werden empfohlen:
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
 
+
+
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
+
+
 === Use cases
-//Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungne enthalten.
+//Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten.
+
+image::Ressourcenplanung.jpg[]
