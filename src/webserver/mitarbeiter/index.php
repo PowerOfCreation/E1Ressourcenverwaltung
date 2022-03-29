@@ -18,11 +18,31 @@ if (!empty($username)) {
         $get_user_info_statement->bind_result($forename, $surname);
 
         if ($row = $get_user_info_statement->fetch()) {
-            echo $forename . " " . $surname;
+            echo $forename . " " . $surname . "<br>";
         } else {
             echo "Es existiert kein Nutzer mit dem Nutzernamen " + $username;
         }
+
+        $get_user_info_statement->reset();
     }
+
+    if(!($get_user_department_statement = $connection->prepare("SELECT DepartmentName FROM Department WHERE DepartmentId = (SELECT DepartmentId FROM User WHERE Username = ?);"))) {
+        echo "Prepare failed " . $connection->error;
+    }
+
+    $get_user_department_statement->bind_param('s', $username);
+
+    if ($get_user_department_statement->execute()) {
+
+        $get_user_department_statement->bind_result($departmentName);
+
+        if ($row = $get_user_department_statement->fetch()) {
+            echo "Abteilung " . $departmentName;
+        }
+
+        $get_user_department_statement->reset();
+    }
+
 } else {
     echo "Entschuldigung, dies hätte nicht passieren sollen.";
 }
