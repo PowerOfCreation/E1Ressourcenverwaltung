@@ -30,6 +30,7 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 |T-Systems MMS |T-Sytems Multimedia Solutions| Name des Themenstellers 
 |VM | virtuelle Maschine | VM ist eine Umgebung, die als virtuelles Computersystem fungiert. VMs sind vom Rest des Systems isoliert. Dazu können mehrere von ihnen auf einer einzigen Hardware-Komponente existieren, z. B. einem Server. Sie lassen sich nach Bedarf zwischen den Host-Servern verschieben, um Ressourcen besser zu nutzen.
 | API | application programming interface | Ein API ist also eine Schnittstelle, welche zum Beispiel Anwendungen, Festplatten oder Benutzeroberflächen verbindet.
+| C4 Modell | context, containers, components, and code | Das C4-Model ermgöglicht es die Architekture eines Software-Systems in verschiedenen Detailgraden zu beschreiben und die verschiedenen Kompontenten in Beziehungen zu setzen.
 |===
 
 == Verzeichnis der Datenstrukturen
