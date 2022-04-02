@@ -10,7 +10,24 @@ Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung.
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
-Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt. Die Rolle des Analysten übernehmen Frau Rubein und Frau Tartz. Verantwortlich für die Architektur der Software sind Herr Werner und Herr Kirchhoff. Hauptverantwortlich für die Implikation in diesem Projekt sind Herr Keil und Herr Beck. Für die Tests sind Herr Tichonow und Herr Kemter zuständig. 
+
+
+//Dieses Projekt wird von einem Team bestehend aus acht Personen durchgeführt. Die Namen und E-Mail-Adressen der Teammitglieder sind am Anfang dieses Dokumentes zu finden. Jede Person im Team hat einen bestimmten Aufgabenbereich für die er/sie verantwortlich ist. Helena Rubein übernimmt dabei Projektorganisation bis zum 31.01.2022., danach wird diese Aufgabe von Nick Kemter weitergeführt. Grund dafür ist die befristete Zeit von Frau Rubein in diesem Projekt. Die Rolle des Analysten übernehmen Frau Rubein und Frau Tartz. Verantwortlich für die Architektur der Software sind Herr Werner und Herr Kirchhoff. Hauptverantwortlich für die Implementation in diesem Projekt sind Herr Keil und Herr Beck. Für die Tests sind Herr Tichonow und Herr Kemter zuständig. 
+
+//passt die Tabelle so? verschiedene Rollen zu verschiedenen Zeiten
+
+|===
+| Name| Rolle WS 21/22 | Rolle SoSe 22 | E-Mail
+
+| Helena Rubein | Teamleiterin und Analyst | aus Projekt ausgeschieden | s81097@htw-dresden.de 
+| Nick Kemter | Test | Teamleiter und Test | s82068@htw-dresden.de 
+| Justus Beck | Implementation | Implementation | s82023@htw-dresden.de 
+| Niklas Werner | Architektur | Architektur | s82076@htw-dresden.de 
+| Jonas Keil | Implementation | Implementation | s81910@htw-dresden.de
+| Carl Kirchhoff | Architektur | Architekture | s82087@htw-dresden.de
+| Aleksandra Tartz | Analyst | Analyst | s80433@htw-dresden.de
+| Vitaly Tichonow | Test | Test | s82591@htw-dresden.de
+|===
 
 Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur Verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitglieder bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
 
@@ -18,6 +35,8 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+
+// https://www2.htw-dresden.de/~anke/openup/index.htm
 Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. 
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen.
 Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
@@ -30,7 +49,7 @@ Die Bewertung der Iterationen erfolgt in der Gruppe.
 //projekt in mehrere phasen einteilen 
 
 //"whole team"
-// -> jeder kann nach hilfe fragen bzw die meinung zu den teammeetings
+// -> jeder kann nach hilfe fragen bzw seine meinung in den teammeetings äußern
 // -> aufgaben meistens ziemlich klein und nie zu viel -> sustainable pace
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
