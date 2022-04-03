@@ -37,10 +37,25 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 
 // https://www2.htw-dresden.de/~anke/openup/index.htm
-Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt. 
-Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen.
+- Iterationsplan
+
+Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch hat konnte eine Übersicht der vergebenen und auch beendeten Aufgaben erfasst werden. Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt, damit hatte jedes Mitglied eine zeitliche Vorgabe bis wann es seine Aufgabe im angemessen Maße bearbeitet haben sollte. 
 Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
 Die Bewertung der Iterationen erfolgt in der Gruppe. 
+
+//ziemlich sinnvoll und auch gut umzusetzen 
+//gibt struktur und kann auch "rückblicken"
+- Whole Team
+
+Auch wenn jedes Teammitglied einzelne Aufgaben in seinem "Expertengebiet" erledigt, ist das ganze Team dafür verantwortlich, dass alle Aufgaben korrekt erfüllt werden.
+Wenn ein Teammitglied ein Problem hat, kann es andere Teammitglieder um Hilfe fragen. Ebenso darf jeder zu den wöchentlichen Teammeetings seine Meinung und Kritik äußern.
+Die verteilten Aufgaben und ihr Fertigungsstellungsdatum sind angemessen gewählt, so dass sich niemand überarbeitet.
+
+
+
+- Risk-Value Lifecycle 
+
+Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen anderen Schwerpunkt bei der Entwicklung des Projekts. Dadurch können Risiken besser eingeschätzt werden, ebenso ob das Projekt fortgeführt werden sollte.
 
 //Iterationspläne mit Bewertung wie gut was geklappt hat und was noch weitergeführt werden muss 
 // -> dadurch konnte man die meisten aufgaben innerhalb einer woche erfüllen und jeder wurde "gezwungen" seine aufgaben bis zum nächsten meeting zu erfüllen bzw. bei größeren aufgaben wenigstens anfangen
@@ -48,7 +63,8 @@ Die Bewertung der Iterationen erfolgt in der Gruppe.
 
 //projekt in mehrere phasen einteilen 
 
-//"whole team"
+//"whole team" nicht alle aspekte aber manche
+// -> Everyone has a sense of belonging on the team, of being in it together. There should be no "outsiders," no "them" but only "us." When everyone is on the team, people avoid blaming others. Instead, there is a sense of collective ownership.
 // -> jeder kann nach hilfe fragen bzw seine meinung in den teammeetings äußern
 // -> aufgaben meistens ziemlich klein und nie zu viel -> sustainable pace
 == Meilensteine und Ziele
