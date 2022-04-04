@@ -143,6 +143,24 @@ Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen 
 * Damit wird das Risiko eines nicht fertigen Systems minimiert
 | 23.03.22 - 28.03.22
 | - 
+
+|I10
+| 
+* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan
+* Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
+* Erweiterung der Funktionen der Webanwendung
+* Damit wird das Risiko eines nicht fertigen Systems minimiert
+| 29.03.22 - 04.04.22
+| -
+
+|I11
+|
+* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan, da in Iteration davor nicht fertiggestellt
+* Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
+* Erweiterung der Funktionen der Webanwendung, um z.B. Passwortkriterien, Abteilungsdropdown und Suche 
+* Damit wird das Risiko eines nicht fertigen Systems minimiert
+| 05.04.22. - 11.04.22
+| - 
 |===
 
 == Deployment

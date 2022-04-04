@@ -115,26 +115,26 @@ https://www2.htw-dresden.de/~anke/openup/core.tech.common.extend_supp/guidances/
 == Architektursichten (Views)
 //[Describe the architectural views that you will use to describe the software architecture. This illustrates the different perspectives that you will make available to review and to document architectural decisions.]
 
-Wir verwenden drei Sichten um die Architektur zu beschreiben: 
+Wir verwenden drei Sichten, um die Architektur zu beschreiben: 
 //noch nicht ganz fertig
 
 * logische Sicht, um die Funktionalität der Endbenutzer darzustellen, 
-* physische Sicht, um aufzuzeigen auf welchen Hardwareteilen das System funktioniert 
-* Use-Cases-Sicht um zu beschreiben, welche wichtigen Anwendungsfälle und Anwendungszenarien die Anwender haben werden
+* physische Sicht, um aufzuzeigen auf welchen Hardwareteilen das System funktioniert, 
+* Use-Cases-Sicht, um zu beschreiben, welche wichtigen Anwendungsfälle und Anwendungszenarien die Anwender haben werden
 
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
-Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglicht es uns die verschieden Elemente und ihre Beziehungen darzustellen, damit kannn die Architekture unseres Programmes in verschieden Detailgraden dargestellt werden. 
+Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglicht es uns die verschiedenene Elemente und ihre Beziehungen darzustellen, damit kannn die Architekture unseres Programmes in verschieden Detailgraden dargestellt werden. 
 
-Im Moment existieren nur 2 Ebenen, da die eine dritte schon die noch nicht Fertige und sich ändernte Implementierung illustrieren würde.
+Im Moment existieren nur 2 Ebenen, da die eine dritte schon die noch nicht Fertige und sich ändernde Implementierung illustrieren würde.
 
 
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
 //klingt der erste Satz gut?
-Momentan wird die Webanwendung für Test- und Vorzeigezwecke auf Docker der jeweiligen Gruppenmitglieder gehostet. Dies hat den Sinn, dass eine Änderung des Codes sofort im Webbrowser umsetzbar ist und eventuelle Fehler nicht die anderen Gruppenmitglieder aktiv stören. 
+Momentan wird die Webanwendung für Test- und Vorzeigezwecke mit Hilfe von Dockern lokal getestet. Dies hat den Sinn, dass eine Änderung des Codes sofort im Webbrowser umsetzbar ist und eventuelle Fehler nicht die anderen Gruppenmitglieder aktiv stören. 
 Wenn das Projekt abgeschlossen ist, soll es jedoch auf einem von T-Sytems Multimedia Solutions gehosteten Server laufen.
 
 === Use cases
