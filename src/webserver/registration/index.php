@@ -1,13 +1,13 @@
 <?php
+
+ini_set('display_startup_errors', 1);
+ini_set('display_errors', 1);
+error_reporting(-1);
+
+require_once("/app/config/credentials.php");
+
 //More checks required...
-if (!empty(htmlspecialchars($_POST["Username"]))) {
-
-	ini_set('display_startup_errors', 1);
-	ini_set('display_errors', 1);
-	error_reporting(-1);
-
-	require_once("/app/config/credentials.php");
-
+if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 	// Example how to use POST'ed values
 	$username = htmlspecialchars($_POST["Username"]);
 	$forename = htmlspecialchars($_POST["Forename"]);
@@ -70,8 +70,7 @@ if (!empty(htmlspecialchars($_POST["Username"]))) {
 <body>
 	<main>
 		<h1 style="text-align: justify;">Mitarbeiter Hinzufügen</h1>
-		<form name="RegForm" id="registrierung" method="post">
-			
+		<form name="RegForm" id="registrierung" method="post">                                
         <div>
             Benutzername: <input type="text" size="65" name="Username" />
 
@@ -79,7 +78,16 @@ if (!empty(htmlspecialchars($_POST["Username"]))) {
 			
 			Nachname: <input type="text" size="65" name="Surname" />
 			
-			Abteilung: <input type="text" size="65" name="DepartmentId" />
+			Abteilung:  
+				<select name = "Department">
+					<?php 
+						$result = $connection->query("SELECT * FROM Department;");
+						while ($row = $result->fetch_object()) 
+						{
+							echo "<option value='" . $row->DepartmentId . " '>" . $row->DepartmentName . "</option>";
+						}				
+					?>
+				</select>
 			
 			E-mail: <input type="text" size="65" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
 			
