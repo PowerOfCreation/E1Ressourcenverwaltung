@@ -76,6 +76,21 @@ else
     echo "$connection->error";
 }*/
 
+/*if(*/$connection->query("
+CREATE TABLE IF NOT EXISTS Member(
+UserId int NOT NULL,
+ProjectId int NOT NULL,
+PRIMARY KEY (UserId, ProjectId),
+FOREIGN KEY(UserId) REFERENCES User(UserId),
+FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
+{
+    echo "Successfully executed create table Member";
+}
+else
+{
+    echo "$connection->error";
+}*/
+
 $result = $connection->query("SELECT count(*) from Department;");
 
 if($result->fetch_array()[0] == 0)
