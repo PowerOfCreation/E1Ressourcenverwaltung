@@ -1,15 +1,12 @@
 <a href=".."><button>Zurück</button></a>
 
 <?php
+
+require_once("/app/config/credentials.php");
+
 $username = htmlspecialchars($_GET["name"]);
 
 if (!empty($username)) {
-    ini_set('display_startup_errors', 1);
-    ini_set('display_errors', 1);
-    error_reporting(-1);
-
-    require_once("/app/config/credentials.php");
-
     $get_user_info_statement = $connection->prepare("SELECT Forename, Surname FROM User WHERE Username = ?;");
 
     $get_user_info_statement->bind_param('s', $username);

@@ -1,5 +1,7 @@
 <?php
 
+require_once("/app/config/credentials.php");
+
 function execute_sql_query($connection, $queryString)
 {
     if($connection->query($queryString) === TRUE)
