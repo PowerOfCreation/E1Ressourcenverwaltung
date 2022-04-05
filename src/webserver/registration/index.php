@@ -34,19 +34,6 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
     <link rel="stylesheet" href="registration_style.css">
-    <script type="text/javascript">
-    function repeatPw() {
-		if (document.getElementById('registration-form').elements["Password"].value == document.getElementById('registration-form').elements["repeatPassword"].value) {
-			document.getElementById('message').style.color = 'green';
-			document.getElementById('message').innerHTML = 'Das Passwort stimmt überein';
-		} 
-		else {
-			document.getElementById('message').style.color = 'red';
-			document.getElementById('message').innerHTML = 'Das Passwort stimmt nicht überein';
-		}
-	}
-</script>
-
 </head>
 
 <body>
@@ -74,10 +61,10 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 				
 				E-mail: <input type="text" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
 				
-				Passwort: <input type="password" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich." onChange='repeatPw();' />
+				Passwort: <input type="password" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich." onkeyup='repeatPw();' />
 
-				Passwort wiederholen: <input type="password" name="repeatPassword" onChange='repeatPw();'/>
-				<span id='message'></span>
+				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
+				<span id='password-message-span'></span>
 				
 				<div id="form-action-buttons-wrapper-div">
 					<a href=".."><button id="back-button" type="button">Zurück</button></a>
@@ -86,7 +73,8 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 			</form>
 		</div>
 	</main>
-    
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="js/registration.js"></script>
 </body>
 
 </html>
