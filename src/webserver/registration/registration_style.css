@@ -1,21 +1,15 @@
 #form-wrapper-div {
-    width: 100%;
-    border: 1px solid rgb(255, 255, 255);
-    align-content: center;
-    align-items: center;
     white-space: pre-line;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 #registration-form {
-    margin: 0 auto;
     width: 500px;
-
 }
 
 #registration-form > * {
     width: 100%;
     box-sizing:border-box;
-
 }
 
 #form-action-buttons-wrapper-div {
