@@ -1,0 +1,27 @@
+#form-wrapper-div {
+    white-space: pre-line;
+    display: flex;
+    justify-content: center;
+}
+#registration-form {
+    width: 500px;
+}
+
+#registration-form > * {
+    width: 100%;
+    box-sizing:border-box;
+}
+
+#form-action-buttons-wrapper-div {
+    display: flex;
+    width: 100%;
+}
+
+#form-action-buttons-wrapper-div > * {
+    flex-grow: 1;
+    width: 100%;
+}
+
+#back-button {
+    width: 100%;
+}

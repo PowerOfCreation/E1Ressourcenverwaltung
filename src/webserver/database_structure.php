@@ -1,5 +1,7 @@
 <?php
 
+require_once("/app/config/credentials.php");
+
 function execute_sql_query($connection, $queryString)
 {
     if($connection->query($queryString) === TRUE)
@@ -70,6 +72,21 @@ FOREIGN KEY(UserId) REFERENCES User(UserId),
 FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
 {
     echo "Successfully executed create table Status";
+}
+else
+{
+    echo "$connection->error";
+}*/
+
+/*if(*/$connection->query("
+CREATE TABLE IF NOT EXISTS Member(
+UserId int NOT NULL,
+ProjectId int NOT NULL,
+PRIMARY KEY (UserId, ProjectId),
+FOREIGN KEY(UserId) REFERENCES User(UserId),
+FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
+{
+    echo "Successfully executed create table Member";
 }
 else
 {
