@@ -37,7 +37,9 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 
 // https://www2.htw-dresden.de/~anke/openup/index.htm
-- Iterationsplan
+
+= Praktiken 
+- Iterative Entwicklung
 
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch hat konnte eine Übersicht der vergebenen und auch beendeten Aufgaben erfasst werden. Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt, damit hatte jedes Mitglied eine zeitliche Vorgabe bis wann es seine Aufgabe im angemessen Maße bearbeitet haben sollte. 
 Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
@@ -52,10 +54,19 @@ Wenn ein Teammitglied ein Problem hat, kann es andere Teammitglieder um Hilfe fr
 Die verteilten Aufgaben und ihr Fertigungsstellungsdatum sind angemessen gewählt, so dass sich niemand überarbeitet.
 
 
-
 - Risk-Value Lifecycle 
 
 Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen anderen Schwerpunkt bei der Entwicklung des Projekts. Dadurch können Risiken besser eingeschätzt werden, ebenso ob das Projekt fortgeführt werden sollte.
+
+
+// Concurrent Testing -> machen wir, jedoch noch nicht mit festen Vorgaben oder Programmen, sondern "frei nach Schnauze"
+
+
+= Bewertung
+
+Jedes Teammitglied bekommt jede Iteration, je nach Aufwand, ein oder manchmal auch zwei Issues bei Github zugeteilt. Wenn es ein Implementation-Issue war, dann stellt zuerst das Teammitglied, was den Issue bearbeitet hat, sicher, dass es seine Funktion erfüllt und keine anderen Funktionen beeinträchtigt bzw. Bugs verursacht. Wenn das Issue "gepushed" wurde, soll jedes andere Teammitglied, was die Fähigkeiten hat, dies ebenfalls tun. Bei dem wöchentlichen Treffen hat Herr Werner hat oftmals kleine Verbesserungsvorschläge für den Quellcode, wenn dort Kleinigkeiten besser gemacht werden können. Diese Vorschläge werden dann meist noch schnell umgesetzt. 
+
+Bei Issues die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases oder Architecture Notebook, wird es meistens zu zweit bearbeitet. Dadurch soll sichergestellt werden, dass es direkt bei dem Erstellen zu einem Meinungsaustausch und Verbesserungen kommen kann. Sobald es gepushed wurde, soll jedes Teammitglied sich die erstellte Dokumentation anschauen und mögliche Verbesserungsvorschläge notieren. Bei dem nächsten Teammeeting werden diese angesprochen und eventuell umgesetzt. Ebenfalls können die ursprünglichen Ersteller dort noch Unsicherheiten, offene Fragen etc. ansprechen und ein Feedback erhalten. 
 
 //Iterationspläne mit Bewertung wie gut was geklappt hat und was noch weitergeführt werden muss 
 // -> dadurch konnte man die meisten aufgaben innerhalb einer woche erfüllen und jeder wurde "gezwungen" seine aufgaben bis zum nächsten meeting zu erfüllen bzw. bei größeren aufgaben wenigstens anfangen
