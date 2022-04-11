@@ -1,6 +1,7 @@
 $()
 {
-    $addProjectButton = $("<button>Status hinzufügen</button>");
+    $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
+    $addProjectSelect = $("<select id='add-project-select'><option>Marketing</option></select>");
 
     $employeeEntries = $("#tbody-employee-entries");
 
@@ -27,11 +28,30 @@ $()
     }
 
     function onWeekdayEnter() {
-        $(this).append($addProjectButton);
+        if($(this).find("#add-project-select").length == 0)
+        {
+            $(this).append($addProjectButton);
+        }
     }
 
     function onWeekdayLeave() {
-       $addProjectButton.detach();
+        $addProjectButton.detach();
+
+        //$(this).find("#add-project-select").detach();
+    }
+
+    function addStatus()
+    {
+        let $weekdayElement = $addProjectButton.parent();
+        let $employeeElement = $weekdayElement.parent();
+
+        $weekdayElement.append($addProjectSelect);
+
+        $addProjectButton.detach();
+
+        let employeeUsername = $employeeElement.find(".td-entry-employee").data("username");
+
+        // todo ajax to get all projects this employee is currently in
     }
 
     function onWeekdayClick() {
