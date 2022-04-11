@@ -47,6 +47,7 @@ header {
     display: table;
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 #table-weekly-report thead
