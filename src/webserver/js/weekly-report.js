@@ -1,9 +1,12 @@
 $()
 {
+    $addProjectButton = $("<button>Status hinzufügen</button>");
+
     $employeeEntries = $("#tbody-employee-entries");
-    console.log("Test1");
-    $employeeEntries.find(".td-entry-weekday").click(onWeekdayClick);
-    
+
+    $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
+    $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
+
     function addEmployee(employeeId, employeeName) {
         $employeeElement = $(` 
             <tr> \
@@ -17,9 +20,18 @@ $()
 
         $employeeElement.data("employeeId", employeeId);
 
-        $employeeElement.find(".td-entry-weekday").click(onWeekdayClick);
+        $employeeElement.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
+        $employeeElement.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
 
         $employeeEntries.append($employeeElement);
+    }
+
+    function onWeekdayEnter() {
+        $(this).append($addProjectButton);
+    }
+
+    function onWeekdayLeave() {
+       $addProjectButton.detach();
     }
 
     function onWeekdayClick() {
