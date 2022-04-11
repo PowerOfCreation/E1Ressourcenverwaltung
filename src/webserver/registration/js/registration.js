@@ -18,4 +18,12 @@ $()
             setPasswordMessage("red", "Das Passwort stimmt nicht überein.");
         }
     }
+    function showPW() {
+        var pwVisibility = document.getElementById("passwordInput");
+        if (pwVisibility.type === "password") {
+            pwVisibility.type = "text";
+        } else {
+            pwVisibility.type = "password";
+        }
+      }
 };

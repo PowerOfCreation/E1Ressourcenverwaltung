@@ -61,11 +61,11 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 				
 				E-mail: <input type="text" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
 				
-				Passwort: <input type="password" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich." onkeyup='repeatPw();' />
-
-				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
+				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich."/>
+				<label for="check"><label for="check"><input id="check" type="checkbox" onclick="showPW()" />Passwort anzeigen</label>
+<!--				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
 				<span id='password-message-span'></span>
-				
+-->				
 				<div id="form-action-buttons-wrapper-div">
 					<a href=".."><button id="back-button" type="button">Zurück</button></a>
 					<input type="submit" value="Benutzer erstellen" name="Submit" />
