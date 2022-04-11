@@ -66,10 +66,6 @@ $()
 
         $newProjectInput.select();
     }
-    function addNewProject() {
-        $(this).parent().append($(`<span class="span-project">${$(this).val()}</span>`));
-        $(this).remove();
-    }
    
     $("#btn-add-employee").click(function () {
         window.location.href = "registration";
