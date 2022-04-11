@@ -59,10 +59,10 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 					?>
 				</select>
 				
-				E-mail: <input type="text" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+				E-mail: <input type="text" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" requiered/>
 				
-				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich."/>
-				<label for="check"><label for="check"><input id="check" type="checkbox" onclick="showPW()" />Passwort anzeigen</label>
+				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" requiered title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Zeichen erforderlich."/>
+				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
 <!--				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
 				<span id='password-message-span'></span>
 -->				
