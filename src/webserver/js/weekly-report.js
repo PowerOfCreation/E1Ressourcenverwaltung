@@ -1,9 +1,9 @@
 $()
 {
     $employeeEntries = $("#tbody-employee-entries");
-
+    console.log("Test1");
     $employeeEntries.find(".td-entry-weekday").click(onWeekdayClick);
-
+    
     function addEmployee(employeeId, employeeName) {
         $employeeElement = $(` 
             <tr> \
@@ -24,7 +24,7 @@ $()
 
     function onWeekdayClick() {
         $newProjectInput = $('<input type="text"></input>');
-
+        
         $(this).append($newProjectInput);
 
         $newProjectInput.on('blur', addNewProject);
@@ -38,8 +38,12 @@ $()
         $(this).parent().append($(`<span class="span-project">${$(this).val()}</span>`));
         $(this).remove();
     }
-
+   
     $("#btn-add-employee").click(function () {
         window.location.href = "registration";
+    });
+
+    $("#btn-edit-projects").click(function () {
+        window.location.href = "project";
     });
 }
