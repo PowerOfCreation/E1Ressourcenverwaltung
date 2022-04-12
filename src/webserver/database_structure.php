@@ -79,7 +79,7 @@ else
 }*/
 
 /*if(*/$connection->query("
-CREATE TABLE IF NOT EXISTS Member(
+CREATE TABLE IF NOT EXISTS User_Project(
 UserId int NOT NULL,
 ProjectId int NOT NULL,
 PRIMARY KEY (UserId, ProjectId),
