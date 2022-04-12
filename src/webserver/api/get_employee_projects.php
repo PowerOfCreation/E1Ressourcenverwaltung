@@ -24,7 +24,7 @@
         $result_json_array = array();
 
         if ($row = $get_user_projects_statement->fetch()) {
-            array_push($result_json_array, (object) array($projectId => $projectName));
+            array_push($result_json_array, (object) array("projectId" => $projectId, "projectName" => $projectName));
         }
 
         echo(json_encode($result_json_array));

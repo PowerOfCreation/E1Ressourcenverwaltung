@@ -1,7 +1,7 @@
 $()
 {
     $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
-    $addProjectSelect = $("<select id='add-project-select'><option>Marketing</option></select>");
+    $addProjectSelect = $("<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
 
     $employeeEntries = $("#tbody-employee-entries");
 
@@ -47,11 +47,22 @@ $()
 
         $weekdayElement.append($addProjectSelect);
 
+        $addProjectSelect.find("option").not(":first").remove();
+        $addProjectSelect.prop('selectedIndex',0);
+
         $addProjectButton.detach();
 
         let employeeUsername = $employeeElement.find(".td-entry-employee").data("username");
 
-        // todo ajax to get all projects this employee is currently in
+        $.get("api/get_employee_projects.php", {name: employeeUsername}).done( function(data) {
+            let employeeProjects = jQuery.parseJSON(data);
+
+            for (let index = 0; index < employeeProjects.length; index++) {
+                const element = employeeProjects[index];
+                
+                $addProjectSelect.append(`<option value='${element["projectId"]}'>${element["projectName"]}</option>`);
+            }
+        });
     }
 
     function onWeekdayClick() {
