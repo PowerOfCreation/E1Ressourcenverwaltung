@@ -47,25 +47,20 @@ require_once("/app/config/credentials.php");
 	<main>
 		<h1 style="text-align: justify;">Projekt Verwaltung</h1>
 		<form name="RegForm" id="registrierung" method="post">                                
-        <div>
-			
+        <div>	
+			Projekte: 
+			<input tpye = "text" name="ProjectName" value="<?php 
+				$result = $connection->query("SELECT * FROM Project;");
+				while ($row = $result->fetch_object()) 
+				{
+					if($row != NULL)
+					{
+						echo $row->ProjectName . "<br />";				
+					}
+				}			
+			?>">
 
-            Benutzername: <input type="text" size="65" name="Username" />
-
-			Vorname: <input type="text" size="65" name="Forename" />
 			
-			Nachname: <input type="text" size="65" name="Surname" />
-			
-			Abteilung:  
-				<select name = "Department">
-					<?php 
-						$result = $connection->query("SELECT * FROM Department;");
-						while ($row = $result->fetch_object()) 
-						{
-							echo "<option value='" . $row->DepartmentId . " '>" . $row->DepartmentName . "</option>";
-						}				
-					?>
-				</select>
 				
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>
 				<button id="btn-new-projects">Projekt erstellen</button>   

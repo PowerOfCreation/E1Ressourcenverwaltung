@@ -53,7 +53,7 @@ ProjectOwner int NOT NULL,
 Color varchar(6),
 Topic varchar(255),
 End date,
-FOREIGN KEY(Projectowner) REFERENCES User(UserId))");/*  === TRUE)
+FOREIGN KEY(ProjectOwner) REFERENCES User(UserId))");/*  === TRUE)
 {
     echo "Successfully executed create table Project";
 }
@@ -127,7 +127,8 @@ $result = $connection->query("SELECT count(*) from Project;");
 
 if($result->fetch_array()[0] == 0)
 {
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 193, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 193, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
 }
 
 

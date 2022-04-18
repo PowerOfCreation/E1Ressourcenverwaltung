@@ -7,7 +7,7 @@ error_reporting(-1);
 require_once("/app/config/credentials.php");
 
 //More checks required...
-if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
+if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"]))) {
 	// Example how to use POST'ed values
 	$projectname = htmlspecialchars($_POST["ProjectName"]);
 	$projectowner = htmlspecialchars($_POST["ProjectOwner"]);
