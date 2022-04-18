@@ -49,7 +49,7 @@
 
                         while ($row = $result->fetch_object()) {
                             echo "<tr>";
-                            echo "<td class='td-entry-employee'><a href='./mitarbeiter/?name=" . $row->Username . "'>" . $row->Forename . " " . $row->Surname . "</a></td>";
+                            echo "<td class='td-entry-employee' data-username='" . $row->Username . "'><a href='./mitarbeiter/?name=" . $row->Username . "'>" . $row->Forename . " " . $row->Surname . "</a></td>";
                             echo "<td class='td-entry-weekday td-entry-monday'></td>";
                             echo "<td class='td-entry-weekday td-entry-tuesday'></td>";
                             echo "<td class='td-entry-weekday td-entry-wednesday'></td>";

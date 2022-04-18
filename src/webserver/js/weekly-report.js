@@ -1,9 +1,13 @@
 $()
 {
+    $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
+    $addProjectSelect = $("<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
+
     $employeeEntries = $("#tbody-employee-entries");
 
-    $employeeEntries.find(".td-entry-weekday").click(onWeekdayClick);
-    
+    $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
+    $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
+
     function addEmployee(employeeId, employeeName) {
         $employeeElement = $(` 
             <tr> \
@@ -17,9 +21,48 @@ $()
 
         $employeeElement.data("employeeId", employeeId);
 
-        $employeeElement.find(".td-entry-weekday").click(onWeekdayClick);
+        $employeeElement.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
+        $employeeElement.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
 
         $employeeEntries.append($employeeElement);
+    }
+
+    function onWeekdayEnter() {
+        if($(this).find("#add-project-select").length == 0)
+        {
+            $(this).append($addProjectButton);
+        }
+    }
+
+    function onWeekdayLeave() {
+        $addProjectButton.detach();
+
+        //$(this).find("#add-project-select").detach();
+    }
+
+    function addStatus()
+    {
+        let $weekdayElement = $addProjectButton.parent();
+        let $employeeElement = $weekdayElement.parent();
+
+        $weekdayElement.append($addProjectSelect);
+
+        $addProjectSelect.find("option").not(":first").remove();
+        $addProjectSelect.prop('selectedIndex',0);
+
+        $addProjectButton.detach();
+
+        let employeeUsername = $employeeElement.find(".td-entry-employee").data("username");
+
+        $.get("api/get_employee_projects.php", {name: employeeUsername}).done( function(data) {
+            let employeeProjects = jQuery.parseJSON(data);
+
+            for (let index = 0; index < employeeProjects.length; index++) {
+                const element = employeeProjects[index];
+                
+                $addProjectSelect.append(`<option value='${element["projectId"]}'>${element["projectName"]}</option>`);
+            }
+        });
     }
 
     function onWeekdayClick() {
@@ -33,10 +76,6 @@ $()
         });
 
         $newProjectInput.select();
-    }
-    function addNewProject() {
-        $(this).parent().append($(`<span class="span-project">${$(this).val()}</span>`));
-        $(this).remove();
     }
    
     $("#btn-add-employee").click(function () {
