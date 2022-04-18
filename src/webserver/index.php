@@ -29,6 +29,7 @@
                 <button id="btn-edit-projects">Projekte verwalten</button>
                 <button id="btn-add-employee">Mitarbeiter hinzufügen</button>
                 <button id="btn-edit-holidays">Feiertage verwalten</button>
+                <button id="btn-new-projects">Projekt erstellen</button>
             </div>
             <div>
                 <table id="table-weekly-report">
