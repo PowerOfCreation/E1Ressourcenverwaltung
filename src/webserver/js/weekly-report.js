@@ -108,11 +108,9 @@ $()
         "td-wednesday",
         "td-thursday",
         "td-friday",
-        "td-saturday",
-        "td-sunday",
       ]
 
-      for (let index = 0; index <= elementNames.length; index++) {
+      for (let index = 0; index < elementNames.length; index++) {
         const element = document.getElementById(elementNames[index])
         const date = document.createTextNode(calendarWeek["weekdays"][index])
         element.appendChild(date)
