@@ -1,4 +1,4 @@
-$();
+$()
 {
 	$addProjectButton = $(
 		"<button onclick='addStatus();'>Status hinzufügen</button>"
