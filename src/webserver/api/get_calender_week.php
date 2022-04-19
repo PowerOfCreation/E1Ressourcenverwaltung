@@ -12,8 +12,8 @@
 
     $dates_of_this_week = [
         "calenderWeek" => $calender_week,
-        "startOfWeekDate" => date("d.m.Y",$monday),
         "weekdays" => array(
+            date("d.m.Y",$monday),
             date("d.m.Y",$thuesday),
             date("d.m.Y",$wednesday),
             date("d.m.Y",$thursday),
