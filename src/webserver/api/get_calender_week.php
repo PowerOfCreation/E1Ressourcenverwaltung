@@ -11,14 +11,16 @@
     $calender_week = date("W" ,$monday);
 
     $dates_of_this_week = [
-        $calender_week,
-        date("d.m.Y",$monday),
-        date("d.m.Y",$thuesday),
-        date("d.m.Y",$wednesday),
-        date("d.m.Y",$thursday),
-        date("d.m.Y",$friday),
-        date("d.m.Y",$saturday),
-        date("d.m.Y",$sunday)
+        "calenderWeek" => $calender_week,
+        "startOfWeekDate" => date("d.m.Y",$monday),
+        "weekdays" => array(
+            date("d.m.Y",$thuesday),
+            date("d.m.Y",$wednesday),
+            date("d.m.Y",$thursday),
+            date("d.m.Y",$friday),
+            date("d.m.Y",$saturday),
+            date("d.m.Y",$sunday)
+        )
     ];
 
     //returns json with calender week and all dates of the week
