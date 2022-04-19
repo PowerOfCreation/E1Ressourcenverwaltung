@@ -36,11 +36,11 @@
                     <thead>
                         <tr>
                             <td id="td-employee">Mitarbeiter</td>
-                            <td id="td-monday">Montag</td>
-                            <td id="td-tuesday">Dienstag</td>
-                            <td id="td-wednesday">Mittwoch</td>
-                            <td id="td-thursday">Donnerstag</td>
-                            <td id="td-friday">Freitag</td>
+                            <td id="td-monday">Montag<br/></td>
+                            <td id="td-tuesday">Dienstag<br/></td>
+                            <td id="td-wednesday">Mittwoch<br/></td>
+                            <td id="td-thursday">Donnerstag<br/></td>
+                            <td id="td-friday">Freitag<br/></td>
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">
