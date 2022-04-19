@@ -5,7 +5,7 @@
         $format = "Y-m-d";
     }
 
-    //increment or decrement $week to change calender week
+    //increment or decrement $week to change calendar week
     $week = -1;
     
     $monday = strtotime('next Monday '.$week.' week');
@@ -15,10 +15,10 @@
     $friday = strtotime(date($format,$monday)." +4 days");
     $saturday = strtotime(date($format,$monday)." +5 days");
     $sunday = strtotime(date($format,$monday)." +6 days");
-    $calender_week = date("W" ,$monday);
+    $calendar_week = date("W" ,$monday);
 
     $dates_of_this_week = [
-        "calendarWeek" => $calender_week,
+        "calendarWeek" => $calendar_week,
         "weekdays" => array(
             date($format,$monday),
             date($format,$thuesday),
@@ -30,7 +30,7 @@
         )
     ];
 
-    //returns json with calender week and all dates of the week
+    //returns json with calendar week and all dates of the week
     echo json_encode($dates_of_this_week);
     
 ?>
