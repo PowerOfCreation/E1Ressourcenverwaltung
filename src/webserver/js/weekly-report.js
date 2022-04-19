@@ -1,16 +1,16 @@
-$()
+$();
 {
   $addProjectButton = $(
     "<button onclick='addStatus();'>Status hinzufügen</button>"
-  )
+  );
   $addProjectSelect = $(
     "<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>"
-  )
+  );
 
-  $employeeEntries = $("#tbody-employee-entries")
+  $employeeEntries = $("#tbody-employee-entries");
 
-  $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter)
-  $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave)
+  $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
+  $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
 
   function addEmployee(employeeId, employeeName) {
     $employeeElement = $(` 
@@ -21,104 +21,104 @@ $()
                 <td class="td-entry-weekday td-entry-wednesday"></td> \
                 <td class="td-entry-weekday td-entry-thursday"></td> \
                 <td class="td-entry-weekday td-entry-friday"></td> \
-            </tr>`)
+            </tr>`);
 
-    $employeeElement.data("employeeId", employeeId)
+    $employeeElement.data("employeeId", employeeId);
 
-    $employeeElement.find(".td-entry-weekday").mouseenter(onWeekdayEnter)
-    $employeeElement.find(".td-entry-weekday").mouseleave(onWeekdayLeave)
+    $employeeElement.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
+    $employeeElement.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
 
-    $employeeEntries.append($employeeElement)
+    $employeeEntries.append($employeeElement);
   }
 
   function onWeekdayEnter() {
     if ($(this).find("#add-project-select").length == 0) {
-      $(this).append($addProjectButton)
+      $(this).append($addProjectButton);
     }
   }
 
   function onWeekdayLeave() {
-    $addProjectButton.detach()
+    $addProjectButton.detach();
 
     //$(this).find("#add-project-select").detach();
   }
 
   function addStatus() {
-    let $weekdayElement = $addProjectButton.parent()
-    let $employeeElement = $weekdayElement.parent()
+    let $weekdayElement = $addProjectButton.parent();
+    let $employeeElement = $weekdayElement.parent();
 
-    $weekdayElement.append($addProjectSelect)
+    $weekdayElement.append($addProjectSelect);
 
-    $addProjectSelect.find("option").not(":first").remove()
-    $addProjectSelect.prop("selectedIndex", 0)
+    $addProjectSelect.find("option").not(":first").remove();
+    $addProjectSelect.prop("selectedIndex", 0);
 
-    $addProjectButton.detach()
+    $addProjectButton.detach();
 
     let employeeUsername = $employeeElement
       .find(".td-entry-employee")
-      .data("username")
+      .data("username");
 
     $.get("api/get_employee_projects.php", { name: employeeUsername }).done(
       function (data) {
-        let employeeProjects = jQuery.parseJSON(data)
+        let employeeProjects = jQuery.parseJSON(data);
 
         for (let index = 0; index < employeeProjects.length; index++) {
-          const element = employeeProjects[index]
+          const element = employeeProjects[index];
 
           $addProjectSelect.append(
             `<option value='${element["projectId"]}'>${element["projectName"]}</option>`
-          )
+          );
         }
       }
-    )
+    );
   }
 
   function onWeekdayClick() {
-    $newProjectInput = $('<input type="text"></input>')
+    $newProjectInput = $('<input type="text"></input>');
 
-    $(this).append($newProjectInput)
+    $(this).append($newProjectInput);
 
-    $newProjectInput.on("blur", addNewProject)
+    $newProjectInput.on("blur", addNewProject);
     $newProjectInput.on("keypress", function (e) {
-      if (e.which === 13) $(this).trigger("blur")
-    })
+      if (e.which === 13) $(this).trigger("blur");
+    });
 
-    $newProjectInput.select()
+    $newProjectInput.select();
   }
 
   $("#btn-add-employee").click(function () {
-    window.location.href = "registration"
-  })
+    window.location.href = "registration";
+  });
 
   $("#btn-edit-projects").click(function () {
-    window.location.href = "project"
-  })
+    window.location.href = "project";
+  });
 
   $("#btn-new-projects").click(function () {
-    window.location.href = "project/newproject"
-  })
+    window.location.href = "project/newproject";
+  });
 
   //calls api/get_calendar_week.php and fills the table with the data
   function getDates() {
     $.get("api/get_calendar_week.php").done(function (data) {
-      const calendarWeek = jQuery.parseJSON(data)
+      const calendarWeek = jQuery.parseJSON(data);
       const elementNames = [
         "td-monday",
         "td-tuesday",
         "td-wednesday",
         "td-thursday",
         "td-friday",
-      ]
+      ];
 
       for (let index = 0; index < elementNames.length; index++) {
-        const element = document.getElementById(elementNames[index])
-        const date = document.createTextNode(calendarWeek["weekdays"][index])
-        element.appendChild(date)
+        const element = document.getElementById(elementNames[index]);
+        const date = document.createTextNode(calendarWeek["weekdays"][index]);
+        element.appendChild(date);
       }
-    })
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    getDates()
-  })
+    getDates();
+  });
 }
