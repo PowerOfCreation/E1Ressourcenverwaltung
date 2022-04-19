@@ -1,11 +1,8 @@
 <?php
+    $format = "d.m.Y";
     
-    if($_GET["format"] == "de") {
-        $format = "d.m.Y";
-    }elseif($_GET["format"] == "en") {
+    if($_GET["format"] == "en") {
         $format = "Y-m-d";
-    }else {
-        $format = "d.m.Y";
     }
 
     //increment or decrement $week to change calender week
