@@ -23,10 +23,12 @@
 
         $result_json_array = array();
 
-        if ($row = $get_user_projects_statement->fetch()) {
+        while ($row = $get_user_projects_statement->fetch()) {
             array_push($result_json_array, (object) array("projectId" => $projectId, "projectName" => $projectName));
         }
 
+        $result_json_array = array_reverse($result_json_array);
+        
         echo(json_encode($result_json_array));
 
         $get_user_projects_statement->reset();

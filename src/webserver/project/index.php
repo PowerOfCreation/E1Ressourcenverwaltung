@@ -29,16 +29,7 @@ require_once("/app/config/credentials.php");
     	}
 	</style> 
     <script type="text/javascript">
-    var repeatPw = function() {
-     if (document.getElementById('registrierung').elements["Password"].value == document.getElementById('registrierung').elements["repeatPassword"].value) {
-         document.getElementById('message').style.color = 'green';
-         document.getElementById('message').innerHTML = 'Das Passwort stimmt überein';
-     } 
-     else {
-             document.getElementById('message').style.color = 'red';
-         document.getElementById('message').innerHTML = 'Das Passwort stimmt nicht überein';
-     }
- }
+   
 </script>
 
 </head>
@@ -47,28 +38,23 @@ require_once("/app/config/credentials.php");
 	<main>
 		<h1 style="text-align: justify;">Projekt Verwaltung</h1>
 		<form name="RegForm" id="registrierung" method="post">                                
-        <div>	
-			Projekte: 
-			<input tpye = "text" name="ProjectName" value="<?php 
-				$result = $connection->query("SELECT * FROM Project;");
-				while ($row = $result->fetch_object()) 
-				{
-					if($row != NULL)
-					{
-						echo $row->ProjectName . "<br />";				
-					}
-				}			
-			?>">
-
-			
+        	<div>	
+				Projekte: 
+				<ul>
+					<?php					
+						$result = $connection->query("SELECT * FROM Project;");
+						while ($row = $result->fetch_object()) 
+						{						
+							echo "<li>" . $row->ProjectName . "</li>";				
+						}	
 				
-				<a href=".."><button id="back-button" type="button">Zurück</button></a>
-				<button id="btn-new-projects">Projekt erstellen</button>   
-		</form>
-    </div>
+					?>
+				</ul>			
+				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
+				<a href=".."><button id="back-button" type="button">Zurück</button></a>			
+			</div>	
+		</form>    
 	</main>
-	<script src="../jquery-3.6.0.js"></script>
-    <script src="../js/weekly-report.js"></script>
 </body>
 
 </html>
