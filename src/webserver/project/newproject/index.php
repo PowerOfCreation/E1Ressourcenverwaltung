@@ -15,11 +15,12 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	$topic = htmlspecialchars($_POST["Topic"]);
 	$end = htmlspecialchars($_POST["End"]);
 
-	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, 'ffffaa', ?,  ?);");
+	$color = substr($color,1);
 
-	//$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
-	$add_project->bind_param('siss', $projectname, $projectowner, $topic, $end);
-	echo $projectowner;
+	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, ?, ?,  ?);");
+
+	$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
+
 	if($add_project->execute())
 	{
 		echo "Projekt " . $projectname . " erfolgreich angelegt.";
@@ -63,7 +64,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 		<h1 style="text-align: justify;">Projekt Erstellen</h1>
         <div>
             <form name="RegForm" id="registrierung" method="post">
-                Projektname:         
+                Projektname:
 					<input type="text" size="65" name="ProjectName" />
 
                 Verantwortlicher:  
@@ -76,6 +77,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 							}			
 						?>
 					</select>
+
                 Thema:              
 					<textarea rows="4"  cols="64" name="Topic"></textarea>
                 
@@ -85,15 +87,18 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 						$day = date('d');
 						$year = date('Y');
 						$today = $year . '-' . $month . '-' . $day;
-					?>        
+					?>
 					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
     
 				Farbe: 
 					<input type="color" size="65" name="Color" />
+					<?php
+						$newco
+					?>
                 
                 <div>
+					<input type="submit" value="Projekt erstellen" name="Submit" />
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
-                    <input type="submit" value="Projekt erstellen" name="Submit" />
                 </div>   		
 		    </form>
         </div>	
