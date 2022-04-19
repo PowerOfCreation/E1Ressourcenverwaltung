@@ -1,4 +1,4 @@
-$()
+$();
 {
 	$addProjectButton = $(
 		"<button onclick='addStatus();'>Status hinzufügen</button>"
@@ -116,7 +116,9 @@ $()
 
 			for (let index = 0; index < elementNames.length; index++) {
 				const element = document.getElementById(elementNames[index]);
-				const date = document.createTextNode(calendarWeek["weekdays"][index]);
+				const date = document.createTextNode(
+					calendarWeek["weekdays"][index]
+				);
 				element.appendChild(date);
 			}
 		});
