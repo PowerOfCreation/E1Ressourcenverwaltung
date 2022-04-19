@@ -91,11 +91,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
     
 				Farbe: 
-					<input type="color" size="65" name="Color" />
-					<?php
-						$newco
-					?>
-                
+					<input type="color" size="65" name="Color" />                
                 <div>
 					<input type="submit" value="Projekt erstellen" name="Submit" />
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
