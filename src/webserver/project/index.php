@@ -29,16 +29,7 @@ require_once("/app/config/credentials.php");
     	}
 	</style> 
     <script type="text/javascript">
-    var repeatPw = function() {
-     if (document.getElementById('registrierung').elements["Password"].value == document.getElementById('registrierung').elements["repeatPassword"].value) {
-         document.getElementById('message').style.color = 'green';
-         document.getElementById('message').innerHTML = 'Das Passwort stimmt überein';
-     } 
-     else {
-             document.getElementById('message').style.color = 'red';
-         document.getElementById('message').innerHTML = 'Das Passwort stimmt nicht überein';
-     }
- }
+   
 </script>
 
 </head>

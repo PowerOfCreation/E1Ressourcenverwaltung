@@ -127,8 +127,8 @@ $result = $connection->query("SELECT count(*) from Project;");
 
 if($result->fetch_array()[0] == 0)
 {
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 193, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 193, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 2, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
 }
 
 
@@ -137,7 +137,7 @@ $result = $connection->query("SELECT count(*) from User_Project;");
 if($result->fetch_array()[0] == 0)
 {
     $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 1);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 1);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 2);");
 }
 
 ?>
