@@ -15,7 +15,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
 
 	$add_user_statement->bind_param('sssiss', $username, $forename, $surname, $departmentId, $e_mail, $password);
-	
+
 	if($add_user_statement->execute())
 	{
 		echo "Nutzer " . $username . " erfolgreich angelegt.";
@@ -25,6 +25,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 		echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
 		echo $connection->error;
 	}
+	$add_user_statement->reset();
 }
 ?>
 

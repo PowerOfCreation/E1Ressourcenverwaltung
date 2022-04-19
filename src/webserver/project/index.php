@@ -41,12 +41,13 @@ require_once("/app/config/credentials.php");
         	<div>	
 				Projekte: 
 				<ul>
-					<?php 
+					<?php					
 						$result = $connection->query("SELECT * FROM Project;");
 						while ($row = $result->fetch_object()) 
 						{						
 							echo "<li>" . $row->ProjectName . "</li>";				
 						}	
+				
 					?>
 				</ul>			
 				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>

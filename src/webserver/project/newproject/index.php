@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 error_reporting(-1);
 
 require_once("/app/config/credentials.php");
-
+include("../../database_structure.php");
 //More checks required...
 if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"]))) {
 	// Example how to use POST'ed values
@@ -15,10 +15,10 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	$topic = htmlspecialchars($_POST["Topic"]);
 	$end = htmlspecialchars($_POST["End"]);
 
-	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, 'ffffaa', ?,  '2023-01-01');");
+	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, 'ffffaa', ?,  ?);");
 
 	//$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
-	$add_project->bind_param('sis', $projectname, $projectowner, $topic);
+	$add_project->bind_param('siss', $projectname, $projectowner, $topic, $end);
 	echo $projectowner;
 	if($add_project->execute())
 	{
@@ -29,6 +29,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 		echo "Fehler beim Erstellen des Projektes. Eingaben überprüfen.";
 		echo $connection->error;
 	}
+	$add_project->reset();
 }
 ?>
 
@@ -61,32 +62,35 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	<main>
 		<h1 style="text-align: justify;">Projekt Erstellen</h1>
         <div>
-            <form name="RegForm" id="registrierung" method="post">                                
+            <form name="RegForm" id="registrierung" method="post">
                 Projektname:         
-				<input type="text" size="65" name="ProjectName" />
+					<input type="text" size="65" name="ProjectName" />
 
                 Verantwortlicher:  
-				<select name = "Project">
-					<?php 
-						$result = $connection->query("SELECT * FROM User;");
-
-						while ($row = $result->fetch_object()) 
-						{
-							echo "<option value='" . $row->ProjectOwner . " '>" . $row->Username . "</option>";
-							echo $row->Username;
-						}				
-					?>
-				</select>				 
-
-                Farbe:              
-				<input type="color" size="65" name="Color" />
-                
+					<select name = "ProjectOwner">
+						<?php 
+							$result = $connection->query("SELECT * FROM User;");
+							while ($row = $result->fetch_object()) 
+							{
+								echo "<option value='" . $row->UserId . " '>" . $row->Username . "</option>";
+							}			
+						?>
+					</select>
                 Thema:              
-				<textarea rows="4"  cols="64" name="Topic"></textarea>
+					<textarea rows="4"  cols="64" name="Topic"></textarea>
                 
-                Abgabedatum:        
-				<input type="text" size="65" name="End" />
+				Abgabedatum:
+					<?php 
+						$month = date('m');
+						$day = date('d');
+						$year = date('Y');
+						$today = $year . '-' . $month . '-' . $day;
+					?>        
+					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
     
+				Farbe: 
+					<input type="color" size="65" name="Color" />
+                
                 <div>
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
                     <input type="submit" value="Projekt erstellen" name="Submit" />
