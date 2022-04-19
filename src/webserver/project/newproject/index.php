@@ -16,9 +16,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	$end = htmlspecialchars($_POST["End"]);
 
 	$color = substr($color,1);
-
 	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, ?, ?,  ?);");
-
 	$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
 
 	if($add_project->execute())
@@ -51,7 +49,6 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 		form {
 			margin: 0 auto;
 			width: 500px;
-
     	}
 	</style> 
     <script type="text/javascript">
