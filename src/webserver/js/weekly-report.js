@@ -110,6 +110,10 @@ $();
         "td-friday",
       ];
 
+      heading = document.getElementById("h1-heading");
+      week = document.createTextNode(calendarWeek["calendarWeek"]);
+      heading.appendChild(week);
+
       for (let index = 0; index < elementNames.length; index++) {
         const element = document.getElementById(elementNames[index]);
         const date = document.createTextNode(calendarWeek["weekdays"][index]);

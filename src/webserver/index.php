@@ -19,7 +19,7 @@
 
     <div>
         <header>
-            <h1>Einsatzplan - Übersicht</h1>
+            <h1 id="h1-heading">Einsatzplan - Übersicht KW</h1>
             <div id="div-search-weekly-report-wrapper">
                 <input class="input-search" id="input-search-weekly-report" type="text" placeholder="Suchen..">
             </div>

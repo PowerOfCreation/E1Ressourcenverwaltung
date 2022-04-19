@@ -18,7 +18,7 @@
     $calender_week = date("W" ,$monday);
 
     $dates_of_this_week = [
-        "calenderWeek" => $calender_week,
+        "calendarWeek" => $calender_week,
         "weekdays" => array(
             date($format,$monday),
             date($format,$thuesday),
