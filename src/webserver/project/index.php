@@ -38,28 +38,24 @@ require_once("/app/config/credentials.php");
 	<main>
 		<h1 style="text-align: justify;">Projekt Verwaltung</h1>
 		<form name="RegForm" id="registrierung" method="post">                                
-        <div>	
-			Projekte: 
-			<input tpye = "text" name="ProjectName" value="<?php 
-				$result = $connection->query("SELECT * FROM Project;");
-				while ($row = $result->fetch_object()) 
-				{
-					if($row != NULL)
+        	<div>	
+				Projekte: 
+				<input type = "text" name="ProjectName" value="<?php 
+					$result = $connection->query("SELECT * FROM Project;");
+					while ($row = $result->fetch_object()) 
 					{
-						echo $row->ProjectName . "<br />";				
-					}
-				}			
-			?>">
-
-			
-				
+						if($row != NULL)
+						{
+							echo $row->ProjectName . "<br />";				
+						}
+					}			
+				?>">			
+				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>
-				<button id="btn-new-projects">Projekt erstellen</button>   
-		</form>
-    </div>
+			
+			</div>	
+		</form>    
 	</main>
-	<script src="../jquery-3.6.0.js"></script>
-    <script src="../js/weekly-report.js"></script>
 </body>
 
 </html>

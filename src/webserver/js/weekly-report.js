@@ -85,8 +85,4 @@ $()
     $("#btn-edit-projects").click(function () {
         window.location.href = "project";
     });
-
-    $("#btn-new-projects").click(function () {
-        window.location.href = "project/newproject";
-    });
 }

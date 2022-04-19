@@ -15,9 +15,9 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	$topic = htmlspecialchars($_POST["Topic"]);
 	$end = htmlspecialchars($_POST["End"]);
 
-	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, ?, ?, ?);");
+	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, 1, 'ffffaa', ?, ?);");
 
-	$add_project->bind_param('sssss', $projectname, $projectowner, $color, $topic, $end);
+	$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
 
 	if($add_project->execute())
 	{
@@ -70,8 +70,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
                 Thema:              <textarea rows="4"  cols="64" name="Topic"></textarea>
                 
                 Abgabedatum:        <input type="text" size="65" name="End" />
-                
-                Mitarbeiter:         <textarea rows="6"  cols="64" name="Topic"></textarea>
+    
                 
                 <div>
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
