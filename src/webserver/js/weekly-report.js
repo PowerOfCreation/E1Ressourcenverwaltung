@@ -85,4 +85,31 @@ $()
     $("#btn-edit-projects").click(function () {
         window.location.href = "project";
     });
+
+	//calls api/get_calendar_week.php and fills the table with the data
+	function getDates() {
+		$.get("api/get_calendar_week.php").done(function (data) {
+			const calendarWeek = jQuery.parseJSON(data);
+			const elementNames = [
+				"td-monday",
+				"td-tuesday",
+				"td-wednesday",
+				"td-thursday",
+				"td-friday",
+			];
+
+			heading = document.getElementById("h1-heading");
+			week = document.createTextNode(calendarWeek["calendarWeek"]);
+			heading.appendChild(week);
+
+			for (let index = 0; index < elementNames.length; index++) {
+				const element = document.getElementById(elementNames[index]);
+				const date = document.createTextNode(
+					calendarWeek["weekdays"][index]
+				);
+				element.appendChild(date);
+			}
+		});
+	}
+	getDates();
 }
