@@ -15,10 +15,11 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	$topic = htmlspecialchars($_POST["Topic"]);
 	$end = htmlspecialchars($_POST["End"]);
 
-	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, 1, 'ffffaa', ?, ?);");
+	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, 'ffffaa', ?,  '2023-01-01');");
 
-	$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
-
+	//$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
+	$add_project->bind_param('sis', $projectname, $projectowner, $topic);
+	echo $projectowner;
 	if($add_project->execute())
 	{
 		echo "Projekt " . $projectname . " erfolgreich angelegt.";
@@ -61,17 +62,31 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 		<h1 style="text-align: justify;">Projekt Erstellen</h1>
         <div>
             <form name="RegForm" id="registrierung" method="post">                                
-                Projektname:         <input type="text" size="65" name="ProjectName" />
+                Projektname:         
+				<input type="text" size="65" name="ProjectName" />
 
-                Verantwortlicher:   <input type="text" size="65" name="ProjectOwner" />
+                Verantwortlicher:  
+				<select name = "Project">
+					<?php 
+						$result = $connection->query("SELECT * FROM User;");
 
-                Farbe:              <input type="text" size="65" name="Color" />
+						while ($row = $result->fetch_object()) 
+						{
+							echo "<option value='" . $row->ProjectOwner . " '>" . $row->Username . "</option>";
+							echo $row->Username;
+						}				
+					?>
+				</select>				 
+
+                Farbe:              
+				<input type="color" size="65" name="Color" />
                 
-                Thema:              <textarea rows="4"  cols="64" name="Topic"></textarea>
+                Thema:              
+				<textarea rows="4"  cols="64" name="Topic"></textarea>
                 
-                Abgabedatum:        <input type="text" size="65" name="End" />
+                Abgabedatum:        
+				<input type="text" size="65" name="End" />
     
-                
                 <div>
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
                     <input type="submit" value="Projekt erstellen" name="Submit" />

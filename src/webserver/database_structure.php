@@ -104,7 +104,6 @@ if($result->fetch_array()[0] == 0)
     $connection->query("Insert into Department(DepartmentName, DepartmentColor) Values('Produktion', 'violett');");
 }
 
-
 $result = $connection->query("SELECT count(*) from User;");
 
 if($result->fetch_array()[0] == 0)

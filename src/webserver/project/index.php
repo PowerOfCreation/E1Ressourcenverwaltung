@@ -40,19 +40,17 @@ require_once("/app/config/credentials.php");
 		<form name="RegForm" id="registrierung" method="post">                                
         	<div>	
 				Projekte: 
-				<input type = "text" name="ProjectName" value="<?php 
-					$result = $connection->query("SELECT * FROM Project;");
-					while ($row = $result->fetch_object()) 
-					{
-						if($row != NULL)
-						{
-							echo $row->ProjectName . "<br />";				
-						}
-					}			
-				?>">			
+				<ul>
+					<?php 
+						$result = $connection->query("SELECT * FROM Project;");
+						while ($row = $result->fetch_object()) 
+						{						
+							echo "<li>" . $row->ProjectName . "</li>";				
+						}	
+					?>
+				</ul>			
 				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
-				<a href=".."><button id="back-button" type="button">Zurück</button></a>
-			
+				<a href=".."><button id="back-button" type="button">Zurück</button></a>			
 			</div>	
 		</form>    
 	</main>
