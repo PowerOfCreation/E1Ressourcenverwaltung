@@ -129,6 +129,7 @@ Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglic
 
 Im Moment existieren nur 2 Ebenen, da die eine dritte schon die noch nicht Fertige und sich ändernde Implementierung illustrieren würde.
 
+image::c4.drawio.png[] 
 
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.

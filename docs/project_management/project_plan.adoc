@@ -36,9 +36,10 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 = Praktiken 
 - Iterative Entwicklung
 
-Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch hat konnte eine Übersicht der vergebenen und auch beendeten Aufgaben erfasst werden. Die Iterationslänge in diesem Projekt wurde auf eine Woche festgelegt, damit hatte jedes Mitglied eine zeitliche Vorgabe bis wann es seine Aufgabe im angemessen Maße bearbeitet haben sollte. 
+Zu Anfang jeder Iteration werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenem Maße bearbeitet werden sollen. Die Aufgaben sind normalerweiße kleine Teilfunktionen der Webanwendung.
+Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslängewurde am Anfang des Projekts auf eine Woche festgelegt. In der zweiten Hälfte des Projekts wurde es auf zwei Wochen angehoben.
 Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
-Die Bewertung der Iterationen erfolgt in der Gruppe. 
+
 
 //ziemlich sinnvoll und auch gut umzusetzen 
 //gibt struktur und kann auch "rückblicken"
@@ -53,10 +54,10 @@ Die verteilten Aufgaben und ihr Fertigungsstellungsdatum sind angemessen gewähl
 
 Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen anderen Schwerpunkt bei der Entwicklung des Projekts. Dadurch können Risiken besser eingeschätzt werden, ebenso ob das Projekt fortgeführt werden sollte.
 
-//erfüllt unsere Methode diese Praktik oder tun wir dies erst zu einem späterem Zeitpunkt?
+
 - Concurrent Testing 
 
-Concurrent Testing wird bei uns im Team angewendet. Jedoch noch nicht mit fest geschriebenen Vorgaben, welche Eingaben welche Ausgaben erwarten, oder Programmen. Stattdessen Testet jedes Teammitglied frei, ob es die erwarteten Ergebnisse eintreten oder nicht.   
+Concurrent Testing wird bei uns im Team angewendet. Jedoch werden im Moment noch keine automatisierten Tests verwendet. Aktuell wird der Programmcode mit einer Testliste verglichen. Units-Test sind noch geplant.
 
 - Use Case Driven Development 
 
@@ -181,7 +182,7 @@ Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases ode
 * Damit wird dafür gesorgt, dass die Dokumentation aktuell bleibt und eventuelle Ungenauigkeiten verbessert werden
 //Name nachschlagen und in andere Dokumente eintragen
 * Vinh wird als neues Teammitglied aufgenommen und in das Projekt eingeführt. Außerdem wird er als Person in den Beleg integriert 
-* Die Funktionen der Webanwendung werden erweitert. U.a. anzeigen der aktuellen Kalenderwoche, Projekterstellung und Implementierung verschiedener Geschäftslogik 
+* Die Funktionen der Webanwendung werden erweitert, u.a. anzeigen der aktuellen Kalenderwoche, Projekterstellung und Implementierung verschiedener Geschäftslogik 
 |12.04.22-25.04.22
 |-
 
