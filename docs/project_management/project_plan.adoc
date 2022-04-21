@@ -174,6 +174,24 @@ Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases ode
 * Damit wird das Risiko eines nicht fertigen Systems minimiert
 | 05.04.22. - 11.04.22
 | - 
+
+|I12
+|
+* Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Risikoliste
+* Damit wird dafür gesorgt, dass die Dokumentation aktuell bleibt und eventuelle Ungenauigkeiten verbessert werden
+//Name nachschlagen und in andere Dokumente eintragen
+* Vinh wird als neues Teammitglied aufgenommen und in das Projekt eingeführt. Außerdem wird er als Person in den Beleg integriert 
+* Die Funktionen der Webanwendung werden erweitert. U.a. anzeigen der aktuellen Kalenderwoche, Projekterstellung und Implementierung verschiedener Geschäftslogik 
+|12.04.22-25.04.22
+|-
+
+|I13
+|
+* Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Use Cases
+
+* Die Funktionen der Webanwendung werden erweitert.
+|26.04.22-09.05.22
+|-
 |===
 
 == Deployment
@@ -185,3 +203,5 @@ Die Übergabe der Software an den Auftraggeber erfolgt über GitHub.
 Bei den ersten paar Teammeetings wurden alle Ergebnisse der Iteration ausführlich diskutiert und zusammen verbessert. Dadurch gingen die Meetings meist länger als eine Stunde, was die Arbeitsmoral schmälerte. Um in diesem Punkt mehr Effizienz zu erzielen, wurden dann nur noch Verbesserungsvorschläge unterbreitet und die verantwortliche Person hat die Änderungen selbstständig ausgeführt. 
 
 Zu Beginn des Projektes wurden Aufgaben in den Meetings zugewiesen und die Verantwortlichkeit dann im Meetingprotokoll dokumentiert. Das stellte sich als unübersichtlich heraus und benachteiligte Personen, die nicht am Meeting teilnehmen konnten. Um diesen Ablauf zu verbessern, sind wir nach zwei Wochen dazu übergegangen, die anstehenden Aufgaben über GitHub Issues zu organisieren, was auch den Vorteil hat, dass sich jeder seine Aufgabe selbst aussuchen kann. 
+
+Die Iteration von einer Woche waren im 2. Semester zu kurz und haben keinen wirklichen Fortschritt erbracht. Daher wurde die Iterationszeit auf zwei Wochen angehoben.
