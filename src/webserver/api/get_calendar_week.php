@@ -25,7 +25,8 @@
             date($format,$wednesday),
             date($format,$thursday),
             date($format,$friday),
-        )
+        ),
+        "year" => date("Y",$monday),
     ];
 
     //returns json with calendar week and all dates of the week
