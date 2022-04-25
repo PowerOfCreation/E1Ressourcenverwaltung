@@ -62,15 +62,16 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
         <div>
             <form name="RegForm" id="registrierung" method="post">
                 Projektname:
-					<input type="text" size="65" name="ProjectName" />
+					<input type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
 
                 Verantwortlicher:  
 					<select name = "ProjectOwner">
+						<option hidden="">Choose... </option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
 							while ($row = $result->fetch_object()) 
 							{
-								echo "<option value='" . $row->UserId . " '>" . $row->Username . "</option>";
+								echo "<option value='" . $row->UserId . " '>" . $row->Forename . " " .  $row->Surname . "</option>";
 							}			
 						?>
 					</select>
