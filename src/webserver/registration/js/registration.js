@@ -26,14 +26,7 @@ $()
             pwVisibility.type = "password";
         }
       }
-    //   function validatePw() {
-    //     if (passwordInput.value == confirmPasswordInput.value) {
-    //         setPasswordMessage("green", "Das Passwort stimmt überein.");
-    //     }
-    //     else {
-    //         setPasswordMessage("red", "Das Passwort stimmt nicht überein.");
-    //     }
-    // }
+
     
     //Popupfenster, falls genutzt wird, bedarf Regexp-Überarbeitung
     //Das ganze funktioniert in Chrome, aber nicht in Safari
@@ -56,8 +49,8 @@ $()
     //         }
     // return true;
     // }
-//     function popupPassword() {
-//       alert("Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich.");
-//      }
+    // function popupPassword() {
+    //    alert("Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich.");
+    //   }
 
 };
