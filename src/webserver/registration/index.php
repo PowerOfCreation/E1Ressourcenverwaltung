@@ -25,6 +25,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 		echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
 		echo $connection->error;
 	}
+	$add_user_statement->reset();
 }
 ?>
 

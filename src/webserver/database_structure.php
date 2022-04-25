@@ -53,7 +53,7 @@ ProjectOwner int NOT NULL,
 Color varchar(6),
 Topic varchar(255),
 End date,
-FOREIGN KEY(Projectowner) REFERENCES User(UserId))");/*  === TRUE)
+FOREIGN KEY(ProjectOwner) REFERENCES User(UserId))");/*  === TRUE)
 {
     echo "Successfully executed create table Project";
 }
@@ -79,7 +79,7 @@ else
 }*/
 
 /*if(*/$connection->query("
-CREATE TABLE IF NOT EXISTS Member(
+CREATE TABLE IF NOT EXISTS User_Project(
 UserId int NOT NULL,
 ProjectId int NOT NULL,
 PRIMARY KEY (UserId, ProjectId),
@@ -104,7 +104,6 @@ if($result->fetch_array()[0] == 0)
     $connection->query("Insert into Department(DepartmentName, DepartmentColor) Values('Produktion', 'violett');");
 }
 
-
 $result = $connection->query("SELECT count(*) from User;");
 
 if($result->fetch_array()[0] == 0)
@@ -123,5 +122,21 @@ if($result->fetch_array()[0] == 0)
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Spiderman', 'Peter', 'Parker', 2, 't.stark@mail.de', '123456');");
 }
 
+$result = $connection->query("SELECT count(*) from Project;");
+
+if($result->fetch_array()[0] == 0)
+{
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 2, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
+}
+
+
+$result = $connection->query("SELECT count(*) from User_Project;");
+
+if($result->fetch_array()[0] == 0)
+{
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 1);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 2);");
+}
 
 ?>
