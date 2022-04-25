@@ -42,11 +42,11 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 		<h1 style="text-align: justify;">Mitarbeiter Hinzufügen</h1>
 		<div id="form-wrapper-div">
 			<form id = "registration-form" name="RegForm" method="post">                                
-				Benutzername: <input type="text" name="Username" />
+				Benutzername: <input type="text" name="Username" placeholder="Max123" />
 
-				Vorname: <input type="text" name="Forename" />
+				Vorname: <input type="text" name="Forename" placeholder="Max"  />
 				
-				Nachname: <input type="text" name="Surname" />
+				Nachname: <input type="text" name="Surname" placeholder="Mustermann" />
 				
 				Abteilung:  
 				<select name = "Department">
@@ -60,9 +60,9 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 					?>
 				</select>
 				
-				E-mail: <input type="text" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse."/>
+				E-mail: <input type="text" name="EMail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
 				
-				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich."/>
+				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
 				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
 <!--				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
 				<span id='password-message-span'></span>
