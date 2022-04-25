@@ -1,7 +1,7 @@
 <?php
     $format = "d.m.Y";
 
-    if($_GET["format"] == "en") {
+    if(htmlspecialchars($_GET["format"]) == "en") {
         $format = "Y-m-d";
     }
 
