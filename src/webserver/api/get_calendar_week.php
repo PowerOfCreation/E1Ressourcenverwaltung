@@ -1,7 +1,7 @@
 <?php
     $format = "d.m.Y";
 
-    if($_GET["format"] == "en") {
+    if(htmlspecialchars($_GET["format"]) == "en") {
         $format = "Y-m-d";
     }
 
@@ -25,7 +25,8 @@
             date($format,$wednesday),
             date($format,$thursday),
             date($format,$friday),
-        )
+        ),
+        "year" => date("Y",$monday),
     ];
 
     //returns json with calendar week and all dates of the week

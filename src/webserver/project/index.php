@@ -25,7 +25,6 @@ require_once("/app/config/credentials.php");
 		form {
 			margin: 0 auto;
 			width: 500px;
-
     	}
 	</style> 
     <script type="text/javascript">
