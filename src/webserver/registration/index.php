@@ -42,11 +42,11 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))) {
 		<h1 style="text-align: justify;">Mitarbeiter Hinzufügen</h1>
 		<div id="form-wrapper-div">
 			<form id = "registration-form" name="RegForm" method="post">                                
-				Benutzername: <input type="text" name="Username" placeholder="Max123" />
+				Benutzername: <input type="text" name="Username" placeholder="Max123" required />
 
-				Vorname: <input type="text" name="Forename" placeholder="Max"  />
+				Vorname: <input type="text" name="Forename" placeholder="Max" required />
 				
-				Nachname: <input type="text" name="Surname" placeholder="Mustermann" />
+				Nachname: <input type="text" name="Surname" placeholder="Mustermann" required />
 				
 				Abteilung:  
 				<select name = "Department">

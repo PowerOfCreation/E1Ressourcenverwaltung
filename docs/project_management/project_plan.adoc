@@ -33,7 +33,7 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 // https://www2.htw-dresden.de/~anke/openup/index.htm
-= Praktiken 
+=== Praktiken 
 - Iterative Entwicklung
 
 Zu Anfang jeder Iteration werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenem Maße bearbeitet werden sollen. Die Aufgaben sind normalerweiße kleine Teilfunktionen der Webanwendung.
@@ -65,9 +65,9 @@ In den ersten Iterationen wurde ein Use Case Model mit ausgearbeiteten Use Cases
 Ebenso wurde ein Dokument mit den verschiedenen Requirements erstellt. Dies dient dazu, dass Anforderungen nicht vergessen werden und möglichst genau beschrieben werden
 
 
-= Bewertung
+=== Bewertung
 
-Jedes Teammitglied bekommt jede Iteration, je nach Aufwand, ein oder manchmal auch zwei Issues bei Github zugeteilt. Wenn es ein Implementation-Issue war, dann stellt zuerst das Teammitglied, was den Issue bearbeitet hat, sicher, dass es seine Funktion erfüllt und keine anderen Funktionen beeinträchtigt bzw. Bugs verursacht. Wenn das Issue "gepushed" wurde, soll jedes andere Teammitglied, was die Fähigkeiten hat, dies ebenfalls tun. Bei dem wöchentlichen Treffen hat Herr Werner hat oftmals kleine Verbesserungsvorschläge für den Quellcode, wenn dort Kleinigkeiten besser gemacht werden können. Diese Vorschläge werden dann meist noch schnell umgesetzt. 
+Jedes Teammitglied bekommt jede Iteration, je nach Aufwand, ein oder manchmal auch zwei Issues bei Github zugeteilt. Wenn es ein Implementation-Issue war, dann stellt zuerst das Teammitglied, was den Issue bearbeitet hat, sicher, dass es seine Funktion erfüllt und keine anderen Funktionen beeinträchtigt bzw. Bugs verursacht. Wenn das Issue "gepushed" wurde, soll jedes andere Teammitglied, was die Fähigkeiten hat, dies ebenfalls überprüfen. Bei den wöchentlichen Treffen hat Herr Werner oftmals kleine Verbesserungsvorschläge für den Quellcode. Diese Vorschläge werden dann meistens noch umgesetzt. 
 
 Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases oder Architecture Notebook, werden meistens zu zweit bearbeitet. Dadurch soll sichergestellt werden, dass es direkt bei dem Erstellen zu einem Meinungsaustausch und Verbesserungen kommen kann. Sobald es gepushed wurde, soll jedes Teammitglied sich die erstellte Dokumentation anschauen und mögliche Verbesserungsvorschläge notieren. Bei dem nächsten Teammeeting werden diese angesprochen und eventuell umgesetzt. Ebenfalls können die ursprünglichen Ersteller dort noch Unsicherheiten, offene Fragen etc. ansprechen und ein Feedback erhalten. 
 
@@ -155,6 +155,7 @@ Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases ode
 * Dadurch wird fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
 * Erweiterung der Funktionen der Webanwendung
 * Damit wird das Risiko eines nicht fertigen Systems minimiert
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen
 | 23.03.22 - 28.03.22
 | - 
 
@@ -164,6 +165,7 @@ Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases ode
 * Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
 * Erweiterung der Funktionen der Webanwendung
 * Damit wird das Risiko eines nicht fertigen Systems minimiert
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen
 | 29.03.22 - 04.04.22
 | -
 
@@ -173,6 +175,7 @@ Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases ode
 * Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
 * Erweiterung der Funktionen der Webanwendung, um z.B. Passwortkriterien, Abteilungsdropdown und Suche 
 * Damit wird das Risiko eines nicht fertigen Systems minimiert
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen
 | 05.04.22. - 11.04.22
 | - 
 
@@ -189,8 +192,9 @@ Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases ode
 |I13
 |
 * Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Use Cases
-
 * Die Funktionen der Webanwendung werden erweitert.
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen. Herr Kemter hat die Aufgabe bekommen, zu klären wann beide wieder Einsatzfähig sind bzw. bei noch längerer Krankheit dies an Herrn Anke weiterzuleiten.
+* Herr Kemter wird in HTML und CSS eingeführt. Außerdem macht er einen Termin mit Herrn Liebert
 |26.04.22-09.05.22
 |-
 |===
@@ -206,3 +210,5 @@ Bei den ersten paar Teammeetings wurden alle Ergebnisse der Iteration ausführli
 Zu Beginn des Projektes wurden Aufgaben in den Meetings zugewiesen und die Verantwortlichkeit dann im Meetingprotokoll dokumentiert. Das stellte sich als unübersichtlich heraus und benachteiligte Personen, die nicht am Meeting teilnehmen konnten. Um diesen Ablauf zu verbessern, sind wir nach zwei Wochen dazu übergegangen, die anstehenden Aufgaben über GitHub Issues zu organisieren, was auch den Vorteil hat, dass sich jeder seine Aufgabe selbst aussuchen kann. 
 
 Die Iteration von einer Woche waren im 2. Semester zu kurz und haben keinen wirklichen Fortschritt erbracht. Daher wurde die Iterationszeit auf zwei Wochen angehoben.
+
+//vinh hatte dubioses VS Code plugin, was den ganzen Code umformatiert hatte -> mal besser ausformulieren und so etwas in risikoliste aufnehmen

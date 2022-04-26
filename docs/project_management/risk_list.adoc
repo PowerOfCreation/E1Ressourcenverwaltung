@@ -28,6 +28,7 @@ Die Risiken sind in folgender Tabelle: <<table_risks>> dargestellt. Das Datum de
 <<<
 
 // table risks
+// alte werte mal überarbeiten -> evtl so, dass alte "durchgestrichen" werden, damit fortschritt erkennbar ist
 [#table_risks]
 .Risiken
 [%header, format="csv", separator=","]
