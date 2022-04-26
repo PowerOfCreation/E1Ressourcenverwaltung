@@ -19,12 +19,12 @@
     $get_project_users_statement->bind_param('i', $projectId);
 
     if ($get_project_users_statement->execute()) {
-        $get_project_users_statement->bind_result($UserId, $UserName);
+        $get_project_users_statement->bind_result($userId, $userName);
 
         $result_json_array = array();
 
         while ($row = $get_project_users_statement->fetch()) {
-            array_push($result_json_array, (object) array("UserId" => $UserId, "UserName" => $UserName));
+            array_push($result_json_array, (object) array("userId" => $userId, "userName" => $userName));
         }
 
         $result_json_array = array_reverse($result_json_array);
