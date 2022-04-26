@@ -12,11 +12,11 @@
 
     $projectname = htmlspecialchars($_GET["project"]);
 
-    if(!($get_project_users_statement = $connection->prepare("Select UserId, Username From User Where UserId IN (SELECT UserId FROM User_Project WHERE ProjectId = (SELECT ProjectId From Project Where ProjectName = ?));"))) {
+    if(!($get_project_users_statement = $connection->prepare("Select UserId, Username From User Where UserId IN (SELECT UserId FROM User_Project WHERE ProjectId =  ?));"))) {
         echo "Prepare failed " . $connection->error;
     }
 
-    $get_project_users_statement->bind_param('s', $projectname);
+    $get_project_users_statement->bind_param('i', $projectId);
 
     if ($get_project_users_statement->execute()) {
         $get_project_users_statement->bind_result($UserId, $UserName);
