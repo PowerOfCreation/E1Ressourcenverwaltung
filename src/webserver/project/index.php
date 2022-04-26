@@ -44,7 +44,7 @@ require_once("/app/config/credentials.php");
 						$result = $connection->query("SELECT * FROM Project Order By ProjectName;");
 						while ($row = $result->fetch_object()) 
 						{						
-							echo "<li>" . $row->ProjectName . "</li>";				
+							echo "<button type='submit' style='width: 200px' >" . $row->ProjectName . "</button><br/>";				
 						}	
 				
 					?>
