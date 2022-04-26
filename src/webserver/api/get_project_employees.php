@@ -10,9 +10,9 @@
 
     include("../database_structure.php");
 
-    $projectname = htmlspecialchars($_GET["project"]);
+    $projectId = htmlspecialchars($_GET["project"]);
 
-    if(!($get_project_users_statement = $connection->prepare("Select UserId, Username From User Where UserId IN (SELECT UserId FROM User_Project WHERE ProjectId =  ?));"))) {
+    if(!($get_project_users_statement = $connection->prepare("Select UserId, Username From User Where UserId IN (SELECT UserId FROM User_Project WHERE ProjectId = ?);"))) {
         echo "Prepare failed " . $connection->error;
     }
 
