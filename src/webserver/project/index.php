@@ -48,6 +48,17 @@ require_once("/app/config/credentials.php");
 						}	
 				
 					?>
+				</ul>
+				Mitarbeiter:	
+				<ul>
+					<?php					
+						$result = $connection->query("SELECT * FROM User;");
+						while ($row = $result->fetch_object()) 
+						{						
+							echo "<li>" . $row->Username . "</li>";				
+						}	
+				
+					?>
 				</ul>		
 				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>			
