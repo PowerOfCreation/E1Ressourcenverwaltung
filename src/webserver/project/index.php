@@ -41,7 +41,7 @@ require_once("/app/config/credentials.php");
 				Projekte: 
 				<ul>
 					<?php					
-						$result = $connection->query("SELECT * FROM Project;");
+						$result = $connection->query("SELECT * FROM Project Order By ProjectName;");
 						while ($row = $result->fetch_object()) 
 						{						
 							echo "<li>" . $row->ProjectName . "</li>";				
@@ -52,7 +52,7 @@ require_once("/app/config/credentials.php");
 				Mitarbeiter:	
 				<ul>
 					<?php					
-						$result = $connection->query("SELECT * FROM User;");
+						$result = $connection->query("SELECT * FROM User Order By Username;");
 						while ($row = $result->fetch_object()) 
 						{						
 							echo "<li>" . $row->Username . "</li>";				
