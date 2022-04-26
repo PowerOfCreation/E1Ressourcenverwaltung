@@ -12,7 +12,7 @@
 
     $projectname = htmlspecialchars($_GET["project"]);
 
-    if(!($get_user_projects_statement = $connection->prepare("Select UserId, Username From User Where UserId IN (SELECT UserId FROM User_Project WHERE ProjectId = (SELECT ProjectId From Project Where ProjectName = ?));"))) {
+    if(!($get_project_users_statement = $connection->prepare("Select UserId, Username From User Where UserId IN (SELECT UserId FROM User_Project WHERE ProjectId = (SELECT ProjectId From Project Where ProjectName = ?));"))) {
         echo "Prepare failed " . $connection->error;
     }
 
@@ -23,7 +23,7 @@
 
         $result_json_array = array();
 
-        while ($row = $get_user_projects_statement->fetch()) {
+        while ($row = $get_project_users_statement->fetch()) {
             array_push($result_json_array, (object) array("UserId" => $UserId, "UserName" => $UserName));
         }
 
@@ -31,6 +31,6 @@
         
         echo(json_encode($result_json_array));
 
-        $get_user_projects_statement->reset();
+        $get_project_users_statement->reset();
     }
 ?>
