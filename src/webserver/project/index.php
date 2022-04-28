@@ -27,10 +27,7 @@ require_once("/app/config/credentials.php");
 			width: 500px;
     	}
 	</style> 
-    <script type="text/javascript">
-   
-</script>
-
+    <script type="text/javascript"></script>
 </head>
 
 <body>
@@ -44,9 +41,8 @@ require_once("/app/config/credentials.php");
 						$result = $connection->query("SELECT * FROM Project Order By ProjectName;");
 						while ($row = $result->fetch_object()) 
 						{						
-							echo "<button type='submit' style='width: 200px' >" . $row->ProjectName . "</button><br/>";				
-						}	
-				
+							echo "<div class='projectname' data-project-id='" . $row->ProjectId . "'>" . $row->ProjectName . "</div><br/>";				
+						}					
 					?>
 				</ul>
 				Mitarbeiter:	
@@ -55,9 +51,8 @@ require_once("/app/config/credentials.php");
 						$result = $connection->query("SELECT * FROM User Order By Username;");
 						while ($row = $result->fetch_object()) 
 						{						
-							echo "<input type='checkbox' onclick='return false;'>" . $row->Username . "</input><br/>";				
-						}	
-				
+							echo "<input type='checkbox' class='user-checkbox' data-user-id='" . $row->UserId . "'>" . $row->Username . "</input><br/>";				
+						}					
 					?>
 				</ul>		
 				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
@@ -65,6 +60,8 @@ require_once("/app/config/credentials.php");
 			</div>	
 		</form>    
 	</main>
+	<script src="../jquery-3.6.0.js"></script>
+	<script src="../js/project.js"></script>
 </body>
 
 </html>
