@@ -6,7 +6,11 @@
     }
 
     //increment or decrement $week to change calendar week
-    $week = -1;
+    if(!isset($_GET["week"])) {
+        $week = -1;
+    } else {
+        $week = $_GET["week"] - date("W") - 1;
+    }
 
     $monday = strtotime('next Monday '.$week.' week');
     $thuesday = strtotime(date($format,$monday)." +1 days");
