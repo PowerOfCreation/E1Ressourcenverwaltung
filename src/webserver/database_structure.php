@@ -14,6 +14,12 @@ function execute_sql_query($connection, $queryString)
     }
 }
 
+function exit_failure($message = "")
+{
+    http_response_code(500);
+    exit($message);
+}
+
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Department(
 DepartmentId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
