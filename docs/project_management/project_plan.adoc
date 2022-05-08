@@ -1,5 +1,5 @@
 = Projektplan: {project-name}
-Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; Ving Nguyen <s77261@htw-dresden.de>
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
@@ -24,6 +24,7 @@ Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung.
 | Carl Kirchhoff | Architektur | Architekture | s82087@htw-dresden.de
 | Aleksandra Tartz | Analyst | Analyst | s80433@htw-dresden.de
 | Vitaly Tichonow | Test | Test | s82591@htw-dresden.de
+| Ving Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
 |===
 
 Die Kommunikation innerhalb des Teams findet auf mehreren Wegen statt. Themen über die schnell abgestimmt werden müssen, werden in einer WhatsApp-Gruppe diskutiert, da jedes Teammitglied diesen Channel schnell zur Verfügung hat. Ausführlichere Themen werden über einen Discordchannel besprochen. Zudem ist jede Woche Montag um 17 Uhr ein Teammeeting angesetzt, um über den Stand des Projektes, die erledigten Aufgaben und die anstehenden Aufgaben zu sprechen. Meistens sind alle Teammitglieder bei diesen Meetings anwesend. Alle Meetingprotokolle werden über Googledrive für alle Mitglieder zur Bearbeitung freigegeben. 
@@ -36,18 +37,17 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 === Praktiken 
 - Iterative Entwicklung
 
-Zu Anfang jeder Iteration werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenem Maße bearbeitet werden sollen. Die Aufgaben sind normalerweiße kleine Teilfunktionen der Webanwendung.
+Zu Anfang jeder Iteration (14-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die Aufgaben sind normalerweise kleine Teilfunktionen der Webanwendung. 
+//funktionszuwachs??
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslängewurde am Anfang des Projekts auf eine Woche festgelegt. In der zweiten Hälfte des Projekts wurde es auf zwei Wochen angehoben.
-Die Größe der Aufgaben werden in T-Shirt-Größen angegeben. 
+Die Größe der Aufgaben wird in T-Shirt-Größen angegeben. 
 
-
-//ziemlich sinnvoll und auch gut umzusetzen 
-//gibt struktur und kann auch "rückblicken"
 - Whole Team
 
 Auch wenn jedes Teammitglied einzelne Aufgaben in seinem "Expertengebiet" erledigt, ist das ganze Team dafür verantwortlich, dass alle Aufgaben korrekt erfüllt werden.
 Wenn ein Teammitglied ein Problem hat, kann es andere Teammitglieder um Hilfe fragen. Ebenso darf jeder zu den wöchentlichen Teammeetings seine Meinung und Kritik äußern.
 Die verteilten Aufgaben und ihr Fertigungsstellungsdatum sind angemessen gewählt, so dass sich niemand überarbeitet.
+Das Team und der Themensteller soll mit Vision ein gemeinsames Verständnis für das Projekt entwickeln und sich konkret darauf einigen 
 
 
 - Risk-Value Lifecycle 
@@ -57,30 +57,26 @@ Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen 
 
 - Concurrent Testing 
 
-Concurrent Testing wird bei uns im Team angewendet. Jedoch werden im Moment noch keine automatisierten Tests verwendet. Aktuell wird der Programmcode mit einer Testliste verglichen. Units-Test sind noch geplant.
+Concurrent Testing wird bei uns im Team angewendet. Jedoch werden im Moment noch keine automatisierten Tests verwendet. Aktuell wird der Programmcode mit einer Testliste verglichen. Units-Test sind noch geplant. 
+Es ist geplant, dass vorallem Herr Kemter und ??? die Test planen und ausführen.
 
 - Use Case Driven Development 
 
 In den ersten Iterationen wurde ein Use Case Model mit ausgearbeiteten Use Cases erstellt. Diese dienen dazu, dass wir ein besseres Verständnis der zu erstellenden Funktionen zu erhalten. 
-Ebenso wurde ein Dokument mit den verschiedenen Requirements erstellt. Dies dient dazu, dass Anforderungen nicht vergessen werden und möglichst genau beschrieben werden
+Ebenso wurde ein Dokument mit den verschiedenen Requirements erstellt. Dies dient dazu, dass Anforderungen nicht vergessen werden und möglichst genau beschrieben werden.
+Durch die priorosierte Bearbeitung von einem Use-Case wird versucht immer einen Funktionszuwachs in der Iteration bzw. bei Issues zu erhalten.
 
-
-=== Bewertung
+=== Qualitätssicherung
 
 Jedes Teammitglied bekommt jede Iteration, je nach Aufwand, ein oder manchmal auch zwei Issues bei Github zugeteilt. Wenn es ein Implementation-Issue war, dann stellt zuerst das Teammitglied, was den Issue bearbeitet hat, sicher, dass es seine Funktion erfüllt und keine anderen Funktionen beeinträchtigt bzw. Bugs verursacht. Wenn das Issue "gepushed" wurde, soll jedes andere Teammitglied, was die Fähigkeiten hat, dies ebenfalls überprüfen. Bei dem wöchentlichen Treffen hat Herr Werner hat oftmals kleine Verbesserungsvorschläge für den Quellcode, wenn dort Kleinigkeiten besser gemacht werden können. Diese Vorschläge werden dann meist noch schnell umgesetzt. 
 
 Issues, die kein hundertprozentig "richtig" haben, wie die Vision, Use Cases oder Architecture Notebook, werden meistens zu zweit bearbeitet. Dadurch soll sichergestellt werden, dass es direkt bei dem Erstellen zu einem Meinungsaustausch und Verbesserungen kommen kann. Sobald es gepushed wurde, soll jedes Teammitglied sich die erstellte Dokumentation anschauen und mögliche Verbesserungsvorschläge notieren. Bei dem nächsten Teammeeting werden diese angesprochen und eventuell umgesetzt. Ebenfalls können die ursprünglichen Ersteller dort noch Unsicherheiten, offene Fragen etc. ansprechen und ein Feedback erhalten. 
 
-//Iterationspläne mit Bewertung wie gut was geklappt hat und was noch weitergeführt werden muss 
-// -> dadurch konnte man die meisten aufgaben innerhalb einer woche erfüllen und jeder wurde "gezwungen" seine aufgaben bis zum nächsten meeting zu erfüllen bzw. bei größeren aufgaben wenigstens anfangen
-// hatte dadurch auch einen guten überblick, wer was macht
+=== Bewertung
+//hier ist das große ganze gemeint
+//iterationsziel erfüllt?
+Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem wichtige Funktionen für Use-Cases hinzugefügt werden/wurden, wird der Themensteller konsultiert und seine Meinung dazu reflektiert. 
 
-//projekt in mehrere phasen einteilen 
-
-//"whole team" nicht alle aspekte aber manche
-// -> Everyone has a sense of belonging on the team, of being in it together. There should be no "outsiders," no "them" but only "us." When everyone is on the team, people avoid blaming others. Instead, there is a sense of collective ownership.
-// -> jeder kann nach hilfe fragen bzw seine meinung in den teammeetings äußern
-// -> aufgaben meistens ziemlich klein und nie zu viel -> sustainable pace
 == Meilensteine und Ziele
 //Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
 
