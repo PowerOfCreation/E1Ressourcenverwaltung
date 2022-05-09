@@ -22,10 +22,10 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 		$passwordErrorUpperCase = "Das Passwort muss mindestens 1 Großbuchstabe enthalten.";
 		}
 	if(!preg_match("(?=\S*[\W])",$password)) {
-		$passwordErrorSpecificCharacter = "Das Passwort muss mindestens 1 Sonderzeichen enthalten";
+		$passwordErrorSpecificCharacter = "Das Passwort muss mindestens 1 Sonderzeichen enthalten.";
 		}	
 	if(!preg_match("(?=\S*[\d])",$password)) {
-		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten";
+		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten.";
 		}	
 
 	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
