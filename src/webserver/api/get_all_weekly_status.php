@@ -7,8 +7,8 @@
         exit;
     }
 
-    $calendarWeek = $_GET["calendarWeek"];
-    $year = $_GET["year"];
+    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
+    $year = htmlspecialchars($_GET["year"]);
 
     //get dates of $calendarWeek
     $curl = curl_init();
