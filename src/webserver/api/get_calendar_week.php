@@ -12,28 +12,31 @@
         $week = $_GET["week"] - date("W") - 1;
     }
 
-    $monday = strtotime('next Monday '.$week.' week');
-    $thuesday = strtotime(date($format,$monday)." +1 days");
-    $wednesday = strtotime(date($format,$monday)." +2 days");
-    $thursday = strtotime(date($format,$monday)." +3 days");
-    $friday = strtotime(date($format,$monday)." +4 days");
-    $saturday = strtotime(date($format,$monday)." +5 days");
-    $sunday = strtotime(date($format,$monday)." +6 days");
-    $calendar_week = date("W" ,$monday);
+    function get_calendar_week($week, $format) {
+        $monday = strtotime('next Monday '.$week.' week');
+        $thuesday = strtotime(date($format,$monday)." +1 days");
+        $wednesday = strtotime(date($format,$monday)." +2 days");
+        $thursday = strtotime(date($format,$monday)." +3 days");
+        $friday = strtotime(date($format,$monday)." +4 days");
+        $saturday = strtotime(date($format,$monday)." +5 days");
+        $sunday = strtotime(date($format,$monday)." +6 days");
+        $calendar_week = date("W" ,$monday);
 
-    $dates_of_this_week = [
-        "calendarWeek" => $calendar_week,
-        "weekdays" => array(
-            date($format,$monday),
-            date($format,$thuesday),
-            date($format,$wednesday),
-            date($format,$thursday),
-            date($format,$friday),
-        ),
-        "year" => date("Y",$monday),
-    ];
+        $dates_of_this_week = [
+            "calendarWeek" => $calendar_week,
+            "weekdays" => array(
+                date($format,$monday),
+                date($format,$thuesday),
+                date($format,$wednesday),
+                date($format,$thursday),
+                date($format,$friday),
+            ),
+            "year" => date("Y",$monday),
+        ];
 
-    //returns json with calendar week and all dates of the week
-    echo json_encode($dates_of_this_week);
+        //returns json with calendar week and all dates of the week
+        echo json_encode($dates_of_this_week);
+    }
 
+    get_calendar_week($week, $format);
  ?>
