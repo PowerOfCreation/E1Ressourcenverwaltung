@@ -14,11 +14,10 @@
     $stmt->bind_param('iii', $user, $project, $date);
     if($stmt->execute()){
         echo "Status added";
-        $stmt->close();
         return true;
     }else{
         echo "Error: " . $stmt->error;
-        $stmt->close();
         return false;
     }
+    $stmt->close();
 ?>

@@ -35,7 +35,7 @@ require_once("/app/config/credentials.php");
 		<h1 style="text-align: justify;">Projekt Verwaltung</h1>
 		<form name="RegForm" id="registrierung" method="post">                                
         	<div>	
-				Projekte: 
+				<h2>Projekte:</h2>
 				<ul>
 					<?php					
 						$result = $connection->query("SELECT * FROM Project Order By ProjectName;");
@@ -45,7 +45,7 @@ require_once("/app/config/credentials.php");
 						}					
 					?>
 				</ul>
-				Mitarbeiter:	
+				<h2>Mitarbeiter:</h2>	
 				<ul>
 					<?php					
 						$result = $connection->query("SELECT * FROM User Order By Username;");
@@ -54,7 +54,8 @@ require_once("/app/config/credentials.php");
 							echo "<input type='checkbox' class='user-checkbox' data-user-id='" . $row->UserId . "'>" . $row->Username . "</input><br/>";				
 						}					
 					?>
-				</ul>		
+				</ul>	
+				<a><button id="btn-employee-project" type="button">Übernehmen</button></a>	
 				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>			
 			</div>	
