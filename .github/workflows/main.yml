@@ -3,23 +3,23 @@ name: Psalm Static analysis
 on:
   push:
     paths:
+        - '.github/workflows/main.yml'
         - '**.php'
         - 'psalm.xml'
   pull_request:
     paths:
+        - '.github/workflows/main.yml'
         - '**.php'
         - 'psalm.xml'
 
 jobs:
   psalm:
-    name: Psalm
     runs-on: ubuntu-latest
+    container:
+      image: vimeo/psalm-github-actions
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Psalm
-        uses: docker://vimeo/psalm-github-actions
-        with:
-          volumes: |
-            - src/config/:/app/config
+    - uses: actions/checkout@v2
+    - name: Psalm
+      run: |
+        /bin/mv "src/config" "/app/config/"
+        /composer/vendor/bin/psalm
