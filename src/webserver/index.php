@@ -4,10 +4,6 @@
 
 <body>
     <?php
-    ini_set('display_startup_errors', 1);
-    ini_set('display_errors', 1);
-    error_reporting(-1);
-
     //These are the defined authentication environment in the db service
 
     // The MySQL service named in the docker-compose.yml.

@@ -1,9 +1,5 @@
 <?php
 
-ini_set('display_startup_errors', 1);
-ini_set('display_errors', 1);
-error_reporting(-1);
-
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
