@@ -6,9 +6,9 @@
         echo "Error: missing parameters";
         exit;
     }
-    $user = $_GET['user'];
-    $project = $_GET['project'];
-    $date = $_GET['date'];
+    $user = htmlspecialchars($_GET['user']);
+    $project = htmlspecialchars($_GET['project']);
+    $date = htmlspecialchars($_GET['date']);
 
     $stmt = $connection->prepare("INSERT INTO Status (UserId, ProjectId, Day) VALUES (?, ?, ?)");
     $stmt->bind_param('iii', $user, $project, $date);
