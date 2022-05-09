@@ -132,8 +132,11 @@ $result = $connection->query("SELECT count(*) from Project;");
 
 if($result->fetch_array()[0] == 0)
 {
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Back-Ends.', '2023-01-01');");
     $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 2, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webdesign 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Homepage', 3, 'ffffff', 'Neue Homepage soll aufgebaut werden', '2023-01-01');");
+    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Digitalisierung', 4, 'ffffff', 'Alte Daten müssen digitalisiert werden', '2023-01-01');");
 }
 
 
@@ -143,6 +146,40 @@ if($result->fetch_array()[0] == 0)
 {
     $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 1);");
     $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 2);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(2, 4);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(2, 5);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(3, 4);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(4, 1);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(4, 3);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 1);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 2);");
+    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 3);");
+}
+
+
+$result = $connection->query("SELECT count(*) from Status;");
+
+
+if($result->fetch_array()[0] == 0)
+{
+    $time = strtotime('monday this week');
+    $date = DateTime::createFromFormat('Y-m-d', date('Y-m-d', $time));
+    $monday_date = $date->format('Y-m-d');
+    $tuesday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
+    $wednesday_date = $date->add(new DateInterval('P2D'))->format('Y-m-d');
+    $thursday_date = $date->add(new DateInterval('P3D'))->format('Y-m-d');
+    $friday_date = $date->add(new DateInterval('P4D'))->format('Y-m-d');
+
+
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 1, '{$tuesday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(2, 2, '{$tuesday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(3, 2, '{$tuesday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 5, '{$wednesday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(2, 5, '{$wednesday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(3, 4, '{$thursday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 4, '{$thursday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(2, 3, '{$friday_date}' );");
+    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(3, 1, '{$friday_date}' );");
 }
 
 ?>
