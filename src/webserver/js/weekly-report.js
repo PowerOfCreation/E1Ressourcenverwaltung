@@ -82,7 +82,7 @@ $()
         window.location.href = "registration";
     });
 
-    $("#jects").click(function () {
+    $("#btn-edit-projects").click(function () {
         window.location.href = "project";
     });
 
