@@ -11,21 +11,21 @@
     $year = htmlspecialchars($_GET["year"]);
 
     //get dates of $calendarWeek
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, "http://localhost:80/api/get_calendar_week.php?week=".$calendarWeek);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    $res = curl_exec($curl);
-    curl_close($curl);
-
+    require_once("/app/public/api/get_calendar_week.php");
+    $res = get_calendar_week($calendarWeek, "en");
+    
     //decode response
-    $response = json_decode($res, true);
+    $response = json_decode($res);
 
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
     $i = 0;
-    foreach($response["weekdays"] as $day) {
-        $weekdays[$i] = date("Y-m-d", strtotime($day));
-        $i++;
+
+    if(is_array($response)) {
+        foreach($response["weekdays"] as $day) {
+            $weekdays[$i] = date("Y-m-d", strtotime($day));
+            $i++;
+        }
     }
     
     //call database
@@ -47,5 +47,5 @@
         $i++;
     }
     
-    echo json_encode($statuses);
+    //echo "all: ".json_encode($statuses);
 ?>
