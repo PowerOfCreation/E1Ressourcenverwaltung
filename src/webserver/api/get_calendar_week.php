@@ -1,19 +1,20 @@
 <?php
-    $format = "d.m.Y";
+    function get_calendar_week($calendarWeek, $format) {
+        if(!isset($_GET["week"])){
+            if($calendarWeek == date("W")) {
+                $calendarWeek = -1;
+            }else {
+                $calendarWeek = $calendarWeek - date("W") - 1;
+            }
+        }
 
-    if(htmlspecialchars($_GET["format"]) == "en") {
-        $format = "Y-m-d";
-    }
+        if($format == "en") {
+            $format = "Y-m-d";
+        }else{ 
+            $format = "d.m.Y";
+        }
 
-    //increment or decrement $week to change calendar week
-    if(!isset($_GET["week"])) {
-        $week = -1;
-    } else {
-        $week = $_GET["week"] - date("W") - 1;
-    }
-
-    function get_calendar_week($week, $format) {
-        $monday = strtotime('next Monday '.$week.' week');
+        $monday = strtotime('next Monday '.$calendarWeek.' week');
         $thuesday = strtotime(date($format,$monday)." +1 days");
         $wednesday = strtotime(date($format,$monday)." +2 days");
         $thursday = strtotime(date($format,$monday)." +3 days");
@@ -37,6 +38,4 @@
         //returns json with calendar week and all dates of the week
         echo json_encode($dates_of_this_week);
     }
-
-    get_calendar_week($week, $format);
  ?>
