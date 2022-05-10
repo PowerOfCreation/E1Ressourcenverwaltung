@@ -23,7 +23,7 @@ jobs:
         with:
           php_extensions: xdebug
           bootstrap: vendor/autoload.php
-          configuration: src/test/phpunit.xml
+          configuration: test/phpunit.xml
           args: --coverage-text
         env:
           XDEBUG_MODE: coverage
