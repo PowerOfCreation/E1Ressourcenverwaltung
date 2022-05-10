@@ -1,14 +1,17 @@
 <?php
+    //input: http://localhost/api/get_all_weekly_status.php?allCalendarWeek=18&allYear=2022
+    //output: {"calendarWeek":"18","weekdays":["2022-05-02","2022-05-03","2022-05-04","2022-05-05","2022-05-06"],"year":"2022"}
+
     include("/app/config/credentials.php");
 
     //check if params are complete
-    if(!isset($_GET["calendarWeek"]) || !isset($_GET["year"])) {
+    if(!isset($_GET["allCalendarWeek"]) || !isset($_GET["allYear"])) {
         echo "Error: calendarWeek and year are required";
         exit;
     }
 
-    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
-    $year = htmlspecialchars($_GET["year"]);
+    $calendarWeek = htmlspecialchars($_GET["allCalendarWeek"]);
+    $year = htmlspecialchars($_GET["allYear"]);
 
     //get dates of $calendarWeek
     require_once("/app/public/api/get_calendar_week.php");

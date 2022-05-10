@@ -1,4 +1,28 @@
 <?php
+    //input: http://localhost/api/get_calendar_week.php?calendarWeek=17&year=2022
+    //output: {"calendarWeek":"51","weekdays":["20.12.2021","21.12.2021","22.12.2021","23.12.2021","24.12.2021"],"year":"2021"}
+    
+    //calls the function if script recives a get request
+    if(isset($_GET["year"]) && isset($_GET["calendarWeek"])) {
+        if(isset($_GET["format"]) && $_GET["format"] == "en") {
+            $format = "Y-m-d";
+        }else {
+            $format = "d.m.Y";
+        }
+    
+        //increment or decrement $week to change calendar week
+        if(!isset($_GET["week"])) {
+            $week = -1;
+        } else {
+            $week = $_GET["week"] - date("W") - 1;
+        }
+
+        get_calendar_week($week, $format);
+    }else {
+        echo "Error: year and calendarWeek are required";
+        exit;
+    }
+
     function get_calendar_week($calendarWeek, $format) {
         if(!isset($_GET["week"])){
             if($calendarWeek == date("W")) {
