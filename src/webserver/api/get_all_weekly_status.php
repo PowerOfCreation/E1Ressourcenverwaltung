@@ -1,25 +1,27 @@
 <?php
-    //input: http://localhost/api/get_all_weekly_status.php?allCalendarWeek=18&allYear=2022
-    //output: {"calendarWeek":"18","weekdays":["2022-05-02","2022-05-03","2022-05-04","2022-05-05","2022-05-06"],"year":"2022"}
+    //input: http://localhost/api/get_all_weekly_status.php?calendarWeek=18&year=2022
+    //output: [{"StatusId":4,"UserId":1,"ProjectId":221,"Day":"2022-05-06"},{"StatusId":5,"UserId":1,"ProjectId":221,"Day":"2022-05-03"},{"StatusId":6,"UserId":1,"ProjectId":221,"Day":"2022-05-05"}]
 
     include("/app/config/credentials.php");
 
     //check if params are complete
-    if(!isset($_GET["allCalendarWeek"]) || !isset($_GET["allYear"])) {
+    if(!isset($_GET["calendarWeek"]) || !isset($_GET["year"])) {
         echo "Error: calendarWeek and year are required";
         exit;
     }
 
-    $calendarWeek = htmlspecialchars($_GET["allCalendarWeek"]);
-    $year = htmlspecialchars($_GET["allYear"]);
+    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
+    $year = htmlspecialchars($_GET["year"]);
 
     //get dates of $calendarWeek
     require_once("/app/public/api/get_calendar_week.php");
-    $res = get_calendar_week($calendarWeek, "en");
-    
-    //decode response
-    $response = json_decode($res);
+    ob_start();
+    get_calendar_week($calendarWeek, "en");
+    $res = ob_get_contents();
+    ob_end_clean();
 
+    //decode response
+    $response = json_decode($res, true);
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
     $i = 0;
@@ -50,5 +52,5 @@
         $i++;
     }
     
-    //echo "all: ".json_encode($statuses);
+    echo json_encode($statuses);
 ?>
