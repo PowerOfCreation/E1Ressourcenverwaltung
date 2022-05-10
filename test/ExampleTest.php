@@ -2,9 +2,9 @@
 
 use PHPUnit\Framework\TestCase;
 
-final class EmailTest extends TestCase
+final class ExampleTest extends TestCase
 {
-    public function testCanBeUsedAsString(): void
+    public function exampleTest(): void
     {
         $this->assertEquals(
             1,
