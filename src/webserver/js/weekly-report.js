@@ -109,5 +109,41 @@ $()
             }
         });
     }
+
+    function populateTable() {
+        const elementNames = [
+            ".td-entry-monday",
+            ".td-entry-tuesday",
+            ".td-entry-wednesday",
+            ".td-entry-thursday",
+            ".td-entry-friday",
+        ];
+
+        //get dates from get_calendar_week.php
+        $.get("api/get_calendar_week.php").done(function (data) {
+            const res = jQuery.parseJSON(data);
+            //map dates as id
+            res["weekdays"].map((element, index) => {
+                $(elementNames[index]).attr("id", element);
+            })
+
+            var calendarWeek = res["calendarWeek"];
+            var year = res["year"];
+
+            //get statuses from get_all_weekly_status.php
+            $.get("api/get_all_weekly_status.php?calendarWeek=" + calendarWeek + "&year=" + year).done(function (data) {
+                const weeklyStatus = jQuery.parseJSON(data);
+
+                //loop through all status entries
+                weeklyStatus.map((status) => {
+                    //populate table with statuses
+                    $('<p>ProjectId: ' + status['ProjectId'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                });
+            });
+        });
+
+    }
+
     getDates();
+    populateTable();
 }
