@@ -14,7 +14,7 @@
     $year = htmlspecialchars($_GET["year"]);
 
     //get dates of $calendarWeek
-    require_once("/app/public/api/get_calendar_week.php");
+    require_once("get_calendar_week.php");
     ob_start();
     get_calendar_week($calendarWeek, "en");
     $res = ob_get_contents();
