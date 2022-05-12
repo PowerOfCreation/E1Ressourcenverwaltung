@@ -51,6 +51,6 @@
         ];
 
         //returns json with calendar week and all dates of the week
-        echo json_encode($dates_of_this_week);
+        return $dates_of_this_week;
     }
  ?>
