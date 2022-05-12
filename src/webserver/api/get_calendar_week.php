@@ -11,10 +11,10 @@
             $week = htmlspecialchars($_GET["calendarWeek"]);
         }
 
-        if(!isset($_GET["format"]) || empty($_GET["format"])) {
-            $format = "en";
-        }else if($_GET["format"] == "de") {
-            $format = "de";
+        $format = "en";
+        
+        if(!empty($_GET["format"])) {
+            $format = htmlspecialchars($_GET["format"]);
         }
 
         get_calendar_week($week, $format);
