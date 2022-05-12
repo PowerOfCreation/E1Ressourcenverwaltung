@@ -17,7 +17,7 @@
             $format = htmlspecialchars($_GET["format"]);
         }
 
-        get_calendar_week($week, $format);
+        echo json_encode(get_calendar_week($week, $format));
     }
 
 
