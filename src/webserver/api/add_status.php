@@ -11,7 +11,7 @@
     $date = htmlspecialchars($_GET['date']);
 
     $stmt = $connection->prepare("INSERT INTO Status (UserId, ProjectId, Day) VALUES (?, ?, ?)");
-    $stmt->bind_param('iii', $user, $project, $date);
+    $stmt->bind_param('iis', $user, $project, $date);
     if($stmt->execute()){
         echo "Status added";
         return true;
