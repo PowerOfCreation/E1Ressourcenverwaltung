@@ -3,7 +3,7 @@
     //output: {"calendarWeek":"51","weekdays":["20.12.2021","21.12.2021","22.12.2021","23.12.2021","24.12.2021"],"year":"2021"}
     
     //check if file is called directly
-    if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
+    if (__FILE__ == $_SERVER["SCRIPT_FILENAME"]) {
         //calculate offset based on calendarWeek
         if(!isset($_GET["calendarWeek"]) || empty($_GET["calendarWeek"])) {
             $week = date("W");
