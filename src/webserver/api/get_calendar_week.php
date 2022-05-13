@@ -5,7 +5,7 @@
     //check if file is called directly
     if (__FILE__ == $_SERVER["SCRIPT_FILENAME"]) {
         //calculate offset based on calendarWeek
-        if(!isset($_GET["calendarWeek"]) || empty($_GET["calendarWeek"])) {
+        if(empty($_GET["calendarWeek"])) {
             $week = date("W");
         }else {
             $week = htmlspecialchars($_GET["calendarWeek"]);
