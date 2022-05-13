@@ -15,19 +15,14 @@
 
     //get dates of $calendarWeek
     require_once("get_calendar_week.php");
-    ob_start();
-    get_calendar_week($calendarWeek, "en");
-    $res = ob_get_contents();
-    ob_end_clean();
+    $res = get_calendar_week($calendarWeek, "en");
 
-    //decode response
-    $response = json_decode($res, true);
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
     $i = 0;
 
-    if(is_array($response)) {
-        foreach($response["weekdays"] as $day) {
+    if(is_array($res)) {
+        foreach($res["weekdays"] as $day) {
             $weekdays[$i] = date("Y-m-d", strtotime($day));
             $i++;
         }
