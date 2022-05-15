@@ -166,9 +166,9 @@ if($result->fetch_array()[0] == 0)
     $date = DateTime::createFromFormat('Y-m-d', date('Y-m-d', $time));
     $monday_date = $date->format('Y-m-d');
     $tuesday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
-    $wednesday_date = $date->add(new DateInterval('P2D'))->format('Y-m-d');
-    $thursday_date = $date->add(new DateInterval('P3D'))->format('Y-m-d');
-    $friday_date = $date->add(new DateInterval('P4D'))->format('Y-m-d');
+    $wednesday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
+    $thursday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
+    $friday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
 
 
     $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 1, '{$tuesday_date}' );");
