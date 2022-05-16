@@ -68,7 +68,6 @@ switch ($_SERVER["REQUEST_METHOD"]) {
 
             while ($row = $get_project_users_statement->fetch()) {
                 array_push($result_json_array, (object) array("userId" => $userId, "userName" => $userName));
-                console.log($userId);
             }
 
             $result_json_array = array_reverse($result_json_array);
