@@ -47,7 +47,7 @@ require_once("/app/config/credentials.php");
 						$result = $connection->query("SELECT * FROM User Order By Username;");
 						while ($row = $result->fetch_object()) 
 						{						
-							echo "<input type='checkbox' class='user-checkbox' data-user-id='" . $row->UserId . "'>" . $row->Username . "</input><br/>";				
+							echo "<input type='checkbox' class='user-checkbox' id='users-checkbox' data-user-id='" . $row->UserId . "'>" . $row->Username . "</input><br/>";				
 						}					
 					?>
 				</ul>	
