@@ -1,0 +1,28 @@
+name: ci
+
+on: [pull_request]
+
+jobs:
+  php-unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Start containers
+        run: |
+          cd src/
+          docker-compose up -d
+      - name: Sleep for 30 seconds
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '30s'
+      #- uses: php-actions/composer@v5
+
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@v3
+        with:
+          php_extensions: xdebug
+          configuration: test/phpunit.xml
+          args: --coverage-text
+        env:
+          XDEBUG_MODE: coverage

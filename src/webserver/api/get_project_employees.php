@@ -1,10 +1,6 @@
 <?php
     if(!isset($_GET["project"])) return;
 
-    ini_set('display_startup_errors', 1);
-    ini_set('display_errors', 1);
-    error_reporting(-1);
-
     // The MySQL service named in the docker-compose.yml.
     include("/app/config/credentials.php");
 

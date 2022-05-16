@@ -34,10 +34,12 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 == Praktiken und Bewertung
 //Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
 // https://www2.htw-dresden.de/~anke/openup/index.htm
+
+
 === Praktiken 
 - Iterative Entwicklung
 
-Zu Anfang jeder Iteration (14-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die Aufgaben sind normalerweise kleine Teilfunktionen der Webanwendung. 
+Zu Anfang jeder Iteration (7-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die Aufgaben sind normalerweise kleine Teilfunktionen der Webanwendung. 
 //funktionszuwachs??
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslängewurde am Anfang des Projekts auf eine Woche festgelegt. In der zweiten Hälfte des Projekts wurde es auf zwei Wochen angehoben.
 Die Größe der Aufgaben wird in T-Shirt-Größen angegeben. 
@@ -193,7 +195,16 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Herr Kemter wird in HTML und CSS eingeführt. Außerdem macht er einen Termin mit Herrn Liebert
 |26.04.22-09.05.22
 |-
-|===
+
+|I14
+|
+* Frau Tartz testet die Webanwendung. Dazu wird Sie verschiedene Falscheingaben etc. tätigem
+* Frau Tartz und Herr Kemter schauen sich den Beleg nocheinmal an
+* Herr Kemter bildet sich weiterhin im Bereich Front-End fort
+* Die Funktionen der Webanwendung werden erweitert. Das Anzeigen des Status soll fertig gestellt werden, ebenso das Wechseln der Wochen.
+|10.05.22-16.05.22
+|-
+|=== 
 
 == Deployment
 //Outline the strategy for deploying the software (and its updates) into the production environment.
@@ -206,5 +217,5 @@ Bei den ersten paar Teammeetings wurden alle Ergebnisse der Iteration ausführli
 Zu Beginn des Projektes wurden Aufgaben in den Meetings zugewiesen und die Verantwortlichkeit dann im Meetingprotokoll dokumentiert. Das stellte sich als unübersichtlich heraus und benachteiligte Personen, die nicht am Meeting teilnehmen konnten. Um diesen Ablauf zu verbessern, sind wir nach zwei Wochen dazu übergegangen, die anstehenden Aufgaben über GitHub Issues zu organisieren, was auch den Vorteil hat, dass sich jeder seine Aufgabe selbst aussuchen kann. 
 
 Die Iteration von einer Woche waren im 2. Semester zu kurz und haben keinen wirklichen Fortschritt erbracht. Daher wurde die Iterationszeit auf zwei Wochen angehoben.
-
+Jedoch wurde nach 2 Iteration festgestellt, dass dadurch nicht mehr Erschaffen wurde, da alles bis zum Ende der Iteration geschoben wurden ist. Daher wurde es wieder auf eine Woche heruntergesetzt.
 //vinh hatte dubioses VS Code plugin, was den ganzen Code umformatiert hatte -> mal besser ausformulieren und so etwas in risikoliste aufnehmen

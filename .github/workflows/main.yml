@@ -1,0 +1,20 @@
+name: Psalm Static analysis
+
+on:
+  pull_request:
+    paths:
+        - '.github/workflows/main.yml'
+        - '**.php'
+        - 'psalm.xml'
+
+jobs:
+  psalm:
+    runs-on: ubuntu-latest
+    container:
+      image: vimeo/psalm-github-actions
+    steps:
+    - uses: actions/checkout@v2
+    - name: Psalm
+      run: |
+        /bin/mv "src/config" "/app/config/"
+        /composer/vendor/bin/psalm

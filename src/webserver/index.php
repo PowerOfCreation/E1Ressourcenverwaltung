@@ -4,10 +4,6 @@
 
 <body>
     <?php
-    ini_set('display_startup_errors', 1);
-    ini_set('display_errors', 1);
-    error_reporting(-1);
-
     //These are the defined authentication environment in the db service
 
     // The MySQL service named in the docker-compose.yml.
@@ -47,7 +43,7 @@
                         $result = $connection->query("SELECT * FROM User ORDER BY Username;");
 
                         while ($row = $result->fetch_object()) {
-                            echo "<tr>";
+                            echo "<tr id='". $row->UserId ."'>";
                             echo "<td class='td-entry-employee' data-username='" . $row->Username . "'><a href='./mitarbeiter/?name=" . $row->Username . "'>" . $row->Forename . " " . $row->Surname . "</a></td>";
                             echo "<td class='td-entry-weekday td-entry-monday'></td>";
                             echo "<td class='td-entry-weekday td-entry-tuesday'></td>";

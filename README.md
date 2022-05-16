@@ -1,3 +1,5 @@
+[![ci](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/ci.yml/badge.svg)](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/ci.yml)
+
 # Vorlage Projektstruktur & OpenUP-Templates
 
 Das Repository enthält die Vorlage einer Projektstruktur und Template-Dokumente im AsciiDoc-Format. Dies wird für die Bearbeitung der Belegarbeit in Software Engineering I und II benötigt. Im Detail wären dies:

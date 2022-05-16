@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<psalm>
+    <projectFiles>
+        <directory name="src" />
+    </projectFiles>
+    <issueHandlers>
+        <PossiblyUndefinedVariable>
+            <errorLevel type="suppress">
+                <directory name="src" /> <!-- all InvalidReturnType issues in this directory are suppressed -->
+            </errorLevel>
+        </PossiblyUndefinedVariable>
+    </issueHandlers>
+</psalm>

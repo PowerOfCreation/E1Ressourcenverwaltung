@@ -1,4 +1,7 @@
 <?php
+    //input: http://localhost/api/get_all_weekly_status.php?calendarWeek=18&year=2022
+    //output: [{"StatusId":4,"UserId":1,"ProjectId":221,"Day":"2022-05-06"},{"StatusId":5,"UserId":1,"ProjectId":221,"Day":"2022-05-03"},{"StatusId":6,"UserId":1,"ProjectId":221,"Day":"2022-05-05"}]
+
     include("/app/config/credentials.php");
 
     //check if params are complete
@@ -7,25 +10,22 @@
         exit;
     }
 
-    $calendarWeek = $_GET["calendarWeek"];
-    $year = $_GET["year"];
+    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
+    $year = htmlspecialchars($_GET["year"]);
 
     //get dates of $calendarWeek
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, "http://localhost:80/api/get_calendar_week.php?week=".$calendarWeek);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    $res = curl_exec($curl);
-    curl_close($curl);
-
-    //decode response
-    $response = json_decode($res, true);
+    require_once("get_calendar_week.php");
+    $res = get_calendar_week($calendarWeek, "en");
 
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
     $i = 0;
-    foreach($response["weekdays"] as $day) {
-        $weekdays[$i] = date("Y-m-d", strtotime($day));
-        $i++;
+
+    if(is_array($res)) {
+        foreach($res["weekdays"] as $day) {
+            $weekdays[$i] = date("Y-m-d", strtotime($day));
+            $i++;
+        }
     }
     
     //call database

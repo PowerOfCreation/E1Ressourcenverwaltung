@@ -1,9 +1,7 @@
 <?php
-$rootPath = $_SERVER['DOCUMENT_ROOT'];
-
 include("/app/config/credentials.php");
 
-include($rootPath . "/database_structure.php");
+include("../../../database_structure.php");
 
 $json = file_get_contents('php://input');
 
