@@ -1,4 +1,5 @@
 $()
+
 {
     $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
     $addProjectSelect = $("<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
