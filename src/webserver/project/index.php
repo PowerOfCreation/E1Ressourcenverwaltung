@@ -51,7 +51,6 @@ require_once("/app/config/credentials.php");
 						}					
 					?>
 				</ul>	
-				<a><button id="btn-employee-project" type="button">Übernehmen</button></a>	
 				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>			
 			</div>	
