@@ -1,6 +1,10 @@
 name: ci
 
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+        - '.github/workflows/ci.yml'
+        - '**.php'
 
 jobs:
   php-unit-test:
