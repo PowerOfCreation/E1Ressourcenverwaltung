@@ -90,12 +90,16 @@ $()
         let $employeeElement = $weekdayElement.parent();
         let employeeId = $employeeElement.attr("id");
         let date = $weekdayElement.attr("id");
-        console.log(date);
-        console.log(employeeId);
 
         //get selected projectId
         let projectId = $addProjectSelect.val();
-        console.log(projectId);
+
+        //Aufruf: /api/add_status.php?user=1&project=2&date=2022-04-25
+        $.get("api/add_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function (data) {
+            console.log(data);
+        }
+
+        )
     }
 
     //calls api/get_calendar_week.php and fills the table with the data
