@@ -97,6 +97,8 @@ $()
         //Aufruf: /api/add_status.php?user=1&project=2&date=2022-04-25
         $.get("api/add_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function (data) {
             console.log(data);
+            //refresh page
+            document.location.reload(true);
         }
 
         )
