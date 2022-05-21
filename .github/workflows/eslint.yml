@@ -12,6 +12,7 @@ jobs:
       run: |
         npm init --yes \
         npm install eslint --save-dev \
-        npm init @eslint/config            
+        npm init @eslint/config \
+        ls --lisa
     - name: Run ESLint
       run: npx eslint "src/webserver/**" --ext .js,.jsx,.ts,.tsx
