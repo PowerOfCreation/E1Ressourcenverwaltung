@@ -1,7 +1,8 @@
 $()
+
 {
     $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
-    $addProjectSelect = $("<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
+    $addProjectSelect = $("<select id='add-project-select' onchange='handleProjectChange();'><option disabled selected value>Projekt auswählen</option></select>");
 
     $employeeEntries = $("#tbody-employee-entries");
 
@@ -57,7 +58,6 @@ $()
 
             for (let index = 0; index < employeeProjects.length; index++) {
                 const element = employeeProjects[index];
-
                 $addProjectSelect.append(`<option value='${element["projectId"]}'>${element["projectName"]}</option>`);
             }
         });
@@ -83,6 +83,22 @@ $()
     $("#btn-edit-projects").click(function () {
         window.location.href = "project";
     });
+
+    function handleProjectChange() {
+        //get employee name and date
+        let $weekdayElement = $addProjectSelect.parent();
+        let $employeeElement = $weekdayElement.parent();
+        let employeeId = $employeeElement.attr("id");
+        let date = $weekdayElement.attr("id");
+
+        //get selected projectId
+        let projectId = $addProjectSelect.val();
+
+        //Aufruf: /api/add_status.php?user=1&project=2&date=2022-04-25
+        $.get("api/add_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function (data) {
+            document.location.reload(true);
+        });
+    }
 
     //calls api/get_calendar_week.php and fills the table with the data
     function getDates() {
