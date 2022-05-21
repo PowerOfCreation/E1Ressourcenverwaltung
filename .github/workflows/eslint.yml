@@ -9,8 +9,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install modules
       run: |
-        yarn init \
-        yarn add eslint --dev \
-        yarn create @eslint/config            
+        npm init \
+        npm install eslint --save-dev \
+        npm init @eslint/config            
     - name: Run ESLint
       run: eslint "src/webserver/**" --ext .js,.jsx,.ts,.tsx
