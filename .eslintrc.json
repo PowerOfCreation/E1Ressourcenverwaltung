@@ -5,10 +5,14 @@
         "es2021": true,
         "jquery": true
     },
+    "plugins": [
+        "dollar-sign"
+    ],
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": "latest"
     },
     "rules": {
+        "dollar-sign/dollar-sign": [2, "ignoreProperties"]
     }
 }
