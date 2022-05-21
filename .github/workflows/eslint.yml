@@ -10,7 +10,7 @@ jobs:
     - uses: actions/setup-node@v3
     - name: Install modules
       run: |
-        ls \
+        ls
         npm init --yes
         npm install eslint --save-dev
         npm init @eslint/config
