@@ -1,12 +1,16 @@
 name: ESLint JavaScript Code Analyser
 
-on: pull_request
+on: push
 
 jobs:
-  eslint:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: stefanoeb/eslint-action@1.0.2
-        with:
-          files: src/webserver
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: |
+        yarn init \
+        yarn add eslint --dev \
+        yarn create @eslint/config            
+    - name: Run ESLint
+      run: eslint "src/webserver/**" --ext .js,.jsx,.ts,.tsx
