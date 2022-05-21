@@ -1,6 +1,10 @@
 name: ESLint JavaScript Code Analyser
 
-on: push
+on:
+  pull_request:
+    paths:
+        - '.github/workflows/eslint.yml'
+        - '**.js'
 
 jobs:
   build:
