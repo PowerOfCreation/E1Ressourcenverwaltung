@@ -12,5 +12,6 @@ jobs:
       run: |
         npm init --yes
         npm install eslint --save-dev
+        npm install eslint-plugin-dollar-sign@latest --save-dev
     - name: Run ESLint
       run: npx eslint "src/webserver/**" --ext .js,.jsx,.ts,.tsx
