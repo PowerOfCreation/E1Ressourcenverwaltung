@@ -29,7 +29,7 @@
     }
     
     //call database
-    $stmt = $connection->prepare("SELECT * FROM `Status` WHERE `day` BETWEEN ? AND ?");
+    $stmt = $connection->prepare("SELECT Status.`StatusId`, Status.`UserId`, Status.`ProjectId`, Status.`Day`, Project.`ProjectName` FROM `Status` INNER JOIN `Project` ON Status.`ProjectId` = Project.`ProjectId` WHERE Status.`Day` BETWEEN ? AND ?");
     $stmt->bind_param("ss", $weekdays[0], $weekdays[4]);
     if($stmt->execute()) {
         $result = $stmt->get_result();
