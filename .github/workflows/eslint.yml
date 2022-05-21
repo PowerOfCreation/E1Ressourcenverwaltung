@@ -1,0 +1,21 @@
+name: ESLint JavaScript Code Analyser
+
+on:
+  pull_request:
+    paths:
+        - '.github/workflows/eslint.yml'
+        - '**.js'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    - name: Install modules
+      run: |
+        npm init --yes
+        npm install eslint --save-dev
+        npm install eslint-plugin-dollar-sign@latest --save-dev
+    - name: Run ESLint
+      run: npx eslint "src/webserver/**" --ext .js,.jsx,.ts,.tsx
