@@ -15,5 +15,5 @@
     "rules": {
         "dollar-sign/dollar-sign": [2, "ignoreProperties"]
     },
-    "ignorePatterns": ["jquery*.js"],
+    "ignorePatterns": ["jquery*.js"]
 }
