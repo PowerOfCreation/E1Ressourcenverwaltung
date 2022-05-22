@@ -32,21 +32,11 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 <html lang="de">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="newproject.css">
+	<link rel="stylesheet" href="../buttons.css" type="text/css">
+	
+	<link rel="stylesheet" href="../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
-	<style>
-		div {
-			width: 100%;
-			border: 1px solid rgb(255, 255, 255);
-			align-content: center;
-			align-items: center;
-            white-space: pre-line;
-            display: inline-block;
-		}
-		form {
-			margin: 0 auto;
-			width: 500px;
-    	}
-	</style> 
     <script type="text/javascript">
 </script>
 
