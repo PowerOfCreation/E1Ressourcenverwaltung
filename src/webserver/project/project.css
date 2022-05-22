@@ -1,0 +1,30 @@
+#content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+#button-container{
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+ul,li{
+    padding: 0px
+}
+div {
+    width: auto;
+    border: 1px solid rgb(255, 255, 255);
+    align-content: center;
+    align-items: center;
+    white-space: pre-line;
+    display: inline-block; 
+}
+form {
+    /* margin: 0 auto; */
+    width: 100vw;
+}
