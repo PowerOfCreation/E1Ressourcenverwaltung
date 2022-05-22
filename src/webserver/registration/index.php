@@ -51,11 +51,13 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
     <link rel="stylesheet" href="registration_style.css">
+	<link rel="stylesheet" href="../buttons.css" type="text/css">
+	<link rel="stylesheet" href="../font-size.css" type="text/css">
 </head>
 
 <body>
 	<main>
-		<h1 style="text-align: justify;">Mitarbeiter Hinzufügen</h1>
+		<h1>Mitarbeiter Hinzufügen</h1>
 		<div id="form-wrapper-div">
 			<form id = "registration-form" name="RegForm" method="post">                                
 				Benutzername: <input type="text" name="Username" placeholder="Max123" required />
@@ -91,7 +93,9 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 -->
 				<div id="form-action-buttons-wrapper-div">
 					<a href=".."><button id="back-button" type="button">Zurück</button></a>
-					<input type="submit" value="Benutzer erstellen" name="Submit" />
+					<!--<<input type="submit" value="Benutzer erstellen" name="Submit" />  -->
+					<a href=".."><button id="benutzer-create" type="button">Benutzer erstellen</button></a> 
+						<!--dann werden auch die dropdowns in der kalenderübersicht pink-->
 				</div>
 			</form>
 		</div>

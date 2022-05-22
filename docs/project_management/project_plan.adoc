@@ -40,8 +40,10 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 
 - Iterative Entwicklung
 
+
 Zu Anfang jeder Iteration (7-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die meisten Aufgaben sind kleine Teilfunktionen der Webanwendung. Ebenso wird auch der Iterationsplan erstellt und es werden weitere Dokumente aktualisiert.
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick über die beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslängewurde am Anfang des Projekts auf eine Woche festgelegt. In der zweiten Hälfte des Projekts wurde es auf zwei Wochen angehoben.
+
 Die Größe der Aufgaben wird in T-Shirt-Größen angegeben. 
 
 - Whole Team
@@ -60,7 +62,11 @@ Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen 
 - Concurrent Testing 
 
 Concurrent Testing wird bei uns im Team angewendet. Jedoch werden im Moment noch keine automatisierten Tests verwendet. Aktuell wird der Programmcode mit einer Testliste verglichen. Units-Test sind noch geplant. 
+<<<<<<< HEAD
 Es ist geplant, dass vor allem Herr Werner, Herr Kemter und Frau Tartz die Tests planen und durchführen.
+=======
+Es ist geplant, dass vorallem Herr Werner, Herr Kemter und Frau Tartz die Test planen und ausführen.
+>>>>>>> 774bfdc (design improvemtns)
 
 - Use Case Driven Development 
 
@@ -207,9 +213,15 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 
 |I15
 |
+<<<<<<< HEAD
 * Am 18.5 wird sich mit Herrn Liebert getroffen und der Projektfortschritt präsentiert und neues Feedback eingeholt. Die Erkenntnisse werden zum nächsten Teammeeting besprochen.
 * Herr Kemter wird das Design der Webanwendung ansprechender gestalten.
 * Die Funktionen der Webanwendung werden erweitert. Das Wechseln der angezeigten Wochen in der Wochenansicht soll fertig gestellt werden.
+=======
+* Am 18.5 wird sich mit Herrn Liebert getroffen und der Projektfortschritt wird besprochen. Die Erkenntnisse werden zum nächsten Teammeeting besprochen
+* Herr Kemter wird das Design der Webanwendung ansprechender gestalten
+* Die Funktionen der Webanwendung werden erweitert. Das Wechseln der Wochen soll fertig gestellt werden.
+>>>>>>> 774bfdc (design improvemtns)
 |17.05.22-23.5.22
 |-
 |=== 
