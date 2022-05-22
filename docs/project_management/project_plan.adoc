@@ -63,15 +63,17 @@ Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen 
 - Concurrent Testing 
 
 Concurrent Testing wird bei uns im Team angewendet. Jedoch werden im Moment noch keine automatisierten Tests verwendet. Aktuell wird der Programmcode mit einer Testliste verglichen. Units-Test sind noch geplant. 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 Es ist geplant, dass vor allem Herr Werner, Herr Kemter und Frau Tartz die Tests planen und durchführen.
+<<<<<<< HEAD
 =======
 Es ist geplant, dass vorallem Herr Werner, Herr Kemter und Frau Tartz die Test planen und ausführen.
 >>>>>>> 774bfdc (design improvemtns)
 =======
 Es ist geplant, dass vorallem Herr Werner, Herr Kemter und Frau Tartz die Test planen und ausführen.
 >>>>>>> 774bfdc (design improvemtns)
+=======
+>>>>>>> 55445ee (design improvemtns)
 
 - Use Case Driven Development 
 
@@ -218,11 +220,11 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 
 |I15
 |
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 * Am 18.5 wird sich mit Herrn Liebert getroffen und der Projektfortschritt präsentiert und neues Feedback eingeholt. Die Erkenntnisse werden zum nächsten Teammeeting besprochen.
 * Herr Kemter wird das Design der Webanwendung ansprechender gestalten.
 * Die Funktionen der Webanwendung werden erweitert. Das Wechseln der angezeigten Wochen in der Wochenansicht soll fertig gestellt werden.
+<<<<<<< HEAD
 =======
 * Am 18.5 wird sich mit Herrn Liebert getroffen und der Projektfortschritt wird besprochen. Die Erkenntnisse werden zum nächsten Teammeeting besprochen
 * Herr Kemter wird das Design der Webanwendung ansprechender gestalten
@@ -233,6 +235,9 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Herr Kemter wird das Design der Webanwendung ansprechender gestalten
 * Die Funktionen der Webanwendung werden erweitert. Das Wechseln der Wochen soll fertig gestellt werden.
 >>>>>>> 774bfdc (design improvemtns)
+=======
+
+>>>>>>> 55445ee (design improvemtns)
 |17.05.22-23.5.22
 |-
 |=== 
