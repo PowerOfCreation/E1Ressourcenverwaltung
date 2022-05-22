@@ -153,7 +153,7 @@ $()
                 //loop through all status entries
                 weeklyStatus.map((status) => {
                     //populate table with statuses
-                    $('<p>Project Id: ' + status['ProjectId'] + '<br>Project name: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                    $('Projekt: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
                 });
             });
         });
