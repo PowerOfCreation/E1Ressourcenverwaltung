@@ -38,7 +38,7 @@
         $dates_of_this_week = [
             "calendarWeek" => $week,
             "weekdays" => array(
-                $dateTime->format("d-m-Y"),
+                $dateTime->format($format),
                 $dateTime->modify('+1 day')->format($format),
                 $dateTime->modify('+1 day')->format($format),
                 $dateTime->modify('+1 day')->format($format),
