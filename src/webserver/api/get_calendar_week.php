@@ -17,11 +17,11 @@
             $format = htmlspecialchars($_GET["format"]);
         }
 
-        echo json_encode(get_calendar_week($week, $format));
+        echo json_encode(get_calendar_week(date $week, $format));
     }
 
 
-    function get_calendar_week(htmlspecialchars $calendarWeek, string $format) {  //string kommt rein
+    function get_calendar_week($calendarWeek, string $format) {  //string kommt rein
         if($format == "de") {
             $format = "d-m-Y";
         }else if($format == "en") {
