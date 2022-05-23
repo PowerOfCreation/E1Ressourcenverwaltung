@@ -1,5 +1,21 @@
 button{
     width: 20vw;
     height: 10vh;
-    background-color: pink;
+   /* background-color: pink; */
+   background-color: pink;
+   cursor: pointer;    
 }
+
+
+/*input#go {  input#button
+    background-color: #4c9ed9;
+    color: #ffffff;
+    padding: 20px 40px;
+    border: 1px solid #111;
+  }
+
+  input#go:hover {
+    background-color: #ffffff;
+    color: #4c9ed9;
+    border: 1px solid #111;
+  } */
