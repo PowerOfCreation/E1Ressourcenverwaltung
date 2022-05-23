@@ -36,7 +36,7 @@
         $thursday = strtotime(date($format,$monday)." +3 days");
         $friday = strtotime(date($format,$monday)." +4 days");
 
-        $calendar_week = date("W" ,$monday);
+        $calendar_week = date("W");
 
         $dates_of_this_week = [
             "calendarWeek" => $calendar_week,
