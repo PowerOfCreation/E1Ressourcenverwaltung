@@ -21,7 +21,7 @@
     }
 
 
-    function get_calendar_week(string $calendarWeek, string $format) mixed:{
+    function get_calendar_week(string $calendarWeek, string $format) :array{calendarWeek: numeric-string, weekdays: array{string, string, string, string, string}, year: numeric-string} {
         if($format == "de") {
             $format = "d-m-Y";
         }else if($format == "en") {
