@@ -9,12 +9,6 @@
                 <directory name="src" /> <!-- all InvalidReturnType issues in this directory are suppressed -->
             </errorLevel>
         </PossiblyUndefinedVariable>
-        <UndefinedClass>
-            <errorLevel type="suppress">
-                <directory name="src" /> <!-- all InvalidReturnType issues in this directory are suppressed -->
-                <directory name="../../../app/config/" /> <!-- all InvalidReturnType issues in this directory are suppressed -->
-            </errorLevel>
-        </UndefinedClass>
     </issueHandlers>
     <enableExtensions>
         <extension name="mysqli"/>
