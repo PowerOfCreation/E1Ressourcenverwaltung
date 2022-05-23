@@ -14,7 +14,7 @@ function execute_sql_query($connection, string $queryString)
     }
 }
 
-function exit_failure($message = "")
+function exit_failure(string $message = "")
 {
     http_response_code(500);
     exit($message);
