@@ -10,7 +10,7 @@
         exit;
     }
 
-    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
+    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]); //ist ein String
     $year = htmlspecialchars($_GET["year"]);
 
     //get dates of $calendarWeek
