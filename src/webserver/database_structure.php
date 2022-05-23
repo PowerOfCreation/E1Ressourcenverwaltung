@@ -2,7 +2,7 @@
 
 require_once("/app/config/credentials.php");
 
-function execute_sql_query(mysqli $connection, string $queryString)
+function execute_sql_query(mysqli $connection, string $queryString): void
 {
     if($connection->query($queryString) === TRUE)
     {
