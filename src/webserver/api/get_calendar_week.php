@@ -47,9 +47,9 @@
                 $dateTime->modify('+1 day')->format($format),
                 $dateTime->modify('+1 day')->format($format)
             ),
-            year => $year
+            "year" => $year
         ];
-        
+
         return $dates_of_this_week;
       }
  ?>

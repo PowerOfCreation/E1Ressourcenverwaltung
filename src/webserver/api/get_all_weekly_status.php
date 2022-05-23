@@ -5,17 +5,21 @@
     include("/app/config/credentials.php");
 
     //check if params are complete
-    if(!isset($_GET["calendarWeek"]) || !isset($_GET["year"])) {
-        echo "Error: calendarWeek and year are required";
-        exit;
+    if(!isset($_GET["calendarWeek"])) {
+        $calendarWeek = date("W");
+    }else {
+        $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
     }
 
-    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
-    $year = htmlspecialchars($_GET["year"]);
+    if(!isset($_GET["year"])) {
+        $year = date("Y");
+    }else {
+        $year = htmlspecialchars($_GET["year"]);
+    }
 
     //get dates of $calendarWeek
     require_once("get_calendar_week.php");
-    $res = get_calendar_week($calendarWeek, "en");
+    $res = get_calendar_week($year, $calendarWeek, "en");
 
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
