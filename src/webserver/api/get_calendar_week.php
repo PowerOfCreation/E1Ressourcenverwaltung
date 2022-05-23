@@ -28,9 +28,9 @@
             $format = "Y-m-d";
         }
         //calculate offset for calendarWeek
-        $calendarWeek = $calendarWeek - date("W") - 1;
+        $calendarWeek = (int)$calendarWeek - date("W") - 1;
         //get dates of $calendarWeek
-        $monday = strtotime('next Monday '.(int)$calendarWeek.' week');
+        $monday = strtotime('next Monday '.$calendarWeek.' week');
         $thuesday = strtotime(date($format,$monday)." +1 days");
         $wednesday = strtotime(date($format,$monday)." +2 days");
         $thursday = strtotime(date($format,$monday)." +3 days");
