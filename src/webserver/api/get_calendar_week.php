@@ -21,7 +21,7 @@
     }
 
 
-    function get_calendar_week($calendarWeek, string $format) {  //string kommt rein
+    function get_calendar_week(string $calendarWeek, string $format) {  //string kommt rein
         if($format == "de") {
             $format = "d-m-Y";
         }else if($format == "en") {
@@ -30,7 +30,7 @@
         //calculate offset for calendarWeek
         $calendarWeek = $calendarWeek - date("W") - 1;
         //get dates of $calendarWeek
-        $monday = strtotime('next Monday '.$calendarWeek.' week');
+        $monday = strtotime('next Monday '.(int)$calendarWeek.' week');
         $thuesday = strtotime(date($format,$monday)." +1 days");
         $wednesday = strtotime(date($format,$monday)." +2 days");
         $thursday = strtotime(date($format,$monday)." +3 days");
