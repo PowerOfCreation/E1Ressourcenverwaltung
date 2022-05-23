@@ -21,12 +21,10 @@
     $weekdays = array();
     $i = 0;
 
-   // if(is_array($res)) {
         foreach($res["weekdays"] as $day) {
             $weekdays[$i] = date("Y-m-d", strtotime($day));
             $i++;
         }
-    //}
     
     //call database
     $stmt = $connection->prepare("SELECT * FROM `Status` WHERE `day` BETWEEN ? AND ?");
