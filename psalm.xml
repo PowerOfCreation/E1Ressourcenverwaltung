@@ -10,4 +10,7 @@
             </errorLevel>
         </PossiblyUndefinedVariable>
     </issueHandlers>
+    <enableExtensions>
+        <extension name="mysqli"/>
+    </enableExtensions>
 </psalm>
