@@ -23,41 +23,33 @@
             $format = htmlspecialchars($_GET["format"]);
         }
 
-        echo json_encode(get_calendar_week($week, $format));
+        //echo json_encode(get_calendar_week($week, $format));
+        echo json_encode(get_calendar_week($year, $week, $format));
     }
 
-
-    function get_calendar_week($calendarWeek, $format) {
+    function get_calendar_week($year, $week, $format) {
         if($format == "de") {
             $format = "d-m-Y";
         }else if($format == "en") {
             $format = "Y-m-d";
         }
-        //calculate offset for calendarWeek
-        $calendarWeek = $calendarWeek - date("W") - 1;
-        //get dates of $calendarWeek
-        $monday = strtotime('next Monday '.$calendarWeek.' week');
-        $thuesday = strtotime(date($format,$monday)." +1 days");
-        $wednesday = strtotime(date($format,$monday)." +2 days");
-        $thursday = strtotime(date($format,$monday)." +3 days");
-        $friday = strtotime(date($format,$monday)." +4 days");
 
-        $calendar_week = date("W");
-
+        $dateTime = new DateTime();
+        $dateTime->setISODate($year, $week);
         $dates_of_this_week = [
-            "calendarWeek" => $calendar_week,
+            "calendarWeek" => $week,
             "weekdays" => array(
-                date($format,$monday),
-                date($format,$thuesday),
-                date($format,$wednesday),
-                date($format,$thursday),
-                date($format,$friday),
+                $dateTime->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format)
             ),
-            "year" => date("Y",$monday),
+            year => $year
         ];
-
-        var_dump($dates_of_this_week);
-        //returns json with calendar week and all dates of the week
+        
         return $dates_of_this_week;
-    }
+      }
  ?>
