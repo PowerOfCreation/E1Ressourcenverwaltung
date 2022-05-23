@@ -23,7 +23,6 @@
             $format = htmlspecialchars($_GET["format"]);
         }
 
-        //echo json_encode(get_calendar_week($week, $format));
         echo json_encode(get_calendar_week($year, $week, $format));
     }
 
@@ -39,7 +38,7 @@
         $dates_of_this_week = [
             "calendarWeek" => $week,
             "weekdays" => array(
-                $dateTime->format($format),
+                $dateTime->format("d-m-Y"),
                 $dateTime->modify('+1 day')->format($format),
                 $dateTime->modify('+1 day')->format($format),
                 $dateTime->modify('+1 day')->format($format),

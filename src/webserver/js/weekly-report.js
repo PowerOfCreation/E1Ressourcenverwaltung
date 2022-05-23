@@ -102,7 +102,7 @@ $()
 
     //calls api/get_calendar_week.php and fills the table with the data
     function getDates() {
-        $.get("api/get_calendar_week.php").done(function (data) {
+        $.get("api/get_calendar_week.php?format=de").done(function (data) {
             const calendarWeek = jQuery.parseJSON(data);
             const elementNames = [
                 "td-monday",
