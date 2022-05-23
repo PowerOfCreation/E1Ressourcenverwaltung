@@ -21,7 +21,7 @@
     }
 
 
-    function get_calendar_week(string $calendarWeek, string $format) {  mixed
+    function get_calendar_week(string $calendarWeek, string $format) {  mixed:
         if($format == "de") {
             $format = "d-m-Y";
         }else if($format == "en") {
