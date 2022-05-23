@@ -11,6 +11,12 @@
             $week = htmlspecialchars($_GET["calendarWeek"]);
         }
 
+        if(empty($_GET["year"])) {
+            $year = date("Y");
+        }else {
+            $year = htmlspecialchars($_GET["year"]);
+        }
+
         $format = "en";
         
         if(!empty($_GET["format"])) {
@@ -50,6 +56,7 @@
             "year" => date("Y",$monday),
         ];
 
+        var_dump($dates_of_this_week);
         //returns json with calendar week and all dates of the week
         return $dates_of_this_week;
     }
