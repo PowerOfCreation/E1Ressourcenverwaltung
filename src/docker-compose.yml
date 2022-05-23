@@ -2,12 +2,12 @@ version: '3.3'
 services:
     php-apache-environment:
         container_name: php-apache
-        image: ulsmith/alpine-apache-php7
+        image: erseco/alpine-php-webserver
         volumes:
-            - ./webserver:/app/public
+            - ./webserver:/var/www/html
             - ./config:/app/config
         ports:
-            - 80:80
+            - 80:8080
         cap_add:
             - SYS_TIME
             - SYS_NICE
