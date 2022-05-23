@@ -21,7 +21,7 @@
     }
 
 
-    function get_calendar_week($calendarWeek, $format) : string {
+    function get_calendar_week($calendarWeek, $format) : array {
         if($format == "de") {
             $format = "d-m-Y";
         }else if($format == "en") {
