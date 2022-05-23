@@ -50,24 +50,27 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 <head>
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
+	<title>Hovereffekt</title>
     <link rel="stylesheet" href="registration_style.css">
 	<link rel="stylesheet" href="../buttons.css" type="text/css">
 	<link rel="stylesheet" href="../font-size.css" type="text/css">
+
 </head>
 
 <body>
+	
 	<main>
 		<h1>Mitarbeiter Hinzufügen</h1>
 		<div id="form-wrapper-div">
 			<form id = "registration-form" name="RegForm" method="post">                                
-				Benutzername: <input type="text" name="Username" placeholder="Max123" required />
+				Benutzername: <input class="textbox" type="text" name="Username" placeholder="Max123" required />
 
-				Vorname: <input type="text" name="Forename" placeholder="Max" required />
+				Vorname: <input class="textbox" type="text" name="Forename" placeholder="Max" required />
 				
-				Nachname: <input type="text" name="Surname" placeholder="Mustermann" required />
+				Nachname: <input class="textbox" type="text" name="Surname" placeholder="Mustermann" required />
 				
 				Abteilung:  
-				<select name = "Department">
+				<select class="textbox" name = "Department">
 					<?php 
 						$result = $connection->query("SELECT * FROM Department;");
 
@@ -78,11 +81,11 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 					?>
 				</select>
 				
-				E-mail: <input type="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
+				E-mail: <input class="textbox" type="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
 				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
 
-				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
-				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
+				Passwort: <input class="textbox" type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
+				<label for="check"><input class="checkbox" id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
 				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
 					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
 					<?php if (isset($passwordErrorSpecificCharacter)) echo $passwordErrorSpecificCharacter; ?>
@@ -92,9 +95,10 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 				<span id='password-message-span'></span>
 -->
 				<div id="form-action-buttons-wrapper-div">
-					<a href=".."><button id="back-button" type="button">Zurück</button></a>
+					<a href=".."><button class="button" id="back-button" type="button">Zurück</button></a>
+					<!--<input type="button" id="go" value="projekt-erstellen" /> -->
 					<!--<<input type="submit" value="Benutzer erstellen" name="Submit" />  -->
-					<a href=".."><button id="benutzer-create" type="button">Benutzer erstellen</button></a> 
+					<a href=".."><button class="button" id="benutzer-create" type="button">Benutzer erstellen</button></a> 
 						<!--dann werden auch die dropdowns in der kalenderübersicht pink-->
 				</div>
 			</form>
