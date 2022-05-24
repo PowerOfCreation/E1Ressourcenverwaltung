@@ -1,11 +1,13 @@
-button{
-    width: 20vw;
-    height: 10vh;
-   /* background-color: pink; */
-   background-color: pink;
-   cursor: pointer;    
+button {
+   background-color: 	#FF69B4;
+   cursor: pointer; 
+   justify-content: center;  
+   align-items: center; 
 }
 
+button:hover {
+  background-color: #FF1493;
+}
 
 /*input#go {  input#button
     background-color: #4c9ed9;
