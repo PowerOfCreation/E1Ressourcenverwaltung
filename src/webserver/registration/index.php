@@ -85,7 +85,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
 
 				Passwort: <input class="textbox" type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
-				<label for="check"><input class="checkbox" id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
+				<label id="show-pwd-checkbox"for="check"><input class="checkbox" id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
 				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
 					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
 					<?php if (isset($passwordErrorSpecificCharacter)) echo $passwordErrorSpecificCharacter; ?>
@@ -98,7 +98,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 					<a href=".."><button class="button" id="back-button" type="button">Zurück</button></a>
 					<!--<input type="button" id="go" value="projekt-erstellen" /> -->
 					<!--<<input type="submit" value="Benutzer erstellen" name="Submit" />  -->
-					<a href=".."><button class="button" id="benutzer-create" type="button">Benutzer erstellen</button></a> 
+					<a href=".."><button class="button" id="benutzer-create" type="button">Mitarbeiter erstellen</button></a> 
 						<!--dann werden auch die dropdowns in der kalenderübersicht pink-->
 				</div>
 			</form>

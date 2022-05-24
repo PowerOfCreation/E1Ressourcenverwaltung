@@ -1,29 +1,88 @@
-#content-container{
+/* border für projekte und vllt tables... radio button */
+
+#content-container {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-evenly;
+    gap: 0px;
 }
-#button-container{
+
+/* kann es sein, dass die untercontainer nicht zentriert sind ? */
+
+#button-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#button-width-container {
+    display: flex;
+    width: 500px;
+    gap: 10px;
+}
+
+a {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+}
+
+.projectname {
+    cursor: pointer;
+}
+
+.user-checkbox {
+    cursor: pointer;
+}
+
+/* der text dahinter scheint irgendwie php zu sein und deswegen kann ich den atm bloß den effekt geben, 
+anklicken wird die checkbox nicht aktiviert */
+
+ul {
+    cursor: pointer;
+}
+
+.projectname {
+    margin: 5px 0;
+    color: #909090;
+}
+
+.projectname:hover {
+    font-size: 1.5em;
+    color: black;
+}
+
+.selected {
+    font-size: 2em;
+    color: black;
+}
+
+#projekte-container {
+    width: 400px;
+}
+
+#mitarbeiter-container {
+    width: 250px;
+}
+
+h1 {
     text-align: center;
 }
 
-h1{
-    text-align: center;
-}
-ul,li{
-    padding: 0px
-}
 div {
     width: auto;
     border: 1px solid rgb(255, 255, 255);
     align-content: center;
     align-items: center;
     white-space: pre-line;
-    display: inline-block; 
+    display: inline-block;
 }
+
 form {
     /* margin: 0 auto; */
     width: 100vw;
