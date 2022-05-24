@@ -26,6 +26,7 @@ require_once("/app/config/credentials.php");
 					<ul>
 						<?php					
 							$result = $connection->query("SELECT * FROM Project Order By ProjectName;");
+						
 							while ($row = $result->fetch_object()) 
 							{						
 								echo "<div class='projectname' data-project-id='" . $row->ProjectId . "'>" . $row->ProjectName . "</div><br/>";				
@@ -48,8 +49,11 @@ require_once("/app/config/credentials.php");
 			</div>
 		</form>  
 		<div id="button-container">
-			<a href=".."><button id="back-button" type="button">Zurück</button></a>		
-			<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
+			<div id="button-width-container"> 
+				<!-- neuen wrapper auf 100% und dann kind auf flex und500px und vllt wieder flex-->
+				<a href=".."><button id="back-button" type="button">Zurück</button></a>		
+				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
+			</div>
 		</div>
 	</main>
 	<script src="../jquery-3.6.0.js"></script>

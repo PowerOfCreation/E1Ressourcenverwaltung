@@ -1,8 +1,9 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 h1 {
-    display:inline;
+    display: inline;
 }
 
 td {
@@ -16,9 +17,29 @@ header {
     display: flex;
 }
 
+.td-entry-employee:hover {
+    font-size: 1.2em;
+}
 
-#div-search-weekly-report-wrapper
-{
+a:link {
+    text-decoration: none;
+    color: inherit;
+    font: 1em;
+}
+
+a:hover {
+    font-size: 1.2em;
+}
+
+/* wenn man rechts auf den namen klickt und der dann durch den zeilenumbruch nach unten verschoben wird, 
+entsteht ein flackern des namens */
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#div-search-weekly-report-wrapper {
     flex-grow: 1;
     margin-left: 20px;
     justify-content: right;
@@ -26,15 +47,13 @@ header {
     display: flex;
 }
 
-#input-search-weekly-report
-{
+#input-search-weekly-report {
     width: 450px;
     height: 50px;
     /*margin-right: 200px;*/
 }
 
-#div-buttons-weekly-report-header
-{
+#div-buttons-weekly-report-header {
     width: 100%;
     display: flex;
     column-gap: 100px;
@@ -46,21 +65,18 @@ header {
     height: 60px;
 }
 
-#table-weekly-report
-{
+#table-weekly-report {
     display: table;
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
 }
 
-#table-weekly-report thead
-{
+#table-weekly-report thead {
     border-bottom: 1px solid black;
 }
 
-#table-weekly-report td
-{
+#table-weekly-report td {
     border: 1px solid black;
     padding: 5px;
 }

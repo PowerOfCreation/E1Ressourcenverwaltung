@@ -1,46 +1,56 @@
-h1{
+h1 {
     text-align: center;
 }
 
-/* .textbox{
-    width: 50px;
-} */
+#form-action-buttons-wrapper-div {
+    gap: 10px;
+}
 
+button {
+    width: 100%;
+    height: 50px;
+}
 
-input[type="checkbox"],
-input[type="checkbox"]+label{
-  cursor:pointer;
-  } /* vllt kann der cursor auch angehen, wenn man über den text hovert  */
+/* in tabelle den button leichten grau ton 
+flat ui?*/
 
-button{
+a {
+    text-decoration: none;
+}
+
+#show-pwd-checkbox {
+    cursor: pointer;
+}
+
+button {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
 }
+
 #form-wrapper-div {
     white-space: pre-line;
     display: flex;
     justify-content: center;
     width: 100vw;
 }
+
 #registration-form {
     width: 500px;
 }
-#registration-form > * {
-    width: 42.5vw;
-    box-sizing:border-box;
-}
 
+#registration-form>* {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 #form-action-buttons-wrapper-div {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
 }
 
-#form-action-buttons-wrapper-div > * {
+#form-action-buttons-wrapper-div>* {
     flex-grow: 1;
     width: 100%;
 }
-
-
