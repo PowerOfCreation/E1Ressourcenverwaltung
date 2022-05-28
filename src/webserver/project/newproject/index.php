@@ -51,7 +51,6 @@ if (checkPostValues() === TRUE )
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="newproject.css">
 	<link rel="stylesheet" href="../../buttons.css" type="text/css">
-	
 	<link rel="stylesheet" href="../../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
 </head>
@@ -89,13 +88,13 @@ if (checkPostValues() === TRUE )
 					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
     
 				Farbe: 
-					<input type="color" size="65" name="Color" />    
-
-                <div>
-					<input id="CreateProjectButton" type="submit" value="Projekt erstellen" name="CreateProject" />
-                    <a href=".."><button id="backButton" type="button">Zurück</button></a>
-                </div> 
-
+					<input type="color" size="65" name="Color" />                
+                <div id="button-container">
+					<!-- <input type="submit" value="Projekt erstellen" name="Submit" /> -->
+					<a href=".."><button id="create-project-button" type="submit">Projekt erstellen</button></a>
+                    <a href=".."><button id="back-button" type="button">Zurück</button></a>
+                </div>
+				
 				<script src="../../jquery-3.6.0.js"></script>
 				<script src="new-project.js"></script>
 		    </form>

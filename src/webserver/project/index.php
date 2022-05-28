@@ -19,9 +19,9 @@ require_once("/app/config/credentials.php");
 <body>
 	<main>
 		<h1>Projekt Verwaltung</h1>
-		<form name="RegForm" id="registrierung" method="post">  
+		<!-- <form name="RegForm" id="registrierung" method="post"> --> 
 			<div id="content-container">                              
-				<div id="projekte-container">	
+				<div id="project-container">	
 					<h2>Projekte:</h2>
 					<ul>
 						<?php					
@@ -34,7 +34,7 @@ require_once("/app/config/credentials.php");
 						?>
 					</ul>
 				</div>
-				<div id="mitarbeiter-container">
+				<div id="employees-container">
 					<h2>Mitarbeiter:</h2>	
 					<ul>
 						<?php					
@@ -45,15 +45,15 @@ require_once("/app/config/credentials.php");
 							}					
 						?>
 					</ul>			
-				</div>	
+				</div>	 
 			</div>
-		</form>  
+		<!-- </form>  -->
 		<div id="button-container">
 			<div id="button-width-container"> 
-				<!-- neuen wrapper auf 100% und dann kind auf flex und500px und vllt wieder flex-->
+
 				<div id="project-button-container">
-					<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
-					<a href="deleteproject"><button id="btn-delet-project" type="button">Projekt löschen</button></a>
+					<a href="./newproject/"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
+					<button id="btn-delete-project" type="button">Projekt löschen</button>
 				</div>
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>	
 			</div>
