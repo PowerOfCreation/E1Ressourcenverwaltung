@@ -31,12 +31,12 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<link rel="stylesheet" href="newproject.css">
 	<link rel="stylesheet" href="../../buttons.css" type="text/css">
 	<link rel="stylesheet" href="../../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
-    <script type="text/javascript">
+	<script type="text/javascript">
 </script>
 
 </head>
