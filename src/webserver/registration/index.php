@@ -96,10 +96,10 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 				<span id='password-message-span'></span>
 -->
 				<div id="form-action-buttons-wrapper-div">
-					<a href=".."><button class="button" id="back-button" type="button">Zurück</button></a>
+					<a href=".."><button id="back-button" type="button">Zurück</button></a>
 					<!--<input type="button" id="go" value="projekt-erstellen" /> -->
 					<!--<<input type="submit" value="Benutzer erstellen" name="Submit" />  -->
-					<a href=".."><button class="button" id="benutzer-create" type="button">Mitarbeiter erstellen</button></a> 
+					<a href=".."><button id="benutzer-create" type="button">Mitarbeiter erstellen</button></a> 
 						<!--dann werden auch die dropdowns in der kalenderübersicht pink-->
 				</div>
 			</form>

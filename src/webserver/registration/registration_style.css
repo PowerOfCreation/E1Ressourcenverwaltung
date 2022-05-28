@@ -5,13 +5,14 @@ h1 {
 button {
     width: 100%;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #form-action-buttons-wrapper-div {
     gap: 10px;
 }
-/* in tabelle den button leichten grau ton 
-flat ui?*/
 
 a {
     text-decoration: none;
@@ -19,13 +20,6 @@ a {
 
 #show-pwd-checkbox {
     cursor: pointer;
-
-}
-
-button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 #form-wrapper-div {

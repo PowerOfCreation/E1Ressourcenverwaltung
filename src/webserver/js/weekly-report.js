@@ -76,14 +76,6 @@ $()
         $newProjectInput.select();
     }
 
-    $("#btn-add-employee").click(function () {
-        window.location.href = "registration";
-    });
-
-    $("#btn-edit-projects").click(function () {
-        window.location.href = "project";
-    });
-
     function handleProjectChange() {
         //get employee name and date
         let $weekdayElement = $addProjectSelect.parent();
