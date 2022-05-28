@@ -50,15 +50,15 @@ if (checkPostValues() === TRUE )
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="newproject.css">
-	<link rel="stylesheet" href="../buttons.css" type="text/css">
+	<link rel="stylesheet" href="../../buttons.css" type="text/css">
 	
-	<link rel="stylesheet" href="../font-size.css" type="text/css">
+	<link rel="stylesheet" href="../../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
 </head>
 
 <body>
 	<main>
-		<h1 style="text-align: justify;">Projekt Erstellen</h1>
+		<h1>Projekt Erstellen</h1>
         <div>
             <form name="RegForm" id="register-form" method="post">
                 Projektname:

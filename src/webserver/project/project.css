@@ -4,11 +4,9 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 0px;
 }
-
-/* kann es sein, dass die untercontainer nicht zentriert sind ? */
 
 #button-container {
     display: flex;
@@ -18,8 +16,12 @@
 }
 
 #button-width-container {
-    display: flex;
     width: 500px;
+    
+}
+
+#project-button-container {
+    display: flex;
     gap: 10px;
 }
 
