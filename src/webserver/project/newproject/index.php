@@ -34,7 +34,6 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="newproject.css">
 	<link rel="stylesheet" href="../../buttons.css" type="text/css">
-	
 	<link rel="stylesheet" href="../../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
     <script type="text/javascript">
@@ -76,8 +75,9 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
     
 				Farbe: 
 					<input type="color" size="65" name="Color" />                
-                <div>
-					<input type="submit" value="Projekt erstellen" name="Submit" />
+                <div id="button-container">
+					<!-- <input type="submit" value="Projekt erstellen" name="Submit" /> -->
+					<a href=".."><button id="create-project-button" type="button">Projekt erstellen</button></a>
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
                 </div>   		
 		    </form>
