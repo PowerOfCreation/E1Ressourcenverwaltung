@@ -1,23 +1,14 @@
 button {
-   background-color: 	#FF69B4;
-   cursor: pointer; 
-   justify-content: center;  
-   align-items: center; 
+  background-color: 	#FF69B4;
+  cursor: pointer; 
+  justify-content: center;  
+  align-items: center; 
+  border-width: 2px;
+  font-family: inherit;
+  font-size: 1.5em;
 }
 
 button:hover {
   background-color: #FF1493;
 }
 
-/*input#go {  input#button
-    background-color: #4c9ed9;
-    color: #ffffff;
-    padding: 20px 40px;
-    border: 1px solid #111;
-  }
-
-  input#go:hover {
-    background-color: #ffffff;
-    color: #4c9ed9;
-    border: 1px solid #111;
-  } */

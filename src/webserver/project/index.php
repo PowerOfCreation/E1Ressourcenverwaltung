@@ -51,8 +51,11 @@ require_once("/app/config/credentials.php");
 		<div id="button-container">
 			<div id="button-width-container"> 
 				<!-- neuen wrapper auf 100% und dann kind auf flex und500px und vllt wieder flex-->
-				<a href=".."><button id="back-button" type="button">Zurück</button></a>		
-				<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
+				<div id="project-button-container">
+					<a href="newproject"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
+					<a href="deleteproject"><button id="btn-delet-project" type="button">Projekt löschen</button></a>
+				</div>
+				<a href=".."><button id="back-button" type="button">Zurück</button></a>	
 			</div>
 		</div>
 	</main>

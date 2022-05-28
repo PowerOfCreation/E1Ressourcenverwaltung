@@ -2,15 +2,14 @@ h1 {
     text-align: center;
 }
 
-#form-action-buttons-wrapper-div {
-    gap: 10px;
-}
-
 button {
     width: 100%;
     height: 50px;
 }
 
+#form-action-buttons-wrapper-div {
+    gap: 10px;
+}
 /* in tabelle den button leichten grau ton 
 flat ui?*/
 
@@ -20,6 +19,7 @@ a {
 
 #show-pwd-checkbox {
     cursor: pointer;
+
 }
 
 button {
@@ -32,16 +32,19 @@ button {
     white-space: pre-line;
     display: flex;
     justify-content: center;
-    width: 100vw;
 }
 
 #registration-form {
     width: 500px;
 }
 
-#registration-form>* {
+#registration-form  > * {
     width: 100%;
     box-sizing: border-box;
+}
+
+#show-pwd {
+    box-sizing: content-box;
 }
 
 #form-action-buttons-wrapper-div {
@@ -50,7 +53,8 @@ button {
     width: 100%;
 }
 
-#form-action-buttons-wrapper-div>* {
+#form-action-buttons-wrapper-div > * {
     flex-grow: 1;
     width: 100%;
 }
+
