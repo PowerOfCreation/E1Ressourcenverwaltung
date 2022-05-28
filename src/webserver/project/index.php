@@ -29,7 +29,7 @@ require_once("/app/config/credentials.php");
 						
 							while ($row = $result->fetch_object()) 
 							{						
-								echo "<div class='projectname' data-project-id='" . $row->ProjectId . "'>" . $row->ProjectName . "</div><br/>";				
+								echo "<input type='radio' id='" . $row->ProjectId . "' name='project'><label for='" . $row->ProjectId . "' class='projectname' data-project-id='" . $row->ProjectId . "'>" . $row->ProjectName . "</label><br/>";
 							}					
 						?>
 					</ul>
