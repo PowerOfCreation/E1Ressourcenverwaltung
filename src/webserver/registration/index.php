@@ -50,7 +50,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 <head>
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
-    <link rel="stylesheet" href="registration_style.css">
+	<link rel="stylesheet" href="registration_style.css">
 	<link rel="stylesheet" href="../buttons.css" type="text/css">
 	<link rel="stylesheet" href="../font-size.css" type="text/css">
 

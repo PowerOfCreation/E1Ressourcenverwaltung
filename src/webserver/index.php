@@ -1,7 +1,7 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="buttons.css" type="text/css">
-	<link rel="stylesheet" href="font-size.css" type="text/css">
+    <link rel="stylesheet" href="font-size.css" type="text/css">
 </head>
 
 <body>
