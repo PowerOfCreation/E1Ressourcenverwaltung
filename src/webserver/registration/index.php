@@ -50,7 +50,6 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 <head>
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
-	<title>Hovereffekt</title>
     <link rel="stylesheet" href="registration_style.css">
 	<link rel="stylesheet" href="../buttons.css" type="text/css">
 	<link rel="stylesheet" href="../font-size.css" type="text/css">
@@ -85,7 +84,9 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
 
 				Passwort: <input class="textbox" type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
-				<label id="show-pwd-checkbox"for="check"><input class="checkbox" id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
+				<div id="show-pwd">
+					<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
+				</div>	
 				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
 					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
 					<?php if (isset($passwordErrorSpecificCharacter)) echo $passwordErrorSpecificCharacter; ?>
