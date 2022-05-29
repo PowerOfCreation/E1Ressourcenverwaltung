@@ -210,7 +210,23 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Am 18.5 wird sich mit Herrn Liebert getroffen und der Projektfortschritt präsentiert und neues Feedback eingeholt. Die Erkenntnisse werden zum nächsten Teammeeting besprochen.
 * Herr Kemter wird das Design der Webanwendung ansprechender gestalten.
 * Die Funktionen der Webanwendung werden erweitert. Das Wechseln der angezeigten Wochen in der Wochenansicht soll fertig gestellt werden.
+<<<<<<< HEAD
 |17.05.22-23.5.22
+=======
+
+|17.05.22-23.05.22
+|-
+
+|I16
+|
+
+* Herr Kemter verbessert das Design der Webanwendung.
+* Frau Tartz und Herr Kemter beginnen die Abgabedokumentation.
+* Die geforderten Veränderungen des Themenstellers sollen eingearbeitet werden, wie Erfolgsmeldung und Rückkehren auf andere Seite nach Erstellen eines Projekts/Mitarbeiter.
+* Einige Kleinigkeiten, wie Psalm oder den Status PK in der DB zu ersetzen, sollen erledigt werden.
+* Weiterhin wird die Webanwendung durch bereits begonnene Funktionen erweitert. 
+|24.05.22-30.05.2022
+>>>>>>> fbb0e2a (iteration 16)
 |-
 |=== 
 
