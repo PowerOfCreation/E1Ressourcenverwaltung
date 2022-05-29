@@ -76,8 +76,8 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 				Farbe: 
 					<input type="color" size="65" name="Color" />                
                 <div id="button-container">
-					<!-- <input type="submit" value="Projekt erstellen" name="Submit" /> -->
-					<a href=".."><button id="create-project-button" type="button">Projekt erstellen</button></a>
+					<button type="submit" value="Projekt erstellen" name="Submit">Projekt erstellen</button> 
+					<!--<a href=".."><button id="create-project-button" type="button">Projekt erstellen</button></a> -->
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
                 </div>   		
 		    </form>
