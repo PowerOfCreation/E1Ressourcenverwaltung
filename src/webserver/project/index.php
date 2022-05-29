@@ -19,9 +19,8 @@ require_once("/app/config/credentials.php");
 <body>
 	<main>
 		<h1>Projekt Verwaltung</h1>
-		<!-- <form name="RegForm" id="registrierung" method="post"> --> 
 			<div id="content-container">                              
-				<div id="project-container">	
+				<div id="projects-container">	
 					<h2>Projekte:</h2>
 					<ul>
 						<?php					
@@ -47,7 +46,6 @@ require_once("/app/config/credentials.php");
 					</ul>			
 				</div>	 
 			</div>
-		<!-- </form>  -->
 		<div id="button-container">
 			<div id="button-width-container"> 
 
