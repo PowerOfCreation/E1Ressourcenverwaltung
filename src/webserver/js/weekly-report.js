@@ -98,7 +98,6 @@ $()
         if (change == "+") {
             calendarWeek += 1;
             getDates(calendarWeek);
-            console.log(calendarWeek);
         } else if (change == "-") {
             calendarWeek -= 1;
             getDates(calendarWeek);
@@ -170,10 +169,6 @@ $()
 
                 //loop through all status entries
                 res.map((status) => {
-                    //convert date format
-                    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-                    const date = new Date(status["Day"]).toLocaleDateString("de-DE", options);
-
                     //populate table with statuses
                     $('<p>Projekt: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
                 });
