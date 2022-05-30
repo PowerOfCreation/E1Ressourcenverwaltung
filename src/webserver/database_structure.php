@@ -19,6 +19,7 @@ function exit_failure($message = "")
     http_response_code(500);
     exit($message);
 }
+
 /*if(*/$connection->query("
     ALTER TABLE Status DROP COLUMN IF EXISTS StatusId
     ALTER TABLE Status ADD PRIMARY KEY (UserId, ProjectId, Day);");/* == TRUE)

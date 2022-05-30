@@ -106,7 +106,7 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 					let name  = document.getElementById("ProjectNameInput");
 					let owner = document.getElementById("ProjectOwnerSelect");
 
-					button.addEventListener("click", function() { button.disabled = true; });
+					button.addEventListener("click", function() { 													   button.disabled = true; });
 					name.addEventListener(  'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 					owner.addEventListener( 'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 				</script>
