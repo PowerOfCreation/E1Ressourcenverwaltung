@@ -4,7 +4,11 @@ require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
 
-if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"])) && ($_POST["ProjectOwner"] !== "Choose...")) {
+if (isset($_POST["ProjectName"]) && ($_POST["ProjectOwner"] !== "Choose...")
+	!empty(htmlspecialchars($_POST["ProjectName"])) && !empty(htmlspecialchars($_POST["Color"]))
+	!empty(htmlspecialchars($_POST["Topic"]))		&& !empty(htmlspecialchars($_POST["End"]))) 
+{
+
 	// Example how to use POST'ed values
 	$projectname = htmlspecialchars($_POST["ProjectName"]);
 	$projectowner = htmlspecialchars($_POST["ProjectOwner"]);
@@ -26,7 +30,6 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 		echo $connection->error;
 	}
 	$add_project->reset();
-	echo 'didnt end hear';
 }
 
 ?>
@@ -88,11 +91,13 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
     
 				Farbe: 
-					<input type="color" size="65" name="Color" />                
+					<input type="color" size="65" name="Color" />    
+
                 <div>
 					<input id="CreateProjectButton" type="submit" value="Projekt erstellen" name="CreateProject" />
                     <a href=".."><button id="backButton" type="button">Zurück</button></a>
                 </div> 
+				
 				<script>
 					let button = document.getElementById("CreateProjectButton");
 					let name  = document.getElementById("ProjectNameInput");
