@@ -106,9 +106,11 @@ $()
         if (change == "+") {
             calendarWeek += 1;
             getDates(calendarWeek);
+            populateTable(calendarWeek);
         } else if (change == "-") {
             calendarWeek -= 1;
             getDates(calendarWeek);
+            populateTable(calendarWeek);
         }
     }
 
@@ -142,11 +144,9 @@ $()
             heading.text(week);
 
             for (let index = 0; index < elementNames.length; index++) {
-                const element = document.getElementById(elementNames[index]);
-                const date = document.createTextNode(
-                    calendarWeek["weekdays"][index]
-                );
-                element.appendChild(date);
+                const element = $("#" + elementNames[index] + " p:first");
+                const date = calendarWeek["weekdays"][index];
+                element.text(date);
             }
         });
     }
@@ -166,6 +166,7 @@ $()
 
             //map dates as id
             res["weekdays"].map((element, index) => {
+                $(elementNames[index]).empty()
                 $(elementNames[index]).attr("id", element);
             });
 
