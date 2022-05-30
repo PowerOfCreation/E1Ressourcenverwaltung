@@ -68,11 +68,7 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
         <div>
             <form name="RegForm" id="registrierung" method="post">
                 Projektname:
-<<<<<<< HEAD
 					<input id="ProjectNameInput" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
-=======
-					<input  type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
->>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
 
                 Verantwortlicher:  
 					<select id="ProjectOwnerSelect" name = "ProjectOwner">
@@ -101,8 +97,6 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 				Farbe: 
 					<input type="color" size="65" name="Color" />                
                 <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
 					<input id="CreateProjectButton" type="submit" value="Projekt erstellen" name="CreateProject" />
                     <a href=".."><button id="backButton" type="button">Zurück</button></a>
                 </div> 
@@ -115,26 +109,6 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 					name.addEventListener(  'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 					owner.addEventListener( 'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 				</script>
-=======
-=======
->>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
-					<input type="submit" value="Projekt erstellen" name="CreateProject" />
-                    <a href=".."><button id="backButton" type="button">Zurück</button></a>
-                </div> 
-				<script>
-				/*if(document.getElementById("createProjectButton").addEventListener ("click"))
-				
-				let name  = document.getElementById("projectNameInput").value;
-				let owner = document. getElementById("projectOwnerSelect").value;
-				if(name == "") alert("No Name given!");
-				else if (owner == "Choose...") alert("No Owner given!");
-				else alert(name);
-				});*/
-</script>
-<<<<<<< HEAD
->>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
-=======
->>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
 		    </form>
         </div>	
 	</main>    
