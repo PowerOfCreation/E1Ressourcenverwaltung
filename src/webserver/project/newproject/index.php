@@ -3,7 +3,8 @@
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
-if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"]))) {
+
+if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"])) && ($_POST["ProjectOwner"] !== "Choose...")) {
 	// Example how to use POST'ed values
 	$projectname = htmlspecialchars($_POST["ProjectName"]);
 	$projectowner = htmlspecialchars($_POST["ProjectOwner"]);
@@ -26,6 +27,15 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	}
 	$add_project->reset();
 }
+if (isset($_REQUEST['CreateProject']) && empty(htmlspecialchars($_POST["ProjectName"])))
+{
+	echo '<script>alert("Bitte gib einen Projektnamen an")</script>';
+}
+if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose..."))
+{
+	echo '<script>alert("Bitte gib einen Projektverantwortlichen an")</script>';
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +68,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
         <div>
             <form name="RegForm" id="registrierung" method="post">
                 Projektname:
-					<input type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
+					<input  type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
 
                 Verantwortlicher:  
 					<select name = "ProjectOwner">
@@ -87,9 +97,19 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 				Farbe: 
 					<input type="color" size="65" name="Color" />                
                 <div>
-					<input type="submit" value="Projekt erstellen" name="Submit" />
-                    <a href=".."><button id="back-button" type="button">Zurück</button></a>
-                </div>   		
+					<input type="submit" value="Projekt erstellen" name="CreateProject" />
+                    <a href=".."><button id="backButton" type="button">Zurück</button></a>
+                </div> 
+				<script>
+				/*if(document.getElementById("createProjectButton").addEventListener ("click"))
+				
+				let name  = document.getElementById("projectNameInput").value;
+				let owner = document. getElementById("projectOwnerSelect").value;
+				if(name == "") alert("No Name given!");
+				else if (owner == "Choose...") alert("No Owner given!");
+				else alert(name);
+				});*/
+</script>
 		    </form>
         </div>	
 	</main>    
