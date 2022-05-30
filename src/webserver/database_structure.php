@@ -19,14 +19,14 @@ function exit_failure($message = "")
     http_response_code(500);
     exit($message);
 }
-if($connection->query("
+/*if(*/$connection->query("
     ALTER TABLE Status DROP COLUMN IF EXISTS StatusId
-    ALTER TABLE Status ADD PRIMARY KEY (UserId, ProjectId, Day);") == TRUE)
+    ALTER TABLE Status ADD PRIMARY KEY (UserId, ProjectId, Day);");/* == TRUE)
         {
             echo "StatusId has been droped and PK changed successfully";
         }
-else    echo "Didnt work";
-        
+        else    echo "Didnt work";
+*/        
 
 
 /*if(*/$connection->query("
