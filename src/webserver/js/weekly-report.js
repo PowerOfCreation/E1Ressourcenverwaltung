@@ -100,9 +100,33 @@ $()
         });
     }
 
+    function changeCalendarWeek(change) {
+        let calendarWeek = $("#h1-heading").text();
+        calendarWeek = parseInt(calendarWeek.split(" ").pop());
+        if (change == "+") {
+            calendarWeek += 1;
+            getDates(calendarWeek);
+            console.log(calendarWeek);
+        } else if (change == "-") {
+            calendarWeek -= 1;
+            getDates(calendarWeek);
+        }
+    }
+
+    function getCalendarWeek() {
+        let calendarWeek;
+        $.ajaxSetup({ async: false });
+        $.get("api/get_calendar_week.php").done(function (data) {
+            let res = jQuery.parseJSON(data);
+            calendarWeek = parseInt(res["calendarWeek"]);
+        });
+        $.ajaxSetup({ async: true });
+        return calendarWeek;
+    }
+
     //calls api/get_calendar_week.php and fills the table with the data
-    function getDates() {
-        $.get("api/get_calendar_week.php?format=de").done(function (data) {
+    function getDates(calendarWeek = getCalendarWeek()) {
+        $.get("api/get_calendar_week.php?format=de&calendarWeek=" + calendarWeek).done(function (data) {
             const calendarWeek = jQuery.parseJSON(data);
             const elementNames = [
                 "td-monday",
@@ -112,9 +136,11 @@ $()
                 "td-friday",
             ];
 
-            heading = document.getElementById("h1-heading");
-            week = document.createTextNode(calendarWeek["calendarWeek"]);
-            heading.appendChild(week);
+            heading = $("#h1-heading");
+            //clear text of heading
+            heading.text("");
+            week = "Einsatzplan - Übersicht KW " + calendarWeek["calendarWeek"];
+            heading.text(week);
 
             for (let index = 0; index < elementNames.length; index++) {
                 const element = document.getElementById(elementNames[index]);
@@ -126,7 +152,7 @@ $()
         });
     }
 
-    function populateTable() {
+    function populateTable(calendarWeek = getCalendarWeek()) {
         const elementNames = [
             ".td-entry-monday",
             ".td-entry-tuesday",
@@ -136,28 +162,31 @@ $()
         ];
 
         //get dates from get_calendar_week.php
-        $.get("api/get_calendar_week.php").done(function (data) {
+        $.get("api/get_calendar_week.php?format=en&calendarWeek=" + calendarWeek).done(function (data) {
             const res = jQuery.parseJSON(data);
+
             //map dates as id
             res["weekdays"].map((element, index) => {
                 $(elementNames[index]).attr("id", element);
-            })
+            });
 
-            var calendarWeek = res["calendarWeek"];
             var year = res["year"];
 
             //get statuses from get_all_weekly_status.php
-            $.get("api/get_all_weekly_status.php?calendarWeek=" + calendarWeek + "&year=" + year).done(function (data) {
-                const weeklyStatus = jQuery.parseJSON(data);
+            $.get("api/get_all_weekly_status.php?&calendarWeek=" + calendarWeek + "&year=" + year).done(function (data) {
+                const res = jQuery.parseJSON(data);
 
                 //loop through all status entries
-                weeklyStatus.map((status) => {
+                res.map((status) => {
+                    //convert date format
+                    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+                    const date = new Date(status["Day"]).toLocaleDateString("de-DE", options);
+
                     //populate table with statuses
                     $('<p>ProjectId: ' + status['ProjectId'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
                 });
             });
         });
-
     }
 
     getDates();
