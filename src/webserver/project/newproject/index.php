@@ -27,13 +27,16 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 	}
 	$add_project->reset();
 }
+
 if (isset($_REQUEST['CreateProject']) && empty(htmlspecialchars($_POST["ProjectName"])))
 {
-	echo '<script>alert("Bitte gib einen Projektnamen an")</script>';
+	/*echo '<script>alert("Bitte gib einen Projektnamen an")</script>';*/
+	'<script>document.getElementById("CreateProjectButton").disabled = true;</script>';
 }
 if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose..."))
 {
-	echo '<script>alert("Bitte gib einen Projektverantwortlichen an")</script>';
+	/*echo '<script>alert("Bitte gib einen Projektverantwortlichen an")</script>';*/
+	'<script>console.log(document.getElementById("CreateProjectButton").id);document.getElementById("CreateProjectButton").disabled = true;</script>';
 }
 
 ?>
@@ -68,10 +71,10 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
         <div>
             <form name="RegForm" id="registrierung" method="post">
                 Projektname:
-					<input  type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
+					<input id="ProjectNameInput" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
 
                 Verantwortlicher:  
-					<select name = "ProjectOwner">
+					<select id="ProjectOwnerSelect" name = "ProjectOwner">
 						<option hidden="">Choose... </option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
@@ -97,19 +100,18 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 				Farbe: 
 					<input type="color" size="65" name="Color" />                
                 <div>
-					<input type="submit" value="Projekt erstellen" name="CreateProject" />
+					<input id="CreateProjectButton" type="submit" value="Projekt erstellen" name="CreateProject" />
                     <a href=".."><button id="backButton" type="button">Zurück</button></a>
                 </div> 
 				<script>
-				/*if(document.getElementById("createProjectButton").addEventListener ("click"))
-				
-				let name  = document.getElementById("projectNameInput").value;
-				let owner = document. getElementById("projectOwnerSelect").value;
-				if(name == "") alert("No Name given!");
-				else if (owner == "Choose...") alert("No Owner given!");
-				else alert(name);
-				});*/
-</script>
+					let button = document.getElementById("CreateProjectButton");
+					let name  = document.getElementById("ProjectNameInput");
+					let owner = document.getElementById("ProjectOwnerSelect");
+
+					button.addEventListener("click", function() { button.disabled = true; });
+					name.addEventListener(  'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
+					owner.addEventListener( 'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
+				</script>
 		    </form>
         </div>	
 	</main>    
