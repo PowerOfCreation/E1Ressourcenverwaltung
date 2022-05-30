@@ -30,13 +30,11 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 
 if (isset($_REQUEST['CreateProject']) && empty(htmlspecialchars($_POST["ProjectName"])))
 {
-	/*echo '<script>alert("Bitte gib einen Projektnamen an")</script>';*/
-	'<script>document.getElementById("CreateProjectButton").disabled = true;</script>';
+	echo '<script>alert("Bitte gib einen Projektnamen an")</script>';
 }
 if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose..."))
 {
-	/*echo '<script>alert("Bitte gib einen Projektverantwortlichen an")</script>';*/
-	'<script>console.log(document.getElementById("CreateProjectButton").id);document.getElementById("CreateProjectButton").disabled = true;</script>';
+	echo '<script>alert("Bitte gib einen Projektverantwortlichen an")</script>';
 }
 
 ?>
