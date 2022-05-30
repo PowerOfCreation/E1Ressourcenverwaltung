@@ -28,6 +28,7 @@ function exit_failure($message = "")
         else    echo "Didnt work";
 */         
 
+
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Department(
 DepartmentId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
