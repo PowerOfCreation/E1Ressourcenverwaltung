@@ -68,7 +68,11 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
         <div>
             <form name="RegForm" id="registrierung" method="post">
                 Projektname:
+<<<<<<< HEAD
 					<input id="ProjectNameInput" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
+=======
+					<input  type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
+>>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
 
                 Verantwortlicher:  
 					<select id="ProjectOwnerSelect" name = "ProjectOwner">
@@ -98,6 +102,7 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 					<input type="color" size="65" name="Color" />                
                 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 					<input id="CreateProjectButton" type="submit" value="Projekt erstellen" name="CreateProject" />
                     <a href=".."><button id="backButton" type="button">Zurück</button></a>
                 </div> 
@@ -111,6 +116,8 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 					owner.addEventListener( 'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 				</script>
 =======
+=======
+>>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
 					<input type="submit" value="Projekt erstellen" name="CreateProject" />
                     <a href=".."><button id="backButton" type="button">Zurück</button></a>
                 </div> 
@@ -124,6 +131,9 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 				else alert(name);
 				});*/
 </script>
+<<<<<<< HEAD
+>>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
+=======
 >>>>>>> 61799fa (ProjectName || ProjectOwner nicht -> Fehler)
 		    </form>
         </div>	
