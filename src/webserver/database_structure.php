@@ -26,7 +26,7 @@ function exit_failure($message = "")
             echo "StatusId has been droped and PK changed successfully";
         }
         else    echo "Didnt work";
-*/         
+*/        
 
 
 /*if(*/$connection->query("
