@@ -26,18 +26,7 @@ function exit_failure($message = "")
             echo "StatusId has been droped and PK changed successfully";
         }
         else    echo "Didnt work";
-*/        
-
-
-/*if(*/$connection->query("
-    ALTER TABLE Status DROP COLUMN IF EXISTS StatusId
-    ALTER TABLE Status ADD PRIMARY KEY (UserId, ProjectId, Day);");/* == TRUE)
-        {
-            echo "StatusId has been droped and PK changed successfully";
-        }
-        else    echo "Didnt work";
-*/        
-
+*/         
 
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Department(
