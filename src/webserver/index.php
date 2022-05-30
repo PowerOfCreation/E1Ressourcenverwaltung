@@ -35,11 +35,11 @@
                         <button onclick="changeCalendarWeek('+')">+</button>
                         <tr>
                             <td id="td-employee">Mitarbeiter<br/></td>
-                            <td id="td-monday">Montag<br/></td>
-                            <td id="td-tuesday">Dienstag<br/></td>
-                            <td id="td-wednesday">Mittwoch<br/></td>
-                            <td id="td-thursday">Donnerstag<br/></td>
-                            <td id="td-friday">Freitag<br/></td>
+                            <td id="td-monday">Montag<br/><p></p></td>
+                            <td id="td-tuesday">Dienstag<br/><p></p></td>
+                            <td id="td-wednesday">Mittwoch<br/><p></p></td>
+                            <td id="td-thursday">Donnerstag<br/><p></p></td>
+                            <td id="td-friday">Freitag<br/><p></p></td>
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">
