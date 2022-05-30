@@ -29,6 +29,8 @@
             <div>
                 <table id="table-weekly-report">
                     <thead>
+                        <button onclick="changeCalendarWeek('-')">-</button>
+                        <button onclick="changeCalendarWeek('+')">+</button>
                         <tr>
                             <td id="td-employee">Mitarbeiter<br/></td>
                             <td id="td-monday">Montag<br/></td>
