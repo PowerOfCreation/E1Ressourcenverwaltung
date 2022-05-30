@@ -26,15 +26,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 		echo $connection->error;
 	}
 	$add_project->reset();
-}
-
-if (isset($_REQUEST['CreateProject']) && empty(htmlspecialchars($_POST["ProjectName"])))
-{
-	echo '<script>alert("Bitte gib einen Projektnamen an")</script>';
-}
-if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose..."))
-{
-	echo '<script>alert("Bitte gib einen Projektverantwortlichen an")</script>';
+	echo 'didnt end hear';
 }
 
 ?>
@@ -106,7 +98,13 @@ if (isset($_REQUEST['CreateProject']) && ($_POST["ProjectOwner"] == "Choose...")
 					let name  = document.getElementById("ProjectNameInput");
 					let owner = document.getElementById("ProjectOwnerSelect");
 
-					button.addEventListener("click", function() { button.disabled = true; });
+					button.addEventListener('click', function() { 
+						if(name.value  == "" || owner.value  == "Choose...")
+						{
+							button.disabled = true; 
+							alert("Bitte gib einen Namen und einen Verantwortlichen an!");
+						} 
+					});
 					name.addEventListener(  'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 					owner.addEventListener( 'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 				</script>
