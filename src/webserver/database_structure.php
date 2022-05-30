@@ -19,6 +19,15 @@ function exit_failure($message = "")
     http_response_code(500);
     exit($message);
 }
+if($connection->query("
+    ALTER TABLE Status DROP COLUMN IF EXISTS StatusId
+    ALTER TABLE Status ADD PRIMARY KEY (UserId, ProjectId, Day);") == TRUE)
+        {
+            echo "StatusId has been droped and PK changed successfully";
+        }
+else    echo "Didnt work";
+        
+
 
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Department(
@@ -70,10 +79,10 @@ else
 
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Status(
-StatusId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 UserId int NOT NULL,
 ProjectId int NOT NULL,
 Day date NOT NULL,
+PRIMARY KEY(UserId, ProjectId, Day),
 FOREIGN KEY(UserId) REFERENCES User(UserId),
 FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
 {
