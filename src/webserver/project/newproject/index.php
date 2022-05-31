@@ -3,12 +3,20 @@
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
-
-if (isset($_POST["ProjectName"]) && ($_POST["ProjectOwner"] !== "Choose...")
-	!empty(htmlspecialchars($_POST["ProjectName"])) && !empty(htmlspecialchars($_POST["Color"]))
-	!empty(htmlspecialchars($_POST["Topic"]))		&& !empty(htmlspecialchars($_POST["End"]))) 
+function check()
 {
+	if(	isset($_POST["ProjectName"])  && !empty($_POST["ProjectName"]) &&
+		isset($_POST["ProjectOwner"]) && ($_POST["ProjectOwner"] !== "Choose...") && 
+		isset($_POST["Color"]) 		  && !empty($_POST["Color"]) &&
+		isset($_POST["Topic"]) 		  && !empty($_POST["Topic"]) &&
+		isset($_POST["End"])		  &&  !empty($_POST["End"])			) return TRUE;
+		
+	else return FALSE;
+}
 
+
+if (check() == TRUE ) 
+{
 	// Example how to use POST'ed values
 	$projectname = htmlspecialchars($_POST["ProjectName"]);
 	$projectowner = htmlspecialchars($_POST["ProjectOwner"]);
