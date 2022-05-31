@@ -13,6 +13,8 @@ function checkPostValues()
         || empty($_POST["Topic"])
         || empty($_POST["End"])
     ) return FALSE;
+
+	return TRUE;
 }
 
 if (checkPostValues() === TRUE ) 
