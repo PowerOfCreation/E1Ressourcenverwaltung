@@ -4,19 +4,18 @@ require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
 
-function check()
+function checkPostValues()
 {
-	if(	   !empty($_POST["ProjectName"])
-		&& !empty($_POST["ProjectOwner"])
-		&& !empty($_POST["Color"])
-		&& !empty($_POST["Topic"])
-		&& !empty($_POST["End"]) 
-	) return TRUE;
-
-	else return FALSE;
+    if (
+        empty($_POST["ProjectName"])
+        || empty($_POST["ProjectOwner"])
+        || empty($_POST["Color"])
+        || empty($_POST["Topic"])
+        || empty($_POST["End"])
+    ) return FALSE;
 }
 
-if (check() == TRUE ) 
+if (checkPostValues() !== FALSE ) 
 {
 	// Example how to use POST'ed values
 	$projectname = htmlspecialchars($_POST["ProjectName"]);
@@ -62,9 +61,7 @@ if (check() == TRUE )
 			width: 500px;
     	}
 	</style> 
-    <script type="text/javascript">
-</script>
-
+    <script type="text/javascript"></script>
 </head>
 
 <body>
@@ -73,7 +70,7 @@ if (check() == TRUE )
         <div>
             <form name="RegForm" id="registrierung" method="post">
                 Projektname:
-					<input id="ProjectNameInput" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
+					<input id="ProjectNameInput" type="text" size="65" name="ProjectName" placeholder="Musterprojekt"/>
 
                 Verantwortlicher:  
 					<select id="ProjectOwnerSelect" name = "ProjectOwner">
@@ -111,7 +108,7 @@ if (check() == TRUE )
 					let button = document.getElementById("CreateProjectButton");
 					let name  = document.getElementById("ProjectNameInput");
 					let owner = document.getElementById("ProjectOwnerSelect");
-					console.log("Owner: ",owner.value);
+					
 					button.addEventListener('click', function() { 
 						if(name.value  == "" || owner.value  == "Choose...")
 						{
