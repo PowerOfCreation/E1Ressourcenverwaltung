@@ -5,12 +5,12 @@ include("../../database_structure.php");
 //More checks required...
 function check()
 {
-	if(	isset($_POST["ProjectName"])  && !empty($_POST["ProjectName"]) &&
-		isset($_POST["ProjectOwner"]) && ($_POST["ProjectOwner"] !== "Choose...") && 
-		isset($_POST["Color"]) 		  && !empty($_POST["Color"]) &&
-		isset($_POST["Topic"]) 		  && !empty($_POST["Topic"]) &&
-		isset($_POST["End"])		  &&  !empty($_POST["End"])			) return TRUE;
-		
+	if(	   !empty($_POST["ProjectName"])
+		&& ($_POST["ProjectOwner"] !== "Choose...")
+		&& !empty($_POST["Color"])
+		&& !empty($_POST["Topic"])
+		&& !empty($_POST["End"]) ) return TRUE;
+
 	else return FALSE;
 }
 
