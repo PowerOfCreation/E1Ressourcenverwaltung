@@ -3,10 +3,11 @@
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
+
 function check()
 {
 	if(	   !empty($_POST["ProjectName"])
-		&& ($_POST["ProjectOwner"] !== "Choose...")
+		&& !empty($_POST["ProjectOwner"])
 		&& !empty($_POST["Color"])
 		&& !empty($_POST["Topic"])
 		&& !empty($_POST["End"]) 
@@ -14,7 +15,6 @@ function check()
 
 	else return FALSE;
 }
-
 
 if (check() == TRUE ) 
 {
@@ -77,7 +77,7 @@ if (check() == TRUE )
 
                 Verantwortlicher:  
 					<select id="ProjectOwnerSelect" name = "ProjectOwner">
-						<option hidden="">Choose... </option>
+						<option selected="true" disabled="disabled" hidden="true" value="">Wähle Verantwortlichen</option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
 							while ($row = $result->fetch_object()) 
@@ -111,7 +111,7 @@ if (check() == TRUE )
 					let button = document.getElementById("CreateProjectButton");
 					let name  = document.getElementById("ProjectNameInput");
 					let owner = document.getElementById("ProjectOwnerSelect");
-
+					console.log("Owner: ",owner.value);
 					button.addEventListener('click', function() { 
 						if(name.value  == "" || owner.value  == "Choose...")
 						{
@@ -121,6 +121,7 @@ if (check() == TRUE )
 					});
 					name.addEventListener(  'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
 					owner.addEventListener( 'input', function() { if(name.value !== "" && owner.value !== "Choose...") button.disabled = false; });
+
 				</script>
 		    </form>
         </div>	
