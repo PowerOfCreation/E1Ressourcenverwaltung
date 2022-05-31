@@ -18,7 +18,7 @@ function exit_failure($message = "")
 {
     http_response_code(500);
     exit($message);
-} 
+}
 
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Department(
