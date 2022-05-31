@@ -9,7 +9,8 @@ function check()
 		&& ($_POST["ProjectOwner"] !== "Choose...")
 		&& !empty($_POST["Color"])
 		&& !empty($_POST["Topic"])
-		&& !empty($_POST["End"]) ) return TRUE;
+		&& !empty($_POST["End"]) 
+	) return TRUE;
 
 	else return FALSE;
 }
