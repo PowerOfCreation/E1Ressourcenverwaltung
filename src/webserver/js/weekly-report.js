@@ -105,25 +105,27 @@ $()
 
     function changeCalendarWeek(change) {
         if (change == "+") {
-            globalCalendarWeek += 1;
+            globalCalendarWeek++;
             getDates(globalCalendarWeek);
             populateTable(globalCalendarWeek);
         } else if (change == "-") {
-            globalCalendarWeek -= 1;
+            globalCalendarWeek--;
             getDates(globalCalendarWeek);
             populateTable(globalCalendarWeek);
         }
     }
 
     function getCalendarWeek() {
-        let calendarWeek;
-        $.ajaxSetup({ async: false });
-        $.get("api/get_calendar_week.php").done(function (data) {
-            let res = jQuery.parseJSON(data);
-            calendarWeek = parseInt(res["calendarWeek"]);
+        var res = null;
+        $.ajax({
+            url: "api/get_calendar_week.php",
+            type: "GET",
+            async: false,
+            success: function (data) {
+                res = jQuery.parseJSON(data);
+            }
         });
-        $.ajaxSetup({ async: true });
-        return calendarWeek;
+        return res["calendarWeek"];
     }
 
     //calls api/get_calendar_week.php and fills the table with the data
