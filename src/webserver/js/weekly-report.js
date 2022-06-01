@@ -9,6 +9,8 @@ $()
     $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
     $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
 
+    var globalCalendarWeek = getCalendarWeek();
+
     function addEmployee(employeeId, employeeName) {
         $employeeElement = $(` 
             <tr> \
@@ -101,16 +103,14 @@ $()
     }
 
     function changeCalendarWeek(change) {
-        let calendarWeek = $("#h1-heading").text();
-        calendarWeek = parseInt(calendarWeek.split(" ").pop());
         if (change == "+") {
-            calendarWeek += 1;
-            getDates(calendarWeek);
-            populateTable(calendarWeek);
+            globalCalendarWeek += 1;
+            getDates(globalCalendarWeek);
+            populateTable(globalCalendarWeek);
         } else if (change == "-") {
-            calendarWeek -= 1;
-            getDates(calendarWeek);
-            populateTable(calendarWeek);
+            globalCalendarWeek -= 1;
+            getDates(globalCalendarWeek);
+            populateTable(globalCalendarWeek);
         }
     }
 
@@ -126,7 +126,7 @@ $()
     }
 
     //calls api/get_calendar_week.php and fills the table with the data
-    function getDates(calendarWeek = getCalendarWeek()) {
+    function getDates(calendarWeek = globalCalendarWeek) {
         $.get("api/get_calendar_week.php?format=de&calendarWeek=" + calendarWeek).done(function (data) {
             const calendarWeek = jQuery.parseJSON(data);
             const elementNames = [
@@ -151,7 +151,7 @@ $()
         });
     }
 
-    function populateTable(calendarWeek = getCalendarWeek()) {
+    function populateTable(calendarWeek = globalCalendarWeek) {
         const elementNames = [
             ".td-entry-monday",
             ".td-entry-tuesday",
