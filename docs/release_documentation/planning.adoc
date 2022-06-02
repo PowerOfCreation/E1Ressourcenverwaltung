@@ -1,0 +1,41 @@
+//AKTUELL SIND ES (ZUM TEIL) NUR STICHPUNKTE/GEDANKENSTÜTZEN WAS HIER BEHANDELT WERDEN SOLL
+
+Aufgabenstellung:
+erstellung einer kalenderanwendung. dort kann eingetragen werden, welche Projekte an den tagen geplant sind
+es soll möglich sein, mitarbeiter anzulegen und zu löschen
+projekte sollen erstellbar sein und löschbar (beendet), den projekten sollen mitarbeiter hin- und entfernt können
+es soll eine funktion geben, wo feiertage eingetragen werden können. über eine API und manuell
+Auftraggeber:
+T- Systems MMS
+Ausgangssituation zum Semesterbeginn:
+
+- keine gruppe hat vorgearbeitet -> konnten auf nichts aufbauen
+
+
+//passt das hier überhaupt hin?
+niclas hatte als einziger viel erfahrung mit coden und wie man sachen am besten macht
+vitality, justus, carl und jonas hat etwas erfahrung im front end
+
+helena, aleksandra und nick hattem mit dem "anwenden" keine erfahrung
+
+Projektorganisiation:
+    Team und Rollen/Veranwortlichkeiten:
+    | Helena Rubein | Teamleiterin und Analyst | aus Projekt ausgeschieden | s81097@htw-dresden.de 
+    | Nick Kemter | Test | Teamleiter und Test | s82068@htw-dresden.de 
+    | Justus Beck | Implementation | Implementation | s82023@htw-dresden.de 
+    | Niklas Werner | Architektur | Architektur | s82076@htw-dresden.de 
+    | Jonas Keil | Implementation | aus Projekt ausgeschieden | s81910@htw-dresden.de
+    | Carl Kirchhoff | Architektur | Architektur | s82087@htw-dresden.de
+    | Aleksandra Tartz | Analyst | Analyst | s80433@htw-dresden.de
+    | Vitaly Tichonow | Test | Test | s82591@htw-dresden.de
+    | Vinh Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
+    Kommunikation
+        Team: Whatsappgruppe für nicht aufgaben -> spontane absprachen, terminfindung
+                discord für gruppenmeeting 
+                discord/whatsapp für fragen bzw zusammenarbeit von aufgaben
+        Auftraggeber: für die kommunikation wurde im 1. semester email zur verabredung und kleinen fragen genutzt
+        zur "face-to-face" kommunkikation, u.a. wie die anwendung gestaltet werden soll und andere organisatorische fragen
+        da helena die email hatte und nick, nicht warten/suchen wollte, hat der komplette kontakt über discord stattgefunden
+    eingesetzte Tools: discord, whatsapp, docker(?), github, vs code, mariadb, google docs (für gemeinsame dokumente und zeitplan), psalm (und die anderen github dinge)
+
+Techniken/Praktike - Way of Working
