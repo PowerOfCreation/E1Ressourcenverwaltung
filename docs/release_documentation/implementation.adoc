@@ -1,0 +1,69 @@
+//AKTUELL SIND ES NUR STICHPUNKTE/GEDANKENSTÜTZEN WAS HIER BEHANDELT WERDEN SOLL
+
+
+Iterationsdauer: 7 Tage. in der mitte des 2. semester mal auf 2 wochen hochgesetzt, da effizienzerhöhung erhofft -> genau das gegenteil -> wieder auf 1 Woche
+
+
+Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?
+aufgaben wurden kurz nach projekt start als github issue angelegt
+analyse und entwurf hauptsächlich im 1. semester
+implementierung und test hauptsächlich im 2. semester
+dokumentation immer
+
+
+- Analyse wurde als Gruppe mit TS erfragt
+    - die fragen wurden vor dem treffen vorbereitet und danach nochmal nachbereitet
+  
+- Entwurf wurde dann von 1-2 personen je nach aufgaben erstellt 
+    - d.h. welche haben die vision übernernommen, andere die use case diagramme etc
+    - die resultate wurden dann im teammeeting besprochen und je nachdem nochmal bearbeitet
+    - manchmal hat sich natürlich noch was verändert -> dies wurde dann in späteren 
+    iterationen von meist einer person eingepflegt, da es nicht viel war
+- implementation
+    - wurde hauptsächlich von niclas, justus, vinh, vitali und carl erledigt 
+    - niclas hat aufgrund seiner ausbildung (?) schon viel erfahrung gehabt
+    - wurde mit docker gearbeitet, damit es egal ist welches OS genutzt wird und es dann wenige probleme bei der übergabe gibt
+- test
+    - mit psalm und ? wurde php code überprüft
+    - durch pull request wurden einige fehler vorm mergen behoben
+    - beim programmieren wurde natürlich auch überprüft, ob die veränderungen ungewollte effekte haben
+    - es wurden regelmäßig die funktionen in einem "general test" überprüft
+    - unit tests sind noch geplant, aber wissen nicht ob dafür zeit ist
+- documentation
+
+
+
+Welche (wesentlichen) Entscheidungen wurden getroffen? Warum?
+
+- semi offizielle entscheidung, dass aleksandra und nick sich eher um dokumentation kümmern (2. semester)
+- nick wird im 2. semester teamleiter, da helena nicht mehr mit macht. die entscheidung war schon etwas im 1. semester geplant, da er daran interesse hatte
+- das jonas nicht bewertet werden soll, da er nichts beigetragen hat (passt das hier?)
+- niclas sollte sich im 1. semester etwas zurückhalten, da er im 2. beim programmieren gebraucht wird
+
+Was hat gut geklappt, was nicht? Welche Ursachen gab es dafür?
+
+Gut
+
+- im 1. Semester wurden die vergebenen Aufgaben innerhalb von 1 bzw 2 iterationen erfüllt
+- jeder hat aufgaben angenommen
+- offener meinungsaustausch während der meeting
+- erfüllung der aufgaben in guter qualität (-> müssen nicht oft nacharbeiten bzw bloß kleinigkeiten)
+
+- bloß weil hier nicht mehr/alles genannt wird, heißt es nicht, dass nichts mehr gut war 
+-> sondern bloß schwierig das alles zu benennen
+
+Schlecht
+
+- im 2. semester wurden öfter die gleichen aufgaben über mehrere iterationen gezogen und commit waren z.T. erst kurz vor teammeeting gepushed. das hat vermutlich den grund, dass wir ziemlich gut im 1. semester mit relativ wenig aufwand waren und dachten, dass geht so weiter bzw. einfach faulheit
+- bei coding fragen, wurde niclas nicht gefragt und daher die probleme auf "die lange bank geschoben"
+- zu wenig, die wirklich gut coden konnten
+- kranke teammitglieder (können daran nichts ändern)
+- manche teammitglieder haben öfters bei teammeeting gefehlt (aus verschiedenen gründe. krankheit oder andere termine)
+//sollen die mitglieder namentlich genannt werden?
+
+Wie wurde mit Problemen umgegangen? Haben die getroffenen Maßnahmen gewirkt?
+
+- iterationszeit erhöht, damit mehr gemacht wird -> nein, eher das gegenteil
+- Nick hat HTML/CSS gelernt und konnte dann etwas vom verbesserten Design erstellen 
+- niclas hat immer gesagt, dass man ihn eher fragen soll -> aber die anderen haben sich 
+nicht getraut / haben die aufgaben zu spät angefanen um zu fragen(?)
