@@ -5,16 +5,16 @@
     //check if file is called directly
     if (__FILE__ == $_SERVER["SCRIPT_FILENAME"]) {
         //calculate offset based on calendarWeek
-        if(empty($_GET["calendarWeek"])) {
-            $week = date("W");
-        }else {
+        if(!empty($_GET["calendarWeek"]) && is_int(htmlspecialchars($_GET["calendarWeek"]))) {
             $week = htmlspecialchars($_GET["calendarWeek"]);
+        }else {
+            $week = date("W");
         }
 
-        if(empty($_GET["year"])) {
-            $year = date("Y");
-        }else {
+        if(!empty($_GET["year"]) && is_int(htmlspecialchars($_GET["year"]))) {
             $year = htmlspecialchars($_GET["year"]);
+        }else {
+            $year = date("Y");
         }
 
         $format = "en";
@@ -23,7 +23,7 @@
             $format = htmlspecialchars($_GET["format"]);
         }
 
-        echo json_encode(get_calendar_week($year, $week, $format));
+        echo json_encode(get_calendar_week((int) $year, (int) $week, $format));
     }
 
     function get_calendar_week(int $year, int $week, string $format) {
