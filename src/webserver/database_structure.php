@@ -14,7 +14,7 @@ function execute_sql_query(mysqli $connection, string $queryString): void
     }
 }
 
-function exit_failure(string $message = "") : string
+function exit_failure(string $message = ""): void
 {
     http_response_code(500);
     exit($message);
