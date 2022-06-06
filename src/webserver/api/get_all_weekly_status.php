@@ -5,32 +5,30 @@
     include("/app/config/credentials.php");
 
     //check if params are complete
-    if(!isset($_GET["calendarWeek"])) {
-        $calendarWeek = date("W");
-    }else {
+    if(!empty($_GET["calendarWeek"]) && is_int(htmlspecialchars($_GET["calendarWeek"]))) {
         $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
+    }else {
+        $calendarWeek = date("W");
     }
 
-    if(!isset($_GET["year"])) {
-        $year = date("Y");
-    }else {
+    if(!empty($_GET["year"]) && is_int(htmlspecialchars($_GET["year"]))) {
         $year = htmlspecialchars($_GET["year"]);
+    }else {
+        $year = date("Y");
     }
 
     //get dates of $calendarWeek
     require_once("get_calendar_week.php");
-    $res = get_calendar_week($year, $calendarWeek, "en");
+    $res = get_calendar_week((int) $year, (int) $calendarWeek, "en");
 
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
     $i = 0;
 
-    if(is_array($res)) {
         foreach($res["weekdays"] as $day) {
             $weekdays[$i] = date("Y-m-d", strtotime($day));
             $i++;
         }
-    }
     
     //call database
     $stmt = $connection->prepare("SELECT Status.`UserId`, Status.`ProjectId`, Status.`Day`, Project.`ProjectName` FROM `Status` INNER JOIN `Project` ON Status.`ProjectId` = Project.`ProjectId` WHERE Status.`Day` BETWEEN ? AND ?");

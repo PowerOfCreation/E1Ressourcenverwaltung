@@ -17,7 +17,7 @@ if (!empty($username)) {
         if ($row = $get_user_info_statement->fetch()) {
             echo $forename . " " . $surname . "<br>";
         } else {
-            echo "Es existiert kein Nutzer mit dem Nutzernamen " + $username;
+            echo "Es existiert kein Nutzer mit dem Nutzernamen " . $username;
         }
 
         $get_user_info_statement->reset();

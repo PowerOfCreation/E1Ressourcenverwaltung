@@ -2,7 +2,7 @@
 
 require_once("/app/config/credentials.php");
 
-function execute_sql_query($connection, $queryString)
+function execute_sql_query(mysqli $connection, string $queryString): void
 {
     if($connection->query($queryString) === TRUE)
     {
@@ -14,7 +14,7 @@ function execute_sql_query($connection, $queryString)
     }
 }
 
-function exit_failure($message = "")
+function exit_failure(string $message = ""): void
 {
     http_response_code(500);
     exit($message);
