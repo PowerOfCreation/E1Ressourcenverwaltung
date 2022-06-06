@@ -26,7 +26,7 @@
         echo json_encode(get_calendar_week((int) $year, (int) $week, $format));
     }
 
-    function get_calendar_week(int $year, int $week, string $format) {
+    function get_calendar_week(int $year, int $week, string $format): array {
         if($format == "de") {
             $format = "d.m.Y";
         }else if($format == "en") {
