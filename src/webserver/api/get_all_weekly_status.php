@@ -5,16 +5,16 @@
     include("/app/config/credentials.php");
 
     //check if params are complete
-    if(!isset($_GET["calendarWeek"])) {
-        $calendarWeek = date("W");
+    if(isset($_GET["calendarWeek"]) && is_int(htmlspecialchars($_GET["calendarWeek"]))) {
+        $calendarWeek = (int) htmlspecialchars($_GET["calendarWeek"]);
     }else {
-        $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
+        $calendarWeek = (int) date("W");
     }
 
-    if(!isset($_GET["year"])) {
-        $year = date("Y");
+    if(isset($_GET["year"]) && is_int(htmlspecialchars($_GET["year"]))) {
+        $year = (int) htmlspecialchars($_GET["year"]);
     }else {
-        $year = htmlspecialchars($_GET["year"]);
+        $year = (int) date("Y");
     }
 
     //get dates of $calendarWeek

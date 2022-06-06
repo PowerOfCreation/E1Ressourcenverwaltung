@@ -33,17 +33,6 @@
             $format = "Y-m-d";
         }
 
-        //calculate offset for calendarWeek
-        $calendarWeek = (int)$calendarWeek - date("W") - 1;
-        //get dates of $calendarWeek
-        $monday = strtotime('next Monday '.$calendarWeek.' week');
-        $thuesday = strtotime(date($format,$monday)." +1 days");
-        $wednesday = strtotime(date($format,$monday)." +2 days");
-        $thursday = strtotime(date($format,$monday)." +3 days");
-        $friday = strtotime(date($format,$monday)." +4 days");
-
-        $calendar_week = date("W" ,$monday);
-
         $dateTime = new DateTime();
         $dateTime->setISODate($year, $week);
         $dates_of_this_week = [
