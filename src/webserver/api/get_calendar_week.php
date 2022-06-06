@@ -11,22 +11,28 @@
             $week = htmlspecialchars($_GET["calendarWeek"]);
         }
 
+        if(empty($_GET["year"])) {
+            $year = date("Y");
+        }else {
+            $year = htmlspecialchars($_GET["year"]);
+        }
+
         $format = "en";
         
         if(!empty($_GET["format"])) {
             $format = htmlspecialchars($_GET["format"]);
         }
 
-        echo json_encode(get_calendar_week($week, $format));
+        echo json_encode(get_calendar_week($year, $week, $format));
     }
 
-
-    function get_calendar_week(string $calendarWeek, string $format) :array {
+    function get_calendar_week(int $year, int $week, string $format) {
         if($format == "de") {
-            $format = "d-m-Y";
+            $format = "d.m.Y";
         }else if($format == "en") {
             $format = "Y-m-d";
         }
+
         //calculate offset for calendarWeek
         $calendarWeek = (int)$calendarWeek - date("W") - 1;
         //get dates of $calendarWeek
@@ -38,19 +44,20 @@
 
         $calendar_week = date("W" ,$monday);
 
+        $dateTime = new DateTime();
+        $dateTime->setISODate($year, $week);
         $dates_of_this_week = [
-            "calendarWeek" => $calendar_week,
+            "calendarWeek" => $week,
             "weekdays" => array(
-                date($format,$monday),
-                date($format,$thuesday),
-                date($format,$wednesday),
-                date($format,$thursday),
-                date($format,$friday),
+                $dateTime->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
+                $dateTime->modify('+1 day')->format($format),
             ),
-            "year" => date("Y",$monday),
+            "year" => $year
         ];
 
-        //returns json with calendar week and all dates of the week
         return $dates_of_this_week;
-    }
+      }
  ?>

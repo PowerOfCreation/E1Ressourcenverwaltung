@@ -37,11 +37,11 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 
 
 === Praktiken 
+
 - Iterative Entwicklung
 
-Zu Anfang jeder Iteration (7-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die Aufgaben sind normalerweise kleine Teilfunktionen der Webanwendung. 
-//funktionszuwachs??
-Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslängewurde am Anfang des Projekts auf eine Woche festgelegt. In der zweiten Hälfte des Projekts wurde es auf zwei Wochen angehoben.
+Zu Anfang jeder Iteration (7-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die meisten Aufgaben sind kleine Teilfunktionen der Webanwendung. Ebenso wird auch der Iterationsplan erstellt und es werden weitere Dokumente aktualisiert.
+Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick über die beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslängewurde am Anfang des Projekts auf eine Woche festgelegt. In der zweiten Hälfte des Projekts wurde es auf zwei Wochen angehoben.
 Die Größe der Aufgaben wird in T-Shirt-Größen angegeben. 
 
 - Whole Team
@@ -49,7 +49,7 @@ Die Größe der Aufgaben wird in T-Shirt-Größen angegeben.
 Auch wenn jedes Teammitglied einzelne Aufgaben in seinem "Expertengebiet" erledigt, ist das ganze Team dafür verantwortlich, dass alle Aufgaben korrekt erfüllt werden.
 Wenn ein Teammitglied ein Problem hat, kann es andere Teammitglieder um Hilfe fragen. Ebenso darf jeder zu den wöchentlichen Teammeetings seine Meinung und Kritik äußern.
 Die verteilten Aufgaben und ihr Fertigungsstellungsdatum sind angemessen gewählt, so dass sich niemand überarbeitet.
-Das Team und der Themensteller soll mit Vision ein gemeinsames Verständnis für das Projekt entwickeln und sich konkret darauf einigen 
+Das Team und der Themensteller soll mit Vision ein gemeinsames Verständnis für das Projekt entwickeln und sich konkret darauf einigen.
 
 
 - Risk-Value Lifecycle 
@@ -60,7 +60,7 @@ Unser Projekt wird in vier grobe Projektphasen unterteilt. Jede Phase hat einen 
 - Concurrent Testing 
 
 Concurrent Testing wird bei uns im Team angewendet. Jedoch werden im Moment noch keine automatisierten Tests verwendet. Aktuell wird der Programmcode mit einer Testliste verglichen. Units-Test sind noch geplant. 
-Es ist geplant, dass vorallem Herr Kemter und ??? die Test planen und ausführen.
+Es ist geplant, dass vor allem Herr Werner, Herr Kemter und Frau Tartz die Tests planen und durchführen.
 
 - Use Case Driven Development 
 
@@ -149,41 +149,41 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 
 |I9
 |
-* Verbesserung bzw. Korrektur des Beleges hat begonnen
-* Dadurch wird fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
-* Erweiterung der Funktionen der Webanwendung
-* Damit wird das Risiko eines nicht fertigen Systems minimiert
-* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen
+* Verbesserung bzw. Korrektur des Beleges hat begonnen.
+* Dadurch wird fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert.
+* Erweiterung der Funktionen der Webanwendung.
+* Damit wird das Risiko eines nicht fertigen Systems minimiert.
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
 | 23.03.22 - 28.03.22
 | - 
 
 |I10
 | 
-* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan
-* Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
-* Erweiterung der Funktionen der Webanwendung
-* Damit wird das Risiko eines nicht fertigen Systems minimiert
-* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen
+* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan.
+* Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert.
+* Erweiterung der Funktionen der Webanwendung.
+* Damit wird das Risiko eines nicht fertigen Systems minimiert.
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
 | 29.03.22 - 04.04.22
 | -
 
 |I11
 |
-* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan, da in Iteration davor nicht fertiggestellt
-* Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert
-* Erweiterung der Funktionen der Webanwendung, um z.B. Passwortkriterien, Abteilungsdropdown und Suche 
-* Damit wird das Risiko eines nicht fertigen Systems minimiert
-* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen
+* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan, da in Iteration davor nicht fertiggestellt.
+* Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert.
+* Erweiterung der Funktionen der Webanwendung, um z.B. Passwortkriterien, Abteilungsdropdown und Suche.
+* Damit wird das Risiko eines nicht fertigen Systems minimiert.
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
 | 05.04.22. - 11.04.22
 | - 
 
 |I12
 |
-* Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Risikoliste
-* Damit wird dafür gesorgt, dass die Dokumentation aktuell bleibt und eventuelle Ungenauigkeiten verbessert werden
+* Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Risikoliste.
+* Damit wird dafür gesorgt, dass die Dokumentation aktuell bleibt und eventuelle Ungenauigkeiten verbessert werden.
 //Name nachschlagen und in andere Dokumente eintragen
-* Vinh wird als neues Teammitglied aufgenommen und in das Projekt eingeführt. Außerdem wird er als Person in den Beleg integriert 
-* Die Funktionen der Webanwendung werden erweitert, u.a. anzeigen der aktuellen Kalenderwoche, Projekterstellung und Implementierung verschiedener Geschäftslogik 
+* Vinh wird als neues Teammitglied aufgenommen und in das Projekt eingeführt. Außerdem wird er als Person in den Beleg integriert.
+* Die Funktionen der Webanwendung werden erweitert, u.a. anzeigen der aktuellen Kalenderwoche, Projekterstellung und Implementierung verschiedener Geschäftslogik.
 |12.04.22-25.04.22
 |-
 
@@ -192,17 +192,25 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Use Cases
 * Die Funktionen der Webanwendung werden erweitert.
 * Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen. Herr Kemter hat die Aufgabe bekommen, zu klären wann beide wieder Einsatzfähig sind bzw. bei noch längerer Krankheit dies an Herrn Anke weiterzuleiten.
-* Herr Kemter wird in HTML und CSS eingeführt. Außerdem macht er einen Termin mit Herrn Liebert
+* Herr Kemter wird in HTML und CSS eingeführt. Außerdem macht er einen Termin mit Herrn Liebert.
 |26.04.22-09.05.22
 |-
 
 |I14
 |
-* Frau Tartz testet die Webanwendung. Dazu wird Sie verschiedene Falscheingaben etc. tätigem
-* Frau Tartz und Herr Kemter schauen sich den Beleg nocheinmal an
-* Herr Kemter bildet sich weiterhin im Bereich Front-End fort
+* Frau Tartz testet die Webanwendung. Dazu wird Sie verschiedene Falscheingaben etc. tätigen.
+* Frau Tartz und Herr Kemter schauen sich den Beleg nocheinmal an.
+* Herr Kemter bildet sich weiterhin im Bereich Front-End fort.
 * Die Funktionen der Webanwendung werden erweitert. Das Anzeigen des Status soll fertig gestellt werden, ebenso das Wechseln der Wochen.
 |10.05.22-16.05.22
+|-
+
+|I15
+|
+* Am 18.5 wird sich mit Herrn Liebert getroffen und der Projektfortschritt präsentiert und neues Feedback eingeholt. Die Erkenntnisse werden zum nächsten Teammeeting besprochen.
+* Herr Kemter wird das Design der Webanwendung ansprechender gestalten.
+* Die Funktionen der Webanwendung werden erweitert. Das Wechseln der angezeigten Wochen in der Wochenansicht soll fertig gestellt werden.
+|17.05.22-23.5.22
 |-
 |=== 
 

@@ -70,10 +70,10 @@ else
 
 /*if(*/$connection->query("
 CREATE TABLE IF NOT EXISTS Status(
-StatusId int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 UserId int NOT NULL,
 ProjectId int NOT NULL,
 Day date NOT NULL,
+PRIMARY KEY(UserId, ProjectId, Day),
 FOREIGN KEY(UserId) REFERENCES User(UserId),
 FOREIGN KEY(ProjectId) REFERENCES Project(ProjectId));");/*  === TRUE)
 {

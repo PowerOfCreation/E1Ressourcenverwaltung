@@ -5,17 +5,21 @@
     include("/app/config/credentials.php");
 
     //check if params are complete
-    if(!isset($_GET["calendarWeek"]) || !isset($_GET["year"])) {
-        echo "Error: calendarWeek and year are required";
-        exit;
+    if(!isset($_GET["calendarWeek"])) {
+        $calendarWeek = date("W");
+    }else {
+        $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
     }
 
-    $calendarWeek = htmlspecialchars($_GET["calendarWeek"]); //ist ein String
-    $year = htmlspecialchars($_GET["year"]);
+    if(!isset($_GET["year"])) {
+        $year = date("Y");
+    }else {
+        $year = htmlspecialchars($_GET["year"]);
+    }
 
     //get dates of $calendarWeek
     require_once("get_calendar_week.php");
-    $res = get_calendar_week($calendarWeek, "en");
+    $res = get_calendar_week($year, $calendarWeek, "en");
 
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
@@ -27,7 +31,7 @@
         }
     
     //call database
-    $stmt = $connection->prepare("SELECT * FROM `Status` WHERE `day` BETWEEN ? AND ?");
+    $stmt = $connection->prepare("SELECT Status.`UserId`, Status.`ProjectId`, Status.`Day`, Project.`ProjectName` FROM `Status` INNER JOIN `Project` ON Status.`ProjectId` = Project.`ProjectId` WHERE Status.`Day` BETWEEN ? AND ?");
     $stmt->bind_param("ss", $weekdays[0], $weekdays[4]);
     if($stmt->execute()) {
         $result = $stmt->get_result();
