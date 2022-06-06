@@ -6,20 +6,20 @@
 
     //check if params are complete
     if(isset($_GET["calendarWeek"]) && is_int(htmlspecialchars($_GET["calendarWeek"]))) {
-        $calendarWeek = (int) htmlspecialchars($_GET["calendarWeek"]);
+        $calendarWeek = htmlspecialchars($_GET["calendarWeek"]);
     }else {
-        $calendarWeek = (int) date("W");
+        $calendarWeek = date("W");
     }
 
     if(isset($_GET["year"]) && is_int(htmlspecialchars($_GET["year"]))) {
-        $year = (int) htmlspecialchars($_GET["year"]);
+        $year = htmlspecialchars($_GET["year"]);
     }else {
-        $year = (int) date("Y");
+        $year = date("Y");
     }
 
     //get dates of $calendarWeek
     require_once("get_calendar_week.php");
-    $res = get_calendar_week($year, $calendarWeek, "en");
+    $res = get_calendar_week((int) $year, (int) $calendarWeek, "en");
 
     //convert date format to YYYY-MM-DD    
     $weekdays = array();
