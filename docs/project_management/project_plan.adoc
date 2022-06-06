@@ -40,10 +40,8 @@ Wir pflegen in unserem Team einen respektvollen Umgang miteinander. Alle Problem
 
 - Iterative Entwicklung
 
-
 Zu Anfang jeder Iteration (7-tägig) werden Aufgaben an die einzelnen Teammitglieder vergeben, welche bis zur nächsten Iteration im angemessenen Maße bearbeitet werden sollen. Die meisten Aufgaben sind kleine Teilfunktionen der Webanwendung. Ebenso wird auch der Iterationsplan erstellt und es werden weitere Dokumente aktualisiert.
 Wöchentlich wird der Stand des Projektes in den Teammeetings abgeglichen. Dadurch kann sich ein Überblick über die beendeten Aufgaben und deren Bewertung verschafft werden. Die Iterationslänge wurde am Anfang des Projekts auf eine Woche festgelegt.
-
 
 Die Größe der Aufgaben wird in T-Shirt-Größen angegeben. 
 
