@@ -24,7 +24,7 @@
         </header>
         <div>
             <div id="div-buttons-weekly-report-header">
-                <a href="./project/"><button  id="btn-edit-projects">Projekte verwalten</button>
+                <a href="./project/"><button id="btn-edit-projects">Projekte verwalten</button></a>
                 <a href="./registration/"><button id="btn-add-employee">Mitarbeiter hinzufügen</button></a>
                 <button id="btn-edit-holidays">Feiertage verwalten</button>
             </div>
