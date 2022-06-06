@@ -4,7 +4,7 @@ require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
 
-function checkPostValues()
+function checkPostValues(): bool
 {
     if (
         empty($_POST["ProjectName"])
