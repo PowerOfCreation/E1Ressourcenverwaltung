@@ -5,13 +5,13 @@
     //check if file is called directly
     if (__FILE__ == $_SERVER["SCRIPT_FILENAME"]) {
         //calculate offset based on calendarWeek
-        if(!empty($_GET["calendarWeek"]) && is_int(htmlspecialchars($_GET["calendarWeek"]))) {
+        if(!empty($_GET["calendarWeek"]) && ctype_digit(htmlspecialchars($_GET["calendarWeek"]))) {
             $week = htmlspecialchars($_GET["calendarWeek"]);
         }else {
             $week = date("W");
         }
 
-        if(!empty($_GET["year"]) && is_int(htmlspecialchars($_GET["year"]))) {
+        if(!empty($_GET["year"]) && ctype_digit(htmlspecialchars($_GET["year"]))) {
             $year = htmlspecialchars($_GET["year"]);
         }else {
             $year = date("Y");
