@@ -1,6 +1,89 @@
 //AKTUELL SIND ES NUR STICHPUNKTE/GEDANKENSTÜTZEN WAS HIER BEHANDELT WERDEN SOLL
 
+//Problem: aufgaben wurden erstellt und vergeben dann wurden die zwar angefangen zu bearbeiten aber nicht beendet
 
+//weiterhin haben wir/ich bei den programmieraufgaben im Iterationsplan oft "weitere funktionen" geschrieben, aber nicht was genau getan wurde
+//das kann zwar mithilfe der issues etwas nachverfolgt werden, aber auch nicht perfekt, da die manchmal erstellt aber nicht assignet wurden 
+
+= Projektdurchführung
+
+
+== I09
+
+Iteration 9 war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
+//passt der joke oder soll das raus?
+Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
+
+Unsere Ziele für I09 waren: 
+Neubegonnen:
+-Projekterstellungsseite Frontend+Backend #32
+-Nutzerübersichtsseite #39
+-Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
+-Mitarbeiter anlegen um Abteilungsdropdown erweitern #35
+-Aufräumen der Datenbankenstruktur #37
+-Anlegen der Abteilungstabelle + 5 Abteilungen #34
+-Mitarbeiter hinzufügen check der E-Mail #33
+-Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
+-Mitarbeiter hinzufügen Passwortkriterien #36
+//später nochmal geöffnet
+//-Praktikumsfragen #31  
+//da war doch ein coach treffen oder? ja am 22.4
+-Beleg korrigieren #29
+
+//andere Reihenfolge und ohne #
+//überschriften?
+=== Beleg korrigieren:
+
+Wie bereits geschrieben, hat Herr Anke hat unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
+Manche Fehler waren schlechter Ausdruck oder es es fehlten Kleinigkeiten bei sonst korrektem Inhalt. Dies konnte schnell behoben werden. 
+
+Die schwerwiegerenden Fehler waren die komplett falsche "logische Sicht". Dort wurde mit einem C4-Modell gerechnet, welches wir jedoch nicht hatten. Daher musste dieses von Grund auf erstellt werden. Da das Back-End zu dem Zeitpunkt noch nicht komplett fertig war, wurden erst einmal die beiden oberen Sichten angefertigt. Eventuelle weitere Sichten sollten möglicherweise im weiterem Verlauf des Projekts folgen. 
+//nennt man das Sichten?
+Außerdem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe war nicht unbedingt schwierig, jedoch war es viel daher konnte die Bearbeitung nicht in dieser Iteration beendet werden.
+
+=== Aufräumen der Datenbankenstruktur & Datenbanktabelle für Beziehung zwischen Projekt und Benutzer erstellen & Anlegen der Abteilungstabelle + 5 Abteilungen :
+
+Die Datenbank musste aktualisiert werden, damit weitere Funktionen ermöglicht werden.
+Die beiden Aufgaben konnten ohne Probleme beendet werden.
+
+=== Nutzerübersichtsseite:
+
+Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden.
+
+=== Projekterstellungsseite Frontend+Backend
+
+Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten. 
+Da die Aufgabe ziemlich viel war, wurde sie in mehreren Iterationen erstellt. 
+
+=== Mitarbeiter hinzufügen check der E-Mail & Mitarbeiter hinzufügen Passwortkriterien 
+
+Natürlich soll wenn ein neuer Mitarbeiter angelegt wird, eine Email erstellt werden, welche zumindest den formalen Anforderungen an eine Email entspricht. Da das RegEx nicht besonders einfach ist und dieses Issue nicht die höchste priorität hatte, konnte es erst später beendet werden. 
+Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen.
+Da das RegEx nicht besonders einfach ist und dieses Issue nicht die höchste priorität hatte, konnte es erst später beendet werden. 
+//stimmt das so?
+
+=== Mitarbeiter anlegen um Abteilungsdropdown erweitern 
+
+Wenn ein Mitarbeiter erstellt wird, soll seine Abteilung aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
+
+=== Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
+
+Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein
+
+== I10
+
+Unsere Ziele für I10 waren: 
+Neubegonnen:
+Fortgeführt: 
+
+
+I11
+
+I12
+I13
+I14
+I15
+I16
 Iterationsdauer: 7 Tage. in der mitte des 2. semester mal auf 2 wochen hochgesetzt, da effizienzerhöhung erhofft -> genau das gegenteil -> wieder auf 1 Woche
 
 
