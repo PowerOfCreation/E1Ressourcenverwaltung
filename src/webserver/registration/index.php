@@ -16,22 +16,22 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 
 	if(!filter_var($e_mail,FILTER_VALIDATE_EMAIL)) {
 		$e_mailError = "Bitte eine gültige E-Mail-Adresse eingeben.";
-		}
+	}
 	if(strlen($password) < 7) {
 		$passwordErrorLength = "Das Passwort muss mindestens 8 Zeichen lang sein.";
-		} 
+	} 
 	if(!preg_match('@[a-z]@',$password)) {
 		$passwordErrorLowerCase = "Das Passwort muss mindestens 1 Kleinbuchstabe enthalten.";
-		}	  
+	}	  
 	if(!preg_match('@[A-Z]@',$password)) {
 		$passwordErrorUpperCase = "Das Passwort muss mindestens 1 Großbuchstabe enthalten.";
-		}
+	}
 	if(!preg_match('@[^\w]@',$password)) {
 		$passwordErrorSpecificCharacter = "Das Passwort muss mindestens 1 Sonderzeichen enthalten.";
-		}	
+	}	
 	if(!preg_match('@[0-9]@',$password)) {
 		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten.";
-		}	
+	}	
 
 	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
 

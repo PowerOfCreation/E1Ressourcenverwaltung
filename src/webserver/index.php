@@ -26,11 +26,6 @@
                 <button id="btn-add-employee">Mitarbeiter hinzufügen</button>
                 <button id="btn-edit-holidays">Feiertage verwalten</button>
             </div>
-            <div id="div-change-week">
-                <button id="previous-week">&#171; Vorige Woche</button>
-                <button id="current-week">Aktuelle Woche</button>
-                <button id="next-week">Nächste Woche &#187;</button>
-            </div>
             <div>
                 <table id="table-weekly-report">
                     <thead>
