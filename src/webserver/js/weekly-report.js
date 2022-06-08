@@ -9,6 +9,8 @@ $()
     $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
     $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
 
+    var globalCalendarWeek = getCalendarWeek();
+
     function addEmployee(employeeId, employeeName) {
         $employeeElement = $(` 
             <tr> \
@@ -76,14 +78,6 @@ $()
         $newProjectInput.select();
     }
 
-    $("#btn-add-employee").click(function () {
-        window.location.href = "registration";
-    });
-
-    $("#btn-edit-projects").click(function () {
-        window.location.href = "project";
-    });
-
     function handleProjectChange() {
         //get employee name and date
         let $weekdayElement = $addProjectSelect.parent();
@@ -96,13 +90,40 @@ $()
 
         //Aufruf: /api/add_status.php?user=1&project=2&date=2022-04-25
         $.get("api/add_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function (data) {
-            document.location.reload(true);
+            getDates(globalCalendarWeek);
+            populateTable(globalCalendarWeek);
+            $addProjectSelect.detach();
         });
     }
 
+    function changeCalendarWeek(change) {
+        if (change == "+") {
+            globalCalendarWeek++;
+            getDates(globalCalendarWeek);
+            populateTable(globalCalendarWeek);
+        } else if (change == "-") {
+            globalCalendarWeek--;
+            getDates(globalCalendarWeek);
+            populateTable(globalCalendarWeek);
+        }
+    }
+
+    function getCalendarWeek() {
+        var res = null;
+        $.ajax({
+            url: "api/get_calendar_week.php",
+            type: "GET",
+            async: false,
+            success: function (data) {
+                res = jQuery.parseJSON(data);
+            }
+        });
+        return res["calendarWeek"];
+    }
+
     //calls api/get_calendar_week.php and fills the table with the data
-    function getDates() {
-        $.get("api/get_calendar_week.php?format=de").done(function (data) {
+    function getDates(calendarWeek = globalCalendarWeek) {
+        $.get("api/get_calendar_week.php?format=de&calendarWeek=" + calendarWeek).done(function (data) {
             const calendarWeek = jQuery.parseJSON(data);
             const elementNames = [
                 "td-monday",
@@ -112,21 +133,21 @@ $()
                 "td-friday",
             ];
 
-            heading = document.getElementById("h1-heading");
-            week = document.createTextNode(calendarWeek["calendarWeek"]);
-            heading.appendChild(week);
+            heading = $("#h1-heading");
+            //clear text of heading
+            heading.text("");
+            week = "Einsatzplan - Übersicht KW " + calendarWeek["calendarWeek"];
+            heading.text(week);
 
             for (let index = 0; index < elementNames.length; index++) {
-                const element = document.getElementById(elementNames[index]);
-                const date = document.createTextNode(
-                    calendarWeek["weekdays"][index]
-                );
-                element.appendChild(date);
+                const element = $("#" + elementNames[index] + " p:first");
+                const date = calendarWeek["weekdays"][index];
+                element.text(date);
             }
         });
     }
 
-    function populateTable() {
+    function populateTable(calendarWeek = globalCalendarWeek) {
         const elementNames = [
             ".td-entry-monday",
             ".td-entry-tuesday",
@@ -136,28 +157,28 @@ $()
         ];
 
         //get dates from get_calendar_week.php
-        $.get("api/get_calendar_week.php").done(function (data) {
+        $.get("api/get_calendar_week.php?format=en&calendarWeek=" + calendarWeek).done(function (data) {
             const res = jQuery.parseJSON(data);
+
             //map dates as id
             res["weekdays"].map((element, index) => {
+                $(elementNames[index]).empty()
                 $(elementNames[index]).attr("id", element);
-            })
+            });
 
-            var calendarWeek = res["calendarWeek"];
             var year = res["year"];
 
             //get statuses from get_all_weekly_status.php
-            $.get("api/get_all_weekly_status.php?calendarWeek=" + calendarWeek + "&year=" + year).done(function (data) {
-                const weeklyStatus = jQuery.parseJSON(data);
+            $.get("api/get_all_weekly_status.php?&calendarWeek=" + calendarWeek + "&year=" + year).done(function (data) {
+                const res = jQuery.parseJSON(data);
 
                 //loop through all status entries
-                weeklyStatus.map((status) => {
+                res.map((status) => {
                     //populate table with statuses
-                    $('<p>ProjectId: ' + status['ProjectId'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                    $('<p>Projekt: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
                 });
             });
         });
-
     }
 
     getDates();

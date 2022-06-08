@@ -1,5 +1,7 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="buttons.css" type="text/css">
+    <link rel="stylesheet" href="font-size.css" type="text/css">
 </head>
 
 <body>
@@ -22,20 +24,22 @@
         </header>
         <div>
             <div id="div-buttons-weekly-report-header">
-                <button id="btn-edit-projects">Projekte verwalten</button>
-                <button id="btn-add-employee">Mitarbeiter hinzufügen</button>
+                <a href="./project/"><button id="btn-edit-projects">Projekte verwalten</button></a>
+                <a href="./registration/"><button id="btn-add-employee">Mitarbeiter hinzufügen</button></a>
                 <button id="btn-edit-holidays">Feiertage verwalten</button>
             </div>
             <div>
                 <table id="table-weekly-report">
                     <thead>
+                        <button onclick="changeCalendarWeek('-')">-</button>
+                        <button onclick="changeCalendarWeek('+')">+</button>
                         <tr>
                             <td id="td-employee">Mitarbeiter<br/></td>
-                            <td id="td-monday">Montag<br/></td>
-                            <td id="td-tuesday">Dienstag<br/></td>
-                            <td id="td-wednesday">Mittwoch<br/></td>
-                            <td id="td-thursday">Donnerstag<br/></td>
-                            <td id="td-friday">Freitag<br/></td>
+                            <td id="td-monday">Montag<br/><p></p></td>
+                            <td id="td-tuesday">Dienstag<br/><p></p></td>
+                            <td id="td-wednesday">Mittwoch<br/><p></p></td>
+                            <td id="td-thursday">Donnerstag<br/><p></p></td>
+                            <td id="td-friday">Freitag<br/><p></p></td>
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">

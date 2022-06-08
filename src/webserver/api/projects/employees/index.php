@@ -9,7 +9,7 @@ $data = json_decode($json);
 
 if (!isset($data->projectId)) exit_failure("projectId missing in POST data");
 
-function bulk_prepared_statement($connection, $statement, $data)
+function bulk_prepared_statement(mysqli $connection, mysqli_stmt $statement, mixed $data): void
 {
     $projectId = $data->projectId;
 

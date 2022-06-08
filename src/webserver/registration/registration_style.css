@@ -1,19 +1,49 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#form-action-buttons-wrapper-div {
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#show-pwd-checkbox {
+    cursor: pointer;
+}
+
 #form-wrapper-div {
     white-space: pre-line;
     display: flex;
     justify-content: center;
 }
+
 #registration-form {
     width: 500px;
 }
 
-#registration-form > * {
+#registration-form  > * {
     width: 100%;
-    box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+#show-pwd {
+    box-sizing: content-box;
 }
 
 #form-action-buttons-wrapper-div {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -21,8 +51,3 @@
     flex-grow: 1;
     width: 100%;
 }
-
-#back-button {
-    width: 100%;
-}
-

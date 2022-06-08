@@ -3,66 +3,69 @@
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
-if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"]))) {
+
+function checkPostValues(): bool
+{
+    if (
+        empty($_POST["ProjectName"])
+        || empty($_POST["ProjectOwner"])
+        || empty($_POST["Color"])
+        || empty($_POST["Topic"])
+        || empty($_POST["End"])
+    ) return FALSE;
+
+	return TRUE;
+}
+
+if (checkPostValues() === TRUE ) 
+{
 	// Example how to use POST'ed values
-	$projectname = htmlspecialchars($_POST["ProjectName"]);
-	$projectowner = htmlspecialchars($_POST["ProjectOwner"]);
-	$color = htmlspecialchars($_POST["Color"]);
+	$projectName = htmlspecialchars($_POST["ProjectName"]);
+	$projectOwner = htmlspecialchars($_POST["ProjectOwner"]);
 	$topic = htmlspecialchars($_POST["Topic"]);
+	$color = htmlspecialchars($_POST["Color"]);
 	$end = htmlspecialchars($_POST["End"]);
 
 	$color = substr($color,1);
 	$add_project = $connection->prepare("INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, ?, ?,  ?);");
-	$add_project->bind_param('sisss', $projectname, $projectowner, $color, $topic, $end);
+	$add_project->bind_param('sisss', $projectName, $projectOwner, $color, $topic, $end);
 
 	if($add_project->execute())
 	{
-		echo "Projekt " . $projectname . " erfolgreich angelegt.";
+		echo "Projekt " . $projectName . " erfolgreich angelegt.";
 	}
 	else
 	{
 		echo "Fehler beim Erstellen des Projektes. Eingaben überprüfen.";
 		echo $connection->error;
 	}
+
 	$add_project->reset();
 }
+
 ?>
 
 <!DOCTYPE html>
 <html lang="de">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="newproject.css">
+	<link rel="stylesheet" href="../../buttons.css" type="text/css">
+	<link rel="stylesheet" href="../../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
-	<style>
-		div {
-			width: 100%;
-			border: 1px solid rgb(255, 255, 255);
-			align-content: center;
-			align-items: center;
-            white-space: pre-line;
-            display: inline-block;
-		}
-		form {
-			margin: 0 auto;
-			width: 500px;
-    	}
-	</style> 
-    <script type="text/javascript">
-</script>
-
 </head>
 
 <body>
 	<main>
-		<h1 style="text-align: justify;">Projekt Erstellen</h1>
+		<h1>Projekt Erstellen</h1>
         <div>
-            <form name="RegForm" id="registrierung" method="post">
+            <form name="RegForm" id="register-form" method="post">
                 Projektname:
-					<input type="text" size="65" name="ProjectName" placeholder="Musterprojekt" />
+					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt"/>
 
                 Verantwortlicher:  
-					<select name = "ProjectOwner">
-						<option hidden="">Choose... </option>
+					<select id="project-owner-select" name = "ProjectOwner">
+						<option selected="true" disabled="disabled" hidden="true" value="">Wähle Verantwortlichen</option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
 							while ($row = $result->fetch_object()) 
@@ -73,7 +76,7 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
 					</select>
 
                 Thema:              
-					<textarea rows="4"  cols="64" name="Topic"></textarea>
+					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic"></textarea>
                 
 				Abgabedatum:
 					<?php 
@@ -86,10 +89,13 @@ if (isset($_POST["ProjectName"]) && !empty(htmlspecialchars($_POST["ProjectName"
     
 				Farbe: 
 					<input type="color" size="65" name="Color" />                
-                <div>
-					<input type="submit" value="Projekt erstellen" name="Submit" />
+                <div id="button-container">
+					<a href=".."><button id="create-project-button" type="submit">Projekt erstellen</button></a>
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
-                </div>   		
+                </div>
+				
+				<script src="../../jquery-3.6.0.js"></script>
+				<script src="new-project.js"></script>
 		    </form>
         </div>	
 	</main>    

@@ -1,0 +1,26 @@
+div {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    white-space: pre-line;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#button-container {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}

@@ -1,0 +1,79 @@
+/* border für projekte und vllt tables... radio button */
+
+#content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#button-width-container {
+    width: 500px;
+}
+
+#project-button-container {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+}
+
+#back-button {
+    margin-top: 10px;
+}
+
+.projectname {
+    cursor: pointer;
+}
+
+.user-checkbox {
+    cursor: pointer;
+}
+
+/* der text dahinter scheint irgendwie php zu sein und deswegen kann ich den atm bloß den effekt geben, 
+anklicken wird die checkbox nicht aktiviert */
+
+ul {
+    cursor: pointer;
+}
+
+.projectname {
+    margin: 5px 0;
+    color: #909090;
+}
+
+.projectname:hover {
+    font-size: 1.5em;
+    color: black;
+}
+
+.selected {
+    font-size: 2em;
+    color: black;
+}
+
+#projects-container {
+    width: 400px;
+}
+
+#employees-container {
+    width: 250px;
+}
+
+h1 {
+    text-align: center;
+}
