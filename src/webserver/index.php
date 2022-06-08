@@ -61,6 +61,7 @@
                 </table>
             </div>
         </div>
+
     </div>
     <script src="jquery-3.6.0.js"></script>
     <script src="js/weekly-report.js"></script>

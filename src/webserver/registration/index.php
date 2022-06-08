@@ -3,30 +3,35 @@
 require_once("/app/config/credentials.php");
 
 //More checks required...
-if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  && isset($_POST["Forename"]) && !empty(htmlspecialchars($_POST["Forename"])) && isset($_POST["Surname"]) && !empty(htmlspecialchars($_POST["Surname"])) && isset($_POST["DepartmentId"]) && !empty(htmlspecialchars($_POST["DepartmentId"])) && isset($_POST["EMail"]) && !empty(htmlspecialchars($_POST["EMail"])) && isset($_POST["Password"]) && !empty(htmlspecialchars($_POST["Password"]))) {
+if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) && !empty(htmlspecialchars($_POST["Forename"])) && !empty(htmlspecialchars($_POST["Surname"])) && !empty(htmlspecialchars($_POST["Department"])) && !empty(htmlspecialchars($_POST["EMail"])) && !empty(htmlspecialchars($_POST["Password"]))) {
+	
 	// Example how to use POST'ed values
 	$username = htmlspecialchars($_POST["Username"]);
 	$forename = htmlspecialchars($_POST["Forename"]);
 	$surname = htmlspecialchars($_POST["Surname"]);
-	$departmentId = htmlspecialchars($_POST["DepartmentId"]);
+	$departmentId = htmlspecialchars($_POST["Department"]);
 	$e_mail = htmlspecialchars($_POST["EMail"]);
 	$password = password_hash(htmlspecialchars($_POST["Password"]), PASSWORD_DEFAULT);
+	
 
 	if(!filter_var($e_mail,FILTER_VALIDATE_EMAIL)) {
 		$e_mailError = "Bitte eine gültige E-Mail-Adresse eingeben.";
-		}
+	}
 	if(strlen($password) < 7) {
 		$passwordErrorLength = "Das Passwort muss mindestens 8 Zeichen lang sein.";
-		}   
-	if(!preg_match("(?=\S*[A-Z])",$password)) {
+	} 
+	if(!preg_match('@[a-z]@',$password)) {
+		$passwordErrorLowerCase = "Das Passwort muss mindestens 1 Kleinbuchstabe enthalten.";
+	}	  
+	if(!preg_match('@[A-Z]@',$password)) {
 		$passwordErrorUpperCase = "Das Passwort muss mindestens 1 Großbuchstabe enthalten.";
-		}
-	if(!preg_match("(?=\S*[\W])",$password)) {
+	}
+	if(!preg_match('@[^\w]@',$password)) {
 		$passwordErrorSpecificCharacter = "Das Passwort muss mindestens 1 Sonderzeichen enthalten.";
-		}	
-	if(!preg_match("(?=\S*[\d])",$password)) {
+	}	
+	if(!preg_match('@[0-9]@',$password)) {
 		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten.";
-		}	
+	}	
 
 	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
 
@@ -83,14 +88,13 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 				E-mail: <input class="textbox" type="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
 				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
 
-				Passwort: <input class="textbox" type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
-				<div id="show-pwd">
-					<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
-				</div>	
+				Passwort: <input class="textbox" type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort" />
+				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
 				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
 					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
 					<?php if (isset($passwordErrorSpecificCharacter)) echo $passwordErrorSpecificCharacter; ?>
 					<?php if (isset($passwordErrorNumber)) echo $passwordErrorNumber; ?></span>
+					<?php if (isset($passwordErrorLowerCase)) echo $passwordErrorLowerCase; ?></span>
 
 <!--				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
 				<span id='password-message-span'></span>
