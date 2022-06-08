@@ -85,7 +85,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 					?>
 				</select>
 				
-				E-mail: <input class="textbox" type="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="email@mail.de" />
+				E-mail: <input class="textbox" type="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
 				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
 
 				Passwort: <input class="textbox" type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort" />
