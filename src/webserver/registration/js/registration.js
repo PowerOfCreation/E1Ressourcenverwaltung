@@ -1,3 +1,5 @@
+/* exported showPassword */
+
 function showPassword()
 {
     const passwordInput = $("#passwordInput").get(0);
