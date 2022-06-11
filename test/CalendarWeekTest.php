@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-final class ExampleTest extends TestCase
+final class CalendarWeekTest extends TestCase
 {
     public function testCalendarWeek(): void
     {

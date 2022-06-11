@@ -1,5 +1,7 @@
 <?php
 
+if(defined('UNIT_TESTING') && UNIT_TESTING == 1) return;
+
 session_start();
 
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] === false) {
