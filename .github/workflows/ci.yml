@@ -31,6 +31,7 @@ jobs:
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v3
         with:
+          bootstrap: test/autoload.php
           php_extensions: xdebug
           configuration: test/phpunit.xml
           args: --coverage-text
