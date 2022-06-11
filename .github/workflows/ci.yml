@@ -18,14 +18,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Start containers
-        run: |
-          cd src/
-          docker-compose up -d
-      - name: Sleep for 30 seconds
-        uses: jakejarvis/wait-action@master
-        with:
-          time: '30s'
+      #- name: Start containers
+      #  run: |
+      #    cd src/
+      #    docker-compose up -d
+      #- name: Sleep for 30 seconds
+      #  uses: jakejarvis/wait-action@master
+      #  with:
+      #    time: '30s'
       #- uses: php-actions/composer@v5
 
       - name: PHPUnit Tests
