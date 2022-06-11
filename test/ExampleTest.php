@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 final class ExampleTest extends TestCase
 {
-    public function exampleTest(): void
+    public function testCalendarWeek(): void
     {
         $this->assertEquals(
             get_calendar_week(2022, 23, "de"),
