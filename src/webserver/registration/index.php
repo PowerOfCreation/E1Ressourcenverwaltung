@@ -7,7 +7,7 @@ require_once("/app/config/credentials.php");
 $password_error_messages = "";
 $email_error_messages = "";
 
-function checkPassword($password)
+function checkPassword(string $password): string
 {
 	$error_message = "";
 
