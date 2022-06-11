@@ -47,7 +47,7 @@ $()
     }
 
     function onWeekdayClick() {
-        $newProjectInput = $('<input type="text"></input>');
+        let $newProjectInput = $('<input type="text"></input>');
 
         $(this).append($newProjectInput);
 
