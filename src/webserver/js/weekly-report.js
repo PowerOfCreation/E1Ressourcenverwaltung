@@ -1,12 +1,12 @@
 $()
 
 {
-    $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
-    $addProjectSelect = $("<select id='add-project-select' onchange='handleProjectChange();'><option disabled selected value>Projekt auswählen</option></select>");
+    const $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
+    const $addProjectSelect = $("<select id='add-project-select' onchange='handleProjectChange();'><option disabled selected value>Projekt auswählen</option></select>");
 
     const $notificationDiv = $("#notification-div");
 
-    $employeeEntries = $("#tbody-employee-entries");
+    const $employeeEntries = $("#tbody-employee-entries");
 
     $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
     $employeeEntries.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
