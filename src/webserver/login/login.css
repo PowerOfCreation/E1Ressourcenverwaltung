@@ -1,0 +1,18 @@
+body {
+    font: 14px sans-serif;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 360px;
+    padding: 20px;
+}
+
+.btn {
+    width: 100%;
+}
