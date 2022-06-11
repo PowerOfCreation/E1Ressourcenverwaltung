@@ -2,30 +2,12 @@
 
 include("../login/checkForLogin.php");
 
+require("registration_utility.php");
+
 require_once("/app/config/credentials.php");
 
 $password_error_messages = "";
 $email_error_messages = "";
-
-function checkPassword(string $password): string
-{
-	$error_message = "";
-
-	if(strlen($password) < 7) {
-		$error_message .= "Das Passwort muss mindestens 8 Zeichen lang sein.<br>";
-	} 
-	if(!preg_match('@[a-z]@',$password)) {
-		$error_message .= "Das Passwort muss mindestens 1 Kleinbuchstabe enthalten.<br>";
-	}	  
-	if(!preg_match('@[A-Z]@',$password)) {
-		$error_message .= "Das Passwort muss mindestens 1 Großbuchstabe enthalten.<br>";
-	}
-	if(!preg_match('@[0-9]@',$password)) {
-		$error_message .= "Das Passwort muss mindestens 1 Ziffer enthalten.<br>";
-	}
-
-	return $error_message;
-}
 
 //More checks required...
 if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) && !empty(htmlspecialchars($_POST["Forename"])) && !empty(htmlspecialchars($_POST["Surname"])) && !empty(htmlspecialchars($_POST["Department"])) && !empty(htmlspecialchars($_POST["EMail"])) && !empty(htmlspecialchars($_POST["Password"]))) {
@@ -44,7 +26,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 	
 	$password_error_messages = checkPassword($password);
 
-	if(!empty($password_error_messages) && !empty($email_error_messages))
+	if(empty($password_error_messages) && empty($email_error_messages))
 	{
 		$password = password_hash($password, PASSWORD_DEFAULT);
 
