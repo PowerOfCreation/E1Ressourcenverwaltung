@@ -18,6 +18,7 @@
     ?>
 
     <div>
+        <div id="notification-div" class="hidden"></div>
         <header>
             <h1 id="h1-heading">Einsatzplan - Übersicht KW</h1>
             <div id="div-search-weekly-report-wrapper">

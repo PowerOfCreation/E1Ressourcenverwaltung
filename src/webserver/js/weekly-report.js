@@ -4,6 +4,8 @@ $()
     $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
     $addProjectSelect = $("<select id='add-project-select' onchange='handleProjectChange();'><option disabled selected value>Projekt auswählen</option></select>");
 
+    const $notificationDiv = $("#notification-div");
+
     $employeeEntries = $("#tbody-employee-entries");
 
     $employeeEntries.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
@@ -181,6 +183,41 @@ $()
         });
     }
 
+    function setNotification(message)
+    {
+        $notificationDiv.removeClass("hidden");
+        $notificationDiv.text(message);
+        $notificationDiv.delay(5000).queue(function ()
+        {
+            $(this).hide();
+        });
+    }
+
+    function showSuccessNotifications()
+    {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        const username = urlParams.get('registered_user');
+        const project = urlParams.get('created_project');
+
+        if (username)
+        {
+            setNotification(`Nutzer ${username} erfolgreich angelegt.`);
+
+            urlParams.delete("registered_user");
+        }
+        else if (project)
+        {
+            setNotification(`Projekt ${project} erfolgreich angelegt.`);
+
+            urlParams.delete("created_project");
+        }
+
+        window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+    }
+
     getDates();
     populateTable();
+    showSuccessNotifications();
 }
