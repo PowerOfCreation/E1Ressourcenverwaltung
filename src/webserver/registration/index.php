@@ -26,7 +26,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 	
 	$password_error_messages = checkPassword($password);
 
-	if(!empty($password_error_messages) && !empty($email_error_messages))
+	if(empty($password_error_messages) && empty($email_error_messages))
 	{
 		$password = password_hash($password, PASSWORD_DEFAULT);
 
