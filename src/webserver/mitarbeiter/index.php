@@ -2,6 +2,8 @@
 
 <?php
 
+include("../login/checkForLogin.php");
+
 require_once("/app/config/credentials.php");
 
 $username = htmlspecialchars($_GET["name"]);
