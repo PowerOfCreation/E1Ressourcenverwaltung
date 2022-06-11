@@ -12,8 +12,8 @@ $()
     showSuccessNotifications();
 }
 
-const $addProjectButton = $("<button onclick='addStatus();'>Status hinzufügen</button>");
-const $addProjectSelect = $("<select id='add-project-select' onchange='handleProjectChange();'><option disabled selected value>Projekt auswählen</option></select>");
+const $addProjectButton = $("<button>Status hinzufügen</button>").click(addStatus);
+const $addProjectSelect = $("<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>").change(handleProjectChange);
 
 function onWeekdayEnter()
 {
