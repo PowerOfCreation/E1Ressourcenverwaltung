@@ -10,20 +10,19 @@
 
 == I09
 
-Iteration 9 war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
+Iteration 9 (23.03.22 - 28.03.22)war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
 Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
 
 Unsere Ziele für I09 waren: 
 Neubegonnen:
--Projekterstellungsseite Frontend+Backend #32
 -Nutzerübersichtsseite #39
 -Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
 -Mitarbeiter anlegen um Abteilungsdropdown erweitern #35
 -Aufräumen der Datenbankenstruktur #37
 -Anlegen der Abteilungstabelle + 5 Abteilungen #34
 -Mitarbeiter hinzufügen check der E-Mail #33
--Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
+
 -Mitarbeiter hinzufügen Passwortkriterien #36
 //später nochmal geöffnet
 //-Praktikumsfragen #31  
@@ -48,12 +47,8 @@ Die beiden Aufgaben konnten ohne Probleme beendet werden.
 
 === Nutzerübersichtsseite:
 
-Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden.
+Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Dies konnte ohne Probleme gelöst werden.
 
-=== Projekterstellungsseite Frontend+Backend
-
-Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten. 
-Da die Aufgabe ziemlich viel war, wurde sie in mehreren Iterationen erstellt. 
 
 === Mitarbeiter hinzufügen check der E-Mail & Mitarbeiter hinzufügen Passwortkriterien 
 
@@ -66,24 +61,169 @@ Da das RegEx nicht besonders einfach ist und dieses Issue nicht die höchste pri
 
 Wenn ein Mitarbeiter erstellt wird, soll seine Abteilung aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
 
-=== Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
 
-Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein
 
-== I10
+=== Entscheidungen:
+
+Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting. Wir 
+
+== I10  29.03.22 - 04.04.22
 
 Unsere Ziele für I10 waren: 
-Neubegonnen:
+Neubegonnen: -Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
 Fortgeführt: 
 
+=== Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
 
-I11
+Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein Projekt anlegen
 
-I12
-I13
-I14
-I15
-I16
+
+
+I11 05.04.22. - 11.04.22
+Unsere Ziele für I11 waren: 
+Neubegonnen: 
+Fortgeführt:
+
+entscheidung: die beiden kranken sollten gefragt werden was der los ist
+
+I12 12.04.22-25.04.22
+Unsere Ziele für I12 waren: 
+Neubegonnen: 
+    Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
+    Mehr Dummy-Daten für Project und Project_User #42 -> assigned aber nie begonnen erst am 25.4
+    Projekterstellungsseite Frontend+Backend #32
+    Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an carl
+    API: Aktuelle Kalenderwoche #43 -> fertig
+    Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht 
+Fortgeführt:
+
+=== Projekterstellungsseite Frontend+Backend
+
+Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten. 
+Da die Aufgabe ziemlich viel war, wurde sie in mehreren Iterationen erstellt. 
+
+
+entscheidung: iterationszeit auf 2 wochen und daher die meetings auch bloß aller zwei wochen, da sich davon eröhte produktivität versprochen wurde 
+
+wollten uns mit herrn zirkelbach besprechen um ein paar kleine sachen zu fragen und fortschritt zu zeigen
+
+I13 26.04.22-09.05.22
+Unsere Ziele für I13 waren: 
+Neubegonnen: Dummy Status einfügen #48 -> fertig
+API: Status der Kalenderwoche #49 -> fertig. gab leichte probleme mit in die datenbank einloggen 
+API: Erweiterung um das Jahr #50 -> fertig (anscheinend sogar noch am montag -> nicht teil der iteration lul)
+API: Einfügen eines neuen Status #52 -> in nächster iteration fertig gestellt 
+API: Alle Nutzer eines Projektes #53 -> fertig 
+API: REST-API zum Einfügen, Löschen und Abrufen von Nutzern in Projekten #54 -> fertig
+Fortgeführt: 
+Mehr Dummy-Daten für Project und Project_User #42 -> fertig
+Projektverwaltungsseite #45 -> fertig 
+
+entscheidung: produktivität nicht verbessert, wenn es 2 wochen später noch besser wird, dann wieder auf 7 tage runter
+
+außerdem war sollte herr kemter, bei frau tartz und herr keil nachfragen, ob diese bald wiederkommen und diese krankheit schonmal herrn anke mitteilen 
+
+
+
+I14 10.05.22-16.05.22
+
+Unsere Ziele für I14 waren: 
+Neubegonnen:  Status anzeigen #51 -> keine ahnung was da los war
+Projekt erstellen in User_Project übernehmen #55 -> bisher noch nicht fertig. was da los? anscheinend, sollte erst einmal ein anderes issue fertig sein und deswegen nicht weiter bearbeitet
+Verbleibende Fehler von Psalm beheben #58 -> am letzten tag assigned und dann fertig gestellt
+Dummy Daten für Status falsche Wochentage #61 -> fertig
+Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten probleme aufgeben, außer fehlermeldung bei "projekt erstellen"
+// get_calendar_week.php #62 ohne commit etc geschlossen 
+
+Fortgeführt:
+API: Einfügen eines neuen Status #52 -> fertig
+
+
+entscheidung: da schon lange nicht mehr mit herrn liebert gesprochen, wurde ein meeting geplant, was in der nächsten iteration stattfand
+
+
+I15 17.05.22-23.5.22
+
+Unsere Ziele für I15 waren: 
+Neubegonnen: Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
+Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer bug mit montags und fehler konnte erst nicht behoben werden -> wurde dann aber anscheind behoben
+
+CSS: Projektverwaltung #70 -> wurde von TS gefordert und wurde angefangen und immer weiter geführt
+Status hinzufügen #71 -> nicht beendet da schwieriger als erwartet für vinh. wurde aber nicht weitergeführt, da es ein anderes issue erst beendet werden sollte, damit dies zufrieden fertig gestellt wird ????? oder vinh hat einfach das andere fertig gemacht, damit dieses ging
+Fortgeführt:
+
+
+I16 24.05.22-30.05.2022 
+
+Unsere Ziele für I16 waren: 
+Projekt erstellen Fehlerbehandlung #68 -> fertig 
+Neubegonnen: Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
+Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
+
+I17 31.05.22-06.06.22 
+
+Unsere Ziele für I17 waren: 
+Neubegonnen: Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von niclas in nächster iteration beendet. muss beendet werden, da von ts im gespräch gefordert
+Lizenz für Projekt erarbeiten #84 -> beendet jedoch sind wir uns nicht 100% sicher, dass das so korrekt ist
+Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
+
+Projektverwaltung: Projekte löschen #94 -> agenommen von vinh, aber nicht angefangen. 
+Fortgeführt: 
+
+I18
+
+Unsere Ziele für I17 waren: 
+Neubegonnen:
+Login einfügen #91 -> erst vitali, aber dann niclas fertig gemacht
+Fix: Replace is_int with ctype_digit #96 -> fertig
+Fortgeführt: Erfolgsmeldung #83 -> von niclas beendet
+Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
+Projekte löschen #94 -> erstmal nicht fortgeführt, aber wenn zeit von niclas/vinh 
+Wochenansicht: Löschen eines Status #98 -> bloß fertig machen, wenn zeit 
+CSS: Design verbessern #102 erst carl zugeteilt, aber wegen treffen macht es doch vinh fertig
+
+Mitarbeiteransicht: Löschen Funktionalität #103 -> gleich wie #98
+
+Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> soll angefangen werden und später fortgeführt 
+Projektbericht #116  -> soll angefangen werden und später fortgeführt 
+
+von mittwoch und nicht montag, wegen feiertag
+
+
+entscheidung: beim 3 mann teammeeting entschieden wir, dass viele geplante programmier issues erstmal keine rolle mehr spielten. grundlegend dafür waren noch 2 wochen bis zur anwenderübergabe -> bloß noch die gewollten änderungen (die bereits davor gemacht werden sollten) und aus unserer sicht die sinnvollsten weitere funktion, wie login und mitarbeiter/projekt löschen
+herr kemter wollte herr zirkelbach eh nochmal wegen den projektbericht etwas fragen und hat sich daher noch über weitere aspekte des projekts unterhalten. als folge darauf gab es eine umplanung, der getroffenen entscheidung vom vortag: vitali, justus und carl fingen die test, betriebs, und entwicklerdoku an. vinh übernimmt design anhand der telekomseite und niclas übernimmt die erfolgsmeldungen und login, falls zeit, macht er noch mehr   
+all das sollte bis montag geschehen
+
+einige angelegte issues sollten eig vergeben werden, jedoch wurde sich am mittwoch dagegen entschieden diese in dem moment zu vergeben
+
+
+restliche zeit sollte mit github projekten besser organisiert werden 
+
+
+kleines krisenmeeting, da noch 2 wochen übrig, aber anwendung noch doku fertig 
+entscheidung -> noch wenige elementare features erfüllen und die letzte woche für doku verwenden
+    am 9.6. nochmal kurz mit herrn anke/zirkelbach reden
+
+
+I19
+Unsere Ziele für I19 waren: 
+Neubegonnen: Anwenderdoku (noch kein issue)
+Fortgeführt: Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> da abgeben, soll es eig fertig sein
+Projektbericht #116 -> noch nicht fertig, da zu viel aufwand
+
+I20
+
+I21
+
+
+
+
+
+
+
+
+
+
 Iterationsdauer: 7 Tage. in der mitte des 2. semester mal auf 2 wochen hochgesetzt, da effizienzerhöhung erhofft -> genau das gegenteil -> wieder auf 1 Woche
 
 
