@@ -28,9 +28,6 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 	if(!preg_match('@[A-Z]@',$password)) {
 		$passwordErrorUpperCase = "Das Passwort muss mindestens 1 Großbuchstabe enthalten.";
 	}
-	if(!preg_match('@[^\w]@',$password)) {
-		$passwordErrorSpecificCharacter = "Das Passwort muss mindestens 1 Sonderzeichen enthalten.";
-	}	
 	if(!preg_match('@[0-9]@',$password)) {
 		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten.";
 	}	
@@ -90,7 +87,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 				E-mail: <input class="textbox" type="email" autocomplete="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
 				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
 
-				Passwort: <input class="textbox" type="password" autocomplete="new-password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort" />
+				Passwort: <input class="textbox" type="password" autocomplete="new-password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe und 1 Großbuchstabe erforderlich." placeholder="Passwort" />
 				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
 				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
 					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
