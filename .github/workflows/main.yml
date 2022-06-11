@@ -2,6 +2,10 @@ name: Psalm Static analysis
 
 on:
   push:
+      paths:
+        - '.github/workflows/main.yml'
+        - '**.php'
+        - 'psalm.xml'
       branches:
         - 'main'
   pull_request:
