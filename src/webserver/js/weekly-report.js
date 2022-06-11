@@ -1,3 +1,5 @@
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "(addStatus|handleProjectChange|changeCalendarWeek)" }]*/
+
 $()
 {
     const $employeeEntries = $("#tbody-employee-entries");
