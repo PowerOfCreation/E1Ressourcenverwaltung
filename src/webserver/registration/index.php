@@ -1,5 +1,7 @@
 <?php
 
+include("../login/checkForLogin.php");
+
 require_once("/app/config/credentials.php");
 
 //More checks required...
