@@ -4,6 +4,29 @@ include("../login/checkForLogin.php");
 
 require_once("/app/config/credentials.php");
 
+$password_error_messages = "";
+$email_error_messages = "";
+
+function checkPassword($password)
+{
+	$error_message = "";
+
+	if(strlen($password) < 7) {
+		$error_message .= "Das Passwort muss mindestens 8 Zeichen lang sein.<br>";
+	} 
+	if(!preg_match('@[a-z]@',$password)) {
+		$error_message .= "Das Passwort muss mindestens 1 Kleinbuchstabe enthalten.<br>";
+	}	  
+	if(!preg_match('@[A-Z]@',$password)) {
+		$error_message .= "Das Passwort muss mindestens 1 Großbuchstabe enthalten.<br>";
+	}
+	if(!preg_match('@[0-9]@',$password)) {
+		$error_message .= "Das Passwort muss mindestens 1 Ziffer enthalten.<br>";
+	}
+
+	return $error_message;
+}
+
 //More checks required...
 if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) && !empty(htmlspecialchars($_POST["Forename"])) && !empty(htmlspecialchars($_POST["Surname"])) && !empty(htmlspecialchars($_POST["Department"])) && !empty(htmlspecialchars($_POST["EMail"])) && !empty(htmlspecialchars($_POST["Password"]))) {
 	
@@ -13,39 +36,33 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 	$surname = htmlspecialchars($_POST["Surname"]);
 	$departmentId = htmlspecialchars($_POST["Department"]);
 	$e_mail = htmlspecialchars($_POST["EMail"]);
-	$password = password_hash(htmlspecialchars($_POST["Password"]), PASSWORD_DEFAULT);
+	$password = htmlspecialchars($_POST["Password"]);
 	
-
-	if(!filter_var($e_mail,FILTER_VALIDATE_EMAIL)) {
-		$e_mailError = "Bitte eine gültige E-Mail-Adresse eingeben.";
+	if(!filter_var($e_mail, FILTER_VALIDATE_EMAIL)) {
+		$email_error_messages = "Bitte eine gültige E-Mail-Adresse eingeben.";
 	}
-	if(strlen($password) < 7) {
-		$passwordErrorLength = "Das Passwort muss mindestens 8 Zeichen lang sein.";
-	} 
-	if(!preg_match('@[a-z]@',$password)) {
-		$passwordErrorLowerCase = "Das Passwort muss mindestens 1 Kleinbuchstabe enthalten.";
-	}	  
-	if(!preg_match('@[A-Z]@',$password)) {
-		$passwordErrorUpperCase = "Das Passwort muss mindestens 1 Großbuchstabe enthalten.";
-	}
-	if(!preg_match('@[0-9]@',$password)) {
-		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten.";
-	}	
+	
+	$password_error_messages = checkPassword($password);
 
-	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
-
-	$add_user_statement->bind_param('sssiss', $username, $forename, $surname, $departmentId, $e_mail, $password);
-
-	if($add_user_statement->execute())
+	if(!empty($password_error_messages) && !empty($email_error_messages))
 	{
-		header("location: /index.php?registered_user={$username}");
+		$password = password_hash($password, PASSWORD_DEFAULT);
+
+		$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
+
+		$add_user_statement->bind_param('sssiss', $username, $forename, $surname, $departmentId, $e_mail, $password);
+
+		if($add_user_statement->execute())
+		{
+			header("location: /index.php?registered_user={$username}");
+		}
+		else
+		{
+			echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
+			echo $connection->error;
+		}
+		$add_user_statement->reset();
 	}
-	else
-	{
-		echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
-		echo $connection->error;
-	}
-	$add_user_statement->reset();
 }
 ?>
 
@@ -85,19 +102,11 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 				</select>
 				
 				E-mail: <input class="textbox" type="email" autocomplete="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
-				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
+				<span class="text-danger"><?php echo $email_error_messages; ?></span>
 
 				Passwort: <input class="textbox" type="password" autocomplete="new-password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe und 1 Großbuchstabe erforderlich." placeholder="Passwort" />
 				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
-				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
-					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
-					<?php if (isset($passwordErrorSpecificCharacter)) echo $passwordErrorSpecificCharacter; ?>
-					<?php if (isset($passwordErrorNumber)) echo $passwordErrorNumber; ?></span>
-					<?php if (isset($passwordErrorLowerCase)) echo $passwordErrorLowerCase; ?></span>
-
-<!--				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
-				<span id='password-message-span'></span>
--->
+				<span class="text-danger"><?php echo $password_error_messages; ?></span>
 				<div id="form-action-buttons-wrapper-div">
 					<a href=".."><button id="back-button" type="button">Zurück</button></a>
 					<button type="submit">Benutzer erstellen</button>
