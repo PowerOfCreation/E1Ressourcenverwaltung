@@ -1,6 +1,7 @@
-var selectedProject = -1;
 $()
 {
+    var selectedProject = -1;
+
     $(".projectname").click(function () {
 
         $(".selected").removeClass("selected"); 
@@ -19,47 +20,41 @@ $()
             $.ajax({
                 url: "../api/projects/employees/index.php",
                 type: 'PUT',
-                data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`,
-                success: function (data) {
-                    /* hier kann eine Meldung stehen */
-                }
+                data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`
             });
         }
         else {
             $.ajax({
                 url: "../api/projects/employees/index.php",
                 type: 'DELETE',
-                data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`,
-                success: function (data) {
-                    /* hier kann eine Meldung stehen */
-                }
+                data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`
             });    
         }
     })
+}
 
-    function showProject (projectId) 
-    {
+function showProject (projectId) 
+{
 
-        selectedProject = projectId;
+    selectedProject = projectId;
 
-        $(".user-checkbox").each(function () {
-            $(this).prop("checked", false);
-        });
+    $(".user-checkbox").each(function () {
+        $(this).prop("checked", false);
+    });
 
-        $.get("../api/get_project_employees.php", { project: projectId }).done(function (data) {
+    $.get("../api/get_project_employees.php", { project: projectId }).done(function (data) {
 
-            var projectEmployees = jQuery.parseJSON(data); 
+        var projectEmployees = jQuery.parseJSON(data); 
 
-            for (let index = 0; index < projectEmployees.length; index++) {
+        for (let index = 0; index < projectEmployees.length; index++) {
 
-                const element = projectEmployees[index];
+            const element = projectEmployees[index];
 
-                $(".user-checkbox").each(function () {
-                    if ($(this).data("userId") == element.userId) {
-                        $(this).prop("checked", true);                        
-                    }
-                });
-            }
-        });
-    }
+            $(".user-checkbox").each(function () {
+                if ($(this).data("userId") == element.userId) {
+                    $(this).prop("checked", true);                        
+                }
+            });
+        }
+    });
 }
