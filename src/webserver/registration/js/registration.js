@@ -1,4 +1,4 @@
-/* exported showPassword */
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "showPassword" }]*/
 
 function showPassword()
 {
