@@ -63,10 +63,10 @@ if (checkPostValues() === TRUE )
         <div>
             <form name="RegForm" id="register-form" method="post">
                 Projektname:
-					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt"/>
+					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" required/>
 
                 Verantwortlicher:  
-					<select id="project-owner-select" name = "ProjectOwner">
+					<select id="project-owner-select" name = "ProjectOwner" required>
 						<option selected="true" disabled="disabled" hidden="true" value="">Wähle Verantwortlichen</option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
@@ -78,7 +78,7 @@ if (checkPostValues() === TRUE )
 					</select>
 
                 Thema:              
-					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic"></textarea>
+					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic" required></textarea>
                 
 				Abgabedatum:
 					<?php 
@@ -97,7 +97,6 @@ if (checkPostValues() === TRUE )
                 </div>
 				
 				<script src="../../jquery-3.6.0.js"></script>
-				<script src="new-project.js"></script>
 		    </form>
         </div>	
 	</main>    
