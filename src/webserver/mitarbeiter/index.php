@@ -4,9 +4,9 @@
 
 require_once("/app/config/credentials.php");
 
-$username = htmlspecialchars($_GET["name"]);
+if (!empty($_GET["name"])) {
+    $username = htmlspecialchars($_GET["name"]);
 
-if (!empty($username)) {
     $get_user_info_statement = $connection->prepare("SELECT Forename, Surname FROM User WHERE Username = ?;");
 
     $get_user_info_statement->bind_param('s', $username);
