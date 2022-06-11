@@ -5,6 +5,7 @@ on:
     paths:
         - '.github/workflows/eslint.yml'
         - '**.js'
+        - '.eslintrc.json'
 
 jobs:
   build:
