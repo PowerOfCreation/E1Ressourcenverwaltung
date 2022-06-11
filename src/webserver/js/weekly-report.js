@@ -118,11 +118,8 @@ function getDates(calendarWeek = globalCalendarWeek)
             "td-friday",
         ];
 
-        heading = $("#h1-heading");
-        //clear text of heading
-        heading.text("");
-        week = "Einsatzplan - Übersicht KW " + calendarWeek["calendarWeek"];
-        heading.text(week);
+        const heading = $("#h1-heading");
+        heading.text("Einsatzplan - Übersicht KW " + calendarWeek["calendarWeek"]);
 
         for (let index = 0; index < elementNames.length; index++)
         {
