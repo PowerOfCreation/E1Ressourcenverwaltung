@@ -34,7 +34,7 @@ if (checkPostValues() === TRUE )
 
 	if($add_project->execute())
 	{
-		echo "Projekt " . $projectName . " erfolgreich angelegt.";
+		header("location: /index.php?created_project={$projectName}");
 	}
 	else
 	{

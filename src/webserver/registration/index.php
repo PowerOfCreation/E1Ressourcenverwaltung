@@ -38,7 +38,7 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) &&
 
 	if($add_user_statement->execute())
 	{
-		echo "Nutzer " . $username . " erfolgreich angelegt.";
+		header("location: /index.php?registered_user={$username}");
 	}
 	else
 	{
