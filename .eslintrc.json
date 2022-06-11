@@ -12,8 +12,5 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "rules": {
-        "dollar-sign/dollar-sign": [2, "ignoreProperties"]
-    },
     "ignorePatterns": ["jquery*.js", "*.php", "*.css"]
 }
