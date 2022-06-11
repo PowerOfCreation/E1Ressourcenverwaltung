@@ -2,8 +2,11 @@ name: ci
 
 on:
   push:
-      branches:
-        - 'main'
+    paths:
+      - '.github/workflows/ci.yml'
+      - '**.php'
+    branches:
+      - 'main'
   pull_request:
     paths:
         - '.github/workflows/ci.yml'
