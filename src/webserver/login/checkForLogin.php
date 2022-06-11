@@ -7,4 +7,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] === false) {
 	exit;
 }
 
+echo "Eingeloggt als {$_SESSION["username"]}. <a href='/login/logout.php'>Logout</a>"; 
+
 ?>
