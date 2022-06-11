@@ -13,25 +13,6 @@ $()
 
     var globalCalendarWeek = getCalendarWeek();
 
-    function addEmployee(employeeId, employeeName) {
-        $employeeElement = $(` 
-            <tr> \
-                <td class="td-entry-employee">${employeeName}</td> \
-                <td class="td-entry-weekday td-entry-monday"></td> \
-                <td class="td-entry-weekday td-entry-tuesday"></td> \
-                <td class="td-entry-weekday td-entry-wednesday"></td> \
-                <td class="td-entry-weekday td-entry-thursday"></td> \
-                <td class="td-entry-weekday td-entry-friday"></td> \
-            </tr>`);
-
-        $employeeElement.data("employeeId", employeeId);
-
-        $employeeElement.find(".td-entry-weekday").mouseenter(onWeekdayEnter);
-        $employeeElement.find(".td-entry-weekday").mouseleave(onWeekdayLeave);
-
-        $employeeEntries.append($employeeElement);
-    }
-
     function onWeekdayEnter() {
         if ($(this).find("#add-project-select").length == 0) {
             $(this).append($addProjectButton);
@@ -40,8 +21,6 @@ $()
 
     function onWeekdayLeave() {
         $addProjectButton.detach();
-
-        //$(this).find("#add-project-select").detach();
     }
 
     function addStatus() {
