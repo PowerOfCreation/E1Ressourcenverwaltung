@@ -12,8 +12,8 @@ $()
     showSuccessNotifications();
 }
 
-const $addProjectButton = $("<button>Status hinzufügen</button>").click(addStatus);
-const $addProjectSelect = $("<select id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>").change(handleProjectChange);
+const $addProjectButton = $("<button onclick='addStatus()'>Status hinzufügen</button>");
+const $addProjectSelect = $("<select onchange='handleProjectChange()' id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
 
 function onWeekdayEnter()
 {
@@ -68,9 +68,9 @@ function handleProjectChange()
     //Aufruf: /api/add_status.php?user=1&project=2&date=2022-04-25
     $.get("api/add_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function ()
     {
+        $addProjectSelect.detach();
         getDates(globalCalendarWeek);
         populateTable(globalCalendarWeek);
-        $addProjectSelect.detach();
     });
 }
 
