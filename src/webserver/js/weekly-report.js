@@ -54,21 +54,6 @@ function addStatus()
     });
 }
 
-function onWeekdayClick()
-{
-    let $newProjectInput = $('<input type="text"></input>');
-
-    $(this).append($newProjectInput);
-
-    $newProjectInput.on('blur', addNewProject);
-    $newProjectInput.on('keypress', function (e)
-    {
-        if (e.which === 13) $(this).trigger('blur');
-    });
-
-    $newProjectInput.select();
-}
-
 function handleProjectChange()
 {
     //get employee name and date
