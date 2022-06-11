@@ -1,8 +1,12 @@
-<a href=".."><button>Zurück</button></a>
-
 <?php
 
 include("../login/checkForLogin.php");
+
+?>
+
+<a href=".."><button>Zurück</button></a>
+
+<?php
 
 require_once("/app/config/credentials.php");
 
