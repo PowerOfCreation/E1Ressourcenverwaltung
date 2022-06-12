@@ -50,4 +50,4 @@
 
 == Testergebnisse
 
-Zu kurzer Benutzername erkannt?
+Wurde zu kurzer Benutzername erkannt?
