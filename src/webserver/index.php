@@ -9,6 +9,8 @@
     //These are the defined authentication environment in the db service
 
     // The MySQL service named in the docker-compose.yml.
+    include("login/checkForLogin.php");
+
     include("/app/config/credentials.php");
 
     include("database_structure.php");
@@ -16,6 +18,7 @@
     ?>
 
     <div>
+        <div id="notification-div" class="hidden"></div>
         <header>
             <h1 id="h1-heading">Einsatzplan - Übersicht KW</h1>
             <div id="div-search-weekly-report-wrapper">

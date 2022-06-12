@@ -1,5 +1,7 @@
 <?php
 
+include("../login/checkForLogin.php");
+
 require_once("/app/config/credentials.php");
 
 ?>
@@ -28,7 +30,7 @@ require_once("/app/config/credentials.php");
 						
 							while ($row = $result->fetch_object()) 
 							{						
-								echo "<input type='radio' id='" . $row->ProjectId . "' name='project'><label for='" . $row->ProjectId . "' class='projectname' data-project-id='" . $row->ProjectId . "'>" . $row->ProjectName . "</label><br/>";
+								echo "<input type='radio' id='project-{$row->ProjectId}' name='project'><label for='project-{$row->ProjectId}' class='projectname' data-project-id='{$row->ProjectId}'>{$row->ProjectName}</label><br/>";
 							}					
 						?>
 					</ul>
@@ -40,7 +42,7 @@ require_once("/app/config/credentials.php");
 							$result = $connection->query("SELECT * FROM User Order By Username;");
 							while ($row = $result->fetch_object()) 
 							{						
-								echo "<input type='checkbox' class='user-checkbox' id='" . $row->UserId . "' data-user-id='" . $row->UserId . "'><label for='" . $row->UserId . "'>" . $row->Username . "</label></input><br/>";
+								echo "<input type='checkbox' class='user-checkbox' id='user-{$row->UserId}' data-user-id='{$row->UserId}'><label for='user-{$row->UserId}'>{$row->Username}</label></input><br/>";
 							}					
 						?>
 					</ul>			

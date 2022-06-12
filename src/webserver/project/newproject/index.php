@@ -1,5 +1,7 @@
 <?php
 
+include("../../login/checkForLogin.php");
+
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
@@ -32,15 +34,23 @@ if (checkPostValues() === TRUE )
 
 	if($add_project->execute())
 	{
-		echo "Projekt " . $projectName . " erfolgreich angelegt.";
+		$projectId =  $connection->insert_id;
+
+		$add_project->reset();
+
+		//insert Userid, projectid into User_Project
+		$add_user_project = $connection->prepare("INSERT INTO User_Project(UserId, ProjectId) VALUES(?, ?);");
+		$add_user_project->bind_param('ii', $projectOwner, $projectId);
+		$add_user_project->execute();
+		$add_user_project->reset();
+
+		header("location: /index.php?created_project={$projectName}");
+		exit(0);
 	}
 	else
 	{
 		echo "Fehler beim Erstellen des Projektes. Eingaben überprüfen.";
-		echo $connection->error;
 	}
-
-	$add_project->reset();
 }
 
 ?>
@@ -61,10 +71,10 @@ if (checkPostValues() === TRUE )
         <div>
             <form name="RegForm" id="register-form" method="post">
                 Projektname:
-					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt"/>
+					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" required/>
 
                 Verantwortlicher:  
-					<select id="project-owner-select" name = "ProjectOwner">
+					<select id="project-owner-select" name = "ProjectOwner" required>
 						<option selected="true" disabled="disabled" hidden="true" value="">Wähle Verantwortlichen</option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
@@ -76,7 +86,7 @@ if (checkPostValues() === TRUE )
 					</select>
 
                 Thema:              
-					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic"></textarea>
+					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic" required></textarea>
                 
 				Abgabedatum:
 					<?php 
@@ -95,7 +105,6 @@ if (checkPostValues() === TRUE )
                 </div>
 				
 				<script src="../../jquery-3.6.0.js"></script>
-				<script src="new-project.js"></script>
 		    </form>
         </div>	
 	</main>    
