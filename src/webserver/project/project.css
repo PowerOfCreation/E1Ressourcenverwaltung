@@ -44,21 +44,8 @@ button {
     cursor: pointer;
 }
 
-/* der text dahinter scheint irgendwie php zu sein und deswegen kann ich den atm bloß den effekt geben, 
-anklicken wird die checkbox nicht aktiviert */
-
 ul {
     cursor: pointer;
-}
-
-.projectname {
-    margin: 5px 0;
-    color: #909090;
-}
-
-.projectname:hover {
-    font-size: 1.5em;
-    color: black;
 }
 
 .selected {
