@@ -1,0 +1,53 @@
+= Testdokumentation
+
+== Testkonzept
+=== Testobjekte:
+* Unittests: 
+** project\employees
+* Funktionalitätstests:
+** "Frontend"
+*** registration.js
+*** registration\index.php
+*** database_structure.php
+
+=== Wie wurde getestet:
+* Die Hauptfunktionalitäten (Abfragen, Erstellen und Löschen) werden in Form von Unittest automatisiert durchgeführt
+* Alle Tests, die sich auf das ordnungsgemäße Funktionieren der Benutzeroberfläche beziehen (vorallem Absicherung von Fehlerfällen) können manuell, mit Benutzung des Systems getestet werden
+
+=== Testdurchführungsplanung:
+* Die Unittest sollten kurz nach, teilweise schon während der Implimentierung erstellt werden
+* Die Prüfung wird dann von den Implimentierenden durchgeführt
+* Die Funktionalitätstest können rechtzeitig bei freien Kapazizäten durchgeführt werden
+* Für diese sind die Tester zuständig
+
+== Testfallbeschreibung
+=== Unittests
+
+|===
+| Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
+
+| Datenbanklogik ist geladen | "projectId":"1" | automatischer POST-Aufruf project\employeed mit JSON-String | Rückgabewerte userId': 1, 'userName': 'Ehrenpflaume (Wiedergabe Project-Owner)
+| Datenbanklogik ist geladen | "userIds":[1]; projectIds":"1"; projectIds":"0"; projectIds":"-1"; keine Daten | automatischer POST-Aufruf project\employeed mit JSON-String | status_code == 500 (Mitarbeiterdaten können nicht gefunden werden)
+| Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer PUT-Aufruf project\employeed mit JSON-String | status_code == 200 (Anlegen Mitarbeiter im Projekt möglich)
+| Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer DELETE-Aufruf project\employeed mit JSON-String | status_code == 200 (Löschen Mitarbeiter im Projekt möglich)
+| Datenbanklogik ist geladen | "projectId":"1" | automatischer PUT- und DELETE-Aufruf project\employeed mit JSON-String | status_code == 500 (Anlegen und Löschen Mitarbeiter ohne Projektangabe nicht möglich) 
+
+|===
+
+=== Funktionalitätstest
+|===
+| Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
+
+| Programm läuft | password: PassW (<7 Zeichen) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Programm läuft | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Programm läuft | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Programm läuft | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Programm läuft | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an  Backend übermittelt
+| Programm läuft | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
+| Programm läuft | [Nicht jedes Feld ausgefüllt] | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, unvollständige Daten nicht an Backend, Wiederholbar
+
+|===
+
+== Testergebnisse
+
+Zu kurzer Benutzername erkannt?
