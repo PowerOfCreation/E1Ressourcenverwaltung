@@ -34,29 +34,23 @@ if (checkPostValues() === TRUE )
 
 	if($add_project->execute())
 	{
+		$projectId =  $connection->insert_id;
+
+		$add_project->reset();
+
+		//insert Userid, projectid into User_Project
+		$add_user_project = $connection->prepare("INSERT INTO User_Project(UserId, ProjectId) VALUES(?, ?);");
+		$add_user_project->bind_param('ii', $projectOwner, $projectId);
+		$add_user_project->execute();
+		$add_user_project->reset();
+
 		header("location: /index.php?created_project={$projectName}");
+		exit(0);
 	}
 	else
 	{
 		echo "Fehler beim Erstellen des Projektes. Eingaben überprüfen.";
-		echo $connection->error;
 	}
-
-	$add_project->reset();
-    
-    //get Project Id
-    $get_project_id = $connection->prepare("SELECT ProjectId FROM Project WHERE ProjectName = ?;");
-    $get_project_id->bind_param('s', $projectName);
-    $get_project_id->execute();
-    $get_project_id->bind_result($projectId);
-    $get_project_id->fetch();
-    $get_project_id->reset();
-
-    //insert Userid, projectid into User_Project
-    $add_user_project = $connection->prepare("INSERT INTO User_Project(UserId, ProjectId) VALUES(?, ?);");
-    $add_user_project->bind_param('ii', $projectOwner, $projectId);
-    $add_user_project->execute();
-    $add_user_project->reset();
 }
 
 ?>
