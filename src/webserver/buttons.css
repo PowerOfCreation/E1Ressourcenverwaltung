@@ -1,14 +1,17 @@
 button {
-  background-color: 	#FF69B4;
-  cursor: pointer; 
-  justify-content: center;  
-  align-items: center; 
-  border-width: 2px;
-  font-family: inherit;
-  font-size: 1.5em;
+    height: 50px;
+    background-color: #e20074;
+    border: 0;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
 }
 
 button:hover {
-  background-color: #FF1493;
+    background-color: #FF1493;
 }
-
