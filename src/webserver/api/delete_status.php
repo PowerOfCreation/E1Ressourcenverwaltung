@@ -1,7 +1,6 @@
 <?php
     include("/app/config/credentials.php");
 
-    //Aufruf: /api/add_status.php?user=1&project=2&date=2022-04-25
     if(!isset($_GET['user']) || !isset($_GET['project']) || !isset($_GET['date'])){
         echo "Error: missing parameters";
         exit;

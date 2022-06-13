@@ -1,13 +1,5 @@
 <?php
-
 include("../login/checkForLogin.php");
-
-?>
-
-<a href=".."><button>Zurück</button></a>
-
-<?php
-
 require_once("/app/config/credentials.php");
 
 if (!empty($_GET["name"])) {
@@ -50,3 +42,13 @@ if (!empty($_GET["name"])) {
     echo "Entschuldigung, dies hätte nicht passieren sollen.";
 }
 ?>
+
+<html>
+    <body>
+        <a href=".."><button>Zurück</button></a>
+        <button id="btn-delete-employee" onclick="deleteEmployee()">Mitarbeiter löschen</button>
+
+        <script src="../jquery-3.6.0.js"></script>
+        <script src="js/mitarbeiter.js"></script>
+    </body>
+</html>
