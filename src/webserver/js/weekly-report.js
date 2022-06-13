@@ -1,4 +1,4 @@
-/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "(addStatus|handleProjectChange|changeCalendarWeek)" }]*/
+/*eslint no-unused-vars: ["error", { "varsIgnorePattern": "(addStatus|handleProjectChange|changeCalendarWeek|deleteStatus)" }]*/
 
 $()
 {
@@ -42,8 +42,6 @@ function deleteStatus() {
             getDates(globalCalendarWeek);
             populateTable(globalCalendarWeek);
         });
-    } else {
-        return;
     }
 }
 
