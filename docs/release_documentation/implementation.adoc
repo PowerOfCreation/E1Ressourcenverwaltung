@@ -49,7 +49,6 @@ Die beiden Aufgaben konnten ohne Probleme beendet werden.
 
 Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Dies konnte ohne Probleme gelöst werden.
 
-
 === Mitarbeiter hinzufügen check der E-Mail & Mitarbeiter hinzufügen Passwortkriterien 
 
 Natürlich soll wenn ein neuer Mitarbeiter angelegt wird, eine Email erstellt werden, welche zumindest den formalen Anforderungen an eine Email entspricht. Da das RegEx nicht besonders einfach ist und dieses Issue nicht die höchste priorität hatte, konnte es erst später beendet werden. 
@@ -61,25 +60,25 @@ Da das RegEx nicht besonders einfach ist und dieses Issue nicht die höchste pri
 
 Wenn ein Mitarbeiter erstellt wird, soll seine Abteilung aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
 
-
-
 === Entscheidungen:
 
-Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting. Wir 
+Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte.
 
-== I10  29.03.22 - 04.04.22
-
+== Iteration 10  
+29.03.22 - 04.04.22
+//wo sind hier die aufgaben, als ob nichts neues begonnen wurden ist
 Unsere Ziele für I10 waren: 
-Neubegonnen: -Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
+Neubegonnen:
+Suche implementieren #28 -> nie von jonas keil angefangen und auch nicht wichtig genug, das es weitergeführt wird, da kräfte gesammelt werden mussten
+
 Fortgeführt: 
-
-=== Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
-
-Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein Projekt anlegen
-
+Mitarbeiter hinzufügen check der E-Mail #33
+Mitarbeiter hinzufügen Passwortkriterien #36
+Beleg korrigieren #29
 
 
-I11 05.04.22. - 11.04.22
+
+== Iteraion 11 05.04.22. - 11.04.22
 Unsere Ziele für I11 waren: 
 Neubegonnen: 
 Fortgeführt:
@@ -89,12 +88,14 @@ entscheidung: die beiden kranken sollten gefragt werden was der los ist
 I12 12.04.22-25.04.22
 Unsere Ziele für I12 waren: 
 Neubegonnen: 
+ -Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
     Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
     Mehr Dummy-Daten für Project und Project_User #42 -> assigned aber nie begonnen erst am 25.4
     Projekterstellungsseite Frontend+Backend #32
     Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an carl
     API: Aktuelle Kalenderwoche #43 -> fertig
     Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht 
+    Neues Mitglied Vinh einführen
 Fortgeführt:
 
 === Projekterstellungsseite Frontend+Backend
@@ -102,12 +103,17 @@ Fortgeführt:
 Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten. 
 Da die Aufgabe ziemlich viel war, wurde sie in mehreren Iterationen erstellt. 
 
+=== Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
+
+Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein bzw. mehrere Projekt(e) anlegen. Dies ging zuvor mit auch mit ungültigen Namen. Dies sollte nicht mehr möglich sein. Die Aufgabe wurde in dieser Iteration abgeschlossen
+
+
 
 entscheidung: iterationszeit auf 2 wochen und daher die meetings auch bloß aller zwei wochen, da sich davon eröhte produktivität versprochen wurde 
 
 wollten uns mit herrn zirkelbach besprechen um ein paar kleine sachen zu fragen und fortschritt zu zeigen
 
-I13 26.04.22-09.05.22
+== Iteration 13 26.04.22-09.05.22
 Unsere Ziele für I13 waren: 
 Neubegonnen: Dummy Status einfügen #48 -> fertig
 API: Status der Kalenderwoche #49 -> fertig. gab leichte probleme mit in die datenbank einloggen 
@@ -121,7 +127,7 @@ Projektverwaltungsseite #45 -> fertig
 
 entscheidung: produktivität nicht verbessert, wenn es 2 wochen später noch besser wird, dann wieder auf 7 tage runter
 
-außerdem war sollte herr kemter, bei frau tartz und herr keil nachfragen, ob diese bald wiederkommen und diese krankheit schonmal herrn anke mitteilen 
+außerdem war sollte herr kemter, bei frau tartz und herr keil nachfragen, ob diese bald wiederkommen und diese krankheit schonmal herrn anke mitteilen -> was da als antwort kam noch formulieren
 
 
 
@@ -141,6 +147,12 @@ API: Einfügen eines neuen Status #52 -> fertig
 
 entscheidung: da schon lange nicht mehr mit herrn liebert gesprochen, wurde ein meeting geplant, was in der nächsten iteration stattfand
 
+es wurde entschieden (hauptsächlich von niclas), dass wir pull requests verwenden, damit die änderungen das machen was sie machen sollen und man direkt verbesserungen anmerken kann
+
+//ist das eine entscheidung oder eher problem?
+wir haben nicht genug skill und zeit unit tests einzuführen. niclas hat daher noch was bei den automatische tests bei den pull requests eingefügt, dass bestimmte fehler erkennen kann 
+// war das in der iteration oder davor
+
 
 I15 17.05.22-23.5.22
 
@@ -159,6 +171,8 @@ Unsere Ziele für I16 waren:
 Projekt erstellen Fehlerbehandlung #68 -> fertig 
 Neubegonnen: Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
 Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
+
+Entscheidungen: da Jonas keil immer noch nicht da war, haben wir entschieden dies nochmal an herrn anke zu schreiben und ihm mitzuteilen, das wir gegen eine benotung vom ihm sind. herr keil hat sich in der woche zuvor selbstständig abgemeldet
 
 I17 31.05.22-06.06.22 
 
