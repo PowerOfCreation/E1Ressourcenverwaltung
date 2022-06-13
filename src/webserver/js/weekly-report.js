@@ -16,16 +16,31 @@ $()
 
 const $addProjectButton = $("<button onclick='addStatus()'>Status hinzufügen</button>");
 const $addProjectSelect = $("<select onchange='handleProjectChange()' id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
+const $deleteProjectButton = $("<button onclick='deleteStatus()'>X</button>");
 
 function onWeekdayEnter() {
-    console.log($(this).children().length);
     if ($(this).children().length == 0) {
         $(this).append($addProjectButton);
+    } else if ($(this).children().length == 1) {
+        $(this).append($deleteProjectButton);
     }
 }
 
 function onWeekdayLeave() {
     $addProjectButton.detach();
+}
+
+function deleteStatus() {
+    let $weekdayElement = $deleteProjectButton.parent();
+    let $employeeElement = $weekdayElement.parent();
+    let employeeId = $employeeElement.attr("id");
+    let date = $weekdayElement.attr("id");
+    let projectId = $weekdayElement.children("p").attr("id");
+
+    $.get("api/delete_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function () {
+        getDates(globalCalendarWeek);
+        populateTable(globalCalendarWeek);
+    });
 }
 
 function addStatus() {
@@ -145,7 +160,7 @@ function populateTable(calendarWeek = globalCalendarWeek) {
             //loop through all status entries
             res.map((status) => {
                 //populate table with statuses
-                $('<p>Projekt: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                $('<p id=' + status['ProjectId'] + '>Projekt: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
             });
         });
     });
