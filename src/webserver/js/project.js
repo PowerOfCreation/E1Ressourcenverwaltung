@@ -4,19 +4,16 @@ $()
 
     $(".projectname").click(function () {
 
-        $(".selected").removeClass("selected"); 
+        $(".selected").removeClass("selected");
         showProject($(this).data("project-id"));
-        $(this).addClass("selected"); 
+        $(this).addClass("selected");
     })
 
-    showProject($(".projectname").first().data("project-id"));
-    $(".projectname").first().addClass("selected");
-    
-    $(".user-checkbox").change(function() {
+    $(".user-checkbox").change(function () {
 
         var selectedUser = $(this).data("userId");
 
-        if($(this).is(':checked')) {
+        if ($(this).is(':checked')) {
             $.ajax({
                 url: "../api/projects/employees/index.php",
                 type: 'PUT',
@@ -28,13 +25,39 @@ $()
                 url: "../api/projects/employees/index.php",
                 type: 'DELETE',
                 data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`
-            });    
+            });
         }
     })
 }
 
-function showProject (projectId) 
-{
+function deleteProject(projectId) {
+    $("#message-container").text("");
+    if (projectId === undefined) {
+        $("#message-container").text("Bitte wählen Sie zuerst ein Projekt aus.");
+        return;
+    }
+
+    if (confirm("Soll das Projekt wirklich gelöscht werden?")) {
+        $.ajax({
+            url: "../api/projects/index.php",
+            type: 'DELETE',
+            data: `{"projectId":"${projectId}"}`
+        }).done(function () {
+            $("#message-container").text("Projekt wurde erfolgreich gelöscht.");
+        }).fail(function () {
+            $("#message-container").text("Projekt konnte nicht gelöscht werden.");
+        });
+    } else {
+        return;
+    }
+}
+
+$("#btn-delete-project").click(function () {
+    let projectId = $(".selected").data("project-id");
+    deleteProject(projectId);
+});
+
+function showProject(projectId) {
 
     selectedProject = projectId;
 
@@ -44,7 +67,7 @@ function showProject (projectId)
 
     $.get("../api/get_project_employees.php", { project: projectId }).done(function (data) {
 
-        var projectEmployees = jQuery.parseJSON(data); 
+        var projectEmployees = jQuery.parseJSON(data);
 
         for (let index = 0; index < projectEmployees.length; index++) {
 
@@ -52,7 +75,7 @@ function showProject (projectId)
 
             $(".user-checkbox").each(function () {
                 if ($(this).data("userId") == element.userId) {
-                    $(this).prop("checked", true);                        
+                    $(this).prop("checked", true);
                 }
             });
         }
