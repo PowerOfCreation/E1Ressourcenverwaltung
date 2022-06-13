@@ -4,25 +4,22 @@
 
 === Mindestanforderungen an Hardware
 
-==== Für Benutzer
-* Ein internetfähiges Gerät (Smartphone, Tablet, PC)
+* Ein internetfähiges Gerät (Smartphone, Tablet, PC) für die Nutzung der Anwendung
 
-==== Für Serveradministrator
-* 
+* Für Docker: link:https://docs.docker.com/desktop/windows/install/[Windows], link:https://docs.docker.com/desktop/linux/install/[Linux], link:https://docs.docker.com/desktop/mac/install/[Mac]
 
 === Softwareanforderungen
 
-
-* Aktueller Webbrowser (Firefox, Chrome, Safari) mit HTML5- und Javascript Unterstützung
-* Docker
+* Aktueller Webbrowser (Chrome Ver. 102.0.5005.115 oder höher, Safari Ver. 15.5 oder höher) mit HTML5- und Javascript Unterstützung
+* Docker Compose Ver. 3.3 oder höher
 
 === Systemeinrichtung 
 
-Die Software ist eine webbasierte Anwendung, die sich in einem öffentlichen Repository auf GitHub befindet (https://github.com/PowerOfCreation/E1Ressourcenverwaltung). Die Anwendung besteht aus mehreren Ordnern und Komponenten wie PHP-Dateien, die durch CSS- und JS-Dateien ergänzt werden. 
+Die Software ist eine webbasierte Anwendung, die sich in einem öffentlichen Repository auf GitHub befindet (link:https://github.com/PowerOfCreation/E1Ressourcenverwaltung[Link]). Die Anwendung besteht aus mehreren Ordnern und Komponenten wie PHP-Dateien, die durch CSS- und JS-Dateien ergänzt werden. 
 
 Bevor mit der Installation fortgefahren wird, ist es empfehlenswert, einen Fork vom Repository zu erzeugen und im eigenen Account abzuspeichern. 
 
-Die Software besteht aus zwei serverseitigen Komponenten: Apache Webserver und MySQL, die in einem Docker-Container gespeichert sind.
+Die Software besteht aus zwei serverseitigen Komponenten: Apache Webserver 8.0 und MySQL (MariaDB Ver. 10.3.27 für Alpine Linux), die in einem Docker-Container gespeichert sind.
 
 Um die Software zu installieren, soll ein Docker Container ausgeführt werden. Dafür gibt es zwei Möglichkeiten:
 
@@ -30,10 +27,16 @@ Um die Software zu installieren, soll ein Docker Container ausgeführt werden. D
 
 * Im Terminal den Ordner "src" wählen und im Anschluss mit dem Befehl "docker-compose up" die Software ausführen.
 
-Die Software ist out of the box einsatzbereit, das bedeutet es müssen keine Konfigurationen vorgenommen werden.
+Die Software ist out of the box einsatzbereit, das bedeutet es müssen keine weiteren Konfigurationen vorgenommen werden. 
+
+Um zu überprüfen, ob die Anwendung funktioniert, soll im Webbrowser in der Adresszeile "localhost" eingegeben werden. Daraufhin wird die Login-Seite geöffnet.
+
+Die Software wird mit einem Default-Benutzerkonto mitgeliefert. Nach dem ersten Login soll ein eigenes Benutzerkonto erstellt werden und das alte gelöscht.
+
+Die Software soll aus Sicherheitsgründen ausschließlich im Intranet verwendet werden, weil Daten nicht verschlüsselt übertragen werden und es eine Gefahr von Man-in-the-Middle-Attack besteht. Für die Nutzung im Internet soll ein SSL-Zertifikat erstellt werden. 
 
 == Weitere Dokumentationen
 
 * link:https://docs.docker.com/desktop/[Docker]
 * link:https://httpd.apache.org/docs/[Apache Webserver]
-* link:https://dev.mysql.com/doc/[MySQL]
+* link:https://mariadb.com/kb/en/documentation/[MariaDB]
