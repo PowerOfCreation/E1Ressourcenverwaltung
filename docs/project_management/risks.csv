@@ -13,7 +13,12 @@
 1.12.2021,Lokaler Datenverlust,Ein Teammitglied verliert seine lokal erarbeiteten Daten,Technisch,3,0.3,0.9,Niklas Werner,Häufiges committen und pushen in das GitHub Repository,1,0.3,0.3
 1.12.2021,Aufgabe wird doppelt erledigt,Eine Aufgabe wird von zwei Teammitgliedern parall bearbeitet.,Ressource,2,0.3,0.6,Niklas Werner,Verwenden der GitHub Issues bzw. einen Kanban Boards mit Zuteiltung der Aufgaben,2,0.1,0.2
 28.11.2021,Unklare Projektrollen,Diskussionen darüber wer eine Aufgabe erfüllen sollte,Zeitlich,1,0.30,0.3,Carl Kirchhoff,"Benötigte Rollen werden möglichst schnell, an geeignete Mitglieder verteilt. Bei Komplikationen müssen diese flexibel austauschbar sein",1,0.10,0.1
-20.04.2022,zu langsamer Programmiervorschritt, Die vorhanden Programmierkenntnisse einzelner Teammitglieder reichen nicht mehr aus um die Issues in angemessenen Tempo zu erfüllen,Ressourcen,4,0.7,2.8,Nick Kemter,Mehr in zweier Teamsarbeiten um Fehler und Kompetenzen zu bündeln,0.4,1.6
-20.04.2022,Programmieraufgaben zu Komplex, Die vorhanden Programmierkenntnisse reichen nicht mehr aus, um die Aufgaben zu erfüllen,Ressourcen,5,0.4,2,Nick Kemter,Aktives Lernen und Üben neuer Programmierfähigkeiten,0.2,1
-20.04.2022,zu wenig Zeit für Projekt, Die Teammitglieder haben zu wenig Zeit, um das Projekt im nötigen Maße voranzutreiben. Insbesondere vor den Prüfungen und anderen Belegabgaben,Ressource,3,0.35,1.05,Nick Kemter,Primäre Bearbeitung auf ganzes Semester aufteilen besonders zu Zeiten wenn nicht viel Uniaufgaben verhanden,0.1,0.35
+20.04.2022,zu langsamer Programmiervorschritt, Die vorhanden Programmierkenntnisse einzelner Teammitglieder reichen nicht mehr aus um die Issues in angemessenen Tempo zu erfüllen,Ressource,4,0.7,2.8,Nick Kemter,Mehr in zweier Teamsarbeiten um Fehler und Kompetenzen zu bündeln,4,0.4,1.6
+
+20.04.2022,Programmieraufgaben zu Komplex, Die vorhanden Programmierkenntnisse reichen nicht mehr aus um die Aufgaben zu erfüllen,Ressource,5,0.4,2,Nick Kemter,Aktives Lernen und Üben neuer Programmierfähigkeiten,0.2,1
+
+20.04.2022,zu wenig Zeit für Projekt, Aus verschiedenen Gründen verlieren Teammitglieder die Lust an dem Projekt und erlidigen dann wenige Aufgaben,Ressource,4,0.6,2.4,Nick Kemter,Bei der Aufgabenverteilung darauf achten dass das Interesse wieder geweckt wird,2,0.5,1
+
+
 7.05.2022,unbekannte Tools, Teammitglieder nutzen Programme Addons etc. wo nicht alle Funktionen/Funktionsweisen bekannt sind welche zu Fehlern bzw. Zeitvergeudung führen, Technisch,2,0.5,1,Nick Kemter,Bloß bekannte/weitverbreitete Tools einsetzen und bei unbekannten sich mehr Informieren,0.2,0.4
+13.06.2022,Keine Lust der Teammitglieder, Aus verschiedenen Gründen verlieren Teammitglieder die Lust an dem Projekt ,Ressource
