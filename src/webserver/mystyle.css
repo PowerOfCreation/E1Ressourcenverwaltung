@@ -60,7 +60,7 @@ a:visited {
     width: 100%;
     display: flex;
     column-gap: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #div-buttons-weekly-report-header>* {
@@ -101,6 +101,11 @@ a>button {
 
 #table-weekly-report tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
+}
+
+#table-weekly-report tfoot tr td button {
+    height: 40px;
+    width: 50px;
 }
 
 #notification-div {
