@@ -95,56 +95,56 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 |
 * Das Team verschafft sich einen ersten Überblick über das Projekt.
 * Das Risiko von unklaren Rollen im Projekt und unklarer Zieldefinition wird verringert. 
-| 29.11.21 - 05.12.21
+| 29.11.2021 - 05.12.2021
 | -
 
 | I2
 |
 * Vision und Use Cases mit Wireframes werden entwickelt. 
 * Die Risiken eines unzureichenden Entwurfes und einer falschen Zieldefinition werden stark limitiert. 
-| 06.12.21 - 12.12.21
+| 06.12.2021 - 12.12.2021
 | -
 
 | I3
 |
 * Use Cases, Vision und Wireframes werden nach Gespräch mit Themensteller überarbeitet.
 * Dadurch wird das Risiko minimiert, dass der Kunde den Entwurf nicht akzeptieren könnte. 
-| 13.12.21 - 19.12.21
+| 13.12.2021 - 19.12.2021
 | -
 
 | I4
 |
 * Use Cases und Vision werden nach Anmerkungen von Herrn Zirkelbach fertiggestellt.
 * Das Risiko von Missverständnissen oder Unklarheiten wird minimiert. 
-| 20.12.21 - 26.12.21
+| 20.12.2021 - 26.12.2021
 | -
 
 | I5
 |
 * Datenbanktabellen sollen angelegt und "Mitarbeiter hinzufügen"- Ansicht sollen implementiert werden.
 * Das Risiko eines unvollständigen und fehlerhaften Systems wird dadurch verringert. 
-| 27.12.21 - 09.01.22
+| 27.12.2021 - 09.01.2022
 | -
 
 | I6
 |
 * Systemweite Anforderungen werden beschrieben, eine VM wird beantragen und Funktionserweiterungen der Software werden durchgeführt.
 * Das Risiko fehlerhafter Funktionen wird reduziert. 
-| 10.01.22 - 16.01.22
+| 10.01.2022 - 16.01.2022
 | - 
 
 | I7
 |
 * Architecture Notebook und Domainmodell werden entwickelt.
 * Unklare Strukturen der Software werden aufgedeckt und es wird ein Gerüst für die Software geschaffen. 
-| 17.01.22 - 23.01.22
+| 17.01.2022 - 23.01.2022
 | - 
 
 | I8
 |
 * Test Cases werden beschreiben und letzte Verbesserungen an den Dokumenten werden durchgeführt. 
 * Das Risiko von Unklarheiten in der Projektstruktur wird minimiert und es wird eine Basis für die Weiterarbeit im nächsten Semester geschaffen.  
-| 24.01.22 - 30.01.22
+| 24.01.2022 - 30.01.2022
 | - 
 
 |I9
@@ -154,17 +154,17 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Erweiterung der Funktionen der Webanwendung.
 * Damit wird das Risiko eines nicht fertigen Systems minimiert.
 * Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
-| 23.03.22 - 28.03.22
+| 23.03.2022 - 28.03.2022
 | - 
 
 |I10
 | 
-* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekct Plan.
+* Verbesserung des Beleges weiterführen, insbesondere Architecture Notebook und Projekt Plan.
 * Dadurch wird weiterhin fehlerhafte bzw. unklare Dokumentation, die später eventuell zu Fehlern führen könnte, minimiert.
 * Erweiterung der Funktionen der Webanwendung.
 * Damit wird das Risiko eines nicht fertigen Systems minimiert.
 * Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
-| 29.03.22 - 04.04.22
+| 29.03.2022 - 04.04.2022
 | -
 
 |I11
@@ -174,17 +174,18 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Erweiterung der Funktionen der Webanwendung, um z.B. Passwortkriterien, Abteilungsdropdown und Suche.
 * Damit wird das Risiko eines nicht fertigen Systems minimiert.
 * Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
-| 05.04.22. - 11.04.22
+| 05.04.2022. - 11.04.2022
 | - 
 
 |I12
 |
 * Aktualisierung bzw. Kontrolle des Belegs, u.a. Form und Formulierung, aber auch Dokumente wie Risikoliste.
 * Damit wird dafür gesorgt, dass die Dokumentation aktuell bleibt und eventuelle Ungenauigkeiten verbessert werden.
+* Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen.
 //Name nachschlagen und in andere Dokumente eintragen
 * Vinh wird als neues Teammitglied aufgenommen und in das Projekt eingeführt. Außerdem wird er als Person in den Beleg integriert.
 * Die Funktionen der Webanwendung werden erweitert, u.a. anzeigen der aktuellen Kalenderwoche, Projekterstellung und Implementierung verschiedener Geschäftslogik.
-|12.04.22-25.04.22
+|12.04.2022-25.04.2022
 |-
 
 |I13
@@ -193,7 +194,7 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Die Funktionen der Webanwendung werden erweitert.
 * Herr Keil und Frau Tartz sind Krank. In der Zeit können sie keine Aufgaben erfüllen. Herr Kemter hat die Aufgabe bekommen, zu klären wann beide wieder Einsatzfähig sind bzw. bei noch längerer Krankheit dies an Herrn Anke weiterzuleiten.
 * Herr Kemter wird in HTML und CSS eingeführt. Außerdem macht er einen Termin mit Herrn Liebert.
-|26.04.22-09.05.22
+|26.04.2022-09.05.2022
 |-
 
 |I14
@@ -202,7 +203,7 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Frau Tartz und Herr Kemter schauen sich den Beleg nocheinmal an.
 * Herr Kemter bildet sich weiterhin im Bereich Front-End fort.
 * Die Funktionen der Webanwendung werden erweitert. Das Anzeigen des Status soll fertig gestellt werden, ebenso das Wechseln der Wochen.
-|10.05.22-16.05.22
+|10.05.2022-16.05.2022
 |-
 
 |I15
@@ -211,7 +212,7 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Herr Kemter wird das Design der Webanwendung ansprechender gestalten.
 * Die Funktionen der Webanwendung werden erweitert. Das Wechseln der angezeigten Wochen in der Wochenansicht soll fertig gestellt werden.
 
-|17.05.22-23.5.22
+|17.05.2022-23.5.2022
 |-
 
 |I16
@@ -221,7 +222,7 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Die geforderten Veränderungen des Themenstellers sollen eingearbeitet werden, wie Erfolgsmeldung und Rückkehren auf andere Seite nach Erstellen eines Projekts/Mitarbeiter.
 * Einige Kleinigkeiten, wie Psalm oder den Status PK in der DB zu ersetzen, sollen erledigt werden.
 * Weiterhin wird die Webanwendung durch bereits begonnene Funktionen erweitert. 
-|24.05.22-30.05.2022
+|24.05.2022-30.05.2022
 |-
 
 |I17
@@ -230,7 +231,16 @@ Wenn viele neuer Funktionszuwachs stattgefunden hat, aber auch bevor und nachdem
 * Herr Kirchhoff erarbeitet eine Lizenz für unser Projekt.
 * Inhaltlich beendete Pull Requests, sollen geschlossen und mit Main gemerged werden.
 * Weiterhin wird die Webanwendung durch bereits begonnene Funktionen erweitert. 
-|31.05.22-06.06.22
+|31.05.2022-06.06.2022
+|-
+
+|I18
+|
+* Es werden die Test-, Entwickler- und Benutzerdokumentation angefangen.
+* Der Projektbericht wird weitergeführt.
+* Das Design wird noch einmal überarbeitet, anhand der Internetseite der Telekom selbst.
+* Es sollen mindestens folgende Funktionen erstellt werden: Benachichtigungen, wenn ein Mitarbeiter bzw. ein Projekt erstellt wurden ist. Außerdem soll das Login realisiert werden. Wenn Zeit übrig ist, dann kann das Löschen von Mitarbeitern und Projekten, sowie Stati aus dem Kalender, ebenfalls realisiert werden.
+|09.06.2022-13.06.2022
 |-
 |=== 
 
