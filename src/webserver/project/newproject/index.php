@@ -60,7 +60,7 @@ if (checkPostValues() === TRUE )
 <body>
 	<main>
 		<h1>Projekt Erstellen</h1>
-        <div>
+        <div id="form-wrapper-div">
             <form name="RegForm" id="register-form" method="post">
                 Projektname:
 					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" required/>
