@@ -37,10 +37,14 @@ function deleteStatus() {
     let date = $weekdayElement.attr("id");
     let projectId = $weekdayElement.children("p").attr("id");
 
-    $.get("api/delete_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function () {
-        getDates(globalCalendarWeek);
-        populateTable(globalCalendarWeek);
-    });
+    if (confirm("Möchtest du diesen Eintrag wirklich löschen?")) {
+        $.get("api/delete_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function () {
+            getDates(globalCalendarWeek);
+            populateTable(globalCalendarWeek);
+        });
+    } else {
+        return;
+    }
 }
 
 function addStatus() {
