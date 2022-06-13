@@ -14,10 +14,10 @@
     $stmt->bind_param('iis', $user, $project, $date);
     if($stmt->execute()){
         echo "Status deleted";
-        return true;
+        $stmt->close();
     }else{
         echo "Error: " . $stmt->error;
-        return false;
+        http_response_code(500);
+        exit(1);
     }
-    $stmt->close();
 ?>
