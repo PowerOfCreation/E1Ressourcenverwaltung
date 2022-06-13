@@ -44,8 +44,9 @@ function deleteProject(projectId) {
             data: `{"projectId":"${projectId}"}`
         }).done(function () {
             $("#message-container").text("Projekt wurde erfolgreich gelöscht.");
-        }).fail(function () {
-            $("#message-container").text("Projekt konnte nicht gelöscht werden.");
+        }).fail(function (data) {
+            $("#message-container").text(data.responseText);
+            //$("#message-container").text("Projekt konnte nicht gelöscht werden.");
         });
     } else {
         return;
