@@ -1,0 +1,39 @@
+= Betriebsdokumentation
+
+== Systemvoraussetzungen
+
+=== Mindestanforderungen an Hardware
+
+==== Für Benutzer
+* Ein internetfähiges Gerät (Smartphone, Tablet, PC)
+
+==== Für Serveradministrator
+* 
+
+=== Softwareanforderungen
+
+
+* Aktueller Webbrowser (Firefox, Chrome, Safari) mit HTML5- und Javascript Unterstützung
+* Docker
+
+=== Systemeinrichtung 
+
+Die Software ist eine webbasierte Anwendung, die sich in einem öffentlichen Repository auf GitHub befindet (https://github.com/PowerOfCreation/E1Ressourcenverwaltung). Die Anwendung besteht aus mehreren Ordnern und Komponenten wie PHP-Dateien, die durch CSS- und JS-Dateien ergänzt werden. 
+
+Bevor mit der Installation fortgefahren wird, ist es empfehlenswert, einen Fork vom Repository zu erzeugen und im eigenen Account abzuspeichern. 
+
+Die Software besteht aus zwei serverseitigen Komponenten: Apache Webserver und MySQL, die in einem Docker-Container gespeichert sind.
+
+Um die Software zu installieren, soll ein Docker Container ausgeführt werden. Dafür gibt es zwei Möglichkeiten:
+
+* Im Ordner "src" die Datei "docker-compose.yml" per Drag and Drop ins Docker schieben und anschließend auf "Start" drücken.
+
+* Im Terminal den Ordner "src" wählen und im Anschluss mit dem Befehl "docker-compose up" die Software ausführen.
+
+Die Software ist out of the box einsatzbereit, das bedeutet es müssen keine Konfigurationen vorgenommen werden.
+
+== Weitere Dokumentationen
+
+* link:https://docs.docker.com/desktop/[Docker]
+* link:https://httpd.apache.org/docs/[Apache Webserver]
+* link:https://dev.mysql.com/doc/[MySQL]
