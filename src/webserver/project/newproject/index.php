@@ -80,17 +80,22 @@ if (checkPostValues() === TRUE )
                 Thema:              
 					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic" required></textarea>
                 
-				Abgabedatum:
-					<?php 
-						$month = date('m');
-						$day = date('d');
-						$year = date('Y');
-						$today = $year . '-' . $month . '-' . $day;
-					?>
-					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
-    
-				Farbe: 
-					<input type="color" size="65" name="Color" />                
+					<div id="date-and-color-wrapper-div">
+						<div id="date-wrapper-div">
+						Abgabedatum:
+							<?php 
+								$month = date('m');
+								$day = date('d');
+								$year = date('Y');
+								$today = $year . '-' . $month . '-' . $day;
+							?>
+							<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
+						</div>
+						<div id="color-wrapper-div">
+						Farbe: 
+							<input type="color" size="65" name="Color" />
+						</div>
+					</div>            
                 <div id="button-container">
 					<a href=".."><button id="create-project-button" type="submit">Projekt erstellen</button></a>
                     <a href=".."><button id="back-button" type="button">Zurück</button></a>
