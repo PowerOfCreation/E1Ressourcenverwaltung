@@ -105,8 +105,8 @@ if (checkPostValues() === TRUE )
 						</div>
 					</div>            
                 <div id="button-container">
+					<a href=".."><button id="back-button" type="button">Zurück</button></a>
 					<a href=".."><button id="create-project-button" type="submit">Projekt erstellen</button></a>
-                    <a href=".."><button id="back-button" type="button">Zurück</button></a>
                 </div>
 				
 				<script src="../../jquery-3.6.0.js"></script>
