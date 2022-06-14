@@ -22,9 +22,7 @@ td {
 }
 
 header {
-    padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid black;
     display: flex;
 }
 
@@ -82,7 +80,7 @@ a>button {
 }
 
 #table-weekly-report thead {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e20074;
 }
 
 #table-weekly-report thead tr td {
