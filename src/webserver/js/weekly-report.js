@@ -16,26 +16,30 @@ $()
 
 const $addProjectButton = $("<button onclick='addStatus()'>Status hinzufügen</button>");
 const $addProjectSelect = $("<select onchange='handleProjectChange()' id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
-const $deleteProjectButton = $("<button onclick='deleteStatus()'>X</button>");
+const $deleteProjectButton = $("<button onclick='deleteStatus($(this).parent())'>X</button>");
 
 function onWeekdayEnter() {
-    if ($(this).children().length == 0) {
-        $(this).append($addProjectButton);
-    } else if ($(this).children().length == 1) {
-        $(this).append($deleteProjectButton);
-    }
+    $(this).append($addProjectButton);
+    $(this).children("div").append($deleteProjectButton);
+
 }
 
 function onWeekdayLeave() {
-    $addProjectButton.detach();
+    $(this).children().find("button").detach();
 }
 
-function deleteStatus() {
-    let $weekdayElement = $deleteProjectButton.parent();
+function deleteStatus(element) {
+    let $weekdayElement = $deleteProjectButton.parent().parent();
     let $employeeElement = $weekdayElement.parent();
     let employeeId = $employeeElement.attr("id");
     let date = $weekdayElement.attr("id");
-    let projectId = $weekdayElement.children("p").attr("id");
+    let projectId_userId = element.attr("class");
+    let projectId = projectId_userId.split("_")[0];
+
+    console.log(projectId_userId)
+    console.log("employeeId: " + employeeId);
+    console.log("date: " + date);
+    console.log("projectId: " + projectId);
 
     if (confirm("Möchtest du diesen Eintrag wirklich löschen?")) {
         $.get("api/delete_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function () {
@@ -162,7 +166,7 @@ function populateTable(calendarWeek = globalCalendarWeek) {
             //loop through all status entries
             res.map((status) => {
                 //populate table with statuses
-                $('<p id=' + status['ProjectId'] + '>Projekt: ' + status['ProjectName'] + '</p>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                $("<div class=" + status['ProjectId'] + '_' + status['UserId'] + "><p id=" + status['ProjectId'] + '>Projekt: ' + status['ProjectName'] + '</p></div>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
             });
         });
     });
