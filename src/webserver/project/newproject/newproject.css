@@ -40,6 +40,15 @@ form {
     margin-top: 16px;
 }
 
+#button-container > * {
+    flex-grow: 1;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+}
+
 #date-and-color-wrapper-div {
     display: flex;
     gap: 10px;
