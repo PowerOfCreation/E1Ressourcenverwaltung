@@ -120,3 +120,19 @@ a>button {
 .hidden {
     display: none !important;
 }
+
+.status-wrapper-div {
+    display: flex;
+    align-items: center;
+}
+
+.status-wrapper-div:hover {
+    background-color: rgb(194, 255, 255);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#delete-project-button{
+    margin-left: auto;
+}
