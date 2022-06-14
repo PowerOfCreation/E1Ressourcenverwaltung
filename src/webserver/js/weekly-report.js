@@ -16,12 +16,10 @@ $()
 
 const $addProjectButton = $("<button onclick='addStatus()'>Status hinzufügen</button>");
 const $addProjectSelect = $("<select onchange='handleProjectChange()' id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
-const $deleteProjectButton = $("<button onclick='deleteStatus($(this).parent())'>X</button>");
+const $deleteProjectButton = $("<button onclick='deleteStatus($(this).parent())' id='delete-project-button'>X</button>");
 
 function onWeekdayEnter() {
     $(this).append($addProjectButton);
-    $(this).children("div").append($deleteProjectButton);
-
 }
 
 function onWeekdayLeave() {
@@ -35,11 +33,6 @@ function deleteStatus(element) {
     let date = $weekdayElement.attr("id");
     let projectId_userId = element.attr("class");
     let projectId = projectId_userId.split("_")[0];
-
-    console.log(projectId_userId)
-    console.log("employeeId: " + employeeId);
-    console.log("date: " + date);
-    console.log("projectId: " + projectId);
 
     if (confirm("Möchtest du diesen Eintrag wirklich löschen?")) {
         $.get("api/delete_status.php?user=" + employeeId + "&project=" + projectId + "&date=" + date).done(function () {
@@ -166,7 +159,10 @@ function populateTable(calendarWeek = globalCalendarWeek) {
             //loop through all status entries
             res.map((status) => {
                 //populate table with statuses
-                $("<div class=" + status['ProjectId'] + '_' + status['UserId'] + "><p id=" + status['ProjectId'] + '>Projekt: ' + status['ProjectName'] + '</p></div>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                let $newStatus = $("<div class='" + status['ProjectId'] + '_' + status['UserId'] + " status-wrapper-div' ><p id=" + status['ProjectId'] + '>Projekt: ' + status['ProjectName'] + '</p></div>').appendTo("#" + status['UserId'] + " > #" + status['Day']);
+                $newStatus.mouseover(function() {
+                    $(this).append($deleteProjectButton);
+                });
             });
         });
     });
