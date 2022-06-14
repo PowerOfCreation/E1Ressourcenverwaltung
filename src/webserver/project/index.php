@@ -52,8 +52,8 @@ require_once("/app/config/credentials.php");
 			<div id="button-width-container"> 
 
 				<div id="project-button-container">
-					<a href="./newproject/"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
 					<button id="btn-delete-project" type="button">Projekt löschen</button>
+					<a href="./newproject/"><button id="btn-new-projects" type="button">Projekt erstellen</button></a>
 				</div>
 				<a href=".."><button id="back-button" type="button">Zurück</button></a>	
 			</div>
