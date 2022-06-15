@@ -4,7 +4,13 @@ include("../login/checkForLogin.php");
 
 ?>
 
-<a href=".."><button>Zurück</button></a>
+<body>
+    <a href=".."><button>Zurück</button></a>
+    <a id="btn-delete-user"><button>Mitarbeiter löschen</button></a>
+</body>
+
+<script src="../jquery-3.6.0.js"></script>
+<script src="js/mitarbeiter.js"></script>
 
 <?php
 
