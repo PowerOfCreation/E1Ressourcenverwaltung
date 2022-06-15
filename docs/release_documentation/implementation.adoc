@@ -13,6 +13,7 @@
 Iteration 9 (23.03.22 - 28.03.22)war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
 Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
+//risiko 
 
 Unsere Ziele für I09 waren: 
 Neubegonnen:
@@ -84,12 +85,12 @@ Es sollte eine simple Suchfunktion eingefügt werden, sodass nach Mitarbeiter un
 UC 03
 Es sollten Dummy-Daten für Projekte eingefügt, damit damit gleich die Funktionaltität überprüft werden konnte und das spätere Arbeiten angenehmer gestaltete. Jedoch wurde dies nie begonnen und daher in der nächsten Iteration fortgeführt.
 
-Leider konnten die Passwortkriterien-Aufgabe immer noch nicht abgeschlossen. 
+Leider konnten die Passwortkriterien-Aufgabe immer noch nicht abgeschlossen werden. 
 
 
 == Problem
 
-Es wurden kaum neue Aufgaben vergeben, zeitgleich gab es aber auch kaum alte zum fortführen. Hier wurde das 1. Mal gemerkt, dass das Projekt zu stocken beginnt. Jedoch gab es noch die Hoffnung, dass die besser wird.
+Es wurden kaum neue Aufgaben vergeben, zeitgleich gab es aber auch kaum alte zum fortführen. Hier wurde das 1. Mal gemerkt, dass das Projekt zu stocken beginnt. Jedoch hatten wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 //was hatte das für einen Grund und wieso war das in der nächsten woche noch einmal 
 
 == Iteraion 11 05.04.22. - 11.04.22
@@ -111,7 +112,7 @@ Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Da
 UC 03
 Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen Namen möglich sein. 
 
-Dieses Mal konnten die Dummy-Daten einfeführt werden 
+Dieses Mal konnten die Dummy-Daten eingefügt werden.
 
 == Iteration12 12.04.22-25.04.22
 In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht wissen" nicht weiter bzw. langsam vorankommen (risiko)
@@ -126,12 +127,15 @@ Neubegonnen:
 Fortgeführt:
 === Dokumentation
 
-Da der Beleg aktuell war, musste bloß unser neues Mitglied Vinh Nguyen in die Dokumentation eingetragen und grob eingeführt werden
+Da der Beleg aktuell war, musste bloß unser neues Mitglied Vinh Nguyen in die Dokumentation eingetragen und darin geschult werden, damit er damit umgehen kann.
 
-=== Projekterstellungsseite Frontend+Backend
+=== Implementation
 
-Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten. 
-Da die Aufgabe ziemlich viel war, wurde sie in mehreren Iterationen erstellt. 
+UC 04
+Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. 
+Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
+
+
 
 === Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
 
@@ -143,9 +147,9 @@ Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein bzw. m
 Die Iterationszeit wurde auf 2 Wochen erhöht und daher sollten die Meetings auch bloß aller zwei Wochen stattfinden.
 Von dieser Maßnahme wurde sich eine erhöhte Produktivität versprochen. Ob dies gelungen war, wollten wir in maximal zwei Iterationen entscheiden. 
 
-Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar kleine Sachen (z.B. aus dem korrigierten Beleg) zu fragen und unseren Fortschritt mit der Anwendung zu zeigen. außerdem krankheit
+Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar kleine Sachen zu fragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
 
-Herr Keil's Aufgabe wurde nicht mehr vergeben, da die Kräfte mehr gebündelt werden mussten um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
+Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
 
 == Iteration 13 26.04.22-09.05.22
 Unsere Ziele für I13 waren: 
@@ -159,9 +163,21 @@ Fortgeführt:
 Mehr Dummy-Daten für Project und Project_User #42 -> fertig
 Projektverwaltungsseite #45 -> fertig 
 
-entscheidung: produktivität nicht verbessert, wenn es 2 wochen später noch besser wird, dann wieder auf 7 tage runter
+=== Implementation
 
-außerdem war sollte herr kemter, bei frau tartz und herr keil nachfragen, ob diese bald wiederkommen und diese krankheit schonmal herrn anke mitteilen -> was da als antwort kam noch formulieren
+Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet wurden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können.
+Es konnten jedoch nicht alle API-Funktionen beendet werden, diese (#52) wurde dann in der nächsten beendet. 
+//stimmt das so oder sind die api's bereits eine funktion
+
+Um die Arbeit zu erleichtern wurde Dummy-Stati eingefügt und die Dummy-Projekte aus der letzten Iteration wurden fertiggestellt. (#48 & #42)
+Ebenso wurde die Projektverwaltungsseite beendet. #45
+//bild
+
+
+=== Entscheidung
+Wir haben uns mit der Produktivität, die wir uns durch die zwei wöchige Iteration erhofft haben, nicht verbessert. Wir gaben diesem Versuch noch eine Iteration, wenn es dann nicht besser wird, gehen wir wie geplant wieder auf sieben Tage pro Iterationzurück.
+
+Herr Keil und Frau Tartz waren immer noch krank, daher sollte her Kemter bei beiden Nachfragen, was Stand der Dinge ist. außerdem war sollte herr kemter, bei frau tartz und herr keil nachfragen, ob diese bald wiederkommen und diese krankheit schonmal herrn anke mitteilen -> was da als antwort kam noch formulieren
 
 
 
