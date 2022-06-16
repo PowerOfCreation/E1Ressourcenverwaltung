@@ -43,8 +43,7 @@ function deleteProject(projectId) {
             type: 'DELETE',
             data: `{"projectId":"${projectId}"}`
         }).done(function () {
-            $("#project-" + projectId).detach();
-            $(".selected").detach();
+            $(".selected").parent().detach();
             $("input[type=checkbox]").each(function () {
                 $(this).prop("checked", false);
             })

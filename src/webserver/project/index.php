@@ -24,16 +24,14 @@ require_once("/app/config/credentials.php");
 			<div id="content-container">                              
 				<div id="projects-container">	
 					<h2>Projekte:</h2>
-					<ul>
 						<?php					
 							$result = $connection->query("SELECT * FROM Project Order By ProjectName;");
 						
 							while ($row = $result->fetch_object()) 
 							{						
-								echo "<input type='radio' id='project-{$row->ProjectId}' name='project'><label for='project-{$row->ProjectId}' class='projectname' data-project-id='{$row->ProjectId}'>{$row->ProjectName}</label><br/>";
+								echo "<div><input type='radio' id='project-{$row->ProjectId}' name='project'><label for='project-{$row->ProjectId}' class='projectname' data-project-id='{$row->ProjectId}'>{$row->ProjectName}</label></div>";
 							}					
 						?>
-					</ul>
 				</div>
 				<div id="employees-container">
 					<h2>Mitarbeiter:</h2>	
