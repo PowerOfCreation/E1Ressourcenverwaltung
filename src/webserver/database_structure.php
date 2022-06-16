@@ -118,15 +118,4 @@ if($result->fetch_array()[0] == 0)
     $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Testnutzer', 'Testnutzer', 'Bitte Löschen', 1, '', '{$password_hash}');");
 }
 
-$result = $connection->query("SELECT count(*) from Project;");
-
-if($result->fetch_array()[0] == 0)
-{
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Back-Ends.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 2, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webdesign 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Homepage', 3, 'ffffff', 'Neue Homepage soll aufgebaut werden', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Digitalisierung', 4, 'ffffff', 'Alte Daten müssen digitalisiert werden', '2023-01-01');");
-}
-
 ?>
