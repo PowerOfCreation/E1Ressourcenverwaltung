@@ -34,15 +34,23 @@ if (checkPostValues() === TRUE )
 
 	if($add_project->execute())
 	{
+		$projectId =  $connection->insert_id;
+
+		$add_project->reset();
+
+		//insert Userid, projectid into User_Project
+		$add_user_project = $connection->prepare("INSERT INTO User_Project(UserId, ProjectId) VALUES(?, ?);");
+		$add_user_project->bind_param('ii', $projectOwner, $projectId);
+		$add_user_project->execute();
+		$add_user_project->reset();
+
 		header("location: /index.php?created_project={$projectName}");
+		exit(0);
 	}
 	else
 	{
 		echo "Fehler beim Erstellen des Projektes. Eingaben überprüfen.";
-		echo $connection->error;
 	}
-
-	$add_project->reset();
 }
 
 ?>
@@ -60,7 +68,7 @@ if (checkPostValues() === TRUE )
 <body>
 	<main>
 		<h1>Projekt Erstellen</h1>
-        <div>
+        <div id="form-wrapper-div">
             <form name="RegForm" id="register-form" method="post">
                 Projektname:
 					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" required/>
@@ -80,20 +88,25 @@ if (checkPostValues() === TRUE )
                 Thema:              
 					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic" required></textarea>
                 
-				Abgabedatum:
-					<?php 
-						$month = date('m');
-						$day = date('d');
-						$year = date('Y');
-						$today = $year . '-' . $month . '-' . $day;
-					?>
-					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
-    
-				Farbe: 
-					<input type="color" size="65" name="Color" />                
+					<div id="date-and-color-wrapper-div">
+						<div id="date-wrapper-div">
+						Abgabedatum:
+							<?php 
+								$month = date('m');
+								$day = date('d');
+								$year = date('Y');
+								$today = $year . '-' . $month . '-' . $day;
+							?>
+							<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
+						</div>
+						<div id="color-wrapper-div">
+						Farbe: 
+							<input type="color" size="65" name="Color" />
+						</div>
+					</div>            
                 <div id="button-container">
+					<a href=".."><button id="back-button" type="button">Zurück</button></a>
 					<a href=".."><button id="create-project-button" type="submit">Projekt erstellen</button></a>
-                    <a href=".."><button id="back-button" type="button">Zurück</button></a>
                 </div>
 				
 				<script src="../../jquery-3.6.0.js"></script>

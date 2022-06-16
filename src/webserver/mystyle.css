@@ -1,9 +1,20 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-    display: inline;
+    font-size: 24px;
+    color: #e20074;
+    line-height: 110%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    position: relative;
+    font-weight: 500;
+    margin: 0.67em 0;
+}
+
+p {
+    font-size: 18px;
 }
 
 td {
@@ -11,24 +22,14 @@ td {
 }
 
 header {
-    padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid black;
     display: flex;
-}
-
-.td-entry-employee:hover {
-    font-size: 1.2em;
 }
 
 a:link {
     text-decoration: none;
     color: inherit;
     font: 1em;
-}
-
-a:hover {
-    font-size: 1.2em;
 }
 
 /* wenn man rechts auf den namen klickt und der dann durch den zeilenumbruch nach unten verschoben wird, 
@@ -57,15 +58,15 @@ a:visited {
     width: 100%;
     display: flex;
     column-gap: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-#div-buttons-weekly-report-header > * {
+#div-buttons-weekly-report-header>* {
     flex-grow: 1;
     height: 60px;
 }
 
-a > button {
+a>button {
     width: 100%;
     height: 100%;
 }
@@ -75,15 +76,34 @@ a > button {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 #table-weekly-report thead {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e20074;
 }
 
-#table-weekly-report td {
-    border: 1px solid black;
-    padding: 5px;
+#table-weekly-report thead tr td {
+    color: #e20074;
+}
+
+#table-weekly-report td,
+#table-weekly-report th {
+    padding: 10px 13px;
+    height: 60px;
+}
+
+#table-weekly-report tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#table-weekly-report tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#table-weekly-report tfoot tr td button {
+    height: 40px;
+    width: 50px;
 }
 
 #notification-div {
@@ -99,4 +119,20 @@ a > button {
 
 .hidden {
     display: none !important;
+}
+
+.status-wrapper-div {
+    display: flex;
+    align-items: center;
+}
+
+.status-wrapper-div:hover {
+    background-color: rgb(194, 255, 255);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#delete-project-button{
+    margin-left: auto;
 }

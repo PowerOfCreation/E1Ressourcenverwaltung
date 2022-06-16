@@ -114,72 +114,8 @@ $result = $connection->query("SELECT count(*) from User;");
 
 if($result->fetch_array()[0] == 0)
 {
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Ehrenpflaume', 'Kai', 'Pflaume', 1, 'k.pflaume@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('derBohle', 'Dieter', 'Bohlen', 1, 'd.bohlen@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Heidi', 'Heidi', 'Klum', 2, 'h.klum@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Raabinator', 'Stefan', 'Raab', 2, 's.raab@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Campino', 'Andreas', 'Frege', 3, 'a.frege@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('derKaptn', 'Florian', 'Silbereisen', 4, 'f.silbereisen@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Schweini', 'Bastian', 'Schweinsteiger', 3, 'b.schweinsteiger@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Poldi', 'Lukas', 'Poldoski', 2, 'l.podolski@mail.de', '123456');") ;
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Mutti', 'Angela', 'Merkel', 1, 'a.merkel@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('verdienterWeltmeister', 'Matze', 'Ginter', 1, 'm.ginter@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('IronMan', 'Toni', 'Stark', 3, 't.stark@mail.de', '123456');");
-    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Spiderman', 'Peter', 'Parker', 2, 't.stark@mail.de', '123456');");
-}
-
-$result = $connection->query("SELECT count(*) from Project;");
-
-if($result->fetch_array()[0] == 0)
-{
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webentwicklung 3000', 1, 'ffffff', 'Entwicklung eines neuen Back-Ends.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Marketing für die Hoelle', 2, 'ffffff', 'Neue Werbe-Kampagne entwerfen.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Webdesign 3000', 1, 'ffffff', 'Entwicklung eines neuen Front-Ends.', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Homepage', 3, 'ffffff', 'Neue Homepage soll aufgebaut werden', '2023-01-01');");
-    $connection->query("Insert into Project(ProjectName, ProjectOwner, Color, Topic, End) Values('Digitalisierung', 4, 'ffffff', 'Alte Daten müssen digitalisiert werden', '2023-01-01');");
-}
-
-
-$result = $connection->query("SELECT count(*) from User_Project;");
-
-if($result->fetch_array()[0] == 0)
-{
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 1);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(1, 2);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(2, 4);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(2, 5);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(3, 4);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(4, 1);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(4, 3);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 1);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 2);");
-    $connection->query("Insert into User_Project(UserId, ProjectId) Values(5, 3);");
-}
-
-
-$result = $connection->query("SELECT count(*) from Status;");
-
-
-if($result->fetch_array()[0] == 0)
-{
-    $time = strtotime('monday this week');
-    $date = DateTime::createFromFormat('Y-m-d', date('Y-m-d', $time));
-    $monday_date = $date->format('Y-m-d');
-    $tuesday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
-    $wednesday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
-    $thursday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
-    $friday_date = $date->add(new DateInterval('P1D'))->format('Y-m-d');
-
-
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 1, '{$tuesday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(2, 2, '{$tuesday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(3, 2, '{$tuesday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 5, '{$wednesday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(2, 5, '{$wednesday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(3, 4, '{$thursday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(1, 4, '{$thursday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(2, 3, '{$friday_date}' );");
-    $connection->query("Insert into Status(UserId, ProjectId, Day) Values(3, 1, '{$friday_date}' );");
+    $password_hash = password_hash("12345678!", PASSWORD_DEFAULT);
+    $connection->query("Insert into User(Username, Forename, Surname, DepartmentId, Email, Password) Values('Testnutzer', 'Testnutzer', 'Bitte Löschen', 1, '', '{$password_hash}');");
 }
 
 ?>

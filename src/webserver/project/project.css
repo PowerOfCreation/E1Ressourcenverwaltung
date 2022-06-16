@@ -5,6 +5,8 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+    border-top: 2px solid #e20074;
+    gap: 20px;
 }
 
 #button-container {
@@ -12,6 +14,10 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+ul {
+    padding: 0;
 }
 
 #button-width-container {
@@ -44,36 +50,28 @@ button {
     cursor: pointer;
 }
 
-/* der text dahinter scheint irgendwie php zu sein und deswegen kann ich den atm bloß den effekt geben, 
-anklicken wird die checkbox nicht aktiviert */
-
 ul {
     cursor: pointer;
 }
 
-.projectname {
-    margin: 5px 0;
-    color: #909090;
-}
-
-.projectname:hover {
-    font-size: 1.5em;
-    color: black;
-}
-
-.selected {
-    font-size: 2em;
-    color: black;
-}
-
-#projects-container {
-    width: 400px;
-}
-
-#employees-container {
-    width: 250px;
-}
-
 h1 {
     text-align: center;
+    font-size: 24px;
+    color: #e20074;
+    line-height: 110%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    position: relative;
+    font-weight: 500;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 110%;
+    margin-bottom: 10px;
+    margin-top: 0;
+    position: relative;
+    font-weight: 500;
+    margin: 0.67em 0;
 }
