@@ -60,7 +60,7 @@ require_once("/app/config/credentials.php");
 		</div>
 	</main>
 	<script src="../jquery-3.6.0.js"></script>
-	<script src="../js/project.js"></script>
+	<script src="./js/project.js"></script>
 </body>
 
 </html>
