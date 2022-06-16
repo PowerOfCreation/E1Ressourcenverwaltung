@@ -43,10 +43,14 @@ function deleteProject(projectId) {
             type: 'DELETE',
             data: `{"projectId":"${projectId}"}`
         }).done(function () {
+            $("#project-" + projectId).detach();
+            $(".selected").detach();
+            $("input[type=checkbox]").each(function () {
+                $(this).prop("checked", false);
+            })
             $("#message-container").text("Projekt wurde erfolgreich gelöscht.");
         }).fail(function (data) {
             $("#message-container").text(data.responseText);
-            //$("#message-container").text("Projekt konnte nicht gelöscht werden.");
         });
     } else {
         return;
