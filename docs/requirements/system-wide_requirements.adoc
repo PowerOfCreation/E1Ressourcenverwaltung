@@ -19,7 +19,7 @@ NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern m
 
 SWFA-1: Alle Daten (Benutzer und Projekt) sollen persistent gespeichert werden.
 
-Zur Überprüfung wird die Datenbank mit Testdaten gefüllt. Anschließend wird das System ausgeschaltet. Die Daten sollten bei Wiederinbetriebnahme vollständig vorhanden sein
+Zur Überprüfung wird die Datenbank mit Testdaten gefüllt. Anschließend wird das System ausgeschaltet. Die Daten sollten bei Wiederinbetriebnahme vollständig vorhanden sein.
 
 SWFA-2: Jeder Benutzer darf alle Daten bearbeiten.
 
@@ -34,7 +34,8 @@ Zur Überprüfung werden Daten eingetragen und danach auf Plausibilität und Kor
 
 === Benutzbarkeit (Usability)
 //Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
-NFAU-1: Der Benutzer sollte so wenig Klicks wie möglich für alle Funktionen der Anwendung benötigen.
+NFAU-1: Der Benutzer kommt, nachdem er angemeldet ist, mit maximal 2 Klicks in die Funktionsmaske hinein, wo er die Funktion ausführen kann.
+//ungenau formulierung mit "wenige"
 Zur Überprüfung werden alle möglichen Funktionen nacheinander ausgeführt und die Anzahl der Klicks gezählt. 
 
 NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
@@ -42,17 +43,18 @@ NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
-NFAR-1: Es darf kein falscher Kundenname oder falsches Passwort angegeben werden
+NFAR-1: Es darf kein falscher Kundenname oder falsches Passwort angegeben werden.
 Zur Überprüfung wird getestet, ob in diesen Anwendungsfällen ein entsprechender Hinweistext angezeigt wird. 
 
 NFAR-2: Die E-Mail-Adresse darf nur in einem gültigen Format eingegeben werden.
 Zur Überprüfung wird getestet, ob in diesem Anwendungsfall ein entsprechender Hinweistext angezeigt wird.
 
-
+NFAR-3: Es dürfen keine fehlerhafte Eingaben akzeptiert werden. Auf diese falschen Eingaben muss reagiert werden.
+Zur Überprüfung wird getestet, ob in diesem Anwendungsfall ein entsprechender Hinweistext angezeigt wird. 
 
 === Effizienz (Performance)
 // Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
-NFAP-1: Das Aufrufen von neuen Seiten und das Speichern/Abschicken von Daten soll eine angemessene Geschwindigkeit haben.
+NFAP-1: Das Aufrufen von neuen Seiten und das Speichern/Abschicken von Daten soll eine Geschwindigkeit 0,3 Sekunden haben.
 //Vllt eine genauere Formulierung
 Zur Überprüfung wird eine manuelle Überprüfung feststellen, ob alle Anforderungen innerhalb der gegebenen Zeit unter optimalen Bedingungen ablaufen.
 
