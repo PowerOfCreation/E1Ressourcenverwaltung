@@ -62,6 +62,7 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt verwaltet, dann
 
 ==== Alternativer Ablauf 3: Projekt löschen
 Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
+
 . müssen die zu löschenden Projekte ausgewählt werden.
 . Es wird der Löschvorgang gestartet.
 .. Das Löschen muss bestätigt werden.
@@ -80,7 +81,7 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Szenario 1: Mitarbeiter einem Projekt zuweisen/entziehen
-*Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt und klickt auf "Zuweisen".
+*Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt. Damit ist das Zuweisen bzw. das Entziehen eines Projektes abgeschlossen 
 //zuweisen gibt es nicht mehr
 
 ==== Szenario 2: Projekt erstellen
