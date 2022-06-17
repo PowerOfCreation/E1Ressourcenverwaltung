@@ -1,0 +1,103 @@
+= Anwenderdokumentation
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; Vinh Nguyen <s77261@htw-dresden.de>
+{localdatetime}
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== 1. Einführung
+Das Programm dient zur Verbesserung der wöchentlichen Ressourcenplanung und Projektverwaltung der Mitarbeiter bei T-Systems Multimedia Solutions GmbH.
+
+Die Koordinierung der Mitarbeiter und Ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte erfolgt in kalendarischer Darstellung.
+Jedem Mitarbeiter können Projekte zugeteilt werden, ebenso ist der Mitarbeiterstatus ersichtlich.
+
+Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht werden.
+
+== 2. Aufbau und Nutzung
+
+=== Login
+Die Anmeldung erfolgt im Intranet der T-Systems Multimedia Solutions GmbH.
+
+image::LoginNeu.jpg[]
+
+Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan Übersicht. Diese zeigt die aktuelle Kalenderwoche sowie weitere Funktionen an.
+
+=== Mitarbeiter Erstellen ud Löschen
+Über den Button "Mitarbeiter hinzufügen" kann der Nutzer einen neuen Mitarbeiter anlegen.
+
+image::MitarbeiterHinzufügen.jpg[]
+
+Bei der Dateneingabe kann ein Beliebiger Benutzername gewählt werden. 
+Ebenfalls erfolderlich sind folgende Angaben:
+Vorname, Nachname, Abteilung, Email Adresse und ein Passwort.
+
+image::MitarbeiterDateneingabe.jpg[]
+
+Erfüllt das gewählte Passwort nicht die Anforderungen, erscheint eine der folgenden Fehlermeldungen:
+
+image::FehlermeldungDateneingabe.jpg[]
+image::FehlermeldungDateneingabe2.jpg[]
+
+Nach erfolgreicher Dateneingabe bestätigt man den Vorgang mit dem Button "Benutzer Erstellen"
+
+image::BenutzerErstellen.jpg[]
+
+Die Bestätigung ist oben im Bild zu sehen:
+
+image::BenutzerErstellenErfolgreich.jpg[]
+
+Zum Löschen eines Mitarbeiters klickt man auf den Namen. 
+Es öffnet sich eine Übersicht mit Informationen zum Namen und Abteilung.
+Über den Button "Mitarbeiter Löschen" wird der Mitarbeiter aus dem System entfernt. 
+
+image::MitarbeiterLöschen.jpg[]
+
+Das Programm verlangt eine weitere Bestätigung zur Ausführung. Hier kann der Vorgang bestätigt oder abgebrochen werden.
+
+image::MitarbeiterLöschen2.jpg[]
+
+=== Mitarbeiter Status
+
+Dem Mitarbeiter kann ein Status über den Button "Status Hinzufügen" zugeordnet werden.
+
+image::StatusMitarbeiter.jpg[]
+
+image::StatusMitarbeiterWählen.jpg[]
+
+Soll der Status entfernt werden, erfolgt dies über das Kreuz am Rand. Auch hier muss der Vorgang erneut bestätigt werden.
+
+image::StatusMitarbeiterLöschen.jpg[]
+
+=== Projekt Verwaltung
+
+In der Projekt Verwaltung können Projekte erstellt oder gelöscht werden.
+
+Bei Erstellung eines neuen Projektes werden folgende Daten benötigt:
+Projektname, Verantwortlicher, Thema.
+Die Farbe sowie das Abgabedatum können individuell angepasst werden.
+
+image::ProjektErstellenDateneingabe.jpg[]
+image::ProjektErstellenDatum.jpg[]
+
+Wurde das Projekt erfolgreich angelegt, erscheint eine Bestätigung im oberen Rand.
+
+image::ProjektErstellenErfolgreich.jpg[]
+
+Soll ein Projekt gelöscht werden, wählt man diesen in der Übersicht aus.
+
+image::ProjektLöschen.jpg[]
+
+Bevor das Projekt endgültig gelöscht wird ist eine erneute Bestätigung notwendig. Hier kann der Vorgang bei Bedarf noch abgebrochen werden.
+
+image::ProjektLöschenBestätigen.jpg[]
+
+Wurde das Projekt aus dem System entfernt, erscheint folgende Meldung:
+
+image::ProjektLöschenErfolgreich.jpg[]
+
+=== Allgemeine Informationen
+
+Über das Minus und Plus am unteren Rand kann die aktuelle oder vergangene Kalenderwoche ausgewählt werden. Auch hier ist die Bearbeitung, wie oben beschrieben, möglich.
+
+
+
+
