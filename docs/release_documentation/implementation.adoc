@@ -1,7 +1,6 @@
-//AKTUELL SIND ES NUR STICHPUNKTE/GEDANKENSTÜTZEN WAS HIER BEHANDELT WERDEN SOLL
-
+//die zeitformen sind ziemlich "unpräzise" und wechseln oft (keine ahnung welche man verwenden muss)
 //Problem: aufgaben wurden erstellt und vergeben dann wurden die zwar angefangen zu bearbeiten aber nicht beendet
-
+//darauf achten das immer benutzer anstatt mitarbeiter genutzt wurde (wurde ziemlich oft nicht beachtet)
 //weiterhin haben wir/ich bei den programmieraufgaben im Iterationsplan oft "weitere funktionen" geschrieben, aber nicht was genau getan wurde
 //das kann zwar mithilfe der issues etwas nachverfolgt werden, aber auch nicht perfekt, da die manchmal erstellt aber nicht assignet wurden 
 
@@ -12,6 +11,7 @@
 
 Iteration 9 (23.03.22 - 28.03.22)war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
+Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr belegt.
 Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
 //risiko 
 
@@ -65,6 +65,9 @@ Bei der Erstellung soll die Abteilung des Mitarbeiters aus einem Dropdown-Menü 
 
 Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte.
 
+Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor Inne hatte.
+
+
 == Iteration 10  
 29.03.22 - 04.04.22
 //wo sind hier die aufgaben, als ob nichts neues begonnen wurden ist
@@ -77,6 +80,10 @@ Mehr Dummy-Daten für Project und Project_User #42 -> assigned aber nie begonnen
 Fortgeführt: 
 Beleg korrigieren #29
 Mitarbeiter hinzufügen Passwortkriterien #36
+
+=== Dokumentation
+
+Risikoliste erweitert. Dokumente aktuell gehalten (auch wenn es evtl. nichts neues gab??)
 
 === Implementation
 
@@ -114,42 +121,50 @@ Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen N
 
 Dieses Mal konnten die Dummy-Daten eingefügt werden.
 
-== Iteration12 12.04.22-25.04.22
-In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht wissen" nicht weiter bzw. langsam vorankommen (risiko)
+== Iteration 12 12.04.22-25.04.22
+In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko)
+
 Unsere Ziele für I12 waren: 
 Neubegonnen: 
     Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
     Projekterstellungsseite Frontend+Backend #32
     Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an carl
     API: Aktuelle Kalenderwoche #43 -> fertig
-    Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht 
+    Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht      
     Neues Mitglied Vinh einführen
 Fortgeführt:
+
+Projekterstellungsseite Frontend+Backend #32
+
 === Dokumentation
 
 Da der Beleg aktuell war, musste bloß unser neues Mitglied Vinh Nguyen in die Dokumentation eingetragen und darin geschult werden, damit er damit umgehen kann.
 
+Risikoliste erweitert
+
 === Implementation
 
+UC 01
+Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten anzeigen kann. #43
+
 UC 04
-Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. 
-Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
+Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
 
+Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen und entzogen werden kann. Dies wurde ebenfalls angefangen, jedoch nicht beendet. #45
 
-
-=== Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren
-
-Der Mitarbeiter kann in der Kalenderübersicht sich an für jeden Tag ein bzw. mehrere Projekt(e) anlegen. Dies ging zuvor mit auch mit ungültigen Namen. Dies sollte nicht mehr möglich sein. Die Aufgabe wurde in dieser Iteration abgeschlossen
 
 
 
 === Entscheidung: 
+
 Die Iterationszeit wurde auf 2 Wochen erhöht und daher sollten die Meetings auch bloß aller zwei Wochen stattfinden.
 Von dieser Maßnahme wurde sich eine erhöhte Produktivität versprochen. Ob dies gelungen war, wollten wir in maximal zwei Iterationen entscheiden. 
 
-Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar kleine Sachen zu fragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
+Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeiten zu erfragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
 
 Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
+
+
 
 == Iteration 13 26.04.22-09.05.22
 Unsere Ziele für I13 waren: 
@@ -163,25 +178,34 @@ Fortgeführt:
 Mehr Dummy-Daten für Project und Project_User #42 -> fertig
 Projektverwaltungsseite #45 -> fertig 
 
+=== Dokumentation 
+
+Die Risikoliste wurde erneut im einen Eintrag erweitert. Herr Nguyen hatte ein neues Tool verwendet, was ihm eigentlich Arbeit abnehmen sollte. Jedoch hatte dieses einen ungewollten Effekt, welcher am Ende mehr Arbeit war, da das bearbeitete Dokument manuell wieder auf seinen Ursprünglichen Zustand gebracht werden musste. 
+
+
 === Implementation
 
-Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet wurden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können.
-Es konnten jedoch nicht alle API-Funktionen beendet werden, diese (#52) wurde dann in der nächsten beendet. 
-//stimmt das so oder sind die api's bereits eine funktion
+UC 01
+Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet wurden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können. #52 # 53 #49???
+Es konnten jedoch nicht alle API-Funktionen beendet werden. (#52)  
+//stimmt das so oder sind die api's bereits eine funktion?
 
 Um die Arbeit zu erleichtern wurde Dummy-Stati eingefügt und die Dummy-Projekte aus der letzten Iteration wurden fertiggestellt. (#48 & #42)
-Ebenso wurde die Projektverwaltungsseite beendet. #45
-//bild
 
+//bild
+UC 04
+Die Arbeiten am UC04 aus der vorherigen Iteration konnten abgeschlossen werden. #42 #45
 
 === Entscheidung
+
 Wir haben uns mit der Produktivität, die wir uns durch die zwei wöchige Iteration erhofft haben, nicht verbessert. Wir gaben diesem Versuch noch eine Iteration, wenn es dann nicht besser wird, gehen wir wie geplant wieder auf sieben Tage pro Iterationzurück.
 
-Herr Keil und Frau Tartz waren immer noch krank, daher sollte her Kemter bei beiden Nachfragen, was Stand der Dinge ist. außerdem war sollte herr kemter, bei frau tartz und herr keil nachfragen, ob diese bald wiederkommen und diese krankheit schonmal herrn anke mitteilen -> was da als antwort kam noch formulieren
+Herr Keil und Frau Tartz waren immer noch krank, daher sollte Herr Kemter bei beiden Nachfragen, was Stand der Dinge ist. Frau Tartz konnte wenige Tage wieder mitarbeiten. Herr Keil war aufjeden Fall noch weitere Wochen krank. Daher teilten wir diese schlechte Neuigkeit
+herrn anke mitteilen -> was da als antwort kam noch formulieren
 
+Aufgrund des Softwarevorfalls bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
 
-
-I14 10.05.22-16.05.22
+=== I14 10.05.22-16.05.22
 
 Unsere Ziele für I14 waren: 
 Neubegonnen:  Status anzeigen #51 -> keine ahnung was da los war
@@ -195,18 +219,29 @@ Fortgeführt:
 API: Einfügen eines neuen Status #52 -> fertig
 
 
-entscheidung: da schon lange nicht mehr mit herrn liebert gesprochen, wurde ein meeting geplant, was in der nächsten iteration stattfand
+=== Entscheidung
 
-es wurde entschieden (hauptsächlich von niclas), dass wir pull requests verwenden, damit die änderungen das machen was sie machen sollen und man direkt verbesserungen anmerken kann
+Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und es daher keinen Grund gab ihn zu treffen. Einem Monat vor Projektabgabe und mit voranschreiteten Funktionen entschieden wir uns ein Meeting mit ihm zu verabreden. Das Meeting fand in der folgenden Woche statt.
+
+Herr Werner hat den Vorschlag gebracht, dass wir Pull-Request verwenden sollten. Dies würde unsere Qualitätssicherung verbessern und Verbesserung an den Commits könnten besser kommuniziert werden. Wir verliesen uns hier auf seine Erfahrung, da er in dem Bereich bereits eine Ausbildung hatte und uns seine Gründe sinnvoll erschienen. 
+//stimmt das mit der ausbildung? :D
+
+Die probierte Iterationszeit von zwei Wochen hat uns in dieser Iteration nicht überzeugt. Daher haben wir wie vorher besprochen die Zeit wieder auf eine Woche herabgesetzt. 
 
 //ist das eine entscheidung oder eher problem?
-wir haben nicht genug skill und zeit unit tests einzuführen. niclas hat daher noch was bei den automatische tests bei den pull requests eingefügt, dass bestimmte fehler erkennen kann 
-// war das in der iteration oder davor
+=== Problem
+Wir hatten weder die Erfahrung noch die Zeit unseren Code mit Unit-Tests zu testen, da wir zu dem Zeitpunkt trotz unseren Fortschritts noch zu wenig Funktionen realisiert haben.
+Da wir natürlichen wissen, dass Testen wichtig ist, hat Frau Tartz manuelle Test durchgeführt. Außerdem wurde auf erneuten Rat von Herrn Werner statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren unseren Code auf unbenutzte Variabeln und Codestücke, außerdem auf unsichere Funktionen
+//stimmt das so?
+//war das in der iteration oder davor?? da #58 dies vermuten lässt
+//und das sollte glaube nochmal positiver/anders formuliert werden
 
 
-I15 17.05.22-23.5.22
+== Iteration 15 
+17.05.22-23.5.22
 
 Unsere Ziele für I15 waren: 
+//gefühlt hat bloß vinh hier was erledigt
 Neubegonnen: Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
 Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer bug mit montags und fehler konnte erst nicht behoben werden -> wurde dann aber anscheind behoben
 
@@ -214,17 +249,30 @@ CSS: Projektverwaltung #70 -> wurde von TS gefordert und wurde angefangen und im
 Status hinzufügen #71 -> nicht beendet da schwieriger als erwartet für vinh. wurde aber nicht weitergeführt, da es ein anderes issue erst beendet werden sollte, damit dies zufrieden fertig gestellt wird ????? oder vinh hat einfach das andere fertig gemacht, damit dieses ging
 Fortgeführt:
 
+=== Feedback vom Themensteller
 
-I16 24.05.22-30.05.2022 
+Herr Liebert war generell zufrieden mit unserem Fortschritt. 
+Er forderte, dass nach der Erstellung des Mitarbeiters und eines Projektes eine Bestätigung der Aktivität angezeigt wird und die Seite wieder zurück auf die Kalenderansicht wechselt. Außerdem merkte er an, dass das Design noch zu wünschen übrig lies. Diese Anmerkungen setzten wir als Issues für die kommenden Iteration an.
+
+=== Implementation
+
+Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und wurden über die nächsten Iterationen fortgeführt. Das Ziel war eine bessere Darstellung der Inhalte. Zuvor waren diese z.T. hochkant dargestellt, was nicht besonders Gut aussah. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein Verbessertes Feedback gegeben werden, was anklickbar ist. 
+
+== Iteration 16 
+24.05.22-30.05.2022 
 
 Unsere Ziele für I16 waren: 
 Projekt erstellen Fehlerbehandlung #68 -> fertig 
 Neubegonnen: Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
 Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
+Wechsel der Wochenansicht #66
 
-Entscheidungen: da Jonas keil immer noch nicht da war, haben wir entschieden dies nochmal an herrn anke zu schreiben und ihm mitzuteilen, das wir gegen eine benotung vom ihm sind. herr keil hat sich in der woche zuvor selbstständig abgemeldet
+=== Entscheidung
+Herr Keil war immer noch Krank. Daher haben wir entschieden diesen Sachverhalt nochmal an Herrn Prof. Anke zu schreiben und ihm mitzuteilen, das wir gegen eine benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Prof. Anke erfuhren wir, dass sich Herr Keil bereits in der woche zuvor selbstständig abgemeldet hatte.
+//war das hier auch mit der differenzierten bewertung besprochen wurden?
 
-I17 31.05.22-06.06.22 
+== Iteration 17 
+31.05.22-06.06.22 
 
 Unsere Ziele für I17 waren: 
 Neubegonnen: Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von niclas in nächster iteration beendet. muss beendet werden, da von ts im gespräch gefordert
@@ -234,8 +282,8 @@ Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei 
 Projektverwaltung: Projekte löschen #94 -> agenommen von vinh, aber nicht angefangen. 
 Fortgeführt: 
 
-I18
-
+== Iteration 18
+09.06.2022-13.06.2022
 Unsere Ziele für I17 waren: 
 Neubegonnen:
 Login einfügen #91 -> erst vitali, aber dann niclas fertig gemacht
@@ -253,6 +301,7 @@ Projektbericht #116  -> soll angefangen werden und später fortgeführt
 
 von mittwoch und nicht montag, wegen feiertag
 
+doku: riskliste mit lust
 
 entscheidung: beim 3 mann teammeeting entschieden wir, dass viele geplante programmier issues erstmal keine rolle mehr spielten. grundlegend dafür waren noch 2 wochen bis zur anwenderübergabe -> bloß noch die gewollten änderungen (die bereits davor gemacht werden sollten) und aus unserer sicht die sinnvollsten weitere funktion, wie login und mitarbeiter/projekt löschen
 herr kemter wollte herr zirkelbach eh nochmal wegen den projektbericht etwas fragen und hat sich daher noch über weitere aspekte des projekts unterhalten. als folge darauf gab es eine umplanung, der getroffenen entscheidung vom vortag: vitali, justus und carl fingen die test, betriebs, und entwicklerdoku an. vinh übernimmt design anhand der telekomseite und niclas übernimmt die erfolgsmeldungen und login, falls zeit, macht er noch mehr   
