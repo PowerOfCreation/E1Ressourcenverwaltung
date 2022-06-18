@@ -61,7 +61,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="6" align="center">
+                            <td colspan="6" allign="center">
                                 <button onclick="changeCalendarWeek('-')">-</button>
                                 <button onclick="changeCalendarWeek('+')">+</button>
                             </td>
