@@ -54,7 +54,7 @@ Die Software wird mit einem Default-Benutzerkonto mitgeliefert:
 
 `Passwort: 12345678!`
 
-Nach dem ersten Login soll ein eigenes Benutzerkonto erstellt werden und der Testnutzer gelöscht. Falls alle Benutzerkonten gelöscht werden, wird automatisch das Konto "Testnutzer" wieder angelegt. Somit besteht immer die Möglichkeit, sich in der Anwendung anzumelden. 
+Nach dem ersten Login soll ein eigenes Benutzerkonto erstellt und der Testnutzer gelöscht werden. Falls alle Benutzerkonten gelöscht werden, wird automatisch das Konto "Testnutzer" wieder angelegt. Somit besteht immer die Möglichkeit, sich in der Anwendung anzumelden. 
 
 Die Software soll aus Sicherheitsgründen ausschließlich im Intranet verwendet werden, weil Daten nicht verschlüsselt übertragen werden und es eine Gefahr von Man-in-the-Middle-Attack besteht. Für die Nutzung im Internet soll ein SSL-Zertifikat erstellt werden. 
 
