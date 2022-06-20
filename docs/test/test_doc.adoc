@@ -33,11 +33,11 @@
 |===
 | Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
 
-| Abfragen Owner-Projekt | Datenbanklogik ist geladen | "projectId":"1" | automatischer POST-Aufruf project\employeed mit JSON-String | Rückgabewerte userId': 1, 'userName': 'Ehrenpflaume (Wiedergabe Project-Owner)
-| Ungültige Abfrage User | Datenbanklogik ist geladen | "userIds":[1]; projectIds":"1"; projectIds":"0"; projectIds":"-1"; keine Daten | automatischer POST-Aufruf project\employeed mit JSON-String | status_code == 500 (Mitarbeiterdaten können nicht gefunden werden)
-| Anlegen User | Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer PUT-Aufruf project\employeed mit JSON-String | status_code == 200 (Anlegen Mitarbeiter im Projekt möglich)
-| Löschen User | Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer DELETE-Aufruf project\employeed mit JSON-String | status_code == 200 (Löschen Mitarbeiter im Projekt möglich)
-| Ungültige Angaben zum Löschen User | Datenbanklogik ist geladen | "projectId":"1" | automatischer PUT- und DELETE-Aufruf project\employeed mit JSON-String | status_code == 500 (Anlegen und Löschen Mitarbeiter ohne Projektangabe nicht möglich)
+| Abfragen Owner-Projekt | Datenbanklogik ist geladen | "projectId":"1" | automatischer POST-Aufruf project\employees mit JSON-String | Rückgabewerte userId': 1, 'userName': 'Ehrenpflaume (Wiedergabe Project-Owner)
+| Ungültige Abfrage User | Datenbanklogik ist geladen | "userIds":[1]; projectIds":"1"; projectIds":"0"; projectIds":"-1"; keine Daten | automatischer POST-Aufruf project\employees mit JSON-String | status_code == 500 (Mitarbeiterdaten können nicht gefunden werden)
+| Anlegen User | Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer PUT-Aufruf project\employees mit JSON-String | status_code == 200 (Anlegen Mitarbeiter im Projekt möglich)
+| Löschen User | Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer DELETE-Aufruf project\employees mit JSON-String | status_code == 200 (Löschen Mitarbeiter im Projekt möglich)
+| Ungültige Angaben zum Löschen User | Datenbanklogik ist geladen | "projectId":"1" | automatischer PUT- und DELETE-Aufruf project\employees mit JSON-String | status_code == 500 (Anlegen und Löschen Mitarbeiter ohne Projektangabe nicht möglich)
 
 |===
 
