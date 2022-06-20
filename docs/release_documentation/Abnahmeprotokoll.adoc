@@ -1,0 +1,101 @@
+= Abnahmeprotokoll <E1 Ressourcenverwaltung>
+:icons: font
+:lang: de
+//:sectnums: short
+
+//:source-highlighter: highlightjs
+//:imagesdir: img
+//Platzhalter für weitere Dokumenten-Attribute
+
+//Autor: {author}, Version {revnumber}, {revdate}
+== Projektangaben
+Thema: Eine Kalenderanwendung zum darstellen von Projekten 
+
+Zeitraum: 29.11.2021 - 30.01.2022 und 23.03.2022 - 08.07.2022
+
+//abgabe der anwendnung ist ja eig eher und braucht man die pause?
+
+GitHub Repository: https://github.com/PowerOfCreation/E1Ressourcenverwaltung
+
+
+== Abnahmedokumentation 
+=== Abnahme
+Datum: 22.06.2022
+
+Zeit: 16.30 Uhr
+
+Abnahmeumgebung: Online in Discord
+
+=== Lieferumfang
+
+* Software in folgender Form:
+* Benutzeranleitung
+* Betriebsanleitung
+* Anforderungsspezifikation
+* Entwicklerdokumentation
+* Testdokumentation
+
+=== Funktionalität
+[cols="4,1,5"]
+|===
+|Use Case / Szenario | erfüllt | Anmerkung
+
+|UC1 / Sc1
+| ja/nein
+|...
+|UC1 / Sc2
+| ja/nein
+|...
+
+|===
+
+===  Systemweite Anforderungen
+[cols="4,1,5"]
+|===
+|Anforderung | erfüllt | Anmerkung
+
+|SWFA-1: Alle Daten (Benutzer und Projekt) sollen persistent gespeichert werden.
+| ja
+|...
+|SWFA-2: Jeder Benutzer darf alle Daten bearbeiten.
+|nein
+|Keine der implementierte Funktion lässt Daten verändern.
+|SWFA-3: Das System muss die eingegeben Daten korrekt und vollständig in die Datenbank übermitteln.
+|ja
+|...
+|NFAU-1: Der Benutzer kommt, nachdem er angemeldet ist, mit maximal 2 Klicks in die Funktionsmaske hinein, wo er die Funktion ausführen kann.
+|ja
+|...
+|NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
+|ja
+|...
+|NFAR-1: Es darf kein falscher Kundenname oder falsches Passwort angegeben werden.
+|ja
+|...
+|NFAR-2: Die E-Mail-Adresse darf nur in einem gültigen Format eingegeben werden.
+|ja
+|...
+|NFAR-3: Es dürfen keine fehlerhafte Eingaben akzeptiert werden. Auf diese falschen Eingaben muss reagiert werden.
+|ja
+|...
+|NFAP-1: Das Aufrufen von neuen Seiten und das Speichern/Abschicken von Daten soll eine Geschwindigkeit 0,3 Sekunden haben.
+|ja
+|...
+|fehlen die anderen anforderungen?
+|
+|
+|===
+
+== Unterschriften
+
+Hiermit wird die Abnahme vollständig / mit Mängeln bestätigt.
+
+Bemerkungen:
+
+[cols="1,1"]
+|===
+|> 
+|>
+|Unterschrift Themensteller*in
+|Unterschrift Projektleiter*in
+|===
