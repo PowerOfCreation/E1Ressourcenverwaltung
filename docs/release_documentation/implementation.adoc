@@ -12,7 +12,7 @@ Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neu
 
 == I09
 
-Iteration 9 (23.03.22 - 28.03.22)war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
+Iteration 9 (23.03.22 - 28.03.22) war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
 Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr belegt.
 Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
@@ -39,7 +39,7 @@ Neubegonnen:
 
 === Dokumentation
 
-Wie bereits geschrieben, hat Herr Anke hat unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
+Wie bereits geschrieben, hat Herr Anke unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
 Manche Fehler waren schlechter Ausdruck oder es es fehlten Kleinigkeiten bei sonst korrektem Inhalt. Dies konnte schnell behoben werden. 
 
 Die schwerwiegerenden Fehler waren die komplett falsche "logische Sicht". Dort wurde mit einem C4-Modell gerechnet, welches wir jedoch nicht hatten. Daher musste dieses von Grund auf erstellt werden. Da das Back-End zu dem Zeitpunkt noch nicht komplett fertig war, wurden erst einmal die beiden oberen Sichten angefertigt. Eventuelle weitere Sichten sollten möglicherweise im weiterem Verlauf des Projekts folgen. 
@@ -53,6 +53,7 @@ Außerdem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgab
 Die Datenbank musste aktualisiert werden, damit weitere Funktionen realisiert werden können.
 Die beiden Aufgaben konnten ohne Probleme beendet werden. (#34 und #38)
 
+
 UC3
 Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Da wir keine Button ohne direkt geplante Funktion haben wollte, wurde der Lösch- und Bearbeitungsbutton nicht umgesetzt und war daher für später geplant. (#39)
 //bild einfügen
@@ -64,9 +65,11 @@ Da das RegEx und der zugehörige PHP-Code nicht besonders einfach ist und dieses
 //stimmt das so?
 Bei der Erstellung soll die Abteilung des Mitarbeiters aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
 
-=== Entscheidungen:
+=== Problem
 
 Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte.
+
+=== Entscheidungen:
 
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor Inne hatte.
 
@@ -124,11 +127,13 @@ Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen N
 
 Dieses Mal konnten die Dummy-Daten eingefügt werden.
 
-=== Problem + Lösung
-Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit wurde von weiteren Maßnahmen abgesehen.
+=== Problem 
+
+Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit wurde von weiteren Maßnahmen abgesehen. 
 
 == Iteration 12 12.04.22-25.04.22
 In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko)
+moral ++
 
 Unsere Ziele für I12 waren: 
 Neubegonnen: 
@@ -161,11 +166,18 @@ Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen u
 === Entscheidung: 
 
 Um die Produktivität zu erhöhen wurd die Iterationszeit auf 2 Wochen erhöht. Daher sollten die Meetings ebenfalls aller zwei Wochen stattfinden.
-Ob dies die gewünschte Veränderung mit sich brachte, sollte innerhalb von 2 Iterationen überprüft werden.
+Ob dies die gewünschte Veränderung mit sich brachte, sollte innerhalb von zwei Iterationen überprüft werden.
+
+
+//den absatz in problem und dann entscheidung auseinandernehmen
 
 Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeiten zu erfragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
 
 Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
+
+=== Problem 
+
+Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 
 == Iteration 13 26.04.22-09.05.22
 Unsere Ziele für I13 waren: 
@@ -205,13 +217,14 @@ Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt 
 Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde.
 Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
-Aufgrund des Softwarevorfalls bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
+
+Aufgrund des, in "Dokumentation" beschrieben Vorfalls in dieser Iteration,  Softwarevorfalls bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
+
 
 === I14 10.05.22-16.05.22
 
 Unsere Ziele für I14 waren: 
 Neubegonnen:  Status anzeigen #51 -> keine ahnung was da los war
-Projekt erstellen in User_Project übernehmen #55 -> bisher noch nicht fertig. was da los? anscheinend, sollte erst einmal ein anderes issue fertig sein und deswegen nicht weiter bearbeitet
 Verbleibende Fehler von Psalm beheben #58 -> am letzten tag assigned und dann fertig gestellt
 Dummy Daten für Status falsche Wochentage #61 -> fertig
 Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten probleme aufgeben, außer fehlermeldung bei "projekt erstellen"
@@ -223,16 +236,19 @@ API: Einfügen eines neuen Status #52 -> fertig
 
 === Entscheidung
 
-Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und es daher keinen Grund gab ihn zu treffen. Einem Monat vor Projektabgabe und mit voranschreiteten Funktionen entschieden wir uns ein Meeting mit ihm zu verabreden. Das Meeting fand in der folgenden Woche statt.
+Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und es daher keinen Grund gab ihn zu treffen. Einem Monat vor Projektabgabe und mit voranschreiteten Funktionen entschieden wir uns ein Meeting mit ihm zu verabreden. Außerdem sollte besprochen werden, wie die Übergabe und installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting fand in der folgenden Woche statt.
 
-Wir führten Pull-Requests ein. Dies Vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserung erstellter Commits.
+Wir führten Pull-Requests ein. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserung erstellter Commits.
 
 Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurden die folgenden Interationen wieder auf eine Woche verkürzt.
 
+Da immer weniger an der Dokumentation zu erledigen war, wurde Herr Kemter in HTML und CSS fortgebildet, um bei späteren Aufgaben zu helfen.
+
 //ist das eine entscheidung oder eher problem?
 === Problem
+
 Wir hatten bisher weder die Erfahrung noch die Zeit Unit-Tests durchzuführen. 
-Daher wurde Frau Tartz damit beauftragt manuelle Test durchzuführen. Außerdem wurden statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren den Code auf unbenutzte Variabeln und Codestücke sowie auf unsichere Funktionen.
+Daher wurde Frau Tartz damit beauftragt manuelle Tests durchzuführen. Außerdem wurden statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren den Code auf unbenutzte Variabeln und Codestücke sowie auf unsichere Funktionen.
 //stimmt das so?
 //war das in der iteration oder davor?? da #58 dies vermuten lässt
 //und das sollte glaube nochmal positiver/anders formuliert werden
@@ -254,13 +270,21 @@ Fortgeführt:
 
 Herr Liebert war generell zufrieden mit unserem Fortschritt. 
 Er forderte, dass nach der Erstellung eines Mitarbeiters oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
+Die Übergabe wurde auf den 22.06. festgelegt. 
+Herr Liebert möchte nicht, dass wir die Anwendung davor auf den Systemen von T-System MMS testen, da er meint, dass das wegen Docker kein Problem darstellen wird. Wir finden diese Entscheidung nicht Gut und werden ihn zu einem späteren noch einmal darauf ansprechen und dies auch schriftlich festhalten. 
+
 
 === Implementation
 
-Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und über die nächsten Iterationen fortgeführt. Das Ziel war eine bessere Darstellung der Inhalte. Zuvor wurden diese z.T. hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. 
+//sind das nicht quasi alle use cases?
+Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und über die nächsten Iterationen fortgeführt. Das Ziel war eine bessere Darstellung der Inhalte. Zuvor wurden diese z.T. hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist.
 
-=== Problem + Lösung
-Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
+
+UC 01
+
+Für den Use-Cas 01 fehlte noch ein elementares Feature. Was ist eine Kalenderanwendung, wenn es nicht möglich ist, dass die Wochen gewechselt werden können? Daher sollte dies realisiert werden. Leider wurde es diese Iteration nicht beendet.
+//fehlt noch mehr
+
 
 == Iteration 16 
 24.05.22-30.05.2022 
@@ -272,8 +296,9 @@ Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
 Wechsel der Wochenansicht #66
 
 === Entscheidung
-Herr Keil war immernoch unabkömmlich. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
-Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. 
+Herr Keil war immernoch unabkömmlich. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
+
+Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. Wie extrem unsere Empfehlungen dafür ausfallen werden, sollte daran bemessen werden wie diese Teammitglieder in den restlichen Wochen sich am Projekt beteiligen werden.
 //war das hier auch mit der differenzierten bewertung besprochen wurden?
 
 == Iteration 17 
@@ -289,10 +314,14 @@ Fortgeführt:
 
 == Iteration 18
 09.06.2022-13.06.2022
+
+Aufgrund der Feiertage fand unser Teammeeting und Iteration von Mittwoch bis Montag statt. 
+
 Unsere Ziele für I17 waren: 
 Neubegonnen:
 Login einfügen #91 -> erst vitali, aber dann niclas fertig gemacht
 Fix: Replace is_int with ctype_digit #96 -> fertig
+Projektbericht
 Fortgeführt: Erfolgsmeldung #83 -> von niclas beendet
 Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
 Projekte löschen #94 -> erstmal nicht fortgeführt, aber wenn zeit von niclas/vinh 
@@ -308,36 +337,63 @@ von mittwoch und nicht montag, wegen feiertag
 
 doku: riskliste mit lust
 
-entscheidung: beim 3 mann teammeeting entschieden wir, dass viele geplante programmier issues erstmal keine rolle mehr spielten. grundlegend dafür waren noch 2 wochen bis zur anwenderübergabe -> bloß noch die gewollten änderungen (die bereits davor gemacht werden sollten) und aus unserer sicht die sinnvollsten weitere funktion, wie login und mitarbeiter/projekt löschen
-herr kemter wollte herr zirkelbach eh nochmal wegen den projektbericht etwas fragen und hat sich daher noch über weitere aspekte des projekts unterhalten. als folge darauf gab es eine umplanung, der getroffenen entscheidung vom vortag: vitali, justus und carl fingen die test, betriebs, und entwicklerdoku an. vinh übernimmt design anhand der telekomseite und niclas übernimmt die erfolgsmeldungen und login, falls zeit, macht er noch mehr   
-all das sollte bis montag geschehen
+=== Problem und Entscheidung
 
-einige angelegte issues sollten eig vergeben werden, jedoch wurde sich am mittwoch dagegen entschieden diese in dem moment zu vergeben
+Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwenderabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmierissues bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe sollte dann für Dokumentation und andere Dokumente verwendet werden. 
+Da noch nicht alle kleinen aber doch wichtigen Features, die durch Herrn Liebert gefordert wurden, zum Meeting abgeschlossen waren, sollten diese erledigt werden. Wenn mehr geschafft wird, dann kann noch mehr erledigt werden.
 
-
-restliche zeit sollte mit github projekten besser organisiert werden 
-
-
-kleines krisenmeeting, da noch 2 wochen übrig, aber anwendung noch doku fertig 
-entscheidung -> noch wenige elementare features erfüllen und die letzte woche für doku verwenden
-    am 9.6. nochmal kurz mit herrn anke/zirkelbach reden
+Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind.
+Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Diese Empfehlung folgten wir.
 
 
-I19
+Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei an den Seiten von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt. 
+
+Die restlichen Iterationen sollten nun nochmal besser mit GitHub Projekten verwaltet werden.
+
+=== Dokumentation
+
+Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellen Beispiele eine gute Grundlage. Schließendlich entschied er sich für eine Nennung der neu angefangenen und fortgeführten Issues. Ob dies noch einmal geändert wird steht noch offen. Weiterhin wird er in einzelnen Abschnitten die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschreiben.
+
+//herr kemter wollte herr zirkelbach eh nochmal wegen den projektbericht etwas fragen und hat sich daher noch über weitere aspekte des projekts unterhalten. als folge darauf gab es eine umplanung, der getroffenen entscheidung vom vortag: vitali, justus und carl fingen die test, betriebs, und entwicklerdoku an. vinh übernimmt design anhand der telekomseite und niclas übernimmt die erfolgsmeldungen und login, falls zeit, macht er noch mehr   
+//all das sollte bis montag geschehen
+
+//einige angelegte issues sollten eig vergeben werden, jedoch wurde sich am mittwoch dagegen entschieden diese in dem moment zu vergeben
+
+
+//restliche zeit sollte mit github projekten besser organisiert werden 
+
+
+//kleines krisenmeeting, da noch 2 wochen übrig, aber anwendung noch doku fertig 
+//entscheidung -> noch wenige elementare features erfüllen und die letzte woche für doku verwenden
+//    am 9.6. nochmal kurz mit herrn anke/zirkelbach reden
+
+
+=== Iteration 19 
+14.6.2022 - 20.06.2022
 Unsere Ziele für I19 waren: 
 
 //wurden nochmal auf den aktuellen stand gebracht, was/wann abgeben werden muss und die bereits angefangenen doku kommentiert und fragen/probleme beantwortet
 Neubegonnen: Anwenderdoku (noch kein issue)
+programmier zeugs
 Fortgeführt: Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> da abgeben, soll es eig fertig sein
 Projektbericht #116 -> noch nicht fertig, da zu viel aufwand
 
+=== Dokumentation 
 
+Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration viel an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und verbessern der Test-, Betriebs- und Entwicklerdokumentation. Hier wurden gute Grundlagen gelegt, jedoch reichte es noch für die Abgabe aus. Daher wurden sie weiterverbessert. Die Anwenderdoku sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realsiiert werden, was Teile der Anwenderdokumentation sinnlos erscheint lässt.
+//Dreckssatz  
+Wie auch in den Wochen davor wurde sich auf den Projektbericht fokusiert. Diesen hat Herr Kemter den Inhalt erweitert und dann mit Herrn Beck auf Verständlichkeit und Inhalt korrigiert. 
+
+Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich einige Mitglieder weiterhin nicht in angemessenen Maße beteiligt haben.
 //entscheidung: es wurde nochmal besprochen, dass alle mit der differentizierten bewertung einverstanden sind
 //aleksandra war nicht da, aber entschieden, dass sie noch was machen soll oder wir schreiben nochmal an coach/anke, dass sie eigentlich auch wenig gemacht hat 
 
-I20
+== Iteration 20
 
-I21
+vortrag
+
+
+== Iteration 21
 
 
 
@@ -412,5 +468,4 @@ Wie wurde mit Problemen umgegangen? Haben die getroffenen Maßnahmen gewirkt?
 
 - iterationszeit erhöht, damit mehr gemacht wird -> nein, eher das gegenteil
 - Nick hat HTML/CSS gelernt und konnte dann etwas vom verbesserten Design erstellen 
-- niclas hat immer gesagt, dass man ihn eher fragen soll -> aber die anderen haben sich 
-nicht getraut / haben die aufgaben zu spät angefanen um zu fragen(?)
+- niclas hat immer gesagt, dass man ihn eher fragen soll -> aber die anderen haben sich nicht getraut / haben die aufgaben zu spät angefanen um zu fragen(?)
