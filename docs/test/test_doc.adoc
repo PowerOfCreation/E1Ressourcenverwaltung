@@ -10,6 +10,7 @@
 ** get_calendar_week.php
 * Integrationstests:
 ** "Frontend"
+*** besonders:
 *** registration.js
 *** registration\index.php
 *** database_structure.php
@@ -60,7 +61,8 @@
 === Integrationstests
 |===
 | Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
-| Zu kurzes Passwort | Programm läuft | password: PassW (| Bestehenden User Anlegen | Programm läuft | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Zu kurzes Passwort | Programm läuft | password: PassW | Manuelles Anlegen Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Bestehenden User Anlegen | Programm läuft | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Zu kurzer Name | Programm läuft | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Passwort falsch wiederholt | Programm läuft | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Abbrechen und zurück schickt keine Anfrage | Programm läuft | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an Backend übermittelt
