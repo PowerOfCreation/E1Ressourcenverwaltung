@@ -20,7 +20,7 @@ Die Anmeldung erfolgt im Intranet der T-Systems Multimedia Solutions GmbH.
 
 image::LoginNeu.jpg[]
 
-Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan-Übersicht. Diese zeigt die aktuelle Kalenderwoche sowie weitere Funktionen an.
+Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan-Übersicht. Diese zeigt die aktuelle Kalenderwoche, sowie weitere Funktionen an.
 
 === Mitarbeiter Erstellen ud Löschen
 Über den Button "Mitarbeiter hinzufügen" kann der Nutzer einen neuen Mitarbeiter anlegen.
@@ -73,17 +73,17 @@ image::StatusMitarbeiterLöschen.jpg[]
 In der Projektverwaltung können Projekte erstellt oder gelöscht werden.
 
 Bei Erstellung eines neuen Projektes werden folgende Daten benötigt:
-Projektname, Verantwortlicher, Thema.
-Die Farbe sowie das Abgabedatum können individuell angepasst werden.
+Projektname, Verantwortlicher und Thema.
+Die Farbe, sowie das Abgabedatum, können individuell angepasst werden.
 
 image::ProjektErstellenDateneingabe.jpg[]
 image::ProjektErstellenDatum.jpg[]
 
-Wurde das Projekt erfolgreich angelegt, erscheint eine Bestätigung im oberen Rand.
+Wurde das Projekt erfolgreich angelegt, erscheint eine Bestätigung am oberen Rand.
 
 image::ProjektErstellenErfolgreich.jpg[]
 
-Soll ein Projekt gelöscht werden, wählt man diesen in der Übersicht aus.
+Soll ein Projekt gelöscht werden, wählt man dieses in der Übersicht aus.
 
 image::ProjektLöschen.jpg[]
 
