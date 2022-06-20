@@ -19,16 +19,16 @@ Die Anmeldung erfolgt im Intranet der T-Systems Multimedia Solutions GmbH.
 
 image::LoginNeu.jpg[]
 
-Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan Übersicht. Diese zeigt die aktuelle Kalenderwoche sowie weitere Funktionen an.
+Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan-Übersicht. Diese zeigt die aktuelle Kalenderwoche sowie weitere Funktionen an.
 
 === Mitarbeiter Erstellen ud Löschen
 Über den Button "Mitarbeiter hinzufügen" kann der Nutzer einen neuen Mitarbeiter anlegen.
 
 image::MitarbeiterHinzufügen.jpg[]
 
-Bei der Dateneingabe kann ein Beliebiger Benutzername gewählt werden. 
-Ebenfalls erfolderlich sind folgende Angaben:
-Vorname, Nachname, Abteilung, Email Adresse und ein Passwort.
+Bei der Dateneingabe kann ein beliebiger Benutzername gewählt werden. 
+Ebenfalls erforderlich sind folgende Angaben:
+Vorname, Nachname, Abteilung, E-Mail-Adresse und ein Passwort.
 
 image::MitarbeiterDateneingabe.jpg[]
 
@@ -37,7 +37,7 @@ Erfüllt das gewählte Passwort nicht die Anforderungen, erscheint eine der folg
 image::FehlermeldungDateneingabe.jpg[]
 image::FehlermeldungDateneingabe2.jpg[]
 
-Nach erfolgreicher Dateneingabe bestätigt man den Vorgang mit dem Button "Benutzer Erstellen"
+Nach erfolgreicher Dateneingabe bestätigt man den Vorgang mit dem Button "Benutzer erstellen"
 
 image::BenutzerErstellen.jpg[]
 
@@ -47,7 +47,7 @@ image::BenutzerErstellenErfolgreich.jpg[]
 
 Zum Löschen eines Mitarbeiters klickt man auf den Namen. 
 Es öffnet sich eine Übersicht mit Informationen zum Namen und Abteilung.
-Über den Button "Mitarbeiter Löschen" wird der Mitarbeiter aus dem System entfernt. 
+Über den Button "Mitarbeiter löschen" wird der Mitarbeiter aus dem System entfernt. 
 
 image::MitarbeiterLöschen.jpg[]
 
@@ -69,7 +69,7 @@ image::StatusMitarbeiterLöschen.jpg[]
 
 === Projekt Verwaltung
 
-In der Projekt Verwaltung können Projekte erstellt oder gelöscht werden.
+In der Projektverwaltung können Projekte erstellt oder gelöscht werden.
 
 Bei Erstellung eines neuen Projektes werden folgende Daten benötigt:
 Projektname, Verantwortlicher, Thema.
@@ -86,7 +86,7 @@ Soll ein Projekt gelöscht werden, wählt man diesen in der Übersicht aus.
 
 image::ProjektLöschen.jpg[]
 
-Bevor das Projekt endgültig gelöscht wird ist eine erneute Bestätigung notwendig. Hier kann der Vorgang bei Bedarf noch abgebrochen werden.
+Bevor das Projekt endgültig gelöscht wird, ist eine erneute Bestätigung notwendig. Hier kann der Vorgang bei Bedarf noch abgebrochen werden.
 
 image::ProjektLöschenBestätigen.jpg[]
 
