@@ -2,15 +2,20 @@
 
 == Testkonzept
 === Testobjekte:
+* Statische Code-Analyse
+** Kompletter PHP- und Javascript-Code
 * Unittests: 
 ** project\employees
-* Funktionalitätstests:
+** registration_utility.php
+** get_calendar_week.php
+* Integrationstests:
 ** "Frontend"
 *** registration.js
 *** registration\index.php
 *** database_structure.php
 
 === Wie wurde getestet:
+* In der Statische Code-Analyse wird der komplette PHP-Code automatisch durch Psalm auf nichtverwendete Variablen und unsichere Mehtoden geprüft. Die ungenutzen, oder nicht definierten Variablen und klassische Programmierfehler in Javascript werden automatisch durch ESLint gesucht.
 * Die Hauptfunktionalitäten (Abfragen, Erstellen und Löschen) werden in Form von Unittest automatisiert durchgeführt
 * Alle Tests, die sich auf das ordnungsgemäße Funktionieren der Benutzeroberfläche beziehen (vorallem Absicherung von Fehlerfällen) können manuell, mit Benutzung des Systems getestet werden
 
@@ -24,27 +29,46 @@
 === Unittests
 
 |===
-| Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
+| Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
 
-| Datenbanklogik ist geladen | "projectId":"1" | automatischer POST-Aufruf project\employeed mit JSON-String | Rückgabewerte userId': 1, 'userName': 'Ehrenpflaume (Wiedergabe Project-Owner)
-| Datenbanklogik ist geladen | "userIds":[1]; projectIds":"1"; projectIds":"0"; projectIds":"-1"; keine Daten | automatischer POST-Aufruf project\employeed mit JSON-String | status_code == 500 (Mitarbeiterdaten können nicht gefunden werden)
-| Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer PUT-Aufruf project\employeed mit JSON-String | status_code == 200 (Anlegen Mitarbeiter im Projekt möglich)
-| Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer DELETE-Aufruf project\employeed mit JSON-String | status_code == 200 (Löschen Mitarbeiter im Projekt möglich)
-| Datenbanklogik ist geladen | "projectId":"1" | automatischer PUT- und DELETE-Aufruf project\employeed mit JSON-String | status_code == 500 (Anlegen und Löschen Mitarbeiter ohne Projektangabe nicht möglich) 
+| Abfragen Owner-Projekt | Datenbanklogik ist geladen | "projectId":"1" | automatischer POST-Aufruf project\employeed mit JSON-String | Rückgabewerte userId': 1, 'userName': 'Ehrenpflaume (Wiedergabe Project-Owner)
+| Ungültige Abfrage User | Datenbanklogik ist geladen | "userIds":[1]; projectIds":"1"; projectIds":"0"; projectIds":"-1"; keine Daten | automatischer POST-Aufruf project\employeed mit JSON-String | status_code == 500 (Mitarbeiterdaten können nicht gefunden werden)
+| Anlegen User | Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer PUT-Aufruf project\employeed mit JSON-String | status_code == 200 (Anlegen Mitarbeiter im Projekt möglich)
+| Löschen User | Datenbanklogik ist geladen | "projectId":"1", userIds":[2,3] | automatischer DELETE-Aufruf project\employeed mit JSON-String | status_code == 200 (Löschen Mitarbeiter im Projekt möglich)
+| Ungültige Angaben zum Löschen User | Datenbanklogik ist geladen | "projectId":"1" | automatischer PUT- und DELETE-Aufruf project\employeed mit JSON-String | status_code == 500 (Anlegen und Löschen Mitarbeiter ohne Projektangabe nicht möglich) 
 
 |===
 
-=== Funktionalitätstest
 |===
-| Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
+| Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
 
-| Programm läuft | password: PassW (<7 Zeichen) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Programm läuft | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Programm läuft | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Programm läuft | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Programm läuft | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an  Backend übermittelt
-| Programm läuft | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
-| Programm läuft | [Nicht jedes Feld ausgefüllt] | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, unvollständige Daten nicht an Backend, Wiederholbar
+| Anlegen zu kurzes Passwort | keine | 123456 | automatischer Aufruf mit String | Eine Fehlermeldung wir ausgegeben
+| Anlegen richtiges Passwort | keine | 123456asdASD | automatischer Aufruf mit String | Keine Fehlermeldung wird ausgegeben
+| Eingabe richtiges Passwort | Passwort erfolgreich angelegt | 123456asdASD | automatischer Aufruf mit String |  Check-Passwort erfolgreich
+
+
+|===
+
+|===
+| Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
+
+| Rückgabewert Kalenderwoche wie erwartet | keine | gleiches Jahr deutsches-; gleiches Jahr englisches Format | automatischer Vergleich Abruf Kalenderwoche mit richtigem Datum und richtigem Format | Daten stimmen überein
+| Rückgabewert Kalenderwoche wie erwartet falsch | keine | falsches Jahr deutsches-; falsches Jahr englisches Format | automatischer Vergleich Abruf Kalenderwoche mit falschem Datum und faschem Format | Daten stimmen nicht überein
+
+
+|===
+
+=== Integrationstests
+|===
+| Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
+
+| Zu kurzes Passwort | Programm läuft | password: PassW (<7 Zeichen) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Bestehenden User Anlegen | Programm läuft | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Zu kurzer Name | Programm läuft | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Passwort falsch wiederholt | Programm läuft | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Abbrechen und zurück schickt keine Anfrage | Programm läuft | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an  Backend übermittelt
+| Eingabe SQL-Injekcions | Programm läuft | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
+| Nicht alle Felder ausgeüllt, bei Anlegen User | Programm läuft | [Nicht jedes Feld ausgefüllt] | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, unvollständige Daten nicht an Backend, Wiederholbar
 
 |===
 
