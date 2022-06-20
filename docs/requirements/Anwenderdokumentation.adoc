@@ -8,7 +8,7 @@ Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Just
 == 1. Einführung
 Das Programm dient zur Verbesserung der wöchentlichen Ressourcenplanung und Projektverwaltung der Mitarbeiter bei T-Systems Multimedia Solutions GmbH.
 
-Die Koordinierung der Mitarbeiter und Ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte erfolgt in kalendarischer Darstellung.
+Die Koordinierung der Mitarbeiter und ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte erfolgt in kalendarischer Darstellung.
 Jedem Mitarbeiter können Projekte zugeteilt werden, ebenso ist der Mitarbeiterstatus ersichtlich.
 
 Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht werden.
@@ -17,6 +17,7 @@ Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und 
 
 === Login
 Die Anmeldung erfolgt im Intranet der T-Systems Multimedia Solutions GmbH.
+Hier geben Sie ihre persönlichen Login-Daten ein.
 
 image::LoginNeu.jpg[]
 
@@ -29,7 +30,7 @@ image::MitarbeiterHinzufügen.jpg[]
 
 Bei der Dateneingabe kann ein beliebiger Benutzername gewählt werden. 
 Ebenfalls erforderlich sind folgende Angaben:
-Vorname, Nachname, Abteilung, E-Mail-Adresse und ein Passwort.
+Vorname, Nachname, Abteilung, E-Mail-Adresse und ein Passwort. Das Passwort kann durch den Knopf "Passwort anzeigen" angezeigt werden, damit sichergegangen werden kann, dass das Passwort seinen Vorstellungen entspricht.
 
 image::MitarbeiterDateneingabe.jpg[]
 
