@@ -6,6 +6,9 @@
 
 = Projektdurchführung
 
+== Problem:
+Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
+Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
 == I09
 
@@ -121,6 +124,9 @@ Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen N
 
 Dieses Mal konnten die Dummy-Daten eingefügt werden.
 
+=== Problem + Lösung
+Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit wurde von weiteren Maßnahmen abgesehen.
+
 == Iteration 12 12.04.22-25.04.22
 In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko)
 
@@ -152,19 +158,14 @@ Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden 
 
 Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen und entzogen werden kann. Dies wurde ebenfalls angefangen, jedoch nicht beendet. #45
 
-
-
-
 === Entscheidung: 
 
-Die Iterationszeit wurde auf 2 Wochen erhöht und daher sollten die Meetings auch bloß aller zwei Wochen stattfinden.
-Von dieser Maßnahme wurde sich eine erhöhte Produktivität versprochen. Ob dies gelungen war, wollten wir in maximal zwei Iterationen entscheiden. 
+Um die Produktivität zu erhöhen wurd die Iterationszeit auf 2 Wochen erhöht. Daher sollten die Meetings ebenfalls aller zwei Wochen stattfinden.
+Ob dies die gewünschte Veränderung mit sich brachte, sollte innerhalb von 2 Iterationen überprüft werden.
 
 Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeiten zu erfragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
 
 Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
-
-
 
 == Iteration 13 26.04.22-09.05.22
 Unsere Ziele für I13 waren: 
@@ -198,10 +199,11 @@ Die Arbeiten am UC04 aus der vorherigen Iteration konnten abgeschlossen werden. 
 
 === Entscheidung
 
-Wir haben uns mit der Produktivität, die wir uns durch die zwei wöchige Iteration erhofft haben, nicht verbessert. Wir gaben diesem Versuch noch eine Iteration, wenn es dann nicht besser wird, gehen wir wie geplant wieder auf sieben Tage pro Iterationzurück.
+Bisher ist eine Verbesserung hinsichtlich der Produktivität nicht erkennbar. 
 
-Herr Keil und Frau Tartz waren immer noch krank, daher sollte Herr Kemter bei beiden Nachfragen, was Stand der Dinge ist. Frau Tartz konnte wenige Tage wieder mitarbeiten. Herr Keil war aufjeden Fall noch weitere Wochen krank. Daher teilten wir diese schlechte Neuigkeit
-herrn anke mitteilen -> was da als antwort kam noch formulieren
+Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt und das Team auch weiterhin nicht über den aktuellen Stand selbstständig in Kenntnis gesetzt. Daher war es Herr Kemters Aufgabe diese Informationen einzuholen.
+Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde.
+Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
 Aufgrund des Softwarevorfalls bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
 
@@ -223,15 +225,14 @@ API: Einfügen eines neuen Status #52 -> fertig
 
 Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und es daher keinen Grund gab ihn zu treffen. Einem Monat vor Projektabgabe und mit voranschreiteten Funktionen entschieden wir uns ein Meeting mit ihm zu verabreden. Das Meeting fand in der folgenden Woche statt.
 
-Herr Werner hat den Vorschlag gebracht, dass wir Pull-Request verwenden sollten. Dies würde unsere Qualitätssicherung verbessern und Verbesserung an den Commits könnten besser kommuniziert werden. Wir verliesen uns hier auf seine Erfahrung, da er in dem Bereich bereits eine Ausbildung hatte und uns seine Gründe sinnvoll erschienen. 
-//stimmt das mit der ausbildung? :D
+Wir führten Pull-Requests ein. Dies Vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserung erstellter Commits.
 
-Die probierte Iterationszeit von zwei Wochen hat uns in dieser Iteration nicht überzeugt. Daher haben wir wie vorher besprochen die Zeit wieder auf eine Woche herabgesetzt. 
+Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurden die folgenden Interationen wieder auf eine Woche verkürzt.
 
 //ist das eine entscheidung oder eher problem?
 === Problem
-Wir hatten weder die Erfahrung noch die Zeit unseren Code mit Unit-Tests zu testen, da wir zu dem Zeitpunkt trotz unseren Fortschritts noch zu wenig Funktionen realisiert haben.
-Da wir natürlichen wissen, dass Testen wichtig ist, hat Frau Tartz manuelle Test durchgeführt. Außerdem wurde auf erneuten Rat von Herrn Werner statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren unseren Code auf unbenutzte Variabeln und Codestücke, außerdem auf unsichere Funktionen
+Wir hatten bisher weder die Erfahrung noch die Zeit Unit-Tests durchzuführen. 
+Daher wurde Frau Tartz damit beauftragt manuelle Test durchzuführen. Außerdem wurden statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren den Code auf unbenutzte Variabeln und Codestücke sowie auf unsichere Funktionen.
 //stimmt das so?
 //war das in der iteration oder davor?? da #58 dies vermuten lässt
 //und das sollte glaube nochmal positiver/anders formuliert werden
@@ -252,11 +253,14 @@ Fortgeführt:
 === Feedback vom Themensteller
 
 Herr Liebert war generell zufrieden mit unserem Fortschritt. 
-Er forderte, dass nach der Erstellung des Mitarbeiters und eines Projektes eine Bestätigung der Aktivität angezeigt wird und die Seite wieder zurück auf die Kalenderansicht wechselt. Außerdem merkte er an, dass das Design noch zu wünschen übrig lies. Diese Anmerkungen setzten wir als Issues für die kommenden Iteration an.
+Er forderte, dass nach der Erstellung eines Mitarbeiters oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
 
 === Implementation
 
-Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und wurden über die nächsten Iterationen fortgeführt. Das Ziel war eine bessere Darstellung der Inhalte. Zuvor waren diese z.T. hochkant dargestellt, was nicht besonders Gut aussah. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein Verbessertes Feedback gegeben werden, was anklickbar ist. 
+Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und über die nächsten Iterationen fortgeführt. Das Ziel war eine bessere Darstellung der Inhalte. Zuvor wurden diese z.T. hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. 
+
+=== Problem + Lösung
+Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 
 == Iteration 16 
 24.05.22-30.05.2022 
@@ -268,7 +272,8 @@ Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
 Wechsel der Wochenansicht #66
 
 === Entscheidung
-Herr Keil war immer noch Krank. Daher haben wir entschieden diesen Sachverhalt nochmal an Herrn Prof. Anke zu schreiben und ihm mitzuteilen, das wir gegen eine benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Prof. Anke erfuhren wir, dass sich Herr Keil bereits in der woche zuvor selbstständig abgemeldet hatte.
+Herr Keil war immernoch unabkömmlich. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
+Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. 
 //war das hier auch mit der differenzierten bewertung besprochen wurden?
 
 == Iteration 17 
