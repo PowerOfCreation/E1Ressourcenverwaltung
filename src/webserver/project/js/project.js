@@ -7,7 +7,7 @@ $()
         $(".selected").removeClass("selected");
         showProject($(this).data("project-id"));
         $(this).addClass("selected");
-    })
+    });
 
     $(".user-checkbox").change(function () {
 
@@ -27,7 +27,9 @@ $()
                 data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`
             });
         }
-    })
+    });
+
+    showSuccessNotifications();
 }
 
 function deleteProject(projectId) {
@@ -84,4 +86,29 @@ function showProject(projectId) {
             });
         }
     });
+}
+
+function setNotification(message) {
+    const $notificationDiv = $("#notification-div");
+
+    $notificationDiv.removeClass("hidden");
+    $notificationDiv.text(message);
+    $notificationDiv.delay(5000).queue(function () {
+        $(this).hide();
+    });
+}
+
+function showSuccessNotifications() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const project = urlParams.get('created_project');
+
+    if (project) {
+        setNotification(`Projekt ${project} erfolgreich angelegt.`);
+
+        urlParams.delete("created_project");
+    }
+
+    window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 }

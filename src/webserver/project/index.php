@@ -21,7 +21,8 @@ require_once("/app/config/credentials.php");
 <body>
 	<main>
 		<h1>Projekt Verwaltung</h1>
-			<div id="content-container">                              
+		<div id="notification-div" class="hidden"></div>
+			<div id="content-container">
 				<div id="projects-container">	
 					<h2>Projekte:</h2>
 						<?php					

@@ -183,17 +183,11 @@ function showSuccessNotifications() {
     const urlParams = new URLSearchParams(queryString);
 
     const username = urlParams.get('registered_user');
-    const project = urlParams.get('created_project');
 
     if (username) {
         setNotification(`Nutzer ${username} erfolgreich angelegt.`);
 
         urlParams.delete("registered_user");
-    }
-    else if (project) {
-        setNotification(`Projekt ${project} erfolgreich angelegt.`);
-
-        urlParams.delete("created_project");
     }
 
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
