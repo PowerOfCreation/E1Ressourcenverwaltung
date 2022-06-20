@@ -25,7 +25,7 @@ Die Anwendung selbst war auch auch begonnen. Große Teile des Front-Ends waren a
 
 ===  Team und Rollen
 
-Unsere Rollen bzw. Verantwortlichkeiten wurden soweit wie es geht nach bereitsvorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche "leicht" zu erlernen waren und wo auch andere Mitglieder Verbesserungen hinzufügen konnten.
+Unsere Rollen bzw. Verantwortlichkeiten wurden soweit möglich nach bereits vorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche mit ihren bisherigen Stärken und Interessen die größte Schnittmenge haben. 
 
 Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zwischenzeitlich noch 7, da Frau Rubein Wirtschaftsingeneurin ist und damit Software Engineering II nicht mehr belegt. Jedoch bekam unser Team nach wenigen Wochen Herr Nguyen als Nachzügler in unser Team. Dieser hatte bereits Programmiererfahungen und bekam daher die Verantwortung der Implementation erhalten. Herr Keil musste leider im 2. Semester ebenfalls aus dem Projekt, wegen Krankheit, ausscheiden.
 
@@ -47,8 +47,8 @@ Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zw
 ===  Kommunikation und eingesetzte Tools
 
 Unsere interne Teamkommunikation ist größtenteils gleich wie im 1. Semester.
-Für unseren wöchenlichen Gruppentreffen am Montagsabend verwendeteten wir Disord, da es einfach zu benutzen war und wertvolle Funktionen hat, wie Bildschirmübertragung und ein File-Upload.
-Wir verwendeten WhatsApp mit einer Gruppe um schnelle Antworten für organisatorische Angelegenheiten zu erhalten. Discord und Whatsapp wurden auch verwendet, wenn Mitglieder zusammen an einer Aufgabe gearbeitet haben oder ein Hilfe bei einem Problem hatten.
+Für unseren wöchenlichen Gruppentreffen am Montagsabend verwendeteten wir Disord, da es einfach zu benutzen war und wertvolle Funktionen hat, wie Bildschirmübertragung und einen simplen File-Upload.
+Wir verwendeten zusätzlich WhatsApp, um schneller Antworten für organisatorische Angelegenheiten erhalten zu können. Discord und Whatsapp wurden auch verwendet, wenn Mitglieder zusammen an einer Aufgabe gearbeitet haben oder ein Hilfe bei einem Problem benötigten.
 In der zweiten Hälfte des des 2. Semester haben wir auch Pull-Requests bei GitHub eingesetzt, wo direkt Feedback gegeben werden konnte.
 
 Bei der Kommunikation wurde im Vergleich zum 1. Semester wurde mit dem Themensteller bloß noch über Discord kommuniziert und nicht noch zusätzlich über Mail. Über Discordprivatnachrichten wurden Termine für Treffen abgesprochen und die Termine selbst über den Discordserver im Sprachchat, wo teilweise auch die Bildschirme übertragen wurden sind.
@@ -63,7 +63,7 @@ Bei der Kommunikation wurde im Vergleich zum 1. Semester wurde mit dem Themenste
 
 Unsere Dokumenation wurde persistent auf GitHub gepeichert, wo auch der Code lag. Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Grafiken wurden mit Draw.io und VisualParadigm erstellt und als Foto in die Dokumenation geladen. 
 // gibt es noch anderen grafiktools?
-Die Meetings mit Herrn Liebert wurden auf gemeinsamen GoogleDocs dokumenten vor- und nachbereitet, da von jedem Teammitglied parallel bearbeitet wurden kann. Ebenso haben wir bei GoogleDocs ein Excelsheet verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt steckt.
+Die Meetings mit Herrn Liebert wurden auf gemeinsamen GoogleDocs-Dokumenten vor- und nachbereitet, da diese von jedem Teammitglied parallel bearbeitet werden kann. Ebenso haben wir bei GoogleDocs ein Excelsheet verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt steckt.
 
 
 

@@ -40,6 +40,8 @@ Zur Überprüfung werden alle möglichen Funktionen nacheinander ausgeführt und
 
 NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
 
+//fehlt hier nicht eine überprüfung?
+
 
 === Zuverlässigkeit (Reliability)
 // Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
