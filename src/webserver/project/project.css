@@ -75,3 +75,18 @@ h2 {
     font-weight: 500;
     margin: 0.67em 0;
 }
+
+#notification-div {
+    bottom: 0px;
+    display: flex;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 0.25rem;
+    color: #155724;
+    padding: 10px 0 10px 10px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none !important;
+}

@@ -44,7 +44,7 @@ if (checkPostValues() === TRUE )
 		$add_user_project->execute();
 		$add_user_project->reset();
 
-		header("location: /index.php?created_project={$projectName}");
+		header("location: /project/index.php?created_project={$projectName}");
 		exit(0);
 	}
 	else
