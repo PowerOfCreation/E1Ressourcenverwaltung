@@ -22,7 +22,7 @@ image::LoginNeu.jpg[]
 
 Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan-Übersicht. Diese zeigt die aktuelle Kalenderwoche, sowie weitere Funktionen an.
 
-=== Mitarbeiter Erstellen ud Löschen
+=== Mitarbeiter Erstellen und Löschen
 Über den Button "Mitarbeiter hinzufügen" kann der Nutzer einen neuen Mitarbeiter anlegen.
 
 image::MitarbeiterHinzufügen.jpg[]
@@ -48,6 +48,7 @@ image::BenutzerErstellenErfolgreich.jpg[]
 
 Zum Löschen eines Mitarbeiters klickt man auf den Namen. 
 Es öffnet sich eine Übersicht mit Informationen zum Namen und Abteilung.
+
 Über den Button "Mitarbeiter löschen" wird der Mitarbeiter aus dem System entfernt. 
 
 image::MitarbeiterLöschen.jpg[]
@@ -58,7 +59,7 @@ image::MitarbeiterLöschen2.jpg[]
 
 === Mitarbeiter Status
 
-Dem Mitarbeiter kann ein Status über den Button "Status Hinzufügen" zugeordnet werden.
+Dem Mitarbeiter kann ein Status über den Button "Status hinzufügen" zugeordnet werden.
 
 image::StatusMitarbeiter.jpg[]
 
@@ -68,7 +69,7 @@ Soll der Status entfernt werden, erfolgt dies über das Kreuz am Rand. Auch hier
 
 image::StatusMitarbeiterLöschen.jpg[]
 
-=== Projekt Verwaltung
+=== Projektverwaltung
 
 In der Projektverwaltung können Projekte erstellt oder gelöscht werden.
 
@@ -95,10 +96,13 @@ Wurde das Projekt aus dem System entfernt, erscheint folgende Meldung:
 
 image::ProjektLöschenErfolgreich.jpg[]
 
-=== Allgemeine Informationen
+== 3. Allgemeine Informationen
 
 Über das Minus und Plus am unteren Rand kann die aktuelle oder vergangene Kalenderwoche ausgewählt werden. Auch hier ist die Bearbeitung, wie oben beschrieben, möglich.
 
+image::PlusMinus.jpg[]
+
+image::KW26.jpg[]
 
 
 
