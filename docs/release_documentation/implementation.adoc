@@ -6,6 +6,9 @@
 
 = Projektdurchführung
 
+== Problem:
+Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
+Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
 == I09
 
@@ -159,9 +162,6 @@ UC 04
 Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
 
 Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen und entzogen werden kann. Dies wurde ebenfalls angefangen, jedoch nicht beendet. #45
-
-
-
 
 === Entscheidung: 
 
