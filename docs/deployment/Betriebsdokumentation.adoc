@@ -6,7 +6,7 @@
 
 * Ein internetfähiges Gerät (Smartphone, Tablet, PC) für die Nutzung der Anwendung
 
-+ Vorinstallierter Docker auf PC/Server
+* Vorinstallierter Docker auf PC/Server
 
 * Für Docker: link:https://docs.docker.com/desktop/windows/install/[Windows], link:https://docs.docker.com/desktop/linux/install/[Linux], link:https://docs.docker.com/desktop/mac/install/[Mac]
 
@@ -23,11 +23,11 @@ Bevor mit der Installation fortgefahren wird, ist es empfehlenswert, einen Fork 
 
 Im Terminal:
 
-`git fork https://github.com/PowerOfCreation/E1Ressourcenverwaltung.git`
+`$ git fork https://github.com/PowerOfCreation/E1Ressourcenverwaltung.git`
 
 Um die Software von GitHub auf Ihren eigenen PC/Server zu speichern, muss diese zuerst von GitHub geladen werden.
 
-`git clone https://github.com/ihr_github_account/E1Ressourcenverwaltung.git`
+`$ git clone https://github.com/ihr_github_account/E1Ressourcenverwaltung.git`
 
 Die Software besteht aus zwei serverseitigen Komponenten: Apache Webserver 8.0 und MySQL (MariaDB Ver. 10.3.27 für Alpine Linux), die in einem Docker-Container gespeichert sind.
 
@@ -38,11 +38,17 @@ Um die Software zu installieren, soll ein Docker Container ausgeführt werden. D
 * Im Terminal den Ordner "src" wählen und im Anschluss mit dem Befehl "docker-compose up" die Software ausführen (Docker muss gestartet sein):
 
 
-1. Zum Ordner navigieren: `cd E1Ressourcenverwaltung`
+1. Zum Ordner navigieren:
 
-2. In Unterordner wechseln: `cd src` 
+ $ cd pfad/zum/Ordner/E1Ressourcenverwaltung
 
-3. Server starten: `docker-compose up`
+2. In Unterordner wechseln:
+
+ $ cd src
+
+3. Server starten:
+
+ $ docker-compose up
 
 Die Software ist out of the box einsatzbereit, das bedeutet es müssen keine weiteren Konfigurationen vorgenommen werden. 
 
