@@ -218,7 +218,7 @@ Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunf
 Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
 
-Aufgrund des, in "Dokumentation" beschrieben Vorfalls in dieser Iteration,  Softwarevorfalls bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
+Aufgrund beschrieben Softwarevorfalls in dieser Iteration bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
 
 
 === I14 10.05.22-16.05.22
@@ -236,7 +236,7 @@ API: Einfügen eines neuen Status #52 -> fertig
 
 === Entscheidung
 
-Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und es daher keinen Grund gab ihn zu treffen. Einem Monat vor Projektabgabe und mit voranschreiteten Funktionen entschieden wir uns ein Meeting mit ihm zu verabreden. Außerdem sollte besprochen werden, wie die Übergabe und installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting fand in der folgenden Woche statt.
+Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und es daher keinen Grund gab ihn zu treffen. Ein Monat vor Projektübergabe und mit voranschreitenden Funktionen entschieden wir uns ein Meeting mit ihm auszumachen. Außerdem sollte besprochen werden, wie die Übergabe und das Installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting fand in der folgenden Woche statt.
 
 Wir führten Pull-Requests ein. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserung erstellter Commits.
 
@@ -270,8 +270,8 @@ Fortgeführt:
 
 Herr Liebert war generell zufrieden mit unserem Fortschritt. 
 Er forderte, dass nach der Erstellung eines Mitarbeiters oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
-Die Übergabe wurde auf den 22.06. festgelegt. 
-Herr Liebert möchte nicht, dass wir die Anwendung davor auf den Systemen von T-System MMS testen, da er meint, dass das wegen Docker kein Problem darstellen wird. Wir finden diese Entscheidung nicht Gut und werden ihn zu einem späteren noch einmal darauf ansprechen und dies auch schriftlich festhalten. 
+Die Übergabe wurde auf den 22.06.2022 festgelegt. 
+Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Systemen von T-System MMS testen, da er davon überzeugt ist, dass aufgrund der Nutzung von Docker es keine Probleme geben wird. Wir teilen diese Meinung nur bedingt und wären lieber besser auf alle Eventualitäten vorbereitet. Wir werden versuchen ihn zu einem späteren noch einmal darauf anzusprechen und dies auch schriftlich festhalten. 
 
 
 === Implementation
