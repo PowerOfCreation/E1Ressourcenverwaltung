@@ -15,19 +15,28 @@ Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neu
 Iteration 9 (23.03.22 - 28.03.22) war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
 Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr belegt.
+
 Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
 //risiko 
 
 Unsere Ziele für I09 waren: 
 Neubegonnen:
+
 -Nutzerübersichtsseite #39
+
 -Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
+
 -Mitarbeiter anlegen um Abteilungsdropdown erweitern #35 
+
 //wurde erst später beendet, aber naja
 -Aufräumen der Datenbankenstruktur #37
+
 -Anlegen der Abteilungstabelle + 5 Abteilungen #34
+
 -Mitarbeiter hinzufügen check der E-Mail #33
+
 -Mitarbeiter hinzufügen Passwortkriterien #36
+
 //später nochmal geöffnet
 //-Praktikumsfragen #31  
 //da war doch ein coach treffen oder? ja am 22.4
@@ -55,14 +64,17 @@ Die beiden Aufgaben konnten ohne Probleme beendet werden. (#34 und #38)
 
 
 UC3
+
 Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Da wir keine Button ohne direkt geplante Funktion haben wollte, wurde der Lösch- und Bearbeitungsbutton nicht umgesetzt und war daher für später geplant. (#39)
 //bild einfügen
 
 Natürlich soll wenn ein neuer Mitarbeiter angelegt wird, eine Email erstellt werden, welche zumindest den formalen Anforderungen an eine Email entspricht. Dies wurde erledigt. (#33)
+
 //das wurde beendet oder?
 Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen.
-Da das RegEx und der zugehörige PHP-Code nicht besonders einfach ist und dieses Issue nicht die höchste priorität hatte, konnte es erst später beendet werden. #36
-//stimmt das so?
+
+Da die RegEx - Regeln nicht nur Frontend-seitig überprüft werden sollten und der zugehörige Backend PHP-Code nicht besonders einfach ist, konnte dieses Issue erst später beendet werden. Dieses Issue hatte außerdem nicht die höchste Priorität. #36
+
 Bei der Erstellung soll die Abteilung des Mitarbeiters aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
 
 === Problem
@@ -75,18 +87,23 @@ Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein
 
 
 == Iteration 10  
+
 29.03.22 - 04.04.22
 //wo sind hier die aufgaben, als ob nichts neues begonnen wurden ist
 
 //niklas hat bei problemen geholfen -> deswegen wenig
 Unsere Ziele für I10 waren: 
+
 Neubegonnen:
+
 Suche implementieren #28 -> nie von jonas keil angefangen und auch nicht wichtig genug, das es weitergeführt wird, da kräfte gesammelt werden mussten
 
 Mehr Dummy-Daten für Project und Project_User #42 -> assigned aber nie begonnen erst am 25.4
 
 Fortgeführt: 
+
 Beleg korrigieren #29
+
 Mitarbeiter hinzufügen Passwortkriterien #36
 
 === Dokumentation
@@ -96,8 +113,10 @@ Risikoliste erweitert. Dokumente aktuell gehalten (auch wenn es evtl. nichts neu
 === Implementation
 
 Es sollte eine simple Suchfunktion eingefügt werden, sodass nach Mitarbeiter und Projekten gesucht werden kann und bloß diese Angezeigt werden. Diese Aufgabe wurde Herr Keil in Abwesenheit gegeben.
+
 //das hat kein direkten use case
 UC 03
+
 Es sollten Dummy-Daten für Projekte eingefügt, damit damit gleich die Funktionaltität überprüft werden konnte und das spätere Arbeiten angenehmer gestaltete. Jedoch wurde dies nie begonnen und daher in der nächsten Iteration fortgeführt.
 
 Leider konnten die Passwortkriterien-Aufgabe immer noch nicht abgeschlossen werden. 
@@ -109,13 +128,19 @@ Es wurden kaum neue Aufgaben vergeben, zeitgleich gab es aber auch kaum alte zum
 //was hatte das für einen Grund und wieso war das in der nächsten woche noch einmal 
 
 == Iteraion 11 05.04.22. - 11.04.22
+
 Unsere Ziele für I11 waren: 
 //wo sind hier die aufgaben, als ob nichts neues begonnen/fortgeführt wurden ist
 Neubegonnen:  -Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
+
 Projekterstellungsseite Frontend+Backend #32
+
 Fortgeführt:
+
 Beleg korrigieren #29
+
 Mitarbeiter hinzufügen Passwortkriterien #36
+
 Mehr Dummy-Daten für Project und Project_User #42
 
 === Dokumentation
@@ -125,6 +150,7 @@ Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Da
 === Implementaton
 
 UC 03
+
 Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen Namen möglich sein. 
 
 Dieses Mal konnten die Dummy-Daten eingefügt werden.
@@ -134,17 +160,26 @@ Dieses Mal konnten die Dummy-Daten eingefügt werden.
 Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit wurde von weiteren Maßnahmen abgesehen. 
 
 == Iteration 12 12.04.22-25.04.22
+
 In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko)
 moral ++
 
 Unsere Ziele für I12 waren: 
+
 Neubegonnen: 
+
     Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
+
     Projekterstellungsseite Frontend+Backend #32
-    Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an carl
+
+    Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an Carl
+
     API: Aktuelle Kalenderwoche #43 -> fertig
+
     Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht      
+
     Neues Mitglied Vinh einführen
+
 Fortgeführt:
 
 Projekterstellungsseite Frontend+Backend #32
@@ -158,9 +193,11 @@ Risikoliste erweitert
 === Implementation
 //sicher das ich die UC nicht zt vertauscht habe, da ich mir die falsch gemerkt habe
 UC 01
+
 Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten anzeigen kann. #43
 
 UC 04
+
 Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
 
 Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen und entzogen werden kann. Dies wurde ebenfalls angefangen, jedoch nicht beendet. #45
@@ -168,29 +205,42 @@ Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen u
 === Entscheidung: 
 
 Um die Produktivität zu erhöhen wurd die Iterationszeit auf 2 Wochen erhöht. Daher sollten die Meetings ebenfalls aller zwei Wochen stattfinden.
+
 Ob dies die gewünschte Veränderung mit sich brachte, sollte innerhalb von zwei Iterationen überprüft werden.
 
 
 //den absatz in problem und dann entscheidung auseinandernehmen
 
-Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeiten zu erfragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
-
-Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
+Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeiten zu erfragen (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung zu zeigen. 
 
 === Problem 
 
 Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 
+Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
+
+Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
+
 == Iteration 13 26.04.22-09.05.22
+
 Unsere Ziele für I13 waren: 
+
 Neubegonnen: Dummy Status einfügen #48 -> fertig
+
 API: Status der Kalenderwoche #49 -> fertig. gab leichte probleme mit in die datenbank einloggen 
+
 API: Erweiterung um das Jahr #50 -> fertig (anscheinend sogar noch am montag -> nicht teil der iteration lul)
+
 API: Einfügen eines neuen Status #52 -> in nächster iteration fertig gestellt 
+
 API: Alle Nutzer eines Projektes #53 -> fertig 
+
 API: REST-API zum Einfügen, Löschen und Abrufen von Nutzern in Projekten #54 -> fertig
+
 Fortgeführt: 
+
 Mehr Dummy-Daten für Project und Project_User #42 -> fertig
+
 Projektverwaltungsseite #45 -> fertig 
 
 === Dokumentation 
@@ -201,14 +251,18 @@ Die Risikoliste wurde erneut im einen Eintrag erweitert. Herr Nguyen hatte ein n
 === Implementation
 
 UC 01
-Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet wurden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können. #52 # 53 #49???
+
+Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet worden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können. #52 # 53 #49???
+// schaue später nach
 Es konnten jedoch nicht alle API-Funktionen beendet werden. (#52)  
 //stimmt das so oder sind die api's bereits eine funktion?
 
-Um die Arbeit zu erleichtern wurde Dummy-Stati eingefügt und die Dummy-Projekte aus der letzten Iteration wurden fertiggestellt. (#48 & #42)
+Um die Arbeit zu erleichtern wurde Dummy-Status eingefügt und die Dummy-Projekte aus der letzten Iteration wurden fertiggestellt. (#48 & #42)
 
-//bild
+//bild --> wie loggt man sich jetzt an? ^^
+
 UC 04
+
 Die Arbeiten am UC04 aus der vorherigen Iteration konnten abgeschlossen werden. #42 #45
 
 === Entscheidung
@@ -216,9 +270,10 @@ Die Arbeiten am UC04 aus der vorherigen Iteration konnten abgeschlossen werden. 
 Bisher ist eine Verbesserung hinsichtlich der Produktivität nicht erkennbar. 
 
 Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt und das Team auch weiterhin nicht über den aktuellen Stand selbstständig in Kenntnis gesetzt. Daher war es Herr Kemters Aufgabe diese Informationen einzuholen.
-Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde.
-Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
+Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde.
+
+Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
 Aufgrund beschrieben Softwarevorfalls in dieser Iteration bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
 
@@ -227,12 +282,16 @@ Aufgrund beschrieben Softwarevorfalls in dieser Iteration bei Herrn Nguyen wurde
 
 Unsere Ziele für I14 waren: 
 Neubegonnen:  Status anzeigen #51 -> keine ahnung was da los war
-Verbleibende Fehler von Psalm beheben #58 -> am letzten tag assigned und dann fertig gestellt
+
+Verbleibende Fehler von Psalm beheben #58 -> am letzten Tag assigned und dann fertig gestellt
+
 Dummy Daten für Status falsche Wochentage #61 -> fertig
-Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten probleme aufgeben, außer fehlermeldung bei "projekt erstellen"
+
+Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten Probleme aufgeben, außer Fehlermeldung bei "Projekt erstellen"
 // get_calendar_week.php #62 ohne commit etc geschlossen 
 
 Fortgeführt:
+
 API: Einfügen eines neuen Status #52 -> fertig
 
 
@@ -242,7 +301,7 @@ Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. D
 
 Wir führten Pull-Requests ein. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserung erstellter Commits.
 
-Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurden die folgenden Interationen wieder auf eine Woche verkürzt.
+Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurde entschieden, die folgenden Interationen wieder auf eine Woche zu verkürzen.
 
 Da immer weniger an der Dokumentation zu erledigen war, wurde Herr Kemter in HTML und CSS fortgebildet, um bei späteren Aufgaben zu helfen.
 
@@ -250,6 +309,8 @@ Da immer weniger an der Dokumentation zu erledigen war, wurde Herr Kemter in HTM
 === Problem
 
 Wir hatten bisher weder die Erfahrung noch die Zeit Unit-Tests durchzuführen. 
+// wir hatten schon zu dem Zeitpunkt schon ein Praktikum zu Unit-Tests 
+Wir hatten bis jetzt nur eine kleine Einführung im Praktikum zu Unit-Tests, da aber die Zeit uns davon rannte und wir noch weitere große Aufgaben 
 Daher wurde Frau Tartz damit beauftragt manuelle Tests durchzuführen. Außerdem wurden statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren den Code auf unbenutzte Variabeln und Codestücke sowie auf unsichere Funktionen.
 //stimmt das so?
 //war das in der iteration oder davor?? da #58 dies vermuten lässt
