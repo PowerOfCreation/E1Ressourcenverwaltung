@@ -71,7 +71,7 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
 === Alternativer Ablauf 4: Projekt bearbeiten
 Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt bearbeiten will, dann
 
-. Muss das zu löschende Projekt ausgewählt werden.
+. Muss das zu bearbeitende Projekt ausgewählt werden.
 . Es wird der Bearbeitungsprozess gestartet.
 . WHILE bei Projekt nicht alle Daten befüllt.
 .. In den Feldern, welche geändert werden sollen, müssen die alten Daten gelöscht und die neuen Daten eingefügt werden.
