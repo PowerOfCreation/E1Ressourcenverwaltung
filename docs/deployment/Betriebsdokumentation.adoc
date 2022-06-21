@@ -6,7 +6,7 @@
 
 * Ein internetfähiges Gerät (Smartphone, Tablet, PC) für die Nutzung der Anwendung
 
-* Vorinstallierter Docker auf PC/Server
+* PC/Server mit Docker und Git
 
 * Für Docker: link:https://docs.docker.com/desktop/windows/install/[Windows], link:https://docs.docker.com/desktop/linux/install/[Linux], link:https://docs.docker.com/desktop/mac/install/[Mac]
 
@@ -33,7 +33,7 @@ Die Software besteht aus zwei serverseitigen Komponenten: Apache Webserver 8.0 u
 
 Um die Software zu installieren, soll ein Docker Container ausgeführt werden. Dafür gibt es zwei Möglichkeiten:
 
-* Im Ordner "src" die Datei "docker-compose.yml" per Drag and Drop ins Docker schieben und anschließend auf "Start" drücken.
+* Im Ordner "src" die Datei "docker-compose.yml" per Drag and Drop in den Docker Desktop schieben und anschließend auf "Start" drücken. -> Diese Vorgehensweise funktioniert nur unter Windows/Mac
 
 * Im Terminal den Ordner "src" wählen und im Anschluss mit dem Befehl "docker-compose up" die Software ausführen (Docker muss gestartet sein):
 
@@ -47,6 +47,12 @@ Um die Software zu installieren, soll ein Docker Container ausgeführt werden. D
  $ cd src
 
 3. Server starten:
+
+ ** Für neuere Docker Versionen:
+
+ $ docker compose up
+
+ ** Für ältere Docker Versionen:
 
  $ docker-compose up
 
