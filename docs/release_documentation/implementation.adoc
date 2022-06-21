@@ -77,6 +77,8 @@ Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein
 == Iteration 10  
 29.03.22 - 04.04.22
 //wo sind hier die aufgaben, als ob nichts neues begonnen wurden ist
+
+//niklas hat bei problemen geholfen -> deswegen wenig
 Unsere Ziele für I10 waren: 
 Neubegonnen:
 Suche implementieren #28 -> nie von jonas keil angefangen und auch nicht wichtig genug, das es weitergeführt wird, da kräfte gesammelt werden mussten
@@ -154,7 +156,7 @@ Da der Beleg aktuell war, musste bloß unser neues Mitglied Vinh Nguyen in die D
 Risikoliste erweitert
 
 === Implementation
-
+//sicher das ich die UC nicht zt vertauscht habe, da ich mir die falsch gemerkt habe
 UC 01
 Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten anzeigen kann. #43
 
@@ -331,7 +333,7 @@ CSS: Design verbessern #102 erst carl zugeteilt, aber wegen treffen macht es doc
 Mitarbeiteransicht: Löschen Funktionalität #103 -> gleich wie #98
 
 Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> soll angefangen werden und später fortgeführt 
-Projektbericht #116  -> soll angefangen werden und später fortgeführt 
+Projektbericht #116  -> soll angefangen werden und später fortgeführt -> als doku wird auch die UC nochmal angeschaut und aktualisiert
 
 von mittwoch und nicht montag, wegen feiertag
 
