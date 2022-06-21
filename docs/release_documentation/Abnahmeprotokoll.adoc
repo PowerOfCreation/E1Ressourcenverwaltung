@@ -28,25 +28,56 @@ Abnahmeumgebung: Online in Discord
 
 === Lieferumfang
 
-* Software in folgender Form:
-* Benutzeranleitung
-* Betriebsanleitung
-* Anforderungsspezifikation
-* Entwicklerdokumentation
-* Testdokumentation
+* Software in folgender Form: Download des GitHub Repository 
+* Benutzeranleitung (bis zum 08.07.2022)
+* Betriebsanleitung (bis zum 08.07.2022)
+* Anforderungsspezifikation (bis zum 08.07.2022)
+* Entwicklerdokumentation (bis zum 08.07.2022)
+* Testdokumentation (bis zum 08.07.2022)
 
 === Funktionalität
 [cols="4,1,5"]
 |===
 |Use Case / Szenario | erfüllt | Anmerkung
 
-|UC1 / Sc1
-| ja/nein
-|...
-|UC1 / Sc2
-| ja/nein
-|...
+|UC1 / Standardablauf
+|nein
+|Wochenwechsel
 
+Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernommen werden können
+|UC2 / Standardablauf
+|ja
+|Stati eintragen
+|UC2 / Alternativerablauf 1
+|ja
+|Kein passendes Projekt angelegt
+|UC3 / Standardablauf 
+|ja
+|Benutzer anlegen
+|UC3 / Alternativerablauf 1
+|ja
+|Passwort entspricht nicht der Anforderung
+|UC3 / Alternativerablauf 2
+|ja
+|Benutzeranlegen abbrechen
+|UC4 / Standardablauf 
+|ja
+|Benutzer einem Projekt hinzufügen
+|UC4 / Alternativablauf 1
+|ja
+|Mitarbeiter entziehen
+|UC4 / Alternativablauf 2
+|ja
+|Projekt erstellen
+|UC4 / Alternativablauf 3
+|ja
+|Projekt löschen
+|UC5 / Standardablauf 
+|nein
+|Importieren und Anlegen der Feiertage
+|UC5 / Alternativablauf 1
+|nein
+|Abbruch der Importierung
 |===
 
 ===  Systemweite Anforderungen
@@ -81,14 +112,23 @@ Abnahmeumgebung: Online in Discord
 |NFAP-1: Das Aufrufen von neuen Seiten und das Speichern/Abschicken von Daten soll eine Geschwindigkeit 0,3 Sekunden haben.
 |ja
 |...
-|fehlen die anderen anforderungen?
-|
-|
+|Einschränkungen: Software soll eine Webandwendung sein, welche bloß über das Intranet aufgerufen werden kann 
+|ja
+|...
+|Einschränkungen: die Anwendung soll mittels Docker auf dem Zielsystem verwendet werden können
+|ja
+|...
+|Organisatorische Randbedingungen: System soll nur intern nutzbar sein
+|ja
+|...
+|Rechtliche Anforderungen: Datenschutz muss beachtet werden 
+|ja
+|...
 |===
 
 == Unterschriften
 
-Hiermit wird die Abnahme vollständig / mit Mängeln bestätigt.
+Hiermit wird die Abnahme vollständig bestätigt. Herr Liebert hat im Vorfeld darauf verzichtet, dass die Anwendung im Vorfeld auf den Systemen von T-Systems MMMS getestet wird. 
 
 Bemerkungen:
 
@@ -96,6 +136,6 @@ Bemerkungen:
 |===
 |> 
 |>
-|Unterschrift Themensteller*in
-|Unterschrift Projektleiter*in
+|Unterschrift Themensteller*in Sven Liebert
+|Unterschrift Projektleiter*in Nick Kemter
 |===
