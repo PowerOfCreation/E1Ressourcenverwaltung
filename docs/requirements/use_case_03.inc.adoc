@@ -24,11 +24,8 @@ Benutzer ist angemeldet.
 .. Benutzer gibt Name und Vorname ein.
 .. Benutzer wählt aus der Liste eine Abteilung aus.
 .. Benutzer gibt Passwort ein.
-... Benutzer gibt erneut das Passwort ein.
 . Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen".
 . Der Use Case ist abgeschlossen.
-
-//pw 2x eingeben nicht erfüllt, sondern bloß 1x
 
 === zugehörige Wireframes 
 
@@ -44,13 +41,13 @@ image::Mitarbeiteransicht.jpg[]
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Alternativer Ablauf 1
+==== Alternativer Ablauf 1: Passwort entspricht nicht der Anforderung
 Wenn Benutzer im Schritt 2c des Standardablaufs ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
 
 . wird eine Fehlermeldung angezeigt.
 . Benutzer wird zur erneuten Eingabe aufgefordert.
 
-==== Alternativer Ablauf 2
+==== Alternativer Ablauf 2: Benutzeranlegen abbrechen
 Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
 
 . kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.

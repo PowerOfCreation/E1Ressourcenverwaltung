@@ -27,6 +27,7 @@ image::Login.jpg[]
 . Durch die Kalenderwochen kann navigiert werden.
 . Der Use Case ist abgeschlossen.
 
+//eingaben können nicht übernommen werden
 
 === zugehöriger Wireframe 
 
