@@ -60,6 +60,9 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 |UC3 / Alternativerablauf 2
 |ja
 |Benutzeranlegen abbrechen
+|UC3 / Alternativablauf 3
+|nein
+|Benutzer bearbeiten
 |UC4 / Standardablauf 
 |ja
 |Benutzer einem Projekt hinzufügen
@@ -72,6 +75,9 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 |UC4 / Alternativablauf 3
 |ja
 |Projekt löschen
+|UC4 / Alternativablauf 4
+|ja
+|Projekt bearbeiten
 |UC5 / Standardablauf 
 |nein
 |Importieren und Anlegen der Feiertage

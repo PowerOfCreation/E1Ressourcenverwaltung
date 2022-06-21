@@ -68,11 +68,12 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
 .. Das Löschen muss bestätigt werden.
 . Der Use Case wird im Schritt 3 fortgesetzt.
 
-=== Alternativer Ablauf 4: Projekt bearbeit
+=== Alternativer Ablauf 4: Projekt bearbeiten
 Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt bearbeiten will, dann
 
 . Muss das zu löschende Projekt ausgewählt werden.
 . Es wird der Bearbeitungsprozess gestartet.
+. WHILE bei Projekt nicht alle Daten befüllt.
 .. In den Feldern, welche geändert werden sollen, müssen die alten Daten gelöscht und die neuen Daten eingefügt werden.
 .. Die Änderungen müssen bestätigt werden.
 . Der Use Case wird in Schritt 3 fortgeführt. 

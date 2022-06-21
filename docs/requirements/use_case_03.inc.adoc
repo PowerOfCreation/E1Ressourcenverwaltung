@@ -52,6 +52,15 @@ Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufüg
 
 . kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
 
+==== Alternativer Ablauf 3: Benutzer bearbeiten
+
+. Der Alternative Use Case beginnt, wenn der Benutzer auf einen Benutzer in der Kalenderansicht klickt.
+. Benutzer klickt auf den "Ändern"-Knopf
+. WHILE bei Benutzer nicht alle Daten befüllt.
+.. In den Feldern, welche geändert werden sollen, müssen die alten Daten gelöscht und die neuen Daten eingefügt werden.
+.. Die Änderungen müssen bestätigt werden.
+. Der Use Case wird in Schritt 3 fortgeführt. 
+
 //=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
 
