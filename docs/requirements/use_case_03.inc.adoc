@@ -84,3 +84,5 @@ Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den A
 . Alle Felder müssen ausgefüllt werden.
 . Der Benutzername ist nicht vergeben.
 . Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen.
+
+// Wie ist jetzt der Stand? mind 8 Zeichen, 1 Buchstabe, 1 Sonderzeichen, 1 Zahl? Oder wurde etwas geändert?

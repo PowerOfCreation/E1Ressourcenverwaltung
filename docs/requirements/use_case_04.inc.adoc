@@ -73,7 +73,7 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt bearbeiten will, dann
 
 . Muss das zu bearbeitende Projekt ausgewählt werden.
 . Es wird der Bearbeitungsprozess gestartet.
-. WHILE bei Projekt nicht alle Daten befüllt.
+. WHILE im Bearbeitungsprozess.
 .. In den Feldern, welche geändert werden sollen, müssen die alten Daten gelöscht und die neuen Daten eingefügt werden.
 .. Die Änderungen müssen bestätigt werden.
 . Der Use Case wird in Schritt 3 fortgeführt. 
@@ -91,11 +91,13 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt bearbeiten will, dann
 ==== Szenario 1: Mitarbeiter einem Projekt zuweisen/entziehen
 *Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt. Damit ist das Zuweisen bzw. das Entziehen eines Projektes abgeschlossen 
 //zuweisen gibt es nicht mehr
+//doch, das sollte noch gehen
 
 ==== Szenario 2: Projekt erstellen
 *Sc2*: Benutzer A klickt auf den Button "Projekt erstellen". Im geöffneten Fenster wählt er als Projektnamen "Urlaub", Benutzer U als Verantwortlichen, Thema "Urlaub einteilen". Dafür hat er 2 Wochen Zeit und im Abgabedatum-Feld wird der 27.12.21 eingetragen. Danach klickt er auf "Projekt erstellen".
 //das mit dem datum stimmt auch nicht mehr
 //er kann ein datum eintragen, aber das ist eher bloß als erinnerung und nicht als festes ende zu verstehen
+// Das Datum ist auch nirgendwo zu sehen außer bei der Erstellung
 
 ==== Szenario 3: Projekt löschen
 *Sc3*: Benutzer A wählt Projekt "Urlaub" aus und klickt auf den Button "Projekt Löschen". Er bestätigt das Löschen.
