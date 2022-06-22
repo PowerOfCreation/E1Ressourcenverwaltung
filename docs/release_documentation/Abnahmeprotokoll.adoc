@@ -66,8 +66,6 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 |UC4 / Standardablauf 
 |ja
 |Benutzer einem Projekt hinzufügen
-
-Wenn das Projekt ausgewählt wird, darf nicht auf den "Radio-Button" gedrückt werden, sondern der Projektname muss gedrückt werden.
 |UC4 / Alternativablauf 1
 |ja
 |Mitarbeiter entziehen
