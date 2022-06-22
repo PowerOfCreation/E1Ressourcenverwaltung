@@ -24,7 +24,7 @@ Datum: 22.06.2022
 
 Zeit: 16.30 Uhr
 
-Abnahmeumgebung: Online in Discord
+Abnahmeumgebung: Server der HTW Dresden http://iseproject02.informatik.htw-dresden.de/
 
 === Lieferumfang
 
