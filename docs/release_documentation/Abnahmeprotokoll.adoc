@@ -97,7 +97,7 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 |SWFA-2: Jeder Benutzer darf alle Daten bearbeiten.
 |nein
 |Keine der implementierte Funktion lässt Daten verändern.
-|SWFA-3: Das System muss die eingegeben Daten korrekt und vollständig in die Datenbank übermitteln.
+|SWFA-3: Das System muss die eingegeben Daten korrekt und vollständig an die Datenbank übermitteln.
 |ja
 |...
 |NFAU-1: Der Benutzer kommt, nachdem er angemeldet ist, mit maximal 2 Klicks in die Funktionsmaske hinein, wo er die Funktion ausführen kann.
@@ -134,7 +134,7 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 
 == Unterschriften
 
-Hiermit wird die Abnahme vollständig bestätigt. Herr Liebert hat im Vorfeld darauf verzichtet, dass die Anwendung im Vorfeld auf den Systemen von T-Systems MMMS getestet wird. 
+Hiermit wird die Abnahme vollständig bestätigt. Herr Liebert hat im Vorfeld darauf verzichtet, dass die Anwendung vor der Übernahme auf den Systemen von T-Systems MMMS getestet wird. 
 
 Bemerkungen:
 
