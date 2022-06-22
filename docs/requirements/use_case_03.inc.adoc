@@ -23,6 +23,7 @@ Benutzer ist angemeldet.
 .. Benutzer gibt Benutzernamen ein.
 .. Benutzer gibt Name und Vorname ein.
 .. Benutzer wählt aus der Liste eine Abteilung aus.
+.. Benutzer gibt E-Mail-Adresse ein.
 .. Benutzer gibt Passwort ein.
 . Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen".
 . Der Use Case ist abgeschlossen.
@@ -47,7 +48,7 @@ Wenn Benutzer im Schritt 2c des Standardablaufs ein Passwort eingegeben hat, was
 . wird eine Fehlermeldung angezeigt.
 . Benutzer wird zur erneuten Eingabe aufgefordert.
 
-==== Alternativer Ablauf 2: Benutzeranlegen abbrechen
+==== Alternativer Ablauf 2: Benutzer Anlegen abbrechen
 Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
 
 . kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
@@ -82,7 +83,4 @@ Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den A
 === Besondere Anforderungen
 . Alle Felder müssen ausgefüllt werden.
 . Der Benutzername ist nicht vergeben.
-. Das Passwort wurde zweimal richtig eingegeben.
 . Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen.
-
-//auch hier 2x falsch eingeben falsch
