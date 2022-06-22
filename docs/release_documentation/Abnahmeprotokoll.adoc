@@ -76,7 +76,7 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 |ja
 |Projekt löschen
 |UC4 / Alternativablauf 4
-|ja
+|nein
 |Projekt bearbeiten
 |UC5 / Standardablauf 
 |nein
@@ -130,11 +130,14 @@ Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernomm
 |Rechtliche Anforderungen: Datenschutz muss beachtet werden 
 |ja
 |...
+|ISO 25000
+|nein
+|einige Anforderungen wurden teilweise erfüllt
 |===
 
 == Unterschriften
 
-Hiermit wird die Abnahme vollständig bestätigt. Herr Liebert hat im Vorfeld darauf verzichtet, dass die Anwendung vor der Übernahme auf den Systemen von T-Systems MMMS getestet wird. 
+Hiermit wird die Abnahme vollständig bestätigt. Herr Liebert hat im Vorfeld darauf verzichtet, dass die Anwendung vor der Übernahme auf den Systemen von T-Systems MMS getestet wird. 
 
 Bemerkungen:
 
