@@ -29,7 +29,7 @@ Um die Software von GitHub auf Ihren eigenen PC/Server zu speichern, muss diese 
 
 `$ git clone https://github.com/ihr_github_account/E1Ressourcenverwaltung.git`
 
-Die Software besteht aus zwei serverseitigen Komponenten: Apache Webserver 8.0 und MySQL (MariaDB Ver. 10.3.27 für Alpine Linux), die in einem Docker-Container gespeichert sind.
+Die Software besteht aus zwei serverseitigen Komponenten: Webserver(PHP-FPM 8.1 mit Nginx 1.22 auf Alpine Linux) und MySQL (MariaDB Ver. 10.3.27 auf Alpine Linux), die in einem Docker-Container gespeichert sind.
 
 Um die Software zu installieren, soll ein Docker Container ausgeführt werden. Dafür gibt es zwei Möglichkeiten:
 
