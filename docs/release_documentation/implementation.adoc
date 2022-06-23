@@ -444,7 +444,7 @@ Projektbericht #116 -> noch nicht fertig, da zu viel aufwand
 === Dokumentation 
 
 Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration viel an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und verbessern der Test-, Betriebs- und Entwicklerdokumentation. Hier wurden gute Grundlagen gelegt, jedoch reichte es noch für die Abgabe aus. Daher wurden sie weiterverbessert. Die Anwenderdoku sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realsiiert werden, was Teile der Anwenderdokumentation sinnlos erscheint lässt.
-//Dreckssatz  
+//komischer satz
 Wie auch in den Wochen davor wurde sich auf den Projektbericht fokusiert. Diesen hat Herr Kemter den Inhalt erweitert und dann mit Herrn Beck auf Verständlichkeit und Inhalt korrigiert. 
 
 Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich einige Mitglieder weiterhin nicht in angemessenen Maße beteiligt haben.
