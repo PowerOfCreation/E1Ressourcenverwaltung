@@ -18,7 +18,8 @@ Feiertage und Betriebsferien sollen über ebenfalls dargestellt werden. Für die
 
 Unser Team hat bereits letztes Semester an diesem Projekt gearbeitet. Daher haben wir dank guter Vorarbeit eine Dokumentation, welche bereits auf einem guten Stand war und bloß kleine Verbesserungen benötigte. 
 Die Anwendung selbst war auch auch begonnen. Große Teile des Front-Ends waren auch schon funktional erstellt. Es fehlte z.B.  noch die Seite für die Projekterstellung, jedoch ist dies im Front-End eine reine Formsache. Wenige Grundlegende Back-End-Strukturen und -funktionen waren auch schon angelegt, wie z.B. die Datenbank und das anzeigen von Mitarbeitern.
-
+//helena weg
+//arbeit wurde immer erfüllt -> guter dinge
 //passt das mit der Fortschrittbeschreibung der Anwendung?
 //fähigkeiten der mitglieder
 

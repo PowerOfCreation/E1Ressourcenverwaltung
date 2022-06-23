@@ -6,6 +6,7 @@
 
 = Projektdurchführung
 
+
 == Problem:
 Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
 Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
@@ -160,7 +161,7 @@ Dieses Mal konnten die Dummy-Daten eingefügt werden.
 Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit wurde von weiteren Maßnahmen abgesehen. 
 
 == Iteration 12 12.04.22-25.04.22
-
+//risk liste ist komisch, da hat irgendwas doppelt
 In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko)
 moral ++
 
@@ -336,7 +337,7 @@ Er forderte, dass nach der Erstellung eines Mitarbeiters oder eines Projektes ei
 Die Übergabe wurde auf den 22.06.2022 festgelegt. 
 Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Systemen von T-System MMS testen, da er davon überzeugt ist, dass aufgrund der Nutzung von Docker es keine Probleme geben wird. Wir teilen diese Meinung nur bedingt und wären lieber besser auf alle Eventualitäten vorbereitet. Wir werden versuchen ihn zu einem späteren noch einmal darauf anzusprechen und dies auch schriftlich festhalten. 
 
-
+//analyse/oberflächenentwurf (wireframe) war also gut
 === Implementation
 
 //sind das nicht quasi alle use cases?
