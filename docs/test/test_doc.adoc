@@ -22,6 +22,11 @@
 * Alle Tests, die sich auf das ordnungsgemäße Funktionieren der Benutzeroberfläche beziehen (vor allem Absicherung von Fehlerfällen) können manuell, mit Benutzung des Systems getestet werden
 
 === Testdurchführungsplanung:
+
+//wann Tests durchgeführt wurden sind und was die Ergebnisse waren
+//-> wann eventuelle Fehler behoben wurden sind
+
+=== Testorganisation:
 * Die Unittest sollten kurz nach, teilweise schon während der Implementierung erstellt werden
 * Die Prüfung wird dann von den Implementierenden durchgeführt
 * Die Funktionalitätstests können rechtzeitig bei freien Kapazitäten durchgeführt werden
