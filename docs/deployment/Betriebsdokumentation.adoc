@@ -78,6 +78,9 @@ Die typischen Fehler und deren Behebung finden Sie unter folgendem Link:
 
 * link:https://docs.docker.com/desktop/windows/troubleshoot/[Docker Troubleshoot]
 
+== Datensicherung
+
+Das System unterstütz keine selbstständige Datensicherung.
 
 == Weitere Dokumentationen
 
