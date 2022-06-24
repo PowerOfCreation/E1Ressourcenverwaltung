@@ -1,4 +1,6 @@
 [![ci](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/ci.yml/badge.svg)](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/ci.yml)
+[![ESLint](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/eslint.yml/badge.svg)](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/eslint.yml)
+[![Psalm](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/main.yml/badge.svg)](https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/main.yml)
 
 # Vorlage Projektstruktur & OpenUP-Templates
 

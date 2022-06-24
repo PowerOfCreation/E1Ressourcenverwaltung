@@ -1,12 +1,24 @@
-<a href=".."><button>Zurück</button></a>
+<?php
+
+include("../login/checkForLogin.php");
+
+?>
+
+<body>
+    <a href=".."><button>Zurück</button></a>
+    <a id="btn-delete-user"><button>Mitarbeiter löschen</button></a>
+</body>
+
+<script src="../jquery-3.6.0.js"></script>
+<script src="js/mitarbeiter.js"></script>
 
 <?php
 
 require_once("/app/config/credentials.php");
 
-$username = htmlspecialchars($_GET["name"]);
+if (!empty($_GET["name"])) {
+    $username = htmlspecialchars($_GET["name"]);
 
-if (!empty($username)) {
     $get_user_info_statement = $connection->prepare("SELECT Forename, Surname FROM User WHERE Username = ?;");
 
     $get_user_info_statement->bind_param('s', $username);
@@ -17,7 +29,7 @@ if (!empty($username)) {
         if ($row = $get_user_info_statement->fetch()) {
             echo $forename . " " . $surname . "<br>";
         } else {
-            echo "Es existiert kein Nutzer mit dem Nutzernamen " + $username;
+            echo "Es existiert kein Nutzer mit dem Nutzernamen " . $username;
         }
 
         $get_user_info_statement->reset();

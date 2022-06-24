@@ -1,6 +1,13 @@
 name: Psalm Static analysis
 
 on:
+  push:
+      paths:
+        - '.github/workflows/main.yml'
+        - '**.php'
+        - 'psalm.xml'
+      branches:
+        - 'main'
   pull_request:
     paths:
         - '.github/workflows/main.yml'
@@ -17,4 +24,4 @@ jobs:
     - name: Psalm
       run: |
         /bin/mv "src/config" "/app/config/"
-        /composer/vendor/bin/psalm
+        /composer/vendor/bin/psalm --php-version=8.1

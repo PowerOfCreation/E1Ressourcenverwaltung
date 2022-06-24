@@ -1,47 +1,50 @@
 <?php
 
+include("../login/checkForLogin.php");
+
+require("registration_utility.php");
+
 require_once("/app/config/credentials.php");
 
+$password_error_messages = "";
+$email_error_messages = "";
+
 //More checks required...
-if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  && isset($_POST["Forename"]) && !empty(htmlspecialchars($_POST["Forename"])) && isset($_POST["Surname"]) && !empty(htmlspecialchars($_POST["Surname"])) && isset($_POST["DepartmentId"]) && !empty(htmlspecialchars($_POST["DepartmentId"])) && isset($_POST["EMail"]) && !empty(htmlspecialchars($_POST["EMail"])) && isset($_POST["Password"]) && !empty(htmlspecialchars($_POST["Password"]))) {
+if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"])) && !empty(htmlspecialchars($_POST["Forename"])) && !empty(htmlspecialchars($_POST["Surname"])) && !empty(htmlspecialchars($_POST["Department"])) && !empty(htmlspecialchars($_POST["EMail"])) && !empty(htmlspecialchars($_POST["Password"]))) {
+	
 	// Example how to use POST'ed values
 	$username = htmlspecialchars($_POST["Username"]);
 	$forename = htmlspecialchars($_POST["Forename"]);
 	$surname = htmlspecialchars($_POST["Surname"]);
-	$departmentId = htmlspecialchars($_POST["DepartmentId"]);
+	$departmentId = htmlspecialchars($_POST["Department"]);
 	$e_mail = htmlspecialchars($_POST["EMail"]);
-	$password = password_hash(htmlspecialchars($_POST["Password"]), PASSWORD_DEFAULT);
-
-	if(!filter_var($e_mail,FILTER_VALIDATE_EMAIL)) {
-		$e_mailError = "Bitte eine gültige E-Mail-Adresse eingeben.";
-		}
-	if(strlen($password) < 7) {
-		$passwordErrorLength = "Das Passwort muss mindestens 8 Zeichen lang sein.";
-		}   
-	if(!preg_match("(?=\S*[A-Z])",$password)) {
-		$passwordErrorUpperCase = "Das Passwort muss mindestens 1 Großbuchstabe enthalten.";
-		}
-	if(!preg_match("(?=\S*[\W])",$password)) {
-		$passwordErrorSpecificCharacter = "Das Passwort muss mindestens 1 Sonderzeichen enthalten.";
-		}	
-	if(!preg_match("(?=\S*[\d])",$password)) {
-		$passwordErrorNumber = "Das Passwort muss mindestens 1 Ziffer enthalten.";
-		}	
-
-	$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
-
-	$add_user_statement->bind_param('sssiss', $username, $forename, $surname, $departmentId, $e_mail, $password);
-
-	if($add_user_statement->execute())
-	{
-		echo "Nutzer " . $username . " erfolgreich angelegt.";
+	$password = htmlspecialchars($_POST["Password"]);
+	
+	if(!filter_var($e_mail, FILTER_VALIDATE_EMAIL)) {
+		$email_error_messages = "Bitte eine gültige E-Mail-Adresse eingeben.";
 	}
-	else
+	
+	$password_error_messages = checkPassword($password);
+
+	if(empty($password_error_messages) && empty($email_error_messages))
 	{
-		echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
-		echo $connection->error;
+		$password = password_hash($password, PASSWORD_DEFAULT);
+
+		$add_user_statement = $connection->prepare("INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);");
+
+		$add_user_statement->bind_param('sssiss', $username, $forename, $surname, $departmentId, $e_mail, $password);
+
+		if($add_user_statement->execute())
+		{
+			header("location: /index.php?registered_user={$username}");
+		}
+		else
+		{
+			echo "Fehler beim erstellen des Nutzers. Eingaben überprüfen.";
+			echo $connection->error;
+		}
+		$add_user_statement->reset();
 	}
-	$add_user_statement->reset();
 }
 ?>
 
@@ -50,22 +53,26 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 <head>
 	<meta charset="utf-8">
 	<title>Mitarbeiter hinzufügen</title>
-    <link rel="stylesheet" href="registration_style.css">
+	<link rel="stylesheet" href="registration_style.css">
+	<link rel="stylesheet" href="../buttons.css" type="text/css">
+	<link rel="stylesheet" href="../font-size.css" type="text/css">
+
 </head>
 
 <body>
+	
 	<main>
-		<h1 style="text-align: justify;">Mitarbeiter Hinzufügen</h1>
+		<h1>Mitarbeiter Hinzufügen</h1>
 		<div id="form-wrapper-div">
 			<form id = "registration-form" name="RegForm" method="post">                                
-				Benutzername: <input type="text" name="Username" placeholder="Max123" required />
+				Benutzername: <input class="textbox" type="text" autocomplete="username" name="Username" placeholder="Max123" required />
 
-				Vorname: <input type="text" name="Forename" placeholder="Max" required />
+				Vorname: <input class="textbox" type="text" name="Forename" placeholder="Max" required />
 				
-				Nachname: <input type="text" name="Surname" placeholder="Mustermann" required />
+				Nachname: <input class="textbox" type="text" name="Surname" placeholder="Mustermann" required />
 				
 				Abteilung:  
-				<select name = "Department">
+				<select class="textbox" name = "Department">
 					<?php 
 						$result = $connection->query("SELECT * FROM Department;");
 
@@ -76,22 +83,15 @@ if (isset($_POST["Username"]) && !empty(htmlspecialchars($_POST["Username"]))  &
 					?>
 				</select>
 				
-				E-mail: <input type="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
-				<span class="text-danger"><?php if (isset($e_mailError)) echo $e_mailError; ?></span>
+				E-mail: <input class="textbox" type="email" autocomplete="email" name="EMail" required title="Bitte überprüfen Sie das Format der eingegebenen E-Mail-Adresse." placeholder="max@mail.de" />
+				<span class="text-danger"><?php echo $email_error_messages; ?></span>
 
-				Passwort: <input type="password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Großbuchstabe und 1 Sonderzeichen erforderlich." placeholder="Passwort!1" />
+				Passwort: <input class="textbox" type="password" autocomplete="new-password" name="Password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe und 1 Großbuchstabe erforderlich." placeholder="Passwort" />
 				<label for="check"><input id="check" type="checkbox" onclick="showPassword()" />Passwort anzeigen</label>
-				<span class="text-danger"><?php if (isset($passwordErrorLength)) echo $passwordErrorLength; ?>
-					<?php if (isset($passwordErrorUpperCase)) echo $passwordErrorUpperCase; ?>
-					<?php if (isset($passwordErrorSpecificCharacter)) echo $passwordErrorSpecificCharacter; ?>
-					<?php if (isset($passwordErrorNumber)) echo $passwordErrorNumber; ?></span>
-
-<!--				Passwort wiederholen: <input type="password" name="repeatPassword" onkeyup='repeatPw();'/>
-				<span id='password-message-span'></span>
--->
+				<span class="text-danger"><?php echo $password_error_messages; ?></span>
 				<div id="form-action-buttons-wrapper-div">
 					<a href=".."><button id="back-button" type="button">Zurück</button></a>
-					<input type="submit" value="Benutzer erstellen" name="Submit" />
+					<button type="submit">Benutzer erstellen</button>
 				</div>
 			</form>
 		</div>

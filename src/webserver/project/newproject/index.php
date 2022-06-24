@@ -1,10 +1,12 @@
 <?php
 
+include("../../login/checkForLogin.php");
+
 require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
 
-function checkPostValues()
+function checkPostValues(): bool
 {
     if (
         empty($_POST["ProjectName"])
@@ -32,15 +34,23 @@ if (checkPostValues() === TRUE )
 
 	if($add_project->execute())
 	{
-		echo "Projekt " . $projectName . " erfolgreich angelegt.";
+		$projectId =  $connection->insert_id;
+
+		$add_project->reset();
+
+		//insert Userid, projectid into User_Project
+		$add_user_project = $connection->prepare("INSERT INTO User_Project(UserId, ProjectId) VALUES(?, ?);");
+		$add_user_project->bind_param('ii', $projectOwner, $projectId);
+		$add_user_project->execute();
+		$add_user_project->reset();
+
+		header("location: /project/index.php?created_project={$projectName}");
+		exit(0);
 	}
 	else
 	{
 		echo "Fehler beim Erstellen des Projektes. Eingaben überprüfen.";
-		echo $connection->error;
 	}
-
-	$add_project->reset();
 }
 
 ?>
@@ -49,33 +59,22 @@ if (checkPostValues() === TRUE )
 <html lang="de">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="newproject.css">
+	<link rel="stylesheet" href="../../buttons.css" type="text/css">
+	<link rel="stylesheet" href="../../font-size.css" type="text/css">
 	<title>Projekt hinzufügen</title>
-	<style>
-		div {
-			width: 100%;
-			border: 1px solid rgb(255, 255, 255);
-			align-content: center;
-			align-items: center;
-            white-space: pre-line;
-            display: inline-block;
-		}
-		form {
-			margin: 0 auto;
-			width: 500px;
-    	}
-	</style> 
 </head>
 
 <body>
 	<main>
-		<h1 style="text-align: justify;">Projekt Erstellen</h1>
-        <div>
+		<h1>Projekt Erstellen</h1>
+        <div id="form-wrapper-div">
             <form name="RegForm" id="register-form" method="post">
                 Projektname:
-					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt"/>
+					<input id="project-name-input" type="text" size="65" name="ProjectName" placeholder="Musterprojekt" required/>
 
                 Verantwortlicher:  
-					<select id="project-owner-select" name = "ProjectOwner">
+					<select id="project-owner-select" name = "ProjectOwner" required>
 						<option selected="true" disabled="disabled" hidden="true" value="">Wähle Verantwortlichen</option>
 						<?php 
 							$result = $connection->query("SELECT * FROM User;");
@@ -87,27 +86,30 @@ if (checkPostValues() === TRUE )
 					</select>
 
                 Thema:              
-					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic"></textarea>
+					<textarea rows="4"  cols="64" id="project-topic-textarea" name="Topic" required></textarea>
                 
-				Abgabedatum:
-					<?php 
-						$month = date('m');
-						$day = date('d');
-						$year = date('Y');
-						$today = $year . '-' . $month . '-' . $day;
-					?>
-					<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
-    
-				Farbe: 
-					<input type="color" size="65" name="Color" />    
-
-                <div>
-					<input id="CreateProjectButton" type="submit" value="Projekt erstellen" name="CreateProject" />
-                    <a href=".."><button id="backButton" type="button">Zurück</button></a>
-                </div> 
-
+					<div id="date-and-color-wrapper-div">
+						<div id="date-wrapper-div">
+						Abgabedatum:
+							<?php 
+								$month = date('m');
+								$day = date('d');
+								$year = date('Y');
+								$today = $year . '-' . $month . '-' . $day;
+							?>
+							<input type="date" size="65" name="End" value="<?php echo $today; ?>" min = "<?php echo $today; ?>"/>
+						</div>
+						<div id="color-wrapper-div">
+						Farbe: 
+							<input type="color" size="65" name="Color" />
+						</div>
+					</div>            
+                <div id="button-container">
+					<a href=".."><button id="back-button" type="button">Zurück</button></a>
+					<a href=".."><button id="create-project-button" type="submit">Projekt erstellen</button></a>
+                </div>
+				
 				<script src="../../jquery-3.6.0.js"></script>
-				<script src="new-project.js"></script>
 		    </form>
         </div>	
 	</main>    

@@ -1,5 +1,7 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="buttons.css" type="text/css">
+    <link rel="stylesheet" href="font-size.css" type="text/css">
 </head>
 
 <body>
@@ -7,6 +9,8 @@
     //These are the defined authentication environment in the db service
 
     // The MySQL service named in the docker-compose.yml.
+    include("login/checkForLogin.php");
+
     include("/app/config/credentials.php");
 
     include("database_structure.php");
@@ -14,6 +18,7 @@
     ?>
 
     <div>
+        <div id="notification-div" class="hidden"></div>
         <header>
             <h1 id="h1-heading">Einsatzplan - Übersicht KW</h1>
             <div id="div-search-weekly-report-wrapper">
@@ -22,8 +27,8 @@
         </header>
         <div>
             <div id="div-buttons-weekly-report-header">
-                <button id="btn-edit-projects">Projekte verwalten</button>
-                <button id="btn-add-employee">Mitarbeiter hinzufügen</button>
+                <a href="./project/"><button id="btn-edit-projects">Projekte verwalten</button></a>
+                <a href="./registration/"><button id="btn-add-employee">Mitarbeiter hinzufügen</button></a>
                 <button id="btn-edit-holidays">Feiertage verwalten</button>
             </div>
             <div>
@@ -31,11 +36,11 @@
                     <thead>
                         <tr>
                             <td id="td-employee">Mitarbeiter<br/></td>
-                            <td id="td-monday">Montag<br/></td>
-                            <td id="td-tuesday">Dienstag<br/></td>
-                            <td id="td-wednesday">Mittwoch<br/></td>
-                            <td id="td-thursday">Donnerstag<br/></td>
-                            <td id="td-friday">Freitag<br/></td>
+                            <td id="td-monday">Montag<br/><p></p></td>
+                            <td id="td-tuesday">Dienstag<br/><p></p></td>
+                            <td id="td-wednesday">Mittwoch<br/><p></p></td>
+                            <td id="td-thursday">Donnerstag<br/><p></p></td>
+                            <td id="td-friday">Freitag<br/><p></p></td>
                         </tr>
                     </thead>
                     <tbody id="tbody-employee-entries">
@@ -54,9 +59,18 @@
                         }
                         ?>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6" align="center">
+                                <button onclick="changeCalendarWeek('-')">-</button>
+                                <button onclick="changeCalendarWeek('+')">+</button>
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
         </div>
+
     </div>
     <script src="jquery-3.6.0.js"></script>
     <script src="js/weekly-report.js"></script>
