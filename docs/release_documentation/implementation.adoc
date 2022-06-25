@@ -7,6 +7,7 @@
 = Projektdurchführung
 
 
+// ist das ein problem einer konkreten iteration oder soll das so generell stehen bleiben?
 == Problem:
 Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
 Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
@@ -22,34 +23,25 @@ Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau 
 
 Unsere Ziele für I09 waren: 
 Neubegonnen:
-
 -Nutzerübersichtsseite #39
-
 -Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
-
 -Mitarbeiter anlegen um Abteilungsdropdown erweitern #35 
-
 //wurde erst später beendet, aber naja
 -Aufräumen der Datenbankenstruktur #37
-
 -Anlegen der Abteilungstabelle + 5 Abteilungen #34
-
 -Mitarbeiter hinzufügen check der E-Mail #33
-
 -Mitarbeiter hinzufügen Passwortkriterien #36
-
 //später nochmal geöffnet
 //-Praktikumsfragen #31  
 //da war doch ein coach treffen oder? ja am 22.4
 -Beleg korrigieren #29
-
 //andere Reihenfolge und ohne #
 //überschriften?
 
 
 === Dokumentation
 
-Wie bereits geschrieben, hat Herr Anke unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
+Wie bereits geschrieben, hat Herr Professor Anke unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
 Manche Fehler waren schlechter Ausdruck oder es es fehlten Kleinigkeiten bei sonst korrektem Inhalt. Dies konnte schnell behoben werden. 
 
 Die schwerwiegerenden Fehler waren die komplett falsche "logische Sicht". Dort wurde mit einem C4-Modell gerechnet, welches wir jedoch nicht hatten. Daher musste dieses von Grund auf erstellt werden. Da das Back-End zu dem Zeitpunkt noch nicht komplett fertig war, wurden erst einmal die beiden oberen Sichten angefertigt. Eventuelle weitere Sichten sollten möglicherweise im weiterem Verlauf des Projekts folgen. 
@@ -59,12 +51,9 @@ Außerdem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgab
 
 === Implementation
 
-
-Die Datenbank musste aktualisiert werden, damit weitere Funktionen realisiert werden können.
+UC 3
+Die Datenbank musste aktualisiert werden, damit weitere Funktionen realisiert werden können. Eine Aktualisierung betraf die Möglichkeit, dass Abteilungen dem Mitarbeiter hinzugeügt werden können.
 Die beiden Aufgaben konnten ohne Probleme beendet werden. (#34 und #38)
-
-
-UC3
 
 Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Da wir keine Button ohne direkt geplante Funktion haben wollte, wurde der Lösch- und Bearbeitungsbutton nicht umgesetzt und war daher für später geplant. (#39)
 //bild einfügen
@@ -74,7 +63,7 @@ Natürlich soll wenn ein neuer Mitarbeiter angelegt wird, eine Email erstellt we
 //das wurde beendet oder?
 Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen.
 
-Da die RegEx - Regeln nicht nur Frontend-seitig überprüft werden sollten und der zugehörige Backend PHP-Code nicht besonders einfach ist, konnte dieses Issue erst später beendet werden. Dieses Issue hatte außerdem nicht die höchste Priorität. #36
+Da die RegEx - Regeln nicht nur Frontend-seitig überprüft werden sollten und der zugehörige Backend PHP-Code nicht besonders einfach ist, konnte dieses Issue erst später beendet werden.  #36
 
 Bei der Erstellung soll die Abteilung des Mitarbeiters aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
 
@@ -84,7 +73,7 @@ Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Team
 
 === Entscheidungen:
 
-Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor Inne hatte.
+Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
 
 == Iteration 10  
@@ -109,16 +98,22 @@ Mitarbeiter hinzufügen Passwortkriterien #36
 
 === Dokumentation
 
-Risikoliste erweitert. Dokumente aktuell gehalten (auch wenn es evtl. nichts neues gab??)
+Die Risikoliste wurde erweitert. Dabei wurde verarbeitet, dass zu wenig Aufgaben vergeben wurden sind.
+Die Dokumente wurden aktuell gehalten 
+//(auch wenn es evtl. nichts neues gab??)
 
 === Implementation
 
-Es sollte eine simple Suchfunktion eingefügt werden, sodass nach Mitarbeiter und Projekten gesucht werden kann und bloß diese Angezeigt werden. Diese Aufgabe wurde Herr Keil in Abwesenheit gegeben.
+Es sollte eine simple Suchfunktion eingefügt werden, sodass nach Mitarbeiter und Projekten gesucht werden kann und bloß diese Angezeigt werden. Diese Aufgabe wurde Herr Keil in Abwesenheit gegeben, jedoch wurde sie nicht begonnen.
+
+Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS und JavaScript Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
+Außerdem wurden die PHP-Credentials angepasst. Herr Werner hat auch anderen Teammitgliedern bei ihren Aufgaben geholfen
 
 //das hat kein direkten use case
-UC 03
 
-Es sollten Dummy-Daten für Projekte eingefügt, damit damit gleich die Funktionaltität überprüft werden konnte und das spätere Arbeiten angenehmer gestaltete. Jedoch wurde dies nie begonnen und daher in der nächsten Iteration fortgeführt.
+
+UC 03
+Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionaltität leichter überprüft werden konnte und das spätere Arbeiten dadurch angenehmer gestaltete werden kann. Jedoch wurde dies nie begonnen und daher in der nächsten Iteration fortgeführt.
 
 Leider konnten die Passwortkriterien-Aufgabe immer noch nicht abgeschlossen werden. 
 
@@ -127,6 +122,7 @@ Leider konnten die Passwortkriterien-Aufgabe immer noch nicht abgeschlossen werd
 
 Es wurden kaum neue Aufgaben vergeben, zeitgleich gab es aber auch kaum alte zum fortführen. Hier wurde das 1. Mal gemerkt, dass das Projekt zu stocken beginnt. Jedoch hatten wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 //was hatte das für einen Grund und wieso war das in der nächsten woche noch einmal 
+//war der grund, dass wir zu wenig programmierfähigkeiten hatten und deswegen lust/ hoffnung verloren haben?
 
 == Iteraion 11 05.04.22. - 11.04.22
 
@@ -146,24 +142,29 @@ Mehr Dummy-Daten für Project und Project_User #42
 
 === Dokumentation
 
-Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie das C4-Model.
+Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie die ersten beiden Schichten des C4-Model. Eine genauere Darstellung war noch nicht möglich, da die ganzen Komponenten erst im Laufe des Projektes erstellt werden.
 
 === Implementaton
 
+UC 02
+
+Es wurde implemtiert, dass wenn auf einen Wochentag geklickt wurde, dass dann ein Dropdown-Menü angezeigt wird. Sieht der Benutzer die Verfügbaren Projekte. Die Projekte, die er bereits als Stati für den Tag ausgewält hat, werden nicht angezeigt. #30
+//commit von niklas vom 11.4
+
 UC 03
 
-Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen Namen möglich sein. 
-
-Dieses Mal konnten die Dummy-Daten eingefügt werden.
+Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen Namen möglich sein. Falls ein Benutzer keinen Namen angibt, soll es eine Fehlermeldung geben. 
+//ist das hier richtig? das gehört zu keinem issue darüber und eigentlich sollte die funktion erst in der nächsten iteration relevent sein, weil dort erst ein projekt erstellt werden kann
+Dieses Iteration konnten die Dummy-Daten eingefügt werden.
 
 === Problem 
 
-Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit wurde von weiteren Maßnahmen abgesehen. 
+Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
 
 == Iteration 12 12.04.22-25.04.22
-//risk liste ist komisch, da hat irgendwas doppelt
-In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko)
-moral ++
+
+In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko). Außerdem stärkte es unsere Moral, da wir nun wieder glauben konnten, dass wir eine gute Anwendung erstellen werden können. 
+
 
 Unsere Ziele für I12 waren: 
 
@@ -189,26 +190,25 @@ Projekterstellungsseite Frontend+Backend #32
 
 Da der Beleg aktuell war, musste bloß unser neues Mitglied Vinh Nguyen in die Dokumentation eingetragen und darin geschult werden, damit er damit umgehen kann.
 
-Risikoliste erweitert
+Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert, 
 
 === Implementation
 //sicher das ich die UC nicht zt vertauscht habe, da ich mir die falsch gemerkt habe
 UC 01
 
-Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten anzeigen kann. #43
+Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten (Datum) anzeigen kann. #43
 
 UC 04
-
-Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein inoffizielles Enddatum, eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
+//wie kann in iteration davor
+Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein Enddatum (welches zur Orientierung dienen soll), eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
 
 Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen und entzogen werden kann. Dies wurde ebenfalls angefangen, jedoch nicht beendet. #45
 
 === Entscheidung: 
 
-Um die Produktivität zu erhöhen wurd die Iterationszeit auf 2 Wochen erhöht. Daher sollten die Meetings ebenfalls aller zwei Wochen stattfinden.
-
+Um die Produktivität einzelner Teammitglieder zu erhöhen wurd die Iterationszeit auf 2 Wochen erhöht. Daher sollten die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhofften dadurch, dass die Zeit des Meeting für das Programmieren verwendet wird und die Teammitglieder durch weniger Druck haben, als wenn sie jede Woche ihren Fortschritt zeigen sollen. Durch den womöglichen weniger Druck sollten sie mehr und besser Arbeiten.
 Ob dies die gewünschte Veränderung mit sich brachte, sollte innerhalb von zwei Iterationen überprüft werden.
-
+Diese Entscheidung wurde getroffen bevor uns Herr Nguyen zugewiesen wurden ist.
 
 //den absatz in problem und dann entscheidung auseinandernehmen
 
@@ -217,6 +217,7 @@ Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeite
 === Problem 
 
 Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
+Jedoch wussten wir, dass einige Mitglieder vermutlich nicht genug Programmierenwissen haben. Daher sollte bei Problemen weiterhin Herr Werner um Rat gebeten werden und diese sollten sich selbstständig, z.B. Mithilfe von Tutorial und Anleitungen, fortbilden.
 
 Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
 
@@ -268,7 +269,7 @@ Die Arbeiten am UC04 aus der vorherigen Iteration konnten abgeschlossen werden. 
 
 === Entscheidung
 
-Bisher ist eine Verbesserung hinsichtlich der Produktivität nicht erkennbar. 
+Bisher ist eine Verbesserung hinsichtlich der Produktivität nicht erkennbar, auch wenn sie durch Herrn  
 
 Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt und das Team auch weiterhin nicht über den aktuellen Stand selbstständig in Kenntnis gesetzt. Daher war es Herr Kemters Aufgabe diese Informationen einzuholen.
 
@@ -337,7 +338,7 @@ Er forderte, dass nach der Erstellung eines Mitarbeiters oder eines Projektes ei
 Die Übergabe wurde auf den 22.06.2022 festgelegt. 
 Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Systemen von T-System MMS testen, da er davon überzeugt ist, dass aufgrund der Nutzung von Docker es keine Probleme geben wird. Wir teilen diese Meinung nur bedingt und wären lieber besser auf alle Eventualitäten vorbereitet. Wir werden versuchen ihn zu einem späteren noch einmal darauf anzusprechen und dies auch schriftlich festhalten. 
 
-//analyse/oberflächenentwurf (wireframe) war also gut
+
 === Implementation
 
 //sind das nicht quasi alle use cases?
@@ -346,7 +347,9 @@ Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und über 
 
 UC 01
 
-Für den Use-Cas 01 fehlte noch ein elementares Feature. Was ist eine Kalenderanwendung, wenn es nicht möglich ist, dass die Wochen gewechselt werden können? Daher sollte dies realisiert werden. Leider wurde es diese Iteration nicht beendet.
+Für den Use-Cas 01 fehlte noch ein elementares Feature. Was ist eine Kalenderanwendung, wenn es nicht möglich ist, dass die Wochen gewechselt werden können? Daher sollte dies realisiert werden. Leider wurde es dieser Iteration nicht beendet.
+
+Die anzeigte Kalenderwoche stimmte am Montag nicht mit der tatsächlichen Woche überein. Dieser Bug konnte behoben werden.
 //fehlt noch mehr
 
 
@@ -444,17 +447,44 @@ Projektbericht #116 -> noch nicht fertig, da zu viel aufwand
 
 === Dokumentation 
 
-Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration viel an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und verbessern der Test-, Betriebs- und Entwicklerdokumentation. Hier wurden gute Grundlagen gelegt, jedoch reichte es noch für die Abgabe aus. Daher wurden sie weiterverbessert. Die Anwenderdoku sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realsiiert werden, was Teile der Anwenderdokumentation sinnlos erscheint lässt.
-//komischer satz
+Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration viel an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Hier wurden gute Grundlagen gelegt, jedoch reichte es noch nicht für die Abgabe aus. Daher wurden sie weiterverbessert. Die Anwenderdoku sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realsiiert werden, was Teile der Anwenderdokumentation sinnlos erscheint lässt. Wir haben mit Herrn Liebert abgesprochen, dass wir sie nicht bis zur Anwendungsübergabe fertig haben müssen. Es reicht auch bis spätestens den 8.7.
+//Dreckssatz  
 Wie auch in den Wochen davor wurde sich auf den Projektbericht fokusiert. Diesen hat Herr Kemter den Inhalt erweitert und dann mit Herrn Beck auf Verständlichkeit und Inhalt korrigiert. 
+
+Einzelne Use-Cases mussten um Kleinigkeiten verbessert werden. Manchmal fehlte bei einem Alternativablauf ein Name oder wurde gar nicht erst beschrieben. 
+
+
+=== Entscheidung
 
 Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich einige Mitglieder weiterhin nicht in angemessenen Maße beteiligt haben.
 //entscheidung: es wurde nochmal besprochen, dass alle mit der differentizierten bewertung einverstanden sind
 //aleksandra war nicht da, aber entschieden, dass sie noch was machen soll oder wir schreiben nochmal an coach/anke, dass sie eigentlich auch wenig gemacht hat 
 
 == Iteration 20
-
+21.06.22-27.06.22
+Unsere Ziele für I20 waren:
+neubegonnen: anwendung abgeben an TS 
 vortrag
+mit Coach und evtl herrn Professor Anke die doku/bericht  besprechen -> problem was sich auftat
+fortgeführt:
+doku/bericht weiter machen
+
+=== Treffen mit Herrn Professor Anke und Herrn Zirkelbach
+
+Herr Beck und Herr Kemter traffen sich zu einer Konsultation Herrn Professor Anke und Herrn Zirkelbach, dort sollte die Betriebsdokumentation mit u.a. dem C4-Model besprochen werden und welche weiteren Diagramme noch verwendeten werden können. Das Ergebnis war das unser C4-Model etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen werden. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden.
+
+Zu dem Projektbericht gabe es ein paar Strukturelle Fragen und wie genau die Inhaltsverteilung sein soll. Denn bei unserem Projektbericht wurde während der Erstellung festgestellt, dass wir keine direkten Probleme in der Implementierung hatten. Unsere Probleme, welche das Implementieren indirekt betreffen, kamen eher von Gründen von "außerhalb". Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden sind. Wir wurden jedoch in unserem Aufbau bestätigt und werden das nicht deswegen umschreiben müssen. Herrn Werner hatte sich außerdem bereit erklärt noch etwas zu der Implementation zu schreiben. 
+Einige andere kleine Fragen wurden ebenfalls angesprochen und werden dementsprechend eingearbeitet.
+
+In in dem Gespräch kam jedoch unser Problem auf, was hier in dem Projektbericht schon beschrieben wurden ist. Einige Mitglieder haben deutlich weniger gemacht als andere. Diese ungerechte Verteilung sollte wie bereits beschrieben über die differenzierte Bewertung in der Note wiederspiegeln. Jedoch war Herr Professor Anke davon nicht überzeugt und bat Herrn Kemter und Herrn Beck mit den anderen Mitgliedern zu sprechen und eine Entscheidung zu fällen. Die Mitglieder entschieden sich eine möglichste faire Mail und der Bitte, dass die anderen Mitglieder auch noch Stellung dazu beziehen dürfen. Die betroffenen Teammitglieder wurden von der Mail informiert und es stand ihnen frei, ob sie noch den Vortrag halten wollen. Alle haben sich mit einem eventuellen "nicht Bestehen" nicht einverstanden gezeigt.
+
+=== Dokumentation
+
+Die Test- und Betriebsdokumentation sind fast fertig und haben bloß noch Kleinigkeiten 
+
+=== Übergabe der Software an Herrn Liebert 
+
+//ja irgendwas muss vllt noch zum vortrag geschrieben werden
 
 
 == Iteration 21
@@ -464,7 +494,7 @@ vortrag
 
 
 
-
+------------------------------------------------------- ab hier stichpunkte, die z.T. schon verarbeitet wurden
 
 
 
