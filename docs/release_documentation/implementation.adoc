@@ -12,7 +12,7 @@
 Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
 Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
-== Iteration 9 (23.03.22 - 28.03.22)
+== Iteration 9 (23.03.2022 - 28.03.2022)
 
 Dies war die erste Iteration im neuen Semester. Wir hatten aufgrund der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
@@ -77,7 +77,7 @@ Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Team
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
 
-== Iteration 10 (29.03.22 - 04.04.22)
+== Iteration 10 (29.03.2022 - 04.04.2022)
 
 Unsere Ziele für I10 waren: 
 
@@ -125,7 +125,7 @@ Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch
 //was hatte das für einen Grund und wieso war das in der nächsten woche noch einmal 
 //war der grund, dass wir zu wenig programmierfähigkeiten hatten und deswegen lust/ hoffnung verloren haben?
 
-== Iteraion 11 (05.04.22. - 11.04.22)
+== Iteraion 11 (05.04.2022 - 11.04.2022)
 
 Unsere Ziele für I11 waren: 
 Neue Ziele:
@@ -170,7 +170,7 @@ Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 
 Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
 
-== Iteration 12 12.04.22-25.04.22
+== Iteration 12 (12.04.2022 - 25.04.2022)
 
 In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekammen ein neues Mitglied, welches im Front-End und Back-End gut bewandert war. Dies war eine nötige Verstärkung für uns, da wir sonst gefahr liefen, dass wir aufgrund von "nicht Wissen" nicht weiter bzw. langsam vorankommen (risiko). Außerdem stärkte es unsere Moral, da wir nun wieder glauben konnten, dass wir eine gute Anwendung erstellen werden können. 
 
@@ -180,15 +180,10 @@ Unsere Ziele für I12 waren:
 Neue Ziele: 
 
 * Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
-
 * Projekterstellungsseite Frontend+Backend #32
-
 * Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an Carl
-
 * API: Aktuelle Kalenderwoche #43 -> fertig
-
 * Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht      
-
 * Neues Mitglied Vinh einführen
 
 Fortgeführt:
@@ -232,27 +227,23 @@ Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Ke
 
 Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
 
-== Iteration 13 26.04.22-09.05.22
+== Iteration 13 (26.04.2022 - 09.05.2022)
 
 Unsere Ziele für I13 waren: 
 
-Neue Ziele: Dummy Status einfügen #48 -> fertig
+Neue Ziele:
 
-API: Status der Kalenderwoche #49 -> fertig. gab leichte probleme mit in die datenbank einloggen 
-
-API: Erweiterung um das Jahr #50 -> fertig (anscheinend sogar noch am montag -> nicht teil der iteration lul)
-
-API: Einfügen eines neuen Status #52 -> in nächster iteration fertig gestellt 
-
-API: Alle Nutzer eines Projektes #53 -> fertig 
-
-API: REST-API zum Einfügen, Löschen und Abrufen von Nutzern in Projekten #54 -> fertig
+* Dummy Status einfügen #48 -> fertig
+* API: Status der Kalenderwoche #49 -> fertig. gab leichte probleme mit in die datenbank einloggen 
+* API: Erweiterung um das Jahr #50 -> fertig
+* API: Einfügen eines neuen Status #52 -> in nächster iteration fertig gestellt 
+* API: Alle Nutzer eines Projektes #53 -> fertig 
+* API: REST-API zum Einfügen, Löschen und Abrufen von Nutzern in Projekten #54 -> fertig
 
 Fortgeführt: 
 
-Mehr Dummy-Daten für Project und Project_User #42 -> fertig
-
-Projektverwaltungsseite #45 -> fertig 
+* Mehr Dummy-Daten für Project und Project_User #42 -> fertig
+* Projektverwaltungsseite #45 -> fertig 
 
 === Dokumentation 
 
@@ -289,21 +280,21 @@ Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhin
 Aufgrund beschrieben Softwarevorfalls in dieser Iteration bei Herrn Nguyen wurde beschlossen, dass die neu genutzten Tools auf ein Minimum zu beschränken sind. Falls neue Tools notwendig sind, soll sich der Nutzer über diese davor informieren. 
 
 
-=== I14 10.05.22-16.05.22
+=== Iteration 14 (10.05.2022 - 16.05.2022)
 
-Unsere Ziele für I14 waren: 
-Neue Ziele:  Status anzeigen #51 -> keine ahnung was da los war
+Unsere Ziele für I14 waren:
 
-Verbleibende Fehler von Psalm beheben #58 -> am letzten Tag assigned und dann fertig gestellt
+Neue Ziele:  
 
-Dummy Daten für Status falsche Wochentage #61 -> fertig
-
-Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten Probleme aufgeben, außer Fehlermeldung bei "Projekt erstellen"
+* Status anzeigen #51 -> keine ahnung was da los war
+* Verbleibende Fehler von Psalm beheben #58 -> am letzten Tag assigned und dann fertig gestellt
+* Dummy Daten für Status falsche Wochentage #61 -> fertig
+* Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten Probleme aufgeben, außer Fehlermeldung bei "Projekt erstellen"
 // get_calendar_week.php #62 ohne commit etc geschlossen 
 
 Fortgeführt:
 
-API: Einfügen eines neuen Status #52 -> fertig
+* API: Einfügen eines neuen Status #52 -> fertig
 
 
 === Entscheidung
@@ -328,16 +319,15 @@ Daher wurde Frau Tartz damit beauftragt manuelle Tests durchzuführen. Außerdem
 //und das sollte glaube nochmal positiver/anders formuliert werden
 
 
-== Iteration 15 
-17.05.22-23.5.22
+== Iteration 15 (17.05.2022 - 23.5.2022)
 
 Unsere Ziele für I15 waren: 
 //gefühlt hat bloß vinh hier was erledigt
-Neue Ziele: Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
-Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer bug mit montags und fehler konnte erst nicht behoben werden -> wurde dann aber anscheind behoben
-
-CSS: Projektverwaltung #70 -> wurde von TS gefordert und wurde angefangen und immer weiter geführt
-Status hinzufügen #71 -> nicht beendet da schwieriger als erwartet für vinh. wurde aber nicht weitergeführt, da es ein anderes issue erst beendet werden sollte, damit dies zufrieden fertig gestellt wird ????? oder vinh hat einfach das andere fertig gemacht, damit dieses ging
+Neue Ziele:
+* Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
+* Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer bug mit montags und fehler konnte erst nicht behoben werden -> wurde dann aber anscheind behoben
+* CSS: Projektverwaltung #70 -> wurde von TS gefordert und wurde angefangen und immer weiter geführt
+* Status hinzufügen #71 -> nicht beendet da schwieriger als erwartet für vinh. wurde aber nicht weitergeführt, da es ein anderes issue erst beendet werden sollte, damit dies zufrieden fertig gestellt wird ????? oder vinh hat einfach das andere fertig gemacht, damit dieses ging
 Fortgeführt:
 
 === Feedback vom Themensteller
@@ -362,8 +352,7 @@ Die anzeigte Kalenderwoche stimmte am Montag nicht mit der tatsächlichen Woche 
 //fehlt noch mehr
 
 
-== Iteration 16 
-24.05.22-30.05.2022 
+== Iteration 16 (24.05.2022 - 30.05.2022)
 
 Unsere Ziele für I16 waren: 
 Projekt erstellen Fehlerbehandlung #68 -> fertig 
@@ -377,8 +366,7 @@ Herr Keil war immernoch unabkömmlich. Daher haben wir entschieden diesen Sachve
 Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. Wie extrem unsere Empfehlungen dafür ausfallen werden, sollte daran bemessen werden wie diese Teammitglieder in den restlichen Wochen sich am Projekt beteiligen werden.
 //war das hier auch mit der differenzierten bewertung besprochen wurden?
 
-== Iteration 17 
-31.05.22-06.06.22 
+== Iteration 17 (31.05.2022 - 06.06.2022)
 
 Unsere Ziele für I17 waren: 
 Neue Ziele: Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von niclas in nächster iteration beendet. muss beendet werden, da von ts im gespräch gefordert
@@ -388,8 +376,7 @@ Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei 
 Projektverwaltung: Projekte löschen #94 -> agenommen von vinh, aber nicht angefangen. 
 Fortgeführt: 
 
-== Iteration 18
-09.06.2022-13.06.2022
+== Iteration 18 (09.06.2022 - 13.06.2022)
 
 Aufgrund der Feiertage fand unser Teammeeting und Iteration von Mittwoch bis Montag statt. 
 
@@ -444,8 +431,7 @@ Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es d
 //    am 9.6. nochmal kurz mit herrn anke/zirkelbach reden
 
 
-=== Iteration 19 
-14.6.2022 - 20.06.2022
+=== Iteration 19 (14.6.2022 - 20.06.2022)
 Unsere Ziele für I19 waren: 
 
 //wurden nochmal auf den aktuellen stand gebracht, was/wann abgeben werden muss und die bereits angefangenen doku kommentiert und fragen/probleme beantwortet
@@ -469,8 +455,7 @@ Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich e
 //entscheidung: es wurde nochmal besprochen, dass alle mit der differentizierten bewertung einverstanden sind
 //aleksandra war nicht da, aber entschieden, dass sie noch was machen soll oder wir schreiben nochmal an coach/anke, dass sie eigentlich auch wenig gemacht hat 
 
-== Iteration 20
-21.06.22-27.06.22
+== Iteration 20 (21.06.2022 - 27.06.2022)
 Unsere Ziele für I20 waren:
 Neue Ziele: anwendung abgeben an TS 
 vortrag
