@@ -12,29 +12,29 @@
 Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
 Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
-== I09
+== Iteration 9 (23.03.22 - 28.03.22)
 
-Iteration 9 (23.03.22 - 28.03.22) war die erste Iteration im neuen Semester. Wir hatten wegen der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
+Dies war die erste Iteration im neuen Semester. Wir hatten aufgrund der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 //passt der joke oder soll das raus?
 Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr belegt.
 
 Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
 //risiko 
 
-Unsere Ziele für I09 waren: 
-Neubegonnen:
--Nutzerübersichtsseite #39
--Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
--Mitarbeiter anlegen um Abteilungsdropdown erweitern #35 
-//wurde erst später beendet, aber naja
--Aufräumen der Datenbankenstruktur #37
--Anlegen der Abteilungstabelle + 5 Abteilungen #34
--Mitarbeiter hinzufügen check der E-Mail #33
--Mitarbeiter hinzufügen Passwortkriterien #36
+Unsere Ziele für I09 waren:
+
+* Anlegen der Abteilungstabelle + 5 Abteilungen #34
+* Nutzerübersichtsseite #39
+* Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
+* Mitarbeiter anlegen um Abteilungsdropdown erweitern #35 
+* Aufräumen der Datenbankenstruktur #37
+* Anlegen der Abteilungstabelle + 5 Abteilungen #34
+* Mitarbeiter hinzufügen check der E-Mail #33
+* Mitarbeiter hinzufügen Passwortkriterien #36
 //später nochmal geöffnet
 //-Praktikumsfragen #31  
 //da war doch ein coach treffen oder? ja am 22.4
--Beleg korrigieren #29
+* Beleg korrigieren #29
 //andere Reihenfolge und ohne #
 //überschriften?
 
@@ -42,120 +42,129 @@ Neubegonnen:
 === Dokumentation
 
 Wie bereits geschrieben, hat Herr Professor Anke unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
-Manche Fehler waren schlechter Ausdruck oder es es fehlten Kleinigkeiten bei sonst korrektem Inhalt. Dies konnte schnell behoben werden. 
+Viele der Fehler waren nur Kleinigkeiten und diese konnten schnell behoben werden.
 
-Die schwerwiegerenden Fehler waren die komplett falsche "logische Sicht". Dort wurde mit einem C4-Modell gerechnet, welches wir jedoch nicht hatten. Daher musste dieses von Grund auf erstellt werden. Da das Back-End zu dem Zeitpunkt noch nicht komplett fertig war, wurden erst einmal die beiden oberen Sichten angefertigt. Eventuelle weitere Sichten sollten möglicherweise im weiterem Verlauf des Projekts folgen. 
+Die schwerwiegenderen Fehler waren die komplett falsche "logische Sicht". Dort wurde ein C4-Modell erwartet, welches wir jedoch nicht hatten. Daher musste dieses von Grund auf neu erstellt werden. Da das Back-End zu dem Zeitpunkt noch nicht komplett fertig war, wurden erst einmal die beiden oberen Sichten angefertigt. Weitere Komponenten sollten im weiteren Verlauf des Projektes folgen. 
 //nennt man das Sichten?
-Außerdem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe war nicht unbedingt schwierig, jedoch war es viel daher konnte die Bearbeitung nicht in dieser Iteration beendet werden.
-
+Zudem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe war nicht unbedingt schwierig, jedoch hatten wir uns bereits viel für diese Iteration vorgenommen und mussten daher diesen Abschnitt auf die nächste Iteration verschieben.
 
 === Implementation
 
-UC 3
-Die Datenbank musste aktualisiert werden, damit weitere Funktionen realisiert werden können. Eine Aktualisierung betraf die Möglichkeit, dass Abteilungen dem Mitarbeiter hinzugeügt werden können.
-Die beiden Aufgaben konnten ohne Probleme beendet werden. (#34 und #38)
+*UC 2*
 
-Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Da wir keine Button ohne direkt geplante Funktion haben wollte, wurde der Lösch- und Bearbeitungsbutton nicht umgesetzt und war daher für später geplant. (#39)
+Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Projekten der Nutzer zugeteilt werden kann. Um Projekten mehrere Nutzer zuzuweisen zu können und auch den Nutzern verschiedene Projekte zuzuweisen zu können, wurde eine neue Datenbanktabelle erstellt, die diese m:n Beziehung auflöst. Diese Aufgabe wurde Herrn Kirchhoff zugeteilt und konnte in dieser Iteration nicht beendet werden. (#38)
+
+*UC 3*
+
+Eine Aktualisierung betraf die Möglichkeit, bei der Registrierung, nun jedem Mitarbeiter eine Abteilung zuzuordnen.
+Dazu wurde zunächst eine neue Datenbanktabelle Abteilung von Herrn Beck angelegt. (#34)
+
+Die Auswahl der Abteilung bei Registrierung eines neuen Nutzers wurde auf die nächste Iteration verschoben. (#35)
+
+Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Mitarbeiters angezeigt werden. Zunächst wird hier nur der Name des Mitarbeiters angezeigt. Weitere Werte müssen in der nächsten Iteration hinzugefügt werden. Diese wurde von Herrn Werner bearbeitet. (#39)
 //bild einfügen
 
-Natürlich soll wenn ein neuer Mitarbeiter angelegt wird, eine Email erstellt werden, welche zumindest den formalen Anforderungen an eine Email entspricht. Dies wurde erledigt. (#33)
+Wenn ein neuer Mitarbeiter angelegt wird, soll überprüft werden, ob es sich um eine valide E-Mail Adresse handelt. Diese Aufgabe wurde Herrn Tichonow zugeteilt. Dies konnte nur im Front-End fertiggestellt werden. Die Überprüfung im Back-End wird auf die nächste Iteration verschoben. (#33)
 
-//das wurde beendet oder?
-Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen.
-
-Da die RegEx - Regeln nicht nur Frontend-seitig überprüft werden sollten und der zugehörige Backend PHP-Code nicht besonders einfach ist, konnte dieses Issue erst später beendet werden.  #36
-
-Bei der Erstellung soll die Abteilung des Mitarbeiters aus einem Dropdown-Menü auswählbar sein. Dies stellte kein Problem dar. 
+Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Backend, konnte dieses Issue nicht in dieser Iteration beendet werden. (#36)
 
 === Problem
 
-Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte.
+Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting unentschuldigt. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte. Einige Aufgaben konnten nicht abgeschlossen werden.
 
 === Entscheidungen:
 
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
 
-== Iteration 10  
+== Iteration 10 (29.03.22 - 04.04.22)
 
-29.03.22 - 04.04.22
-//wo sind hier die aufgaben, als ob nichts neues begonnen wurden ist
-
-//niklas hat bei problemen geholfen -> deswegen wenig
 Unsere Ziele für I10 waren: 
 
-Neubegonnen:
+Neue Ziele:
 
-Suche implementieren #28 -> nie von jonas keil angefangen und auch nicht wichtig genug, das es weitergeführt wird, da kräfte gesammelt werden mussten
-
-Mehr Dummy-Daten für Project und Project_User #42 -> assigned aber nie begonnen erst am 25.4
+* Suche implementieren #28
+* Mehr Dummy-Daten für Project und Project_User #42
+* Verbessern(Refactoring) des bestehenden Codes
 
 Fortgeführt: 
 
-Beleg korrigieren #29
-
-Mitarbeiter hinzufügen Passwortkriterien #36
+* Beleg korrigieren #29
+* Mitarbeiter hinzufügen check der E-Mail #33
+* Mitarbeiter anlegen um Abteilungsdropdown erweitern #35 
+* Mitarbeiter hinzufügen Passwortkriterien #36
+* Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
+* Nutzerübersichtsseite #39
 
 === Dokumentation
 
-Die Risikoliste wurde erweitert. Dabei wurde verarbeitet, dass zu wenig Aufgaben vergeben wurden sind.
-Die Dokumente wurden aktuell gehalten 
-//(auch wenn es evtl. nichts neues gab??)
+Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angefangene C4 Modell verbessert und die Projektrollen besser formatiert. Das Glossar wurde erweitert und neue Praktiken im Projekt-Plan eingefügt. (#29)
 
 === Implementation
 
-Es sollte eine simple Suchfunktion eingefügt werden, sodass nach Mitarbeiter und Projekten gesucht werden kann und bloß diese Angezeigt werden. Diese Aufgabe wurde Herr Keil in Abwesenheit gegeben, jedoch wurde sie nicht begonnen.
+*UC 3*
 
-Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS und JavaScript Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
-Außerdem wurden die PHP-Credentials angepasst. Herr Werner hat auch anderen Teammitgliedern bei ihren Aufgaben geholfen
+Die Nutzerübersichtsseite wurde von Herrn Werner um die Anzeige der Abteilung des Nutzers erweitert und das Issue somit abgeschlossen. (#39)
 
-//das hat kein direkten use case
+Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS, JavaScript und PHP Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
+Außerdem wurden die PHP-Credentials angepasst.
 
+Die Datenbanktabelle um Projektmitgliedschaften darzustellen wurde von Herrn Kirchhoff fertiggestellt. (#38)
 
-UC 03
-Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionaltität leichter überprüft werden konnte und das spätere Arbeiten dadurch angenehmer gestaltete werden kann. Jedoch wurde dies nie begonnen und daher in der nächsten Iteration fortgeführt.
+Die Auswahl der Abteilung während der Nutzererstelltung wurde von Herrn Beck beendet. (#35)
 
-Leider konnten die Passwortkriterien-Aufgabe immer noch nicht abgeschlossen werden. 
+Die Passwortkriterien, sowie die Überprüfung der E-Mail Adresse, werden weiterhin von Herrn Tichonow bearbeitet. (#33 und #36)
 
+Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leichter überprüft werden kann und das spätere Arbeiten dadurch angenehmer gestaltet werden kann. Jedoch wurde dies nicht begonnen und wird daher in der nächsten Iteration angefangen. (#42)
+
+Es sollte eine Suchfunktion eingefügt werden, sodass nach Mitarbeiter und Projekten gesucht werden kann. Dies wurde von Herrn Liebert gewünscht, aber ist kein essentiell wichtiges Feature, da andere Use Cases laut ihm wichtiger sind. Es ist unklar wann Herr Keil wieder an dem Projekt mitarbeiten kann und deswegen wurde ihm diese Aufgabe zugeteilt. Sie wurde bis zum Ende der Iteration nicht begonnen. (#28)
 
 == Problem
 
-Es wurden kaum neue Aufgaben vergeben, zeitgleich gab es aber auch kaum alte zum fortführen. Hier wurde das 1. Mal gemerkt, dass das Projekt zu stocken beginnt. Jedoch hatten wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
+Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Hier hat man gemerkt, dass das Projekt zu stocken beginnt. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 //was hatte das für einen Grund und wieso war das in der nächsten woche noch einmal 
 //war der grund, dass wir zu wenig programmierfähigkeiten hatten und deswegen lust/ hoffnung verloren haben?
 
-== Iteraion 11 05.04.22. - 11.04.22
+== Iteraion 11 (05.04.22. - 11.04.22)
 
 Unsere Ziele für I11 waren: 
-//wo sind hier die aufgaben, als ob nichts neues begonnen/fortgeführt wurden ist
-Neubegonnen:  -Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
+Neue Ziele:
 
-Projekterstellungsseite Frontend+Backend #32
+* Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
+* Projekterstellungsseite Frontend+Backend #32
 
 Fortgeführt:
 
-Beleg korrigieren #29
-
-Mitarbeiter hinzufügen Passwortkriterien #36
-
-Mehr Dummy-Daten für Project und Project_User #42
+* Suche implementieren #28
+* Beleg korrigieren #29
+* Mitarbeiter hinzufügen Passwortkriterien #36
+* Mitarbeiter hinzufügen check der E-Mail #33
+* Mehr Dummy-Daten für Project und Project_User #42
 
 === Dokumentation
 
-Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie die ersten beiden Schichten des C4-Model. Eine genauere Darstellung war noch nicht möglich, da die ganzen Komponenten erst im Laufe des Projektes erstellt werden.
+Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie die ersten beiden Schichten des C4-Model. Eine genauere Darstellung war noch nicht möglich, da die ganzen Komponenten erst im Laufe des Projektes erstellt werden. (#28)
 
-=== Implementaton
+=== Implementation
 
-UC 02
+*UC 2*
 
-Es wurde implemtiert, dass wenn auf einen Wochentag geklickt wurde, dass dann ein Dropdown-Menü angezeigt wird. Sieht der Benutzer die Verfügbaren Projekte. Die Projekte, die er bereits als Stati für den Tag ausgewält hat, werden nicht angezeigt. #30
+Wenn auf einen Wochentag geklickt wird, dann wird nun ein Dropdown-Menü angezeigt. In diesem werden nur die Projekte angezeigt, in welchen der Nutzer aus der jeweiligen Zeile ein Mitglied ist. Dies wurde von Herrn Werner implementiert. (#30)
+
+Eine Funktion zum Anzeigen des Passworts wurde von Herrn Tichonow implementiert. Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (#33 und #36)
 //commit von niklas vom 11.4
 
-UC 03
+*UC 3*
 
 Wenn ein Projekt angelegt wird, sollte dies bloß noch mit einem eingetragenen Namen möglich sein. Falls ein Benutzer keinen Namen angibt, soll es eine Fehlermeldung geben. 
 //ist das hier richtig? das gehört zu keinem issue darüber und eigentlich sollte die funktion erst in der nächsten iteration relevent sein, weil dort erst ein projekt erstellt werden kann
 Dieses Iteration konnten die Dummy-Daten eingefügt werden.
+
+*UC 4*
+
+Die Projekterstellungsseite wurde nicht angefangen, jedoch die Weiterleitung zu dieser von der Wochenansicht. Dies wurde von Herrn Beck bearbeitet. (#32)
+
+Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 
 === Problem 
 
@@ -168,23 +177,23 @@ In dieser Iteration wurden endlich wieder neue Aufgaben begonnen und wir bekamme
 
 Unsere Ziele für I12 waren: 
 
-Neubegonnen: 
+Neue Ziele: 
 
-    Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
+* Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
 
-    Projekterstellungsseite Frontend+Backend #32
+* Projekterstellungsseite Frontend+Backend #32
 
-    Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an Carl
+* Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an Carl
 
-    API: Aktuelle Kalenderwoche #43 -> fertig
+* API: Aktuelle Kalenderwoche #43 -> fertig
 
-    Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht      
+* Projektverwaltungsseite #45 -> angefangen aber nicht fertig, daher später weitergemacht      
 
-    Neues Mitglied Vinh einführen
+* Neues Mitglied Vinh einführen
 
 Fortgeführt:
 
-Projekterstellungsseite Frontend+Backend #32
+* Projekterstellungsseite Frontend+Backend #32
 
 === Dokumentation
 
@@ -194,11 +203,11 @@ Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert,
 
 === Implementation
 //sicher das ich die UC nicht zt vertauscht habe, da ich mir die falsch gemerkt habe
-UC 01
+*UC 1*
 
 Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten (Datum) anzeigen kann. #43
 
-UC 04
+*UC 4*
 //wie kann in iteration davor
 Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden können. Das Projekt soll einen Namen, Mitarbeiter (dies wurde wo anders implimentiert), ein Enddatum (welches zur Orientierung dienen soll), eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann. Da die Aufgabe ziemlich viel war, da sie sowohl Front-End und Back-End beinhaltete, wurde sie in mehreren Iterationen erstellt. #32
 
@@ -227,7 +236,7 @@ Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunk
 
 Unsere Ziele für I13 waren: 
 
-Neubegonnen: Dummy Status einfügen #48 -> fertig
+Neue Ziele: Dummy Status einfügen #48 -> fertig
 
 API: Status der Kalenderwoche #49 -> fertig. gab leichte probleme mit in die datenbank einloggen 
 
@@ -252,7 +261,7 @@ Die Risikoliste wurde erneut im einen Eintrag erweitert. Herr Nguyen hatte ein n
 
 === Implementation
 
-UC 01
+*UC 1*
 
 Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet worden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können. #52 # 53 #49???
 // schaue später nach
@@ -263,7 +272,7 @@ Um die Arbeit zu erleichtern wurde Dummy-Status eingefügt und die Dummy-Projekt
 
 //bild --> wie loggt man sich jetzt an? ^^
 
-UC 04
+*UC 4*
 
 Die Arbeiten am UC04 aus der vorherigen Iteration konnten abgeschlossen werden. #42 #45
 
@@ -283,7 +292,7 @@ Aufgrund beschrieben Softwarevorfalls in dieser Iteration bei Herrn Nguyen wurde
 === I14 10.05.22-16.05.22
 
 Unsere Ziele für I14 waren: 
-Neubegonnen:  Status anzeigen #51 -> keine ahnung was da los war
+Neue Ziele:  Status anzeigen #51 -> keine ahnung was da los war
 
 Verbleibende Fehler von Psalm beheben #58 -> am letzten Tag assigned und dann fertig gestellt
 
@@ -324,7 +333,7 @@ Daher wurde Frau Tartz damit beauftragt manuelle Tests durchzuführen. Außerdem
 
 Unsere Ziele für I15 waren: 
 //gefühlt hat bloß vinh hier was erledigt
-Neubegonnen: Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
+Neue Ziele: Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
 Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer bug mit montags und fehler konnte erst nicht behoben werden -> wurde dann aber anscheind behoben
 
 CSS: Projektverwaltung #70 -> wurde von TS gefordert und wurde angefangen und immer weiter geführt
@@ -345,7 +354,7 @@ Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Sys
 Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und über die nächsten Iterationen fortgeführt. Das Ziel war eine bessere Darstellung der Inhalte. Zuvor wurden diese z.T. hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist.
 
 
-UC 01
+*UC 1*
 
 Für den Use-Cas 01 fehlte noch ein elementares Feature. Was ist eine Kalenderanwendung, wenn es nicht möglich ist, dass die Wochen gewechselt werden können? Daher sollte dies realisiert werden. Leider wurde es dieser Iteration nicht beendet.
 
@@ -358,7 +367,7 @@ Die anzeigte Kalenderwoche stimmte am Montag nicht mit der tatsächlichen Woche 
 
 Unsere Ziele für I16 waren: 
 Projekt erstellen Fehlerbehandlung #68 -> fertig 
-Neubegonnen: Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
+Neue Ziele: Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
 Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
 Wechsel der Wochenansicht #66
 
@@ -372,7 +381,7 @@ Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder,
 31.05.22-06.06.22 
 
 Unsere Ziele für I17 waren: 
-Neubegonnen: Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von niclas in nächster iteration beendet. muss beendet werden, da von ts im gespräch gefordert
+Neue Ziele: Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von niclas in nächster iteration beendet. muss beendet werden, da von ts im gespräch gefordert
 Lizenz für Projekt erarbeiten #84 -> beendet jedoch sind wir uns nicht 100% sicher, dass das so korrekt ist
 Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
 
@@ -385,7 +394,7 @@ Fortgeführt:
 Aufgrund der Feiertage fand unser Teammeeting und Iteration von Mittwoch bis Montag statt. 
 
 Unsere Ziele für I17 waren: 
-Neubegonnen:
+Neue Ziele:
 Login einfügen #91 -> erst vitali, aber dann niclas fertig gemacht
 Fix: Replace is_int with ctype_digit #96 -> fertig
 Projektbericht
@@ -440,7 +449,7 @@ Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es d
 Unsere Ziele für I19 waren: 
 
 //wurden nochmal auf den aktuellen stand gebracht, was/wann abgeben werden muss und die bereits angefangenen doku kommentiert und fragen/probleme beantwortet
-Neubegonnen: Anwenderdoku (noch kein issue)
+Neue Ziele: Anwenderdoku (noch kein issue)
 programmier zeugs
 Fortgeführt: Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> da abgeben, soll es eig fertig sein
 Projektbericht #116 -> noch nicht fertig, da zu viel aufwand
@@ -463,7 +472,7 @@ Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich e
 == Iteration 20
 21.06.22-27.06.22
 Unsere Ziele für I20 waren:
-neubegonnen: anwendung abgeben an TS 
+Neue Ziele: anwendung abgeben an TS 
 vortrag
 mit Coach und evtl herrn Professor Anke die doku/bericht  besprechen -> problem was sich auftat
 fortgeführt:
