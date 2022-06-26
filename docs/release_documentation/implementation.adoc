@@ -8,9 +8,10 @@
 
 
 // ist das ein problem einer konkreten iteration oder soll das so generell stehen bleiben?
-== Problem:
+== Problem
 Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
-Daher lag die Entscheidung nahe, das Angebot des Prof Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
+
+Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
 == Iteration 9 (23.03.2022 - 28.03.2022)
 
@@ -72,7 +73,7 @@ Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. 
 
 Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting unentschuldigt. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte. Einige Aufgaben konnten nicht abgeschlossen werden.
 
-=== Entscheidungen:
+=== Entscheidungen
 
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
@@ -85,7 +86,7 @@ Neue Ziele:
 
 * Suche implementieren #28
 * Mehr Dummy-Daten für Project und Project_User #42
-* Verbessern(Refactoring) des bestehenden Codes
+* Verbessern (Refactoring) des bestehenden Codes
 
 Fortgeführt: 
 
@@ -98,7 +99,7 @@ Fortgeführt:
 
 === Dokumentation
 
-Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angefangene C4 Modell verbessert und die Projektrollen besser formatiert. Das Glossar wurde erweitert und neue Praktiken im Projekt-Plan eingefügt. (#29)
+Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angefangene C4-Modell verbessert und die Projektrollen besser formatiert. Das Glossar wurde erweitert und neue Praktiken im Projekt-Plan eingefügt. (#29)
 
 === Implementation
 
@@ -128,6 +129,7 @@ Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch
 == Iteraion 11 (05.04.2022 - 11.04.2022)
 
 Unsere Ziele für I11 waren: 
+
 Neue Ziele:
 
 * Erstellen des Status soll nur noch mit einem gültigen Projektnamen funktionieren #30
@@ -143,7 +145,7 @@ Fortgeführt:
 
 === Dokumentation
 
-Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie die ersten beiden Schichten des C4-Model. Eine genauere Darstellung war noch nicht möglich, da die ganzen Komponenten erst im Laufe des Projektes erstellt werden. (#28)
+Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie die ersten beiden Schichten des C4-Modell. Eine genauere Darstellung war noch nicht möglich, da die ganzen Komponenten erst im Laufe des Projektes erstellt werden. (#28)
 
 === Implementation
 
@@ -179,7 +181,7 @@ Unsere Ziele für I12 waren:
 
 Neue Ziele: 
 
-* Beleg aktuell halten bzw. weiterbearbeiten #41  -> dauerauftrag
+* Beleg aktuell halten bzw. weiterbearbeiten #41  -> Dauerauftrag
 * Projekterstellungsseite Frontend+Backend #32
 * Mehr Dummy-Daten für Project und Project_User #42 -> nicht geschafft und dann neu vergeben an Carl
 * API: Aktuelle Kalenderwoche #43 -> fertig
@@ -194,13 +196,13 @@ Fortgeführt:
 
 Da der Beleg aktuell war, musste bloß unser neues Mitglied Vinh Nguyen in die Dokumentation eingetragen und darin geschult werden, damit er damit umgehen kann.
 
-Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert, 
+Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert. 
 
 === Implementation
 //sicher das ich die UC nicht zt vertauscht habe, da ich mir die falsch gemerkt habe
 *UC 1*
 
-Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten (Datum) anzeigen kann. #43
+Die API Funktion wurde so erweitert, dass sie nun die aktuelle Kalenderwoche mit Daten (Datum) anzeigen kann. (#43)
 
 *UC 4*
 //wie kann in iteration davor
@@ -208,7 +210,7 @@ Elementarer Bestandteil des SEII-Projekts war es, dass Projekte angelegt werden 
 
 Zu diesem Use-Case zählt ebenfalls, dass Mitarbeiter einem Projekt zugewiesen und entzogen werden kann. Dies wurde ebenfalls angefangen, jedoch nicht beendet. #45
 
-=== Entscheidung: 
+=== Entscheidung 
 
 Um die Produktivität einzelner Teammitglieder zu erhöhen wurd die Iterationszeit auf 2 Wochen erhöht. Daher sollten die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhofften dadurch, dass die Zeit des Meeting für das Programmieren verwendet wird und die Teammitglieder durch weniger Druck haben, als wenn sie jede Woche ihren Fortschritt zeigen sollen. Durch den womöglichen weniger Druck sollten sie mehr und besser Arbeiten.
 Ob dies die gewünschte Veränderung mit sich brachte, sollte innerhalb von zwei Iterationen überprüft werden.
@@ -223,7 +225,7 @@ Außerdem wollten wir uns mit Herrn Zirkelbach treffen und ein paar Kleinigkeite
 Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 Jedoch wussten wir, dass einige Mitglieder vermutlich nicht genug Programmierenwissen haben. Daher sollte bei Problemen weiterhin Herr Werner um Rat gebeten werden und diese sollten sich selbstständig, z.B. Mithilfe von Tutorial und Anleitungen, fortbilden.
 
-Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch Krank und schienen, nach einer Nachfrage bei ihnen, noch länger Krank zu bleiben. 
+Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch krank und schienen, nach einer Nachfrage bei ihnen, noch länger krank zu bleiben. 
 
 Herr Keil's Aufgabe wurde nicht mehr vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
 
@@ -254,14 +256,17 @@ Die Risikoliste wurde erneut im einen Eintrag erweitert. Herr Nguyen hatte ein n
 
 *UC 1*
 
-Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet worden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können. #52 # 53 #49???
+Diese Iteration war davon geprägt, dass viel Arbeit an der API verrichtet worden ist. Die damit erreichten Funktionen können dann in späteren Implementation in direkte Funktionen umgesetzt werden können. (#52, #53 & #54)
+// #49 wurde am 25.04 erstellt und assigned und am 13.05 geschlossen
 // schaue später nach
+
 Es konnten jedoch nicht alle API-Funktionen beendet werden. (#52)  
 //stimmt das so oder sind die api's bereits eine funktion?
 
 Um die Arbeit zu erleichtern wurde Dummy-Status eingefügt und die Dummy-Projekte aus der letzten Iteration wurden fertiggestellt. (#48 & #42)
 
-//bild --> wie loggt man sich jetzt an? ^^
+image::images/Projects_User.png[,350,]
+//bild 
 
 *UC 4*
 
@@ -286,7 +291,7 @@ Unsere Ziele für I14 waren:
 
 Neue Ziele:  
 
-* Status anzeigen #51 -> keine ahnung was da los war
+* Status anzeigen #51 -> das Issue war komplex, wurde nicht in dieser Iteeration beendet
 * Verbleibende Fehler von Psalm beheben #58 -> am letzten Tag assigned und dann fertig gestellt
 * Dummy Daten für Status falsche Wochentage #61 -> fertig
 * Manuelle Qualitätsprüfung #65 -> fertig, hat keine unerwarten Probleme aufgeben, außer Fehlermeldung bei "Projekt erstellen"
@@ -310,10 +315,10 @@ Da immer weniger an der Dokumentation zu erledigen war, wurde Herr Kemter in HTM
 //ist das eine entscheidung oder eher problem?
 === Problem
 
-Wir hatten bisher weder die Erfahrung noch die Zeit Unit-Tests durchzuführen. 
 // wir hatten schon zu dem Zeitpunkt schon ein Praktikum zu Unit-Tests 
-Wir hatten bis jetzt nur eine kleine Einführung im Praktikum zu Unit-Tests, da aber die Zeit uns davon rannte und wir noch weitere große Aufgaben 
-Daher wurde Frau Tartz damit beauftragt manuelle Tests durchzuführen. Außerdem wurden statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren den Code auf unbenutzte Variabeln und Codestücke sowie auf unsichere Funktionen.
+Wir hatten bis jetzt nur eine kleine Einführung im Praktikum zu Unit-Tests, da aber uns die Zeit davon rannte und wir noch weitere umfangreiche Aufgaben zu erledigen hatten, wurde Frau Tartz beauftragt manuelle Tests durchzuführen.
+
+Außerdem wurden statische Codeanalysen für PHP und JavaScript eingeführt. Diese analysieren den Code auf unbenutzte Variabeln und Codestücke sowie auf unsichere Funktionen.
 //stimmt das so?
 //war das in der iteration oder davor?? da #58 dies vermuten lässt
 //und das sollte glaube nochmal positiver/anders formuliert werden
@@ -322,19 +327,26 @@ Daher wurde Frau Tartz damit beauftragt manuelle Tests durchzuführen. Außerdem
 == Iteration 15 (17.05.2022 - 23.5.2022)
 
 Unsere Ziele für I15 waren: 
+
 //gefühlt hat bloß vinh hier was erledigt
 Neue Ziele:
-* Wechsel der Wochenansicht #66 -> erst bloß vitali und in nächster iteration hat sich vinh noch damit rein gemacht -> fertig
-* Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer bug mit montags und fehler konnte erst nicht behoben werden -> wurde dann aber anscheind behoben
+
+* Wechsel der Wochenansicht #66 -> erst bloß Vitali und in nächster Iteration hat sich Vinh noch damit rein gemacht -> fertig
+* Bug: Falsche Kalenderwoche + Datum wird angezeigt #69 -> komischer Bug mit montags und Fehler konnte erst nicht behoben werden -> wurde dann aber anscheinend behoben
 * CSS: Projektverwaltung #70 -> wurde von TS gefordert und wurde angefangen und immer weiter geführt
-* Status hinzufügen #71 -> nicht beendet da schwieriger als erwartet für vinh. wurde aber nicht weitergeführt, da es ein anderes issue erst beendet werden sollte, damit dies zufrieden fertig gestellt wird ????? oder vinh hat einfach das andere fertig gemacht, damit dieses ging
+* Status hinzufügen #71 -> nicht beendet, da schwieriger als erwartet für Vinh. Wurde aber nicht weitergeführt, da es ein anderes Issue erst beendet werden sollte, damit dies zufrieden fertig gestellt wird ????? oder vinh hat einfach das andere fertig gemacht, damit dieses ging
+
 Fortgeführt:
+// 
+ 
 
 === Feedback vom Themensteller
 
 Herr Liebert war generell zufrieden mit unserem Fortschritt. 
 Er forderte, dass nach der Erstellung eines Mitarbeiters oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
+
 Die Übergabe wurde auf den 22.06.2022 festgelegt. 
+
 Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Systemen von T-System MMS testen, da er davon überzeugt ist, dass aufgrund der Nutzung von Docker es keine Probleme geben wird. Wir teilen diese Meinung nur bedingt und wären lieber besser auf alle Eventualitäten vorbereitet. Wir werden versuchen ihn zu einem späteren noch einmal darauf anzusprechen und dies auch schriftlich festhalten. 
 
 
@@ -346,7 +358,7 @@ Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen und über 
 
 *UC 1*
 
-Für den Use-Cas 01 fehlte noch ein elementares Feature. Was ist eine Kalenderanwendung, wenn es nicht möglich ist, dass die Wochen gewechselt werden können? Daher sollte dies realisiert werden. Leider wurde es dieser Iteration nicht beendet.
+Für den Use Case 01 fehlte noch ein elementares Feature. Was ist eine Kalenderanwendung, wenn es nicht möglich ist, dass die Wochen gewechselt werden können? Daher sollte dies realisiert werden. Leider wurde es dieser Iteration nicht beendet.
 
 Die anzeigte Kalenderwoche stimmte am Montag nicht mit der tatsächlichen Woche überein. Dieser Bug konnte behoben werden.
 //fehlt noch mehr
@@ -355,10 +367,17 @@ Die anzeigte Kalenderwoche stimmte am Montag nicht mit der tatsächlichen Woche 
 == Iteration 16 (24.05.2022 - 30.05.2022)
 
 Unsere Ziele für I16 waren: 
-Projekt erstellen Fehlerbehandlung #68 -> fertig 
-Neue Ziele: Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
-Fortgeführt: CSS: Projektverwaltung #70 -> vorerst beendet
-Wechsel der Wochenansicht #66
+
+* Projekt erstellen Fehlerbehandlung #68 -> fertig 
+
+Neue Ziele: 
+
+* Datenbankenstruktur: Bei Status den Primary Key ersetzen #63 -> fertig
+
+Fortgeführt: 
+
+* CSS: Projektverwaltung #70 -> vorerst beendet
+* Wechsel der Wochenansicht #66
 
 === Entscheidung
 Herr Keil war immernoch unabkömmlich. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
@@ -368,48 +387,53 @@ Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder,
 
 == Iteration 17 (31.05.2022 - 06.06.2022)
 
-Unsere Ziele für I17 waren: 
-Neue Ziele: Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von niclas in nächster iteration beendet. muss beendet werden, da von ts im gespräch gefordert
-Lizenz für Projekt erarbeiten #84 -> beendet jedoch sind wir uns nicht 100% sicher, dass das so korrekt ist
-Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
+Unsere Ziele für I17 waren:
 
-Projektverwaltung: Projekte löschen #94 -> agenommen von vinh, aber nicht angefangen. 
+Neue Ziele:
+
+* Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 -> nicht begonnen und dann von Niklas in nächster Iteration beendet. Musste beendet werden, da vom TS im Gespräch gefordert
+* Lizenz für Projekt erarbeiten #84 -> beendet, jedoch sind wir uns nicht 100% sicher, dass das so korrekt ist
+* Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
+* Projektverwaltung: Projekte löschen #94 -> agenommen von Vinh, aber nicht angefangen.
+
 Fortgeführt: 
-
+//
 == Iteration 18 (09.06.2022 - 13.06.2022)
 
-Aufgrund der Feiertage fand unser Teammeeting und Iteration von Mittwoch bis Montag statt. 
+Aufgrund des Feiertags (Pfingstmontag) fand unser Teammeeting und Iteration von Mittwoch bis Montag und nicht wie üblich von Montag bis Montag statt.
 
 Unsere Ziele für I17 waren: 
+
 Neue Ziele:
-Login einfügen #91 -> erst vitali, aber dann niclas fertig gemacht
-Fix: Replace is_int with ctype_digit #96 -> fertig
-Projektbericht
-Fortgeführt: Erfolgsmeldung #83 -> von niclas beendet
-Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
-Projekte löschen #94 -> erstmal nicht fortgeführt, aber wenn zeit von niclas/vinh 
-Wochenansicht: Löschen eines Status #98 -> bloß fertig machen, wenn zeit 
-CSS: Design verbessern #102 erst carl zugeteilt, aber wegen treffen macht es doch vinh fertig
 
-Mitarbeiteransicht: Löschen Funktionalität #103 -> gleich wie #98
+* Login einfügen #91 -> erst Vitali, aber dann Niklas fertig gemacht
+* Fix: Replace is_int with ctype_digit #96 -> fertig
+* Projektbericht #116
 
-Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> soll angefangen werden und später fortgeführt 
-Projektbericht #116  -> soll angefangen werden und später fortgeführt -> als doku wird auch die UC nochmal angeschaut und aktualisiert
+Fortgeführt: 
 
-von mittwoch und nicht montag, wegen feiertag
+* Erfolgsmeldung #83 -> von Niklas beendet
+* Benutzerverwaltung: Neuen Benutzer anlegen Erfolgsmeldung #86 -> gleich wie bei #83
+* Projekte löschen #94 -> erstmal nicht fortgeführt, aber wenn Zeit von Niklas/ Vinh 
+* Wochenansicht: Löschen eines Status #98 -> bloß fertig machen, wenn Zeit 
+* CSS: Design verbessern #102 -> erst Carl zugeteilt, aber wegen Treffen mit TS macht es doch Vinh fertig
+* Mitarbeiteransicht: Löschen Funktionalität #103 -> gleich wie #98
+* Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> soll angefangen werden und später fortgeführt 
+* Projektbericht #116  -> soll angefangen werden und später fortgeführt -> als Dokumentation werden auch die Use Cases nochmal angeschaut und aktualisiert
 
 doku: riskliste mit lust
+//Was ist hier gemeint?
 
 === Problem und Entscheidung
 
 Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwenderabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmierissues bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe sollte dann für Dokumentation und andere Dokumente verwendet werden. 
+
 Da noch nicht alle kleinen aber doch wichtigen Features, die durch Herrn Liebert gefordert wurden, zum Meeting abgeschlossen waren, sollten diese erledigt werden. Wenn mehr geschafft wird, dann kann noch mehr erledigt werden.
 
 Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind.
-Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Diese Empfehlung folgten wir.
+Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Dieser Empfehlung folgten wir.
 
-
-Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei an den Seiten von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt. 
+Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt. 
 
 Die restlichen Iterationen sollten nun nochmal besser mit GitHub Projekten verwaltet werden.
 
@@ -435,18 +459,28 @@ Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es d
 Unsere Ziele für I19 waren: 
 
 //wurden nochmal auf den aktuellen stand gebracht, was/wann abgeben werden muss und die bereits angefangenen doku kommentiert und fragen/probleme beantwortet
-Neue Ziele: Anwenderdoku (noch kein issue)
+Neue Ziele: 
+
+* Anwenderdokumentation (noch kein Issue)
+
 programmier zeugs
-Fortgeführt: Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> da abgeben, soll es eig fertig sein
-Projektbericht #116 -> noch nicht fertig, da zu viel aufwand
+// 
+
+Fortgeführt:
+
+* Testdoku #105; Betriebsdoku #106; Entwicklerdoku #107 -> da Teil der Abgabe, wird fertig gestellt
+* Projektbericht #116 -> noch nicht fertig, da zu viel Aufwand
 
 === Dokumentation 
 
-Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration viel an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Hier wurden gute Grundlagen gelegt, jedoch reichte es noch nicht für die Abgabe aus. Daher wurden sie weiterverbessert. Die Anwenderdoku sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realsiiert werden, was Teile der Anwenderdokumentation sinnlos erscheint lässt. Wir haben mit Herrn Liebert abgesprochen, dass wir sie nicht bis zur Anwendungsübergabe fertig haben müssen. Es reicht auch bis spätestens den 8.7.
-//Dreckssatz  
-Wie auch in den Wochen davor wurde sich auf den Projektbericht fokusiert. Diesen hat Herr Kemter den Inhalt erweitert und dann mit Herrn Beck auf Verständlichkeit und Inhalt korrigiert. 
+Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration viel an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Hier wurden gute Grundlagen gelegt, jedoch reichte es noch nicht für die Abgabe aus. Daher wurden sie weiterverbessert. 
 
-Einzelne Use-Cases mussten um Kleinigkeiten verbessert werden. Manchmal fehlte bei einem Alternativablauf ein Name oder wurde gar nicht erst beschrieben. 
+Die Anwenderdokumentation sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realsiiert werden, was einige Teile der Anwenderdokumentation verändert. Wir haben mit Herrn Liebert vereinbart, dass wir sie nicht zusammen mit der Anwendung übergeben müssen. Es reicht auch, wenn sie ihm bis spätestens 8. Juli geschickt wird.
+//Dreckssatz
+//So besser? 
+Wie auch in den Wochen davor wurde sich auf den Projektbericht fokussiert. Diesen hat Herr Kemter den Inhalt erweitert und dann mit Herrn Beck auf Verständlichkeit und Inhalt korrigiert. 
+
+Einzelne Use Cases mussten um Kleinigkeiten verbessert werden. Manchmal fehlte bei einem Alternativablauf ein Name oder wurde gar nicht erst beschrieben. 
 
 
 === Entscheidung
@@ -457,15 +491,20 @@ Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich e
 
 == Iteration 20 (21.06.2022 - 27.06.2022)
 Unsere Ziele für I20 waren:
-Neue Ziele: anwendung abgeben an TS 
-vortrag
-mit Coach und evtl herrn Professor Anke die doku/bericht  besprechen -> problem was sich auftat
-fortgeführt:
-doku/bericht weiter machen
+
+Neue Ziele: 
+
+* Übergabe der Anwendung an Themensteller
+* Präsentation anfertigen und Vortrag halten
+* Mit Coach und Herrn Professor Anke die Doku/Bericht besprechen -> auftretende Probleme
+
+Fortgeführt:
+
+* An Doku/Bericht weiterarbeiten
 
 === Treffen mit Herrn Professor Anke und Herrn Zirkelbach
 
-Herr Beck und Herr Kemter traffen sich zu einer Konsultation Herrn Professor Anke und Herrn Zirkelbach, dort sollte die Betriebsdokumentation mit u.a. dem C4-Model besprochen werden und welche weiteren Diagramme noch verwendeten werden können. Das Ergebnis war das unser C4-Model etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen werden. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden.
+Herr Beck und Herr Kemter traffen sich zu einer Konsultation Herrn Professor Anke und Herrn Zirkelbach, dort sollte die Betriebsdokumentation mit u.a. dem C4-Modell besprochen werden und welche weiteren Diagramme noch verwendeten werden können. Das Ergebnis war das unser C4-Modell etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen werden. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden.
 
 Zu dem Projektbericht gabe es ein paar Strukturelle Fragen und wie genau die Inhaltsverteilung sein soll. Denn bei unserem Projektbericht wurde während der Erstellung festgestellt, dass wir keine direkten Probleme in der Implementierung hatten. Unsere Probleme, welche das Implementieren indirekt betreffen, kamen eher von Gründen von "außerhalb". Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden sind. Wir wurden jedoch in unserem Aufbau bestätigt und werden das nicht deswegen umschreiben müssen. Herrn Werner hatte sich außerdem bereit erklärt noch etwas zu der Implementation zu schreiben. 
 Einige andere kleine Fragen wurden ebenfalls angesprochen und werden dementsprechend eingearbeitet.
@@ -474,14 +513,17 @@ In in dem Gespräch kam jedoch unser Problem auf, was hier in dem Projektbericht
 
 === Dokumentation
 
-Die Test- und Betriebsdokumentation sind fast fertig und haben bloß noch Kleinigkeiten 
+Die Test- und Betriebsdokumentation sind fast fertig und haben bloß noch Kleinigkeiten, die korrigiert werden sollen.
+
+Carl und Vitali haben die Aufgabe übernommen, eine Präsentation anzufertigen, welche zusammen mit der Software am Montag, dem 27. Juni in der Vorlesung vorgeführt wird. 
 
 === Übergabe der Software an Herrn Liebert 
 
+Die Softwareübergabe fand am Mittwoch, dem 22. Juni über Discord statt. Dabei wurden Herrn Liebert alle umgesetzten Funktionalitäten der Software vorgeführt. Herr Liebert war recht zufrieden mit dem Endergebnis. Im Anschluss wurde ihm das Abnahmeprotokoll geschickt, welches noch am selben Tag unterschrieben zurückkam.
 //ja irgendwas muss vllt noch zum vortrag geschrieben werden
 
 
-== Iteration 21
+== Iteration 21 (28.06.2022 - 04.07.2022)
 
 
 
