@@ -26,7 +26,7 @@ Nach erfolgreicher Anmeldung wird die Einsatzplan-Übersicht sichtbar. Diese zei
 image::EinsatzplanÜbersicht.jpg[]
 
 === Mitarbeiter Erstellen und Löschen
-Über den Button "Mitarbeiter hinzufügen" kann der Nutzer einen neuen Mitarbeiter anlegen.
+Über den Button "Mitarbeiter hinzufügen" können Sie einen neuen Mitarbeiter anlegen.
 
 image::MitarbeiterHinzufügen1.jpg[]
 
