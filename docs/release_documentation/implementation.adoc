@@ -398,7 +398,9 @@ Projektbericht #116  -> soll angefangen werden und später fortgeführt -> als d
 
 von mittwoch und nicht montag, wegen feiertag
 
-doku: riskliste mit lust
+=== Implementation
+
+
 
 === Problem und Entscheidung
 
@@ -408,15 +410,15 @@ Da noch nicht alle kleinen aber doch wichtigen Features, die durch Herrn Liebert
 Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind.
 Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Diese Empfehlung folgten wir.
 
-
 Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei an den Seiten von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt. 
 
 Die restlichen Iterationen sollten nun nochmal besser mit GitHub Projekten verwaltet werden.
 
 === Dokumentation
 
-Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellen Beispiele eine gute Grundlage. Schließendlich entschied er sich für eine Nennung der neu angefangenen und fortgeführten Issues. Ob dies noch einmal geändert wird steht noch offen. Weiterhin wird er in einzelnen Abschnitten die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschreiben.
+Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellen Beispiele eine gute Grundlage. Schließendlich entschied er sich für eine Nennung der neubegonnenen und fortgeführten Issues. Ob dies noch einmal geändert wird steht noch offen. Weiterhin wird er in einzelnen Abschnitten die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschreiben.
 
+Da bei vielen Mitgliedern die Lust auf das Projekt aus verschiedenen Gründen gesunken ist, hat Herr Kemter die Risikoliste um einen entsprechenden Eintrag erweitert. 
 //herr kemter wollte herr zirkelbach eh nochmal wegen den projektbericht etwas fragen und hat sich daher noch über weitere aspekte des projekts unterhalten. als folge darauf gab es eine umplanung, der getroffenen entscheidung vom vortag: vitali, justus und carl fingen die test, betriebs, und entwicklerdoku an. vinh übernimmt design anhand der telekomseite und niclas übernimmt die erfolgsmeldungen und login, falls zeit, macht er noch mehr   
 //all das sollte bis montag geschehen
 
@@ -463,22 +465,28 @@ mit Coach und evtl herrn Professor Anke die doku/bericht  besprechen -> problem 
 fortgeführt:
 doku/bericht weiter machen
 
+=== Anwendungsübergabe an Herrn Liebert
+
+Wie geplant haben wir an Herrn Liebert die Anwendung per GitHub übergeben und unsere realisierten Use-Cases demonstriert. Die Übergabe verlief unaufgeregt, da die Software und das Abnahmeprotokoll gut vorbereitet waren. Wie vorher vereinbart wird die Dokumentation jedoch bis spätestens dem 8.7. nachgereicht. 
+Wir denken Herr Liebert war mit der Umsetzung recht zufrieden.
+
 === Treffen mit Herrn Professor Anke und Herrn Zirkelbach
 
 Herr Beck und Herr Kemter traffen sich zu einer Konsultation Herrn Professor Anke und Herrn Zirkelbach, dort sollte die Betriebsdokumentation mit u.a. dem C4-Model besprochen werden und welche weiteren Diagramme noch verwendeten werden können. Das Ergebnis war das unser C4-Model etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen werden. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden.
 
-Zu dem Projektbericht gabe es ein paar Strukturelle Fragen und wie genau die Inhaltsverteilung sein soll. Denn bei unserem Projektbericht wurde während der Erstellung festgestellt, dass wir keine direkten Probleme in der Implementierung hatten. Unsere Probleme, welche das Implementieren indirekt betreffen, kamen eher von Gründen von "außerhalb". Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden sind. Wir wurden jedoch in unserem Aufbau bestätigt und werden das nicht deswegen umschreiben müssen. Herrn Werner hatte sich außerdem bereit erklärt noch etwas zu der Implementation zu schreiben. 
+Zu dem Projektbericht gabe es ein paar Strukturelle Fragen und wie genau die Inhaltsverteilung sein soll. Denn bei unserem Projektbericht wurde während der Erstellung festgestellt, dass wir keine direkten Probleme in der Implementierung hatten. Unsere Probleme, welche das Implementieren indirekt betreffen, kamen eher von Gründen von "außerhalb". Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden sind. Wir wurden jedoch in unserem Aufbau bestätigt und werden das nicht deswegen umschreiben müssen. Herrn Werner hatte sich außerdem bereit erklärt noch etwas zu der Implementation zu schreiben, da es Herrn Kemter dabei an Wissen fehlte. 
 Einige andere kleine Fragen wurden ebenfalls angesprochen und werden dementsprechend eingearbeitet.
 
-In in dem Gespräch kam jedoch unser Problem auf, was hier in dem Projektbericht schon beschrieben wurden ist. Einige Mitglieder haben deutlich weniger gemacht als andere. Diese ungerechte Verteilung sollte wie bereits beschrieben über die differenzierte Bewertung in der Note wiederspiegeln. Jedoch war Herr Professor Anke davon nicht überzeugt und bat Herrn Kemter und Herrn Beck mit den anderen Mitgliedern zu sprechen und eine Entscheidung zu fällen. Die Mitglieder entschieden sich eine möglichste faire Mail und der Bitte, dass die anderen Mitglieder auch noch Stellung dazu beziehen dürfen. Die betroffenen Teammitglieder wurden von der Mail informiert und es stand ihnen frei, ob sie noch den Vortrag halten wollen. Alle haben sich mit einem eventuellen "nicht Bestehen" nicht einverstanden gezeigt.
+In in dem Gespräch mit Herrn Prof. Anke kam jedoch unser Problem auf, was hier in dem Projektbericht schon beschrieben wurden ist. Einige Mitglieder haben deutlich weniger gemacht als andere. Diese ungerechte Verteilung sollte wie bereits beschrieben über die differenzierte Bewertung in der Note wiederspiegeln. Jedoch war Herr Professor Anke davon nicht überzeugt und bat Herrn Kemter und Herrn Beck mit den anderen Mitgliedern zu sprechen und eine Entscheidung über die Benotung der betroffenen Mitglieder zu fällen. Die Mitglieder entschieden sich eine möglichste faire Mail und der Bitte, dass die anderen Mitglieder auch noch Stellung dazu beziehen dürfen. Die betroffenen Teammitglieder wurden von der Mail informiert und es stand ihnen frei, ob sie noch den Vortrag halten wollen. Alle haben sich mit einem eventuellen "nicht Bestehen" nicht einverstanden gezeigt. Außerdem wollten sie wie gewohnt ihre zugeilten Aufgaben bearbeiten
 
 === Dokumentation
 
-Die Test- und Betriebsdokumentation sind fast fertig und haben bloß noch Kleinigkeiten 
+Die Test- und Betriebsdokumentation sind fast fertig und haben bloß noch Kleinigkeiten zum Verbessern.
+Die Anwenderdoku sollte nach Feedback ebenfalls noch um Kleinigkeiten verbessert werden, dazu zählten besser Pfeile und eine etwas genauere Beschreibung der Vorgänge, damit keine Unklarheiten entstehen.
+//ist unklarheiten ein wort? bzw gibts da ein besseres
 
-=== Übergabe der Software an Herrn Liebert 
 
-//ja irgendwas muss vllt noch zum vortrag geschrieben werden
+// irgendwas muss vllt noch zum vortrag geschrieben werden oder ist es zu unwichtig?
 
 
 == Iteration 21
