@@ -5,15 +5,24 @@
 
 = Ergebnisse
 
-== Was haben wir erreicht?
-Wir haben es erreicht, dass jeder Benutzer einen eigenen Account hat. Das mag im Moment noch etwas unnötig klingen, da jeder Benutzer alles machen kann. Jedoch stellt es für eine eventuelle Weiterentwicklung eine gute Basis dar. Weiterhin können die Benutzer Projekte erstellen und neue Mitarbeiter bzw. Benutzer erstellen. Die Benutzer können sich dann diese Projekte als Stati in der für jeden Wochentag eintragen. Die Stati können logischerweise wieder entfernt werden, denn was wäre eine Ressourcenverwaltung-Anwendung, wenn nicht auf geänderte Pläne reagiert werden kann? Außerdem können die Projekte und die Benutzer gelöscht werden. Leider kann man die Benutzer und Projekte nach der Erstellung nicht bearbeiten -> Probleme bei Heirat oder auscheiden eines Benutzers, dann hat ein Projekt kein Verantwortlichen  
-Die Kalenderansicht ist in der Lage von der aktuellen Kalenderwochde beliebig viele Wochen vor- und zurückgehen und dabei die Daten und die eingetragenen Stati anzeigen kann.
-Aufgrund von zu wenig Zeit haben wir es nicht geschafft, dass man aus einer anderen Woche die Stati in eine andere Woche übernehmen kann. 
-Wir konnten ebenfalls keine Feiertage zu implementieren. Dort sollten wir über die Feiertags-API, aber auch Manuell, Feiertage in das Programm laden. An diesen Tagen, kann dann kein Benuter einen Stati anlegen. Da hier auch viele neue visuelle Elemente erstellt hätten müssen, hätten wir noch mehrere Iterationen gebraucht.
+== Bewertung
+
+Wir haben es erreicht, dass jeder Benutzer einen eigenen Account hat. Das mag im Moment noch etwas unnötig klingen, da jeder Benutzer alles machen kann. Jedoch stellt es für eine eventuelle Weiterentwicklung eine gute Basis dar. Weiterhin können die Benutzer Projekte erstellen und neue Benutzer erstellen. Die Benutzer können sich dann diese Projekte als Stati in der für jeden Wochentag eintragen. Die Stati können logischerweise wieder entfernt werden, denn was wäre eine Ressourcenverwaltung-Anwendung, wenn nicht auf geänderte Pläne reagiert werden kann? Außerdem können die Projekte und die Benutzer gelöscht werden. Leider kann man die Benutzer und Projekte nach der Erstellung nicht bearbeiten. Das kann beispielsweise bei Kündigung ein Problem sein, denn dann muss im Moment ein Projekt gelöscht werden, da jedes Projekt einen Verantwortlichen brauch. Ebenso kann es ein Problem bei Heirat der Benutzer geben, wenn diese plötzlich anders heißen.  
+Die Kalenderansicht ist in der Lage von der aktuellen Kalenderwochde beliebig viele Wochen vor- und zurückgehen und dabei die Daten (Datum) und die eingetragenen Stati anzeigen kann.
+Es ist nicht möglich, dass aus einer anderen Woche die Stati in eine andere Woche übernehmen werden kann. 
+Wir konnten es ebenfalls nicht realisieren, dass Feiertage in irgendeiner Art und Weise implementiert werden konnten. Dort sollten wir über die Feiertags-API, aber auch Manuell, Feiertage in das Programm laden. An diesen Tagen, kann dann kein Benuter einen Stati anlegen. Da hier auch viele neue visuelle Elemente erstellt hätten müssen, hätten wir noch mehrere Iterationen gebraucht.
+Einige andere und kleine Funktionalitäten, wie zum Beispiel die Stati mit Farben anzeigen, wurde ebenfalls nicht realisiert. Diese wurden hinten angestellt, da es andere Funktionalitäten gab, welche eine größere Wichtigkeit haben. Außerdem hätten noch verschiedene andere Effekte die der Anwendung mehr Interaktion bzw. sich mehr lebendig anfühlen, wie wenn über einen Button gehovert wird, programmiert werden können. 
+
+
+Am Ende kann gesagt werden, dass die nicht geschafften Use Cases und Funktionalitäten wegen zu wenig Zeit nicht erfüllt wurden sind. Unser Wissen, besonders bei Herrn Werner und Herrn Nguyen, ist genug vorhanden, um alles zu implementieren. Damit sich niemand überarbeitet ("sustainable pace"), haben sie nicht noch mehr gemacht.
+
+
+//der letzte satz finde ich wegen dem sustainable space ziemlich gut (für herrn prof anke), aber weiß nicht ob das so gut klingt und nicht doppelt geschrieben bzw komisch klingt
+//würde hier nicht weiter auf die thematik eingehen, dass einige wenig gemacht haben 
+
+
 Einige "Features" wurden angefangen jedoch haben sie am Ende keinen Sinn, da mit ihnen nichts gemacht wird (aber tbh kam da auch nicht wirklich viel vom TS was damit geplant ist)
 
--> die "nicht geschafft" mit zu wenig zeit und eventueller wenig arbeit von 2 leiten... 
-eventuell hätte man noch mehr geschafft, jedoch wollten wir die zeit eher in die doku stecken
 
 die wichtigsten UC / Funktionen wurden erreicht die für eine benutzung der anwendung nötig sind
 -> sollen die use cases nochmal beschrieben werden und was damit gemacht werden kann?
