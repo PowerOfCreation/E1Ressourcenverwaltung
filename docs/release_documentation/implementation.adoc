@@ -390,7 +390,6 @@ Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder,
 Unsere Ziele für I17 waren:
 
 Neue Ziele:
-
 * Projektverwaltung: Neues Projekt anlegen Erfolgsmeldung #83 
 //-> nicht begonnen und dann von Niklas in nächster Iteration beendet. Musste beendet werden, da vom TS im Gespräch gefordert
 * Lizenz für Projekt erarbeiten #84 -> beendet, jedoch sind wir uns nicht 100% sicher, dass das so korrekt ist
