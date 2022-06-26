@@ -19,83 +19,97 @@ Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und 
 Die Anmeldung erfolgt im Intranet der T-Systems Multimedia Solutions GmbH.
 Hier geben Sie ihre persönlichen Login-Daten ein.
 
-image::LoginNeu.jpg[]
+image::LoginNeu1.jpg[]
 
-Nach erfolgreicher Anmeldung gelangt man zur Einsatzplan-Übersicht. Diese zeigt die aktuelle Kalenderwoche, sowie weitere Funktionen an.
+Nach erfolgreicher Anmeldung wird die Einsatzplan-Übersicht sichtbar. Diese zeigt die aktuelle Kalenderwoche, sowie weitere Funktionen an.
+
+image::EinsatzplanÜbersicht.jpg[]
 
 === Mitarbeiter Erstellen und Löschen
 Über den Button "Mitarbeiter hinzufügen" kann der Nutzer einen neuen Mitarbeiter anlegen.
 
-image::MitarbeiterHinzufügen.jpg[]
+image::MitarbeiterHinzufügen1.jpg[]
 
 Bei der Dateneingabe kann ein beliebiger Benutzername gewählt werden. 
 Ebenfalls erforderlich sind folgende Angaben:
-Vorname, Nachname, Abteilung, E-Mail-Adresse und ein Passwort. Das Passwort kann durch den Knopf "Passwort anzeigen" angezeigt werden, damit sichergegangen werden kann, dass das Passwort seinen Vorstellungen entspricht.
+Vorname, Nachname, Abteilung, E-Mail-Adresse und ein Passwort.
 
-image::MitarbeiterDateneingabe.jpg[]
+image::MitarbeiterDateneingabe1.jpg[]
+
+Über den Knopf "Passwort anzeigen" wird das eingegebene Passwort sichtbar.
 
 Erfüllt das gewählte Passwort nicht die Anforderungen, erscheint eine der folgenden Fehlermeldungen:
 
 image::FehlermeldungDateneingabe.jpg[]
 image::FehlermeldungDateneingabe2.jpg[]
 
-Nach erfolgreicher Dateneingabe bestätigt man den Vorgang mit dem Button "Benutzer erstellen"
+Nach erfolgreicher Dateneingabe wird der Vorgang mit dem Button "Benutzer erstellen" bestätigt.
 
-image::BenutzerErstellen.jpg[]
+image::BenutzerErstellen1.jpg[]
 
-Die Bestätigung ist oben im Bild zu sehen:
+Die Bestätigung ist oben im Bildschirm zu sehen:
 
-image::BenutzerErstellenErfolgreich.jpg[]
+image::BenutzerErstellenErfolgreich1.jpg[]
 
-Zum Löschen eines Mitarbeiters klickt man auf den Namen. 
+Zum Löschen eines Mitarbeiters klicken Sie auf dessen Namen auf der Startseite. 
 Es öffnet sich eine Übersicht mit Informationen zum Namen und Abteilung.
 
 Über den Button "Mitarbeiter löschen" wird der Mitarbeiter aus dem System entfernt. 
 
-image::MitarbeiterLöschen.jpg[]
+image::MitarbeiterLöschen1.jpg[]
 
-Das Programm verlangt eine weitere Bestätigung zur Ausführung. Hier kann der Vorgang bestätigt oder abgebrochen werden.
+Das Programm verlangt eine weitere Bestätigung zur Ausführung. Hier kann der Vorgang bestätigt oder bei Bedarf abgebrochen werden.
 
-image::MitarbeiterLöschen2.jpg[]
+image::MitarbeiterLöschen2.1.jpg[]
 
 === Mitarbeiter Status
 
 Dem Mitarbeiter kann ein Status über den Button "Status hinzufügen" zugeordnet werden.
 
-image::StatusMitarbeiter.jpg[]
+image::StatusMitarbeiter1.jpg[]
 
-image::StatusMitarbeiterWählen.jpg[]
+image::StatusMitarbeiterWählen1.jpg[]
 
 Soll der Status entfernt werden, erfolgt dies über das Kreuz am Rand. Auch hier muss der Vorgang erneut bestätigt werden.
 
-image::StatusMitarbeiterLöschen.jpg[]
+image::StatusMitarbeiterLöschen1.jpg[]
 
 === Projektverwaltung
 
-In der Projektverwaltung können Projekte erstellt oder gelöscht werden.
+In der Projektverwaltung ist ersichtlich, welcher Mitarbeiter welchem Projekt zugeordnet ist. Ebenfalls können Projekte erstellt oder gelöscht werden.
 
-Bei Erstellung eines neuen Projektes werden folgende Daten benötigt:
+Sollen Projektmitarbeiter angezeigt werden, wählen Sie ein Projekt aus. Die dazugehörigen Mitarbeiter sind mit einem blauen Hacken gekennzeichnet.
+
+image::ProjektMitarbeiter.jpg[]
+
+Zur Erstellung eines neuen Projektes werden folgende Daten benötigt:
 Projektname, Verantwortlicher und Thema.
 Die Farbe, sowie das Abgabedatum, können individuell angepasst werden.
 
-image::ProjektErstellenDateneingabe.jpg[]
-image::ProjektErstellenDatum.jpg[]
+image::ProjektErstellenDateneingabe1.jpg[]
+image::ProjektErstellenDatum1.jpg[]
+
+Der Vorgang wird über den Button "Projekt erstellen" abgeschlossen.
 
 Wurde das Projekt erfolgreich angelegt, erscheint eine Bestätigung am oberen Rand.
 
-image::ProjektErstellenErfolgreich.jpg[]
+image::ProjektErstellenErfolgreich1.jpg[]
 
-Soll ein Projekt gelöscht werden, wählt man dieses in der Übersicht aus.
+Soll ein Projekt gelöscht werden, wählen Sie dieses in der Übersicht aus.
 
-image::ProjektLöschen.jpg[]
+image::ProjektLöschen1.jpg[]
 
-Bevor das Projekt endgültig gelöscht wird, ist eine erneute Bestätigung notwendig. Hier kann der Vorgang bei Bedarf noch abgebrochen werden.
+Mit "Projekt löschen" wird der Vorgang bestätigt.
 
-image::ProjektLöschenBestätigen.jpg[]
+Bevor das Projekt endgültig aus dem System entfernt wird, ist eine erneute Bestätigung notwendig. Hier kann der Vorgang bei Bedarf noch abgebrochen werden.
+
+image::ProjektLöschenBestätigen1.jpg[]
 
 Wurde das Projekt aus dem System entfernt, erscheint folgende Meldung:
 
-image::ProjektLöschenErfolgreich.jpg[]
+image::ProjektLöschenErfolgreich1.jpg[]
+
+Über den Button "Zurück" gelangen Sie wieder zur Einsatzplan-Übersicht.
 
 == 3. Allgemeine Informationen
 
