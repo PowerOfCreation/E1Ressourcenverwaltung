@@ -27,10 +27,12 @@
 //-> wann eventuelle Fehler behoben wurden sind
 
 === Testorganisation:
-* Die Unittest sollten kurz nach, teilweise schon während der Implementierung erstellt werden
+* Für alle Tests sind feste Zeiten festgelegt
+* Die Unittest sollten kurz nach, teilweise schon während der Implementierung erstellt werden, damit schon während der aktuellen Iteration.
 * Die Prüfung wird dann von den Implementierenden durchgeführt
-* Die Funktionalitätstests können rechtzeitig bei freien Kapazitäten durchgeführt werden
-* Für diese sind die Tester zuständig
+* Die Funktionalitätstes werden, nach implimentierung einer neuen Funktionalität, spätestens in der darauffolgenden Iteration getestet.
+* Bei freien Kapazitäten, nach Änderungen, sollten diese auch erneut durchgeführt werden
+* Für diese sind die Tester zuständig.
 
 == Testfallbeschreibung
 === Unittests
@@ -67,7 +69,8 @@
 |===
 | Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
 | Zu kurzes Passwort | Benutzer ist angemeldet. | password: PassW | Manuelles Anlegen Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Bestehenden User Anlegen | Benutzer ist angemeldet. | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Mitarbeiter Anlegen | Benutzer ist angemeldet. | [korrekte Daten] | Manuelles Anlegen Benutzer Frontend | Nachricht: "Benutzer erfolgreich angelegt", öffnen Kalenderübersicht
+| Bestehenden Mitarbeiter Anlegen | Benutzer ist angemeldet. | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Zu kurzer Name | Benutzer ist angemeldet. | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Passwort falsch wiederholt | Benutzer ist angemeldet. | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Abbrechen und zurück schickt keine Anfrage | Benutzer ist angemeldet. | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an Backend übermittelt
@@ -81,3 +84,10 @@
 | Status löschen | Benutzer ist angemeldet. | keine | Manuelles Löschen Status Frontend | Warnung sollte erscheinen, anschließend Löschen
 | Mehrere Status, ein Mitarbeiter, ein Tag | Benutzer ist angemeldet. | Ehrenpflaume, 19.06.2022, Digitalisierung; Homepage | Manuelles Anlegen Status Frontend | Ohne Probleme möglich
 |===
+
+== Testergebnisse
+
+* Durch die Code-Analyse mit Psalm und ESLint wurden sämtliche unganauen oder falschen Variablen entfernt und sichergestellt, dass diese in Zukunft vermieden werden
+* Außerdem konnte einige Teile an redundanten Code entdeckt werden
+* Durch das regelmäßige durchführen der Integrationstests konnten, unter anderem nach Änderungen, unerwartete Fehler gefunden werden, die eine bereits bestehende Funktionalität wieder entfernten (Mitarbeiter hinzufügen)
+* Die Fehler wurden entweder direkt behoben, oder zur nächsten Iteration als Issue erstellt
