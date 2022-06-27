@@ -70,6 +70,15 @@ Die Meetings mit Herrn Liebert wurden auf gemeinsamen GoogleDocs-Dokumenten vor-
 
 ===  Techniken/Praktiken - Way of Working
 
+
+==== Planung der Iteration
+
+In jeder Iteration wurde erfasst, welche wichtigen Aufgaben bzw. Funktionalitäten als nächstes realisiert werden sollten. Dazu zählen auch nicht fertiggestellte 
+
+==== Durchführen der Iteration
+
+==== Bewertung der Iteration
+
 ////
  //// 
 
