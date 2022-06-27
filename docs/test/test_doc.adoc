@@ -61,18 +61,18 @@
 === Integrationstests
 |===
 | Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
-| Zu kurzes Passwort | Programm läuft | password: PassW | Manuelles Anlegen Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Bestehenden User Anlegen | Programm läuft | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Zu kurzer Name | Programm läuft | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Passwort falsch wiederholt | Programm läuft | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
-| Abbrechen und zurück schickt keine Anfrage | Programm läuft | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an Backend übermittelt
-| Eingabe SQL-Injekcions | Programm läuft | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
-| Nicht alle Felder ausgefüllt, beim Anlegen User | Programm läuft | [Nicht jedes Feld ausgefüllt] | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, unvollständige Daten nicht an Backend, Wiederholbar
-| Login mit falschen Benutzernamen/Passwort | Programm läuft | User: ExistiertNicht Passwort:FalschesPasswort | Manuelles Eingeben Logindaten Frontend | Fehlermeldung, kein Login, Wiederholbar
-| Bereits existierendes Projekt anlegen | Programm läuft | ProjectName: Digitalisierung | Manuelles Anlegen Projekt Frontend | Fehlermeldung, Projekt nicht angelegt
-| Mitarbeiter doppelt in Projekt einfügen | Programm läuft | keine | Manuelles Hinzufügen im Frontend | aufgrund des Frontends nicht möglich
-| Mitarbeiter löschen | Programm läuft | keine | Manuelles Löschen Mitarbeiter Frontend | Warnung sollte erscheinen, anschließend Löschen
-| Projekt löschen | Programm läuft | keine | Manuelles Löschen Projekt Frontend | Warnung sollte erscheinen, anschließend Löschen
-| Status löschen | Programm läuft | keine | Manuelles Löschen Status Frontend | Warnung sollte erscheinen, anschließend Löschen
-| Mehrere Status, ein Mitarbeiter, ein Tag | Programm läuft | Ehrenpflaume, 19.06.2022, Digitalisierung; Homepage | Manuelles Anlegen Status Frontend | Ohne Probleme möglich
+| Zu kurzes Passwort | Benutzer ist angemeldet. | password: PassW | Manuelles Anlegen Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Bestehenden User Anlegen | Benutzer ist angemeldet. | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Zu kurzer Name | Benutzer ist angemeldet. | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Passwort falsch wiederholt | Benutzer ist angemeldet. | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Abbrechen und zurück schickt keine Anfrage | Benutzer ist angemeldet. | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an Backend übermittelt
+| Eingabe SQL-Injekcions | Benutzer ist angemeldet. | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
+| Nicht alle Felder ausgefüllt, beim Anlegen User | Benutzer ist angemeldet. | [Nicht jedes Feld ausgefüllt] | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, unvollständige Daten nicht an Backend, Wiederholbar
+| Login mit falschen Benutzernamen/Passwort | Benutzer ist angemeldet. | User: ExistiertNicht Passwort:FalschesPasswort | Manuelles Eingeben Logindaten Frontend | Fehlermeldung, kein Login, Wiederholbar
+| Bereits existierendes Projekt anlegen | Benutzer ist angemeldet. | ProjectName: Digitalisierung | Manuelles Anlegen Projekt Frontend | Fehlermeldung, Projekt nicht angelegt
+| Mitarbeiter doppelt in Projekt einfügen | Benutzer ist angemeldet. | keine | Manuelles Hinzufügen im Frontend | aufgrund des Frontends nicht möglich
+| Mitarbeiter löschen | Benutzer ist angemeldet. | keine | Manuelles Löschen Mitarbeiter Frontend | Warnung sollte erscheinen, anschließend Löschen
+| Projekt löschen | Benutzer ist angemeldet. | keine | Manuelles Löschen Projekt Frontend | Warnung sollte erscheinen, anschließend Löschen
+| Status löschen | Benutzer ist angemeldet. | keine | Manuelles Löschen Status Frontend | Warnung sollte erscheinen, anschließend Löschen
+| Mehrere Status, ein Mitarbeiter, ein Tag | Benutzer ist angemeldet. | Ehrenpflaume, 19.06.2022, Digitalisierung; Homepage | Manuelles Anlegen Status Frontend | Ohne Probleme möglich
 |===
