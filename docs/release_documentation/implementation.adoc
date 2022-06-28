@@ -11,7 +11,7 @@ Dies war die erste Iteration im neuen Semester. Wir hatten aufgrund der Semester
 
 Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr belegt.
 
-Nicht passend dafür war der krankheitsbedingte Ausfall von Herrn Keil und Frau Tartz, diese sollen noch weitere Wochen ausfallen. 
+Leider mussten wir krankheitsbedingt auf Herrn Keil und Frau Tartz verzichten. 
 
 Unsere Ziele für I09 waren:
 
@@ -27,7 +27,7 @@ Unsere Ziele für I09 waren:
 
 === Dokumentation
 
-Wie bereits geschrieben, hat Herr Professor Anke unseren abgegeben Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich korrigiert werden. 
+Wie bereits geschrieben, hat Herr Professor Anke unseren abgegebenen Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich berichtigt werden. 
 Viele der Fehler waren nur Kleinigkeiten und diese konnten schnell behoben werden.
 
 Die schwerwiegenderen Fehler waren die komplett falsche "logische Sicht". Dort wurde ein C4-Modell erwartet, welches wir jedoch nicht hatten. Daher musste dieses von Grund auf neu erstellt werden. Da das Back-End zu dem Zeitpunkt noch nicht komplett fertig war, wurden erst einmal die beiden oberen Sichten angefertigt. Weitere Komponenten sollten im weiteren Verlauf des Projektes folgen. 
@@ -149,6 +149,10 @@ Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 === Problem 
 
 Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
+
+Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
+
+Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
 == Iteration 12 (12.04.2022 - 25.04.2022)
 
