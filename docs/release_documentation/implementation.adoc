@@ -3,7 +3,7 @@
 // ist das ein problem einer konkreten iteration oder soll das so generell stehen bleiben?
 // == Einführung
 
-// Zu Beginn des Semesters haben wir uns zusammengesetzt und das weitere Vorgehen im Modul SE II besprochen. Nach relativ kurzer Zeit stellte sich heraus, dass wir ein wenig Unterstützung gebrauchen könnten. Nachdem wir von der Möglichkeit erfuhren ein neues Teammitglied aufzunehmen, fiel die Entscheidung recht schnell und wir meldeten uns bei Herr Prof. Anke. Nach einer Einarbeitungszeit von etwa 2 Wochen konnte das neue Teammitglied erfolgreich integriert werden und seine Aufgaben selbstständig erfüllen.
+// Zu Beginn des Semesters haben wir uns zusammengesetzt und das weitere Vorgehen im Modul SE II besprochen. Nach relativ kurzer Zeit stellte sich heraus, dass wir ein wenig Unterstützung gebrauchen könnten. Nachdem wir von der Möglichkeit erfuhren ein neues Teammitglied aufzunehmen, fiel die Entscheidung recht schnell und wir meldeten uns bei Herr Prof. Anke. Nach einer Einarbeitungszeit von etwa 2 Wochen konnte das neue Teammitglied erfolgreich integriert werden und seine Aufgaben selbstständig erfüllen. //Das kann eigentlich weg: Darstellung des Problems und der Lösung in Iteration 11 und dessen Effekt in Iteration 12
 
 == Iteration 9 (23.03.2022 - 28.03.2022)
 
@@ -54,11 +54,9 @@ Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um ei
 
 Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Backend, konnte dieses Issue nicht in dieser Iteration beendet werden. (#36)
 
-=== Problem
+=== Probleme && Entscheidungen
 
 Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting unentschuldigt. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte. Einige Aufgaben konnten nicht abgeschlossen werden.
-
-=== Entscheidungen
 
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
@@ -105,12 +103,12 @@ Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leich
 
 Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Dies wurde von Herrn Liebert gewünscht, aber ist kein essentiell wichtiges Feature, da andere Use Cases laut ihm wichtiger sind. Es ist unklar wann Herr Keil wieder an dem Projekt mitarbeiten kann und deswegen wurde ihm diese Aufgabe zugeteilt. Sie wurde bis zum Ende der Iteration nicht begonnen. (#28)
 
-== Problem
+=== Probleme && Entscheidungen
 
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 
 == Iteraion 11 (05.04.2022 - 11.04.2022)
-
+// TODO
 Unsere Ziele für I11 waren: 
 
 Neue Ziele:
@@ -138,7 +136,7 @@ Wenn auf einen Wochentag geklickt wird, dann wird nun ein Dropdown-Menü angezei
 
 *UC 3*
 
-Eine Funktion zum Anzeigen des Passworts wurde von Herrn Tichonow implementiert. Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (#33 & #36)
+Eine Funktion zum Anzeigen des Passworts wurde implementiert. Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (#33 & #36)
 
 *UC 4*
 
@@ -146,17 +144,18 @@ Die Projekterstellungsseite wurde nicht angefangen. Die Weiterleitung zu dieser 
 
 Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 
-=== Problem 
+=== Probleme && Entscheidungen
 
-Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
+Es zeichnete sich ab, dass neben dem Fernbleiben einiger Teammitglieder, auch andere bisher eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
 
-Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
+Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der anderen Mitglieder und auch den wöchentlichen Arbeitsfortschritt. 
+Weiter stellte Herr Prof. Anke das Angebot, dass sich jedes Team sofern gewünscht Verstärkung holen kann.
 
-Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
+Für uns lag, angesichts der beschriebenen Entwicklung, nahe dieses Angebot anzunehmen.
 
 == Iteration 12 (12.04.2022 - 25.04.2022)
 
-In dieser Iteration haben wir mit Herrn Nguyen, welcher bereits Erfahrung in der Front-End und Back-End Entwicklung mitbringt, Verstärkung erhalten. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat wieder etwas mehr Fahrt aufgenommen.
+In dieser Iteration haben wir mit Herrn Nguyen, welcher bereits Erfahrung in der Front-End und Back-End Entwicklung mitbringt, die erbetene Verstärkung erhalten. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch spürbar verbessert.
 
 Neue Ziele: 
 
@@ -176,7 +175,7 @@ Fortgeführt:
 
 === Dokumentation
 
-Unser neues Mitglied Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
+Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
 
 Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert. 
 
@@ -202,10 +201,10 @@ Zunächst hat Herr Beck dafür eine neue Unterseite implementiert, in der neue P
 
 Die Dummy-Daten, welche von Herrn Kirchhoff erstellt werden sollten, wurden nicht eingefügt und das Issue wird in die nächste Woche verschoben. (#42)
 
-=== Entscheidung 
+=== Probleme && Entscheidungen
 
 Um die Produktivität einzelner Teammitglieder zu erhöhen wurde die Iterationszeit auf 2 Wochen erhöht. Dadurch werden die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhoffen dadurch, dass so mehr Zeit für das Bearbeiten der Aufgaben übrig bleibt.
-Diese Entscheidung wurde getroffen bevor Herr Nguyen unser Team verstärkt hat.
+Diese Entscheidung wurde, einige Tage bevor Herr Nguyen unser Team verstärkt hat, getroffen.
 
 Es wurde noch einmal betont, dass bei Programmier-Problemen jederzeit Herr Nguyen oder Herr Werner um Rat gefragt werden kann und Probleme nicht erst am Ende einer Iteration aufgeworfen werden sollen.
 
@@ -213,13 +212,9 @@ Herr Keil's Aufgabe wurde nicht neu vergeben, da wir merkten, dass die Suchfunkt
 
 Außerdem haben wir uns mit Herrn Zirkelbach getroffen und ein paar Kleinigkeiten erfragt (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung gezeigt. 
 
-=== Problem 
-
-Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
-
 Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw. das Einfügen von Dummy-Daten in die Datenbank bereits seit mehreren Iterationen erfolglos von Herrn Tichonow und Herrn Kirchhoff bearbeitet wird. Verschiedene Hilfestellungen in Form von Websites, Tutorials oder das Angebot, jederzeit bei einem Gruppenmitglied um Hilfe fragen zu können, wurden gegeben.
 
-Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch krank. Auf Nachfrage antworteten beide, dass sie noch länger ausfallen würden.
+Wie bereits in den anderen Iterationen beschrieben, waren manche Teammitglieder nach wie vor aus gesundheitlichen Gründen verhindert. Auf Nachfrage konnte in Erfahrung gebracht werden, dass dieser Umstand noch länger bestehen bleiben wird.
 
 == Iteration 13 (26.04.2022 - 09.05.2022)
 
@@ -266,16 +261,14 @@ Es werden nun alle Projekte angezeigt und die dazugehörigen Nutzer. Es gibt noc
 image::images/Projects_User.png[,350,]
 
 
-=== Entscheidung
+=== Probleme && Entscheidungen
 
-Aufgrund des beschriebenen Problems mit dem Formatierungstool bei Herrn Nguyen wurde beschlossen, das Tool nicht mehr zu verwenden und es wurde sich auf eine einheitliche Formatierung geeinigt. 
+Aufgrund des beschriebenen Problems bezüglich des Formatierungstool bei Herrn Nguyen, wurde beschlossen das Tool nicht mehr zu verwenden und es wurde sich auf eine einheitliche Formatierung geeinigt. 
 
-Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurde entschieden, die folgenden Interationen wieder auf eine Woche zu verkürzen.
+Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurde entschieden die folgenden Interationen wieder auf eine Woche zu verkürzen.
 
-=== Problem 
-
-Bisher ist eine Verbesserung hinsichtlich der Produktivität noch ausbaufähig, auch wenn sie durch Herr Nguyen gesteigert werden konnte.
-
+Bisher ist die Verbesserung hinsichtlich der Produktivität noch ausbaufähig, auch wenn sie durch Herr Nguyen gesteigert werden konnte.
+//Namen
 Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt und das Team auch weiterhin nicht über den aktuellen Stand selbstständig in Kenntnis gesetzt. Daher war es Herr Kemters Aufgabe diese Informationen einzuholen.
 
 Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde.
@@ -314,7 +307,7 @@ Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code
 
 Frau Tartz hat eine manuelle Überprüfung sämtlicher Funktionalitäten vorgenommen und hat dabei einen Fehler bei der Projekterstellung gefunden, welcher von Herrn Werner behoben wurde. (#65)
 
-=== Entscheidung
+=== Probleme && Entscheidungen
 
 Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und wir erst mehr Fortschritt erzielen wollten. Ein Monat vor Projektübergabe und mit voranschreitenden Funktionen entschieden wir uns ein Meeting mit ihm auszumachen. Außerdem sollte besprochen werden, wie die Übergabe und das Installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting soll in der folgenden Woche stattfinden.
 
@@ -371,10 +364,10 @@ Herr Kirchhoff konnte weitere von Psalm gemeldete Fehler beheben.
 
 Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen. Das Ziel war eine optimierte Darstellung der Inhalte. Zuvor wurden diese zum Teil hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. Die Verbesserungen betroffen vor allem die Projektverwaltung. (#70)
 
-=== Probleme
+=== Probleme && Entscheidungen
 
 Frau Tartz hat sich diese Woche, nach der Qualitätsprüfung in der letzten Iteration, wieder nicht an dem Projekt beteiligt.
-Herr Tichonow und Herr Beck konnten in dieser Iteration leider nichts beitragen.
+Herr Tichonow und Herr Beck(krank) konnten in dieser Iteration leider nichts beitragen.
 Herr Keil ist immer noch verhindert und es ist unklar, ob dieser noch an dem Projekt mitarbeiten wird.
 
 == Iteration 16 (24.05.2022 - 30.05.2022)
@@ -410,13 +403,11 @@ Bei der Projekterstellung fehlte noch die Validierung der Nutzerdaten im Back-En
 
 Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten.
 
-=== Entscheidung
+=== Probleme && Entscheidungen
 
 Herr Keil konnte sich leider noch nicht an dem Projekt beteiligen. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
 
 Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. Wie extrem unsere Empfehlungen dafür ausfallen werden, sollte daran bemessen werden wie diese Teammitglieder in den restlichen Wochen sich am Projekt beteiligen werden.
-
-=== Probleme
 
 Leider konnten Frau Tartz, Herr Tichonow und Herr Kirchhoff in dieser Iteration keinen Beitrag leisten.
 
@@ -454,7 +445,7 @@ Die verbleibenden Psalm Fehler wurden von Herrn Kirchhoff behoben.
 
 Einige Formattierungsfehler und Fragmente von nicht korrekt gelösten Merge-Conflicts wurden von Herrn Werner bereinigt.
 
-=== Probleme
+=== Probleme && Entscheidungen
 
 Leider konnten Frau Tartz und Herr Tichonow in dieser Iteration keinen Beitrag leisten.
 
@@ -501,7 +492,7 @@ Außerdem wurde das Programm um die Login-Funktionalität erweitert um unbefugte
 
 Nach Erstellung eines neuen Projektes wird der Nutzer nun nicht mehr auf die Wochenansicht weitergeleitet, sondern zurück zur Projektverwaltung. Ebenfalls wird die Erfolgsmeldung auf der Projektverwaltungsseite mit angezeigt. Dies wurde von Herrn Werner bearbeitet. (#83)
 
-=== Problem und Entscheidung
+=== Probleme && Entscheidungen
 
 Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwenderabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmier-Aufgaben bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe sollte dann für Qualitätssicherung, Dokumentation und andere Dokumente verwendet werden. 
 
@@ -556,6 +547,7 @@ Neue Ziele:
 Fortgeführt:
 
 * An Doku/Bericht weiterarbeiten
+* 
 
 === Anwendungsübergabe an Herrn Liebert
 //wurde zwischen zeitlich von jemand unten bereits beschrieben. welches ist besser?
@@ -582,10 +574,17 @@ Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentati
 
 == Iteration 21 (28.06.2022 - 04.07.2022)
 
+// Die weitere Bearbeitung der Entwicklerdokumentation übergab Herr Beck, aufgrund einer Umverteilung der Aufgaben, an Herrn Kirchhoff und Herrn Tichonow.
+
+
+
+// =============    ENDE    ================
+
+
 Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?
 aufgaben wurden kurz nach projekt start als github issue angelegt
-analyse und entwurf hauptsächlich im 1. semester
-implementierung und test hauptsächlich im 2. semester
+analyse und entwurf hauptsächlich im 3. semester
+implementierung und test hauptsächlich im 4. semester
 dokumentation immer
 
 
@@ -644,3 +643,4 @@ Wie wurde mit Problemen umgegangen? Haben die getroffenen Maßnahmen gewirkt?
 - iterationszeit erhöht, damit mehr gemacht wird -> nein, eher das gegenteil
 - Nick hat HTML/CSS gelernt und konnte dann etwas vom verbesserten Design erstellen 
 - niclas hat immer gesagt, dass man ihn eher fragen soll -> aber die anderen haben sich nicht getraut / haben die aufgaben zu spät angefanen um zu fragen(?)
+

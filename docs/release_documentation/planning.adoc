@@ -11,7 +11,7 @@ Die Anwendung stellt in einer Kalenderansicht dar woran der Benutzern an diesen 
 Dafür können Projekte und Benuter erstellt werden. Jeder Benutzer soll Projekte und andere Benuter erstellen und bearbeiten bzw. löschen können. Die Benuter können ebenfalls zu Abteilungen zugeordnet werden. 
 Jeder Benutzer darf jede Funktion ausführen. Es gibt keine unterschiedlichen Berechtigungen. 
 
-Feiertage und Betriebsferien sollen über ebenfalls dargestellt werden. Für die Feiertage wird eine spezielle API verwendet. Für die Betriebsferien bzw. Bundesland abhängige Feiertage sollen diese Tage "per Hand" erstellt werden können.
+Feiertage und Betriebsferien sollen ebenfalls dargestellt werden. Für die Feiertage wird eine spezielle API verwendet. Für die Betriebsferien bzw. Bundesland abhängige Feiertage sollen diese Tage "per Hand" erstellt werden können.
 
 Es gibt die technische Vorrausetzung, dass das System auf Docker und als Webanwendung betrieben werden kann. Andere Bedingungen sind nicht gegeben.
 
@@ -32,7 +32,7 @@ Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zw
 
 
 |===
-| Name| Rolle WS 21/22 | Rolle SoSe 22 | E-Mail
+| Name | Rolle WS 21/22 | Rolle SoSe 22 | E-Mail
 
 | Helena Rubein | Teamleiterin und Analyst | aus Projekt ausgeschieden | s81097@htw-dresden.de 
 | Nick Kemter | Test | Teamleiter und Test | s82068@htw-dresden.de 
