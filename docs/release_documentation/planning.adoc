@@ -1,34 +1,34 @@
 //verwende glaube immer unterschiedliche und falsche zeitformen
-//"eine ressourcenverwaltung in kalenderform"
 = Planung
 
 == Ausgangssituation in Software Engineering II
 
 ===  Auftraggeber und Aufgabenstellung
 
-Im Rahmen des Moduls "Software Engineering II" haben wir die Aufgabe erhalten eine Art Kalender für T-Systems MMS zu entwickeln. Unser Ansprechpartner in der Firma war Herr Sven Liebert und in der HTW Dresden waren es Herr Zirkelbach als Coach und Herr Prof. Anke als Dozent.
+Im Rahmen des Moduls "Software Engineering II" haben wir die Aufgabe erhalten eine Ressourcenverwaltung in Kalenderform für T-Systems MMS zu entwickeln. Unser Ansprechpartner in der Firma war Herr Sven Liebert und in der HTW Dresden waren es Herr Zirkelbach als Coach und Herr Prof. Anke als Dozent.
 
-Die Webanwendung solle den Mitarbeitenden ermöglichen ihre geplanten Projekte in einen Kalenderübersicht einzutragen. Die Darstellung soll ohne konkrete Zeit auskommen und soll Darstellen an was der Mitarbeitende an diesen Tag gearbeitet hat bzw. plant zu arbeiten. Dafür sollen Projekte und Mitarbeitern erstellt werden können. Die Mitarbeiter sollen ebenfalls zu Abteilungen zugeordnet werden können. Jeder Mitarbeiter hat soll Projekte und andere Mitarbeiter erstellen bzw. bearbeiten können. Ebenso darf jeder Mitarbeiter, auch für Kollegen, die Projekte für die jeweiligen Tage ein- bzw- austragen können
-Feiertage und Betriebsferien sollen über ebenfalls dargestellt werden. Für die Feiertage soll eine spezielle API verwendet werden. Für die Betriebsferien bzw. Bundesland abhängige Feiertage sollen diese Tage "per Hand" erstellt werden können.
+Die Anwendung stellt in einer Kalenderansicht dar woran der Benutzern an diesen Tag plant zu arbeiten bzw. gearbeitet hat.
+Dafür können Projekte und Benuter erstellt werden. Jeder Benutzer soll Projekte und andere Benuter erstellen und bearbeiten bzw. löschen können. Die Benuter können ebenfalls zu Abteilungen zugeordnet werden. 
+Jeder Benutzer darf jede Funktion ausführen. Es gibt keine unterschiedlichen Berechtigungen. 
 
+Feiertage und Betriebsferien sollen über ebenfalls dargestellt werden. Für die Feiertage wird eine spezielle API verwendet. Für die Betriebsferien bzw. Bundesland abhängige Feiertage sollen diese Tage "per Hand" erstellt werden können.
 
-//immer "soll" -> synonyme 
-//API nennen?
+Es gibt die technische Vorrausetzung, dass das System auf Docker und als Webanwendung betrieben werden kann. Andere Bedingungen sind nicht gegeben.
+
 ===  Situation zum Semesterbeginn
 
-Unser Team hat bereits letztes Semester an diesem Projekt gearbeitet. Daher haben wir dank guter Vorarbeit eine Dokumentation, welche bereits auf einem guten Stand war und bloß kleine Verbesserungen benötigte. 
-Die Anwendung selbst war auch auch begonnen. Große Teile des Front-Ends waren auch schon funktional erstellt. Es fehlte z.B.  noch die Seite für die Projekterstellung, jedoch ist dies im Front-End eine reine Formsache. Wenige Grundlegende Back-End-Strukturen und -funktionen waren auch schon angelegt, wie z.B. die Datenbank und das anzeigen von Mitarbeitern.
-//helena weg
-//arbeit wurde immer erfüllt -> guter dinge
-//passt das mit der Fortschrittbeschreibung der Anwendung?
-//fähigkeiten der mitglieder
+Unser Team hat bereits letztes Semester an diesem Projekt gearbeitet. Daher haben wir dank guter Vorarbeit eine Dokumentation, welche bereits auf einem guten Stand war und ledeglich kleine Verbesserungen benötigte. 
+Die Anwendung selbst war auch auch begonnen. Große Teile des Front-Ends waren auch schon funktional erstellt. Es fehlte z.B. noch die Seite für die Projekterstellung und der Feiertags-Import Funktion.
+Wenige Grundlegende Back-End-Strukturen und -funktionen waren auch schon angelegt, wie z.B. die Datenbank und das anzeigen von Mitarbeitern in der Kalenderansicht.
 
+Unsere Arbeitsmoral war aufgrund guter Leistungen im vorangegangenen Semester ziemlich hoch. Jedoch wussten wir, dass die bevorstehenden Aufgaben schwer werden könnten, da es einiges neues Wissen zu erlernen galt. Dies gilt besonders für unsere Programmikenntnisse. 
+Teamleiterin Frau Rubein hat uns, wie geplant, verlassen.
 
 ===  Team und Rollen
 
-Unsere Rollen bzw. Verantwortlichkeiten wurden soweit möglich nach bereits vorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche mit ihren bisherigen Stärken und Interessen die größte Schnittmenge haben. 
+Unsere Rollen bzw. Verantwortlichkeiten wurden aus dem vorherigen Semester übernommen. Dort wurden diese soweit wie möglich nach bereits vorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche mit ihren bisherigen Stärken und Interessen die größte Schnittmenge hatten. 
 
-Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zwischenzeitlich noch 7, da Frau Rubein Wirtschaftsingeneurin ist und damit Software Engineering II nicht mehr belegt. Jedoch bekam unser Team nach wenigen Wochen Herr Nguyen als Nachzügler in unser Team. Dieser hatte bereits Programmiererfahungen und bekam daher die Verantwortung der Implementation erhalten. Herr Keil musste leider im 2. Semester ebenfalls aus dem Projekt, wegen Krankheit, ausscheiden.
+Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zwischenzeitlich noch sieben, da Frau Rubein Wirtschaftsingeneurin ist und damit Software Engineering II nicht mehr belegt. Da Frau Rubein die Teamleitung inne hatte, hat Herr Kemter die Rolle übernommen. Jedoch bekam unser Team nach wenigen Wochen Herr Nguyen als Nachzügler in unser Team. Dieser hatte bereits Programmiererfahrungen und bekam daher die Verantwortung der Implementation erhalten. Herr Keil musste leider, wegen Krankheit, im 2. Semester ebenfalls aus dem Projekt ausscheiden. 
 
 
 |===
@@ -47,28 +47,34 @@ Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zw
 
 ===  Kommunikation und eingesetzte Tools
 
-Unsere interne Teamkommunikation ist größtenteils gleich wie im 1. Semester.
-Für unseren wöchenlichen Gruppentreffen am Montagsabend verwendeteten wir Disord, da es einfach zu benutzen war und wertvolle Funktionen hat, wie Bildschirmübertragung und einen simplen File-Upload.
-Wir verwendeten zusätzlich WhatsApp, um schneller Antworten für organisatorische Angelegenheiten erhalten zu können. Discord und Whatsapp wurden auch verwendet, wenn Mitglieder zusammen an einer Aufgabe gearbeitet haben oder ein Hilfe bei einem Problem benötigten.
-In der zweiten Hälfte des des 2. Semester haben wir auch Pull-Requests bei GitHub eingesetzt, wo direkt Feedback gegeben werden konnte.
+Unsere interne Teamkommunikation ist größtenteils gleich wie im Semester davor.
+Für unseren wöchenlichen Gruppentreffen am Montagsabend verwendeteten wir Discord, da es einfach zu benutzen war und wertvolle Funktionen hat, wie Bildschirmübertragung und einen simplen File-Upload.
+Wir verwendeten zusätzlich WhatsApp, um schnelle Antworten für organisatorische Angelegenheiten erhalten zu können. 
+Discord und Whatsapp wurden auch verwendet, wenn Mitglieder zusammen an einer Aufgabe gearbeitet haben oder Hilfe bei einem Problem benötigten.
 
-Bei der Kommunikation wurde im Vergleich zum 1. Semester wurde mit dem Themensteller bloß noch über Discord kommuniziert und nicht noch zusätzlich über Mail. Über Discordprivatnachrichten wurden Termine für Treffen abgesprochen und die Termine selbst über den Discordserver im Sprachchat, wo teilweise auch die Bildschirme übertragen wurden sind.
+In der zweiten Hälfte von diesem Semester haben wir auch Pull-Requests bei GitHub eingesetzt, wodurch direkt Feedback zu dem erstellten Inhalten gegeben werden konnte.
 
-
+Bei der Kommunikation wurde im Vergleich zum vorherigen Semester wurde mit dem Themensteller über Discord kommuniziert und nicht noch zusätzlich über E-Mail. Über Discordprivatnachrichten wurden Termine für Treffen abgesprochen und die Termine selbst über den Discordserver im Sprachchat, wo häufig auch die Bildschirme übertragen wurden sind.
 
 ===  Dokumenation und eingesetzte Tools 
-
-//wenn dokumentation zu ernst genommen wird, dann passt hier docker und mariadb etc nicht hin
+//wenn "dokumentation" zu ernst genommen wird, dann passt hier docker und mariadb etc nicht hin
 //    eingesetzte Tools: discord, whatsapp, docker(?), github, vs code, mariadb, google docs (für gemeinsame dokumente und zeitplan), psalm (und die anderen github dinge), draw.io
+Unsere Dokumenation und Code wurde persistent auf GitHub gepeichert. 
 
+Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Diagramme wurden mit Draw.io und VisualParadigm erstellt und zusätzlich PNG gesichert. 
 
-Unsere Dokumenation wurde persistent auf GitHub gepeichert, wo auch der Code lag. Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Grafiken wurden mit Draw.io und VisualParadigm erstellt und als Foto in die Dokumenation geladen. 
-// gibt es noch anderen grafiktools?
-Die Meetings mit Herrn Liebert wurden auf gemeinsamen GoogleDocs-Dokumenten vor- und nachbereitet, da diese von jedem Teammitglied parallel bearbeitet werden kann. Ebenso haben wir bei GoogleDocs ein Excelsheet verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt steckt.
-
-
+Die Meetings mit Herrn Liebert wurden auf gemeinsamen GoogleDocs-Dokumenten vor- und nachbereitet, da diese von jedem Teammitglied parallel bearbeitet werden können. Ebenso haben wir bei GoogleDocs ein Excelsheet verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt invistiert.
 
 ===  Techniken/Praktiken - Way of Working
+
+
+==== Planung der Iteration
+
+In jeder Iteration wurde erfasst, welche wichtigen Aufgaben bzw. Funktionalitäten als nächstes realisiert werden sollten. Dazu zählen auch nicht fertiggestellte 
+
+==== Durchführen der Iteration
+
+==== Bewertung der Iteration
 
 ////
  //// 
