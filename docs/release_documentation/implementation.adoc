@@ -20,7 +20,6 @@ Unsere Ziele für I09 waren:
 * Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
 * Mitarbeiter anlegen um Abteilungsdropdown erweitern #35 
 * Aufräumen der Datenbankenstruktur #37
-* Anlegen der Abteilungstabelle + 5 Abteilungen #34
 * Mitarbeiter hinzufügen check der E-Mail #33
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Beleg korrigieren #29
