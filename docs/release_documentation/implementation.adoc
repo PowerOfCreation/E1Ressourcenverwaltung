@@ -1,17 +1,33 @@
 = Projektdurchführung
 
+//wurde beschrieben das Vitali das Login über mehrere Wochen versucht hat, aber eigentlich kein Fortschritt erziehlt hat? das hätte er ja eigentlich dann in der zeit gemacht, wo er "offiziell" nichts hatte
+
 // ist das ein problem einer konkreten iteration oder soll das so generell stehen bleiben?
 // == Einführung
 
 // Zu Beginn des Semesters haben wir uns zusammengesetzt und das weitere Vorgehen im Modul SE II besprochen. Nach relativ kurzer Zeit stellte sich heraus, dass wir ein wenig Unterstützung gebrauchen könnten. Nachdem wir von der Möglichkeit erfuhren ein neues Teammitglied aufzunehmen, fiel die Entscheidung recht schnell und wir meldeten uns bei Herr Prof. Anke. Nach einer Einarbeitungszeit von etwa 2 Wochen konnte das neue Teammitglied erfolgreich integriert werden und seine Aufgaben selbstständig erfüllen.
 
+== Vorwort 
+
+=== Erstellung und Verteilung der Aufgaben
+
+Die Implementationsaufgaben bzw. -issues wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch hat er durch seine Ausbildung und weitreichendes Wissen über das Programm und die Use-Cases die 
+Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktuallisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. So bringt es in der Praxis nichts, dass aus Use-Case 1 die Status in eine andere Woche kopiert werden können, wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). 
+
+////
+Das Gleiche gilt für Use-Case 3. Generell sollen dort die Benutzer Projekte erstellen und diesen dann Benuter zuweisen können. Es wäre für uns unmöglich Projekte für T-System MMS im Vorfeld zu erstellen. Das scheitert schon an der möglichen Anzahl. Jedoch ist der Standardablauf das Benutzer bei einem Projekt hinzugefügt bzw. entfernt werden können, da dies mehr passieren wird, als neue Projekte angelegt werden. 
+
+////
+Viele solche praktischen Abhängigkeiten gibt es, was uns ein klares Abarbeiten der Use-Cases erschwert hat. Wenn wir uns strikt an die Priorisierung halten würden, würden die Benutzer Funktionen ausführen können, die ihnen am Ende nicht viel bringen würden. 
+
+Weiterhin musste bei der Verteilung der Issues bedacht werden, wer noch Issues aus einer vorherigen Iteration bearbeitet und ob das Können sowie das Wissen der Teammitglieder für die Aufgabe ansatzweise ausreicht. Schwere oder große Aufgaben wurden daher oft von Herrn Werner und Herrn Nguyen bearbeitet.
+
 == Iteration 9 (23.03.2022 - 28.03.2022)
 
 Dies war die erste Iteration im neuen Semester. Wir hatten aufgrund der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 
-Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr belegt.
 
-Leider mussten wir krankheitsbedingt auf Herrn Keil und Frau Tartz verzichten. 
+//Leider mussten wir krankheitsbedingt auf Herrn Keil und Frau Tartz verzichten. 
 
 
 ////
@@ -28,7 +44,6 @@ Unsere Ziele für I09 waren:
 
 ////
 === Dokumentation
-
 Wie bereits geschrieben, hat Herr Professor Anke unseren abgegebenen Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich berichtigt werden. 
 Viele der Fehler waren nur Kleinigkeiten und diese konnten schnell behoben werden.
 
@@ -54,11 +69,15 @@ Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um ei
 
 Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Backend, konnte dieses Issue nicht in dieser Iteration beendet werden. (#36)
 
+
+////
 === Problem
 Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting unentschuldigt. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte. Einige Aufgaben konnten nicht abgeschlossen werden.
-
+////
 === Entscheidungen
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
+
+Durch die bereits in "Situation zum Semesterbeginn" geschrieben Situation, nahmen wir das Angebot von Herrn Prof. Anke an und bewarben uns für ein neues Mitglied, welches vorallem im Back-End helfen sollte. Jedoch gab es kein passendes Mitglied.
 
 == Iteration 10 (29.03.2022 - 04.04.2022)
 ////
@@ -126,7 +145,6 @@ Fortgeführt:
 ////
 
 === Dokumentation
-
 Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Dazu zählten Praktiken und Bewertung, sowie die ersten beiden Schichten des C4-Modell. Eine genauere Darstellung war noch nicht möglich, da die ganzen Komponenten erst im Laufe des Projektes erstellt werden. (#28)
 
 === Implementation
@@ -143,15 +161,15 @@ Die Projekterstellungsseite wurde nicht angefangen. Die Weiterleitung zu dieser 
 Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 
 === Problem 
-Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
+//wir sollen/müssen nicht immer auf jonas/ aleksandra eingehe. deswegen wird das jetzt in den iterationen bloß noch durch nicht efüllte aufgaben angedeutet. daher wäre es hier evtl noch nötig den ersten satz etwas anzupassen
+Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Daher drohte eine fallende Moral der anderen Mitgliedern. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten. Aber aufgrund fehlender Dringlichkeit und da wir wussten nicht wussten, wie wir dieses Problem beheben können, haben wir von weiteren Maßnahmen abgesehen. 
 
-Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
 
-Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
+//Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
 == Iteration 12 (12.04.2022 - 25.04.2022)
 
-In dieser Iteration haben wir mit Herrn Nguyen, welcher bereits Erfahrung in der Front-End und Back-End Entwicklung mitbringt, Verstärkung erhalten. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat wieder etwas mehr Fahrt aufgenommen.
+Überaschenderweise haben wir ein neues Teammitglied zugewiesen bekommen, welches wir in Iteration 9 angefragt haben.Herrn Nguyen hat bereits Erfahrung in der Front-End und Back-End Entwicklung. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat dementsprechend an Fahrt aufgenommen.
 
 ////
 Neue Ziele: 
@@ -171,8 +189,7 @@ Fortgeführt:
 * Mitarbeiter hinzufügen check der E-Mail #33
 ////
 === Dokumentation
-
-Unser neues Mitglied Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
+Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
 
 Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert. 
 
@@ -196,7 +213,6 @@ Zunächst hat Herr Beck dafür eine neue Unterseite implementiert, in der neue P
 Die Dummy-Daten, welche von Herrn Kirchhoff erstellt werden sollten, wurden nicht eingefügt und das Issue wird in die nächste Woche verschoben. (#42)
 
 === Entscheidung 
-
 Um die Produktivität einzelner Teammitglieder zu erhöhen wurde die Iterationszeit auf 2 Wochen erhöht. Dadurch werden die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhoffen dadurch, dass so mehr Zeit für das Bearbeiten der Aufgaben übrig bleibt.
 Diese Entscheidung wurde getroffen bevor Herr Nguyen unser Team verstärkt hat.
 
@@ -207,7 +223,6 @@ Herr Keil's Aufgabe wurde nicht neu vergeben, da wir merkten, dass die Suchfunkt
 Außerdem haben wir uns mit Herrn Zirkelbach getroffen und ein paar Kleinigkeiten erfragt (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung gezeigt. 
 
 === Problem 
-
 Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 
 Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw. das Einfügen von Dummy-Daten in die Datenbank bereits seit mehreren Iterationen erfolglos von Herrn Tichonow und Herrn Kirchhoff bearbeitet wird. Verschiedene Hilfestellungen in Form von Websites, Tutorials oder das Angebot, jederzeit bei einem Gruppenmitglied um Hilfe fragen zu können, wurden gegeben.
@@ -235,7 +250,6 @@ Fortgeführt:
 * Mitarbeiter hinzufügen check der E-Mail #33
 ////
 === Dokumentation 
-
 Die Risikoliste wurde erneut um einen Eintrag erweitert. Herr Nguyen hatte ein neues Formatierungstool verwendet, was ihm eigentlich Arbeit abnehmen sollte. Jedoch stellte sich heraus, dass bei jedem Speichern die Leerzeichen, welche zum Einrücken verwendet wurden, durch Tabs ersetzt. Dies führte dazu, dass bei Github die tatsächlichen Änderungen schwer zu sehen waren und es sehr viele Merge Konflikte gab.
 
 === Implementation
@@ -256,20 +270,16 @@ image::images/Projects_User.png[,350,]
 //wird nicht als bild gezeigt
 
 === Entscheidung
-
 Aufgrund des beschriebenen Problems mit dem Formatierungstool bei Herrn Nguyen wurde beschlossen, das Tool nicht mehr zu verwenden und es wurde sich auf eine einheitliche Formatierung geeinigt. 
 
 Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern zu einer weiteren Verschlechterung der Produktivität. Daher wurde entschieden, die folgenden Interationen wieder auf eine Woche zu verkürzen.
 
 === Problem 
-
-Bisher ist eine Verbesserung hinsichtlich der Produktivität noch ausbaufähig, auch wenn sie durch Herr Nguyen gesteigert werden konnte.
+Bisher ist eine Verbesserung hinsichtlich der Produktivität noch ausbaufähig, auch wenn der Gesamtoutput durch Herr Nguyen gesteigert werden konnte.
 
 Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt und das Team auch weiterhin nicht über den aktuellen Stand selbstständig in Kenntnis gesetzt. Daher war es Herr Kemters Aufgabe diese Informationen einzuholen.
 
-Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde.
-
-Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
+Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde. Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
 === Iteration 14 (10.05.2022 - 16.05.2022)
 ////
@@ -298,11 +308,9 @@ Bei den eingefügten Dummy-Daten der Status, welches in der letzten Iteration ab
 Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code-Analyse des PHP Codes vornimmt. Dies soll genutzt werden, damit weniger Zeit mit Code-Reviews verloren geht und häufige Probleme automatisch erkannt werden. Herrn Kirchhoff Aufgabe war es nun alle erkannten Probleme durch Psalm zu beheben. (#58)
 
 === Qualitätssicherung
-
 Frau Tartz hat eine manuelle Überprüfung sämtlicher Funktionalitäten vorgenommen und hat dabei einen Fehler bei der Projekterstellung gefunden, welcher von Herrn Werner behoben wurde. (#65)
 
 === Entscheidung
-
 Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und wir erst mehr Fortschritt erzielen wollten. Ein Monat vor Projektübergabe und mit voranschreitenden Funktionen entschieden wir uns ein Meeting mit ihm auszumachen. Außerdem sollte besprochen werden, wie die Übergabe und das Installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting soll in der folgenden Woche stattfinden.
 
 Nachdem wir feststellten, dass das Arbeiten auf einer Branch zu häufigeren Merge-Konflikten führte und viele Bugs eingeschleust wurden, beschlossen wir unsere Arbeitsweise zu ändern. Das committen auf dem Hauptbranch ist ab sofort für alle Teammitglieder gesperrt und es wird nun mit Feature Branches und Pull Requests gearbeitet. Jeder Pull Request muss von einem Teammitglied genehmigt werden, bevor dieser gemerget werden kann. Auch gibt es nun eine statische Code-Analyse mit Psalm, welche bei jedem Pull Request ausgeführt wird. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserungen.
@@ -332,7 +340,6 @@ Fortgeführt:
 Die Probleme mit Git, weswegen wir seit der letzten Iteration nun Feature-Branches verwenden, wurden in die Risiko-Liste aufgenommen. Ebenfalls wurde einige Korrekturen an der Dokumentation vorgenommen von Herrn Kemter.
 
 === Feedback vom Themensteller
-
 Herr Liebert ist zufrieden mit unserem Fortschritt. 
 Er forderte, dass nach der Erstellung eines Benutzers oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
 
@@ -355,11 +362,8 @@ Herr Kirchhoff konnte weitere von Psalm gemeldete Fehler beheben.
 Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen. Das Ziel war eine optimierte Darstellung der Inhalte. Zuvor wurden diese zum Teil hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. Die Verbesserungen betroffen vor allem die Projektverwaltung. (#70)
 
 === Probleme
-
 //wollen wir das wirklich so stehen lassen? ist ja nächste auch nochmal. wenn es schon so ist, dann sollte man wenigstens einen grund angeben
 //justus war glaube krank / aleksandra vermutlich auch
-
-
 Frau Tartz hat sich diese Woche, nach der Qualitätsprüfung in der letzten Iteration, wieder nicht an dem Projekt beteiligt.
 Herr Tichonow und Herr Beck konnten in dieser Iteration leider nichts beitragen.
 Herr Keil ist immer noch verhindert und es ist unklar, ob dieser noch an dem Projekt mitarbeiten wird.
@@ -395,15 +399,12 @@ Bei der Projekterstellung fehlte noch die Validierung der Nutzerdaten im Back-En
 Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten.
 
 === Entscheidung
-
 Herr Keil konnte sich leider noch nicht an dem Projekt beteiligen. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
 
 Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. Wie extrem unsere Empfehlungen dafür ausfallen werden, sollte daran bemessen werden wie diese Teammitglieder in den restlichen Wochen sich am Projekt beteiligen werden.
 
 === Probleme
-
 //warum haben sie nichts gemacht? issues waren ja prinzipiell genug offen
-
 Leider konnten Frau Tartz, Herr Tichonow und Herr Kirchhoff in dieser Iteration keinen Beitrag leisten.
 
 == Iteration 17 (31.05.2022 - 06.06.2022)
@@ -463,7 +464,6 @@ Fortgeführt:
 * Projektverwaltung: Projekte löschen #94
 ////
 === Dokumentation
-
 Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellten Beispiele eine gute Grundlage. Schlussendlich entschied er sich für eine Nennung der neuen und fortgeführten Issues. Ob dies noch einmal geändert wird steht noch offen. Weiterhin wird er in einzelnen Abschnitten die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschreiben.
 
 Da bei vielen Mitgliedern die Lust auf das Projekt aus verschiedenen Gründen gesunken ist, hat Herr Kemter die Risikoliste um einen entsprechenden Eintrag erweitert. 
@@ -482,16 +482,14 @@ Außerdem wurde das Programm um die Login-Funktionalität erweitert um unbefugte
 Nach Erstellung eines neuen Projektes wird der Nutzer nun nicht mehr auf die Wochenansicht weitergeleitet, sondern zurück zur Projektverwaltung. Ebenfalls wird die Erfolgsmeldung auf der Projektverwaltungsseite mit angezeigt. Dies wurde von Herrn Werner bearbeitet. (#83)
 
 === Problem und Entscheidung
-
-Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwendungsabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmier-Aufgaben bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe sollte dann für Qualitätssicherung, Dokumentation und andere Dokumente verwendet werden. 
+Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwendungsabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmier-Aufgaben bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe am 22.6. sollte für Qualitätssicherung, Dokumentation und andere Dokumente verwendet werden. 
 
 Da noch nicht alle wichtigen Features, die durch Herrn Liebert gefordert wurden, zum Meeting abgeschlossen waren, sollten diese zuerst erledigt werden. Wir haben nun eine Priorisierung der Issues eingeführt, um zumindest die wichtigsten Features noch zu schaffen. Wenn mehr geschafft wird, dann kann noch mehr erledigt werden.
 
-Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind.
-Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Dieser Empfehlung folgten wir.
+Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind. Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Dieser Empfehlung folgten wir.
 
 Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt.
-
+//glaube hier kann man nochmal was wegkürzen.. quasi die revers'te entscheidung vom meeting
 === Iteration 19 (14.6.2022 - 20.06.2022)
 ////
 Unsere Ziele für I19 waren: 
@@ -510,21 +508,22 @@ Fortgeführt:
 * Projektbericht #116
 ////
 === Dokumentation 
-
 Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration hauptsächlich an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Die Aufteilung an den einzelnen Dokumenten bleibt wie letzte Iteration.
 
-Die Anwenderdokumentation sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realisiert werden, was einige Teile der Anwenderdokumentation verändern würde. Wir haben mit Herrn Liebert vereinbart, dass wir sie nicht zusammen mit der Anwendung übergeben müssen. Es reicht auch, wenn sie ihm bis spätestens 8. Juli geschickt wird. Die Anwenderdokumentation wird von von Frau Tartz bearbeitet.
+Die Anwenderdokumentation sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realisiert werden, was einige Teile der Anwenderdokumentation verändern würde. Wir haben mit Herrn Liebert vereinbart, dass wir sie nicht zusammen mit der Anwendung übergeben müssen. Es reicht auch, wenn sie ihm bis spätestens 8. Juli geschickt wird. 
+//Die Anwenderdokumentation wird von von Frau Tartz bearbeitet.
 
 Einzelne Use Cases wurden um Kleinigkeiten verbessert.
 
 === Implementation
-
 Es wurden keine neuen Features mehr angefangen. Herr Nguyen und Herr Werner haben einige letzte Fehler behoben, sowie das löschen von Projekten abgeschlossen. Das automatische Erstellen von Dummy-Daten wurde entfernt und ein einzelner Standard-Nutzer eingerichtet. Die Logindaten dieses Nutzers wurden mit in die Betriebsdokumentation übernommen. Das Auswählen von Projekten in der Projektverwaltung funktioniert nun auch, wenn auf den Radiobutton neben einem Projekt geklickt wird. Vorher war es nur möglich auf den Projektnamen zu klicken.
 
+////
+kann glaube weggelassen werden
 === Entscheidung
 
 Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich einige Mitglieder weiterhin nicht in angemessenen Maße beteiligt haben. Intern wurde also über die differenzierte Bewertung abgestimmt und das Ergebnis wurde Herrn Prof. Anke mitgeteilt.
-
+////
 == Iteration 20 (21.06.2022 - 27.06.2022)
 ////
 Unsere Ziele für I20 waren:
@@ -539,22 +538,25 @@ Fortgeführt:
 
 * An Doku/Bericht weiterarbeiten
 ////
+
+
 === Anwendungsübergabe an Herrn Liebert
 //wurde zwischen zeitlich von jemand unten bereits beschrieben. welches ist besser?
 Wie geplant haben wir an Herrn Liebert die Anwendung per GitHub übergeben und unsere realisierten Use-Cases demonstriert. Die Übergabe verlief problemlos, da die Software und das Abnahmeprotokoll gut vorbereitet waren. Wie vorher vereinbart wird die Dokumentation jedoch bis spätestens dem 08.07. nachgereicht. 
-Unserer Meinung nach war Herr Liebert mit der Umsetzung sehr zufrieden.
+Unserer Meinung nach war Herr Liebert mit der Umsetzung zufrieden.
 
 === Treffen mit Herrn Professor Anke und Herrn Zirkelbach
 
-Herr Beck und Herr Kemter haben sich zu einer Konsultation mit Herrn Professor Anke und Herrn Zirkelbach getroffen, dort sollte die Betriebsdokumentation mit dem C4-Modell besprochen werden und welche weiteren Diagramme noch verwendeten werden können. Das Ergebnis war, dass unser C4-Modell etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen haben. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden.
+Herr Beck und Herr Kemter haben sich zu einer Konsultation mit Herrn Professor Anke und Herrn Zirkelbach getroffen
+//, dort sollte die Betriebsdokumentation mit dem C4-Modell besprochen werden und welche weiteren Diagramme noch verwendeten werden können. 
+Das Ergebnis war, dass unser C4-Modell etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen haben. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden.
 
 Zu dem Projektbericht gab es ein paar Strukturelle Fragen und wie genau wir die Inhaltsverteilung vornehmen sollen. Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden. Wir wurden jedoch in unserem bisherigen Aufbau bestätigt. Herr Werner und Herr Nguyen haben sich außerdem dazu bereit erklärt, dass Dokument zur Projektdurchführung zu verbessern, da beide mehr an der technischen Umsetzung beteiligt waren, als Herr Kemter.
-
+//keine ahnung ob das hier noch hinkommt
 In in dem Gespräch mit Herrn Prof. Anke kamen auch unsere Probleme mit der teils sehr unterschiedlichen Beteiligung am Projekt auf.
 Einige Mitglieder haben deutlich mehr gemacht als andere. Diese ungerechte Verteilung sollte wie bereits beschrieben über die differenzierte Bewertung sich in der Note widerspiegeln. Jedoch war Herr Professor Anke davon nicht überzeugt und bat Herrn Kemter und Herrn Beck mit den anderen Mitgliedern zu sprechen und eine Entscheidung über die Benotung der betroffenen Mitglieder zu fällen. Die Mitglieder entschieden sich, eine möglichst faire E-Mail zusammen mit der Bitte, dass die anderen Mitglieder auch noch Stellung dazu beziehen dürfen, zu verfassen. Die betroffenen Teammitglieder wurden von der E-Mail informiert und es stand ihnen frei, ob sie noch den Vortrag halten wollen. Alle haben sich mit einem eventuellen "nicht Bestehen" nicht einverstanden gezeigt. Außerdem wollten sie wie gewohnt ihre zugeteilten Aufgaben bearbeiten.
 
 === Dokumentation
-
 Die Test- und Betriebsdokumentation sind fast fertig und es wurden bloß noch Kleinigkeiten verbessert.
 Die Anwenderdokumentation sollte nach Feedback im Teammeeting ebenfalls noch um Kleinigkeiten verbessert werden, dazu zählten professionellere Pfeile auf den Bildern und eine etwas genauere Beschreibung der Vorgänge, damit keine Unklarheiten entstehen.
 
@@ -563,6 +565,12 @@ Die Softwareübergabe fand am Mittwoch, dem 22. Juni über Discord statt. Dabei 
 Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentation anzufertigen, welche zusammen mit der Software am Montag, dem 27. Juni erfolgreich in der Vorlesung vorgeführt wurde.
 
 == Iteration 21 (28.06.2022 - 04.07.2022)
+
+
+
+== Erkenntisse nach der Durchführung
+
+
 
 
 ////
