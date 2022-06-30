@@ -405,6 +405,7 @@ Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder,
 
 === Probleme
 //warum haben sie nichts gemacht? issues waren ja prinzipiell genug offen
+//vllt nicht nötig das hier stehen zu lassen
 Leider konnten Frau Tartz, Herr Tichonow und Herr Kirchhoff in dieser Iteration keinen Beitrag leisten.
 
 == Iteration 17 (31.05.2022 - 06.06.2022)
@@ -566,12 +567,21 @@ Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentati
 
 == Iteration 21 (28.06.2022 - 04.07.2022)
 
+Es wurde geplant alles bis Ende Juni alles fertig zu haben. Jedoch wurde dies nicht geschafft, daher sollten die Fortschritte dieser Iteration am Montag evaluiert werden und in den folgenden Tagen der nächsten Iteration hochgeladen werden.
 
+=== Dokumentation
+
+Einige Dokumentationen haben noch Kleinigkeiten zum Verbessern und zum Hinzufügen. 
+Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen um einige Sachverhalte nachzufragen. Dementsprechen wird weitergearbeitet
 
 == Erkenntisse nach der Durchführung
 
+Rückblickend kann gesagt werden, dass es vermutlich besser gewesen wäre, hätten wir bei den Teammeeting auch mit Webcams gearbeitet. Dies hätte den Meeting etwas mehr Personalität verliehen und es hätte bei Entscheidungen und Problemen eine bessere Reaktion auf das Angesprochene gegeben. Eventuell wäre auch in größeren Abständen ein "Offlinetreffen" oder das Treffen um eine frühere Uhrzeit* von Vorteil gewesen. 
 
+//vllt wegmachen/ woanders
+*ist schwierig wegen Studium und Privatleben, da einen besseren Termin zu finden
 
+Fast für jede Aufgabe wurde ein Issue erstellt und dies auch verwaltet. Jedoch wäre es besser gewesen, wären diesen diese auch in den Projekten bei GitHub verwaltet wurden. Dies wäre nicht nur für den Projektbericht von Vorteil gewesen, sondern auch bei der Aufgabenverwaltung wärend des Projektes.
 
 ////
 Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?
