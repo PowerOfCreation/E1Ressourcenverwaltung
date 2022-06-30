@@ -13,6 +13,8 @@ Frau Rubein hat das Projekt verlassen, da Sie Software Engineering II nicht mehr
 
 Leider mussten wir krankheitsbedingt auf Herrn Keil und Frau Tartz verzichten. 
 
+
+////
 Unsere Ziele für I09 waren:
 
 * Anlegen der Abteilungstabelle + 5 Abteilungen #34
@@ -24,6 +26,7 @@ Unsere Ziele für I09 waren:
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Beleg korrigieren #29
 
+////
 === Dokumentation
 
 Wie bereits geschrieben, hat Herr Professor Anke unseren abgegebenen Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich berichtigt werden. 
@@ -36,11 +39,9 @@ Zudem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe wa
 === Implementation
 
 *UC 2*
-
 Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Projekten der Nutzer zugeteilt werden kann. Um Projekten mehrere Nutzer zuzuweisen zu können und auch den Nutzern verschiedene Projekte zuzuweisen zu können, wurde eine neue Datenbanktabelle erstellt, die diese m:n Beziehung auflöst. Diese Aufgabe wurde Herrn Kirchhoff zugeteilt und konnte in dieser Iteration nicht beendet werden. (#38)
 
 *UC 3*
-
 Eine Aktualisierung betraf die Möglichkeit, bei der Registrierung, nun jedem Benutzer eine Abteilung zuzuordnen.
 Dazu wurde zunächst eine neue Datenbanktabelle Abteilung von Herrn Beck angelegt. (#34)
 
@@ -54,16 +55,13 @@ Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um ei
 Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Backend, konnte dieses Issue nicht in dieser Iteration beendet werden. (#36)
 
 === Problem
-
 Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting unentschuldigt. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte. Einige Aufgaben konnten nicht abgeschlossen werden.
 
 === Entscheidungen
-
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
-
 == Iteration 10 (29.03.2022 - 04.04.2022)
-
+////
 Unsere Ziele für I10 waren: 
 
 Neue Ziele:
@@ -81,14 +79,14 @@ Fortgeführt:
 * Datenbanktabelle für Beziehung zwischen Projekt und Benutzer #38
 * Nutzerübersichtsseite #39
 
-=== Dokumentation
+////
 
+=== Dokumentation
 Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angefangene C4-Modell verbessert und die Projektrollen besser formatiert. Das Glossar wurde erweitert und neue Praktiken im Projekt-Plan eingefügt. (#29)
 
 === Implementation
 
 *UC 3*
-
 Die Nutzerübersichtsseite wurde von Herrn Werner um die Anzeige der Abteilung des Nutzers erweitert und das Issue somit abgeschlossen. (#39)
 
 Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS, JavaScript und PHP Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
@@ -105,10 +103,11 @@ Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leich
 Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Dies wurde von Herrn Liebert gewünscht, aber ist kein essentiell wichtiges Feature, da andere Use Cases laut ihm wichtiger sind. Es ist unklar wann Herr Keil wieder an dem Projekt mitarbeiten kann und deswegen wurde ihm diese Aufgabe zugeteilt. Sie wurde bis zum Ende der Iteration nicht begonnen. (#28)
 
 == Problem
-
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 
 == Iteraion 11 (05.04.2022 - 11.04.2022)
+
+////
 
 Unsere Ziele für I11 waren: 
 
@@ -124,6 +123,7 @@ Fortgeführt:
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Mitarbeiter hinzufügen check der E-Mail #33
 * Mehr Dummy-Daten für Project und Project_User #42
+////
 
 === Dokumentation
 
@@ -132,21 +132,17 @@ Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Da
 === Implementation
 
 *UC 2*
-
 Wenn auf einen Wochentag geklickt wird, dann wird nun ein Dropdown-Menü angezeigt. In diesem werden nur die Projekte angezeigt, in welchen der Nutzer aus der jeweiligen Zeile ein Mitglied ist. Dies wurde von Herrn Werner implementiert. (#30)
 
 *UC 3*
-
 Eine Funktion zum Anzeigen des Passworts wurde von Herrn Tichonow implementiert. Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (#33 & #36)
 
 *UC 4*
-
 Die Projekterstellungsseite wurde nicht angefangen. Die Weiterleitung zu dieser von der Wochenansicht ist jedoch fertig. Dies wurde von Herrn Beck bearbeitet. (#32)
 
 Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 
 === Problem 
-
 Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen konnten. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten, aber aufgrund fehlender Dringlichkeit (wie wir zu dem Zeitpunkt dachten) wurde von weiteren Maßnahmen abgesehen. 
 
 Zu Beginn des neuen Semesters wurde relativ schnell deutlich, dass die Arbeitsmoral der einzelnen Teammitglieder weit auseinander gehen sollte. Das wurde besonders durch die Zeitplanungstabelle deutlich. Leider beeinflusste dies auch die Moral der bisher noch motivierten Teammitglieder. 
@@ -157,6 +153,7 @@ Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein ne
 
 In dieser Iteration haben wir mit Herrn Nguyen, welcher bereits Erfahrung in der Front-End und Back-End Entwicklung mitbringt, Verstärkung erhalten. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat wieder etwas mehr Fahrt aufgenommen.
 
+////
 Neue Ziele: 
 
 * Projekterstellungsseite Frontend+Backend #32
@@ -172,7 +169,7 @@ Fortgeführt:
 * Mehr Dummy-Daten für Project und Project_User #42
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Mitarbeiter hinzufügen check der E-Mail #33
-
+////
 === Dokumentation
 
 Unser neues Mitglied Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
@@ -180,21 +177,18 @@ Unser neues Mitglied Herr Nguyen wurde in die Dokumentation eingetragen und ihm 
 Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert. 
 
 === Implementation
-*UC 1*
 
+*UC 1*
 Eine neue Schnittstelle wurde eingefügt, welche die aktuelle Kalenderwoche mit den Daten aller Wochentage ausgibt. (#43)
 Dies ist zentral, um dem Nutzer mehr als die aktuelle Woche anzeigen zu können. Dies ist auch notwendig, um einen Nutzerstatus in einer beliebigen Kalenderwoche hinzufügen zu können. Dies wurde von Herrn Nguyen bearbeitet.
 
 *UC 2*
-
 Eine neue Schnittstelle ermöglicht es alle Projekte zu erhalten, in welchem ein Nutzer ist. Dies ist notwendig, um dem Nutzer nur einen Status bzw. Arbeitsauftrag für Projekte zu vergeben an welchen dieser auch teilnimmt. Dies wurde von Herrn Werner bearbeitet.
 
 *UC 3*
-
 Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. Herr Tichonow hat Verbesserung an der bestehenden Front-End Überprüfung vorgenommen, indem neue required Attribute und Placeholder eingefügt wurden. (#33 & #36)
 
 *UC 4*
-
 Da die Benutzerverwaltung(UC 3) schon sehr weit fortgeschritten ist, konzentrieren wir uns nun verstärkt auf die Projektverwaltung. Jedes Projekt soll einen Namen, einen Projektverantwortlichen, ein Enddatum (welches zur Orientierung dienen soll), eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann.
 
 Zunächst hat Herr Beck dafür eine neue Unterseite implementiert, in der neue Projekte angelegt werden. (#32) Das Verwalten aller bestehenden Projekte soll in der nächsten Iteration angefangen werden. Ebenso soll es möglich sein jedem Projekt beliebig viele Benutzer zuzuweisen. (#45)
@@ -221,7 +215,7 @@ Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw
 Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch krank. Auf Nachfrage antworteten beide, dass sie noch länger ausfallen würden.
 
 == Iteration 13 (26.04.2022 - 09.05.2022)
-
+////
 Unsere Ziele für I13 waren: 
 
 Neue Ziele:
@@ -239,7 +233,7 @@ Fortgeführt:
 * Projektverwaltungsseite #45
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Mitarbeiter hinzufügen check der E-Mail #33
-
+////
 === Dokumentation 
 
 Die Risikoliste wurde erneut um einen Eintrag erweitert. Herr Nguyen hatte ein neues Formatierungstool verwendet, was ihm eigentlich Arbeit abnehmen sollte. Jedoch stellte sich heraus, dass bei jedem Speichern die Leerzeichen, welche zum Einrücken verwendet wurden, durch Tabs ersetzt. Dies führte dazu, dass bei Github die tatsächlichen Änderungen schwer zu sehen waren und es sehr viele Merge Konflikte gab.
@@ -247,23 +241,19 @@ Die Risikoliste wurde erneut um einen Eintrag erweitert. Herr Nguyen hatte ein n
 === Implementation
 
 *UC 1*
-
-
 Die Funktionen zum Einfügen eines neuen Status, dem Anzeigen eines neuen Projektes, sowie das Einfügen, Löschen und Abrufen von Nutzern in einem Projekt wurden fertiggestellt und getestet, jedoch noch nicht an das Front-End angebunden. Dies wurde von Herrn Nguyen und Herrn Werner bearbeitet. (#52, #53 & #54)
 
 Während der Entwicklung stellte sich heraus, dass das ständige Erstellen von Status zu Testzwecken redundante Arbeit war. Um den Workflow zu erleichtern wurden Dummy-Status eingefügt und die Dummy-Projekte aus der letzten Iteration wurden fertiggestellt. Dies wurde von Herrn Kirchhoff bearbeitet. (#48 & #42)
 
 *UC 3*
-
 Das Überprüfen der E-Mail Adresse und des Passwortes im Back-End wurde von Herrn Tichonow fertiggestellt. (#33 & #36)
 
 *UC 4*
-
 Die Projektverwaltungsseite konnte von Herrn Beck größtenteils fertiggestellt werden.
 Es werden nun alle Projekte angezeigt und die dazugehörigen Nutzer. Es gibt noch einige Kleinigkeiten, die das Bedienen unhandlich machen und dies wird von Herrn Beck in der nächsten Iteration bearbeitet.
 
 image::images/Projects_User.png[,350,]
-
+//wird nicht als bild gezeigt
 
 === Entscheidung
 
@@ -282,7 +272,7 @@ Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunf
 Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
 === Iteration 14 (10.05.2022 - 16.05.2022)
-
+////
 Unsere Ziele für I14 waren:
 
 Neue Ziele:  
@@ -296,17 +286,15 @@ Neue Ziele:
 Fortgeführt:
 
 * API: Einfügen eines neuen Status #52
-
+////
 === Implementation
 
 *UC 1*
-
 Das Anzeigen der Status anhand der eingetragenen Status in der Datenbank sollte von Herrn Nguyen bearbeitet werden, jedoch mussten dazu noch einige Erweiterungen der bestehenden Schnittstellen vorgenommen werden (#52), weswegen dies nur teilweise fertiggestellt werden konnte. (#51)
 
 Bei den eingefügten Dummy-Daten der Status, welches in der letzten Iteration abgeschlossen wurde, gab es einen Fehler. Dieser wurde von Herrn Kirchhoff in Unterstützung von Herrn Werner behoben.
 
 *Psalm*
-
 Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code-Analyse des PHP Codes vornimmt. Dies soll genutzt werden, damit weniger Zeit mit Code-Reviews verloren geht und häufige Probleme automatisch erkannt werden. Herrn Kirchhoff Aufgabe war es nun alle erkannten Probleme durch Psalm zu beheben. (#58)
 
 === Qualitätssicherung
@@ -322,7 +310,7 @@ Nachdem wir feststellten, dass das Arbeiten auf einer Branch zu häufigeren Merg
 Da immer weniger an der Dokumentation zu erledigen war, wurde Herr Kemter in HTML und CSS fortgebildet, um bei späteren Aufgaben zu helfen.
 
 == Iteration 15 (17.05.2022 - 23.5.2022)
-
+////
 Unsere Ziele für I15 waren: 
 
 Neue Ziele:
@@ -338,9 +326,9 @@ Fortgeführt:
 * Verbesserungen der Projektverwaltung
 * Erweiterung der Risikoliste
 * Verbleibende Fehler von Psalm beheben #58
-
+////
 === Dokumentation 
-
+//wo ist das in der risikoliste?
 Die Probleme mit Git, weswegen wir seit der letzten Iteration nun Feature-Branches verwenden, wurden in die Risiko-Liste aufgenommen. Ebenfalls wurde einige Korrekturen an der Dokumentation vorgenommen von Herrn Kemter.
 
 === Feedback vom Themensteller
@@ -355,29 +343,29 @@ Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Sys
 === Implementation
 
 *UC 1*
-
 Für den Use Case 01 fehlte noch ein elementares Feature. Das Wechseln der Kalenderwoche. Dieses Feature wurde in dieser Iteration von Herrn Nguyen angefangen, da nun alle nötigen Schnittstellen dafür fertig sind. Dabei kam ein Problem auf, welches aber erst am Ender der Iteration nämlich an einem Montag ersichtlich wurde. Nach gründlicher Untersuchung stellte sich heraus, dass es an der falschen Einstellung der Zeitzone lag. Nutzte man also Montag morgen das Programm, wurde dem Nutzer immer noch die letzte Kalenderwoche angezeigt. Das Problem konnte behoben werden. (#66 & #69)
 
 *ESLint*
-
 Die statische Code-Analyse mit Psalm war sehr erfolgreich und deswegen wurde von Herrn Werner nun ebenfalls eine statische Code-Analyse für den Javascript Code eingefügt. Dazu wird ESLint verwendet. Beide Code-Analysen laufen automatisch bei jedem Pull Request durch.
 
 *Psalm*
-
 Herr Kirchhoff konnte weitere von Psalm gemeldete Fehler beheben.
 
 *Design*
-
 Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen. Das Ziel war eine optimierte Darstellung der Inhalte. Zuvor wurden diese zum Teil hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. Die Verbesserungen betroffen vor allem die Projektverwaltung. (#70)
 
 === Probleme
+
+//wollen wir das wirklich so stehen lassen? ist ja nächste auch nochmal. wenn es schon so ist, dann sollte man wenigstens einen grund angeben
+//justus war glaube krank / aleksandra vermutlich auch
+
 
 Frau Tartz hat sich diese Woche, nach der Qualitätsprüfung in der letzten Iteration, wieder nicht an dem Projekt beteiligt.
 Herr Tichonow und Herr Beck konnten in dieser Iteration leider nichts beitragen.
 Herr Keil ist immer noch verhindert und es ist unklar, ob dieser noch an dem Projekt mitarbeiten wird.
 
 == Iteration 16 (24.05.2022 - 30.05.2022)
-
+////
 Unsere Ziele für I16 waren: 
 
 Neue Ziele: 
@@ -392,21 +380,18 @@ Fortgeführt:
 * CSS: Projektverwaltung #70
 * Wechsel der Wochenansicht #66
 * Verbleibende Fehler von Psalm beheben #58
-
+////
 === Implementation
 
 *UC 1*
-
 Die Status Schnittstelle wurde um einen Parameter für das Jahr erweitert. Nun ist es möglich auch auf Kalenderwochen, aus einem anderem Jahr, als dem aktuellen zuzugreifen. Dies wurde von Herrn Nguyen und Herrn Werner bearbeitet.
 
 Ebenfalls wurden die Primärschlüssel-Attribute der Datenbanktabelle Status so angepasst, dass kein Status mit dem gleichen Nutzer, Tag und Projekt erstellt werden kann. Dafür wird ein sogenannter 'Composite Primary Key' verwendet. Dies wurde von Herrn Nguyen bearbeitet.
 
 *UC 4*
-
 Bei der Projekterstellung fehlte noch die Validierung der Nutzerdaten im Back-End, dies wurde von Herrn Beck und Herrn Werner ausgebessert.
 
 *Design*
-
 Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten.
 
 === Entscheidung
@@ -417,10 +402,12 @@ Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder,
 
 === Probleme
 
+//warum haben sie nichts gemacht? issues waren ja prinzipiell genug offen
+
 Leider konnten Frau Tartz, Herr Tichonow und Herr Kirchhoff in dieser Iteration keinen Beitrag leisten.
 
 == Iteration 17 (31.05.2022 - 06.06.2022)
-
+////
 Unsere Ziele für I17 waren:
 
 Neue Ziele:
@@ -432,25 +419,21 @@ Neue Ziele:
 Fortgeführt: 
 
 * Verbleibende Fehler von Psalm beheben #58
-
+////
 === Implementation
 
 *UC3 & UC4*
-
 Beim Testen der Anwendung ist uns aufgefallen, dass es keine eindeutige Rückmeldung über den Erfolg oder den Misserfolg beim Erstellen eines neuen Benutzers oder Projektes gibt und dies wurde von Herrn Liebert gefordert. Herr Werner hat dies bearbeitet. (#83 & #86)
 
 *UC4*
-
 Ein neues Feature zum Löschen von Projekten wurde von Herrn Nguyen angefangen zu bearbeiten. Die Arbeiten an diesem Issue wurden diese Iteration jedoch nicht finalisiert. (#94)
 
 Einige Fehler, im Zusammenhang mit der Auswahl des Projektverantwortlichen, wurden bei der Projekterstellung von Herrn Beck behoben.
 
 *Psalm*
-
 Die verbleibenden Psalm Fehler wurden von Herrn Kirchhoff behoben.
 
 *Sonstiges*
-
 Einige Formattierungsfehler und Fragmente von nicht korrekt gelösten Merge-Conflicts wurden von Herrn Werner bereinigt.
 
 === Probleme
@@ -460,7 +443,7 @@ Leider konnten Frau Tartz und Herr Tichonow in dieser Iteration keinen Beitrag l
 == Iteration 18 (09.06.2022 - 13.06.2022)
 
 Aufgrund des Feiertags (Pfingstmontag) fand unser Teammeeting und Iteration von Mittwoch bis Montag und nicht wie üblich von Montag bis Montag statt.
-
+////
 Unsere Ziele für I17 waren: 
 
 Neue Ziele:
@@ -478,7 +461,7 @@ Fortgeführt:
 * Wochenansicht: Löschen eines Status #98
 * CSS: Design verbessern #102
 * Projektverwaltung: Projekte löschen #94
-
+////
 === Dokumentation
 
 Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellten Beispiele eine gute Grundlage. Schlussendlich entschied er sich für eine Nennung der neuen und fortgeführten Issues. Ob dies noch einmal geändert wird steht noch offen. Weiterhin wird er in einzelnen Abschnitten die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschreiben.
@@ -490,11 +473,9 @@ Die Betriebsdokumentation wurde angefangen von Herrn Tichonow bearbeitet zu werd
 === Implementation
 
 *UC1* 
-
 Nachdem Herr Kemter bereits das Design deutlich verbessert hat und wir einige Tipps und Beispiele vom Themenersteller bekommen haben, setzte Herr Nguyen die Bearbeitung der Darstellung des Projektes fort. Zunächst wurden die Border der Tabelle durch einen gestreiften Hintergrund gewechselt und die Buttons, sowie die Farben denen der T-System MMS angeglichen. Außerdem wurde eine neue Schriftart verwendet. (#102)
 
 *UC3*
-
 Das Use-Case 3 wurde um die Funktion zum Löschen eines Benutzers erweitert. (#103) Bei der Implementierung stellte sich heraus, dass geklärt werden muss, wie mit Projektleitern umgegangen wird. Also ob auch alle Projekte und Status, die mit dem gelöschten Benutzer in Verbindung standen ebenfalls gelöscht werden. Sollten die Projekte gelöscht werden, müsste man auch alle Status mit diesem Projekt löschen. Letzten Endes entschieden wir uns dazu, dass der Benutzer und das Projekt separat gelöscht werden müssen, um die Komplexität gering zu halten. Das löschen von Projekten konnte noch nicht ganz abgeschlossen werden.
 Außerdem wurde das Programm um die Login-Funktionalität erweitert um unbefugten Zugriff zu verhindern. Ist der Nutzer nicht angemeldet, so wird er auf die Login-Seite weitergeleitet und zum Login aufgefordert. (#91)
 
@@ -502,7 +483,7 @@ Nach Erstellung eines neuen Projektes wird der Nutzer nun nicht mehr auf die Woc
 
 === Problem und Entscheidung
 
-Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwenderabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmier-Aufgaben bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe sollte dann für Qualitätssicherung, Dokumentation und andere Dokumente verwendet werden. 
+Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwendungsabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmier-Aufgaben bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe sollte dann für Qualitätssicherung, Dokumentation und andere Dokumente verwendet werden. 
 
 Da noch nicht alle wichtigen Features, die durch Herrn Liebert gefordert wurden, zum Meeting abgeschlossen waren, sollten diese zuerst erledigt werden. Wir haben nun eine Priorisierung der Issues eingeführt, um zumindest die wichtigsten Features noch zu schaffen. Wenn mehr geschafft wird, dann kann noch mehr erledigt werden.
 
@@ -512,6 +493,7 @@ Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch vo
 Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt.
 
 === Iteration 19 (14.6.2022 - 20.06.2022)
+////
 Unsere Ziele für I19 waren: 
 
 Neue Ziele: 
@@ -526,7 +508,7 @@ Fortgeführt:
 * Betriebsdokumentation #106
 * Entwicklerdokumentation #107
 * Projektbericht #116
-
+////
 === Dokumentation 
 
 Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration hauptsächlich an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Die Aufteilung an den einzelnen Dokumenten bleibt wie letzte Iteration.
@@ -544,6 +526,7 @@ Es wurden keine neuen Features mehr angefangen. Herr Nguyen und Herr Werner habe
 Außerdem wurde noch einmal die Differenzierte Bewertung angesprochen, da sich einige Mitglieder weiterhin nicht in angemessenen Maße beteiligt haben. Intern wurde also über die differenzierte Bewertung abgestimmt und das Ergebnis wurde Herrn Prof. Anke mitgeteilt.
 
 == Iteration 20 (21.06.2022 - 27.06.2022)
+////
 Unsere Ziele für I20 waren:
 
 Neue Ziele: 
@@ -555,7 +538,7 @@ Neue Ziele:
 Fortgeführt:
 
 * An Doku/Bericht weiterarbeiten
-
+////
 === Anwendungsübergabe an Herrn Liebert
 //wurde zwischen zeitlich von jemand unten bereits beschrieben. welches ist besser?
 Wie geplant haben wir an Herrn Liebert die Anwendung per GitHub übergeben und unsere realisierten Use-Cases demonstriert. Die Übergabe verlief problemlos, da die Software und das Abnahmeprotokoll gut vorbereitet waren. Wie vorher vereinbart wird die Dokumentation jedoch bis spätestens dem 08.07. nachgereicht. 
@@ -581,6 +564,8 @@ Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentati
 
 == Iteration 21 (28.06.2022 - 04.07.2022)
 
+
+////
 Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?
 aufgaben wurden kurz nach projekt start als github issue angelegt
 analyse und entwurf hauptsächlich im 1. semester
