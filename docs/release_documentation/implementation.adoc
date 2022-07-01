@@ -9,10 +9,10 @@
 
 == Vorwort 
 
-=== Erstellung und Verteilung der Aufgaben
-
-Die Implementationsaufgaben bzw. -issues wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch hat er durch seine Ausbildung und weitreichendes Wissen über das Programm und die Use-Cases die 
-Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktuallisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. So bringt es in der Praxis nichts, dass aus Use-Case 1 die Status in eine andere Woche kopiert werden können, wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). 
+=== Erstellung und Verteilung der Aufgaben/Issues
+//versteht man den vorletzten Satz?
+Die Implementationsaufgaben bzw. -issues wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch hat er durch seine Ausbildung und weitreichendes Wissen über das Programm und die Use-Cases eine exzellente Grundlage um dies zu erfüllen. 
+Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktuallisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. So bringt es in der Praxis nichts, dass aus Use-Case 1 die Status in eine andere Woche kopiert werden können, wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). Daher wurden öfters neben "Kleinigkeiten" auch größere Aufgaben voran getrieben wurden, welche in den nächsten Iterationen große Funktionalitätsschritte ermöglichen. Die erfüllten Aufgaben sind mit "(#50)" zu GitHub verlinkt.
 
 ////
 Das Gleiche gilt für Use-Case 3. Generell sollen dort die Benutzer Projekte erstellen und diesen dann Benuter zuweisen können. Es wäre für uns unmöglich Projekte für T-System MMS im Vorfeld zu erstellen. Das scheitert schon an der möglichen Anzahl. Jedoch ist der Standardablauf das Benutzer bei einem Projekt hinzugefügt bzw. entfernt werden können, da dies mehr passieren wird, als neue Projekte angelegt werden. 
@@ -477,7 +477,7 @@ Die Betriebsdokumentation wurde angefangen von Herrn Tichonow bearbeitet zu werd
 Nachdem Herr Kemter bereits das Design deutlich verbessert hat und wir einige Tipps und Beispiele vom Themenersteller bekommen haben, setzte Herr Nguyen die Bearbeitung der Darstellung des Projektes fort. Zunächst wurden die Border der Tabelle durch einen gestreiften Hintergrund gewechselt und die Buttons, sowie die Farben denen der T-System MMS angeglichen. Außerdem wurde eine neue Schriftart verwendet. (#102)
 
 *UC3*
-Das Use-Case 3 wurde um die Funktion zum Löschen eines Benutzers erweitert. (#103) Bei der Implementierung stellte sich heraus, dass geklärt werden muss, wie mit Projektleitern umgegangen wird. Also ob auch alle Projekte und Status, die mit dem gelöschten Benutzer in Verbindung standen ebenfalls gelöscht werden. Sollten die Projekte gelöscht werden, müsste man auch alle Status mit diesem Projekt löschen. Letzten Endes entschieden wir uns dazu, dass der Benutzer und das Projekt separat gelöscht werden müssen, um die Komplexität gering zu halten. Das löschen von Projekten konnte noch nicht ganz abgeschlossen werden.
+Das Use-Case 3 wurde um die Funktion zum Löschen eines Benutzers erweitert. (#103) Bei der Implementierung stellte sich heraus, dass geklärt werden muss, wie mit Projektleitern umgegangen wird. Also ob auch alle Projekte und Status, die mit dem gelöschten Benutzer in Verbindung standen ebenfalls gelöscht werden. Sollten die Projekte gelöscht werden, müsstenauch alle Status mit diesem Projekt löschen. Letzten Endes entschieden wir uns dazu, dass der Benutzer und das Projekt separat gelöscht werden müssen, um die Komplexität gering zu halten. Das löschen von Projekten konnte noch nicht ganz abgeschlossen werden.
 Außerdem wurde das Programm um die Login-Funktionalität erweitert um unbefugten Zugriff zu verhindern. Ist der Nutzer nicht angemeldet, so wird er auf die Login-Seite weitergeleitet und zum Login aufgefordert. (#91)
 
 Nach Erstellung eines neuen Projektes wird der Nutzer nun nicht mehr auf die Wochenansicht weitergeleitet, sondern zurück zur Projektverwaltung. Ebenfalls wird die Erfolgsmeldung auf der Projektverwaltungsseite mit angezeigt. Dies wurde von Herrn Werner bearbeitet. (#83)
@@ -572,16 +572,21 @@ Es wurde geplant alles bis Ende Juni alles fertig zu haben. Jedoch wurde dies ni
 === Dokumentation
 
 Einige Dokumentationen haben noch Kleinigkeiten zum Verbessern und zum Hinzufügen. 
-Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen um einige Sachverhalte nachzufragen. Dementsprechen wird weitergearbeitet
+
+Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen um einige Sachverhalte nachzufragen. Diesen entsprechend wird weitergearbeitet.
 
 == Erkenntisse nach der Durchführung
 
-Rückblickend kann gesagt werden, dass es vermutlich besser gewesen wäre, hätten wir bei den Teammeeting auch mit Webcams gearbeitet. Dies hätte den Meeting etwas mehr Personalität verliehen und es hätte bei Entscheidungen und Problemen eine bessere Reaktion auf das Angesprochene gegeben. Eventuell wäre auch in größeren Abständen ein "Offlinetreffen" oder das Treffen um eine frühere Uhrzeit* von Vorteil gewesen. 
+Rückblickend kann gesagt werden, dass es vermutlich besser gewesen wäre, hätten wir bei den Teammeeting auch mit Webcams gearbeitet. Dies hätte den Meeting etwas mehr Personalität verliehen und es hätte bei Entscheidungen und Problemen eine bessere Reaktion auf das Angesprochene gegeben, da dies ein visuelles Feedback gewesen wäre. Eventuell wäre auch in größeren Abständen ein "Offlinetreffen" oder das Treffen um eine frühere Uhrzeit* von Vorteil gewesen. 
 
 //vllt wegmachen/ woanders
 *ist schwierig wegen Studium und Privatleben, da einen besseren Termin zu finden
 
-Fast für jede Aufgabe wurde ein Issue erstellt und dies auch verwaltet. Jedoch wäre es besser gewesen, wären diesen diese auch in den Projekten bei GitHub verwaltet wurden. Dies wäre nicht nur für den Projektbericht von Vorteil gewesen, sondern auch bei der Aufgabenverwaltung wärend des Projektes.
+Für fast jede Aufgabe wurde ein Issue erstellt und auch grundlegend verwaltet. Jedoch wäre es besser gewesen, wären diese immer in den Projekten bei GitHub verwaltet wurden. Dies wäre nicht nur für den Projektbericht von Vorteil gewesen, sondern auch bei der Aufgabenverwaltung wärend des Projektes.
+
+//keine ahnung ob das hier gut ist oder eher unnötig 
+//vllt sollte das auch eher in den fließtext eingearbeitet werden
+Unsere vergebenen Rollen wurden lediglich zum Teil eingehalten. Herr Kemter erfüllte seine Rolle als Teamleiter, ebenso wie Herr Beck und Herr Nguyen in der Implementation. Jedoch wurde die Rolle des Architekten nicht mehr benötigt. Daher hätte Herr Werner und Herr Kirchhoff ebenfalls die Rolle der Implementatio erhalten können, ebenso wie Herr Tichonow. Jener hat sich im Verlaufe des Projektes nicht mit den Tests beschäftigt bzw. sich darum gekümmert.  
 
 ////
 Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?

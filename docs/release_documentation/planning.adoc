@@ -45,6 +45,11 @@ Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts bloß zw
 | Vinh Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
 |===
 
+Herr Kemter als Teamleiter leitet die Meetings. Dabei erfragt er die abgeschlossenen bzw. fortzuführenden Aufgaben. Spricht Probleme sowie eventuelle Lösungen an und sorgt dafür das jedes Teammitglied seine Meinung sagen kann. Er macht Vorschläge, wer welches Issues erhält. Außerdem behält er die organisatorischen Sachverhalte im Blick, wie das Treffen mit Herrn Zirkelbach oder Herrn Liebert oder auch welche Dokumente für die Note wichtig sind.
+
+//kann man das vllt verlinken und daher kürzer schreiben? oder gar nicht beschreiben...
+Wie später genauer in "Erstellung und Verteilung der Aufgaben/Issue" im Vorwort der Projektdurchführung beschrieben hat sich Herr Werner ebenfalls um die Issues gekümmert.
+
 ===  Kommunikation und eingesetzte Tools
 
 Unsere interne Teamkommunikation ist größtenteils gleich wie im Semester davor.
