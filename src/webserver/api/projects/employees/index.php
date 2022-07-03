@@ -9,6 +9,14 @@ $data = json_decode($json);
 
 if (!isset($data->projectId)) exit_failure("projectId missing in POST data");
 
+/**
+ * It takes a MySQLi connection, a prepared statement, and an object containing a project ID and an
+ * array of user IDs, and then it executes the prepared statement for each user ID in the array
+ * 
+ * @param mysqli connection The connection to the database.
+ * @param mysqli_stmt statement The prepared statement to execute.
+ * @param mixed data an object containing the projectId and an array of userIds
+ */
 function bulk_prepared_statement(mysqli $connection, mysqli_stmt $statement, mixed $data): void
 {
     $projectId = $data->projectId;

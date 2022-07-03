@@ -2,6 +2,13 @@
 
 require_once("/app/config/credentials.php");
 
+/**
+ * It executes a query on a database and returns a boolean value indicating whether the query was
+ * successful or not
+ * 
+ * @param mysqli connection a mysqli connection object
+ * @param string queryString The SQL query to execute.
+ */
 function execute_sql_query(mysqli $connection, string $queryString): void
 {
     if($connection->query($queryString) === TRUE)
@@ -14,6 +21,12 @@ function execute_sql_query(mysqli $connection, string $queryString): void
     }
 }
 
+/**
+ * If the function is called, it will exit the script with a 500 HTTP response code and the message
+ * passed to the function.
+ * 
+ * @param string message The message to display to the user.
+ */
 function exit_failure(string $message = ""): void
 {
     http_response_code(500);

@@ -2,6 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
+/* It tests the function `get_calendar_week` with different parameters */
 final class CalendarWeekTest extends TestCase
 {
     public function testCalendarWeek(): void

@@ -6,6 +6,11 @@ require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
 
+/**
+ * If any of the POST values are empty, return FALSE
+ * 
+ * @return bool A boolean value.
+ */
 function checkPostValues(): bool
 {
     if (

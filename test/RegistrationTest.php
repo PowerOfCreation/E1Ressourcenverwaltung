@@ -2,6 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
+/* It tests the `checkPassword` function */
 final class RegistrationTest extends TestCase
 {
     public function testPasswordCheck(): void
