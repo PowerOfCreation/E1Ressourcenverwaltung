@@ -1,4 +1,12 @@
 <?php
+/**
+ * It checks if the password is at least 8 characters long, contains at least one lowercase letter, one
+ * uppercase letter and one digit
+ * 
+ * @param string password The password to check.
+ * 
+ * @return string The error message.
+ */
 function checkPassword(string $password): string
 {
 	$error_message = "";
