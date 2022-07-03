@@ -72,14 +72,22 @@ Die Meetings mit Herrn Liebert wurden auf gemeinsamen GoogleDocs-Dokumenten vor-
 
 ===  Techniken/Praktiken - Way of Working
 
+Die Arbeitsweise orientierte sich am Open Unified Process. Das Team bemühte sich, alle vier Kernziele zu durchlaufen. Ebenfalls haben wir versucht, andere Praktiken und eigene Erfahrungen einzubringen. Die Projektstrategie haben wir nach dem Kunden und seinen Bedürfnissen ausgerichtet. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt.
+Es wurde in einwöchigen Iterationen gearbeitet, diese setzten ein hohes Maß an Eigenverantwortung und Selbstmanagement voraus.
+Der Ablauf setzte sich auf folgenden Punkten zusammen:
 
 ==== Planung der Iteration
 
-In jeder Iteration wurde erfasst, welche wichtigen Aufgaben bzw. Funktionalitäten als nächstes realisiert werden sollten. Dazu zählen auch nicht fertiggestellte 
+Die Iterationplanung erfolgte Kundenorientiert. Offene Aufgaben wurden nach Priorität geordnet und vorbereitet, draus entstandene Aufwandsabschätzung wurde gemeinsam im Team besprochen. Die Aufgaben wurden nach Fachkenntnis/Fähigkeiten verteilt.
 
 ==== Durchführen der Iteration
 
+Die Aufgaben wurden selbstständig abgearbeitet. Durch Pullrequests haben wir uns über Fortschritte oder Hindernisse informiert, diese dann überprüft und gegebenenfalls die Teamarbeit modifiziert indem ein Problem zu zweit besprochen wurde.
+
+
 ==== Bewertung der Iteration
+
+In einem Teammeeting wurde die erledigte Aufgabe vorgestellt. Durch das Feedback der Teammitglieder konnten weitere Verbesserungen vorgenommen werden. In jeder Iteration wurde erfasst, welche Aufgaben fertig gestellt wurden oder noch offen blieben. Offene Aufgaben oder Ergänzungen wurden in die nächste Iteration übernommen. In solchen Fällen musste die Aufwandsabschätzung erneut bewertet werden.
 
 ////
  //// 
