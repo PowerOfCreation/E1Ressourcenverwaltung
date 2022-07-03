@@ -4,6 +4,10 @@ $("#btn-delete-user").click(function () {
     }
 });
 
+/**
+ * It gets the user's name from the URL, then sends a GET request to the server to delete the employee
+ * with that name
+ */
 function deleteEmployee() {
     const urlParams = new URLSearchParams(window.location.search);
     const user = urlParams.get('name');

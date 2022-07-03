@@ -26,6 +26,15 @@
         echo json_encode(get_calendar_week((int) $year, (int) $week, $format));
     }
 
+/**
+ * It returns an array with the dates of a given week
+ * 
+ * @param int year The year you want to get the calendar week from.
+ * @param int week The week number of the year.
+ * @param string format de or en
+ * 
+ * @return array An array with the weekdays of the given week.
+ */
     function get_calendar_week(int $year, int $week, string $format): array {
         if($format == "de") {
             $format = "d.m.Y";
