@@ -1,0 +1,124 @@
+\hypertarget{project_2newproject_2index_8php_source}{}\doxysection{index.\+php}
+\label{project_2newproject_2index_8php_source}\index{src/webserver/project/newproject/index.php@{src/webserver/project/newproject/index.php}}
+\mbox{\hyperlink{project_2newproject_2index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00003}00003 include(\textcolor{stringliteral}{"{}../../login/checkForLogin.php"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00005}00005 require\_once(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00006}00006 include(\textcolor{stringliteral}{"{}../../database\_structure.php"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00007}00007 \textcolor{comment}{//More checks required...}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00014}\mbox{\hyperlink{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}{00014}} \textcolor{keyword}{function} \mbox{\hyperlink{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}{checkPostValues}}(): bool}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00016}00016     \textcolor{keywordflow}{if} (}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00017}00017         empty(\$\_POST[\textcolor{stringliteral}{"{}ProjectName"{}}])}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00018}00018         || empty(\$\_POST[\textcolor{stringliteral}{"{}ProjectOwner"{}}])}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00019}00019         || empty(\$\_POST[\textcolor{stringliteral}{"{}Color"{}}])}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00020}00020         || empty(\$\_POST[\textcolor{stringliteral}{"{}Topic"{}}])}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00021}00021         || empty(\$\_POST[\textcolor{stringliteral}{"{}End"{}}])}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00022}00022     ) \textcolor{keywordflow}{return} FALSE;}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00024}00024     \textcolor{keywordflow}{return} TRUE;}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00027}00027 \textcolor{keywordflow}{if} (\mbox{\hyperlink{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}{checkPostValues}}() === TRUE ) }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00028}00028 \{}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00029}00029     \textcolor{comment}{// Example how to use POST'ed values}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00030}00030     \$projectName = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}ProjectName"{}}]);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00031}00031     \$projectOwner = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}ProjectOwner"{}}]);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00032}00032     \$topic = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Topic"{}}]);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00033}00033     \$color = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Color"{}}]);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00034}00034     \$end = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}End"{}}]);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00036}00036     \$color = substr(\$color,1);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00037}00037     \$add\_project = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}INSERT INTO Project(ProjectName, ProjectOwner, Color, Topic, End) VALUES(?, ?, ?, ?,  ?);"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00038}00038     \$add\_project-\/>bind\_param(\textcolor{stringliteral}{'sisss'}, \$projectName, \$projectOwner, \$color, \$topic, \$end);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00040}00040     \textcolor{keywordflow}{if}(\$add\_project-\/>execute())}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00041}00041     \{}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00042}00042         \mbox{\hyperlink{get__project__employees_8php_abd3456b4e729909d1b123ae303302391}{\$projectId}} =  \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>insert\_id;}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00044}00044         \$add\_project-\/>reset();}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00046}00046         \textcolor{comment}{//insert Userid, projectid into User\_Project}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00047}00047         \$add\_user\_project = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}INSERT INTO User\_Project(UserId, ProjectId) VALUES(?, ?);"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00048}00048         \$add\_user\_project-\/>bind\_param(\textcolor{stringliteral}{'ii'}, \$projectOwner, \mbox{\hyperlink{get__project__employees_8php_abd3456b4e729909d1b123ae303302391}{\$projectId}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00049}00049         \$add\_user\_project-\/>execute();}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00050}00050         \$add\_user\_project-\/>reset();}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00052}00052         header(\textcolor{stringliteral}{"{}location: /project/index.php?created\_project=\{\$projectName\}"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00053}00053         \mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}}(0);}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00055}00055     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00056}00056     \{}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00057}00057         echo \textcolor{stringliteral}{"{}Fehler beim Erstellen des Projektes. Eingaben überprüfen."{}};}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00058}00058     \}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00061}00061 ?>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00063}00063 <!DOCTYPE html>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00064}00064 <html lang=\textcolor{stringliteral}{"{}de"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00065}00065 <head>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00066}00066     <meta charset=\textcolor{stringliteral}{"{}utf-\/8"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00067}00067     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}newproject.css"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00068}00068     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}../../buttons.css"{}} type=\textcolor{stringliteral}{"{}text/css"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00069}00069     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}../../font-\/size.css"{}} type=\textcolor{stringliteral}{"{}text/css"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00070}00070     <title>Projekt hinzufügen</title>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00071}00071 </head>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00073}00073 <body>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00074}00074     <main>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00075}00075         <h1>Projekt Erstellen</h1>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00076}00076         <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}form-\/wrapper-\/div"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00077}00077             <form name=\textcolor{stringliteral}{"{}RegForm"{}} \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}register-\/form"{}} method=\textcolor{stringliteral}{"{}post"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00078}00078                 Projektname:}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00079}00079                     <input \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}project-\/name-\/input"{}} type=\textcolor{stringliteral}{"{}text"{}} size=\textcolor{stringliteral}{"{}65"{}} name=\textcolor{stringliteral}{"{}ProjectName"{}} placeholder=\textcolor{stringliteral}{"{}Musterprojekt"{}} required/>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00081}00081                 Verantwortlicher:  }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00082}00082                     <select \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}project-\/owner-\/select"{}} name = \textcolor{stringliteral}{"{}ProjectOwner"{}} required>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00083}00083                         <option selected=\textcolor{stringliteral}{"{}true"{}} disabled=\textcolor{stringliteral}{"{}disabled"{}} hidden=\textcolor{stringliteral}{"{}true"{}} value=\textcolor{stringliteral}{"{}"{}}>Wähle Verantwortlichen</option>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00084}00084                         <?php }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00085}\mbox{\hyperlink{project_2newproject_2index_8php_a4cca45dd899cac63012958df6481e21c}{00085}}                             \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>query(\textcolor{stringliteral}{"{}SELECT * FROM User;"{}});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00086}00086                             \textcolor{keywordflow}{while} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_object()) }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00087}00087                             \{}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00088}00088                                 echo \textcolor{stringliteral}{"{}<option value='"{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>UserId . \textcolor{stringliteral}{"{} '>"{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>Forename . \textcolor{stringliteral}{"{} "{}} .  \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>Surname . \textcolor{stringliteral}{"{}</option>"{}};}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00089}00089                             \}           }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00090}00090                         ?>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00091}00091                     </select>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00093}00093                 Thema:              }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00094}00094                     <textarea rows=\textcolor{stringliteral}{"{}4"{}}  cols=\textcolor{stringliteral}{"{}64"{}} \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}project-\/topic-\/textarea"{}} name=\textcolor{stringliteral}{"{}Topic"{}} required></textarea>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00095}00095                 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00096}00096                     <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}date-\/and-\/color-\/wrapper-\/div"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00097}00097                         <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}date-\/wrapper-\/div"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00098}00098                         Abgabedatum:}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00099}00099                             <?php }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00100}\mbox{\hyperlink{project_2newproject_2index_8php_adcd9148a97a4d28c4143a32879fd8854}{00100}}                                 \mbox{\hyperlink{project_2newproject_2index_8php_adcd9148a97a4d28c4143a32879fd8854}{\$month}} = date(\textcolor{charliteral}{'m'});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00101}\mbox{\hyperlink{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}{00101}}                                 \mbox{\hyperlink{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}{\$day}} = date(\textcolor{charliteral}{'d'});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00102}\mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{00102}}                                 \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} = date(\textcolor{charliteral}{'Y'});}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00103}\mbox{\hyperlink{project_2newproject_2index_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}{00103}}                                 \mbox{\hyperlink{project_2newproject_2index_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}{\$today}} = \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} . \textcolor{charliteral}{'-\/'} . \mbox{\hyperlink{project_2newproject_2index_8php_adcd9148a97a4d28c4143a32879fd8854}{\$month}} . \textcolor{charliteral}{'-\/'} . \mbox{\hyperlink{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}{\$day}};}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00104}00104                             ?>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00105}00105                             <input type=\textcolor{stringliteral}{"{}date"{}} size=\textcolor{stringliteral}{"{}65"{}} name=\textcolor{stringliteral}{"{}End"{}} value=\textcolor{stringliteral}{"{}<?php echo \$today; ?>"{}} min = \textcolor{stringliteral}{"{}<?php echo \$today; ?>"{}}/>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00106}00106                         </div>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00107}00107                         <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}color-\/wrapper-\/div"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00108}00108                         Farbe: }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00109}00109                             <input type=\textcolor{stringliteral}{"{}color"{}} size=\textcolor{stringliteral}{"{}65"{}} name=\textcolor{stringliteral}{"{}Color"{}} />}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00110}00110                         </div>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00111}00111                     </div>            }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00112}00112                 <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}button-\/container"{}}>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00113}00113                     <a href=\textcolor{stringliteral}{"{}.."{}}><button \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}back-\/button"{}} type=\textcolor{stringliteral}{"{}button"{}}>Zurück</button></a>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00114}00114                     <a href=\textcolor{stringliteral}{"{}.."{}}><button \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}create-\/project-\/button"{}} type=\textcolor{stringliteral}{"{}submit"{}}>Projekt erstellen</button></a>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00115}00115                 </div>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00116}00116                 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00117}00117                 <script src=\textcolor{stringliteral}{"{}../../jquery-\/3.6.0.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00118}00118             </form>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00119}00119         </div>  }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00120}00120     </main>    }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00121}00121 </body>}
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{project_2newproject_2index_8php_source_l00123}00123 </html>}
+
+\end{DoxyCode}

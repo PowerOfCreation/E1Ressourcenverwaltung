@@ -1,0 +1,64 @@
+\hypertarget{mitarbeiter_2index_8php_source}{}\doxysection{index.\+php}
+\label{mitarbeiter_2index_8php_source}\index{src/webserver/mitarbeiter/index.php@{src/webserver/mitarbeiter/index.php}}
+\mbox{\hyperlink{mitarbeiter_2index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00003}00003 include(\textcolor{stringliteral}{"{}../login/checkForLogin.php"{}});}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00005}00005 ?>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00007}00007 <body>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00008}00008     <a href=\textcolor{stringliteral}{"{}.."{}}><button>Zurück</button></a>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00009}00009     <a \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}btn-\/delete-\/user"{}}><button>Mitarbeiter löschen</button></a>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00010}00010 </body>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00012}00012 <script src=\textcolor{stringliteral}{"{}../jquery-\/3.6.0.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00013}00013 <script src=\textcolor{stringliteral}{"{}js/mitarbeiter.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00015}00015 <?php}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00017}00017 require\_once(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00019}00019 \textcolor{keywordflow}{if} (!empty(\$\_GET[\textcolor{stringliteral}{"{}name"{}}])) \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00020}00020     \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}name"{}}]);}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00022}00022     \$get\_user\_info\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}SELECT Forename, Surname FROM User WHERE Username = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00024}00024     \$get\_user\_info\_statement-\/>bind\_param(\textcolor{charliteral}{'s'}, \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}});}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00026}00026     \textcolor{keywordflow}{if} (\$get\_user\_info\_statement-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00027}00027         \$get\_user\_info\_statement-\/>bind\_result(\$forename, \$surname);}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00029}00029         \textcolor{keywordflow}{if} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \$get\_user\_info\_statement-\/>fetch()) \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00030}00030             echo \$forename . \textcolor{stringliteral}{"{} "{}} . \$surname . \textcolor{stringliteral}{"{}<br>"{}};}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00031}00031         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00032}00032             echo \textcolor{stringliteral}{"{}Es existiert kein Nutzer mit dem Nutzernamen "{}} . \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}};}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00033}00033         \}}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00035}00035         \$get\_user\_info\_statement-\/>reset();}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00038}00038     \textcolor{keywordflow}{if}(!(\$get\_user\_department\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}SELECT DepartmentName FROM Department WHERE DepartmentId = (SELECT DepartmentId FROM User WHERE Username = ?);"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00039}00039         echo \textcolor{stringliteral}{"{}Prepare failed "{}} . \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00042}00042     \$get\_user\_department\_statement-\/>bind\_param(\textcolor{charliteral}{'s'}, \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}});}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00044}00044     \textcolor{keywordflow}{if} (\$get\_user\_department\_statement-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00046}00046         \$get\_user\_department\_statement-\/>bind\_result(\$departmentName);}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00048}00048         \textcolor{keywordflow}{if} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \$get\_user\_department\_statement-\/>fetch()) \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00049}00049             echo \textcolor{stringliteral}{"{}Abteilung "{}} . \$departmentName;}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00050}00050         \}}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00052}00052         \$get\_user\_department\_statement-\/>reset();}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00055}\mbox{\hyperlink{mitarbeiter_2index_8php_aa273e4494b35f93c43c3cf52ce472695}{00055}} \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00056}00056     echo \textcolor{stringliteral}{"{}Entschuldigung, dies hätte nicht passieren sollen."{}};}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{mitarbeiter_2index_8php_source_l00058}00058 ?>}
+
+\end{DoxyCode}

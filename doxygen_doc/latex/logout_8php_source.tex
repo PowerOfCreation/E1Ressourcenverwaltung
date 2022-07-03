@@ -1,0 +1,20 @@
+\hypertarget{logout_8php_source}{}\doxysection{logout.\+php}
+\label{logout_8php_source}\index{src/webserver/login/logout.php@{src/webserver/login/logout.php}}
+\mbox{\hyperlink{logout_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00002}00002 \textcolor{comment}{// Initialize the session}}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00003}00003 session\_start();}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00004}00004  }
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00005}00005 \textcolor{comment}{// Unset all of the session variables}}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00006}\mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{00006}} \mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}} = array();}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00007}00007  }
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00008}00008 \textcolor{comment}{// Destroy the session.}}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00009}00009 session\_destroy();}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00010}00010  }
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00011}00011 \textcolor{comment}{// Redirect to login page}}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00012}00012 header(\textcolor{stringliteral}{"{}location: /index.php"{}});}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00013}\mbox{\hyperlink{logout_8php_a6733eb5f605d09eaede9845835d71c4e}{00013}} \mbox{\hyperlink{logout_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}};}
+\DoxyCodeLine{\Hypertarget{logout_8php_source_l00014}00014 ?>}
+
+\end{DoxyCode}

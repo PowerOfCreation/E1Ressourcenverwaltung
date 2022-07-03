@@ -1,0 +1,26 @@
+\hypertarget{registration__utility_8php_source}{}\doxysection{registration\+\_\+utility.\+php}
+\label{registration__utility_8php_source}\index{src/webserver/registration/registration\_utility.php@{src/webserver/registration/registration\_utility.php}}
+\mbox{\hyperlink{registration__utility_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00010}\mbox{\hyperlink{registration__utility_8php_a81297c8bdee9ed48128fa8d7c57d1e7f}{00010}} \textcolor{keyword}{function} \mbox{\hyperlink{registration__utility_8php_a81297c8bdee9ed48128fa8d7c57d1e7f}{checkPassword}}(\textcolor{keywordtype}{string} \$password): string}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00012}00012     \$error\_message = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00014}00014     \textcolor{keywordflow}{if}(strlen(\$password) < 7) \{}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00015}00015         \$error\_message .= \textcolor{stringliteral}{"{}Das Passwort muss mindestens 8 Zeichen lang sein.<br>"{}};}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00016}00016     \} }
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00017}00017     \textcolor{keywordflow}{if}(!preg\_match(\textcolor{stringliteral}{'@[a-\/z]@'},\$password)) \{}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00018}00018         \$error\_message .= \textcolor{stringliteral}{"{}Das Passwort muss mindestens 1 Kleinbuchstabe enthalten.<br>"{}};}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00019}00019     \}     }
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00020}00020     \textcolor{keywordflow}{if}(!preg\_match(\textcolor{stringliteral}{'@[A-\/Z]@'},\$password)) \{}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00021}00021         \$error\_message .= \textcolor{stringliteral}{"{}Das Passwort muss mindestens 1 Großbuchstabe enthalten.<br>"{}};}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00022}00022     \}}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00023}00023     \textcolor{keywordflow}{if}(!preg\_match(\textcolor{stringliteral}{'@[0-\/9]@'},\$password)) \{}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00024}00024         \$error\_message .= \textcolor{stringliteral}{"{}Das Passwort muss mindestens 1 Ziffer enthalten.<br>"{}};}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00027}00027     \textcolor{keywordflow}{return} \$error\_message;}
+\DoxyCodeLine{\Hypertarget{registration__utility_8php_source_l00028}00028 \}}
+
+\end{DoxyCode}

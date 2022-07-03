@@ -1,0 +1,18 @@
+\hypertarget{check_for_login_8php_source}{}\doxysection{check\+For\+Login.\+php}
+\label{check_for_login_8php_source}\index{src/webserver/login/checkForLogin.php@{src/webserver/login/checkForLogin.php}}
+\mbox{\hyperlink{check_for_login_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00003}00003 session\_start();}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00005}\mbox{\hyperlink{check_for_login_8php_af5ed1efb6d6a9614a4d4387ed4fc8694}{00005}} \textcolor{keywordflow}{if} (!isset(\mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}loggedin"{}}]) || \mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}loggedin"{}}] === \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00006}00006     header(\textcolor{stringliteral}{"{}location: /login/login.php"{}});}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00007}00007     \mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}};}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00008}00008 \}}
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00010}00010 echo \textcolor{stringliteral}{"{}Eingeloggt als <a href='/mitarbeiter/?name=\{\$\_SESSION["{}}username\textcolor{stringliteral}{"{}]\}'>\{\$\_SESSION["{}}username\textcolor{stringliteral}{"{}]\}</a>. <a href='/login/logout.php'>Logout</a><br>"{}}; }
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{check_for_login_8php_source_l00012}00012 ?>}
+
+\end{DoxyCode}

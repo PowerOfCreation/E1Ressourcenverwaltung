@@ -1,0 +1,83 @@
+\hypertarget{api_2projects_2employees_2index_8php_source}{}\doxysection{index.\+php}
+\label{api_2projects_2employees_2index_8php_source}\index{src/webserver/api/projects/employees/index.php@{src/webserver/api/projects/employees/index.php}}
+\mbox{\hyperlink{api_2projects_2employees_2index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00002}00002 include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00004}00004 include(\textcolor{stringliteral}{"{}../../../database\_structure.php"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00006}\mbox{\hyperlink{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}{00006}} \mbox{\hyperlink{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}{\$json}} = file\_get\_contents(\textcolor{stringliteral}{'php://input'});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00008}\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{00008}} \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}{\$json}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00010}00010 \textcolor{keywordflow}{if} (!isset(\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId)) \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}(\textcolor{stringliteral}{"{}projectId missing in POST data"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00020}\mbox{\hyperlink{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}{00020}} \textcolor{keyword}{function} \mbox{\hyperlink{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}{bulk\_prepared\_statement}}(mysqli \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}, mysqli\_stmt \$statement, mixed \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}): void}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00021}00021 \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00022}00022     \mbox{\hyperlink{get__project__employees_8php_abd3456b4e729909d1b123ae303302391}{\$projectId}} = \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId;}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00024}00024     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>begin\_transaction()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00025}00025         \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00026}00026     \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00028}00028     \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>userIds as \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}}) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00029}00029         \$statement-\/>bind\_param(\textcolor{stringliteral}{'ii'}, \mbox{\hyperlink{get__project__employees_8php_abd3456b4e729909d1b123ae303302391}{\$projectId}}, \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00030}00030         \$statement-\/>execute();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00033}00033     \textcolor{keywordflow}{if} (\mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>commit()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00034}00034         echo (json\_encode([\textcolor{stringliteral}{"{}success"{}} => \textcolor{stringliteral}{"{}true"{}}]));}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00035}00035     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00036}00036         \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00039}00039     \$statement-\/>reset();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00042}00042 \textcolor{keywordflow}{switch} (\$\_SERVER[\textcolor{stringliteral}{"{}REQUEST\_METHOD"{}}]) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00043}00043     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}PUT"{}}:}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00044}00044         \textcolor{keywordflow}{if} (!isset(\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>userIds)) \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}(\textcolor{stringliteral}{"{}userIds missing in POST data"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00046}00046         \textcolor{keywordflow}{if} (!(\$insert\_user\_into\_project\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}INSERT IGNORE INTO User\_Project(ProjectId, UserId) VALUES (?, ?);"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00047}00047             \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00048}00048         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00050}00050         \mbox{\hyperlink{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}{bulk\_prepared\_statement}}(\mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}, \$insert\_user\_into\_project\_statement, \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00052}00052         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00053}00053     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}DELETE"{}}:}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00054}00054         \textcolor{keywordflow}{if} (!isset(\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>userIds)) \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}(\textcolor{stringliteral}{"{}userIds missing in POST data"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00056}00056         \textcolor{keywordflow}{if} (!(\$delete\_user\_from\_project\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM User\_Project WHERE ProjectId = ? AND UserId = ?;"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00057}00057             \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00058}00058         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00060}00060         \mbox{\hyperlink{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}{bulk\_prepared\_statement}}(\mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}, \$delete\_user\_from\_project\_statement, \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00062}00062         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00063}00063     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00064}00064         \textcolor{keywordflow}{if} (!(\$get\_project\_users\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}Select UserId, Username From User Where UserId IN (SELECT UserId FROM User\_Project WHERE ProjectId = ?);"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00065}00065             echo \textcolor{stringliteral}{"{}Prepare failed "{}} . \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00066}00066         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00068}00068         \$get\_project\_users\_statement-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId);}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00070}00070         \textcolor{keywordflow}{if} (\$get\_project\_users\_statement-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00071}00071             \$get\_project\_users\_statement-\/>bind\_result(\mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}}, \$userName);}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00073}00073             \$result\_json\_array = array();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00075}00075             \textcolor{keywordflow}{while} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \$get\_project\_users\_statement-\/>fetch()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00076}00076                 array\_push(\$result\_json\_array, (\textcolor{keywordtype}{object}) array(\textcolor{stringliteral}{"{}userId"{}} => \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}}, \textcolor{stringliteral}{"{}userName"{}} => \$userName));}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00077}00077             \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00079}00079             \$result\_json\_array = array\_reverse(\$result\_json\_array);}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00081}00081             echo (json\_encode(\$result\_json\_array));}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00083}00083             \$get\_project\_users\_statement-\/>reset();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00084}00084         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2employees_2index_8php_source_l00085}00085 \}}
+
+\end{DoxyCode}

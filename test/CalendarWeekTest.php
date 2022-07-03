@@ -5,6 +5,10 @@ use PHPUnit\Framework\TestCase;
 /* It tests the function `get_calendar_week` with different parameters */
 final class CalendarWeekTest extends TestCase
 {
+    
+/**
+ * It returns an array with the calendar week, the weekdays and the year
+ */
     public function testCalendarWeek(): void
     {
         $this->assertEquals(
@@ -28,6 +32,9 @@ final class CalendarWeekTest extends TestCase
         );
     }
 
+/**
+ * It returns an array with the calendar week number, the weekdays of the given week and the year
+ */
     public function testAnotherYear(): void
     {
         $this->assertEquals(

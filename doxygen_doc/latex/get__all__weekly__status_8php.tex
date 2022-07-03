@@ -1,0 +1,110 @@
+\hypertarget{get__all__weekly__status_8php}{}\doxysection{src/webserver/api/get\+\_\+all\+\_\+weekly\+\_\+status.php File Reference}
+\label{get__all__weekly__status_8php}\index{src/webserver/api/get\_all\_weekly\_status.php@{src/webserver/api/get\_all\_weekly\_status.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}}(!empty(\$\+\_\+\+GET\mbox{[}\char`\"{}calendar\+Week\char`\"{}\mbox{]}) \&\&ctype\+\_\+digit(htmlspecialchars(\$\+\_\+\+GET\mbox{[}\char`\"{}calendar\+Week\char`\"{}\mbox{]}))) \mbox{\hyperlink{get__all__weekly__status_8php_a13feb61b92e1e15e598806dc6e51f328}{else}}
+\item 
+\mbox{\hyperlink{get__all__weekly__status_8php_a49a8a4009b02e49717caa88b128affc5}{\$res}} = \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\+\_\+calendar\+\_\+week}}((int) \$year, (int) \$calendar\+Week, \char`\"{}en\char`\"{})
+\item 
+\mbox{\hyperlink{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}{\$weekdays}} = array()
+\item 
+\mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}} = 0
+\item 
+foreach(\$res\mbox{[}\char`\"{}weekdays\char`\"{}\mbox{]} as \$day) \mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{\$stmt}} = \$connection-\/$>$prepare(\char`\"{}SELECT Status.\`{}User\+Id\`{}, Status.\`{}Project\+Id\`{}, Status.\`{}Day\`{}, Project.\`{}Project\+Name\`{} FROM \`{}Status\`{} INNER JOIN \`{}Project\`{} ON Status.\`{}Project\+Id\`{} = Project.\`{}Project\+Id\`{} WHERE Status.\`{}Day\`{} BETWEEN ? AND ?\char`\"{})
+\item 
+\mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}}
+\item 
+\mbox{\hyperlink{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}{\$statuses}} = array()
+\item 
+\mbox{\hyperlink{get__all__weekly__status_8php_ab0158ca9a18445b980fa272c75fea0f1}{while}} ( \$row=\$result-\/$>$fetch\+\_\+assoc()) = \$connection-\/$>$query(\char`\"{}SELECT $\ast$ FROM User Order By Username;\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}\label{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!\$i@{\$i}}
+\index{\$i@{\$i}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$i}{$i}}
+{\footnotesize\ttfamily \$i = 0}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00026}{26}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_a49a8a4009b02e49717caa88b128affc5}\label{get__all__weekly__status_8php_a49a8a4009b02e49717caa88b128affc5}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!\$res@{\$res}}
+\index{\$res@{\$res}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$res}{$res}}
+{\footnotesize\ttfamily \$res = \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\+\_\+calendar\+\_\+week}}((int) \$year, (int) \$calendar\+Week, \char`\"{}en\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00022}{22}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}\label{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!\$statuses@{\$statuses}}
+\index{\$statuses@{\$statuses}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$statuses}{$statuses}}
+{\footnotesize\ttfamily \$statuses = array()}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00045}{45}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}\label{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!\$stmt@{\$stmt}}
+\index{\$stmt@{\$stmt}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$stmt}{$stmt}}
+{\footnotesize\ttfamily foreach ( \$res\mbox{[}\char`\"{}weekdays\char`\"{}\mbox{]} as \$day) \$stmt = \$connection-\/$>$prepare(\char`\"{}SELECT Status.\`{}User\+Id\`{}, Status.\`{}Project\+Id\`{}, Status.\`{}Day\`{}, Project.\`{}Project\+Name\`{} FROM \`{}Status\`{} INNER JOIN \`{}Project\`{} ON Status.\`{}Project\+Id\`{} = Project.\`{}Project\+Id\`{} WHERE Status.\`{}Day\`{} BETWEEN ? AND ?\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00034}{34}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}\label{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!\$weekdays@{\$weekdays}}
+\index{\$weekdays@{\$weekdays}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$weekdays}{$weekdays}}
+{\footnotesize\ttfamily \$weekdays = array()}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00025}{25}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_a13feb61b92e1e15e598806dc6e51f328}\label{get__all__weekly__status_8php_a13feb61b92e1e15e598806dc6e51f328}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!else@{else}}
+\index{else@{else}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} ( \$stmt-\/$>$execute()) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        \$calendarWeek = date(\textcolor{stringliteral}{"{}W"{}})}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00010}{10}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}\label{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!exit@{exit}}
+\index{exit@{exit}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{exit}{exit}}
+{\footnotesize\ttfamily exit}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00040}{40}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{get__all__weekly__status_8php_ab0158ca9a18445b980fa272c75fea0f1}\label{get__all__weekly__status_8php_ab0158ca9a18445b980fa272c75fea0f1}} 
+\index{get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}!while@{while}}
+\index{while@{while}!get\_all\_weekly\_status.php@{get\_all\_weekly\_status.php}}
+\doxysubsubsection{\texorpdfstring{while}{while}}
+{\footnotesize\ttfamily while (\begin{DoxyParamCaption}\item[{}]{\$row = {\ttfamily \$result-\/$>$fetch\+\_\+assoc()} }\end{DoxyParamCaption}) = \$connection-\/$>$query(\char`\"{}SELECT $\ast$ FROM User Order By Username;\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{get__all__weekly__status_8php_source_l00047}{47}} of file \mbox{\hyperlink{get__all__weekly__status_8php_source}{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}}.
+

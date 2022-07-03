@@ -1,0 +1,38 @@
+\hypertarget{get__employee__projects_8php_source}{}\doxysection{get\+\_\+employee\+\_\+projects.\+php}
+\label{get__employee__projects_8php_source}\index{src/webserver/api/get\_employee\_projects.php@{src/webserver/api/get\_employee\_projects.php}}
+\mbox{\hyperlink{get__employee__projects_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00002}00002     \textcolor{keywordflow}{if}(!isset(\$\_GET[\textcolor{stringliteral}{"{}name"{}}])) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00004}00004     \textcolor{comment}{// The MySQL service named in the docker-\/compose.yml.}}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00005}00005     include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00007}00007     include(\textcolor{stringliteral}{"{}../database\_structure.php"{}});}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00009}\mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{00009}}     \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}name"{}}]);}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00011}00011     \textcolor{keywordflow}{if}(!(\$get\_user\_projects\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}SELECT ProjectId, ProjectName FROM Project WHERE ProjectId IN (SELECT ProjectId FROM User\_Project WHERE UserId = (Select UserId From User Where Username = ?));"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00012}00012         echo \textcolor{stringliteral}{"{}Prepare failed "{}} . \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00013}00013     \}}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00015}00015     \$get\_user\_projects\_statement-\/>bind\_param(\textcolor{charliteral}{'s'}, \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}});}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00017}00017     \textcolor{keywordflow}{if} (\$get\_user\_projects\_statement-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00018}00018         \$get\_user\_projects\_statement-\/>bind\_result(\mbox{\hyperlink{get__project__employees_8php_abd3456b4e729909d1b123ae303302391}{\$projectId}}, \$projectName);}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00020}00020         \$result\_json\_array = array();}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00022}00022         \textcolor{keywordflow}{while} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \$get\_user\_projects\_statement-\/>fetch()) \{}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00023}00023             array\_push(\$result\_json\_array, (\textcolor{keywordtype}{object}) array(\textcolor{stringliteral}{"{}projectId"{}} => \mbox{\hyperlink{get__project__employees_8php_abd3456b4e729909d1b123ae303302391}{\$projectId}}, \textcolor{stringliteral}{"{}projectName"{}} => \$projectName));}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00024}00024         \}}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00026}00026         \$result\_json\_array = array\_reverse(\$result\_json\_array);}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00027}00027         }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00028}00028         echo(json\_encode(\$result\_json\_array));}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00030}00030         \$get\_user\_projects\_statement-\/>reset();}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{get__employee__projects_8php_source_l00032}00032 ?>}
+
+\end{DoxyCode}
