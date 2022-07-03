@@ -1,0 +1,83 @@
+\hypertarget{index_8php_source}{}\doxysection{index.\+php}
+\label{index_8php_source}\index{src/webserver/index.php@{src/webserver/index.php}}
+\mbox{\hyperlink{index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00001}00001 <head>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00002}00002     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}mystyle.css"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00003}00003     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}buttons.css"{}} type=\textcolor{stringliteral}{"{}text/css"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00004}00004     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}font-\/size.css"{}} type=\textcolor{stringliteral}{"{}text/css"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00005}00005 </head>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00007}00007 <body>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00008}00008     <?php}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00009}00009     \textcolor{comment}{//These are the defined authentication environment in the db service}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00011}00011     \textcolor{comment}{// The MySQL service named in the docker-\/compose.yml.}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00012}00012     include(\textcolor{stringliteral}{"{}login/checkForLogin.php"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00014}00014     include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00016}00016     include(\textcolor{stringliteral}{"{}database\_structure.php"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00018}00018     ?>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00020}00020     <div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00021}00021         <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}notification-\/div"{}} \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}hidden"{}}></div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00022}00022         <header>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00023}00023             <h1 \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}h1-\/heading"{}}>Einsatzplan -\/ Übersicht KW</h1>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00024}00024             <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}div-\/search-\/weekly-\/report-\/wrapper"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00025}00025                 <input \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}input-\/search"{}} \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}input-\/search-\/weekly-\/report"{}} type=\textcolor{stringliteral}{"{}text"{}} placeholder=\textcolor{stringliteral}{"{}Suchen.."{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00026}00026             </div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00027}00027         </header>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00028}00028         <div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00029}00029             <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}div-\/buttons-\/weekly-\/report-\/header"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00030}00030                 <a href=\textcolor{stringliteral}{"{}./project/"{}}><button \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}btn-\/edit-\/projects"{}}>Projekte verwalten</button></a>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00031}00031                 <a href=\textcolor{stringliteral}{"{}./registration/"{}}><button \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}btn-\/add-\/employee"{}}>Mitarbeiter hinzufügen</button></a>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00032}00032                 <button \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}btn-\/edit-\/holidays"{}}>Feiertage verwalten</button>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00033}00033             </div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00034}00034             <div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00035}00035                 <table \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}table-\/weekly-\/report"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00036}00036                     <thead>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00037}00037                         <tr>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00038}00038                             <td \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}td-\/employee"{}}>Mitarbeiter<br/></td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00039}00039                             <td \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}td-\/monday"{}}>Montag<br/><p></p></td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00040}00040                             <td \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}td-\/tuesday"{}}>Dienstag<br/><p></p></td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00041}00041                             <td \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}td-\/wednesday"{}}>Mittwoch<br/><p></p></td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00042}00042                             <td \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}td-\/thursday"{}}>Donnerstag<br/><p></p></td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00043}00043                             <td \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}td-\/friday"{}}>Freitag<br/><p></p></td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00044}00044                         </tr>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00045}00045                     </thead>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00046}00046                     <tbody \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}tbody-\/employee-\/entries"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00047}00047                         <?php}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00048}\mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{00048}}                         \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>query(\textcolor{stringliteral}{"{}SELECT * FROM User ORDER BY Username;"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00050}00050                         \textcolor{keywordflow}{while} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_object()) \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00051}00051                             echo \textcolor{stringliteral}{"{}<tr id='"{}}. \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>UserId .\textcolor{stringliteral}{"{}'>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00052}00052                             echo \textcolor{stringliteral}{"{}<td class='td-\/entry-\/employee' data-\/username='"{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>Username . \textcolor{stringliteral}{"{}'><a href='./mitarbeiter/?name="{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>Username . \textcolor{stringliteral}{"{}'>"{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>Forename . \textcolor{stringliteral}{"{} "{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>Surname . \textcolor{stringliteral}{"{}</a></td>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00053}00053                             echo \textcolor{stringliteral}{"{}<td class='td-\/entry-\/weekday td-\/entry-\/monday'></td>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00054}00054                             echo \textcolor{stringliteral}{"{}<td class='td-\/entry-\/weekday td-\/entry-\/tuesday'></td>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00055}00055                             echo \textcolor{stringliteral}{"{}<td class='td-\/entry-\/weekday td-\/entry-\/wednesday'></td>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00056}00056                             echo \textcolor{stringliteral}{"{}<td class='td-\/entry-\/weekday td-\/entry-\/thursday'></td>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00057}00057                             echo \textcolor{stringliteral}{"{}<td class='td-\/entry-\/weekday td-\/entry-\/friday'></td>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00058}00058                             echo \textcolor{stringliteral}{"{}</tr>"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00059}00059                         \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00060}00060                         ?>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00061}00061                     </tbody>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00062}00062                     <tfoot>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00063}00063                         <tr>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00064}00064                             <td colspan=\textcolor{stringliteral}{"{}6"{}} align=\textcolor{stringliteral}{"{}center"{}}>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00065}00065                                 <button onclick=\textcolor{stringliteral}{"{}changeCalendarWeek('-\/')"{}}>-\/</button>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00066}00066                                 <button onclick=\textcolor{stringliteral}{"{}changeCalendarWeek('+')"{}}>+</button>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00067}00067                             </td>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00068}00068                         </tr>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00069}00069                     </tfoot>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00070}00070                 </table>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00071}00071             </div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00072}00072         </div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00074}00074     </div>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00075}00075     <script src=\textcolor{stringliteral}{"{}jquery-\/3.6.0.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00076}00076     <script src=\textcolor{stringliteral}{"{}js/weekly-\/report.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00077}00077 </body>}
+
+\end{DoxyCode}

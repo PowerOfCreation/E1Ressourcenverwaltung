@@ -1,0 +1,58 @@
+\hypertarget{get__calendar__week_8php_source}{}\doxysection{get\+\_\+calendar\+\_\+week.\+php}
+\label{get__calendar__week_8php_source}\index{src/webserver/api/get\_calendar\_week.php@{src/webserver/api/get\_calendar\_week.php}}
+\mbox{\hyperlink{get__calendar__week_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00002}00002     \textcolor{comment}{//input: http://localhost/api/get\_calendar\_week.php?calendarWeek=17\&year=2022}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00003}00003     \textcolor{comment}{//output: \{"{}calendarWeek"{}:"{}51"{},"{}weekdays"{}:["{}20.12.2021"{},"{}21.12.2021"{},"{}22.12.2021"{},"{}23.12.2021"{},"{}24.12.2021"{}],"{}year"{}:"{}2021"{}\}}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00004}00004     }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00005}00005     \textcolor{comment}{//check if file is called directly}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00006}00006     \textcolor{keywordflow}{if} (\_\_FILE\_\_ == \$\_SERVER[\textcolor{stringliteral}{"{}SCRIPT\_FILENAME"{}}]) \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00007}00007         \textcolor{comment}{//calculate offset based on calendarWeek}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00008}00008         \textcolor{keywordflow}{if}(!empty(\$\_GET[\textcolor{stringliteral}{"{}calendarWeek"{}}]) \&\& ctype\_digit(htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}calendarWeek"{}}]))) \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00009}00009             \$week = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}calendarWeek"{}}]);}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00010}00010         \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00011}00011             \$week = date(\textcolor{stringliteral}{"{}W"{}});}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00012}00012         \}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00014}00014         \textcolor{keywordflow}{if}(!empty(\$\_GET[\textcolor{stringliteral}{"{}year"{}}]) \&\& ctype\_digit(htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}year"{}}]))) \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00015}00015             \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}year"{}}]);}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00016}00016         \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00017}00017             \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} = date(\textcolor{stringliteral}{"{}Y"{}});}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00020}00020         \$format = \textcolor{stringliteral}{"{}en"{}};}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00021}00021         }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00022}00022         \textcolor{keywordflow}{if}(!empty(\$\_GET[\textcolor{stringliteral}{"{}format"{}}])) \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00023}00023             \$format = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}format"{}}]);}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00024}00024         \}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00026}00026         echo json\_encode(\mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}((\textcolor{keywordtype}{int}) \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}}, (\textcolor{keywordtype}{int}) \$week, \$format));}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00027}00027     \}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00038}\mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{00038}}     \textcolor{keyword}{function} \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}}, \textcolor{keywordtype}{int} \$week, \textcolor{keywordtype}{string} \$format): array \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00039}00039         \mbox{\hyperlink{check_for_login_8php_af5ed1efb6d6a9614a4d4387ed4fc8694}{if}}(\$format == \textcolor{stringliteral}{"{}de"{}}) \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00040}00040             \$format = \textcolor{stringliteral}{"{}d.m.Y"{}};}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00041}00041         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\$format == \textcolor{stringliteral}{"{}en"{}}) \{}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00042}00042             \$format = \textcolor{stringliteral}{"{}Y-\/m-\/d"{}};}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00043}00043         \}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00045}00045         \$dateTime = \textcolor{keyword}{new} DateTime();}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00046}00046         \$dateTime-\/>setISODate(\mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}}, \$week);}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00047}00047         \$dates\_of\_this\_week = [}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00048}00048             \textcolor{stringliteral}{"{}calendarWeek"{}} => \$week,}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00049}00049             \textcolor{stringliteral}{"{}weekdays"{}} => array(}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00050}00050                 \$dateTime-\/>format(\$format),}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00051}00051                 \$dateTime-\/>modify(\textcolor{stringliteral}{'+1 day'})-\/>format(\$format),}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00052}00052                 \$dateTime-\/>modify(\textcolor{stringliteral}{'+1 day'})-\/>format(\$format),}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00053}00053                 \$dateTime-\/>modify(\textcolor{stringliteral}{'+1 day'})-\/>format(\$format),}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00054}00054                 \$dateTime-\/>modify(\textcolor{stringliteral}{'+1 day'})-\/>format(\$format),}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00055}00055             ),}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00056}00056             \textcolor{stringliteral}{"{}year"{}} => \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00057}00057         ];}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00059}00059         \textcolor{keywordflow}{return} \$dates\_of\_this\_week;}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00060}00060       \}}
+\DoxyCodeLine{\Hypertarget{get__calendar__week_8php_source_l00061}00061  ?>}
+
+\end{DoxyCode}

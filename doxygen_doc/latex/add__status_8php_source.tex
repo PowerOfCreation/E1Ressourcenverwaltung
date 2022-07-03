@@ -1,0 +1,29 @@
+\hypertarget{add__status_8php_source}{}\doxysection{add\+\_\+status.\+php}
+\label{add__status_8php_source}\index{src/webserver/api/add\_status.php@{src/webserver/api/add\_status.php}}
+\mbox{\hyperlink{add__status_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00002}00002     include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00004}00004     \textcolor{comment}{//Aufruf: /api/add\_status.php?user=1\&project=2\&date=2022-\/04-\/25}}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00005}00005     \textcolor{keywordflow}{if}(!isset(\$\_GET[\textcolor{stringliteral}{'user'}]) || !isset(\$\_GET[\textcolor{stringliteral}{'project'}]) || !isset(\$\_GET[\textcolor{stringliteral}{'date'}]))\{}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00006}00006         echo \textcolor{stringliteral}{"{}Error: missing parameters"{}};}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00007}00007         \mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}};}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00008}00008     \}}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00009}\mbox{\hyperlink{add__status_8php_a957931fef3f554c33873f5081a9fe18a}{00009}}     \mbox{\hyperlink{add__status_8php_a957931fef3f554c33873f5081a9fe18a}{\$user}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{'user'}]);}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00010}\mbox{\hyperlink{add__status_8php_a26a7d69cd5cc291d752925dd312b5d1c}{00010}}     \mbox{\hyperlink{add__status_8php_a26a7d69cd5cc291d752925dd312b5d1c}{\$project}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{'project'}]);}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00011}\mbox{\hyperlink{add__status_8php_a481c918f8d853749e00b5942cabf599a}{00011}}     \mbox{\hyperlink{add__status_8php_a481c918f8d853749e00b5942cabf599a}{\$date}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{'date'}]);}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00013}\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{00013}}     \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}INSERT INTO Status (UserId, ProjectId, Day) VALUES (?, ?, ?)"{}});}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00014}00014     \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{stringliteral}{'iis'}, \mbox{\hyperlink{add__status_8php_a957931fef3f554c33873f5081a9fe18a}{\$user}}, \mbox{\hyperlink{add__status_8php_a26a7d69cd5cc291d752925dd312b5d1c}{\$project}}, \mbox{\hyperlink{add__status_8php_a481c918f8d853749e00b5942cabf599a}{\$date}});}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00015}00015     \textcolor{keywordflow}{if}(\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute())\{}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00016}00016         echo \textcolor{stringliteral}{"{}Status added"{}};}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00017}00017         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00018}\mbox{\hyperlink{add__status_8php_a13feb61b92e1e15e598806dc6e51f328}{00018}}     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00019}00019         echo \textcolor{stringliteral}{"{}Error: "{}} . \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00020}\mbox{\hyperlink{add__status_8php_a5df37b7f02e5cdc7d9412b7f872b8e01}{00020}}         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00022}00022     \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{add__status_8php_source_l00023}00023 ?>}
+
+\end{DoxyCode}

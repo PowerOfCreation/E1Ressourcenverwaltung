@@ -1,0 +1,62 @@
+\hypertarget{test__projects__api_8py_source}{}\doxysection{test\+\_\+projects\+\_\+api.\+py}
+\label{test__projects__api_8py_source}\index{test/test\_projects\_api.py@{test/test\_projects\_api.py}}
+\mbox{\hyperlink{test__projects__api_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00001}\mbox{\hyperlink{namespacetest__projects__api}{00001}} \textcolor{keyword}{import} requests}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00002}00002 \textcolor{keyword}{import} unittest}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00004}\mbox{\hyperlink{namespacetest__projects__api_a97aab085ad27a854898c48f24e3be9b4}{00004}} root\_path = \textcolor{stringliteral}{"{}http://localhost"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00005}\mbox{\hyperlink{namespacetest__projects__api_a0dea1e73805a1469108156467be67778}{00005}} api\_path = f\textcolor{stringliteral}{"{}\{root\_path\}/api"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00007}00007 \textcolor{comment}{\# It tests the API for the projects/employees endpoint}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00008}\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i}{00008}} \textcolor{keyword}{class }\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i}{TestProjectsAPI}}(unittest.TestCase):}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00010}\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_af04b79c48854cb14aaedf66875b80b37}{00010}}     \textcolor{keyword}{def }\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_af04b79c48854cb14aaedf66875b80b37}{test\_get\_users}}(self):}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00011}00011         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00012}00012 \textcolor{stringliteral}{        It tests that the API returns the correct list of users }\textcolor{keywordflow}{for} a given project}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00013}00013         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00014}00014 \textcolor{stringliteral}{        response = requests.post(f"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectId"{}:"{}1"{}\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00015}00015         self.assertEqual(response.status\_code, 200)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00016}00016         self.assertEqual(response.json(), [\{\textcolor{stringliteral}{'userId'}: 1, \textcolor{stringliteral}{'userName'}: \textcolor{stringliteral}{'Ehrenpflaume'}\}])}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00017}00017     }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00018}\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_a2a724f4c235ab6af4f06572cd85547fc}{00018}}     \textcolor{keyword}{def }\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_a2a724f4c235ab6af4f06572cd85547fc}{test\_get\_users\_wrong\_arguments}}(self):}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00019}00019         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00020}00020 \textcolor{stringliteral}{        It tests the API endpoint }\textcolor{keywordflow}{for} getting employees \textcolor{keywordflow}{for} a project}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00021}00021         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00022}00022 \textcolor{stringliteral}{        response = requests.post(f"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}userIds"{}:[1]\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00023}00023         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00024}00024         response = requests.post(f\textcolor{stringliteral}{"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectIds"{}:"{}1"{}]\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00025}00025         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00026}00026         response = requests.post(f\textcolor{stringliteral}{"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectIds"{}:"{}0"{}]\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00027}00027         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00028}00028         response = requests.post(f\textcolor{stringliteral}{"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectIds"{}:"{}-\/1"{}]\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00029}00029         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00030}00030         response = requests.post(f\textcolor{stringliteral}{"{}\{api\_path\}/projects/employees/"{}})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00031}00031         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00033}\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_a9a289c6b38b3f375783e55466081222b}{00033}}     \textcolor{keyword}{def }\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_a9a289c6b38b3f375783e55466081222b}{test\_add\_and\_delete\_users}}(self):}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00034}00034         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00035}00035 \textcolor{stringliteral}{        It tests that the API can add }\textcolor{keywordflow}{and} delete users \textcolor{keyword}{from} a project}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00036}00036         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00037}00037 \textcolor{stringliteral}{        response = requests.put(f"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectId"{}:"{}1"{}, "{}userIds"{}:[2,3]\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00038}00038         self.assertEqual(response.status\_code, 200)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00039}00039         self.assertEqual(response.json(), \{\textcolor{stringliteral}{'success'}: \textcolor{stringliteral}{'true'}\})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00041}00041         response = requests.delete(f\textcolor{stringliteral}{"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectId"{}:"{}1"{}, "{}userIds"{}:[2,3]\}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00042}00042         self.assertEqual(response.status\_code, 200)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00043}00043         self.assertEqual(response.json(), \{\textcolor{stringliteral}{'success'}: \textcolor{stringliteral}{'true'}\})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00045}\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_aff1ca945f65f81b15793e626371acfca}{00045}}     \textcolor{keyword}{def }\mbox{\hyperlink{classtest__projects__api_1_1_test_projects_a_p_i_aff1ca945f65f81b15793e626371acfca}{test\_add\_and\_delete\_users\_wrong\_arguments}}(self):}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00046}00046         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00047}00047 \textcolor{stringliteral}{        It tests that the API returns a 500 error when the wrong arguments are passed to the add }\textcolor{keywordflow}{and} delete}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00048}00048         users functions}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00049}00049         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00050}00050 \textcolor{stringliteral}{        response = requests.put(f"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectId"{}:"{}1"{}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00051}00051         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00052}00052         response = requests.delete(f\textcolor{stringliteral}{"{}\{api\_path\}/projects/employees/"{}}, data=\textcolor{stringliteral}{'\{"{}projectId"{}:"{}1"{}'})}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00053}00053         self.assertEqual(response.status\_code, 500)}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00055}00055 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{'\_\_main\_\_'}:}
+\DoxyCodeLine{\Hypertarget{test__projects__api_8py_source_l00056}00056     unittest.main()}
+
+\end{DoxyCode}

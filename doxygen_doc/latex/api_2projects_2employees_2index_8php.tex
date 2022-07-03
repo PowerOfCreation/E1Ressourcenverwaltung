@@ -1,0 +1,61 @@
+\hypertarget{api_2projects_2employees_2index_8php}{}\doxysection{src/webserver/api/projects/employees/index.php File Reference}
+\label{api_2projects_2employees_2index_8php}\index{src/webserver/api/projects/employees/index.php@{src/webserver/api/projects/employees/index.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}{bulk\+\_\+prepared\+\_\+statement}} (mysqli \$connection, mysqli\+\_\+stmt \$statement, mixed \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}{\$json}} = file\+\_\+get\+\_\+contents(\textquotesingle{}php\+://input\textquotesingle{})
+\item 
+\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\+\_\+decode(\$json)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}\label{api_2projects_2employees_2index_8php_a8567f4862876a7f668902a5c745f4908}} 
+\index{index.php@{index.php}!bulk\_prepared\_statement@{bulk\_prepared\_statement}}
+\index{bulk\_prepared\_statement@{bulk\_prepared\_statement}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{bulk\_prepared\_statement()}{bulk\_prepared\_statement()}}
+{\footnotesize\ttfamily bulk\+\_\+prepared\+\_\+statement (\begin{DoxyParamCaption}\item[{mysqli}]{\$connection,  }\item[{mysqli\+\_\+stmt}]{\$statement,  }\item[{mixed}]{\$data }\end{DoxyParamCaption})}
+
+It takes a My\+SQLi connection, a prepared statement, and an object containing a project ID and an array of user IDs, and then it executes the prepared statement for each user ID in the array
+
+
+\begin{DoxyParams}{Parameters}
+{\em mysqli} & connection The connection to the database. \\
+\hline
+{\em mysqli\+\_\+stmt} & statement The prepared statement to execute. \\
+\hline
+{\em mixed} & data an object containing the project\+Id and an array of user\+Ids \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{api_2projects_2employees_2index_8php_source_l00020}{20}} of file \mbox{\hyperlink{api_2projects_2employees_2index_8php_source}{index.\+php}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}\label{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}} 
+\index{index.php@{index.php}!\$data@{\$data}}
+\index{\$data@{\$data}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$data}{$data}}
+{\footnotesize\ttfamily \$data = json\+\_\+decode(\$json)}
+
+
+
+Definition at line \mbox{\hyperlink{api_2projects_2employees_2index_8php_source_l00008}{8}} of file \mbox{\hyperlink{api_2projects_2employees_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}\label{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}} 
+\index{index.php@{index.php}!\$json@{\$json}}
+\index{\$json@{\$json}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$json}{$json}}
+{\footnotesize\ttfamily \$json = file\+\_\+get\+\_\+contents(\textquotesingle{}php\+://input\textquotesingle{})}
+
+
+
+Definition at line \mbox{\hyperlink{api_2projects_2employees_2index_8php_source_l00006}{6}} of file \mbox{\hyperlink{api_2projects_2employees_2index_8php_source}{index.\+php}}.
+

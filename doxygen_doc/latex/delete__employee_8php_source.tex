@@ -1,0 +1,50 @@
+\hypertarget{delete__employee_8php_source}{}\doxysection{delete\+\_\+employee.\+php}
+\label{delete__employee_8php_source}\index{src/webserver/api/delete\_employee.php@{src/webserver/api/delete\_employee.php}}
+\mbox{\hyperlink{delete__employee_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00002}00002     include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00004}00004     \textcolor{keywordflow}{if}(!isset(\$\_GET[\textcolor{stringliteral}{"{}user"{}}])) \{}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00005}00005         echo \textcolor{stringliteral}{"{}Error: missing parameters"{}};}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00006}00006         \mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}}();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00007}00007     \}}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00009}\mbox{\hyperlink{delete__employee_8php_a26e236cfe816ed5342fd06203e975cf3}{00009}}     \mbox{\hyperlink{delete__employee_8php_a26e236cfe816ed5342fd06203e975cf3}{\$user}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}user"{}}]);}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00011}00011     \textcolor{comment}{//get UserId from username}}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00012}\mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{00012}}     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}SELECT UserId FROM User WHERE Username = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00013}00013     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'s'}, \mbox{\hyperlink{delete__employee_8php_a26e236cfe816ed5342fd06203e975cf3}{\$user}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00014}00014     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00015}\mbox{\hyperlink{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}{00015}}     \mbox{\hyperlink{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>get\_result();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00016}00016     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00018}\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{00018}}     \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \mbox{\hyperlink{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_assoc();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00019}\mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{00019}}     \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}} = \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}[\textcolor{stringliteral}{'UserId'}];}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00021}00021     \textcolor{comment}{//delete all status of user}}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00022}00022     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM Status WHERE UserId = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00023}00023     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00024}00024     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00025}00025     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00027}00027     \textcolor{comment}{//delete User\_Project}}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00028}00028     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM User\_Project WHERE UserId = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00029}00029     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00030}00030     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00031}00031     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00033}00033     \textcolor{comment}{//delete project}}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00034}00034     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM Project WHERE ProjectOwner = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00035}00035     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'s'}, \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00036}00036     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00037}00037     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00039}00039     \textcolor{comment}{//delete user}}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00040}00040     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM User WHERE UserId = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00041}00041     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}});}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00042}00042     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00043}00043     \mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{delete__employee_8php_source_l00044}00044 ?>}
+
+\end{DoxyCode}

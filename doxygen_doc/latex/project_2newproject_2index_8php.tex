@@ -1,0 +1,91 @@
+\hypertarget{project_2newproject_2index_8php}{}\doxysection{src/webserver/project/newproject/index.php File Reference}
+\label{project_2newproject_2index_8php}\index{src/webserver/project/newproject/index.php@{src/webserver/project/newproject/index.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}{check\+Post\+Values}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}}(\mbox{\hyperlink{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}{check\+Post\+Values}}()===TRUE) \mbox{\hyperlink{project_2newproject_2index_8php_a4cca45dd899cac63012958df6481e21c}{\$result}} = \$connection-\/$>$query(\char`\"{}SELECT $\ast$ FROM User;\char`\"{})
+\item 
+\mbox{\hyperlink{registration_2index_8php_a02da46f7678d582648864626c5883481}{while}}(\$row=\$result-\/$>$fetch\+\_\+object()) \mbox{\hyperlink{project_2newproject_2index_8php_adcd9148a97a4d28c4143a32879fd8854}{\$month}} = date(\textquotesingle{}m\textquotesingle{})
+\item 
+\mbox{\hyperlink{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}{\$day}} = date(\textquotesingle{}d\textquotesingle{})
+\item 
+\mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} = date(\textquotesingle{}Y\textquotesingle{})
+\item 
+\mbox{\hyperlink{project_2newproject_2index_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}{\$today}} = \$year . \textquotesingle{}-\/\textquotesingle{} . \$month . \textquotesingle{}-\/\textquotesingle{} . \$day
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}\label{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}} 
+\index{index.php@{index.php}!checkPostValues@{checkPostValues}}
+\index{checkPostValues@{checkPostValues}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{checkPostValues()}{checkPostValues()}}
+{\footnotesize\ttfamily check\+Post\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If any of the POST values are empty, return FALSE
+
+\begin{DoxyReturn}{Returns}
+bool A boolean value. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{project_2newproject_2index_8php_source_l00014}{14}} of file \mbox{\hyperlink{project_2newproject_2index_8php_source}{index.\+php}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}\label{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}} 
+\index{index.php@{index.php}!\$day@{\$day}}
+\index{\$day@{\$day}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$day}{$day}}
+{\footnotesize\ttfamily \$day = date(\textquotesingle{}d\textquotesingle{})}
+
+
+
+Definition at line \mbox{\hyperlink{project_2newproject_2index_8php_source_l00101}{101}} of file \mbox{\hyperlink{project_2newproject_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{project_2newproject_2index_8php_adcd9148a97a4d28c4143a32879fd8854}\label{project_2newproject_2index_8php_adcd9148a97a4d28c4143a32879fd8854}} 
+\index{index.php@{index.php}!\$month@{\$month}}
+\index{\$month@{\$month}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$month}{$month}}
+{\footnotesize\ttfamily \mbox{\hyperlink{registration_2index_8php_a02da46f7678d582648864626c5883481}{while}} ( \$row=\$result-\/$>$fetch\+\_\+object()) \$month = date(\textquotesingle{}m\textquotesingle{})}
+
+
+
+Definition at line \mbox{\hyperlink{project_2newproject_2index_8php_source_l00100}{100}} of file \mbox{\hyperlink{project_2newproject_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{project_2newproject_2index_8php_a4cca45dd899cac63012958df6481e21c}\label{project_2newproject_2index_8php_a4cca45dd899cac63012958df6481e21c}} 
+\index{index.php@{index.php}!\$result@{\$result}}
+\index{\$result@{\$result}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{$result}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} (\mbox{\hyperlink{project_2newproject_2index_8php_af61c9c9490a85c363308cc957aaeb590}{check\+Post\+Values}}()===TRUE) \$result = \$connection-\/$>$query(\char`\"{}SELECT $\ast$ FROM User;\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{project_2newproject_2index_8php_source_l00085}{85}} of file \mbox{\hyperlink{project_2newproject_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{project_2newproject_2index_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}\label{project_2newproject_2index_8php_af1b7fb9d06cdc6d22c14741fc3cc185a}} 
+\index{index.php@{index.php}!\$today@{\$today}}
+\index{\$today@{\$today}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$today}{$today}}
+{\footnotesize\ttfamily \$today = \$year . \textquotesingle{}-\/\textquotesingle{} . \$month . \textquotesingle{}-\/\textquotesingle{} . \$day}
+
+
+
+Definition at line \mbox{\hyperlink{project_2newproject_2index_8php_source_l00103}{103}} of file \mbox{\hyperlink{project_2newproject_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}\label{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}} 
+\index{index.php@{index.php}!\$year@{\$year}}
+\index{\$year@{\$year}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$year}{$year}}
+{\footnotesize\ttfamily \$year = date(\textquotesingle{}Y\textquotesingle{})}
+
+
+
+Definition at line \mbox{\hyperlink{project_2newproject_2index_8php_source_l00102}{102}} of file \mbox{\hyperlink{project_2newproject_2index_8php_source}{index.\+php}}.
+

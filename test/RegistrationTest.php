@@ -5,6 +5,9 @@ use PHPUnit\Framework\TestCase;
 /* It tests the `checkPassword` function */
 final class RegistrationTest extends TestCase
 {
+    /**
+     * It checks if the password is valid
+     */
     public function testPasswordCheck(): void
     {
         $this->assertNotEquals(

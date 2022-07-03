@@ -1,0 +1,66 @@
+\hypertarget{database__structure_8php}{}\doxysection{src/webserver/database\+\_\+structure.php File Reference}
+\label{database__structure_8php}\index{src/webserver/database\_structure.php@{src/webserver/database\_structure.php}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database__structure_8php_a6f7e111ca1d72531b5a44c0687eb9892}{execute\+\_\+sql\+\_\+query}} (mysqli \$connection, string \$query\+String)
+\item 
+\mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\+\_\+failure}} (string \$message=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database__structure_8php_a978c560d17665ad6f627caed26687b9e}{\$result}} = \$connection-\/$>$query(\char`\"{}SELECT count($\ast$) from Department;\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{database__structure_8php_a6f7e111ca1d72531b5a44c0687eb9892}\label{database__structure_8php_a6f7e111ca1d72531b5a44c0687eb9892}} 
+\index{database\_structure.php@{database\_structure.php}!execute\_sql\_query@{execute\_sql\_query}}
+\index{execute\_sql\_query@{execute\_sql\_query}!database\_structure.php@{database\_structure.php}}
+\doxysubsubsection{\texorpdfstring{execute\_sql\_query()}{execute\_sql\_query()}}
+{\footnotesize\ttfamily execute\+\_\+sql\+\_\+query (\begin{DoxyParamCaption}\item[{mysqli}]{\$connection,  }\item[{string}]{\$query\+String }\end{DoxyParamCaption})}
+
+It executes a query on a database and returns a boolean value indicating whether the query was successful or not
+
+
+\begin{DoxyParams}{Parameters}
+{\em mysqli} & connection a mysqli connection object \\
+\hline
+{\em string} & query\+String The SQL query to execute. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{database__structure_8php_source_l00012}{12}} of file \mbox{\hyperlink{database__structure_8php_source}{database\+\_\+structure.\+php}}.
+
+\mbox{\Hypertarget{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}\label{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}} 
+\index{database\_structure.php@{database\_structure.php}!exit\_failure@{exit\_failure}}
+\index{exit\_failure@{exit\_failure}!database\_structure.php@{database\_structure.php}}
+\doxysubsubsection{\texorpdfstring{exit\_failure()}{exit\_failure()}}
+{\footnotesize\ttfamily exit\+\_\+failure (\begin{DoxyParamCaption}\item[{string}]{\$message = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+If the function is called, it will exit the script with a 500 HTTP response code and the message passed to the function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & message The message to display to the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{database__structure_8php_source_l00030}{30}} of file \mbox{\hyperlink{database__structure_8php_source}{database\+\_\+structure.\+php}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{database__structure_8php_a978c560d17665ad6f627caed26687b9e}\label{database__structure_8php_a978c560d17665ad6f627caed26687b9e}} 
+\index{database\_structure.php@{database\_structure.php}!\$result@{\$result}}
+\index{\$result@{\$result}!database\_structure.php@{database\_structure.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{$result}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} ( \$result-\/$>$fetch\+\_\+array()\mbox{[}0\mbox{]}==0) \$result = \$connection-\/$>$query(\char`\"{}SELECT count($\ast$) from Department;\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{database__structure_8php_source_l00115}{115}} of file \mbox{\hyperlink{database__structure_8php_source}{database\+\_\+structure.\+php}}.
+

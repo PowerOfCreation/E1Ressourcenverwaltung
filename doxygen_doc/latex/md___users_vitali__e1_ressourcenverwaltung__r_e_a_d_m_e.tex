@@ -1,0 +1,128 @@
+\href{https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/ci.yml}{\texttt{ }} \href{https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/eslint.yml}{\texttt{ }} \href{https://github.com/PowerOfCreation/E1Ressourcenverwaltung/actions/workflows/main.yml}{\texttt{ }}\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md0}{}\doxysection{Vorlage Projektstruktur \& Open\+UP-\/\+Templates}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md0}
+Das Repository enthält die Vorlage einer Projektstruktur und Template-\/\+Dokumente im Ascii\+Doc-\/\+Format. Dies wird für die Bearbeitung der Belegarbeit in Software Engineering I und II benötigt. Im Detail wären dies\+:
+
+
+\begin{DoxyItemize}
+\item Projektstruktur anhand der Work Products im Open\+UP
+\item Templates der benötigten Open\+UP-\/\+Dokumente (Ascii\+Doc-\/\+Format)
+\item Vorlage für die Belegabgabe in SE I (Ascii\+Doc-\/\+Format)
+\end{DoxyItemize}
+
+{\itshape Hinweis\+: Dieses Repository enthält keinen Code.}
+
+{\bfseries{Inhaltsverzeichnis}}
+\begin{DoxyItemize}
+\item Projektstruktur
+\item Unified Process -\/ Templates
+\item Hinweise zu Ascii\+Doc
+\item Belegabgabe in SE I
+\item Lizenz
+\end{DoxyItemize}\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{Projektstruktur}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md1}
+Die Projektstruktur im Verzeichnis {\bfseries{docs}} orientiert sich an den \uline{Work Products} im Open\+UP und den für die \uline{Abgabe im SE 1 Beleg} geforderten Dokumenten.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{docs}
+\DoxyCodeLine{├── architecture}
+\DoxyCodeLine{│   └── architecture\_notebook.adoc}
+\DoxyCodeLine{├── deployment}
+\DoxyCodeLine{├── development}
+\DoxyCodeLine{│   └── design.adoc}
+\DoxyCodeLine{├── environment}
+\DoxyCodeLine{├── project\_management}
+\DoxyCodeLine{│   ├── iteration\_plan\_01.adoc}
+\DoxyCodeLine{│   ├── project\_plan.adoc}
+\DoxyCodeLine{│   ├── risk\_list.adoc}
+\DoxyCodeLine{│   └── risks.csv}
+\DoxyCodeLine{├── requirements}
+\DoxyCodeLine{│   ├── domain\_model.adoc}
+\DoxyCodeLine{│   ├── glossary.adoc}
+\DoxyCodeLine{│   ├── system-\/wide\_requirements.adoc}
+\DoxyCodeLine{│   ├── use-\/case\_model.adoc}
+\DoxyCodeLine{│   ├── use\_case\_01.inc.adoc}
+\DoxyCodeLine{│   └── vision.adoc}
+\DoxyCodeLine{└── test}
+\DoxyCodeLine{    └── test\_cases.adoc}
+
+\end{DoxyCode}
+\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Unified Process -\/ Templates}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md2}
+Dieses Repositority enthält Vorlagen im Ascii\+Doc-\/\+Format für die Arbeit mit dem Open Unified Process. Die Vorlagen basieren auf den Templates der offiziellen Open\+UP Dokumentation in der Version 1.\+5x aus dem Eclipse Process Framework (EPF) und wurden bis auf geringe inhaltliche / strukturelle Anpassungen lediglich auf deutsch übersetzt.\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md3}{}\doxysubsubsection{Hinweise}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Im Unified Process gibt es eine \char`\"{}\+Supplementary Specification\char`\"{}, die Anforderungen enthält, die nicht als Use Case Model spezifiziert werden können. Das sind z.\+B. nicht-\/funktionale und systemweite Anforderungen. Im Open\+UP (und in diesem Repository) heißt dieses Dokument \char`\"{}\+System-\/wide Requirements\char`\"{}.
+\item Falls Sie Fehler korrigieren oder Verbesserungen machen möchten, können Sie dies gern über einen {\itshape Pull Request} tun.
+\end{DoxyItemize}\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md4}{}\doxysubsubsection{Referenzen}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item \href{https://www.eclipse.org/epf/downloads/configurations/pubconfig_downloads.php}{\texttt{ Eclipse Process Framework}}
+\item \href{https://www2.htw-dresden.de/~anke/openup/index.htm}{\texttt{ Open Unified Process 1.\+5 Dokumentation}}
+\end{DoxyItemize}\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Hinweise zu Ascii\+Doc}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md5}
+Die Datei {\itshape default-\/attributes.\+inc.\+adoc} im {\bfseries{docs/\+\_\+includes}} Verzeichnis enthält die gemeinsamen Dokumentenattribute für alle Ascii\+Doc-\/\+Dokumente. In jedem Dokument selbst können, nach dem include der Datei, entsprechend noch extra benötigte Attribute mit aufgenommen werden.\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md6}{}\doxysubsubsection{Projektnamen definieren}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md6}
+In der {\itshape default-\/attributes.\+inc.\+adoc} Datei ist am Anfang der {\bfseries{Projektname}} definiert, welcher in jedem Dokument im Title verwendet wird. Ersetzen Sie hier bitte {\ttfamily \texorpdfstring{$<$}{<}Projektname (T00)\texorpdfstring{$>$}{>}} mit Ihrem Belegthema\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// Meta}
+\DoxyCodeLine{:project-\/name: <Projektname (T00)>}
+
+\end{DoxyCode}
+\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{Bilder einbinden}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md7}
+In dem Dokumentenattribut {\ttfamily \+:imagesdir\+: images} ist das Standardverzeichnis für die Bilder festgelegt. Somit reicht es, in den jeweiligen Dokumenten, die Bilder ohne Angabe des {\bfseries{images}} Verzeichnis einzubinden\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{requirements}
+\DoxyCodeLine{├── images}
+\DoxyCodeLine{│   └── example.jpg}
+\DoxyCodeLine{└── vision.adoc}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// vision.adoc}
+\DoxyCodeLine{image::example.jpg[Beispielbild]}
+
+\end{DoxyCode}
+\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{Belegabgabe in SE I}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md8}
+Im Verzeichnis {\bfseries{belegabgabe\+\_\+se1}} finden Sie die Vorlagedatei {\itshape se1\+\_\+belegabgabe\+\_\+t00.\+adoc}, welche alle Ihre erzeugten Dokumente für die Abgabe als PDF in \uline{ein} Dokument bündelt.
+
+(Nutzen Sie nicht die Projektvorlage {\bfseries{Projektstruktur\+\_\+\+Open\+UP-\/\+Templates}}, kopieren sie sich die Vorlagedatei {\itshape se1\+\_\+belegabgabe\+\_\+t00.\+adoc} in Ihr Projektrepository)
+
+Folgende Schritte sind für eine Belegabgabe durchzuführen\+:
+
+
+\begin{DoxyEnumerate}
+\item Ändern Sie die Themennummer {\bfseries{t00}} in der Vorlagedatei {\itshape se1\+\_\+belegabgabe\+\_\+t00.\+adoc} in Ihre Themennummer (t01, t02, ...).
+\item Inhalt der Vorlagedatei anpassen\+:
+\begin{DoxyItemize}
+\item Ist in Ihrem Projekt in der Datei {\itshape docs/\+\_\+includes/default-\/attributes.\+inc.\+adoc} der Projektname im Attribut {\ttfamily \+:project-\/name\+:} nicht gesetzt bzw. nutzen Sie eine andere Struktur, können Sie im Dokumententitel nach dem {\ttfamily \+:} das {\ttfamily \{project-\/name\}} mit Ihrem Projektthema ersetzen\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{// -\/-\/-\/ 1. Projektthema -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}
+\DoxyCodeLine{= SE I -\/ Belegabgabe: \{project-\/name\}}
+
+\end{DoxyCode}
+
+\item Tragen Sie {\bfseries{alle}} Teammitglieder als Autoren ein\+:
+
+\`{}\`{}\`{} // --- 2. Teammitglieder -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- Vorname Nachname \href{mailto:s00000@htw-dresden.de}{\texttt{ s00000@htw-\/dresden.\+de}}; Vorname Nachname \href{mailto:s00000@htw-dresden.de}{\texttt{ s00000@htw-\/dresden.\+de}}; ... \`{}\`{}{\ttfamily  \texorpdfstring{$>$}{>} Lange Autorennamen (mehr als 3 Teile) in den Dokumentenattributen müssen mit einem}\+\_\+$<$tt$>$(\+Unterstrich) zu einer Gruppe von Vor-\/ bzw. Nachnamen zusammengefasst werden. Es treten sonst Formatierungsfehler beim erzeugen der HTML-\/ oder PDF-\/\+Dokumente auf. Der\+\_\+\`{} (Unterstrich) wird im erzeugten Dokument nicht dargestellt. \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>} -\/ {\ttfamily Vorname1\+\_\+\+Vorname2 Nachname1\+\_\+\+Nachname2 \texorpdfstring{$<$}{<}mail@example.\+com\texorpdfstring{$>$}{>}} \texorpdfstring{$>$}{>} -\/ {\ttfamily Vorname Nachname1\+\_\+\+Nachname2\+\_\+\+Nachname3 \texorpdfstring{$<$}{<}mail@example.\+com\texorpdfstring{$>$}{>}}
+\item Tragen Sie als Versionsdatum Ihr {\bfseries{Abgabedatum}} ein\+:
+
+\`{}\`{}\`{} // --- 3. Abgabedatum -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- 01. Januar 2020 \`{}\`{}\`{}
+\item Passen Sie bei abweichender Projektstruktur die {\bfseries{include-\/\+Pfade}} und {\bfseries{Dateinamen}} zu den einzelnen Dateien ({\itshape path/to/file.\+adoc}) an bzw. erweitern Sie es für zusätzliche Dokumente\+:
+
+\`{}\`{}\`{} include\+::path/to/file.adoc\mbox{[}lines=1..1;4..-\/1,leveloffset=+1\mbox{]} \`{}\`{}{\ttfamily  \texorpdfstring{$>$}{>} Beim}include{\ttfamily wird über die}lines=1..1;4..-\/1\`{} Angabe jeweils die 1. und alles ab der 4. Zeile übernommen. Jedes Dokument ist eigenständig und somit werden über die Zeilen 2 und 3 die jeweiligen Authoren und das Versionsdatum nicht mit übernommen.
+\end{DoxyItemize}
+\item Erzeugen Sie das Abgabe-\/\+PDF {\itshape {\itshape se1\+\_\+belegabgabe\+\_\+t00.\+pdf}} (\href{https://www.informatik.htw-dresden.de/~zirkelba/praktika/se/arbeiten-mit-git-und-asciidoc/praktikumsaufgaben-teil-2.html\#_aufgabe_2_1_htmlpdf}{\texttt{ Hinweise aus dem Praktikum}})\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ asciidoctor -\/r asciidoctor-\/pdf -\/b pdf se1\_belegabgabe\_t00.adoc}
+
+\end{DoxyCode}
+
+\item Prüfen Sie, dass das korrekte {\bfseries{Projektthema}}, alle {\bfseries{Teammitglieder}} und das {\bfseries{Abgabedatum}} auf dem Deckblatt stehen und dass ebefalls alle erforderlichen {\bfseries{Dokumente}} mit ihren Inhalten enthalten sind.
+\item Geben Sie das finale Abgabe-\/\+PDF {\itshape {\itshape se1\+\_\+belegabgabe\+\_\+t00.\+pdf}} über den mitgeteilten Weg ab.
+\end{DoxyEnumerate}\hypertarget{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{Lizenz}\label{md___users_vitali__e1_ressourcenverwaltung__r_e_a_d_m_e_autotoc_md9}
+Sämtliche Inhalte dieses Repositories unterliegen der \href{https://choosealicense.com/licenses/cc-by-4.0/}{\texttt{ CC-\/\+BY-\/4.\+0}} Lizenz. 
