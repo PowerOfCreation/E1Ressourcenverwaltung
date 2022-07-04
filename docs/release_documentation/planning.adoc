@@ -30,7 +30,6 @@ Unsere Rollen bzw. Verantwortlichkeiten wurden aus dem vorangegangenen Semester 
 
 Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts noch sieben, da Frau Rubein Wirtschaftsingenieurin ist und damit Software Engineering II nicht mehr belegt. Die Teamleitung hat Herr Kemter übernommen. Unser Team bekam nach wenigen Wochen Herr Nguyen als Nachzügler zur Unterstützung. Dieser hatte bereits Programmiererfahrungen und bekam daher die Verantwortung der Implementation. Herr Keil musste leider, wegen Krankheit, im 2. Semester ebenfalls aus dem Projekt ausscheiden. 
 
-
 |===
 | Name| Rolle WS 21/22 | Rolle SoSe 22 | E-Mail
 
@@ -44,11 +43,6 @@ Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts noch sie
 | Vitaly Tichonow | Test | Test | s82591@htw-dresden.de
 | Vinh Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
 |===
-
-Herr Kemter als Teamleiter leitet die Meetings. Dabei erfragt er die abgeschlossenen bzw. fortzuführenden Aufgaben. Spricht Probleme sowie eventuelle Lösungen an und sorgt dafür das jedes Teammitglied seine Meinung sagen kann. Er macht Vorschläge, wer welches Issues erhält. Außerdem behält er die organisatorischen Sachverhalte im Blick, wie das Treffen mit Herrn Zirkelbach oder Herrn Liebert oder auch welche Dokumente für die Note wichtig sind.
-
-//kann man das vllt verlinken und daher kürzer schreiben? oder gar nicht beschreiben...
-Wie später genauer in "Erstellung und Verteilung der Aufgaben/Issue" im Vorwort der Projektdurchführung beschrieben hat sich Herr Werner ebenfalls um die Issues gekümmert.
 
 ===  Kommunikation und eingesetzte Tools
 
