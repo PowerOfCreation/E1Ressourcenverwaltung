@@ -575,6 +575,7 @@ Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentati
 == Iteration 21 (28.06.2022 - 04.07.2022)
 
 // Die weitere Bearbeitung der Entwicklerdokumentation übergab Herr Beck, aufgrund einer Umverteilung der Aufgaben, an Herrn Kirchhoff und Herrn Tichonow.
+//
 
 
 
