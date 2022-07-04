@@ -2,25 +2,19 @@
 
 //wurde beschrieben das Vitali das Login über mehrere Wochen versucht hat, aber eigentlich kein Fortschritt erziehlt hat? das hätte er ja eigentlich dann in der zeit gemacht, wo er "offiziell" nichts hatte
 
-// ist das ein problem einer konkreten iteration oder soll das so generell stehen bleiben?
-// == Einführung
-
-// Zu Beginn des Semesters haben wir uns zusammengesetzt und das weitere Vorgehen im Modul SE II besprochen. Nach relativ kurzer Zeit stellte sich heraus, dass wir ein wenig Unterstützung gebrauchen könnten. Nachdem wir von der Möglichkeit erfuhren ein neues Teammitglied aufzunehmen, fiel die Entscheidung recht schnell und wir meldeten uns bei Herr Prof. Anke. Nach einer Einarbeitungszeit von etwa 2 Wochen konnte das neue Teammitglied erfolgreich integriert werden und seine Aufgaben selbstständig erfüllen.
-
 == Vorwort 
 
 === Erstellung und Verteilung der Aufgaben/Issues
-//versteht man den vorletzten Satz?
-Die Implementationsaufgaben bzw. -issues wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch hat er durch seine Ausbildung und weitreichendes Wissen über das Programm und die Use-Cases eine exzellente Grundlage um dies zu erfüllen. 
-Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktuallisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. So bringt es in der Praxis nichts, dass aus Use-Case 1 die Status in eine andere Woche kopiert werden können, wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). Daher wurden öfters neben "Kleinigkeiten" auch größere Aufgaben voran getrieben wurden, welche in den nächsten Iterationen große Funktionalitätsschritte ermöglichen. Die erfüllten Aufgaben sind mit "(#50)" zu GitHub verlinkt.
 
-////
-Das Gleiche gilt für Use-Case 3. Generell sollen dort die Benutzer Projekte erstellen und diesen dann Benuter zuweisen können. Es wäre für uns unmöglich Projekte für T-System MMS im Vorfeld zu erstellen. Das scheitert schon an der möglichen Anzahl. Jedoch ist der Standardablauf das Benutzer bei einem Projekt hinzugefügt bzw. entfernt werden können, da dies mehr passieren wird, als neue Projekte angelegt werden. 
+Die Implementationsaufgaben bzw. -issues wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch brachte Herr Werner, durch seine Ausbilung zum Anwendungsinformatiker, genügend Vorwissen mit um dieser Aufgabe gewachsen zu sein.
 
-////
+Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktualisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. Deswegen entspricht die Realisierungsreihenfolge nicht immer der Priorisierung der Use-Cases. So bringt es in der Praxis nichts, dass die Status in eine andere Woche kopiert werden können (UC 1), wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). So können keine Status angelegt werden, wenn es keine Benutzer (UC 3) oder Projekte (UC 4) gibt. 
+
 Viele solche praktischen Abhängigkeiten gibt es, was uns ein klares Abarbeiten der Use-Cases erschwert hat. Wenn wir uns strikt an die Priorisierung halten würden, würden die Benutzer Funktionen ausführen können, die ihnen am Ende nicht viel bringen würden. 
 
-Weiterhin musste bei der Verteilung der Issues bedacht werden, wer noch Issues aus einer vorherigen Iteration bearbeitet und ob das Können sowie das Wissen der Teammitglieder für die Aufgabe ansatzweise ausreicht. Schwere oder große Aufgaben wurden daher oft von Herrn Werner und Herrn Nguyen bearbeitet.
+Weiterhin musste bei der Verteilung der Issues bedacht werden, wer noch Issues aus einer vorherigen Iteration bearbeitet und ob das Können sowie das Wissen der Teammitglieder für die Aufgabe ansatzweise ausreicht. Schwere oder große Aufgaben wurden daher oft von, oder mithilfe von, Herrn Werner und Herrn Nguyen bearbeitet.
+
+Die erfüllten Aufgaben sind mit "(#50)" zu GitHub verlinkt. Leider haben nicht alle Funktionserweiterungen bzw. Aufgaben generell ein Issue, welcher Verlinkt wurde bzw. ist das Issue nicht Aussagekräftig und daher nicht verlinkt. 
 
 == Iteration 9 (23.03.2022 - 28.03.2022)
 
@@ -110,6 +104,7 @@ Die Nutzerübersichtsseite wurde von Herrn Werner um die Anzeige der Abteilung d
 
 Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS, JavaScript und PHP Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
 Außerdem wurden die PHP-Credentials angepasst.
+//gibt kein issue dazu
 
 Die Datenbanktabelle um Projektmitgliedschaften darzustellen wurde von Herrn Kirchhoff fertiggestellt. (#38)
 
@@ -119,7 +114,7 @@ Die Passwortkriterien, sowie die Überprüfung der E-Mail Adresse, werden weiter
 
 Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leichter überprüft und das spätere Arbeiten dadurch angenehmer gestaltet werden kann. Jedoch wurde dies nicht begonnen und wird daher in der nächsten Iteration angefangen. (#42)
 
-Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann.
+Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Diese Aufgabe wurde Herrn Keil zugeteilt.
 //Dies wurde von Herrn Liebert gewünscht, aber ist kein essentiell wichtiges Feature, da andere Use Cases laut ihm wichtiger sind. Es ist unklar wann Herr Keil wieder an dem Projekt mitarbeiten kann und deswegen wurde ihm diese Aufgabe zugeteilt. Das Issue wurde bis zum Ende der Iteration nicht begonnen. (#28)
 
 == Problem
@@ -163,14 +158,12 @@ Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (#42)
 
 === Problem 
 //wir sollen/müssen nicht immer auf jonas/ aleksandra eingehe. deswegen wird das jetzt in den iterationen bloß noch durch nicht efüllte aufgaben angedeutet. daher wäre es hier evtl noch nötig den ersten satz etwas anzupassen
-Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen können. Daher drohte eine fallende Moral der anderen Mitgliedern. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten. Aber aufgrund fehlender Dringlichkeit und da wir wussten nicht wussten, wie wir dieses Problem beheben können, haben wir von weiteren Maßnahmen abgesehen. 
+Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen können. Daher drohte eine fallende Moral der anderen Mitgliedern. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten. Aber aufgrund fehlender Dringlichkeit haben wir von weiteren Maßnahmen abgesehen. 
 
-
-//Daher lag die Entscheidung nahe, das Angebot des Prof. Anke zu nutzen und ein neues Teammitglied anzuwerben. Der Effekt auf Arbeitsmoral und Fortschritt war unverkennbar. Dennoch gelang es nicht alle Anforderungen an die Software zu realisieren.
 
 == Iteration 12 (12.04.2022 - 25.04.2022)
 
-Überaschenderweise haben wir ein neues Teammitglied zugewiesen bekommen, welches wir in Iteration 9 angefragt haben.Herrn Nguyen hat bereits Erfahrung in der Front-End und Back-End Entwicklung. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat dementsprechend an Fahrt aufgenommen.
+Überaschenderweise haben wir ein neues Teammitglied zugewiesen bekommen, welches wir in Iteration 9 angefragt hatten. Herr Nguyen hat bereits Erfahrung in der Front-End und Back-End Entwicklung. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat dementsprechend an Fahrt aufgenommen.
 
 ////
 Neue Ziele: 
@@ -202,12 +195,14 @@ Dies ist zentral, um dem Nutzer mehr als die aktuelle Woche anzeigen zu können.
 
 *UC 2*
 Eine neue Schnittstelle ermöglicht es alle Projekte zu erhalten, in welchem ein Nutzer ist. Dies ist notwendig, um dem Nutzer nur einen Status bzw. Arbeitsauftrag für Projekte zu vergeben an welchen dieser auch teilnimmt. Dies wurde von Herrn Werner bearbeitet.
+//gibt kein Issue
 
 *UC 3*
 Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. Herr Tichonow hat Verbesserung an der bestehenden Front-End Überprüfung vorgenommen, indem neue required Attribute und Placeholder eingefügt wurden. (#33 & #36)
 
 *UC 4*
 Da die Benutzerverwaltung(UC 3) schon sehr weit fortgeschritten ist, konzentrieren wir uns nun verstärkt auf die Projektverwaltung. Jedes Projekt soll einen Namen, einen Projektverantwortlichen, ein Enddatum (welches zur Orientierung dienen soll), eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann.
+//gibt kein Issue
 
 Zunächst hat Herr Beck dafür eine neue Unterseite implementiert, in der neue Projekte angelegt werden. (#32) Das Verwalten aller bestehenden Projekte soll in der nächsten Iteration angefangen werden. Ebenso soll es möglich sein jedem Projekt beliebig viele Benutzer zuzuweisen. (#45)
 
@@ -228,7 +223,7 @@ Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild s
 
 Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw. das Einfügen von Dummy-Daten in die Datenbank bereits seit mehreren Iterationen erfolglos von Herrn Tichonow und Herrn Kirchhoff bearbeitet wird. Verschiedene Hilfestellungen in Form von Websites, Tutorials oder das Angebot, jederzeit bei einem Gruppenmitglied um Hilfe fragen zu können, wurden gegeben.
 
-Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch anwesend. Auf Nachfrage antworteten beide, dass sie beide Aufgrund von Krankheit noch länger ausfallen würden.
+Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch nicht anwesend. Auf Nachfrage antworteten beide, dass sie beide Aufgrund von Krankheit noch länger ausfallen würden.
 
 == Iteration 13 (26.04.2022 - 09.05.2022)
 ////
@@ -303,10 +298,10 @@ Fortgeführt:
 Das Anzeigen der Status anhand der eingetragenen Status in der Datenbank sollte von Herrn Nguyen bearbeitet werden, jedoch mussten dazu noch einige Erweiterungen der bestehenden Schnittstellen vorgenommen werden (#52), weswegen dies nur teilweise fertiggestellt werden konnte. (#51)
 
 Bei den eingefügten Dummy-Daten der Status, welches in der letzten Iteration abgeschlossen wurde, gab es einen Fehler. Dieser wurde von Herrn Kirchhoff in Unterstützung von Herrn Werner behoben.
-
+//gibt kein Issue
 *Psalm*
 Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code-Analyse des PHP Codes vornimmt. Dies soll genutzt werden, damit weniger Zeit mit Code-Reviews verloren geht und häufige Probleme automatisch erkannt werden. Herrn Kirchhoff Aufgabe war es nun alle erkannten Probleme durch Psalm zu beheben. (#58)
-
+//gibt kein Issue
 === Qualitätssicherung
 Frau Tartz hat eine manuelle Überprüfung sämtlicher Funktionalitäten vorgenommen und hat dabei einen Fehler bei der Projekterstellung gefunden, welcher von Herrn Werner behoben wurde. (#65)
 
@@ -354,9 +349,10 @@ Für den Use Case 01 fehlte noch ein elementares Feature. Das Wechseln der Kalen
 
 *ESLint*
 Die statische Code-Analyse mit Psalm war sehr erfolgreich und deswegen wurde von Herrn Werner nun ebenfalls eine statische Code-Analyse für den Javascript Code eingefügt. Dazu wird ESLint verwendet. Beide Code-Analysen laufen automatisch bei jedem Pull Request durch.
-
+//gibt kein Issue
 *Psalm*
 Herr Kirchhoff konnte weitere von Psalm gemeldete Fehler beheben.
+//gibt kein Issue
 
 *Design*
 Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen. Das Ziel war eine optimierte Darstellung der Inhalte. Zuvor wurden diese zum Teil hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. Die Verbesserungen betroffen vor allem die Projektverwaltung. (#70)
@@ -364,9 +360,8 @@ Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen. Das Ziel 
 === Probleme
 //wollen wir das wirklich so stehen lassen? ist ja nächste auch nochmal. wenn es schon so ist, dann sollte man wenigstens einen grund angeben
 //justus war glaube krank / aleksandra vermutlich auch
-Frau Tartz hat sich diese Woche, nach der Qualitätsprüfung in der letzten Iteration, wieder nicht an dem Projekt beteiligt.
-Herr Tichonow und Herr Beck konnten in dieser Iteration leider nichts beitragen.
-Herr Keil ist immer noch verhindert und es ist unklar, ob dieser noch an dem Projekt mitarbeiten wird.
+
+In dieser Iteration ware Herr Tichonow verhindert und Herr Beck krank. Herr Keil ist immer noch krank und es ist unklar, ob dieser noch an dem Projekt mitarbeiten wird. Dies führte erneut zu einem gesunkenen Output.
 
 == Iteration 16 (24.05.2022 - 30.05.2022)
 ////
@@ -385,10 +380,14 @@ Fortgeführt:
 * Wechsel der Wochenansicht #66
 * Verbleibende Fehler von Psalm beheben #58
 ////
+=== Dokumentation
+
+Herr Kirchhoff hat die benötigten Lizenzen zusammengetragen (#84).
+
 === Implementation
 
 *UC 1*
-Die Status Schnittstelle wurde um einen Parameter für das Jahr erweitert. Nun ist es möglich auch auf Kalenderwochen, aus einem anderem Jahr, als dem aktuellen zuzugreifen. Dies wurde von Herrn Nguyen und Herrn Werner bearbeitet.
+Die Status Schnittstelle wurde um einen Parameter für das Jahr erweitert. Nun ist es möglich auch auf Kalenderwochen, aus einem anderem Jahr, als dem aktuellen zuzugreifen. Dies wurde von Herrn Nguyen und Herrn Werner bearbeitet (#66).
 
 Ebenfalls wurden die Primärschlüssel-Attribute der Datenbanktabelle Status so angepasst, dass kein Status mit dem gleichen Nutzer, Tag und Projekt erstellt werden kann. Dafür wird ein sogenannter 'Composite Primary Key' verwendet. Dies wurde von Herrn Nguyen bearbeitet.
 
@@ -396,7 +395,7 @@ Ebenfalls wurden die Primärschlüssel-Attribute der Datenbanktabelle Status so 
 Bei der Projekterstellung fehlte noch die Validierung der Nutzerdaten im Back-End, dies wurde von Herrn Beck und Herrn Werner ausgebessert.
 
 *Design*
-Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten.
+Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten (#70). 
 
 === Entscheidung
 Herr Keil konnte sich leider noch nicht an dem Projekt beteiligen. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
@@ -404,9 +403,7 @@ Herr Keil konnte sich leider noch nicht an dem Projekt beteiligen. Daher haben w
 Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. Wie extrem unsere Empfehlungen dafür ausfallen werden, sollte daran bemessen werden wie diese Teammitglieder in den restlichen Wochen sich am Projekt beteiligen werden.
 
 === Probleme
-//warum haben sie nichts gemacht? issues waren ja prinzipiell genug offen
-//vllt nicht nötig das hier stehen zu lassen
-Leider konnten Frau Tartz, Herr Tichonow und Herr Kirchhoff in dieser Iteration keinen Beitrag leisten.
+Einige Mitglieder haben trotz offener Issues keinen Beitrag geleistet.
 
 == Iteration 17 (31.05.2022 - 06.06.2022)
 ////
@@ -512,7 +509,6 @@ Fortgeführt:
 Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration hauptsächlich an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Die Aufteilung an den einzelnen Dokumenten bleibt wie letzte Iteration.
 
 Die Anwenderdokumentation sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realisiert werden, was einige Teile der Anwenderdokumentation verändern würde. Wir haben mit Herrn Liebert vereinbart, dass wir sie nicht zusammen mit der Anwendung übergeben müssen. Es reicht auch, wenn sie ihm bis spätestens 8. Juli geschickt wird. 
-//Die Anwenderdokumentation wird von von Frau Tartz bearbeitet.
 
 Einzelne Use Cases wurden um Kleinigkeiten verbessert.
 
@@ -577,16 +573,11 @@ Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projek
 
 == Erkenntisse nach der Durchführung
 
-Rückblickend kann gesagt werden, dass es vermutlich besser gewesen wäre, hätten wir bei den Teammeeting auch mit Webcams gearbeitet. Dies hätte den Meeting etwas mehr Personalität verliehen und es hätte bei Entscheidungen und Problemen eine bessere Reaktion auf das Angesprochene gegeben, da dies ein visuelles Feedback gewesen wäre. Eventuell wäre auch in größeren Abständen ein "Offlinetreffen" oder das Treffen um eine frühere Uhrzeit* von Vorteil gewesen. 
-
-//vllt wegmachen/ woanders
-*ist schwierig wegen Studium und Privatleben, da einen besseren Termin zu finden
+Rückblickend kann gesagt werden, dass es vermutlich besser gewesen wäre, hätten wir bei den Teammeeting auch mit Webcams gearbeitet. Dies hätte den Meeting etwas mehr Personalität verliehen und es hätte bei Entscheidungen und Problemen eine bessere Reaktion auf das Angesprochene gegeben, da dies ein visuelles Feedback gewesen wäre. Eventuell wäre auch in größeren Abständen ein "Offlinetreffen" von Vorteil gewesen. 
 
 Für fast jede Aufgabe wurde ein Issue erstellt und auch grundlegend verwaltet. Jedoch wäre es besser gewesen, wären diese immer in den Projekten bei GitHub verwaltet wurden. Dies wäre nicht nur für den Projektbericht von Vorteil gewesen, sondern auch bei der Aufgabenverwaltung wärend des Projektes.
 
-//keine ahnung ob das hier gut ist oder eher unnötig 
-//vllt sollte das auch eher in den fließtext eingearbeitet werden
-Unsere vergebenen Rollen wurden lediglich zum Teil eingehalten. Herr Kemter erfüllte seine Rolle als Teamleiter, ebenso wie Herr Beck und Herr Nguyen in der Implementation. Jedoch wurde die Rolle des Architekten nicht mehr benötigt. Daher hätte Herr Werner und Herr Kirchhoff ebenfalls die Rolle der Implementatio erhalten können, ebenso wie Herr Tichonow. Jener hat sich im Verlaufe des Projektes nicht mit den Tests beschäftigt bzw. sich darum gekümmert.  
+Ein weitere Erkenntnis ist, dass wir eine konsequentere Orientierung an der priorisierten Liste der Use-Cases hätten bei behalten müssen. Statt dessen sind wir davon, wie Eingangs beschrieben, teilweise abgewichen und haben uns stärker an einer für uns sinnvollen Nutzbarkeit orientiert. Eine andere Möglichkeit wäre die Rücksprache mit dem Themensteller über eine Abänderung der Priorisierung gewesen.
 
 ////
 Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?
