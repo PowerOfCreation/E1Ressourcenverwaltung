@@ -381,7 +381,6 @@ Fortgeführt:
 * Verbleibende Fehler von Psalm beheben #58
 ////
 === Dokumentation
-
 Herr Kirchhoff hat die benötigten Lizenzen zusammengetragen (#84).
 
 === Implementation
@@ -419,6 +418,9 @@ Fortgeführt:
 
 * Verbleibende Fehler von Psalm beheben #58
 ////
+=== Dokumentation
+Herr Kemter begann an dem Projektbericht zu arbeiten. Er fing an für die Plannung und und Durchführung Stichpunkte zu sammeln. Die Plannung führte er bis zum Ende der Iteration schon genauer aus.
+
 === Implementation
 
 *UC3 & UC4*
@@ -434,10 +436,6 @@ Die verbleibenden Psalm Fehler wurden von Herrn Kirchhoff behoben.
 
 *Sonstiges*
 Einige Formattierungsfehler und Fragmente von nicht korrekt gelösten Merge-Conflicts wurden von Herrn Werner bereinigt.
-
-=== Probleme
-
-Leider konnten Frau Tartz und Herr Tichonow in dieser Iteration keinen Beitrag leisten.
 
 == Iteration 18 (09.06.2022 - 13.06.2022)
 
@@ -462,13 +460,16 @@ Fortgeführt:
 * Projektverwaltung: Projekte löschen #94
 ////
 === Dokumentation
-Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellten Beispiele eine gute Grundlage. Schlussendlich entschied er sich für eine Nennung der neuen und fortgeführten Issues. Ob dies noch einmal geändert wird steht noch offen. Weiterhin wird er in einzelnen Abschnitten die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschreiben.
-
-Da bei vielen Mitgliedern die Lust auf das Projekt aus verschiedenen Gründen gesunken ist, hat Herr Kemter die Risikoliste um einen entsprechenden Eintrag erweitert. 
+Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es die "Schwierigkeit", welchen genauen Aufbau es geben soll. Hier stellten die von Herrn Professor bereitgestellten Beispiele eine gute Grundlage. In einzelnen Abschnitten werden die Implementation, Entscheidungen, Probleme und eventuelle weitere Themen beschrieben.
 
 Die Betriebsdokumentation wurde angefangen von Herrn Tichonow bearbeitet zu werden. Herr Kirchhoff hat mit der Testdokumentation basierend auf die bestehenden Tests angefangen. Die Entwicklerdokumentation wurde von Herrn Beck in Zusammenarbeit mit Herrn Kemter angefangen.
 
+Da bei vielen Mitgliedern die Lust auf das Projekt aus verschiedenen Gründen gesunken ist, hat Herr Kemter die Risikoliste um einen entsprechenden Eintrag erweitert. 
+//hier und allgemeint vllt nochmal drauf eingehen, dass man da machtlos war
+
 === Implementation
+
+Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt.
 
 *UC1* 
 Nachdem Herr Kemter bereits das Design deutlich verbessert hat und wir einige Tipps und Beispiele vom Themenersteller bekommen haben, setzte Herr Nguyen die Bearbeitung der Darstellung des Projektes fort. Zunächst wurden die Border der Tabelle durch einen gestreiften Hintergrund gewechselt und die Buttons, sowie die Farben denen der T-System MMS angeglichen. Außerdem wurde eine neue Schriftart verwendet. (#102)
@@ -486,7 +487,6 @@ Da noch nicht alle wichtigen Features, die durch Herrn Liebert gefordert wurden,
 
 Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind. Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Dieser Empfehlung folgten wir.
 
-Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt.
 //glaube hier kann man nochmal was wegkürzen.. quasi die revers'te entscheidung vom meeting
 === Iteration 19 (14.6.2022 - 20.06.2022)
 ////
@@ -511,6 +511,8 @@ Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration haupts
 Die Anwenderdokumentation sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realisiert werden, was einige Teile der Anwenderdokumentation verändern würde. Wir haben mit Herrn Liebert vereinbart, dass wir sie nicht zusammen mit der Anwendung übergeben müssen. Es reicht auch, wenn sie ihm bis spätestens 8. Juli geschickt wird. 
 
 Einzelne Use Cases wurden um Kleinigkeiten verbessert.
+
+Herr Kemter und Herr Beck verbesserten die bereits geschrieben Texte im Projektbericht. Herr Kemter verfasste außerdem neue Textpassagen.
 
 === Implementation
 Es wurden keine neuen Features mehr angefangen. Herr Nguyen und Herr Werner haben einige letzte Fehler behoben, sowie das löschen von Projekten abgeschlossen. Das automatische Erstellen von Dummy-Daten wurde entfernt und ein einzelner Standard-Nutzer eingerichtet. Die Logindaten dieses Nutzers wurden mit in die Betriebsdokumentation übernommen. Das Auswählen von Projekten in der Projektverwaltung funktioniert nun auch, wenn auf den Radiobutton neben einem Projekt geklickt wird. Vorher war es nur möglich auf den Projektnamen zu klicken.
@@ -557,8 +559,9 @@ Einige Mitglieder haben deutlich mehr gemacht als andere. Diese ungerechte Verte
 Die Test- und Betriebsdokumentation sind fast fertig und es wurden bloß noch Kleinigkeiten verbessert.
 Die Anwenderdokumentation sollte nach Feedback im Teammeeting ebenfalls noch um Kleinigkeiten verbessert werden, dazu zählten professionellere Pfeile auf den Bildern und eine etwas genauere Beschreibung der Vorgänge, damit keine Unklarheiten entstehen.
 
-Die Softwareübergabe fand am Mittwoch, dem 22. Juni über Discord statt. Dabei wurden Herrn Liebert alle umgesetzten Funktionalitäten der Software vorgeführt. Herr Liebert war recht zufrieden mit dem Endergebnis. Im Anschluss wurde ihm das Abnahmeprotokoll geschickt, welches noch am selben Tag unterschrieben zurückkam.
+Herr Beck und Herr Kemter erweiterten und verbesserten den Projektbericht weitherin. Da Beide sich nicht in der Lage fühlten die Implementation zu beschreiben übernahm Herr Werner diesen Teil.
 
+=== Vortrag
 Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentation anzufertigen, welche zusammen mit der Software am Montag, dem 27. Juni erfolgreich in der Vorlesung vorgeführt wurde.
 
 == Iteration 21 (28.06.2022 - 04.07.2022)
@@ -567,9 +570,21 @@ Es wurde geplant alles bis Ende Juni alles fertig zu haben. Jedoch wurde dies ni
 
 === Dokumentation
 
-Einige Dokumentationen haben noch Kleinigkeiten zum Verbessern und zum Hinzufügen. 
+Einige Dokumentationen haben noch Kleinigkeiten zum Verbessern und zum Hinzufügen, dazu gehört Beispielsweise die Softwaredokumentation in der Entwicklerdoku. 
 
-Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen um einige Sachverhalte nachzufragen. Diesen entsprechend wird weitergearbeitet.
+Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen um einige Sachverhalte nachzufragen. Diesen entsprechend wird weitergearbeitet. Frau Tartz bearbeitete das "Way of Working".
+
+=== Iteration 22 (29.06.2022)
+
+Wie bereits in Iteration 21 vermutet, ist die Abgabe nicht in Iteration 21 erfolgt. Sie wurde nun auf den Donnerstag den 07.07 festgelegt.
+
+=== Dokumentation 
+
+Die einzelnen Elemente, z.B. das Sequenzdiagramm, der Entwicklerdokumentation wurde von Herr Kirchhoff und Herr Tichonow zu einem Dokument zusammengefügt.
+
+Das Glossar wurde von Herr Werner auf den neusten Stand gebracht.
+
+Der Projektbericht wurde an weniger Stellen noch einmal verbessert, beispielsweise wurden Links zu GitHub gesetzt. Außerdem wurden alle Dokumente einer Rechtschreib und Grammatikkontrolle unterzogen.
 
 == Erkenntisse nach der Durchführung
 
