@@ -47,6 +47,8 @@ Zudem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe wa
 
 === Implementation
 
+Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Benutzers angezeigt werden. Zunächst wird hier nur der Name des Benutzers angezeigt. Weitere Werte müssen in der nächsten Iteration hinzugefügt werden. Diese wurde von Herrn Werner bearbeitet. (#39)
+
 *UC 2*
 Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Projekten der Nutzer zugeteilt werden kann. Um Projekten mehrere Nutzer zuzuweisen zu können und auch den Nutzern verschiedene Projekte zuzuweisen zu können, wurde eine neue Datenbanktabelle erstellt, die diese m:n Beziehung auflöst. Diese Aufgabe wurde Herrn Kirchhoff zugeteilt und konnte in dieser Iteration nicht beendet werden. (#38)
 
@@ -54,20 +56,13 @@ Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Pr
 Eine Aktualisierung betraf die Möglichkeit, bei der Registrierung, nun jedem Benutzer eine Abteilung zuzuordnen.
 Dazu wurde zunächst eine neue Datenbanktabelle Abteilung von Herrn Beck angelegt. (#34)
 
-Die Auswahl der Abteilung bei Registrierung eines neuen Nutzers wurde auf die nächste Iteration verschoben. (#35)
-
-Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Benutzers angezeigt werden. Zunächst wird hier nur der Name des Benutzers angezeigt. Weitere Werte müssen in der nächsten Iteration hinzugefügt werden. Diese wurde von Herrn Werner bearbeitet. (#39)
-//bild einfügen
-
 Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um eine valide E-Mail Adresse handelt. Diese Aufgabe wurde Herrn Tichonow zugeteilt. Dies konnte nur im Front-End fertiggestellt werden. Die Überprüfung im Back-End wird auf die nächste Iteration verschoben. (#33)
 
 Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Backend, konnte dieses Issue nicht in dieser Iteration beendet werden. (#36)
 
+Die Auswahl der Abteilung bei Registrierung eines neuen Nutzers wurde auf die nächste Iteration verschoben. (#35)
+//bild einfügen
 
-////
-=== Problem
-Zu diesem Zeitpunkt fehlten Herr Keil und Frau Tartz bei dem wöchentlichen Teammeeting unentschuldigt. Wir entschieden uns noch keine "Maßnahmen" zu treffen, da dies auch einfach eine normale Krankheit bzw. anderweitige terminliche Schwierigkeit sein konnte. Einige Aufgaben konnten nicht abgeschlossen werden.
-////
 === Entscheidungen
 Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
 
@@ -149,7 +144,7 @@ Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Da
 Wenn auf einen Wochentag geklickt wird, dann wird nun ein Dropdown-Menü angezeigt. In diesem werden nur die Projekte angezeigt, in welchen der Nutzer aus der jeweiligen Zeile ein Mitglied ist. Dies wurde von Herrn Werner implementiert. (#30)
 
 *UC 3*
-Eine Funktion zum Anzeigen des Passworts wurde von Herrn Tichonow implementiert (#36). Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (#33)
+Eine Funktion zum Anzeigen des Passworts wurde implementiert (#36). Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (#33)
 
 *UC 4*
 Die Projekterstellungsseite wurde nicht angefangen. Die Weiterleitung zu dieser von der Wochenansicht ist jedoch fertig. Dies wurde von Herrn Beck bearbeitet. (#32)
@@ -198,7 +193,7 @@ Eine neue Schnittstelle ermöglicht es alle Projekte zu erhalten, in welchem ein
 //gibt kein Issue
 
 *UC 3*
-Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. Herr Tichonow hat Verbesserung an der bestehenden Front-End Überprüfung vorgenommen, indem neue required Attribute und Placeholder eingefügt wurden. (#33 & #36)
+Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. Es wurden Verbesserung an der bestehenden Front-End Überprüfung vorgenommen, indem neue required Attribute und Placeholder eingefügt wurden (#33 & #36). 
 
 *UC 4*
 Da die Benutzerverwaltung(UC 3) schon sehr weit fortgeschritten ist, konzentrieren wir uns nun verstärkt auf die Projektverwaltung. Jedes Projekt soll einen Namen, einen Projektverantwortlichen, ein Enddatum (welches zur Orientierung dienen soll), eine Beschreibung und einen Farbcode beinhalten, welcher später in der Kalenderansicht sichtbar sein kann.
