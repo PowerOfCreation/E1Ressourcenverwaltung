@@ -149,10 +149,6 @@ Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container
 .C4-Model: Components
 image::c4 3 schicht feiertage.png[c4_3] 
 
-=== Code
-
-
-
 
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.

@@ -3,28 +3,28 @@ Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Just
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 
-== Systemarchitektur
 
-=== Logisch
+== Verwendete Bibliotheken
 
-=== Physisch
-
-== Verwendete Frameworks
-
--- jQuery (Ver. 3.6.0)
+In unserer Anwendung verwenden wir die jQuery-Bibliothek der aktuellen Version (3.6.0)
 
 == Datenbankschema
 
+[#img-ERM] 
+.Datenbankschema
 image::ERM.PNG[]
 
 
 == Schnittstellen
 
-image::c4 3 schicht.drawio.png[]  
-
+Unsere Anwendung besteht aus verschieden API-Schnittstellen, die in der dritten Ebene des C4-Modells beschrieben sind.
 
 == Sequenzdiagramm
 
+Die Zusammenarbeit zwischen den Komponenten wird im unten stehenden Sequenzdiagramm am Bespiel der Benutzerlöschung beschrieben.
+
+[#img-sequenz_delete_employee] 
+.Sequenzdiagramm Benutzerlöschung
 image::sequenz_delete_employee.png[]  
 
 
