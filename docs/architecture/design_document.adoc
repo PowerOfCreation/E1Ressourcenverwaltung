@@ -10,6 +10,12 @@ In unserer Anwendung verwenden wir die jQuery-Bibliothek der aktuellen Version (
 
 == Datenbankschema
 
+Im folgenden Schema sind alle Klassen und Abhängigkeiten der Datenbank aufgeführt.
+
+- Jeder Benutzer ist genau einer Abteilung zugewiesen
+
+- Einem Benutzer kann ein Projekt im Kalender erst dann eingetragen werden, wenn er diesem Projekt auch zugewiesen wurde. 
+
 [#img-ERM] 
 .Datenbankschema
 image::ERM.PNG[]
@@ -17,11 +23,13 @@ image::ERM.PNG[]
 
 == Schnittstellen
 
-Unsere Anwendung besteht aus verschieden API-Schnittstellen, die in der dritten Ebene des C4-Modells beschrieben sind.
+Unsere Anwendung besteht aus verschieden API-Schnittstellen, die in der dritten Ebene des C4-Modells beschrieben sind. 
 
 == Sequenzdiagramm
 
-Die Zusammenarbeit zwischen den Komponenten wird im unten stehenden Sequenzdiagramm am Bespiel der Benutzerlöschung beschrieben.
+Die Zusammenarbeit zwischen den Komponenten wird im unten stehenden Sequenzdiagramm am Beispiel der Benutzerlöschung beschrieben. 
+
+Wenn die API für Benutzerlöschung aufgerufen wird, wird der Benutzer aus der Datenbank gelöscht. Sein Status, Projekte, an welchen er arbeitete, werden ebenfalls gelöscht. Falls er der verantwortliche für ein Projekt war, wird er als Projektverantwortlicher ebenfalls entfernt. Abschließend wird der Benutzer aus der Mitarbeiterliste gelöscht.
 
 [#img-sequenz_delete_employee] 
 .Sequenzdiagramm Benutzerlöschung

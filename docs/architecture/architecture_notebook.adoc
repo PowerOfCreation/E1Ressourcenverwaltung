@@ -160,12 +160,7 @@ image::c4 2 sicht.drawio.png[c4_2]
 
 === Komponenten-Diagramm
 
-Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container bestehen. Im folgenden Diagramm sind alle API-Komponenten aufgeführt
-
-
-Außerdem wird in diesem Diagramm die Beziehung zwischen einzelnen Komponenten aufgeführt.
-
-Im Diagramm sind alle API 
+Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container bestehen. Im folgenden Diagramm sind alle API aufgeführt, deren Beziehungen, wie die miteinander kommunizieren und wie sie mit der Datenbank interagieren.
 
 [#img-c4_3] 
 .C4-Model: Components
