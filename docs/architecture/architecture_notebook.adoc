@@ -129,6 +129,13 @@ Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglic
 === Kontext-Diagramm
 
 Die erste Ebene des C4-Modells beschreibt den Umfang des Softwaresystems sowie seine Beziehung zum Benutzer und einem anderen Softwaresystem - Feiertags-API.
+
+- Benutzer interagiert mti dem Softwaresystem "Ressourcernverwaltung"
+
+- Benutzer kann Mitarbeiter an einzelnen Tagen den Projekten und Aktivitäten zuweisen
+
+- Das Softwaresystem ruft Feiertags-API auf, die die Informationen zu bundesweiten und bundesländerspezifischen Feiertagen liefert.
+
 [#img-c4_1] 
 .C4-Model: Context
 image::c4 1 sicht.drawio.png[c4_1] 
@@ -137,13 +144,28 @@ image::c4 1 sicht.drawio.png[c4_1]
 
 Die zweite Ebene des C4-Modells beschreibt miteinander verbundene Container, die eine Gesamtheit des Systems bilden.
 
+Das Softwaresystem ist in drei Container aufgeteilt:
+
+. JavaScript
+
+. PHP
+
+. MariaDB
+
+Webbrowser stellt API-Abfragen an das Backend. Das Backend schreibt/liest Daten in/aus der Datenbank
+
 [#img-c4_2] 
 .C4-Model: Containers
 image::c4 2 sicht.drawio.png[c4_2] 
 
 === Komponenten-Diagramm
 
-Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container bestehen. Außerdem wird in diesem Diagramm die Beziehung zwischen einzelnen Komponenten aufgeführt.
+Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container bestehen. Im folgenden Diagramm sind alle API-Komponenten aufgeführt
+
+
+Außerdem wird in diesem Diagramm die Beziehung zwischen einzelnen Komponenten aufgeführt.
+
+Im Diagramm sind alle API 
 
 [#img-c4_3] 
 .C4-Model: Components
@@ -160,6 +182,6 @@ Wenn das Projekt abgeschlossen ist, soll es jedoch auf einem von T-Systems Multi
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten.
 
-[#img-c4_3] 
+[#img-Ressourcenplanung] 
 .Use Cases
 image::Ressourcenplanung.jpg[UC]
