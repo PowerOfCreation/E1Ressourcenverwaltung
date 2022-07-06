@@ -124,11 +124,35 @@ Wir verwenden drei Sichten, um die Architektur zu beschreiben:
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
-Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglicht es uns die verschiedene Elemente und ihre Beziehungen darzustellen, damit kann die Architektur unseres Programmes in verschieden Detailgraden dargestellt werden. 
+Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglicht es uns die verschiedenen Elemente und ihre Beziehungen darzustellen, damit kann die Architektur unseres Programmes in verschieden Detailgraden dargestellt werden. 
 
-Im Moment existieren nur 2 Ebenen, da die eine dritte schon die noch nicht Fertige und sich ändernde Implementierung illustrieren würde.
+=== Kontext-Diagramm
 
-image::c4.drawio.png[] 
+Die erste Ebene des C4-Modells beschreibt den Umfang des Softwaresystems sowie seine Beziehung zum Benutzer und einem anderen Softwaresystem - Feiertags-API.
+[#img-c4_1] 
+.C4-Model: Context
+image::c4 1 sicht.drawio.png[c4_1] 
+
+=== Container-Diagramme
+
+Die zweite Ebene des C4-Modells beschreibt miteinander verbundene Container, die eine Gesamtheit des Systems bilden.
+
+[#img-c4_2] 
+.C4-Model: Containers
+image::c4 2 sicht.drawio.png[c4_2] 
+
+=== Komponenten-Diagramm
+
+Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container bestehen. Außerdem wird in diesem Diagramm die Beziehung zwischen einzelnen Komponenten aufgeführt.
+
+[#img-c4_3] 
+.C4-Model: Components
+image::c4 3 schicht feiertage.png[c4_3] 
+
+=== Code
+
+
+
 
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
@@ -140,4 +164,6 @@ Wenn das Projekt abgeschlossen ist, soll es jedoch auf einem von T-Systems Multi
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten.
 
-image::Ressourcenplanung.jpg[]
+[#img-c4_3] 
+.Use Cases
+image::Ressourcenplanung.jpg[UC]
