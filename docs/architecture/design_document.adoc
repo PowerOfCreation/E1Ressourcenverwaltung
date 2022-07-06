@@ -1,0 +1,41 @@
+= Design Document: {project-name}
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; Vinh Nguyen <s77261@htw-dresden.de>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+
+== Systemarchitektur
+
+=== Logisch
+
+=== Physisch
+
+== Verwendete Frameworks
+
+-- jQuery (Ver. 3.6.0)
+
+== Datenbankschema
+
+image::ERM.PNG[]
+
+
+== Schnittstellen
+
+image::c4 3 schicht.drawio.png[]  
+
+
+== Sequenzdiagramm
+
+image::sequenz_delete_employee.png[]  
+
+
+== Softwaredokumentation
+
+Die Software-Dokumentationswerkzeuge sind meist abhängig von der Programmiersprache. Für unsere Anwendung haben wir JavaScript und PHP benutzt, deshalb mussten wir für die Erzeugung der Dokumentation für JavaScript JSDoc und für PHP Doxygen verwenden.
+
+xref:../software_documentation/doxygen_doc/html/index.html[PHP Softwaredokumentation]
+
+xref:../software_documentation/jsdoc/index.html[JavaScript Softwaredokumentation]
+
+
+Die beiden Dokumentationen sind auf der Startseite miteinander verlinkt.
+
