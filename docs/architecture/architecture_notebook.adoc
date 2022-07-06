@@ -130,7 +130,7 @@ Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglic
 
 Die erste Ebene des C4-Modells beschreibt den Umfang des Softwaresystems sowie seine Beziehung zum Benutzer und einem anderen Softwaresystem - Feiertags-API.
 
-- Benutzer interagiert mti dem Softwaresystem "Ressourcernverwaltung"
+- Benutzer interagiert mit dem Softwaresystem "Ressourcenverwaltung"
 
 - Benutzer kann Mitarbeiter an einzelnen Tagen den Projekten und Aktivitäten zuweisen
 
