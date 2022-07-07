@@ -1,0 +1,14 @@
+Das Projekt E1 Ressourcenverwaltung hat für uns alle im Wintersemester 21/22 begonnen.
+
+Den Anfang der Gruppenarbeit empfand ich als holprig, da sich jedes Teammitglied in seine Rolle einfinden musste. Nach anfänglichen 2-Stunden Meetings, wurden diese kürzer und wir als Gruppe effizienter. +
+Die Aufgaben wurden klar verteilt und wir konnten loslegen. In wöchentlichen Meetings wurden Fortschritte und Probleme besprochen. Durch das erhaltene Feedback der anderen Teammitglieder konnten kleine Fehler verbessert werden und wir waren alle motiviert voranzukommen.
+
+Mir wurde die Aufgabe des Entwurfs zugeteilt. Mit Hilfe der Webanwendung Draw.io habe ich die ersten Skizzen erstellt und anschließend gepflegt. Ebenfalls habe ich unsere Projektleiterin bei der Organisation und anderen kleinen Aufgaben unterstützt. +
+Im ersten Semester sind wir als Team sehr gut vorangekommen, die wöchentlichen Meetings waren meiner Meinung nach, sehr nützlich. Die Meetings mit dem Kunden wurden protokolliert und anschließend besprochen. Agile Projektentwicklung sowie die Arbeit mit GitHub waren neu für mich, ich konnte mich allerdings schnell in die Thematik einarbeiten. Die Praktika in Präsenz waren sehr hilfreich, da man sich vor Ort Feedback holen und neue Techniken erlernen und anwenden konnte.
+
+Im Sommersemester 2022 war der Abgang zwei unserer Teammitglieder sehr spürbar. Zum einen, weil ein Teammitglied krankheitsbedingt keine Aufgaben erledigen konnte, und ein anderes Teammitglied sich in eine neue Rolle einarbeiten musste. +
+Die Kommunikation gestaltete sich mit dem voranschreitenden Semester schwieriger. Hier gab es mehr Missverständnisse. Ebenfalls schade finde ich die, meiner Meinung nach, mangelnde Begeisterung vom Kunden für unser Projekt. Hier gab es wenig Kritik oder sinnvolles Feedback. +
+In diesem Semester habe ich hauptsächlich die Aufgabe der Dokumentation und Testens übernommen. Ebenfalls habe ich den neuen Teamleiter bei kleineren Aufgaben unterstützt.
+
+Die agile Arbeitsweise hat mir viel Spaß gemacht. Ebenfalls vorteilhaft empfinde ich die „Realitätsnähe“, die notwendigen regelmäßigen Meetings, sowie den Kontakt zu einem „realen“ Kunden. +
+Ich konnte dieses Semester einige neue Fachkenntnisse erlangen und viel neues über Sozialkompetenzen lernen. Die Erfahrung wird mir in weiteren Projekten sicherlich nützlich sein.
