@@ -1,7 +1,7 @@
 Der Start in das Projekt war, gelinde gesagt, aufregend. Auch wenn ich bereits jemanden aus der Gruppe kannte und auch um seine Kenntnisse bezüglich Softwareprojekte wusste, war das alles ziemlich unbekannt und groß für mich. Ich wusste nicht, welche Rolle(n) ich übernehmen wollen würde. Außerdem hatte ich den Anspruch an mich selbst, so viel wie möglich zu lernen und das geht am besten, wenn ich mich so viel wie möglich beteilige – so meine Prämisse.
 
 
-Es folgte eine Findungsphase in der wir uns als Team zusammen in das Thema einarbeiteten und versuchten ein Gefühl dafür zu bekommen wie alles funktioniert und wo die Reise hingehen soll. Den ersten Teil des Projektes (SE I) würde ich daher wie folgt zusammenfassen:
+Es folgte eine Findungsphase in der wir uns als Team zusammen in das Thema einarbeiteten und versuchten ein Gefühl dafür zu bekommen, wie alles funktioniert und wo die Reise hingehen soll. Den ersten Teil des Projektes (SE I) würde ich daher wie folgt zusammenfassen:
 Das Team traf sich wöchentlich zu Meetings, um über Fortschritt, Probleme und neue Aufgaben zu diskutieren. Die Beteiligung aller Teammitglieder war stets konstruktiv und meist auch sehr aktiv. Das Einzige, was ich hier "bemängeln" würde, wäre die Länge der Meetings. Diese dauerten grundsätzlich eine Stunde und manchmal auch zwei. Dies ist mit Sicherheit der Tatsache geschuldet, dass es unser erstes Gruppenprojekt war.
 
 
