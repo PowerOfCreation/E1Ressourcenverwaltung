@@ -108,7 +108,7 @@ Die Auswahl der Abteilung während der Nutzererstellung wurde von Herrn Beck bee
 
 Die Passwortkriterien, sowie die Überprüfung der E-Mail Adresse, werden weiterhin von Herrn Tichonow bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36])
 
-== Problem
+=== Problem
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 
 == Iteration 11 (05.04.2022 - 11.04.2022)
@@ -273,7 +273,7 @@ Aufgrund des beschriebenen Problems mit dem Formatierungstool wurde beschlossen,
 
 Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern eher zu einer weiteren Verschlechterung bzw. Stagnation der Produktivität. Da bei wöchentlichen Iterationen mehr Vorteile ersichtlich waren, wurden die folgenden Interationen wieder auf eine Woche verkürzt.
 
-=== Iteration 14 (10.05.2022 - 16.05.2022)
+== Iteration 14 (10.05.2022 - 16.05.2022)
 ////
 
 Unsere Ziele für I14 waren:
@@ -471,7 +471,10 @@ Da bei vielen Mitgliedern die Lust auf das Projekt aus verschiedenen Gründen ge
 === Implementation
 
 Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/102[#102])
-//bild?
+
+image::images/Vergleich_Nick_und_Vinh.png[] 
+
+Hier ist ein Vergleich zwischen Herrn Nguyens (links) und Herrn Kemters (rechts) Design. Der neue Stil wurde auch für die anderen Seiten übernommen.
 
 *UC1* 
 Nachdem Herr Kemter bereits das Design deutlich verbessert hat und wir einige Tipps und Beispiele vom Themenersteller bekommen haben, setzte Herr Nguyen die Bearbeitung der Darstellung des Projektes fort. Zunächst wurden die Border der Tabelle durch einen gestreiften Hintergrund gewechselt und die Buttons, sowie die Farben denen der T-System MMS angeglichen. Außerdem wurde eine neue Schriftart verwendet (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/102[#102]).
@@ -486,7 +489,7 @@ Da noch nicht alle wichtigen Features, die durch Herrn Liebert gefordert wurden,
 
 Herr Kemter hat sich wegen des Projektberichts nochmal mit Herrn Zirkelbach unterhalten. Dabei kam auch unsere Entscheidung zu sprechen und das zumindest einige Teammitglieder mit dem Endergebnis und der Arbeitsweise unzufrieden sind. Herr Zirkelbach empfiehl Herr Kemter, dass die Programmieraufgaben bloß noch von Herrn Werner und Herrn Nguyen erfüllt werden und die anderen Personen bloß Dokumentieren sollen. Dieser Empfehlung folgten wir.
 
-=== Iteration 19 (14.6.2022 - 20.06.2022)
+== Iteration 19 (14.6.2022 - 20.06.2022)
 ////
 Unsere Ziele für I19 waren: 
 
@@ -559,7 +562,7 @@ Einige Dokumentationen haben noch Kleinigkeiten zum Verbessern und zum Hinzufüg
 
 Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen, um einige Sachverhalte nachzufragen. Diesen entsprechend wird weitergearbeitet. Frau Tartz bearbeitete das "Way of Working". (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
 
-=== Iteration 22 (29.06.2022)
+== Iteration 22 (29.06.2022)
 
 Wie bereits in Iteration 21 vermutet, ist die Abgabe nicht in Iteration 21 erfolgt. Sie wurde nun auf den Donnerstag den 07.07 festgelegt. Dazu wurden alle Aufgaben bis dahin erledigt und es wird am Abend abgegeben.
 
