@@ -2,13 +2,13 @@
 
 == Ausgangssituation in Software Engineering II
 
-===  Auftraggeber und Aufgabenstellung
+=== Aufgabenstellung und Auftraggeber 
 
-Im Rahmen des Moduls "Software Engineering II" haben wir die Aufgabe erhalten eine Ressourcenverwaltung in Kalenderform für T-Systems MMS zu entwickeln. Unser Ansprechpartner in der Firma war Herr Sven Liebert und in der HTW Dresden waren es Herr Zirkelbach als Coach und Herr Prof. Anke als Dozent.
+Im Rahmen des Moduls "Software Engineering II" haben wir die Aufgabe erhalten, eine Ressourcenverwaltung in Kalenderform für T-Systems MMS zu entwickeln. Unser Ansprechpartner in der Firma war Herr Sven Liebert und in der HTW Dresden waren es Herr Zirkelbach als Coach und Herr Prof. Anke als Dozent.
 
 Die Anwendung stellt in einer Kalenderansicht dar, woran der Benutzer an diesem Tag aktuell arbeitet bzw. gearbeitet hat.
 Dafür können Projekte und Benutzer erstellt werden. Jeder Benutzer soll Projekte und andere Benutzer erstellen, bearbeiten und löschen können. Die Benutzer können ebenfalls zu Abteilungen zugeordnet werden. 
-Es gibt keine unterschiedlichen Berechtigungen. Jeder darf jede Funktion ausführen. 
+Es gibt keine unterschiedlichen Berechtigungen. Jeder Benutzer darf und soll jede Funktion ausführen können. 
 
 Feiertage und Betriebsferien sollen ebenfalls dargestellt werden. Für die Feiertage wird eine spezielle API verwendet. Die Betriebsferien bzw. Bundesland abhängige Feiertage sollen "per Hand" erstellt werden können.
 
@@ -55,6 +55,7 @@ In der zweiten Hälfte des Semesters haben wir Pull-Requests bei GitHub eingeset
 Im Vergleich zum vorherigen Semester wurde mit dem Themensteller über Discord via Discordprivatnachrichten kommuniziert und nicht zusätzlich über E-Mail. Die Meetings fanden über den Discordserver im Sprachchat statt, wo häufig auch die Bildschirme übertragen wurden.
 
 ===  Dokumentation und eingesetzte Tools 
+
 Unsere Dokumentation und Code wurde persistent auf GitHub gespeichert. 
 
 Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Diagramme wurden mit Draw.io und VisualParadigm erstellt und zusätzlich PNG gesichert. 
