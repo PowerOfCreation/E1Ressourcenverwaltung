@@ -87,7 +87,8 @@
 
 == Testergebnisse
 
-* Durch die Code-Analyse mit Psalm und ESLint wurden sämtliche ungenaue oder falsche Variablen entfernt und sichergestellt, dass diese in Zukunft vermieden werden
-* Außerdem konnte einige Teile an redundanten Code entdeckt werden
-* Durch das regelmäßige durchführen der Integrationstests konnten, unter anderem nach Änderungen, unerwartete Fehler gefunden werden, die eine bereits bestehende Funktionalität wieder entfernten (Mitarbeiter hinzufügen)
+* Mit der Code-Analyse durch Psalm und ESLint konnten wir alle syntaktischen Fehler vermeiden
+* Die Unittests laufen fehlerfrei, was bestätigt, dass unsere Hauptfunktionalitäten erfüllt sind
+* Durch das regelmäßige Durchführen der Integrationstests konnten, unter anderem nach Änderungen, unerwartete Fehler gefunden werden, die eine bereits bestehende Funktionalität wieder entfernten (Mitarbeiter hinzufügen)
 * Die Fehler wurden entweder direkt behoben, oder zur nächsten Iteration als Issue erstellt
+* Die bestandenen Integrationstests bedeuten, dass aus Sicht des Nutzers, alle Funktionalitäten gegeben sind, was durch das erfolgreiche Abnahmegespräch bestätigt wurde
