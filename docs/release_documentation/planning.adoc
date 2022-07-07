@@ -2,7 +2,6 @@
 
 == Ausgangssituation in Software Engineering II
 
-
 === Aufgabenstellung und Auftraggeber 
 
 Im Rahmen des Moduls "Software Engineering II" haben wir die Aufgabe erhalten, eine Ressourcenverwaltung in Kalenderform für T-Systems MMS zu entwickeln. Unser Ansprechpartner in der Firma war Herr Sven Liebert und in der HTW Dresden waren es Herr Zirkelbach als Coach und Herr Prof. Anke als Dozent.

@@ -6,7 +6,7 @@
 
 Die Implementationsaufgaben (Issues) wurden hauptsächlich von Herrn Werner erstellt. Wohl wissend, dass es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch brachte Herr Werner, durch seine Ausbildung zum Fachinformatiker, genügend Vorwissen mit, um dieser Aufgabe gewachsen zu sein.
 
-Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktualisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. Deswegen entspricht die Realisierungsreihenfolge nicht immer der Priorisierung der Use-Cases. So bringt es in der Praxis nichts, dass die Status in eine andere Woche kopiert werden können (UC 1), wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). So können keine Status angelegt werden, wenn es keine Benutzer (UC 3) oder Projekte (UC 4) gibt. 
+Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktualisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. Deswegen entspricht die Realisierungsreihenfolge nicht immer der Priorisierung der Use-Cases. So bringt es in der Praxis nichts, dass die Status in eine andere Woche kopiert werden können (UC 1), wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). Ebenso können keine Status angelegt werden, wenn es keine Benutzer (UC 3) oder Projekte (UC 4) gibt. 
 
 Viele solche praktischen Abhängigkeiten gibt es, was uns ein klares Abarbeiten der Use-Cases erschwert hat. Wenn wir uns strikt an die Priorisierung halten würden, würden die Benutzer Funktionen ausführen können, die ihnen am Ende nicht viel bringen würden. 
 
@@ -32,7 +32,6 @@ Unsere Ziele für I09 waren:
 
 ////
 === Dokumentation
-
 Wie bereits geschrieben, hat Herr Professor Anke unseren abgegebenen Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich berichtigt werden. 
 Viele der Fehler waren nur Kleinigkeiten und diese konnten schnell behoben werden.
 
@@ -42,14 +41,14 @@ Zudem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe wa
 
 === Implementation
 
-Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Benutzers angezeigt werden. Zunächst wird hier nur der Name des Benutzers angezeigt. Weitere Werte müssen in der nächsten Iteration hinzugefügt werden. Diese wurde von Herrn Werner bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/39[#39])
+Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Benutzers angezeigt werden. Zunächst wird hier nur der Name des Benutzers angezeigt. Weitere Werte müssen in der nächsten Iteration hinzugefügt werden.  (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/39[#39])
 
 *UC 2*
 Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Projekten der Nutzer zugeteilt werden kann. Um Projekten mehrere Nutzer, aber auch Nutzern verschiedene Projekte zuweisen zu können, wurde eine neue Datenbanktabelle erstellt, die diese m:n Beziehung auflöst. Diese Aufgabe wurde Herrn Kirchhoff zugeteilt und konnte in dieser Iteration nicht beendet werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/38[#38])
 
 *UC 3*
 Eine Aktualisierung betraf die Möglichkeit, bei der Registrierung, nun jedem Benutzer eine Abteilung zuzuordnen.
-Dazu wurde zunächst eine neue Datenbanktabelle Abteilung von Herrn Beck angelegt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/34[#34])
+Dazu wurde zunächst eine neue Datenbanktabelle Abteilung von Herrn Beck angelegt, womit die dies fertiggestellt wurden ist. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/34[#34])
 
 Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um eine valide E-Mail-Adresse handelt. Diese Aufgabe wurde Herrn Tichonow zugeteilt. Dies konnte nur im Front-End fertiggestellt werden. Die Überprüfung im Back-End wird auf die nächste Iteration verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33])
 
@@ -91,6 +90,11 @@ Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angef
 
 === Implementation
 
+*UC 1*
+Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Diese Aufgabe wurde Herrn Keil zugeteilt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/28[#28])
+
+Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leichter überprüft und das spätere Arbeiten dadurch angenehmer gestaltet werden kann. Jedoch wurde dies nicht begonnen und wird daher in der nächsten Iteration angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
+
 *UC 3*
 Die Nutzerübersichtsseite wurde von Herrn Werner um die Anzeige der Abteilung des Nutzers erweitert und das Issue somit abgeschlossen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/39[#39])
 
@@ -103,10 +107,6 @@ Die Datenbanktabelle um Projektmitgliedschaften darzustellen wurde von Herrn Kir
 Die Auswahl der Abteilung während der Nutzererstellung wurde von Herrn Beck beendet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/35[#35])
 
 Die Passwortkriterien, sowie die Überprüfung der E-Mail Adresse, werden weiterhin von Herrn Tichonow bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36])
-
-Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leichter überprüft und das spätere Arbeiten dadurch angenehmer gestaltet werden kann. Jedoch wurde dies nicht begonnen und wird daher in der nächsten Iteration angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
-
-Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Diese Aufgabe wurde Herrn Keil zugeteilt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/28[#28])
 
 == Problem
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
@@ -137,24 +137,26 @@ Die restlichen Fehler bzw. Ungenauigkeiten des Belegs konnten behoben werden. Da
 
 === Implementation
 
+Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
+
 *UC 2*
 Wenn auf einen Wochentag geklickt wird, dann wird nun ein Dropdown-Menü angezeigt. In diesem werden nur die Projekte angezeigt, in welchen der Nutzer aus der jeweiligen Zeile ein Mitglied ist. Dies wurde von Herrn Werner implementiert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/30[#30])
 
 *UC 3*
-Eine Funktion zum Anzeigen des Passworts wurde implementiert (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36]). Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33])
+Eine Funktion zum Anzeigen des Passworts wurde implementiert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36]) 
+
+Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiterhin. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33])
 
 *UC 4*
 Die Projekterstellungsseite wurde nicht angefangen. Die Weiterleitung zu dieser von der Wochenansicht ist jedoch fertig. Dies wurde von Herrn Beck bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/32[#32])
 
-Die Dummy Daten für die Projekte wurden immer noch nicht angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
-
 === Problem 
-//wir sollen/müssen nicht immer auf jonas/ aleksandra eingehe. deswegen wird das jetzt in den iterationen bloß noch durch nicht efüllte aufgaben angedeutet. daher wäre es hier evtl noch nötig den ersten satz etwas anzupassen
-Es zeichnete sich ab, dass neben dem Fernbleiben von Herrn Keil und Frau Tartz auch einige andere Teammitglieder eine nur geringe Beteiligung vorweisen können. Daher drohte eine fallende Moral der anderen Mitgliedern. Dieser Umstand wurde im Teammeeting thematisiert und um Besserung gebeten. Aber aufgrund fehlender Dringlichkeit haben wir von weiteren Maßnahmen abgesehen. 
+Es zeichnete sich ab, dass neben dem Fernbleiben von zwei Mitgliedern auch einige andere Teammitglieder eine nur geringe Beteiligung an den Aufgaben vorweisen werden. Daher drohte eine fallende Moral der anderen Mitgliedern. Dieser Umstand wurde im Teammeeting thematisiert und eine Besserung gefordert. Aber aufgrund fehlender Dringlichkeit haben wir vorerst von weiteren Maßnahmen abgesehen. 
 
 
 == Iteration 12 (12.04.2022 - 25.04.2022)
-Überraschenderweise haben wir ein neues Teammitglied zugewiesen bekommen, welches wir in Iteration 9 angefragt hatten. Herr Nguyen hat bereits Erfahrung in der Front-End und Back-End Entwicklung. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat dementsprechend an Fahrt aufgenommen.
+
+Überraschenderweise haben wir ein neues Teammitglied zugewiesen bekommen, welches wir in Iteration 9 angefragt hatten. Herr Nguyen hat bereits Erfahrung in der Front-End und Back-End Entwicklung. Mit seinem Wissen konnte er bei der Implementierung sofort mithelfen und Herrn Werner entlasten, der bisher viel aushelfen musste bei den vergebenen Aufgaben zur Implementation. Die Teammoral wurde dadurch erheblich verbessert und die Entwicklung hat Dank Herr Nguyen entsprechend an Fahrt aufgenommen.
 
 ////
 Neue Ziele: 
@@ -175,7 +177,6 @@ Fortgeführt:
 
 ////
 === Dokumentation
-
 Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
 
 Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert. 
@@ -183,11 +184,11 @@ Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert.
 === Implementation
 
 *UC 1*
-Eine neue Schnittstelle wurde eingefügt, welche die aktuelle Kalenderwoche mit den Daten aller Wochentage ausgibt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/43[#43])
-Dies ist zentral, um dem Nutzer mehr als die aktuelle Woche anzeigen zu können. Dies ist auch notwendig, um einen Nutzerstatus in einer beliebigen Kalenderwoche hinzufügen zu können. Dies wurde von Herrn Nguyen bearbeitet.
+Eine neue Schnittstelle wurde eingefügt, welche die aktuelle Kalenderwoche mit den Daten aller Wochentage ausgibt. 
+Dies ist zentral, um dem Nutzer mehr als die aktuelle Woche anzeigen zu können. Dies ist auch notwendig, um einen Nutzerstatus in einer beliebigen Kalenderwoche hinzufügen zu können. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/43[#43])
 
 *UC 2*
-Eine neue Schnittstelle ermöglicht es, alle Projekte zu erhalten, in welchem ein Nutzer ist. Dies ist notwendig, um dem Nutzer nur einen Status bzw. Arbeitsauftrag für Projekte zu vergeben, an welchen dieser auch teilnimmt. Dies wurde von Herrn Werner bearbeitet.
+Eine neue Schnittstelle ermöglicht es, alle Projekte zu erhalten, in welchem ein Nutzer ist. Dies ist notwendig, um dem Nutzer nur einen Status bzw. Arbeitsauftrag für Projekte zu vergeben, an welchen dieser auch teilnimmt. Dies wurde von Herrn Werner erledigt.
 //gibt kein Issue
 
 *UC 3*
@@ -199,7 +200,7 @@ Da die Benutzerverwaltung(UC 3) schon sehr weit fortgeschritten ist, konzentrier
 
 Zunächst hat Herr Beck dafür eine neue Unterseite implementiert, in der neue Projekte angelegt werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/32[#32]) Das Verwalten aller bestehenden Projekte soll in der nächsten Iteration angefangen werden. Ebenso soll es möglich sein, jedem Projekt beliebig viele Benutzer zuzuweisen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/45[#45])
 
-Die Dummy-Daten, welche von Herrn Kirchhoff erstellt werden sollten, wurden nicht eingefügt und das Issue wird in die nächste Woche verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
+Die Dummy-Daten, welche erstellt werden sollten, wurden nicht eingefügt und das Issue wird in die nächste Woche verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
 
 === Entscheidung 
 Um die Produktivität einzelner Teammitglieder zu erhöhen, wurde die Iterationszeit auf 2 Wochen erhöht. Dadurch werden die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhoffen dadurch, dass so mehr Zeit für das Bearbeiten der Aufgaben übrig bleibt.
@@ -207,14 +208,14 @@ Diese Entscheidung wurde getroffen, bevor Herr Nguyen unser Team verstärkt hat.
 
 Es wurde noch einmal betont, dass bei Programmier-Problemen jederzeit Herr Nguyen oder Herr Werner um Rat gefragt werden kann und Probleme nicht erst am Ende einer Iteration aufgeworfen werden sollen.
 
-Herr Keil's Aufgabe wurde nicht neu vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
+Herr Keil's Aufgabe aus Iteration 10 wurde nicht neu vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
 
-Außerdem haben wir uns mit Herrn Zirkelbach getroffen und ein paar Kleinigkeiten erfragt (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung gezeigt. 
+Außerdem haben wir uns mit Herrn Zirkelbach getroffen und ein paar Kleinigkeiten erfragt (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung gezeigt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/31[#31])
 
 === Problem 
 Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 
-Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw. das Einfügen von Dummy-Daten in die Datenbank bereits seit mehreren Iterationen erfolglos von Herrn Tichonow und Herrn Kirchhoff bearbeitet wird. Verschiedene Hilfestellungen in Form von Websites, Tutorials oder das Angebot, jederzeit bei einem Gruppenmitglied um Hilfe fragen zu können, wurden gegeben.
+Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw. das Einfügen von Dummy-Daten in die Datenbank bereits seit mehreren Iterationen erfolglos bearbeitet wird. Verschiedene Hilfestellungen in Form von Websites, Tutorials oder das Angebot, jederzeit bei einem Gruppenmitglied um Hilfe fragen zu können, wurden gegeben.
 
 Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch nicht anwesend. Auf Nachfrage antworteten beide, dass sie beide aufgrund von Krankheit noch länger ausfallen würden.
 
@@ -241,7 +242,7 @@ Fortgeführt:
 ////
 
 === Dokumentation 
-Die Risikoliste wurde erneut um einen Eintrag erweitert. Herr Nguyen hatte ein neues Formatierungstool verwendet, was ihm eigentlich Arbeit abnehmen sollte. Jedoch stellte sich heraus, dass bei jedem Speichern die Leerzeichen, welche zum Einrücken verwendet wurden, durch Tabs ersetzt. Dies führte dazu, dass bei GitHub die tatsächlichen Änderungen schwer zu sehen waren und es sehr viele Merge Konflikte gab.
+Die Risikoliste wurde erneut um einen Eintrag erweitert. Es wurde ein neues Formatierungstool verwendet, was eigentlich Arbeit abnehmen sollte. Jedoch stellte sich heraus, dass bei jedem Speichern die Leerzeichen, welche zum Einrücken verwendet wurden, durch Tabs ersetzt. Dies führte dazu, dass bei GitHub die tatsächlichen Änderungen schwer zu sehen waren und es sehr viele Merge Konflikte gab.
 
 === Implementation
 
@@ -268,7 +269,7 @@ Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt 
 Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde. Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des Weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
 === Entscheidung
-Aufgrund des beschriebenen Problems mit dem Formatierungstool bei Herrn Nguyen wurde beschlossen, das Tool nicht mehr zu verwenden und es wurde sich auf eine einheitliche Formatierung geeinigt. 
+Aufgrund des beschriebenen Problems mit dem Formatierungstool wurde beschlossen, das Tool nicht mehr zu verwenden und es wurde sich auf eine einheitliche Formatierung geeinigt. 
 
 Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern eher zu einer weiteren Verschlechterung bzw. Stagnation der Produktivität. Da bei wöchentlichen Iterationen mehr Vorteile ersichtlich waren, wurden die folgenden Interationen wieder auf eine Woche verkürzt.
 
@@ -306,7 +307,6 @@ Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code
 Frau Tartz hat eine manuelle Überprüfung sämtlicher Funktionalitäten vorgenommen und hat dabei einen Fehler bei der Projekterstellung gefunden, welcher von Herrn Werner behoben wurde. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/65[#65])
 
 === Entscheidung
-
 Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und wir erst mehr Fortschritt erzielen wollten. Ein Monat vor Projektübergabe und mit voranschreitenden Funktionen entschieden wir uns ein Meeting mit ihm auszumachen. Außerdem sollte besprochen werden, wie die Übergabe und das Installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting soll in der folgenden Woche stattfinden.
 
 Nachdem wir feststellten, dass das Arbeiten auf einer Branch zu häufigeren Merge-Konflikten führte und viele Bugs eingeschleust wurden, beschlossen wir unsere Arbeitsweise zu ändern. Das committen auf dem Hauptbranch ist ab sofort für alle Teammitglieder gesperrt und es wird nun mit Feature Branches und Pull Requests gearbeitet. Jeder Pull Request muss von einem Teammitglied genehmigt werden, bevor dieser gemerget werden kann. Auch gibt es nun eine statische Code-Analyse mit Psalm, welche bei jedem Pull Request ausgeführt wird. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserungen.
@@ -335,11 +335,9 @@ Fortgeführt:
 
 ////
 === Dokumentation 
-//wo ist das in der risikoliste?
 Die Probleme mit Git, weswegen wir seit der letzten Iteration nun Feature-Branches verwenden, wurden in die Risiko-Liste aufgenommen. Ebenfalls wurde einige Korrekturen an der Dokumentation vorgenommen von Herrn Kemter.
 
 === Feedback vom Themensteller
-
 Herr Liebert ist zufrieden mit unserem Fortschritt. 
 Er forderte, dass nach der Erstellung eines Benutzers oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
 
@@ -350,7 +348,7 @@ Herr Liebert möchte nicht, dass wir die Anwendung vor der Übergabe auf den Sys
 === Implementation
 
 *UC 1*
-Für den Use Case 01 fehlte noch ein elementares Feature. Das Wechseln der Kalenderwoche. Dieses Feature wurde in dieser Iteration von Herrn Nguyen angefangen, da nun alle nötigen Schnittstellen in Iterationen davor fertiggestellt worden sind. Dabei kam ein Problem auf, welches aber erst am Ende der Iteration nämlich an einem Montag ersichtlich wurde. Nach gründlicher Untersuchung stellte sich heraus, dass es an der falschen Einstellung der Zeitzone lag. Nutzte man also Montag morgen das Programm, wurde dem Nutzer immer noch die letzte Kalenderwoche angezeigt. Das Problem konnte behoben werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/66[#66] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/69[#69])
+Für den Use Case 01 fehlte noch ein elementares Feature. Das Wechseln der Kalenderwoche. Dieses Feature wurde in dieser Iteration von Herrn Nguyen angefangen, da nun alle nötigen Schnittstellen in Iterationen davor fertiggestellt worden sind. Dabei kam ein Problem auf, welches aber erst am Ende der Iteration nämlich an einem Montag ersichtlich wurde. Nach gründlicher Untersuchung stellte sich heraus, dass es an der falschen Einstellung der Zeitzone lag. Nutzte man also Montag morgen das Programm, wurde dem Nutzer immer noch die letzte Kalenderwoche angezeigt. Das Problem konnte behoben werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/66[#66] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/69[#69])
 
 *ESLint*
 Die statische Code-Analyse mit Psalm war sehr erfolgreich und deswegen wurde von Herrn Werner nun ebenfalls eine statische Code-Analyse für den Javascript Code eingefügt. Dazu wird ESLint verwendet. Beide Code-Analysen laufen automatisch bei jedem Pull Request durch.
@@ -361,12 +359,6 @@ Herr Kirchhoff konnte weitere von Psalm gemeldete Fehler beheben.
 
 *Design*
 Die geforderten Designverbesserungen wurden von Herrn Kemter begonnen. Das Ziel war eine optimierte Darstellung der Inhalte. Zuvor wurden diese zum Teil hochkant dargestellt. Außerdem sollte die Lesbarkeit verbessert und dem Benutzer ein verbessertes Feedback gegeben werden, was anklickbar ist. Die Verbesserungen betroffen vor allem die Projektverwaltung. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/70[#70])
-
-=== Probleme
-//wollen wir das wirklich so stehen lassen? ist ja nächste auch nochmal. wenn es schon so ist, dann sollte man wenigstens einen grund angeben
-//justus war glaube krank / aleksandra vermutlich auch
-
-In dieser Iteration waren Herr Tichonow verhindert und Herr Beck krank. Herr Keil ist immer noch krank und es ist unklar, ob dieser noch an dem Projekt mitarbeiten wird. Dies führte erneut zu einem gesunkenen Output.
 
 == Iteration 16 (24.05.2022 - 30.05.2022)
 ////
@@ -394,15 +386,15 @@ Herr Kirchhoff hat die benötigten Lizenzen zusammengetragen (https://github.com
 *UC 1*
 Die Status Schnittstelle wurde um einen Parameter für das Jahr erweitert. Nun ist es möglich auch auf Kalenderwochen, aus einem anderem Jahr, als dem aktuellen zuzugreifen. Dies wurde von Herrn Nguyen und Herrn Werner bearbeitet (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/66[#66]).
 
-Ebenfalls wurden die Primärschlüssel-Attribute der Datenbanktabelle Status so angepasst, dass kein Status mit dem gleichen Nutzer, Tag und Projekt erstellt werden kann. Dafür wird ein sogenannter 'Composite Primary Key' verwendet. Dies wurde von Herrn Nguyen bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/63[#63])
-//im Issue steht Herr Beck
+Ebenfalls wurden die Primärschlüssel-Attribute der Datenbanktabelle Status so angepasst, dass kein Status mit dem gleichen Nutzer, Tag und Projekt erstellt werden kann. Dafür wird ein sogenannter 'Composite Primary Key' verwendet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/63[#63])
 
 *UC 4*
 Bei der Projekterstellung fehlte noch die Validierung der Nutzerdaten im Back-End, dies wurde von Herrn Beck und Herrn Werner ausgebessert.
 (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/68[#68])
 
 *Design*
-Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/70[#70]). 
+Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/70[#70])
+//hier vllt nochmal ein zwei beispiele verlinken
 
 === Entscheidung
 Herr Keil konnte sich leider noch nicht an dem Projekt beteiligen. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
@@ -430,11 +422,10 @@ Fortgeführt:
 Herr Kemter begann an dem Projektbericht zu arbeiten. Er fing an für die Plannung und und Durchführung Stichpunkte zu sammeln. Die Plannung führte er bis zum Ende der Iteration schon genauer aus.
 (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
 
-
 === Implementation
 
 *UC3 & UC4*
-Beim Testen der Anwendung ist uns aufgefallen, dass es keine eindeutige Rückmeldung über den Erfolg oder den Misserfolg beim Erstellen eines neuen Benutzers oder Projektes gibt und dies wurde von Herrn Liebert gefordert. Herr Werner hat dies bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/83[#83] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/86[#86])
+Beim Testen der Anwendung ist uns aufgefallen, dass es keine eindeutige Rückmeldung über den Erfolg oder den Misserfolg beim Erstellen eines neuen Benutzers oder Projektes gibt und dies wurde von Herrn Liebert gefordert.  (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/83[#83] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/86[#86])
 
 *UC4*
 Ein neues Feature zum Löschen von Projekten wurde von Herrn Nguyen angefangen zu bearbeiten. Die Arbeiten an diesem Issue wurden diese Iteration jedoch nicht finalisiert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/94[#94])
@@ -476,11 +467,11 @@ Herr Kemter begann den "Durchführungs"-Teil des Projektberichtes. Hier gab es d
 Die Betriebsdokumentation wurde angefangen von Herrn Tichonow bearbeitet zu werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/106[#106]) Herr Kirchhoff hat mit der Testdokumentation basierend auf die bestehenden Tests angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/105[#105]) Die Entwicklerdokumentation wurde von Herrn Beck in Zusammenarbeit mit Herrn Kemter angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/107[#107])
 
 Da bei vielen Mitgliedern die Lust auf das Projekt aus verschiedenen Gründen gesunken ist, hat Herr Kemter die Risikoliste um einen entsprechenden Eintrag erweitert. 
-//hier und allgemeint vllt nochmal drauf eingehen, dass man da machtlos war
 
 === Implementation
 
 Auch wenn Herr Kemter das Design und Aufbau der einzelnen Seiten verbessert hatte, waren wir noch nicht zufrieden. Daher hat Herr Nguyen diese nochmal verbessert und sich dabei am Corporate Design von T-System MMS orientiert, damit sich unsere Anwendung dieser ähnelt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/102[#102])
+//bild?
 
 *UC1* 
 Nachdem Herr Kemter bereits das Design deutlich verbessert hat und wir einige Tipps und Beispiele vom Themenersteller bekommen haben, setzte Herr Nguyen die Bearbeitung der Darstellung des Projektes fort. Zunächst wurden die Border der Tabelle durch einen gestreiften Hintergrund gewechselt und die Buttons, sowie die Farben denen der T-System MMS angeglichen. Außerdem wurde eine neue Schriftart verwendet (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/102[#102]).
@@ -513,7 +504,6 @@ Fortgeführt:
 * Projektbericht #116
 ////
 === Dokumentation 
-
 Durch die Entscheidung aus der vorherigen Iteration wurde diese Iteration hauptsächlich an den Dokumenten gearbeitet. Diese umfassten das Besichtigen und das Verbessern der Test-, Betriebs- und Entwicklerdokumentation. Die Aufteilung an den einzelnen Dokumenten bleibt wie letzte Iteration.
 
 Die Anwenderdokumentation sollte auch erledigt werden, jedoch wussten wir nicht, ob eventuell noch kleine Verbesserungen realisiert werden, was einige Teile der Anwenderdokumentation verändern würde. Wir haben mit Herrn Liebert vereinbart, dass wir sie nicht zusammen mit der Anwendung übergeben müssen. Es reicht auch, wenn sie ihm bis spätestens 8. Juli geschickt wird. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/124[#124])
@@ -540,16 +530,13 @@ Fortgeführt:
 
 * An Doku/Bericht weiterarbeiten
 ////
-
-
 === Anwendungsübergabe an Herrn Liebert
-//wurde zwischen zeitlich von jemand unten bereits beschrieben. welches ist besser?
 Wie geplant haben wir an Herrn Liebert die Anwendung per GitHub übergeben und unsere realisierten Use-Cases demonstriert. Die Übergabe verlief problemlos, da die Software und das Abnahmeprotokoll gut vorbereitet waren. Wie vorher vereinbart wird die Dokumentation jedoch bis spätestens dem 08.07. nachgereicht. Unserer Meinung nach war Herr Liebert mit der Umsetzung zufrieden. 
 
 === Treffen mit Herrn Professor Anke und Herrn Zirkelbach
 Herr Beck und Herr Kemter haben sich zu einer Konsultation mit Herrn Professor Anke und Herrn Zirkelbach getroffen. Das Ergebnis war, dass unser C4-Modell etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen haben. Zum Verständnis sollten die Komponentenbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden. 
 
-Zu dem Projektbericht gab es ein paar strukturelle Fragen und wie genau wir die Inhaltsverteilung vornehmen sollen. Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden. Wir wurden jedoch in unserem bisherigen Aufbau bestätigt. Herr Werner und Herr Nguyen haben sich außerdem dazu bereit erklärt, dass Dokument zur Projektdurchführung zu verbessern, da beide mehr an der technischen Umsetzung beteiligt waren, als Herr Kemter. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116]) 
+Zu dem Projektbericht gab es ein paar strukturelle Fragen und wie genau wir die Inhaltsverteilung vornehmen sollen. Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden. Wir wurden jedoch in unserem bisherigen Aufbau bestätigt. 
 
 In in dem Gespräch mit Herrn Prof. Anke kamen auch unsere Probleme mit der teils sehr unterschiedlichen Beteiligung am Projekt auf. Einige Mitglieder haben deutlich mehr gemacht als andere. Diese ungerechte Verteilung sollte wie bereits beschrieben über die differenzierte Bewertung sich in der Note widerspiegeln. Jedoch war Herr Professor Anke davon nicht überzeugt und bat Herrn Kemter und Herrn Beck mit den anderen Mitgliedern zu sprechen und eine Entscheidung über die Benotung der betroffenen Mitglieder zu fällen. Die Mitglieder entschieden sich, eine möglichst faire E-Mail zusammen mit der Bitte, dass die anderen Mitglieder auch noch Stellung dazu beziehen dürfen, zu verfassen. Die betroffenen Teammitglieder wurden von der E-Mail informiert und es stand ihnen frei, ob sie noch den Vortrag halten wollen. Alle haben sich mit einem eventuellen "nicht Bestehen" nicht einverstanden gezeigt. Außerdem wollten sie wie gewohnt ihre zugeteilten Aufgaben bearbeiten. 
 
@@ -558,10 +545,9 @@ In in dem Gespräch mit Herrn Prof. Anke kamen auch unsere Probleme mit der teil
 Die Test- und Betriebsdokumentation sind fast fertig und es wurden bloß noch Kleinigkeiten verbessert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/105[#105] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/106[#106])
 Die Anwenderdokumentation sollte nach Feedback im Teammeeting ebenfalls noch um Kleinigkeiten verbessert werden, dazu zählten professionellere Pfeile auf den Bildern und eine etwas genauere Beschreibung der Vorgänge, damit keine Unklarheiten entstehen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/124[#124])
 
-Herr Beck und Herr Kemter erweiterten und verbesserten den Projektbericht weiterhin. Da Beide sich nicht in der Lage fühlten, die Implementation zu beschreiben übernahm Herr Werner diesen Teil.(https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
+Herr Beck und Herr Kemter erweiterten und verbesserten den Projektbericht weiterhin. Da Beide sich nicht in der Lage fühlten, die Implementation zu beschreiben, übernahm Herr Werner und Herr Nguyen diesen Teil.(https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
 
 === Vortrag
-
 Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentation anzufertigen, welche zusammen mit der Software am Montag, dem 27. Juni erfolgreich in der Vorlesung vorgeführt wurde.
 
 == Iteration 21 (28.06.2022 - 04.07.2022)
@@ -569,17 +555,15 @@ Herr Kirchhoff und Herr Tichonow haben die Aufgabe übernommen, eine Präsentati
 Es wurde geplant alles bis Ende Juni alles fertig zu haben. Jedoch wurde dies nicht geschafft, daher sollten die Fortschritte dieser Iteration am Montag evaluiert werden und in den folgenden Tagen der nächsten Iteration hochgeladen werden.
 
 === Dokumentation
-
 Einige Dokumentationen haben noch Kleinigkeiten zum Verbessern und zum Hinzufügen, dazu gehört Beispielsweise die Softwaredokumentation in der Entwicklerdokumentation. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/137[#137] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/107[#107])
 
 Weiterhin wurde durch Herrn Werner und Herrn Nguyen die Implementation im Projektbericht ergänzt. Herr Kemter und Herr Beck haben sich um den Rest des Projektberichts gekümmert. Dazu haben sie sich auch mit Herrn Zirkelbach getroffen, um einige Sachverhalte nachzufragen. Diesen entsprechend wird weitergearbeitet. Frau Tartz bearbeitete das "Way of Working". (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
 
 === Iteration 22 (29.06.2022)
 
-Wie bereits in Iteration 21 vermutet, ist die Abgabe nicht in Iteration 21 erfolgt. Sie wurde nun auf den Donnerstag den 07.07 festgelegt.
+Wie bereits in Iteration 21 vermutet, ist die Abgabe nicht in Iteration 21 erfolgt. Sie wurde nun auf den Donnerstag den 07.07 festgelegt. Dazu wurden alle Aufgaben bis dahin erledigt und es wird am Abend abgegeben.
 
 === Dokumentation 
-
 Die einzelnen Elemente, z.B. das Sequenzdiagramm, der Entwicklerdokumentation wurde von Herr Kirchhoff und Herr Tichonow zu einem Dokument zusammengefügt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/107[#107])
 
 Das Glossar wurde von Herr Werner auf den neusten Stand gebracht. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/150[#150])
