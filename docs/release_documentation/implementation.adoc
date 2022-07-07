@@ -18,6 +18,7 @@ Die erfüllten Aufgaben sind mit "(https://github.com/PowerOfCreation/E1Ressourc
 
 Dies war die erste Iteration im neuen Semester. Wir hatten aufgrund der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
 ////
+
 Unsere Ziele für I09 waren:
 
 * Anlegen der Abteilungstabelle + 5 Abteilungen #34
@@ -31,6 +32,7 @@ Unsere Ziele für I09 waren:
 
 ////
 === Dokumentation
+
 Wie bereits geschrieben, hat Herr Professor Anke unseren abgegebenen Beleg über die Semesterferien korrigiert. Auch wenn es nicht viele Fehler gab, mussten diese natürlich berichtigt werden. 
 Viele der Fehler waren nur Kleinigkeiten und diese konnten schnell behoben werden.
 
@@ -63,6 +65,7 @@ Durch die bereits in "Situation zum Semesterbeginn" geschrieben Situation, nahme
 
 == Iteration 10 (29.03.2022 - 04.04.2022)
 ////
+
 Unsere Ziele für I10 waren: 
 
 Neue Ziele:
@@ -85,9 +88,11 @@ Fortgeführt:
 === Dokumentation
 Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angefangene C4-Modell verbessert und die Projektrollen besser formatiert. Das Glossar wurde erweitert und neue Praktiken im Projekt-Plan eingefügt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/29[#29])
 
+
 === Implementation
 
 *UC 3*
+
 Die Nutzerübersichtsseite wurde von Herrn Werner um die Anzeige der Abteilung des Nutzers erweitert und das Issue somit abgeschlossen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/39[#39])
 
 Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS, JavaScript und PHP Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
@@ -125,6 +130,7 @@ Fortgeführt:
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Mitarbeiter hinzufügen check der E-Mail #33
 * Mehr Dummy-Daten für Project und Project_User #42
+
 ////
 
 === Dokumentation
@@ -167,8 +173,10 @@ Fortgeführt:
 * Mehr Dummy-Daten für Project und Project_User #42
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Mitarbeiter hinzufügen check der E-Mail #33
+
 ////
 === Dokumentation
+
 Herr Nguyen wurde in die Dokumentation eingetragen und ihm wurden die betroffenen Dateien gezeigt und einige Empfehlungen im Umgang mit AsciiDoc ausgesprochen.
 
 Die Risikoliste wurde entsprechend der in Problem genannten Sachlage erweitert. 
@@ -197,6 +205,7 @@ Die Dummy-Daten, welche von Herrn Kirchhoff erstellt werden sollten, wurden nich
 === Entscheidung 
 Um die Produktivität einzelner Teammitglieder zu erhöhen, wurde die Iterationszeit auf 2 Wochen erhöht. Dadurch werden die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhoffen dadurch, dass so mehr Zeit für das Bearbeiten der Aufgaben übrig bleibt.
 Diese Entscheidung wurde getroffen, bevor Herr Nguyen unser Team verstärkt hat.
+
 Es wurde noch einmal betont, dass bei Programmier-Problemen jederzeit Herr Nguyen oder Herr Werner um Rat gefragt werden kann und Probleme nicht erst am Ende einer Iteration aufgeworfen werden sollen.
 
 Herr Keil's Aufgabe wurde nicht neu vergeben, da wir merkten, dass die Suchfunktion nicht sehr wichtig war und wir die Kräfte mehr bündeln mussten, um an anderen Stellen mit wichtigeren Funktionen Fortschritt zu erzielen. 
@@ -211,6 +220,7 @@ Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw
 Wie bereits in den anderen Iterationen beschrieben, waren Frau Tartz und Herr Keil immer noch nicht anwesend. Auf Nachfrage antworteten beide, dass sie beide aufgrund von Krankheit noch länger ausfallen würden.
 
 == Iteration 13 (26.04.2022 - 09.05.2022)
+
 ////
 Unsere Ziele für I13 waren: 
 
@@ -230,6 +240,7 @@ Fortgeführt:
 * Mitarbeiter hinzufügen Passwortkriterien #36
 * Mitarbeiter hinzufügen check der E-Mail #33
 ////
+
 === Dokumentation 
 Die Risikoliste wurde erneut um einen Eintrag erweitert. Herr Nguyen hatte ein neues Formatierungstool verwendet, was ihm eigentlich Arbeit abnehmen sollte. Jedoch stellte sich heraus, dass bei jedem Speichern die Leerzeichen, welche zum Einrücken verwendet wurden, durch Tabs ersetzt. Dies führte dazu, dass bei GitHub die tatsächlichen Änderungen schwer zu sehen waren und es sehr viele Merge Konflikte gab.
 === Implementation
@@ -247,6 +258,7 @@ Die Projektverwaltungsseite konnte von Herrn Beck größtenteils fertiggestellt 
 Es werden nun alle Projekte angezeigt und die dazugehörigen Nutzer. Es gibt noch einige Kleinigkeiten, die das Bedienen unhandlich machen und dies wird von Herrn Beck in der nächsten Iteration bearbeitet.
 
 image::images/Projects_User.png[,350,]
+
 //wird nicht als bild gezeigt
 === Problem 
 Bisher ist eine Verbesserung hinsichtlich der Produktivität noch ausbaufähig, auch wenn der Gesamtoutput durch Herr Nguyen gesteigert werden konnte.
@@ -262,6 +274,7 @@ Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünscht
 
 === Iteration 14 (10.05.2022 - 16.05.2022)
 ////
+
 Unsere Ziele für I14 waren:
 
 Neue Ziele:  
@@ -275,6 +288,7 @@ Neue Ziele:
 Fortgeführt:
 
 * API: Einfügen eines neuen Status #52
+
 ////
 === Implementation
 
@@ -292,6 +306,7 @@ Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code
 Frau Tartz hat eine manuelle Überprüfung sämtlicher Funktionalitäten vorgenommen und hat dabei einen Fehler bei der Projekterstellung gefunden, welcher von Herrn Werner behoben wurde. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/65[#65])
 
 === Entscheidung
+
 Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und wir erst mehr Fortschritt erzielen wollten. Ein Monat vor Projektübergabe und mit voranschreitenden Funktionen entschieden wir uns ein Meeting mit ihm auszumachen. Außerdem sollte besprochen werden, wie die Übergabe und das Installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting soll in der folgenden Woche stattfinden.
 
 Nachdem wir feststellten, dass das Arbeiten auf einer Branch zu häufigeren Merge-Konflikten führte und viele Bugs eingeschleust wurden, beschlossen wir unsere Arbeitsweise zu ändern. Das committen auf dem Hauptbranch ist ab sofort für alle Teammitglieder gesperrt und es wird nun mit Feature Branches und Pull Requests gearbeitet. Jeder Pull Request muss von einem Teammitglied genehmigt werden, bevor dieser gemerget werden kann. Auch gibt es nun eine statische Code-Analyse mit Psalm, welche bei jedem Pull Request ausgeführt wird. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserungen.
@@ -299,7 +314,9 @@ Nachdem wir feststellten, dass das Arbeiten auf einer Branch zu häufigeren Merg
 Da immer weniger an der Dokumentation zu erledigen war, wurde Herr Kemter in HTML und CSS fortgebildet, um bei späteren Aufgaben zu helfen.
 
 == Iteration 15 (17.05.2022 - 23.5.2022)
+
 ////
+
 Unsere Ziele für I15 waren: 
 
 Neue Ziele:
@@ -315,12 +332,14 @@ Fortgeführt:
 * Verbesserungen der Projektverwaltung
 * Erweiterung der Risikoliste
 * Verbleibende Fehler von Psalm beheben #58
+
 ////
 === Dokumentation 
 //wo ist das in der risikoliste?
 Die Probleme mit Git, weswegen wir seit der letzten Iteration nun Feature-Branches verwenden, wurden in die Risiko-Liste aufgenommen. Ebenfalls wurde einige Korrekturen an der Dokumentation vorgenommen von Herrn Kemter.
 
 === Feedback vom Themensteller
+
 Herr Liebert ist zufrieden mit unserem Fortschritt. 
 Er forderte, dass nach der Erstellung eines Benutzers oder eines Projektes eine Bestätigung der Aktivität angezeigt werden und die Seite wieder zurück auf die Kalenderansicht wechseln soll. Außerdem merkte er an, dass das Design noch verbessert werden sollte. Diese Anmerkungen setzten wir als Issues für die kommenden Iterationen an.
 
@@ -351,6 +370,7 @@ In dieser Iteration waren Herr Tichonow verhindert und Herr Beck krank. Herr Kei
 
 == Iteration 16 (24.05.2022 - 30.05.2022)
 ////
+
 Unsere Ziele für I16 waren: 
 
 Neue Ziele: 

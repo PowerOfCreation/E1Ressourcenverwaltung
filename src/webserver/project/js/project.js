@@ -32,6 +32,11 @@ $()
     showSuccessNotifications();
 }
 
+/**
+ * It deletes a project from the database
+ * @param projectId - The id of the project to be deleted.
+ * @returns nothing.
+ */
 function deleteProject(projectId) {
     $("#message-container").text("");
     if (projectId === undefined) {
@@ -63,6 +68,11 @@ $("#btn-delete-project").click(function () {
     deleteProject(projectId);
 });
 
+/**
+ * It gets all the employees assigned to a project and checks the checkboxes of the employees in the
+ * modal
+ * @param projectId - The id of the project to show
+ */
 function showProject(projectId) {
 
     selectedProject = projectId;
@@ -88,6 +98,10 @@ function showProject(projectId) {
     });
 }
 
+/**
+ * It takes a message, shows it in the notification div, and then hides it after 5 seconds
+ * @param message - The message to display in the notification.
+ */
 function setNotification(message) {
     const $notificationDiv = $("#notification-div");
 
@@ -98,6 +112,10 @@ function setNotification(message) {
     });
 }
 
+/**
+ * If the URL contains a parameter called "created_project", then show a notification with the value of
+ * that parameter
+ */
 function showSuccessNotifications() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);

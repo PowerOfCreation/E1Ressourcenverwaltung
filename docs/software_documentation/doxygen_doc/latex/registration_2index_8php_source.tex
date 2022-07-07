@@ -1,0 +1,109 @@
+\hypertarget{registration_2index_8php_source}{}\doxysection{index.\+php}
+\label{registration_2index_8php_source}\index{src/webserver/registration/index.php@{src/webserver/registration/index.php}}
+\mbox{\hyperlink{registration_2index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00003}00003 include(\textcolor{stringliteral}{"{}../login/checkForLogin.php"{}});}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00005}00005 require(\textcolor{stringliteral}{"{}registration\_utility.php"{}});}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00007}00007 require\_once(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00009}\mbox{\hyperlink{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}{00009}} \mbox{\hyperlink{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}{\$password\_error\_messages}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00010}\mbox{\hyperlink{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}{00010}} \mbox{\hyperlink{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}{\$email\_error\_messages}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00012}00012 \textcolor{comment}{//More checks required...}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00013}00013 \textcolor{keywordflow}{if} (isset(\$\_POST[\textcolor{stringliteral}{"{}Username"{}}]) \&\& !empty(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Username"{}}])) \&\& !empty(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Forename"{}}])) \&\& !empty(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Surname"{}}])) \&\& !empty(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Department"{}}])) \&\& !empty(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}EMail"{}}])) \&\& !empty(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Password"{}}]))) \{}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00014}00014     }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00015}00015     \textcolor{comment}{// Example how to use POST'ed values}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00016}00016     \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}} = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Username"{}}]);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00017}00017     \$forename = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Forename"{}}]);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00018}00018     \$surname = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Surname"{}}]);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00019}00019     \$departmentId = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Department"{}}]);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00020}00020     \$e\_mail = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}EMail"{}}]);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00021}00021     \$password = htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}Password"{}}]);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00022}00022     }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00023}00023     \textcolor{keywordflow}{if}(!filter\_var(\$e\_mail, FILTER\_VALIDATE\_EMAIL)) \{}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00024}00024         \mbox{\hyperlink{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}{\$email\_error\_messages}} = \textcolor{stringliteral}{"{}Bitte eine gültige E-\/Mail-\/Adresse eingeben."{}};}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00027}00027     \mbox{\hyperlink{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}{\$password\_error\_messages}} = \mbox{\hyperlink{registration__utility_8php_a81297c8bdee9ed48128fa8d7c57d1e7f}{checkPassword}}(\$password);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00029}00029     \textcolor{keywordflow}{if}(empty(\mbox{\hyperlink{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}{\$password\_error\_messages}}) \&\& empty(\mbox{\hyperlink{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}{\$email\_error\_messages}}))}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00030}00030     \{}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00031}00031         \$password = password\_hash(\$password, PASSWORD\_DEFAULT);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00033}00033         \$add\_user\_statement = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}INSERT INTO User(Username, Forename, Surname, DepartmentId, Email, Password) VALUES(?, ?, ?, ?, ?, ?);"{}});}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00035}00035         \$add\_user\_statement-\/>bind\_param(\textcolor{stringliteral}{'sssiss'}, \mbox{\hyperlink{get__employee__projects_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}}, \$forename, \$surname, \$departmentId, \$e\_mail, \$password);}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00037}00037         \textcolor{keywordflow}{if}(\$add\_user\_statement-\/>execute())}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00039}00039             header(\textcolor{stringliteral}{"{}location: /index.php?registered\_user=\{\$username\}"{}});}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00040}00040         \}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00041}00041         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00042}00042         \{}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00043}00043             echo \textcolor{stringliteral}{"{}Fehler beim erstellen des Nutzers. Eingaben überprüfen."{}};}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00044}00044             echo \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00045}00045         \}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00046}00046         \$add\_user\_statement-\/>reset();}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00048}00048 \}}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00049}00049 ?>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00051}00051 <!DOCTYPE html>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00052}00052 <html lang=\textcolor{stringliteral}{"{}de"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00053}00053 <head>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00054}00054     <meta charset=\textcolor{stringliteral}{"{}utf-\/8"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00055}00055     <title>Mitarbeiter hinzufügen</title>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00056}00056     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}registration\_style.css"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00057}00057     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}../buttons.css"{}} type=\textcolor{stringliteral}{"{}text/css"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00058}00058     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}../font-\/size.css"{}} type=\textcolor{stringliteral}{"{}text/css"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00060}00060 </head>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00062}00062 <body>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00063}00063     }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00064}00064     <main>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00065}00065         <h1>Mitarbeiter Hinzufügen</h1>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00066}00066         <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}form-\/wrapper-\/div"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00067}00067             <form \textcolor{keywordtype}{id} = \textcolor{stringliteral}{"{}registration-\/form"{}} name=\textcolor{stringliteral}{"{}RegForm"{}} method=\textcolor{stringliteral}{"{}post"{}}>                                }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00068}00068                 Benutzername: <input \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}textbox"{}} type=\textcolor{stringliteral}{"{}text"{}} autocomplete=\textcolor{stringliteral}{"{}username"{}} name=\textcolor{stringliteral}{"{}Username"{}} placeholder=\textcolor{stringliteral}{"{}Max123"{}} required />}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00070}00070                 Vorname: <input \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}textbox"{}} type=\textcolor{stringliteral}{"{}text"{}} name=\textcolor{stringliteral}{"{}Forename"{}} placeholder=\textcolor{stringliteral}{"{}Max"{}} required />}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00071}00071                 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00072}00072                 Nachname: <input \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}textbox"{}} type=\textcolor{stringliteral}{"{}text"{}} name=\textcolor{stringliteral}{"{}Surname"{}} placeholder=\textcolor{stringliteral}{"{}Mustermann"{}} required />}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00073}00073                 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00074}00074                 Abteilung:  }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00075}00075                 <select \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}textbox"{}} name = \textcolor{stringliteral}{"{}Department"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00076}00076                     <?php }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00077}\mbox{\hyperlink{registration_2index_8php_aad0fd708a818ba048625b6074fc14046}{00077}}                         \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>query(\textcolor{stringliteral}{"{}SELECT * FROM Department;"{}});}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00079}\mbox{\hyperlink{registration_2index_8php_a02da46f7678d582648864626c5883481}{00079}}                         \textcolor{keywordflow}{while} (\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_object()) }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00080}00080                         \{}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00081}00081                             echo \textcolor{stringliteral}{"{}<option value='"{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>DepartmentId . \textcolor{stringliteral}{"{} '>"{}} . \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}}-\/>DepartmentName . \textcolor{stringliteral}{"{}</option>"{}};}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00082}00082                         \}               }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00083}00083                     ?>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00084}00084                 </select>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00085}00085                 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00086}00086                 E-\/mail: <input \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}textbox"{}} type=\textcolor{stringliteral}{"{}email"{}} autocomplete=\textcolor{stringliteral}{"{}email"{}} name=\textcolor{stringliteral}{"{}EMail"{}} required title=\textcolor{stringliteral}{"{}Bitte überprüfen Sie das Format der eingegebenen E-\/Mail-\/Adresse."{}} placeholder=\textcolor{stringliteral}{"{}max@mail.de"{}} />}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00087}00087                 <span \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}text-\/danger"{}}><?php echo \mbox{\hyperlink{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}{\$email\_error\_messages}}; ?></span>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00089}00089                 Passwort: <input \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}textbox"{}} type=\textcolor{stringliteral}{"{}password"{}} autocomplete=\textcolor{stringliteral}{"{}new-\/password"{}} name=\textcolor{stringliteral}{"{}Password"{}} \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}passwordInput"{}} pattern=\textcolor{stringliteral}{"{}(?=.*\(\backslash\)d)(?=.*[a-\/z])(?=.*[A-\/Z]).\{8,\}"{}} required title=\textcolor{stringliteral}{"{}Mindestens 8 Zeichen, 1 Ziffer, 1 Kleinbuchstabe und 1 Großbuchstabe erforderlich."{}} placeholder=\textcolor{stringliteral}{"{}Passwort"{}} />}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00090}00090                 <label \textcolor{keywordflow}{for}=\textcolor{stringliteral}{"{}check"{}}><input \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}check"{}} type=\textcolor{stringliteral}{"{}checkbox"{}} onclick=\textcolor{stringliteral}{"{}showPassword()"{}} />Passwort anzeigen</label>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00091}00091                 <span \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}text-\/danger"{}}><?php echo \mbox{\hyperlink{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}{\$password\_error\_messages}}; ?></span>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00092}00092                 <div \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}form-\/action-\/buttons-\/wrapper-\/div"{}}>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00093}00093                     <a href=\textcolor{stringliteral}{"{}.."{}}><button \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}back-\/button"{}} type=\textcolor{stringliteral}{"{}button"{}}>Zurück</button></a>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00094}00094                     <button type=\textcolor{stringliteral}{"{}submit"{}}>Benutzer erstellen</button>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00095}00095                 </div>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00096}00096             </form>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00097}00097         </div>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00098}00098     </main>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00099}00099     <script src=\textcolor{stringliteral}{"{}../jquery-\/3.6.0.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00100}00100     <script src=\textcolor{stringliteral}{"{}js/registration.js"{}}></script>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00101}00101 </body>}
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{registration_2index_8php_source_l00103}00103 </html>}
+
+\end{DoxyCode}

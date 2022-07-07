@@ -1,0 +1,86 @@
+\hypertarget{add__status_8php}{}\doxysection{src/webserver/api/add\+\_\+status.php File Reference}
+\label{add__status_8php}\index{src/webserver/api/add\_status.php@{src/webserver/api/add\_status.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}}(!isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}user\textquotesingle{}\mbox{]})$\vert$$\vert$!isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}project\textquotesingle{}\mbox{]})$\vert$$\vert$!isset(\$\+\_\+\+GET\mbox{[}\textquotesingle{}date\textquotesingle{}\mbox{]})) \mbox{\hyperlink{add__status_8php_a957931fef3f554c33873f5081a9fe18a}{\$user}} = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\textquotesingle{}user\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{add__status_8php_a26a7d69cd5cc291d752925dd312b5d1c}{\$project}} = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\textquotesingle{}project\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{add__status_8php_a481c918f8d853749e00b5942cabf599a}{\$date}} = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\textquotesingle{}date\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \$connection-\/$>$prepare(\char`\"{}INSERT INTO Status (User\+Id, Project\+Id, Day) VALUES (?, ?, ?)\char`\"{})
+\item 
+\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}}(\$stmt-\/$>$execute()) \mbox{\hyperlink{add__status_8php_a13feb61b92e1e15e598806dc6e51f328}{else}}
+\item 
+return \mbox{\hyperlink{add__status_8php_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{add__status_8php_a481c918f8d853749e00b5942cabf599a}\label{add__status_8php_a481c918f8d853749e00b5942cabf599a}} 
+\index{add\_status.php@{add\_status.php}!\$date@{\$date}}
+\index{\$date@{\$date}!add\_status.php@{add\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$date}{$date}}
+{\footnotesize\ttfamily \$date = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\textquotesingle{}date\textquotesingle{}\mbox{]})}
+
+
+
+Definition at line \mbox{\hyperlink{add__status_8php_source_l00011}{11}} of file \mbox{\hyperlink{add__status_8php_source}{add\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{add__status_8php_a26a7d69cd5cc291d752925dd312b5d1c}\label{add__status_8php_a26a7d69cd5cc291d752925dd312b5d1c}} 
+\index{add\_status.php@{add\_status.php}!\$project@{\$project}}
+\index{\$project@{\$project}!add\_status.php@{add\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$project}{$project}}
+{\footnotesize\ttfamily \$project = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\textquotesingle{}project\textquotesingle{}\mbox{]})}
+
+
+
+Definition at line \mbox{\hyperlink{add__status_8php_source_l00010}{10}} of file \mbox{\hyperlink{add__status_8php_source}{add\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{add__status_8php_af27a9140d5f2658693e7fd107f716449}\label{add__status_8php_af27a9140d5f2658693e7fd107f716449}} 
+\index{add\_status.php@{add\_status.php}!\$stmt@{\$stmt}}
+\index{\$stmt@{\$stmt}!add\_status.php@{add\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$stmt}{$stmt}}
+{\footnotesize\ttfamily \$stmt = \$connection-\/$>$prepare(\char`\"{}INSERT INTO Status (User\+Id, Project\+Id, Day) VALUES (?, ?, ?)\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{add__status_8php_source_l00013}{13}} of file \mbox{\hyperlink{add__status_8php_source}{add\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{add__status_8php_a957931fef3f554c33873f5081a9fe18a}\label{add__status_8php_a957931fef3f554c33873f5081a9fe18a}} 
+\index{add\_status.php@{add\_status.php}!\$user@{\$user}}
+\index{\$user@{\$user}!add\_status.php@{add\_status.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} (!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}user\textquotesingle{}\mbox{]})$\vert$$\vert$!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}project\textquotesingle{}\mbox{]})$\vert$$\vert$!isset( \$\+\_\+\+GET\mbox{[} \textquotesingle{}date\textquotesingle{}\mbox{]})) \$user = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\textquotesingle{}user\textquotesingle{}\mbox{]})}
+
+
+
+Definition at line \mbox{\hyperlink{add__status_8php_source_l00009}{9}} of file \mbox{\hyperlink{add__status_8php_source}{add\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{add__status_8php_a13feb61b92e1e15e598806dc6e51f328}\label{add__status_8php_a13feb61b92e1e15e598806dc6e51f328}} 
+\index{add\_status.php@{add\_status.php}!else@{else}}
+\index{else@{else}!add\_status.php@{add\_status.php}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} ( \$stmt-\/$>$execute()) else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{        echo \textcolor{stringliteral}{"{}Error: "{}} . \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>error}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{add__status_8php_source_l00018}{18}} of file \mbox{\hyperlink{add__status_8php_source}{add\+\_\+status.\+php}}.
+
+\mbox{\Hypertarget{add__status_8php_a5df37b7f02e5cdc7d9412b7f872b8e01}\label{add__status_8php_a5df37b7f02e5cdc7d9412b7f872b8e01}} 
+\index{add\_status.php@{add\_status.php}!false@{false}}
+\index{false@{false}!add\_status.php@{add\_status.php}}
+\doxysubsubsection{\texorpdfstring{false}{false}}
+{\footnotesize\ttfamily return false}
+
+
+
+Definition at line \mbox{\hyperlink{add__status_8php_source_l00020}{20}} of file \mbox{\hyperlink{add__status_8php_source}{add\+\_\+status.\+php}}.
+

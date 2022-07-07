@@ -12,10 +12,11 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 [%header]
 |===
 |Begriff|	Definition und Erläuterung|	Synonyme
-|Benutzer| alle Menschen, die in einem Arbeitsverhältnis zu T-Systems MMS stehen und Zugriff auf dieses System haben | 
-|Mitarbeiterstatus | Arbeitszustand eines Mitarbeiters an einem bestimmten Tag, z.B. Projekt 1 oder Urlaub oder Krank ... | Status, Verfügbarkeit  
-|Projekt |Ein Projekt ist ein zielgerichtetes, einmaliges Vorhaben, das aus einem Satz von abgestimmten, gesteuerten Tätigkeiten besteht und durchgeführt werden kann, um unter Berücksichtigung von Vorgaben das gewünschte Ziel zu erreichen  |
+|Benutzer| Alle Menschen, die in einem Arbeitsverhältnis zu T-Systems MMS stehen und Zugriff auf dieses System haben. | Mitarbeiter 
+|Mitarbeiterstatus | Arbeitszustand eines Mitarbeiters an einem bestimmten Tag. Mögliche Status sind zum Beispiel "Projekt 1", "Urlaub" oder "Krank". | Status, Verfügbarkeit  
+|Projekt |Ein Projekt ist ein zielgerichtetes, einmaliges Vorhaben, das aus einem Satz von abgestimmten, gesteuerten Tätigkeiten besteht und durchgeführt werden kann, um unter Berücksichtigung von Vorgaben das gewünschte Ziel zu erreichen. |
 |Docker | Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung.|
+|ESLint & Psalm | ESLint und Psalm Tools zur automatischen Überprüfung der Qualität des Programmcodes. |
 |
 //|Kommissionierung|Bereitstellung von Waren aus einem Lager entsprechend eines Kundenauftrags|(keine))|
 
@@ -25,19 +26,19 @@ In diesem Dokument werden die wesentlichen Begriffe aus dem Anwendungsgebiet (Fa
 == Abkürzungen und Akronyme
 [%header]
 |===
-|Abkürzung|	Bedeutung|	Erläuterung
+|Abkürzung|	Bedeutung| Erläuterung
 |UP|Unified Process|Vorgehensmodell für die Softwareentwicklung
 |T-Systems MMS |T-Sytems Multimedia Solutions| Name des Themenstellers 
 |VM | virtuelle Maschine | VM ist eine Umgebung, die als virtuelles Computersystem fungiert. VMs sind vom Rest des Systems isoliert. Dazu können mehrere von ihnen auf einer einzigen Hardware-Komponente existieren, z. B. einem Server. Sie lassen sich nach Bedarf zwischen den Host-Servern verschieben, um Ressourcen besser zu nutzen.
-| API | application programming interface | Ein API ist also eine Schnittstelle, welche zum Beispiel Anwendungen, Festplatten oder Benutzeroberflächen verbindet.
-| C4 Modell | context, containers, components, and code | Das C4-Model ermgöglicht es die Architekture eines Software-Systems in verschiedenen Detailgraden zu beschreiben und die verschiedenen Kompontenten in Beziehungen zu setzen.
+| API | Application Programming Interface | Ein API ist also eine Schnittstelle, welche zum Beispiel Anwendungen, Festplatten oder Benutzeroberflächen verbindet.
+| C4 Modell | Context, Containers, Components und Code | Das C4-Model ermöglicht es die Architektur eines Software-Systems in verschiedenen Detailgraden zu beschreiben und die verschiedenen Komponenten in Beziehungen zu setzen.
 |===
 
 == Verzeichnis der Datenstrukturen
 [%header]
 |===
 |Bezeichnung|	Definition |	Format | Gültigkeitsregeln | Aliase
-|Benutzerkonto |Zusammensetzung von Benutzername, Vorname, Nachname und Passwort.|String|E-Mailadresse muss @-Zeichen und Punkt enthalten. Passwort muss min. 8 Zeichen lang sein und min. ein Sonderzeichen besitzen. |Login
+|Benutzerkonto |Zusammensetzung von Benutzername, Vorname, Nachname und Passwort.|String|E-Mailadresse muss @-Zeichen und Punkt enthalten. Passwort muss mindestens 8 Zeichen lang sein und mindestens ein Sonderzeichen besitzen. |Login
 |xx|xx|xx|xx|xx|
 |===
 

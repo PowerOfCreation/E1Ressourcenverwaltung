@@ -1,0 +1,141 @@
+\hypertarget{login_8php_source}{}\doxysection{login.\+php}
+\label{login_8php_source}\index{src/webserver/login/login.php@{src/webserver/login/login.php}}
+\mbox{\hyperlink{login_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00002}00002 \textcolor{comment}{// Initialize the session}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00003}00003 session\_start();}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00005}00005 \textcolor{comment}{// Check if the user is already logged in, if yes then redirect him to welcome page}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00006}\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{00006}} \textcolor{keywordflow}{if} (isset(\mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}loggedin"{}}]) \&\& \mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}loggedin"{}}] === \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00007}00007     header(\textcolor{stringliteral}{"{}location: ../index.php"{}});}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00008}00008     \mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00009}00009 \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00011}00011 \textcolor{comment}{// Include config file}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00012}00012 require\_once(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00013}00013 require\_once(\textcolor{stringliteral}{"{}../database\_structure.php"{}});}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00015}00015 \textcolor{comment}{// Define variables and initialize with empty values}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00016}\mbox{\hyperlink{login_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{00016}} \mbox{\hyperlink{login_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}} = \$password = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00017}\mbox{\hyperlink{login_8php_a285d0e1f3eb0f8bc2be552f39ba6f655}{00017}} \mbox{\hyperlink{login_8php_a285d0e1f3eb0f8bc2be552f39ba6f655}{\$username\_err}} = \$password\_err = \$login\_err = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00019}00019 \textcolor{comment}{// Processing form data when form is submitted}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00020}00020 \textcolor{keywordflow}{if} (\$\_SERVER[\textcolor{stringliteral}{"{}REQUEST\_METHOD"{}}] == \textcolor{stringliteral}{"{}POST"{}}) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00022}00022     \$success = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00024}00024     \textcolor{comment}{// Check if username is empty}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00025}00025     \textcolor{keywordflow}{if} (empty(\$\_POST[\textcolor{stringliteral}{"{}username"{}}])) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00026}00026         \$success = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00027}00027         \mbox{\hyperlink{login_8php_a285d0e1f3eb0f8bc2be552f39ba6f655}{\$username\_err}} = \textcolor{stringliteral}{"{}Bitte Benutzernamen eingeben."{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00028}00028     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00029}00029         \mbox{\hyperlink{login_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}} = trim(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}username"{}}]));}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00030}00030     \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00032}00032     \textcolor{comment}{// Check if password is empty}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00033}00033     \textcolor{keywordflow}{if} (empty(\$\_POST[\textcolor{stringliteral}{"{}password"{}}])) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00034}00034         \$success = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00035}00035         \$password\_err = \textcolor{stringliteral}{"{}Bitte Passwort eingeben"{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00036}00036     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00037}00037         \$password = trim(htmlspecialchars(\$\_POST[\textcolor{stringliteral}{"{}password"{}}]));}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00040}00040     \textcolor{comment}{// Validate credentials}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00041}00041     \textcolor{keywordflow}{if} (\$success === \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00042}00042         \textcolor{comment}{// Prepare a select statement}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00043}00043         \$sql = \textcolor{stringliteral}{"{}SELECT UserId, Username, password FROM User WHERE Username = ?"{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00045}00045         \textcolor{keywordflow}{if} (\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\$sql)) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00046}00046             \textcolor{comment}{// Bind variables to the prepared statement as parameters}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00047}00047             \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{stringliteral}{"{}s"{}}, \$param\_username);}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00049}00049             \textcolor{comment}{// Set parameters}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00050}00050             \$param\_username = \mbox{\hyperlink{login_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00052}00052             \textcolor{comment}{// Attempt to execute the prepared statement}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00053}00053             \textcolor{keywordflow}{if} (\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00054}00054                 \textcolor{comment}{// Store result}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00055}00055                 \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>store\_result();}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00057}00057                 \textcolor{comment}{// Check if username exists, if yes then verify password}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00058}00058                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>num\_rows == 1) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00059}00059                     \textcolor{comment}{// Bind result variables}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00060}00060                     \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_result(\mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}}, \mbox{\hyperlink{login_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}}, \$hashed\_password);}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00061}00061                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>fetch()) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00062}00062                         \textcolor{keywordflow}{if} (password\_verify(\$password, \$hashed\_password)) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00063}00063                             \textcolor{comment}{// Password is correct, so start a new session}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00064}00064                             session\_start();}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00066}00066                             \textcolor{comment}{// Store data in session variables}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00067}00067                             \mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}loggedin"{}}] = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00068}00068                             \mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}userId"{}}] = \mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$userId}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00069}00069                             \mbox{\hyperlink{logout_8php_a5f545b9684799a00f7a14442205b98e3}{\$\_SESSION}}[\textcolor{stringliteral}{"{}username"{}}] = \mbox{\hyperlink{login_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00071}00071                             \textcolor{comment}{// Redirect user to welcome page}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00072}00072                             header(\textcolor{stringliteral}{"{}location: ../index.php"{}});}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00073}00073                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00074}00074                             \textcolor{comment}{// Password is not valid, display a generic error message}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00075}00075                             \$login\_err = \textcolor{stringliteral}{"{}Benutzername oder Passwort ist falsch."{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00076}00076                         \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00077}00077                     \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00078}00078                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00079}00079                     \textcolor{comment}{// Username doesn't exist, display a generic error message}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00080}00080                     \$login\_err = \textcolor{stringliteral}{"{}Benutzername oder Passwort ist falsch."{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00081}00081                 \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00082}00082             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00083}00083                 echo \textcolor{stringliteral}{"{}Ein unerwarteter Fehler. Bitte versuchen es später nochmal."{}};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00084}00084             \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00086}00086             \textcolor{comment}{// Close statement}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00087}00087             \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00088}00088         \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00091}00091     \textcolor{comment}{// Close connection}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00092}00092     \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00093}00093 \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00094}00094 ?>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00096}00096 <!DOCTYPE html>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00097}00097 <html lang=\textcolor{stringliteral}{"{}de"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00099}00099 <head>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00100}00100     <meta charset=\textcolor{stringliteral}{"{}UTF-\/8"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00101}00101     <title>Login</title>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00102}00102     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00103}00103     <link rel=\textcolor{stringliteral}{"{}stylesheet"{}} href=\textcolor{stringliteral}{"{}login.css"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00104}00104 </head>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00106}00106 <body>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00107}00107     <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}wrapper"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00108}00108         <h2>Login</h2>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00110}00110         <?php}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00111}00111         \textcolor{keywordflow}{if} (!empty(\$login\_err)) \{}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00112}00112             echo \textcolor{stringliteral}{'<div class="{}alert alert-\/danger"{}>'} . \$login\_err . \textcolor{stringliteral}{'</div>'};}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00113}00113         \}}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00114}00114         ?>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00116}00116         <form action=\textcolor{stringliteral}{"{}<?php echo htmlspecialchars(\$\_SERVER["{}}PHP\_SELF\textcolor{stringliteral}{"{}]); ?>"{}} method=\textcolor{stringliteral}{"{}post"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00117}00117             <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}form-\/group"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00118}00118                 <label>Username</label>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00119}00119                 <input type=\textcolor{stringliteral}{"{}text"{}} name=\textcolor{stringliteral}{"{}username"{}} autocomplete=\textcolor{stringliteral}{"{}username"{}} \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}form-\/control <?php echo (!empty(\$username\_err)) ? 'is-\/invalid' : ''; ?>"{}} value=\textcolor{stringliteral}{"{}<?php echo \$username; ?>"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00120}00120                 <span \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}invalid-\/feedback"{}}><?php echo \mbox{\hyperlink{login_8php_a285d0e1f3eb0f8bc2be552f39ba6f655}{\$username\_err}}; ?></span>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00121}00121             </div>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00122}00122             <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}form-\/group"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00123}00123                 <label>Password</label>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00124}00124                 <input type=\textcolor{stringliteral}{"{}password"{}} name=\textcolor{stringliteral}{"{}password"{}} autocomplete=\textcolor{stringliteral}{"{}current-\/password"{}} \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}form-\/control <?php echo (!empty(\$password\_err)) ? 'is-\/invalid' : ''; ?>"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00125}00125                 <span \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}invalid-\/feedback"{}}><?php echo \$password\_err; ?></span>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00126}00126             </div>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00127}00127             <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}form-\/group"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00128}00128                 <input type=\textcolor{stringliteral}{"{}submit"{}} \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}btn btn-\/primary"{}} value=\textcolor{stringliteral}{"{}Login"{}}>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00129}00129             </div>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00130}00130             <!-\/-\/<p>Noch kein Benutzerkonto? <a href=\textcolor{stringliteral}{"{}../registration/index.php"{}}>Hier klicken.</a>.</p>-\/-\/>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00131}00131         </form>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00132}00132     </div>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00133}00133 </body>}
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{login_8php_source_l00135}00135 </html>}
+
+\end{DoxyCode}
