@@ -70,7 +70,7 @@
 | Test | Vorbedingungen | Eingabedaten | Ablaufbeschreibung | Erwartetes Ergebnis
 | Zu kurzes Passwort | Benutzer ist angemeldet. | password: PassW | Manuelles Anlegen Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Mitarbeiter Anlegen | Benutzer ist angemeldet. | [korrekte Daten] | Manuelles Anlegen Benutzer Frontend | Nachricht: "Benutzer erfolgreich angelegt", öffnen Kalenderübersicht
-| Bestehenden Mitarbeiter Anlegen | Benutzer ist angemeldet. | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
+| Anlegen  eines bestehenden Mitarbeiters | Benutzer ist angemeldet. | Username: Ehrenpflaume (Vorhanden) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Zu kurzer Name | Benutzer ist angemeldet. | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Passwort falsch wiederholt | Benutzer ist angemeldet. | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Abbrechen und zurück schickt keine Anfrage | Benutzer ist angemeldet. | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an Backend übermittelt
