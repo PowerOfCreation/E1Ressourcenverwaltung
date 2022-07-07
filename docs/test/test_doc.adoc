@@ -74,7 +74,7 @@
 | Zu kurzer Name | Benutzer ist angemeldet. | Username: A (zu kurz) | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Passwort falsch wiederholt | Benutzer ist angemeldet. | passwordInput: Passwort, confirmPasswordInput: Passwprt | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, Benutzer nicht angelegt, Wiederholbar
 | Abbrechen und zurück schickt keine Anfrage | Benutzer ist angemeldet. | Button "Abbrechen und Zurück" | Manuelles drücken Frontend | bereits eingegebene Daten nicht an Backend übermittelt
-| Eingabe SQL-Injekcions | Benutzer ist angemeldet. | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
+| Eingabe SQL-Injections| Benutzer ist angemeldet. | SELECT * FROM User | Manuelles Eingeben in Frontend Textfeld | SQL-Injection als Text übernommen
 | Nicht alle Felder ausgefüllt, beim Anlegen User | Benutzer ist angemeldet. | [Nicht jedes Feld ausgefüllt] | Manuelles Anlegen Benutzer Frontend | Fehlermeldung, unvollständige Daten nicht an Backend, Wiederholbar
 | Login mit falschen Benutzernamen/Passwort | Benutzer ist angemeldet. | User: ExistiertNicht Passwort:FalschesPasswort | Manuelles Eingeben Logindaten Frontend | Fehlermeldung, kein Login, Wiederholbar
 | Bereits existierendes Projekt anlegen | Benutzer ist angemeldet. | ProjectName: Digitalisierung | Manuelles Anlegen Projekt Frontend | Fehlermeldung, Projekt nicht angelegt
