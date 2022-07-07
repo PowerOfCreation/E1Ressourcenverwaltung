@@ -65,17 +65,17 @@ Die Meetings mit Herrn Liebert wurden auf gemeinsamen Google Docs-Dokumenten vor
 
 ===  Techniken/Praktiken - Way of Working
 
-Die Arbeitsweise orientierte sich am Open Unified Process. Das Team bemühte sich, die vier Eigenschaften zu erfüllen. Ebenfalls haben wir versucht, andere Praktiken und eigene Erfahrungen einzubringen. Die Projektstrategie haben wir nach dem Kunden und seinen Bedürfnissen ausgerichtet. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt.
+Die Arbeitsweise haben wir nach dem Open Unified Process ausgerichtet. Das Team hat versucht, die vier Eigenschaften zu erfüllen und ebenfalls eigene Erfahrungen, sowie andere Praktiken einzubringen. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt. Die Projektstrategie haben wir an den Kunden und seine Bedürfnisse angepasst. Dadurch konnten wir sicher stellen, dass die Anforderungen erfüllt und die Vorschriften eingehalten werden.
 Es wurde in einwöchigen Iterationen gearbeitet, diese setzten ein hohes Maß an Eigenverantwortung und Selbstmanagement voraus.
 Der Ablauf setzte sich aus folgenden Punkten zusammen:
 
 ==== Planung der Iteration
 
-Die Iterationsplanung erfolgte Kundenorientiert. Offene Aufgaben wurden nach Priorität geordnet und vorbereitet, draus entstandene Aufwandsabschätzung wurde gemeinsam im Team besprochen. Die Aufgaben wurden nach Fachkenntnis/Fähigkeiten verteilt.
+Die Iterationsplanung erfolgte Kundenorientiert. Offene Aufgaben wurden nach Priorität geordnet und vorbereitet, draus entstandene Aufwandsabschätzung wurde gemeinsam im Team besprochen. Die Aufgaben wurden nach Fachkenntnis/Fähigkeiten über GitHub zugewiesen.
 
 ==== Durchführen der Iteration
 
-Die Aufgaben wurden selbstständig abgearbeitet. Durch Pull Requests haben wir uns über Fortschritte oder Hindernisse informiert, diese dann überprüft und gegebenenfalls die Teamarbeit modifiziert, indem ein Problem zu zweit besprochen wurde.
+Die Aufgaben wurden selbstständig abgearbeitet. Durch Pull Requests haben wir uns über Fortschritte oder Hindernisse informiert, diese dann überprüft und gegebenenfalls die Teamarbeit modifiziert, indem ein Problem zu zweit besprochen wurde. Konnte ein Problem nicht in kleineren Gruppen gelöst werden, wurde dies in einem Teammeeting besprochen und gemeinsam nach einer Lösung gesucht.
 
 ==== Bewertung der Iteration
 
