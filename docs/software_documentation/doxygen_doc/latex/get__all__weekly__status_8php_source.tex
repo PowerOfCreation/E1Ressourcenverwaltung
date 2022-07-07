@@ -1,0 +1,59 @@
+\hypertarget{get__all__weekly__status_8php_source}{}\doxysection{get\+\_\+all\+\_\+weekly\+\_\+status.\+php}
+\label{get__all__weekly__status_8php_source}\index{src/webserver/api/get\_all\_weekly\_status.php@{src/webserver/api/get\_all\_weekly\_status.php}}
+\mbox{\hyperlink{get__all__weekly__status_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00002}00002     \textcolor{comment}{//input: http://localhost/api/get\_all\_weekly\_status.php?calendarWeek=18\&year=2022}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00003}00003     \textcolor{comment}{//output: [\{"{}StatusId"{}:4,"{}UserId"{}:1,"{}ProjectId"{}:221,"{}Day"{}:"{}2022-\/05-\/06"{}\},\{"{}StatusId"{}:5,"{}UserId"{}:1,"{}ProjectId"{}:221,"{}Day"{}:"{}2022-\/05-\/03"{}\},\{"{}StatusId"{}:6,"{}UserId"{}:1,"{}ProjectId"{}:221,"{}Day"{}:"{}2022-\/05-\/05"{}\}]}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00005}00005     include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00007}00007     \textcolor{comment}{//check if params are complete}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00008}00008     \textcolor{keywordflow}{if}(!empty(\$\_GET[\textcolor{stringliteral}{"{}calendarWeek"{}}]) \&\& ctype\_digit(htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}calendarWeek"{}}]))) \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00009}00009         \$calendarWeek = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}calendarWeek"{}}]);}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00010}\mbox{\hyperlink{get__all__weekly__status_8php_a13feb61b92e1e15e598806dc6e51f328}{00010}}     \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00011}00011         \$calendarWeek = date(\textcolor{stringliteral}{"{}W"{}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00012}00012     \}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00014}00014     \textcolor{keywordflow}{if}(!empty(\$\_GET[\textcolor{stringliteral}{"{}year"{}}]) \&\& ctype\_digit(htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}year"{}}]))) \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00015}00015         \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} = htmlspecialchars(\$\_GET[\textcolor{stringliteral}{"{}year"{}}]);}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00016}00016     \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00017}00017         \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}} = date(\textcolor{stringliteral}{"{}Y"{}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00018}00018     \}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00020}00020     \textcolor{comment}{//get dates of \$calendarWeek}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00021}00021     require\_once(\textcolor{stringliteral}{"{}get\_calendar\_week.php"{}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00022}\mbox{\hyperlink{get__all__weekly__status_8php_a49a8a4009b02e49717caa88b128affc5}{00022}}     \mbox{\hyperlink{get__all__weekly__status_8php_a49a8a4009b02e49717caa88b128affc5}{\$res}} = \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}((\textcolor{keywordtype}{int}) \mbox{\hyperlink{project_2newproject_2index_8php_a8e992d901ac2312b3be2021ddbb7d11e}{\$year}}, (\textcolor{keywordtype}{int}) \$calendarWeek, \textcolor{stringliteral}{"{}en"{}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00024}00024     \textcolor{comment}{//convert date format to YYYY-\/MM-\/DD    }}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00025}\mbox{\hyperlink{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}{00025}}     \mbox{\hyperlink{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}{\$weekdays}} = array();}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00026}\mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{00026}}     \mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}} = 0;}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00028}00028         \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{get__all__weekly__status_8php_a49a8a4009b02e49717caa88b128affc5}{\$res}}[\textcolor{stringliteral}{"{}weekdays"{}}] as \mbox{\hyperlink{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}{\$day}}) \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00029}00029             \mbox{\hyperlink{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}{\$weekdays}}[\mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}}] = date(\textcolor{stringliteral}{"{}Y-\/m-\/d"{}}, strtotime(\mbox{\hyperlink{project_2newproject_2index_8php_a4db742f2faa33cdbae6722a11051f3bd}{\$day}}));}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00030}00030             \mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}}++;}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00031}00031         \}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00033}00033     \textcolor{comment}{//call database}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00034}\mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{00034}}     \mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}SELECT Status.`UserId`, Status.`ProjectId`, Status.`Day`, Project.`ProjectName` FROM `Status` INNER JOIN `Project` ON Status.`ProjectId` = Project.`ProjectId` WHERE Status.`Day` BETWEEN ? AND ?"{}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00035}00035     \mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{\$stmt}}-\/>bind\_param(\textcolor{stringliteral}{"{}ss"{}}, \mbox{\hyperlink{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}{\$weekdays}}[0], \mbox{\hyperlink{get__all__weekly__status_8php_ad2cd809b7bb27ec3a7ed26f41a3191ce}{\$weekdays}}[4]);}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00036}00036     \textcolor{keywordflow}{if}(\mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{\$stmt}}-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00037}00037         \mbox{\hyperlink{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{\$stmt}}-\/>get\_result();}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00038}00038     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00039}00039         echo \textcolor{stringliteral}{"{}Error: "{}}.\$stmt-\/>error;}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00040}\mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{00040}}         \mbox{\hyperlink{get__all__weekly__status_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}};}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00042}00042     \mbox{\hyperlink{get__all__weekly__status_8php_a3ade804e63c27bc84104503cdf866150}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00044}00044     \textcolor{comment}{//create array with all statuses}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00045}\mbox{\hyperlink{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}{00045}}     \mbox{\hyperlink{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}{\$statuses}} = array();}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00046}00046     \mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}} = 0;}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00047}\mbox{\hyperlink{get__all__weekly__status_8php_ab0158ca9a18445b980fa272c75fea0f1}{00047}}     \textcolor{keywordflow}{while}(\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \mbox{\hyperlink{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_assoc()) \{}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00048}00048         \mbox{\hyperlink{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}{\$statuses}}[\mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}}] = \mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}};}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00049}00049         \mbox{\hyperlink{get__all__weekly__status_8php_a83018d9153d17d91fbcf3bc10158d34f}{\$i}}++;}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00051}00051     }
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00052}00052     echo json\_encode(\mbox{\hyperlink{get__all__weekly__status_8php_a1fad8a59e7089d17007bebad83a45394}{\$statuses}});}
+\DoxyCodeLine{\Hypertarget{get__all__weekly__status_8php_source_l00053}00053 ?>}
+
+\end{DoxyCode}

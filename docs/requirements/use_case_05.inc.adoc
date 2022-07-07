@@ -4,6 +4,8 @@
 //<Kurze Beschreibung des Use Case>
 Es soll eine Funktion geben, Feiertage mittels einer API (https://feiertage-api.de) in den Kalender importieren zu können. Außerdem soll es möglich sein, die Feiertage bundesländerspezifisch importieren zu können. Außerdem soll es eine Funktion geben, Feiertage oder Brückentage händisch anlegen zu können oder diese zu löschen.
 
+//kann die API das überhaupt bundesland spezifisch oder sollte das nicht auch per hand erledigt werden?
+
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
 . Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.

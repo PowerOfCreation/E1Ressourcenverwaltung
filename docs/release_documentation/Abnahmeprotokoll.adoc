@@ -1,0 +1,150 @@
+= Abnahmeprotokoll <E1 Ressourcenverwaltung>
+:icons: font
+:lang: de
+//:sectnums: short
+
+//:source-highlighter: highlightjs
+//:imagesdir: img
+//Platzhalter für weitere Dokumenten-Attribute
+
+//Autor: {author}, Version {revnumber}, {revdate}
+== Projektangaben
+Thema: Eine Kalenderanwendung zum darstellen von Projekten 
+
+Zeitraum: 29.11.2021 - 30.01.2022 und 23.03.2022 - 08.07.2022
+
+//abgabe der anwendnung ist ja eig eher und braucht man die pause?
+
+GitHub Repository: https://github.com/PowerOfCreation/E1Ressourcenverwaltung
+
+
+== Abnahmedokumentation 
+=== Abnahme
+Datum: 22.06.2022
+
+Zeit: 16.30 Uhr
+
+Abnahmeumgebung: Server der HTW Dresden http://iseproject02.informatik.htw-dresden.de/
+
+=== Lieferumfang
+
+* Software in folgender Form: Download des GitHub Repository 
+* Benutzeranleitung (bis zum 08.07.2022)
+* Betriebsanleitung (bis zum 08.07.2022)
+* Anforderungsspezifikation (bis zum 08.07.2022)
+* Entwicklerdokumentation (bis zum 08.07.2022)
+* Testdokumentation (bis zum 08.07.2022)
+
+=== Funktionalität
+[cols="4,1,5"]
+|===
+|Use Case / Szenario | erfüllt | Anmerkung
+
+|UC1 / Standardablauf
+|nein
+|Wochenwechsel
+
+Alles erfüllt außer das Stati aus den vorherigen Wochen in die Woche übernommen werden können
+|UC2 / Standardablauf
+|ja
+|Stati eintragen
+|UC2 / Alternativerablauf 1
+|ja
+|Kein passendes Projekt angelegt
+|UC3 / Standardablauf 
+|ja
+|Benutzer anlegen
+|UC3 / Alternativerablauf 1
+|ja
+|Passwort entspricht nicht der Anforderung
+|UC3 / Alternativerablauf 2
+|ja
+|Benutzeranlegen abbrechen
+|UC3 / Alternativablauf 3
+|nein
+|Benutzer bearbeiten
+|UC4 / Standardablauf 
+|ja
+|Benutzer einem Projekt hinzufügen
+|UC4 / Alternativablauf 1
+|ja
+|Mitarbeiter entziehen
+|UC4 / Alternativablauf 2
+|ja
+|Projekt erstellen
+|UC4 / Alternativablauf 3
+|ja
+|Projekt löschen
+|UC4 / Alternativablauf 4
+|nein
+|Projekt bearbeiten
+|UC5 / Standardablauf 
+|nein
+|Importieren und Anlegen der Feiertage
+|UC5 / Alternativablauf 1
+|nein
+|Abbruch der Importierung
+|===
+
+===  Systemweite Anforderungen
+[cols="4,1,5"]
+|===
+|Anforderung | erfüllt | Anmerkung
+
+|SWFA-1: Alle Daten (Benutzer und Projekt) sollen persistent gespeichert werden.
+| ja
+|...
+|SWFA-2: Jeder Benutzer darf alle Daten bearbeiten.
+|nein
+|Keine der implementierte Funktion lässt Daten verändern.
+|SWFA-3: Das System muss die eingegeben Daten korrekt und vollständig an die Datenbank übermitteln.
+|ja
+|...
+|NFAU-1: Der Benutzer kommt, nachdem er angemeldet ist, mit maximal 2 Klicks in die Funktionsmaske hinein, wo er die Funktion ausführen kann.
+|ja
+|...
+|NFAU-2: Die Sprache für die Benutzeroberfläche ist deutsch.
+|ja
+|...
+|NFAR-1: Es darf kein falscher Kundenname oder falsches Passwort angegeben werden.
+|ja
+|...
+|NFAR-2: Die E-Mail-Adresse darf nur in einem gültigen Format eingegeben werden.
+|ja
+|...
+|NFAR-3: Es dürfen keine fehlerhafte Eingaben akzeptiert werden. Auf diese falschen Eingaben muss reagiert werden.
+|ja
+|...
+|NFAP-1: Das Aufrufen von neuen Seiten und das Speichern/Abschicken von Daten soll eine Geschwindigkeit 0,3 Sekunden haben.
+|ja
+|...
+|Einschränkungen: Software soll eine Webandwendung sein, welche bloß über das Intranet aufgerufen werden kann 
+|ja
+|...
+|Einschränkungen: die Anwendung soll mittels Docker auf dem Zielsystem verwendet werden können
+|ja
+|...
+|Organisatorische Randbedingungen: System soll nur intern nutzbar sein
+|ja
+|...
+|Rechtliche Anforderungen: Datenschutz muss beachtet werden 
+|ja
+|...
+|ISO 25000
+|nein
+|einige Anforderungen wurden teilweise erfüllt
+|===
+
+== Unterschriften
+
+Hiermit wird die Abnahme vollständig bestätigt. Herr Liebert hat im Vorfeld darauf verzichtet, dass die Anwendung vor der Übernahme auf den Systemen von T-Systems MMS getestet wird. 
+
+Bemerkungen:
+
+[cols="1,1"]
+|===
+|> 
+|>
+|Unterschrift Themensteller*in Sven Liebert
+|Unterschrift Projektleiter*in Nick Kemter
+|===

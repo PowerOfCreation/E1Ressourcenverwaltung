@@ -6,6 +6,11 @@ require_once("/app/config/credentials.php");
 include("../../database_structure.php");
 //More checks required...
 
+/**
+ * If any of the POST values are empty, return FALSE
+ * 
+ * @return bool A boolean value.
+ */
 function checkPostValues(): bool
 {
     if (
@@ -44,7 +49,7 @@ if (checkPostValues() === TRUE )
 		$add_user_project->execute();
 		$add_user_project->reset();
 
-		header("location: /index.php?created_project={$projectName}");
+		header("location: /project/index.php?created_project={$projectName}");
 		exit(0);
 	}
 	else

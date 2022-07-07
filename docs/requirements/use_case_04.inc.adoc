@@ -4,6 +4,8 @@
 //<Kurze Beschreibung des Use Case>
 Die Projektverwaltung soll in das System integriert werden, sodass man Projekte erstellen/bearbeiten und löschen kann. Dies soll jeder machen können, es gibt also keine Rechtevergabe, sondern jeder Benutzer ist dazu befugt. Ein Projekt kann mehreren Benutzern zugeordnet werden.
 
+//bearbeiten geht nicht
+
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
 . Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
@@ -25,8 +27,10 @@ Benutzer ist angemeldet.
 . WHILE Benutzer nicht zugewiesen
 .. Das Projekt wird ausgewählt.
 .. Die zuzuweisenden Benutzer werden selektiert.
-.. Im Anschluss wird die Auswahl bestätigt.
+//.. Im Anschluss wird die Auswahl bestätigt.
+//bestätigen soll es nicht mehr nach gespräch mit TS
 . Der Use Case ist abgeschlossen.
+
 
 === zugehörige Wireframes 
 
@@ -44,13 +48,13 @@ image::Projektverwaltung.jpg[]
 ==== Alternativer Ablauf 1: Mitarbeiter entziehen
 Wenn Benutzer im Schritt 2a. des Standardablaufs ein Projekt bearbeitet, dann
 
-. Kann neben einem Benutzer das Häckchen durch ein Klicken auf das Kästchen abgewählt werden
-. der Use Case wird bei dem Schritt 2c des Standardablaufs fortgesetzt
+. Kann neben einem Benutzer das Häckchen durch ein Klicken auf das Kästchen abgewählt werden.
+. Der Use Case wird bei dem Schritt 2c des Standardablaufs fortgesetzt.
 
 ==== Alternativer Ablauf 2: Projekt erstellen
 Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt verwaltet, dann
 
-. kann auch die Erstellung eines neuen Projektes initiiert werden.
+. Kann auch die Erstellung eines neuen Projektes initiiert werden.
 . WHILE Projekt ist nicht erstellt
 .. Projektinformationen wie Name oder Verantwortlicher müssen ausgefüllt werden.
 .. Projekterstellung wird bestätigt.
@@ -58,11 +62,21 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt verwaltet, dann
 
 ==== Alternativer Ablauf 3: Projekt löschen
 Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
-. müssen die zu löschenden Projekte ausgewählt werden.
+
+. Muss das zu löschende Projekt ausgewählt werden.
 . Es wird der Löschvorgang gestartet.
 .. Das Löschen muss bestätigt werden.
 . Der Use Case wird im Schritt 3 fortgesetzt.
 
+=== Alternativer Ablauf 4: Projekt bearbeiten
+Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt bearbeiten will, dann
+
+. Muss das zu bearbeitende Projekt ausgewählt werden.
+. Es wird der Bearbeitungsprozess gestartet.
+. WHILE im Bearbeitungsprozess.
+.. In den Feldern, welche geändert werden sollen, müssen die alten Daten gelöscht und die neuen Daten eingefügt werden.
+.. Die Änderungen müssen bestätigt werden.
+. Der Use Case wird in Schritt 3 fortgeführt. 
 
 // === Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -75,10 +89,15 @@ Wenn Benutzer im Schritt 1 des Standardablaufs ein Projekt löschen will, dann
 === Wesentliche Szenarios
 //Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
 ==== Szenario 1: Mitarbeiter einem Projekt zuweisen/entziehen
-*Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt und klickt auf "Zuweisen".
+*Sc1:* Benutzer A wählt Projekt Y aus. Im Anschluss weist er die Benutzer B und C dem Projekt Y zu, entzieht Benutzer D diesem Projekt. Damit ist das Zuweisen bzw. das Entziehen eines Projektes abgeschlossen 
+//zuweisen gibt es nicht mehr
+//doch, das sollte noch gehen
 
 ==== Szenario 2: Projekt erstellen
 *Sc2*: Benutzer A klickt auf den Button "Projekt erstellen". Im geöffneten Fenster wählt er als Projektnamen "Urlaub", Benutzer U als Verantwortlichen, Thema "Urlaub einteilen". Dafür hat er 2 Wochen Zeit und im Abgabedatum-Feld wird der 27.12.21 eingetragen. Danach klickt er auf "Projekt erstellen".
+//das mit dem datum stimmt auch nicht mehr
+//er kann ein datum eintragen, aber das ist eher bloß als erinnerung und nicht als festes ende zu verstehen
+// Das Datum ist auch nirgendwo zu sehen außer bei der Erstellung
 
 ==== Szenario 3: Projekt löschen
 *Sc3*: Benutzer A wählt Projekt "Urlaub" aus und klickt auf den Button "Projekt Löschen". Er bestätigt das Löschen.

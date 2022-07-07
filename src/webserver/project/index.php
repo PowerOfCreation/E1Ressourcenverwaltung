@@ -21,7 +21,8 @@ require_once("/app/config/credentials.php");
 <body>
 	<main>
 		<h1>Projekt Verwaltung</h1>
-			<div id="content-container">                              
+		<div id="notification-div" class="hidden"></div>
+			<div id="content-container">
 				<div id="projects-container">	
 					<h2>Projekte:</h2>
 						<?php					
@@ -29,7 +30,7 @@ require_once("/app/config/credentials.php");
 						
 							while ($row = $result->fetch_object()) 
 							{						
-								echo "<div><input type='radio' id='project-{$row->ProjectId}' name='project'><label for='project-{$row->ProjectId}' class='projectname' data-project-id='{$row->ProjectId}'>{$row->ProjectName}</label></div>";
+								echo "<div><input type='radio' id='project-{$row->ProjectId}' name='project' class='projectname' data-project-id='{$row->ProjectId}'><label for='project-{$row->ProjectId}' class='projectname' data-project-id='{$row->ProjectId}'>{$row->ProjectName}</label></div>";
 							}					
 						?>
 				</div>

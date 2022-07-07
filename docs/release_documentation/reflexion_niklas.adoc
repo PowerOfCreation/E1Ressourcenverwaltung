@@ -1,0 +1,19 @@
+Das Projekt E1 Ressourcenverwaltung begann im Wintersemester 2021/2022 und obwohl ich nur eines meiner Teammitglieder vorher kannte, haben wir uns schnell zusammengefunden, Aufgaben verteilt und erfolgreich losgelegt.
+In den darauffolgenden Wochen haben wir uns in regelmäßigen Meetings immer wieder getroffen und haben so unseren Fortschritt ausgetauscht.
+Probleme haben wir gemeinsam bearbeitet und wir sind sehr gut vorangekommen.
+Da ich als einziger zuvor schon an großen Softwareprojekten mitgearbeitet habe,
+habe ich großen Einfluss auf die technische Umsetzung gehabt und dies wurde von meinen Gruppenmitgliedern stets unterstützt.
+Ich wusste, dass dies auch gefährlich sein kann und habe somit immer versucht ein offenes Ohr für alle Anregungen zu haben, um dennoch gemeinsam voranzuschreiten.
+
+Im ersten Semester gab es nur einen kleinen vertikalen technischen Durchstoß und im zweiten Semester haben wir uns dann immer mehr auf die Implementation fokussiert.
+Um allen Teammitgliedern, unabhängig von ihren Vorkenntnissen, es möglichst einfach zu machen, mit am Quellcode zu entwickeln und diesen auch zu durchschauen, habe ich mir große Mühe gegeben, alle Programmieraufgaben atomar zu gestalten und so präzise wie möglich zu beschreiben.
+Zu jedem 'Programmierissue' habe ich beschrieben, in welcher Datei die Änderung vorgenommen werden muss, Hinweise zur Implementation und oft habe ich auch Links als Hilfestellung mit angegeben. Auch habe ich immer wieder betont, dass ich jederzeit um Rat gefragt werden kann und oftmals habe ich dies in Form von Pair-Programming auch getan.
+In der Vergangenheit habe ich mit diesem Vorgehen sehr gute Erfahrungen gemacht und auch in dem Gastvortrag von Otto Group Solution Provider, wurde diese Vorgehensweise stark empfohlen.
+Die Resonanz von meinen Teammitgliedern war ebenfalls sehr positiv und ich bin sehr froh, dass die Mischung aus viel Hilfestellungen geben, aber auch auf das Feedback eingehen, erfolgreich war. 
+
+Später im Projekt haben wir uns dann dazu entschieden nur noch mit Feature-Branches zu entwickeln und ich denke, dies war eine sehr gute Entscheidung, allerdings hätte ich diese gerne früher getroffen.
+Durch die Feature Branches wurden alle Änderungen in Form von Pull Requests eingereicht und es wurde deutlich einfacher Code-Reviews zu tätigen und somit allen Teammitgliedern sofort konstruktive Kritik zu geben und die Menge an eingeschleusten Fehler hat sich dadurch ebenfalls dramatisch reduziert. Dies war teilweise sehr aufwendig, aber ich denke, der Mehrwert war definitiv größer.
+
+Etwas schade fand ich die mangelnde Begeisterung vom Themensteller für unser Projekt. Einige Entscheidungen, wie ein Login-System, obwohl das System im Intranet laufen soll, oder dass alle Nutzer die vollkommen gleichen Berichtigungen haben, kann ich nicht nachvollziehen. Kritik oder Änderungsvorschläge vom Themensteller gab es fast gar nicht. Dies hat uns natürlich vor den gefürchteten Last-Minute-Änderungswünschen bewahrt, aber auch das Gefühl gegeben, dass das Projekt nicht unbedingt eine Priorität unseres Auftraggebers war. Dieses Gefühl hat sich bei mir immer weiter verstärkt und war für meine Teammitglieder und auch mich leider sehr demotivierend.
+
+Dennoch denke ich, dass das Projekt sehr vielseitig war und sehr viele verschiedene Kompetenzen, wie die Fachkenntnisse oder auch die Sozialkompetenzen, von den einzelnen Teammitgliedern abverlangt und gefördert hat. Diese Erfahrung kann definitiv für weitere Projekte mitgenommen und eingesetzt werden. Vor allem die zusätzlichen Herausforderungen, die wir bewältigt haben, sind am Ende genau das, woraus man am meisten mitnimmt. Ich denke, das Projekt hatte somit zwar seine Stolpersteine, aber war dennoch ein Erfolg.

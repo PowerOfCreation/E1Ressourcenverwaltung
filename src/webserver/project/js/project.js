@@ -7,7 +7,7 @@ $()
         $(".selected").removeClass("selected");
         showProject($(this).data("project-id"));
         $(this).addClass("selected");
-    })
+    });
 
     $(".user-checkbox").change(function () {
 
@@ -27,9 +27,16 @@ $()
                 data: `{"projectId":"${selectedProject}", "userIds":[${selectedUser}]}`
             });
         }
-    })
+    });
+
+    showSuccessNotifications();
 }
 
+/**
+ * It deletes a project from the database
+ * @param projectId - The id of the project to be deleted.
+ * @returns nothing.
+ */
 function deleteProject(projectId) {
     $("#message-container").text("");
     if (projectId === undefined) {
@@ -61,6 +68,11 @@ $("#btn-delete-project").click(function () {
     deleteProject(projectId);
 });
 
+/**
+ * It gets all the employees assigned to a project and checks the checkboxes of the employees in the
+ * modal
+ * @param projectId - The id of the project to show
+ */
 function showProject(projectId) {
 
     selectedProject = projectId;
@@ -84,4 +96,37 @@ function showProject(projectId) {
             });
         }
     });
+}
+
+/**
+ * It takes a message, shows it in the notification div, and then hides it after 5 seconds
+ * @param message - The message to display in the notification.
+ */
+function setNotification(message) {
+    const $notificationDiv = $("#notification-div");
+
+    $notificationDiv.removeClass("hidden");
+    $notificationDiv.text(message);
+    $notificationDiv.delay(5000).queue(function () {
+        $(this).hide();
+    });
+}
+
+/**
+ * If the URL contains a parameter called "created_project", then show a notification with the value of
+ * that parameter
+ */
+function showSuccessNotifications() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const project = urlParams.get('created_project');
+
+    if (project) {
+        setNotification(`Projekt ${project} erfolgreich angelegt.`);
+
+        urlParams.delete("created_project");
+    }
+
+    window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
 }

@@ -1,0 +1,50 @@
+\hypertarget{_calendar_week_test_8php_source}{}\doxysection{Calendar\+Week\+Test.\+php}
+\label{_calendar_week_test_8php_source}\index{test/CalendarWeekTest.php@{test/CalendarWeekTest.php}}
+\mbox{\hyperlink{_calendar_week_test_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00001}00001 <?php declare(strict\_types=1);}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00003}00003 use PHPUnit\(\backslash\)Framework\(\backslash\)TestCase;}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00005}00005 \textcolor{comment}{/* It tests the function `get\_calendar\_week` with different parameters */}}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00006}\mbox{\hyperlink{class_calendar_week_test}{00006}} \textcolor{keyword}{final} \textcolor{keyword}{class }\mbox{\hyperlink{class_calendar_week_test}{CalendarWeekTest}} \textcolor{keyword}{extends} TestCase}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00008}00008     }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00012}\mbox{\hyperlink{class_calendar_week_test_a9efa65415b28c8d2bc247f9026a1c8ee}{00012}}     \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_calendar_week_test_a9efa65415b28c8d2bc247f9026a1c8ee}{testCalendarWeek}}(): void}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00013}00013     \{}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00014}00014         \$this-\/>assertEquals(}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00015}00015             \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(2022, 23, \textcolor{stringliteral}{"{}en"{}}),}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00016}00016             array(\textcolor{stringliteral}{"{}calendarWeek"{}} => 23,\textcolor{stringliteral}{"{}weekdays"{}} => [\textcolor{stringliteral}{"{}2022-\/06-\/06"{}},\textcolor{stringliteral}{"{}2022-\/06-\/07"{}},\textcolor{stringliteral}{"{}2022-\/06-\/08"{}},\textcolor{stringliteral}{"{}2022-\/06-\/09"{}},\textcolor{stringliteral}{"{}2022-\/06-\/10"{}}],\textcolor{stringliteral}{"{}year"{}} => 2022)}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00017}00017         );}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00019}00019         \$this-\/>assertNotEquals(}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00020}00020             \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(2023, 23, \textcolor{stringliteral}{"{}en"{}}),}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00021}00021             array(\textcolor{stringliteral}{"{}calendarWeek"{}} => 23,\textcolor{stringliteral}{"{}weekdays"{}} => [\textcolor{stringliteral}{"{}2022-\/06-\/06"{}},\textcolor{stringliteral}{"{}2022-\/06-\/07"{}},\textcolor{stringliteral}{"{}2022-\/06-\/08"{}},\textcolor{stringliteral}{"{}2022-\/06-\/09"{}},\textcolor{stringliteral}{"{}2022-\/06-\/10"{}}],\textcolor{stringliteral}{"{}year"{}} => 2022)}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00022}00022         );}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00024}00024         \$this-\/>assertEquals(}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00025}00025             \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(2022, 23, \textcolor{stringliteral}{"{}de"{}}),}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00026}00026             array(\textcolor{stringliteral}{"{}calendarWeek"{}} => 23,\textcolor{stringliteral}{"{}weekdays"{}} => [\textcolor{stringliteral}{"{}06.06.2022"{}},\textcolor{stringliteral}{"{}07.06.2022"{}},\textcolor{stringliteral}{"{}08.06.2022"{}},\textcolor{stringliteral}{"{}09.06.2022"{}},\textcolor{stringliteral}{"{}10.06.2022"{}}],\textcolor{stringliteral}{"{}year"{}} => 2022)}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00027}00027         );}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00029}00029         \$this-\/>assertNotEquals(}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00030}00030             \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(2023, 23, \textcolor{stringliteral}{"{}de"{}}),}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00031}00031             array(\textcolor{stringliteral}{"{}calendarWeek"{}} => 23,\textcolor{stringliteral}{"{}weekdays"{}} => [\textcolor{stringliteral}{"{}06.06.2022"{}},\textcolor{stringliteral}{"{}07.06.2022"{}},\textcolor{stringliteral}{"{}08.06.2022"{}},\textcolor{stringliteral}{"{}09.06.2022"{}},\textcolor{stringliteral}{"{}10.06.2022"{}}],\textcolor{stringliteral}{"{}year"{}} => 2022)}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00032}00032         );}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00033}00033     \}}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00038}\mbox{\hyperlink{class_calendar_week_test_a734c242b0dd94beec40476a2c9922c8a}{00038}}     \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{class_calendar_week_test_a734c242b0dd94beec40476a2c9922c8a}{testAnotherYear}}(): void}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00039}00039     \{}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00040}00040         \$this-\/>assertEquals(}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00041}00041             \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(2023, 1, \textcolor{stringliteral}{"{}en"{}}),}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00042}00042             array(\textcolor{stringliteral}{"{}calendarWeek"{}} => 1,\textcolor{stringliteral}{"{}weekdays"{}} => [\textcolor{stringliteral}{"{}2023-\/01-\/02"{}},\textcolor{stringliteral}{"{}2023-\/01-\/03"{}},\textcolor{stringliteral}{"{}2023-\/01-\/04"{}},\textcolor{stringliteral}{"{}2023-\/01-\/05"{}},\textcolor{stringliteral}{"{}2023-\/01-\/06"{}}],\textcolor{stringliteral}{"{}year"{}} => 2023)}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00043}00043         );}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00045}00045         \$this-\/>assertEquals(}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00046}00046             \mbox{\hyperlink{get__calendar__week_8php_a5d3134aae6d6570204b7761be6cf4ce1}{get\_calendar\_week}}(2023, 1, \textcolor{stringliteral}{"{}de"{}}),}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00047}00047             array(\textcolor{stringliteral}{"{}calendarWeek"{}} => 1,\textcolor{stringliteral}{"{}weekdays"{}} => [\textcolor{stringliteral}{"{}02.01.2023"{}}, \textcolor{stringliteral}{"{}03.01.2023"{}}, \textcolor{stringliteral}{"{}04.01.2023"{}}, \textcolor{stringliteral}{"{}05.01.2023"{}}, \textcolor{stringliteral}{"{}06.01.2023"{}}],\textcolor{stringliteral}{"{}year"{}} => 2023)}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00048}00048         );}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{_calendar_week_test_8php_source_l00050}00050 \}}
+
+\end{DoxyCode}

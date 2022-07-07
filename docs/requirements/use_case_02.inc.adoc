@@ -24,7 +24,7 @@ Benutzer ist angemeldet.
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Alternativer Ablauf 1
+==== Alternativer Ablauf 1: Kein passendes Projekt angelegt
 . Der Use Case beginnt, wenn der Benutzer in der Kalenderansicht ist.
 . Benutzer klickt auf den passenden Tag in der Kalenderansicht in seiner Zeile. 
 . Es öffnet sich ein Auswahl-Menü.

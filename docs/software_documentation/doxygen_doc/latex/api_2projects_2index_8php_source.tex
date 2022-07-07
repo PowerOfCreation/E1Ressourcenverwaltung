@@ -1,0 +1,51 @@
+\hypertarget{api_2projects_2index_8php_source}{}\doxysection{index.\+php}
+\label{api_2projects_2index_8php_source}\index{src/webserver/api/projects/index.php@{src/webserver/api/projects/index.php}}
+\mbox{\hyperlink{api_2projects_2index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00002}00002 include(\textcolor{stringliteral}{"{}/app/config/credentials.php"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00004}00004 include(\textcolor{stringliteral}{"{}../../database\_structure.php"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00006}\mbox{\hyperlink{api_2projects_2index_8php_acedd13b51401130848ce18f4d5c52605}{00006}} \mbox{\hyperlink{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}{\$json}} = file\_get\_contents(\textcolor{stringliteral}{'php://input'});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00008}\mbox{\hyperlink{api_2projects_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{00008}} \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}} = json\_decode(\mbox{\hyperlink{api_2projects_2employees_2index_8php_acedd13b51401130848ce18f4d5c52605}{\$json}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00010}00010 \textcolor{keywordflow}{if} (!isset(\mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId)) \mbox{\hyperlink{database__structure_8php_a7bd818d05412ab77561a7c63518f60e1}{exit\_failure}}(\textcolor{stringliteral}{"{}projectId missing in POST data"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00012}00012 \textcolor{keywordflow}{switch}(\$\_SERVER[\textcolor{stringliteral}{"{}REQUEST\_METHOD"{}}]) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00013}00013     \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}DELETE"{}}:}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00014}00014         \textcolor{comment}{//delete status}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00015}00015         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM Status WHERE ProjectId = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00016}00016         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId);}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00017}00017         \textcolor{keywordflow}{if}(\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00018}00018             echo \textcolor{stringliteral}{"{}Status deleted"{}};}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00019}00019         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00020}00020             echo \textcolor{stringliteral}{"{}Error: "{}} . \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00021}00021         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00022}00022         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00024}00024         \textcolor{comment}{//delete User\_Project}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00025}00025         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM User\_Project WHERE ProjectId = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00026}00026         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId);}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00027}00027         \textcolor{keywordflow}{if}(\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00028}00028             echo \textcolor{stringliteral}{"{}User\_Project deleted"{}};}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00029}00029         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00030}00030             echo \textcolor{stringliteral}{"{}Error: "{}} . \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00031}00031         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00032}00032         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00034}00034         \textcolor{comment}{//delete Project}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00035}00035         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \mbox{\hyperlink{credentials_8php_a0d9c79b9b86b3f5891c6d3892f12c6a0}{\$connection}}-\/>prepare(\textcolor{stringliteral}{"{}DELETE FROM Project WHERE ProjectId = ?;"{}});}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00036}00036         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>bind\_param(\textcolor{charliteral}{'i'}, \mbox{\hyperlink{api_2projects_2employees_2index_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data}}-\/>projectId);}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00037}00037         \textcolor{keywordflow}{if}(\mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>execute()) \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00038}00038             echo \textcolor{stringliteral}{"{}Project deleted"{}};}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00039}00039         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00040}00040             echo \textcolor{stringliteral}{"{}Error: "{}} . \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>error;}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00041}00041         \}}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00042}00042         \mbox{\hyperlink{add__status_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}}-\/>close();}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00043}00043         }
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00044}00044         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{api_2projects_2index_8php_source_l00045}00045 \}}
+
+\end{DoxyCode}

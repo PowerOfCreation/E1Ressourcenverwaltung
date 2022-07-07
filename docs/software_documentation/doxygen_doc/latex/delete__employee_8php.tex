@@ -1,0 +1,68 @@
+\hypertarget{delete__employee_8php}{}\doxysection{src/webserver/api/delete\+\_\+employee.php File Reference}
+\label{delete__employee_8php}\index{src/webserver/api/delete\_employee.php@{src/webserver/api/delete\_employee.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}}(!isset(\$\+\_\+\+GET\mbox{[}\char`\"{}user\char`\"{}\mbox{]})) \mbox{\hyperlink{delete__employee_8php_a26e236cfe816ed5342fd06203e975cf3}{\$user}} = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\char`\"{}user\char`\"{}\mbox{]})
+\item 
+\mbox{\hyperlink{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}{\$stmt}} = \$connection-\/$>$prepare(\char`\"{}SELECT User\+Id FROM User WHERE Username = ?;\char`\"{})
+\item 
+\mbox{\hyperlink{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \$stmt-\/$>$get\+\_\+result()
+\item 
+\mbox{\hyperlink{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \$result-\/$>$fetch\+\_\+assoc()
+\item 
+\mbox{\hyperlink{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}{\$user\+Id}} = \$row\mbox{[}\textquotesingle{}User\+Id\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}\label{delete__employee_8php_a112ef069ddc0454086e3d1e6d8d55d07}} 
+\index{delete\_employee.php@{delete\_employee.php}!\$result@{\$result}}
+\index{\$result@{\$result}!delete\_employee.php@{delete\_employee.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{$result}}
+{\footnotesize\ttfamily \$result = \$stmt-\/$>$get\+\_\+result()}
+
+
+
+Definition at line \mbox{\hyperlink{delete__employee_8php_source_l00015}{15}} of file \mbox{\hyperlink{delete__employee_8php_source}{delete\+\_\+employee.\+php}}.
+
+\mbox{\Hypertarget{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}\label{delete__employee_8php_aa1d731aa570613e5bcff831bb10e9b87}} 
+\index{delete\_employee.php@{delete\_employee.php}!\$row@{\$row}}
+\index{\$row@{\$row}!delete\_employee.php@{delete\_employee.php}}
+\doxysubsubsection{\texorpdfstring{\$row}{$row}}
+{\footnotesize\ttfamily \$row = \$result-\/$>$fetch\+\_\+assoc()}
+
+
+
+Definition at line \mbox{\hyperlink{delete__employee_8php_source_l00018}{18}} of file \mbox{\hyperlink{delete__employee_8php_source}{delete\+\_\+employee.\+php}}.
+
+\mbox{\Hypertarget{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}\label{delete__employee_8php_af27a9140d5f2658693e7fd107f716449}} 
+\index{delete\_employee.php@{delete\_employee.php}!\$stmt@{\$stmt}}
+\index{\$stmt@{\$stmt}!delete\_employee.php@{delete\_employee.php}}
+\doxysubsubsection{\texorpdfstring{\$stmt}{$stmt}}
+{\footnotesize\ttfamily \$stmt = \$connection-\/$>$prepare(\char`\"{}SELECT User\+Id FROM User WHERE Username = ?;\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{delete__employee_8php_source_l00012}{12}} of file \mbox{\hyperlink{delete__employee_8php_source}{delete\+\_\+employee.\+php}}.
+
+\mbox{\Hypertarget{delete__employee_8php_a26e236cfe816ed5342fd06203e975cf3}\label{delete__employee_8php_a26e236cfe816ed5342fd06203e975cf3}} 
+\index{delete\_employee.php@{delete\_employee.php}!\$user@{\$user}}
+\index{\$user@{\$user}!delete\_employee.php@{delete\_employee.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} (!isset( \$\+\_\+\+GET\mbox{[}\char`\"{}user\char`\"{}\mbox{]})) \$user = htmlspecialchars(\$\+\_\+\+GET\mbox{[}\char`\"{}user\char`\"{}\mbox{]})}
+
+
+
+Definition at line \mbox{\hyperlink{delete__employee_8php_source_l00009}{9}} of file \mbox{\hyperlink{delete__employee_8php_source}{delete\+\_\+employee.\+php}}.
+
+\mbox{\Hypertarget{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}\label{delete__employee_8php_a84651f4070d04080f6c5fd3c98cc9104}} 
+\index{delete\_employee.php@{delete\_employee.php}!\$userId@{\$userId}}
+\index{\$userId@{\$userId}!delete\_employee.php@{delete\_employee.php}}
+\doxysubsubsection{\texorpdfstring{\$userId}{$userId}}
+{\footnotesize\ttfamily \$user\+Id = \$row\mbox{[}\textquotesingle{}User\+Id\textquotesingle{}\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{delete__employee_8php_source_l00019}{19}} of file \mbox{\hyperlink{delete__employee_8php_source}{delete\+\_\+employee.\+php}}.
+

@@ -1,0 +1,56 @@
+\hypertarget{registration_2index_8php}{}\doxysection{src/webserver/registration/index.php File Reference}
+\label{registration_2index_8php}\index{src/webserver/registration/index.php@{src/webserver/registration/index.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}{\$password\+\_\+error\+\_\+messages}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}{\$email\+\_\+error\+\_\+messages}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}}(isset(\$\+\_\+\+POST\mbox{[}\char`\"{}Username\char`\"{}\mbox{]}) \&\&!empty(htmlspecialchars(\$\+\_\+\+POST\mbox{[}\char`\"{}Username\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars(\$\+\_\+\+POST\mbox{[}\char`\"{}Forename\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars(\$\+\_\+\+POST\mbox{[}\char`\"{}Surname\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars(\$\+\_\+\+POST\mbox{[}\char`\"{}Department\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars(\$\+\_\+\+POST\mbox{[}\char`\"{}EMail\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars(\$\+\_\+\+POST\mbox{[}\char`\"{}Password\char`\"{}\mbox{]}))) \mbox{\hyperlink{registration_2index_8php_aad0fd708a818ba048625b6074fc14046}{\$result}} = \$connection-\/$>$query(\char`\"{}SELECT $\ast$ FROM Department;\char`\"{})
+\item 
+\mbox{\hyperlink{registration_2index_8php_a02da46f7678d582648864626c5883481}{while}} ( \$row=\$result-\/$>$fetch\+\_\+object())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}\label{registration_2index_8php_a3797e22953137734ba8954e49b7aa24a}} 
+\index{index.php@{index.php}!\$email\_error\_messages@{\$email\_error\_messages}}
+\index{\$email\_error\_messages@{\$email\_error\_messages}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$email\_error\_messages}{$email\_error\_messages}}
+{\footnotesize\ttfamily \$email\+\_\+error\+\_\+messages = \char`\"{}\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{registration_2index_8php_source_l00010}{10}} of file \mbox{\hyperlink{registration_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}\label{registration_2index_8php_a79fc87b47f1dbbad0f6ca7e3f1435f61}} 
+\index{index.php@{index.php}!\$password\_error\_messages@{\$password\_error\_messages}}
+\index{\$password\_error\_messages@{\$password\_error\_messages}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$password\_error\_messages}{$password\_error\_messages}}
+{\footnotesize\ttfamily \$password\+\_\+error\+\_\+messages = \char`\"{}\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{registration_2index_8php_source_l00009}{9}} of file \mbox{\hyperlink{registration_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{registration_2index_8php_aad0fd708a818ba048625b6074fc14046}\label{registration_2index_8php_aad0fd708a818ba048625b6074fc14046}} 
+\index{index.php@{index.php}!\$result@{\$result}}
+\index{\$result@{\$result}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{\$result}{$result}}
+{\footnotesize\ttfamily \mbox{\hyperlink{login_8php_a5ef2997aa0326f0e4b9bc261000e3c34}{if}} (isset( \$\+\_\+\+POST\mbox{[}\char`\"{}Username\char`\"{}\mbox{]}) \&\&!empty(htmlspecialchars( \$\+\_\+\+POST\mbox{[}\char`\"{}Username\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars( \$\+\_\+\+POST\mbox{[}\char`\"{}Forename\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars( \$\+\_\+\+POST\mbox{[}\char`\"{}Surname\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars( \$\+\_\+\+POST\mbox{[}\char`\"{}Department\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars( \$\+\_\+\+POST\mbox{[}\char`\"{}EMail\char`\"{}\mbox{]})) \&\&!empty(htmlspecialchars( \$\+\_\+\+POST\mbox{[}\char`\"{}Password\char`\"{}\mbox{]}))) \$result = \$connection-\/$>$query(\char`\"{}SELECT $\ast$ FROM Department;\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{registration_2index_8php_source_l00077}{77}} of file \mbox{\hyperlink{registration_2index_8php_source}{index.\+php}}.
+
+\mbox{\Hypertarget{registration_2index_8php_a02da46f7678d582648864626c5883481}\label{registration_2index_8php_a02da46f7678d582648864626c5883481}} 
+\index{index.php@{index.php}!while@{while}}
+\index{while@{while}!index.php@{index.php}}
+\doxysubsubsection{\texorpdfstring{while}{while}}
+{\footnotesize\ttfamily while(\$row=\$result-\/$>$fetch\+\_\+object()) (\begin{DoxyParamCaption}\item[{}]{\$row = {\ttfamily \$result-\/$>$fetch\+\_\+object()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{registration_2index_8php_source_l00079}{79}} of file \mbox{\hyperlink{registration_2index_8php_source}{index.\+php}}.
+

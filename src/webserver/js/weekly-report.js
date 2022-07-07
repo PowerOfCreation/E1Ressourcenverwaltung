@@ -1,6 +1,7 @@
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "(addStatus|handleProjectChange|changeCalendarWeek|deleteStatus)" }]*/
 
 $()
+/* A function that is called when the page is loaded. */
 {
     const $employeeEntries = $("#tbody-employee-entries");
 
@@ -18,14 +19,24 @@ const $addProjectButton = $("<button onclick='addStatus()'>Status hinzufügen</b
 const $addProjectSelect = $("<select onchange='handleProjectChange()' id='add-project-select'><option disabled selected value>Projekt auswählen</option></select>");
 const $deleteProjectButton = $("<button onclick='deleteStatus($(this).parent())' id='delete-project-button'>X</button>");
 
+/**
+ * When the user enters a weekday, append the add project button to the weekday
+ */
 function onWeekdayEnter() {
     $(this).append($addProjectButton);
 }
 
+/**
+ * When the user leaves a weekday, remove the button that was added to the weekday
+ */
 function onWeekdayLeave() {
     $(this).children().find("button").detach();
 }
 
+/**
+ * It deletes a status from the database
+ * @param element - the element that was clicked on
+ */
 function deleteStatus(element) {
     let $weekdayElement = $deleteProjectButton.parent().parent();
     let $employeeElement = $weekdayElement.parent();
@@ -42,6 +53,10 @@ function deleteStatus(element) {
     }
 }
 
+/**
+ * When the user clicks the "Add Status" button, the function removes the button and replaces it with a
+ * dropdown menu of projects that the employee is assigned to
+ */
 function addStatus() {
     let $weekdayElement = $addProjectButton.parent();
     let $employeeElement = $weekdayElement.parent();
@@ -65,6 +80,10 @@ function addStatus() {
     });
 }
 
+/**
+ * It gets the employee id and date from the DOM, gets the selected project id from the DOM, and then
+ * calls the API to add the status
+ */
 function handleProjectChange() {
     //get employee name and date
     let $weekdayElement = $addProjectSelect.parent();
@@ -83,6 +102,10 @@ function handleProjectChange() {
     });
 }
 
+/**
+ * It changes the week of the calendar
+ * @param change - "+" or "-"
+ */
 function changeCalendarWeek(change) {
     if (change == "+") {
         globalCalendarWeek++;
@@ -95,6 +118,10 @@ function changeCalendarWeek(change) {
     }
 }
 
+/**
+ * It sends a GET request to the server, waits for the response, and returns the response
+ * @returns The current calendar week.
+ */
 function getCalendarWeek() {
     var res = null;
     $.ajax({
@@ -109,6 +136,11 @@ function getCalendarWeek() {
 }
 
 //calls api/get_calendar_week.php and fills the table with the data
+
+/**
+ * It gets the dates of the current calendar week and displays them in the table
+ * @param [calendarWeek] - The calendar week you want to get the dates for.
+ */
 function getDates(calendarWeek = globalCalendarWeek) {
     $.get("api/get_calendar_week.php?format=de&calendarWeek=" + calendarWeek).done(function (data) {
         const calendarWeek = jQuery.parseJSON(data);
@@ -131,6 +163,11 @@ function getDates(calendarWeek = globalCalendarWeek) {
     });
 }
 
+/**
+ * It gets all the dates of the current week from the database, then it gets all the status entries of
+ * the current week from the database and then it populates the table with the status entries
+ * @param [calendarWeek] - The week number of the calendar week you want to populate.
+ */
 function populateTable(calendarWeek = globalCalendarWeek) {
     const elementNames = [
         ".td-entry-monday",
@@ -168,6 +205,10 @@ function populateTable(calendarWeek = globalCalendarWeek) {
     });
 }
 
+/**
+ * It takes a message, shows it in the notification div, and then hides it after 5 seconds
+ * @param message - The message to display in the notification.
+ */
 function setNotification(message) {
     const $notificationDiv = $("#notification-div");
 
@@ -178,22 +219,20 @@ function setNotification(message) {
     });
 }
 
+/**
+ * If the URL contains a parameter called registered_user, then show a notification with the value of
+ * that parameter
+ */
 function showSuccessNotifications() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
 
     const username = urlParams.get('registered_user');
-    const project = urlParams.get('created_project');
 
     if (username) {
         setNotification(`Nutzer ${username} erfolgreich angelegt.`);
 
         urlParams.delete("registered_user");
-    }
-    else if (project) {
-        setNotification(`Projekt ${project} erfolgreich angelegt.`);
-
-        urlParams.delete("created_project");
     }
 
     window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
