@@ -4,7 +4,7 @@
 
 === Erstellung und Verteilung der Aufgaben/Issues
 
-Die Implementationsaufgaben (Issues) wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch brachte Herr Werner, durch seine Ausbilung zum Fachinformatiker, genügend Vorwissen mit um dieser Aufgabe gewachsen zu sein.
+Die Implementationsaufgaben (Issues) wurden hauptsächlich von Herrn Werner erstellt. Wohl wissend, dass es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch brachte Herr Werner, durch seine Ausbildung zum Fachinformatiker, genügend Vorwissen mit, um dieser Aufgabe gewachsen zu sein.
 
 Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktualisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. Deswegen entspricht die Realisierungsreihenfolge nicht immer der Priorisierung der Use-Cases. So bringt es in der Praxis nichts, dass die Status in eine andere Woche kopiert werden können (UC 1), wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). So können keine Status angelegt werden, wenn es keine Benutzer (UC 3) oder Projekte (UC 4) gibt. 
 
@@ -61,7 +61,7 @@ Die Auswahl der Abteilung bei Registrierung eines neuen Nutzers wurde auf die n�
 === Entscheidungen
 Herr Kemter hat sich bereit erklärt, als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor innehatte.
 
-Durch die bereits in "Situation zum Semesterbeginn" geschrieben Situation, nahmen wir das Angebot von Herrn Prof. Anke an und bewarben uns für ein neues Mitglied, welches vorallem im Back-End helfen sollte. Jedoch gab es kein passendes Mitglied.
+Durch die bereits in "Situation zum Semesterbeginn" geschrieben Situation, nahmen wir das Angebot von Herrn Prof. Anke an und bewarben uns für ein neues Mitglied, welches vor allem im Back-End helfen sollte. Jedoch gab es kein passendes Mitglied.
 
 == Iteration 10 (29.03.2022 - 04.04.2022)
 ////
@@ -92,7 +92,6 @@ Herr Kemter hat das Architecture Notebook und das in der letzten Iteration angef
 === Implementation
 
 *UC 3*
-
 Die Nutzerübersichtsseite wurde von Herrn Werner um die Anzeige der Abteilung des Nutzers erweitert und das Issue somit abgeschlossen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/39[#39])
 
 Herr Werner hat das Aussehen der Benutzererstellung leicht verbessert. Der Code von einigen CSS, JavaScript und PHP Dateien wurde refactored. Jenes sollte dafür dienen, dass das spätere Bearbeiten vereinfacht wird.
@@ -112,7 +111,7 @@ Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekt
 == Problem
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 
-== Iteraion 11 (05.04.2022 - 11.04.2022)
+== Iteration 11 (05.04.2022 - 11.04.2022)
 
 ////
 
@@ -243,6 +242,7 @@ Fortgeführt:
 
 === Dokumentation 
 Die Risikoliste wurde erneut um einen Eintrag erweitert. Herr Nguyen hatte ein neues Formatierungstool verwendet, was ihm eigentlich Arbeit abnehmen sollte. Jedoch stellte sich heraus, dass bei jedem Speichern die Leerzeichen, welche zum Einrücken verwendet wurden, durch Tabs ersetzt. Dies führte dazu, dass bei GitHub die tatsächlichen Änderungen schwer zu sehen waren und es sehr viele Merge Konflikte gab.
+
 === Implementation
 
 *UC 1*
@@ -547,7 +547,7 @@ Fortgeführt:
 Wie geplant haben wir an Herrn Liebert die Anwendung per GitHub übergeben und unsere realisierten Use-Cases demonstriert. Die Übergabe verlief problemlos, da die Software und das Abnahmeprotokoll gut vorbereitet waren. Wie vorher vereinbart wird die Dokumentation jedoch bis spätestens dem 08.07. nachgereicht. Unserer Meinung nach war Herr Liebert mit der Umsetzung zufrieden. 
 
 === Treffen mit Herrn Professor Anke und Herrn Zirkelbach
-Herr Beck und Herr Kemter haben sich zu einer Konsultation mit Herrn Professor Anke und Herrn Zirkelbach getroffen. Das Ergebnis war, dass unser C4-Modell etwas abgeändert werden musste, da es Teile eines Sequenzdiagramms hatte, welches wir darauf hin auch erstellen haben. Zum Verständnis sollten die Componentbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden. 
+Herr Beck und Herr Kemter haben sich zu einer Konsultation mit Herrn Professor Anke und Herrn Zirkelbach getroffen. Das Ergebnis war, dass unser C4-Modell etwas abgeändert werden musste, da es Teile eines Sequenzdiagrammes hatte, welches wir darauf hin auch erstellen haben. Zum Verständnis sollten die Komponentenbezeichnungen im C4-Modell zu den im Programmcode verwendeten Dateinamen umbenannt werden. 
 
 Zu dem Projektbericht gab es ein paar strukturelle Fragen und wie genau wir die Inhaltsverteilung vornehmen sollen. Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden. Wir wurden jedoch in unserem bisherigen Aufbau bestätigt. Herr Werner und Herr Nguyen haben sich außerdem dazu bereit erklärt, dass Dokument zur Projektdurchführung zu verbessern, da beide mehr an der technischen Umsetzung beteiligt waren, als Herr Kemter. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116]) 
 
@@ -558,7 +558,7 @@ In in dem Gespräch mit Herrn Prof. Anke kamen auch unsere Probleme mit der teil
 Die Test- und Betriebsdokumentation sind fast fertig und es wurden bloß noch Kleinigkeiten verbessert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/105[#105] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/106[#106])
 Die Anwenderdokumentation sollte nach Feedback im Teammeeting ebenfalls noch um Kleinigkeiten verbessert werden, dazu zählten professionellere Pfeile auf den Bildern und eine etwas genauere Beschreibung der Vorgänge, damit keine Unklarheiten entstehen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/124[#124])
 
-Herr Beck und Herr Kemter erweiterten und verbesserten den Projektbericht weitherin. Da Beide sich nicht in der Lage fühlten, die Implementation zu beschreiben übernahm Herr Werner diesen Teil.(https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
+Herr Beck und Herr Kemter erweiterten und verbesserten den Projektbericht weiterhin. Da Beide sich nicht in der Lage fühlten, die Implementation zu beschreiben übernahm Herr Werner diesen Teil.(https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
 
 === Vortrag
 
