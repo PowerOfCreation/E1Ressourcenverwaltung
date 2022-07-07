@@ -25,9 +25,9 @@ Teamleiterin Frau Rubein hat uns, wie geplant, verlassen.
 
 ===  Team und Rollen
 
-Unsere Rollen bzw. Verantwortlichkeiten wurden aus dem vorangegangenen Semester übernommen. Dort wurden diese soweit wie möglich nach bereits vorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche mit ihren bisherigen Stärken und Interessen die größte Schnittmenge hatten. 
+Unsere Rollen bzw. Verantwortlichkeiten wurden aus dem vorangegangenen Semester übernommen. Dort wurden diese so weit wie möglich nach bereits vorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche mit ihren bisherigen Stärken und Interessen die größte Schnittmenge hatten. 
 
-Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts noch sieben, da Frau Rubein Wirtschaftsingenieurin ist und damit Software Engineering II nicht mehr belegt. Die Teamleitung hat Herr Kemter übernommen. Unser Team bekam nach wenigen Wochen Herr Nguyen als Nachzügler zur Unterstützung. Dieser hatte bereits Programmiererfahrungen und bekam daher die Verantwortung der Implementation. Herr Keil musste leider, wegen Krankheit, im 2. Semester ebenfalls aus dem Projekt ausscheiden. 
+Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts noch sieben, da Frau Rubein Wirtschaftsingenieurin ist und damit Software-Engineering II nicht mehr belegt. Die Teamleitung hat Herr Kemter übernommen. Unser Team bekam nach wenigen Wochen Herr Nguyen als Nachzügler zur Unterstützung. Dieser hatte bereits Programmiererfahrungen und bekam daher die Verantwortung der Implementation. Herr Keil musste leider, wegen Krankheit, im 2. Semester ebenfalls aus dem Projekt ausscheiden. 
 
 |===
 | Name| Rolle WS 21/22 | Rolle SoSe 22 | E-Mail
@@ -50,7 +50,7 @@ Für unseren wöchenlichen Gruppentreffen am Montagsabend verwendeten wir Discor
 Wir verwendeten zusätzlich WhatsApp, um schnelle Antworten für organisatorische Angelegenheiten erhalten zu können. 
 Discord und WhatsApp wurden auch verwendet, wenn Mitglieder zusammen an einer Aufgabe gearbeitet haben oder Hilfe bei einem Problem benötigten.
 
-In der zweiten Hälfte des Semesters haben wir Pull-Requests bei GitHub eingesetzt, wodurch direkt Feedback zur erstellten Inhalten gegeben werden konnte.
+In der zweiten Hälfte des Semesters haben wir Pull-Requests bei GitHub eingesetzt, wodurch direkt Feedback zu erstellten Inhalten gegeben werden konnte.
 
 Im Vergleich zum vorherigen Semester wurde mit dem Themensteller über Discord via Discordprivatnachrichten kommuniziert und nicht zusätzlich über E-Mail. Die Meetings fanden über den Discordserver im Sprachchat statt, wo häufig auch die Bildschirme übertragen wurden.
 
@@ -63,7 +63,7 @@ Die Meetings mit Herrn Liebert wurden auf gemeinsamen Google Docs-Dokumenten vor
 
 ===  Techniken/Praktiken - Way of Working
 
-Die Arbeitsweise orientierte sich am Open Unified Process. Das Team bemühte sich die vier Eigenschaften zu erfüllen. Ebenfalls haben wir versucht, andere Praktiken und eigene Erfahrungen einzubringen. Die Projektstrategie haben wir nach dem Kunden und seinen Bedürfnissen ausgerichtet. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt.
+Die Arbeitsweise orientierte sich am Open Unified Process. Das Team bemühte sich, die vier Eigenschaften zu erfüllen. Ebenfalls haben wir versucht, andere Praktiken und eigene Erfahrungen einzubringen. Die Projektstrategie haben wir nach dem Kunden und seinen Bedürfnissen ausgerichtet. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt.
 Es wurde in einwöchigen Iterationen gearbeitet, diese setzten ein hohes Maß an Eigenverantwortung und Selbstmanagement voraus.
 Der Ablauf setzte sich aus folgenden Punkten zusammen:
 
@@ -73,13 +73,8 @@ Die Iterationplanung erfolgte Kundenorientiert. Offene Aufgaben wurden nach Prio
 
 ==== Durchführen der Iteration
 
-Die Aufgaben wurden selbstständig abgearbeitet. Durch Pullrequests haben wir uns über Fortschritte oder Hindernisse informiert, diese dann überprüft und gegebenenfalls die Teamarbeit modifiziert indem ein Problem zu zweit besprochen wurde.
-
+Die Aufgaben wurden selbstständig abgearbeitet. Durch Pullrequests haben wir uns über Fortschritte oder Hindernisse informiert, diese dann überprüft und gegebenenfalls die Teamarbeit modifiziert, indem ein Problem zu zweit besprochen wurde.
 
 ==== Bewertung der Iteration
 
 In einem Teammeeting wurde die erledigte Aufgabe vorgestellt. Durch das Feedback der Teammitglieder konnten weitere Verbesserungen vorgenommen werden. In jeder Iteration wurde erfasst, welche Aufgaben fertig gestellt wurden oder noch offen blieben. Offene Aufgaben oder Ergänzungen wurden in die nächste Iteration übernommen. In solchen Fällen musste die Aufwandsabschätzung erneut bewertet werden.
-
-
-
-
