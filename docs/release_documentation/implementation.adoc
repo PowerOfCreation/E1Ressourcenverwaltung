@@ -1,12 +1,10 @@
 = Projektdurchführung
 
-//wurde beschrieben das Vitali das Login über mehrere Wochen versucht hat, aber eigentlich kein Fortschritt erziehlt hat? das hätte er ja eigentlich dann in der zeit gemacht, wo er "offiziell" nichts hatte
-
 == Vorwort 
 
 === Erstellung und Verteilung der Aufgaben/Issues
 
-Die Implementationsaufgaben bzw. -issues wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch brachte Herr Werner, durch seine Ausbilung zum Anwendungsinformatiker, genügend Vorwissen mit um dieser Aufgabe gewachsen zu sein.
+Die Implementationsaufgaben (Issues) wurden hautpsächlich von Herrn Werner erstellt. Wohlwissend das es ein Risiko sein könnte, wenn lediglich eine Person dies erledigt. Jedoch brachte Herr Werner, durch seine Ausbilung zum Fachinformatiker, genügend Vorwissen mit um dieser Aufgabe gewachsen zu sein.
 
 Die Reihenfolge der Issues wurde von den beschriebenen und priorisierten Use-Cases (UC) getrieben, welche in der aktualisierten Anforderungsanalyse notiert sind. Jedoch haben diese Use-Cases gewisse Abhängigkeiten hinsichtlich der Nutzbarkeit in der Realität. Deswegen entspricht die Realisierungsreihenfolge nicht immer der Priorisierung der Use-Cases. So bringt es in der Praxis nichts, dass die Status in eine andere Woche kopiert werden können (UC 1), wenn diese noch gar nicht durch den Benutzer hinzugefügt oder gar gelöscht werden könnten (UC 2). So können keine Status angelegt werden, wenn es keine Benutzer (UC 3) oder Projekte (UC 4) gibt. 
 
@@ -14,16 +12,11 @@ Viele solche praktischen Abhängigkeiten gibt es, was uns ein klares Abarbeiten 
 
 Weiterhin musste bei der Verteilung der Issues bedacht werden, wer noch Issues aus einer vorherigen Iteration bearbeitet und ob das Können sowie das Wissen der Teammitglieder für die Aufgabe ansatzweise ausreicht. Schwere oder große Aufgaben wurden daher oft von, oder mithilfe von, Herrn Werner und Herrn Nguyen bearbeitet.
 
-Die erfüllten Aufgaben sind mit "(https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/50[#50])" zu GitHub verlinkt. Leider haben nicht alle Funktionserweiterungen bzw. Aufgaben generell ein Issue, welcher Verlinkt wurde bzw. ist das Issue nicht Aussagekräftig und daher nicht verlinkt. 
+Die erfüllten Aufgaben sind mit "(https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/50[#50])" zu GitHub verlinkt. Leider wurde nicht zu jeder Funktionserweiterung bzw. Aufgabe ein Issue verlinkt. Dies hat den Grund, dass es nicht für alles ein Issue bei GitHub gibt bzw. dies nicht aussagekräftig genug ist.
 
 == Iteration 9 (23.03.2022 - 28.03.2022)
 
 Dies war die erste Iteration im neuen Semester. Wir hatten aufgrund der Semesterferien fast 2 Monate nicht mehr an dem Projekt gearbeitet. Daher mussten wir uns erst einmal wieder einen Überblick über den aktuellen Stand verschaffen und unsere Fähigkeiten aus dem Winterschlaf holen. 
-
-
-//Leider mussten wir krankheitsbedingt auf Herrn Keil und Frau Tartz verzichten. 
-
-
 ////
 Unsere Ziele für I09 waren:
 
@@ -50,21 +43,21 @@ Zudem fehlte der komplette Abschnitt "Praktiken und Bewertung". Diese Aufgabe wa
 Herr Liebert wollte eine Übersicht über einen Benutzer haben, wenn dieser in der Kalenderübersicht angeklickt wird. Dort sollte Name, Abteilung und Lösch- sowie Bearbeitungsmöglichkeiten des Benutzers angezeigt werden. Zunächst wird hier nur der Name des Benutzers angezeigt. Weitere Werte müssen in der nächsten Iteration hinzugefügt werden. Diese wurde von Herrn Werner bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/39[#39])
 
 *UC 2*
-Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Projekten der Nutzer zugeteilt werden kann. Um Projekten mehrere Nutzer zuzuweisen zu können und auch den Nutzern verschiedene Projekte zuzuweisen zu können, wurde eine neue Datenbanktabelle erstellt, die diese m:n Beziehung auflöst. Diese Aufgabe wurde Herrn Kirchhoff zugeteilt und konnte in dieser Iteration nicht beendet werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/38[#38])
+Die Datenbankstruktur musste erweitert werden, damit der Status basierend den Projekten der Nutzer zugeteilt werden kann. Um Projekten mehrere Nutzer, aber auch Nutzern verschiedene Projekte zuweisen zu können, wurde eine neue Datenbanktabelle erstellt, die diese m:n Beziehung auflöst. Diese Aufgabe wurde Herrn Kirchhoff zugeteilt und konnte in dieser Iteration nicht beendet werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/38[#38])
 
 *UC 3*
 Eine Aktualisierung betraf die Möglichkeit, bei der Registrierung, nun jedem Benutzer eine Abteilung zuzuordnen.
 Dazu wurde zunächst eine neue Datenbanktabelle Abteilung von Herrn Beck angelegt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/34[#34])
 
-Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um eine valide E-Mail Adresse handelt. Diese Aufgabe wurde Herrn Tichonow zugeteilt. Dies konnte nur im Front-End fertiggestellt werden. Die Überprüfung im Back-End wird auf die nächste Iteration verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33])
+Wenn ein neuer Benutzer angelegt wird, soll überprüft werden, ob es sich um eine valide E-Mail-Adresse handelt. Diese Aufgabe wurde Herrn Tichonow zugeteilt. Dies konnte nur im Front-End fertiggestellt werden. Die Überprüfung im Back-End wird auf die nächste Iteration verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33])
 
-Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Backend, konnte dieses Issue nicht in dieser Iteration beendet werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36])
+Ebenso soll das verwendete Passwort minimalen Sicherheitsstandards entsprechen. Diese Aufgabe wurden ebenfalls Herrn Tichonow zugeteilt. Da diese Validierungen nicht nur Frontend-seitig überprüft werden sollten, sondern auch im Back-End, konnte dieses Issue nicht in dieser Iteration beendet werden. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36])
 
 Die Auswahl der Abteilung bei Registrierung eines neuen Nutzers wurde auf die nächste Iteration verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/35[#35])
 //bild einfügen
 
 === Entscheidungen
-Herr Kemter hat sich bereit erklärt als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor inne hatte.
+Herr Kemter hat sich bereit erklärt, als Teamleiter zu fungieren, da Frau Rubein diese Rolle zuvor innehatte.
 
 Durch die bereits in "Situation zum Semesterbeginn" geschrieben Situation, nahmen wir das Angebot von Herrn Prof. Anke an und bewarben uns für ein neues Mitglied, welches vorallem im Back-End helfen sollte. Jedoch gab es kein passendes Mitglied.
 
@@ -109,8 +102,7 @@ Die Passwortkriterien, sowie die Überprüfung der E-Mail Adresse, werden weiter
 
 Es sollten Dummy-Daten für Projekte eingefügt, damit die Funktionalität leichter überprüft und das spätere Arbeiten dadurch angenehmer gestaltet werden kann. Jedoch wurde dies nicht begonnen und wird daher in der nächsten Iteration angefangen. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
 
-Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Diese Aufgabe wurde Herrn Keil zugeteilt.
-//Dies wurde von Herrn Liebert gewünscht, aber ist kein essentiell wichtiges Feature, da andere Use Cases laut ihm wichtiger sind. Es ist unklar wann Herr Keil wieder an dem Projekt mitarbeiten kann und deswegen wurde ihm diese Aufgabe zugeteilt. Das Issue wurde bis zum Ende der Iteration nicht begonnen. (#28)
+Es sollte eine Suchfunktion eingefügt werden, sodass nach Benutzern und Projekten gesucht werden kann. Diese Aufgabe wurde Herrn Keil zugeteilt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/28[#28])
 
 == Problem
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
@@ -555,6 +547,7 @@ Das Ergebnis war, dass unser C4-Modell etwas abgeändert werden musste, da es Te
 
 Zu dem Projektbericht gab es ein paar Strukturelle Fragen und wie genau wir die Inhaltsverteilung vornehmen sollen. Deswegen fragten wir, wie genau der Inhalt aufgeteilt werden muss, da wir durch die bereitgestellten Beispielprojektberichte etwas verunsichert wurden. Wir wurden jedoch in unserem bisherigen Aufbau bestätigt. Herr Werner und Herr Nguyen haben sich außerdem dazu bereit erklärt, dass Dokument zur Projektdurchführung zu verbessern, da beide mehr an der technischen Umsetzung beteiligt waren, als Herr Kemter. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/116[#116])
 //keine ahnung ob das hier noch hinkommt
+
 In in dem Gespräch mit Herrn Prof. Anke kamen auch unsere Probleme mit der teils sehr unterschiedlichen Beteiligung am Projekt auf.
 Einige Mitglieder haben deutlich mehr gemacht als andere. Diese ungerechte Verteilung sollte wie bereits beschrieben über die differenzierte Bewertung sich in der Note widerspiegeln. Jedoch war Herr Professor Anke davon nicht überzeugt und bat Herrn Kemter und Herrn Beck mit den anderen Mitgliedern zu sprechen und eine Entscheidung über die Benotung der betroffenen Mitglieder zu fällen. Die Mitglieder entschieden sich, eine möglichst faire E-Mail zusammen mit der Bitte, dass die anderen Mitglieder auch noch Stellung dazu beziehen dürfen, zu verfassen. Die betroffenen Teammitglieder wurden von der E-Mail informiert und es stand ihnen frei, ob sie noch den Vortrag halten wollen. Alle haben sich mit einem eventuellen "nicht Bestehen" nicht einverstanden gezeigt. Außerdem wollten sie wie gewohnt ihre zugeteilten Aufgaben bearbeiten.
 
@@ -596,67 +589,3 @@ Rückblickend kann gesagt werden, dass es vermutlich besser gewesen wäre, hätt
 Für fast jede Aufgabe wurde ein Issue erstellt und auch grundlegend verwaltet. Jedoch wäre es besser gewesen, wären diese immer in den Projekten bei GitHub verwaltet wurden. Dies wäre nicht nur für den Projektbericht von Vorteil gewesen, sondern auch bei der Aufgabenverwaltung wärend des Projektes.
 
 Ein weitere Erkenntnis ist, dass wir eine konsequentere Orientierung an der priorisierten Liste der Use-Cases hätten bei behalten müssen. Statt dessen sind wir davon, wie Eingangs beschrieben, teilweise abgewichen und haben uns stärker an einer für uns sinnvollen Nutzbarkeit orientiert. Eine andere Möglichkeit wäre die Rücksprache mit dem Themensteller über eine Abänderung der Priorisierung gewesen.
-
-////
-Wie wurden die Hauptaktivitäten (Analyse, Entwurf, Implementierung, Test, Dokumentation) durchgeführt?
-aufgaben wurden kurz nach projekt start als github issue angelegt
-analyse und entwurf hauptsächlich im 1. semester
-implementierung und test hauptsächlich im 2. semester
-dokumentation immer
-
-
-- Analyse wurde als Gruppe mit TS erfragt
-    - die fragen wurden vor dem treffen vorbereitet und danach nochmal nachbereitet
-  
-- Entwurf wurde dann von 1-2 personen je nach aufgaben erstellt 
-    - d.h. welche haben die vision übernernommen, andere die use case diagramme etc
-    - die resultate wurden dann im teammeeting besprochen und je nachdem nochmal bearbeitet
-    - manchmal hat sich natürlich noch was verändert -> dies wurde dann in späteren 
-    iterationen von meist einer person eingepflegt, da es nicht viel war
-- implementation
-    - wurde hauptsächlich von niclas, justus, vinh, vitali und carl erledigt 
-    - niclas hat aufgrund seiner ausbildung (?) schon viel erfahrung gehabt
-    - wurde mit docker gearbeitet, damit es egal ist welches OS genutzt wird und es dann wenige probleme bei der übergabe gibt
-- test
-    - mit psalm und ? wurde php code überprüft
-    - durch pull request wurden einige fehler vorm mergen behoben
-    - beim programmieren wurde natürlich auch überprüft, ob die veränderungen ungewollte effekte haben
-    - es wurden regelmäßig die funktionen in einem "general test" überprüft
-    - unit tests sind noch geplant, aber wissen nicht ob dafür zeit ist
-- documentation
-
-
-
-Welche (wesentlichen) Entscheidungen wurden getroffen? Warum?
-
-- semi offizielle entscheidung, dass aleksandra und nick sich eher um dokumentation kümmern (2. semester)
-- nick wird im 2. semester teamleiter, da helena nicht mehr mit macht. die entscheidung war schon etwas im 1. semester geplant, da er daran interesse hatte
-- das jonas nicht bewertet werden soll, da er nichts beigetragen hat (passt das hier?)
-- niclas sollte sich im 1. semester etwas zurückhalten, da er im 2. beim programmieren gebraucht wird
-
-Was hat gut geklappt, was nicht? Welche Ursachen gab es dafür?
-
-Gut
-
-- im 1. Semester wurden die vergebenen Aufgaben innerhalb von 1 bzw 2 iterationen erfüllt
-- jeder hat aufgaben angenommen
-- offener meinungsaustausch während der meeting
-- erfüllung der aufgaben in guter qualität (-> müssen nicht oft nacharbeiten bzw bloß kleinigkeiten)
-
-- bloß weil hier nicht mehr/alles genannt wird, heißt es nicht, dass nichts mehr gut war 
--> sondern bloß schwierig das alles zu benennen
-
-Schlecht
-
-- im 2. semester wurden öfter die gleichen aufgaben über mehrere iterationen gezogen und commit waren z.T. erst kurz vor teammeeting gepushed. das hat vermutlich den grund, dass wir ziemlich gut im 1. semester mit relativ wenig aufwand waren und dachten, dass geht so weiter bzw. einfach faulheit
-- bei coding fragen, wurde niclas nicht gefragt und daher die probleme auf "die lange bank geschoben"
-- zu wenig, die wirklich gut coden konnten
-- kranke teammitglieder (können daran nichts ändern)
-- manche teammitglieder haben öfters bei teammeeting gefehlt (aus verschiedenen gründe. krankheit oder andere termine)
-//sollen die mitglieder namentlich genannt werden?
-
-Wie wurde mit Problemen umgegangen? Haben die getroffenen Maßnahmen gewirkt?
-
-- iterationszeit erhöht, damit mehr gemacht wird -> nein, eher das gegenteil
-- Nick hat HTML/CSS gelernt und konnte dann etwas vom verbesserten Design erstellen 
-- niclas hat immer gesagt, dass man ihn eher fragen soll -> aber die anderen haben sich nicht getraut / haben die aufgaben zu spät angefanen um zu fragen(?)
