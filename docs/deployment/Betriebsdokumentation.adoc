@@ -80,7 +80,7 @@ Die typischen Fehler und deren Behebung finden Sie unter folgendem Link:
 
 == Datensicherung
 
-Das System unterstütz keine selbstständige Datensicherung.
+Das System unterstützt keine selbstständige Datensicherung.
 
 == Weitere Dokumentationen
 
