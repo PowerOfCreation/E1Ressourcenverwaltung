@@ -25,8 +25,8 @@ Nach erfolgreicher Anmeldung wird die Einsatzplan-Übersicht sichtbar. Diese zei
 
 image::EinsatzplanÜbersicht.jpg[]
 
-=== Mitarbeiter Erstellen und Löschen
-Über den Button "Mitarbeiter hinzufügen" können Sie einen neuen Mitarbeiter anlegen.
+=== Benutzer Erstellen und Löschen
+Über den Button "Mitarbeiter hinzufügen" können Sie einen neuen Benutzer anlegen.
 
 image::MitarbeiterHinzufügen1.jpg[]
 
@@ -51,10 +51,10 @@ Die Bestätigung ist oben im Bildschirm zu sehen:
 
 image::BenutzerErstellenErfolgreich1.jpg[]
 
-Zum Löschen eines Mitarbeiters klicken Sie auf dessen Namen auf der Startseite. 
+Zum Löschen eines Benutzers klicken Sie auf dessen Namen auf der Startseite. 
 Es öffnet sich eine Übersicht mit Informationen zum Namen und Abteilung.
 
-Über den Button "Mitarbeiter löschen" wird der Mitarbeiter aus dem System entfernt. 
+Über den Button "Mitarbeiter löschen" wird der Benutzer aus dem System entfernt. 
 
 image::MitarbeiterLöschen1.jpg[]
 
@@ -62,9 +62,9 @@ Das Programm verlangt eine weitere Bestätigung zur Ausführung. Hier kann der V
 
 image::MitarbeiterLöschen2.1.jpg[]
 
-=== Mitarbeiter Status
+=== Benutzer Status
 
-Dem Mitarbeiter kann ein Status über den Button "Status hinzufügen" zugeordnet werden.
+Dem Benutzer kann ein Status über den Button "Status hinzufügen" zugeordnet werden.
 
 image::StatusMitarbeiter1.jpg[]
 
@@ -76,9 +76,9 @@ image::StatusMitarbeiterLöschen1.jpg[]
 
 === Projektverwaltung
 
-In der Projektverwaltung ist ersichtlich, welcher Mitarbeiter welchem Projekt zugeordnet ist. Ebenfalls können Projekte erstellt oder gelöscht werden.
+In der Projektverwaltung ist ersichtlich, welcher Benutzer welchem Projekt zugeordnet ist. Ebenfalls können Projekte erstellt oder gelöscht werden.
 
-Sollen Projektmitarbeiter angezeigt werden, wählen Sie ein Projekt aus. Die dazugehörigen Mitarbeiter sind mit einem blauen Hacken gekennzeichnet.
+Sollen Projektbeteiligte angezeigt werden, wählen Sie ein Projekt aus. Die dazugehörigen Benutzer sind mit einem blauen Hacken gekennzeichnet.
 
 image::ProjektMitarbeiter.jpg[]
 
