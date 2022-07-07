@@ -1,4 +1,3 @@
-//verwende glaube immer unterschiedliche und falsche zeitformen
 = Planung
 
 == Ausgangssituation in Software Engineering II
@@ -13,13 +12,13 @@ Es gibt keine unterschiedlichen Berechtigungen. Jeder darf jede Funktion ausfüh
 
 Feiertage und Betriebsferien sollen ebenfalls dargestellt werden. Für die Feiertage wird eine spezielle API verwendet. Die Betriebsferien bzw. Bundesland abhängige Feiertage sollen "per Hand" erstellt werden können.
 
-Es gibt die technische Vorrausetzung, dass das System auf Docker und als Webanwendung betrieben werden kann. Andere Bedingungen sind nicht gegeben.
+Es gibt die technische Vorausetzung, dass das System auf Docker und als Webanwendung betrieben werden kann. Andere Bedingungen sind nicht gegeben.
 
 ===  Situation zum Semesterbeginn
 
 Unser Team hat bereits letztes Semester an diesem Projekt gearbeitet. Daher haben wir dank guter Vorarbeit eine Dokumentation, welche bereits auf einem guten Stand war und lediglich kleine Verbesserungen benötigte. 
 Mit Entwicklung der Anwendung haben wir im vorangegangenen Semester ebenfalls begonnen. Große Teile des Front-Ends waren auch schon funktional erstellt. Es fehlte z.B. noch die Seite für die Projekterstellung und der Feiertags-Import Funktion.
-Wenige Grundlegende Back-End-Strukturen und -funktionen waren auch schon angelegt, wie z.B. die Datenbank und das anzeigen von Mitarbeitern in der Kalenderansicht.
+Wenige grundlegende Back-End-Strukturen und -funktionen waren auch schon angelegt, wie z.B. die Datenbank und das Anzeigen von Mitarbeitern in der Kalenderansicht.
 
 Unsere Arbeitsmoral war aufgrund guter Leistungen im vorangegangenen Semester ziemlich hoch. Jedoch wussten wir, dass die bevorstehenden Aufgaben schwer werden könnten, da es einiges neues Wissen zu erlernen galt. Dies gilt besonders für unsere Programmierkenntnisse. 
 Teamleiterin Frau Rubein hat uns, wie geplant, verlassen.
@@ -56,8 +55,6 @@ In der zweiten Hälfte des Semesters haben wir Pull-Requests bei GitHub eingeset
 Im Vergleich zum vorherigen Semester wurde mit dem Themensteller über Discord via Discordprivatnachrichten kommuniziert und nicht zusätzlich über E-Mail. Die Meetings fanden über den Discordserver im Sprachchat statt, wo häufig auch die Bildschirme übertragen wurden.
 
 ===  Dokumentation und eingesetzte Tools 
-//wenn "dokumentation" zu ernst genommen wird, dann passt hier docker und mariadb etc nicht hin
-//    eingesetzte Tools: discord, whatsapp, docker(?), github, vs code, mariadb, google docs (für gemeinsame dokumente und zeitplan), psalm (und die anderen github dinge), draw.io
 Unsere Dokumentation und Code wurde persistent auf GitHub gespeichert. 
 
 Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Diagramme wurden mit Draw.io und VisualParadigm erstellt und zusätzlich PNG gesichert. 
@@ -83,65 +80,6 @@ Die Aufgaben wurden selbstständig abgearbeitet. Durch Pullrequests haben wir un
 
 In einem Teammeeting wurde die erledigte Aufgabe vorgestellt. Durch das Feedback der Teammitglieder konnten weitere Verbesserungen vorgenommen werden. In jeder Iteration wurde erfasst, welche Aufgaben fertig gestellt wurden oder noch offen blieben. Offene Aufgaben oder Ergänzungen wurden in die nächste Iteration übernommen. In solchen Fällen musste die Aufwandsabschätzung erneut bewertet werden.
 
-////
- //// 
 
-Kommunikation
-        Team: Whatsappgruppe für nicht aufgaben -> spontane absprachen, terminfindung
-                discord für gruppenmeeting 
-                discord/whatsapp für fragen bzw zusammenarbeit von aufgaben
-                github comments bei commits/pull request für verbesserungen und fragen/antworten
-
-        Auftraggeber: für die kommunikation wurde im 1. semester email zur verabredung und kleinen fragen genutzt
-        zur "face-to-face" kommunkikation, u.a. wie die anwendung gestaltet werden soll und andere organisatorische fragen
-        da helena die email hatte und nick, nicht warten/suchen wollte, hat der komplette kontakt über discord stattgefunden
-    eingesetzte Tools: discord, whatsapp, docker(?), github, vs code, mariadb, google docs (für gemeinsame dokumente und zeitplan), psalm (und die anderen github dinge), draw.io
-
-
-
-
-
-
-
-
-Aufgabenstellung:
-erstellung einer kalenderanwendung. dort kann eingetragen werden, welche Projekte an den tagen geplant sind
-es soll möglich sein, mitarbeiter anzulegen und zu löschen
-projekte sollen erstellbar sein und löschbar (beendet), den projekten sollen mitarbeiter hin- und entfernt können
-es soll eine funktion geben, wo feiertage eingetragen werden können. über eine API und manuell
-Auftraggeber:
-T- Systems MMS
-Ausgangssituation zum Semesterbeginn:
-
-- keine gruppe hat vorgearbeitet -> konnten auf nichts aufbauen
-
-
-//passt das hier überhaupt hin?
-niclas hatte als einziger viel erfahrung mit coden und wie man sachen am besten macht
-vitality, justus, carl und jonas hat etwas erfahrung im front end
-
-helena, aleksandra und nick hattem mit dem "anwenden" keine erfahrung
-
-Projektorganisiation:
-    Team und Rollen/Veranwortlichkeiten:
-    | Helena Rubein | Teamleiterin und Analyst | aus Projekt ausgeschieden | s81097@htw-dresden.de 
-    | Nick Kemter | Test | Teamleiter und Test | s82068@htw-dresden.de 
-    | Justus Beck | Implementation | Implementation | s82023@htw-dresden.de 
-    | Niklas Werner | Architektur | Architektur | s82076@htw-dresden.de 
-    | Jonas Keil | Implementation | aus Projekt ausgeschieden | s81910@htw-dresden.de
-    | Carl Kirchhoff | Architektur | Architektur | s82087@htw-dresden.de
-    | Aleksandra Tartz | Analyst | Analyst | s80433@htw-dresden.de
-    | Vitaly Tichonow | Test | Test | s82591@htw-dresden.de
-    | Vinh Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
-    Kommunikation
-        Team: Whatsappgruppe für nicht aufgaben -> spontane absprachen, terminfindung
-                discord für gruppenmeeting 
-                discord/whatsapp für fragen bzw zusammenarbeit von aufgaben
-                github comments bei commits/pull request für verbesserungen und fragen/antworten
-
-        Auftraggeber: für die kommunikation wurde im 1. semester email zur verabredung und kleinen fragen genutzt
-        zur "face-to-face" kommunkikation, u.a. wie die anwendung gestaltet werden soll und andere organisatorische fragen
-        da helena die email hatte und nick, nicht warten/suchen wollte, hat der komplette kontakt über discord stattgefunden
-    eingesetzte Tools: discord, whatsapp, docker(?), github, vs code, mariadb, google docs (für gemeinsame dokumente und zeitplan), psalm (und die anderen github dinge)
 
 
