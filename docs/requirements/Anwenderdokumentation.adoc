@@ -1,0 +1,123 @@
+= Anwenderdokumentation
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; Vinh Nguyen <s77261@htw-dresden.de>
+{localdatetime}
+:imagesdir: images
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== 1. Einführung
+Das Programm dient zur Verbesserung der wöchentlichen Ressourcenplanung und Projektverwaltung der Mitarbeiter bei T-Systems Multimedia Solutions GmbH.
+
+Die Koordinierung der Mitarbeiter und ihrer Tätigkeiten bezüglich aktueller und zukünftiger Projekte erfolgt in kalendarischer Darstellung.
+Jedem Mitarbeiter können Projekte zugeteilt werden, ebenso ist der Mitarbeiterstatus ersichtlich.
+
+Dadurch soll das Zeitmanagement und Koordinierung der Ressourcen verbessert und vereinfacht werden.
+
+== 2. Aufbau und Nutzung
+
+=== Login
+Die Anmeldung erfolgt im Intranet der T-Systems Multimedia Solutions GmbH.
+Hier geben Sie ihre persönlichen Login-Daten ein.
+
+image::LoginNeu1.jpg[]
+
+Nach erfolgreicher Anmeldung wird die Einsatzplan-Übersicht sichtbar. Diese zeigt die aktuelle Kalenderwoche, sowie weitere Funktionen an.
+
+image::EinsatzplanÜbersicht.jpg[]
+
+=== Mitarbeiter Erstellen und Löschen
+Über den Button "Mitarbeiter hinzufügen" können Sie einen neuen Mitarbeiter anlegen.
+
+image::MitarbeiterHinzufügen1.jpg[]
+
+Bei der Dateneingabe kann ein beliebiger Benutzername gewählt werden. 
+Ebenfalls erforderlich sind folgende Angaben:
+Vorname, Nachname, Abteilung, E-Mail-Adresse und ein Passwort.
+
+image::MitarbeiterDateneingabe1.jpg[]
+
+Über den Knopf "Passwort anzeigen" wird das eingegebene Passwort sichtbar.
+
+Erfüllt das gewählte Passwort nicht die Anforderungen, erscheint eine der folgenden Fehlermeldungen:
+
+image::FehlermeldungDateneingabe.jpg[]
+image::FehlermeldungDateneingabe2.jpg[]
+
+Nach erfolgreicher Dateneingabe wird der Vorgang mit dem Button "Benutzer erstellen" bestätigt.
+
+image::BenutzerErstellen1.jpg[]
+
+Die Bestätigung ist oben im Bildschirm zu sehen:
+
+image::BenutzerErstellenErfolgreich1.jpg[]
+
+Zum Löschen eines Mitarbeiters klicken Sie auf dessen Namen auf der Startseite. 
+Es öffnet sich eine Übersicht mit Informationen zum Namen und Abteilung.
+
+Über den Button "Mitarbeiter löschen" wird der Mitarbeiter aus dem System entfernt. 
+
+image::MitarbeiterLöschen1.jpg[]
+
+Das Programm verlangt eine weitere Bestätigung zur Ausführung. Hier kann der Vorgang bestätigt oder bei Bedarf abgebrochen werden.
+
+image::MitarbeiterLöschen2.1.jpg[]
+
+=== Mitarbeiter Status
+
+Dem Mitarbeiter kann ein Status über den Button "Status hinzufügen" zugeordnet werden.
+
+image::StatusMitarbeiter1.jpg[]
+
+image::StatusMitarbeiterWählen1.jpg[]
+
+Soll der Status entfernt werden, erfolgt dies über das Kreuz am Rand. Auch hier muss der Vorgang erneut bestätigt werden.
+
+image::StatusMitarbeiterLöschen1.jpg[]
+
+=== Projektverwaltung
+
+In der Projektverwaltung ist ersichtlich, welcher Mitarbeiter welchem Projekt zugeordnet ist. Ebenfalls können Projekte erstellt oder gelöscht werden.
+
+Sollen Projektmitarbeiter angezeigt werden, wählen Sie ein Projekt aus. Die dazugehörigen Mitarbeiter sind mit einem blauen Hacken gekennzeichnet.
+
+image::ProjektMitarbeiter.jpg[]
+
+Zur Erstellung eines neuen Projektes werden folgende Daten benötigt:
+Projektname, Verantwortlicher und Thema.
+Die Farbe, sowie das Abgabedatum, können individuell angepasst werden.
+
+image::ProjektErstellenDateneingabe1.jpg[]
+image::ProjektErstellenDatum1.jpg[]
+
+Der Vorgang wird über den Button "Projekt erstellen" abgeschlossen.
+
+Wurde das Projekt erfolgreich angelegt, erscheint eine Bestätigung am oberen Rand.
+
+image::ProjektErstellenErfolgreich1.jpg[]
+
+Soll ein Projekt gelöscht werden, wählen Sie dieses in der Übersicht aus.
+
+image::ProjektLöschen1.jpg[]
+
+Mit "Projekt löschen" wird der Vorgang bestätigt.
+
+Bevor das Projekt endgültig aus dem System entfernt wird, ist eine erneute Bestätigung notwendig. Hier kann der Vorgang bei Bedarf noch abgebrochen werden.
+
+image::ProjektLöschenBestätigen1.jpg[]
+
+Wurde das Projekt aus dem System entfernt, erscheint folgende Meldung:
+
+image::ProjektLöschenErfolgreich1.jpg[]
+
+Über den Button "Zurück" gelangen Sie wieder zur Einsatzplan-Übersicht.
+
+== 3. Allgemeine Informationen
+
+Über das Minus und Plus am unteren Rand kann die aktuelle oder vergangene Kalenderwoche ausgewählt werden. Auch hier ist die Bearbeitung, wie oben beschrieben, möglich.
+
+image::PlusMinus.jpg[]
+
+image::KW26.jpg[]
+
+
+

@@ -23,7 +23,7 @@ Siehe <<#glossary, Glossar>>.
 //das hier mehr nutzen
 
 
-=== Referenzen
+//=== Referenzen
 //(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
 == Positionierung
@@ -68,8 +68,7 @@ Beispiel
 |die|	ihre Projekte und Ressourcen besser planen und verwalten wollen
 |Das Produkt / die Lösung | ist eine kalendarischer Übersicht
 |Die 	| eine bessere Ressourcenverwaltung und Projektplanung ermöglicht
-|Im Gegensatz zur	| aktuellen Situation, da zu diesem Zweck kein System vorhanden
-//herausfinden, wie es denn jetzt gemacht wird? telefon, nachrichten, doodle...?
+|Im Gegensatz zur	| aktuellen Situation, da zu diesem Zweck kein System vorhanden. Die Projekte/Aufgaben werden im Meeting zugeteilt
 |===
 
 
@@ -123,7 +122,7 @@ Beispiel
 //   * die zu entwickelnde Anwendung soll es keine Einschränkung bezüblich des
 . Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
    * keine Anbindung an Drittsysteme
-   * nur Importierung der Feiertage    
+   * nur Importierung der Feiertage per API und händisch   
 //Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
 
 == Produkt-/Lösungsüberblick

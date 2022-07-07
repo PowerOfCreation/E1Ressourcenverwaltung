@@ -4,6 +4,9 @@
 //<Kurze Beschreibung des Use Case>
 Man soll Benutzer anlegen/bearbeiten und löschen können. Dabei wird jedem Benutzer genau eine Abteilung zugeordnet. Ein Benutzer wird einem oder mehreren Projekten zugeordnet. Auch hier gibt es kein Rollensystem, d.h. jeder Benutzer ist dazu befugt. Jeder Benutzer muss über einen eindeutigen individuellen Benutzernamen identifizierbar sein. Diesen kann jeder selbst wählen. Jeder Benutzer soll sein eigenes Passwort haben, welches er selber wählen kann. Wenn das Passwort vergessen wurde, sollte es eine Funktion geben dieses zu ändern bzw. zurückzusetzen. Dies kann jeder Benutzer machen.
 
+//benutzer ändern nicht erfüllt
+//pwd zurücksetzen/ändern nicht erfüllt
+
 ===	Kurzbeschreibung der Akteure
 ==== Benutzer
 Person, die in einem Arbeitsverhältnis mit T-Systems MMS steht. Das umfasst Geschäfts-, Abteilungs- & Projektleiter sowie Mitarbeiter.
@@ -19,9 +22,9 @@ Benutzer ist angemeldet.
 . WHILE Benutzer ist nicht erstellt.
 .. Benutzer gibt Benutzernamen ein.
 .. Benutzer gibt Name und Vorname ein.
-.. Benutzer gibt Passwort ein.
-... Benutzer gibt erneut das Passwort ein.
 .. Benutzer wählt aus der Liste eine Abteilung aus.
+.. Benutzer gibt E-Mail-Adresse ein.
+.. Benutzer gibt Passwort ein.
 . Benutzer erstellt einen neuen Benutzer durch Klicken auf "Benutzer Hinzufügen".
 . Der Use Case ist abgeschlossen.
 
@@ -35,18 +38,29 @@ Das nächste Bild zeigt das Profil eines Benutzers, indem Einstellungen geänder
 
 image::Mitarbeiteransicht.jpg[]
 
-
+//die editierfunktion wird bloß als bild beschrieben, jedoch nicht als ablauf
 
 === Alternative Abläufe
 //Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
-==== Alternativer Ablauf 1
+==== Alternativer Ablauf 1: Passwort entspricht nicht der Anforderung
 Wenn Benutzer im Schritt 2c des Standardablaufs ein Passwort eingegeben hat, was nicht den Anforderungen entspricht, dann
+
 . wird eine Fehlermeldung angezeigt.
 . Benutzer wird zur erneuten Eingabe aufgefordert.
 
-==== Alternativer Ablauf 2
+==== Alternativer Ablauf 2: Benutzer Anlegen abbrechen
 Wenn Benutzer im Schritt 1 des Standardablaufs auf den Knopf "Benutzer hinzufügen" gedrückt hat, dann 
+
 . kann der Vorgang durch das Drücken auf Taste "Abbrechen und Zurück" abgebrochen werden.
+
+==== Alternativer Ablauf 3: Benutzer bearbeiten
+
+. Der Alternative Use Case beginnt, wenn der Benutzer auf einen Benutzer in der Kalenderansicht klickt.
+. Benutzer klickt auf den "Ändern"-Knopf
+. WHILE bei Benutzer nicht alle Daten befüllt.
+.. In den Feldern, welche geändert werden sollen, müssen die alten Daten gelöscht und die neuen Daten eingefügt werden.
+.. Die Änderungen müssen bestätigt werden.
+. Der Use Case wird in Schritt 3 fortgeführt. 
 
 //=== Unterabläufe (subflows)
 //Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
@@ -69,5 +83,6 @@ Um einen neuen Benutzer erfolgreich anzulegen, müssen alle Felder gemäß den A
 === Besondere Anforderungen
 . Alle Felder müssen ausgefüllt werden.
 . Der Benutzername ist nicht vergeben.
-. Das Passwort wurde zweimal richtig eingegeben.
 . Das Passwort enthält mindestens 8 Zeichen und mindestens 1 Sonderzeichen.
+
+// Wie ist jetzt der Stand? mind 8 Zeichen, 1 Buchstabe, 1 Sonderzeichen, 1 Zahl? Oder wurde etwas geändert?

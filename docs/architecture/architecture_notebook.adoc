@@ -119,25 +119,64 @@ Wir verwenden drei Sichten, um die Architektur zu beschreiben:
 
 * logische Sicht, um die Funktionalität der Endbenutzer darzustellen, 
 * physische Sicht, um aufzuzeigen auf welchen Hardwareteilen das System funktioniert, 
-* Use-Cases-Sicht, um zu beschreiben, welche wichtigen Anwendungsfälle und Anwendungszenarien die Anwender haben werden
+* Use-Cases-Sicht, um zu beschreiben, welche wichtigen Anwendungsfälle und Anwendungsszenarien die Anwender haben werden
 
 === Logische Sicht
 //Beschreibt die Struktur und das Verhalten Systemteilen, die hohen Einfluss auf die Architektur haben. Dies kann die Paketstruktur, kritische Schnittstellen, wichtige Klassen und Subsysteme sowie die Beziehungen zwischen diesen Elementen enthalten. Zudem sollten die physische und logische Sicht persistenter Daten beschrieben werden, wenn es diesen Aspekt im System gibt. Dies ist ein hier dokumentierter Teilaspekt des Entwurfs.
 
-Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglicht es uns die verschiedenene Elemente und ihre Beziehungen darzustellen, damit kannn die Architekture unseres Programmes in verschieden Detailgraden dargestellt werden. 
+Die logische Sicht wird durch ein C4 Modell dargestellt. Das C4-Modell ermöglicht es uns die verschiedenen Elemente und ihre Beziehungen darzustellen, damit kann die Architektur unseres Programmes in verschieden Detailgraden dargestellt werden. 
 
-Im Moment existieren nur 2 Ebenen, da die eine dritte schon die noch nicht Fertige und sich ändernde Implementierung illustrieren würde.
+=== Kontext-Diagramm
 
-image::c4.drawio.png[] 
+Die erste Ebene des C4-Modells beschreibt den Umfang des Softwaresystems sowie seine Beziehung zum Benutzer und einem anderen Softwaresystem - Feiertags-API.
+
+- Benutzer interagiert mit dem Softwaresystem "Ressourcenverwaltung"
+
+- Benutzer kann Mitarbeiter an einzelnen Tagen den Projekten und Aktivitäten zuweisen
+
+- Das Softwaresystem ruft Feiertags-API auf, die die Informationen zu bundesweiten und bundesländerspezifischen Feiertagen liefert.
+
+[#img-c4_1] 
+.C4-Model: Context
+image::c4 1 sicht.drawio.png[c4_1] 
+
+=== Container-Diagramme
+
+Die zweite Ebene des C4-Modells beschreibt miteinander verbundene Container, die eine Gesamtheit des Systems bilden.
+
+Das Softwaresystem ist in drei Container aufgeteilt:
+
+. JavaScript
+
+. PHP
+
+. MariaDB
+
+Webbrowser stellt API-Abfragen an das Backend. Das Backend schreibt/liest Daten in/aus der Datenbank
+
+[#img-c4_2] 
+.C4-Model: Containers
+image::c4 2 sicht.drawio.png[c4_2] 
+
+=== Komponenten-Diagramm
+
+Die dritte Ebene des C4-Modells beschreibt Komponente, aus welchen die Container bestehen. Im folgenden Diagramm sind alle API aufgeführt, deren Beziehungen, wie die miteinander kommunizieren und wie sie mit der Datenbank interagieren.
+
+[#img-c4_3] 
+.C4-Model: Components
+image::c4 3 schicht feiertage.png[c4_3] 
+
 
 === Physische Sicht (Betriebssicht)
 //Beschreibt die physischen Knoten (Rechner) des Systems, der Prozesse, Threads und Komponenten, die in diesen Knoten ausgeführt werden. Diese Sicht wird nicht benötigt, wenn das System in einem einzelnen Prozess oder Thread ausgeführt wird.
 
 //klingt der erste Satz gut?
-Momentan wird die Webanwendung für Test- und Vorzeigezwecke mit Hilfe von Dockern lokal getestet. Dies hat den Sinn, dass eine Änderung des Codes sofort im Webbrowser umsetzbar ist und eventuelle Fehler nicht die anderen Gruppenmitglieder aktiv stören. 
-Wenn das Projekt abgeschlossen ist, soll es jedoch auf einem von T-Sytems Multimedia Solutions gehosteten Server laufen.
+Momentan wird die Webanwendung für Test- und Vorzeigezwecke mit Hilfe von Docker lokal getestet. Dies hat den Sinn, dass eine Änderung des Codes sofort im Webbrowser umsetzbar ist und eventuelle Fehler nicht die anderen Gruppenmitglieder aktiv stören. 
+Wenn das Projekt abgeschlossen ist, soll es jedoch auf einem von T-Systems Multimedia Solutions gehosteten Server laufen.
 
 === Use cases
 //Eine Liste oder ein Diagramm der Use Cases, die architektur-relevante Anforderungen enthalten.
 
-image::Ressourcenplanung.jpg[]
+[#img-Ressourcenplanung] 
+.Use Cases
+image::Ressourcenplanung.jpg[UC]

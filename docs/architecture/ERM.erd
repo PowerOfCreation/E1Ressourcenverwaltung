@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ERM.erd">
+	<entities>
+		<data-source id="mysql8-17e63bfc3f2-991adb4e5671088">
+			<entity id="1" name="Department" fq-name="MY_DATABASE.Department" order="0" x="728" y="386">
+				<path name="MY_DATABASE"/>
+			</entity>
+			<entity id="2" name="Project" fq-name="MY_DATABASE.Project" order="1" x="143" y="75">
+				<path name="MY_DATABASE"/>
+			</entity>
+			<entity id="3" name="Status" fq-name="MY_DATABASE.Status" order="2" x="477" y="80">
+				<path name="MY_DATABASE"/>
+			</entity>
+			<entity id="4" name="User" fq-name="MY_DATABASE.`User`" order="3" x="465" y="386">
+				<path name="MY_DATABASE"/>
+			</entity>
+			<entity id="5" name="User_Project" fq-name="MY_DATABASE.User_Project" order="4" x="154" y="388">
+				<path name="MY_DATABASE"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="User_ibfk_1" fq-name="MY_DATABASE.`User`.User_ibfk_1" type="fk" pk-ref="1" fk-ref="4"/>
+		<relation name="Status_ibfk_2" fq-name="MY_DATABASE.Status.Status_ibfk_2" type="fk" pk-ref="2" fk-ref="3"/>
+		<relation name="User_Project_ibfk_2" fq-name="MY_DATABASE.User_Project.User_Project_ibfk_2" type="fk" pk-ref="2" fk-ref="5"/>
+		<relation name="Project_ibfk_1" fq-name="MY_DATABASE.Project.Project_ibfk_1" type="fk" pk-ref="4" fk-ref="2"/>
+		<relation name="Status_ibfk_1" fq-name="MY_DATABASE.Status.Status_ibfk_1" type="fk" pk-ref="4" fk-ref="3"/>
+		<relation name="User_Project_ibfk_1" fq-name="MY_DATABASE.User_Project.User_Project_ibfk_1" type="fk" pk-ref="4" fk-ref="5"/>
+	</relations>
+</diagram>
