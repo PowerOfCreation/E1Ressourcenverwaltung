@@ -17,16 +17,4 @@ Dennoch vielen die Mengen der übernommenen Aufgaben, teils wegen Krankheit, unt
 
 Durch Unachtsamkeit wurde die Bezeichnung "Mitarbeiter" mehrfach in der Anwendung und auch im Sourcecode verwendet. Die richtige Bezeichnung ist "Benutzer". Vermutlich hat dies keinen negativen Einfluss auf die Anwendung und deren Nutzen, könnte jedoch bei einer eventuellen Weiterentwicklung zuerst zu Verwirrung und zu etwas Arbeit beim Berichtigen führen.
 
-//würde hier nicht weiter auf die thematik eingehen, dass einige wenig gemacht haben 
-
-//die wichtigsten UC / Funktionen wurden erreicht die für eine benutzung der anwendung nötig sind
-//-> sollen die use cases nochmal beschrieben werden und was damit gemacht werden kann?
-
-
-//einige alternativabläufe wurden nicht erfüllt. diese sind jedoch (aus unserer sicht nice to have), da der bearbeiten zumindest auch über löschen und neu erstellen möglich ist. 
-//das übernehmen von Status aus der einen woche in eine andere wurde nicht erfüllt, obwohl es eigentlich ein nützliches feature wäre
-
-//ein kompletter use case #5 wurde nicht erfüllt, da dafür keine zeit. mit einigen wochen mehr, wäre es vermutlich etwas geworden 
-//die gründe für das nicht erfüllen waren als primärgrund keine zeit. genauer war es aber, dass am anfang vermutlich einfach nicht genug gemacht wurde. am ende wollten wir die restliche zeit in die dokumente reinstecken
-
 === Reflexion der Teammitglieder
