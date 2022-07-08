@@ -18,5 +18,3 @@ Des Weiteren war uns eine möglichst gleichmäßige Arbeitsverteilung wichtiger,
 Dennoch vielen die Mengen der übernommenen Aufgaben, teils wegen Krankheit, unterschiedlich aus. Was am Ende auch der Hauptgrund für das oben beschriebene Nichterfüllen mancher Anforderungen ist.
 
 Durch Unachtsamkeit wurde die Bezeichnung "Mitarbeiter" mehrfach in der Anwendung und auch im Sourcecode verwendet. Die richtige Bezeichnung ist "Benutzer". Vermutlich hat dies keinen negativen Einfluss auf die Anwendung und deren Nutzen, könnte jedoch bei einer eventuellen Weiterentwicklung zuerst zu Verwirrung und zu etwas Arbeit beim Berichtigen führen.
-
-=== Reflexion der Teammitglieder
