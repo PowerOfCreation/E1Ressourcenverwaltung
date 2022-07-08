@@ -23,7 +23,7 @@ Der Projektplan gibt einen Überblick über das Projekt E1_Ressourcenverwaltung.
 | Jonas Keil | Implementation | Implementation | s81910@htw-dresden.de
 | Carl Kirchhoff | Architektur | Architekture | s82087@htw-dresden.de
 | Aleksandra Tartz | Analyst | Analyst | s80433@htw-dresden.de
-| Vitaly Tichonow | Test | Test | s82591@htw-dresden.de
+| Vitali Tichonow | Test | Test | s82591@htw-dresden.de
 | Vinh Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
 |===
 
