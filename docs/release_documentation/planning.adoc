@@ -61,7 +61,7 @@ Unsere Dokumentation und Code wurde persistent auf GitHub gespeichert.
 
 Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Diagramme wurden mit Draw.io und VisualParadigm erstellt und zusätzlich PNG gesichert. 
 
-Die Meetings mit Herrn Liebert wurden auf gemeinsamen Google Docs-Dokumenten vor- und nachbereitet, da diese von jedem Teammitglied parallel bearbeitet werden können. Ebenso haben wir bei Google Docs ein Excel-Tabelle verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt investiert.
+Die Meetings mit Herrn Liebert wurden auf gemeinsamen Google Docs-Dokumenten vor- und nachbereitet, da diese von jedem Teammitglied parallel bearbeitet werden können. Ebenso haben wir bei Google Docs eine Excel-Tabelle verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt investiert.
 
 ===  Techniken/Praktiken - Way of Working
 
