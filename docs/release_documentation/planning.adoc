@@ -65,7 +65,7 @@ Die Meetings mit Herrn Liebert wurden auf gemeinsamen Google Docs-Dokumenten vor
 
 ===  Techniken/Praktiken - Way of Working
 
-Die Arbeitsweise haben wir nach dem Open Unified Process ausgerichtet. Das Team hat versucht, die vier Eigenschaften zu erfüllen und ebenfalls eigene Erfahrungen, sowie andere Praktiken einzubringen. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt. Die Projektstrategie haben wir an den Kunden und seine Bedürfnisse angepasst. Dadurch konnten wir sicher stellen, dass die Anforderungen erfüllt und die Vorschriften eingehalten werden.
+Die Arbeitsweise haben wir nach dem Open Unified Process ausgerichtet. Das Team hat versucht, die vier Eigenschaften zu erfüllen und ebenfalls eigene Erfahrungen, sowie andere Praktiken einzubringen. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt. Die Projektstrategie haben wir an den Kunden und seine Bedürfnisse angepasst. Dadurch konnten wir sicherstellen, dass die Anforderungen erfüllt und die Vorschriften eingehalten werden.
 Es wurde in einwöchigen Iterationen gearbeitet, diese setzten ein hohes Maß an Eigenverantwortung und Selbstmanagement voraus.
 Der Ablauf setzte sich aus folgenden Punkten zusammen:
 
