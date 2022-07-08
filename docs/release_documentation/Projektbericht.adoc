@@ -1,0 +1,48 @@
+:doctype: book
+:toclevels: 2
+:toc-title: Inhaltsverzeichnis
+:toc:
+:sectnums:
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:listing-caption: Listingasc
+:project-name: <Ressourcenverwaltung E01>
+
+= Projektbericht: {project-name}
+Helena Rubein <s81097@htw-dresden.de>; Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Jonas Keil <s81910@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; Vinh Nguyen <s77261@htw-dresden.de>
+{localdatetime}
+
+include::planning.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::implementation.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::results.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+== Reflexion der Teammitglieder
+
+===  Reflexion - Aleksandra Tartz
+
+include::reflexion_aleksandra.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+===  Reflexion - Carl Kirchhoff
+
+include::reflexion_carl.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+===  Reflexion - Justus Beck
+
+include::reflexion_justus.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+===  Reflexion - Nick Kemter
+
+include::reflexion_nick.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+===  Reflexion - Niklas Werner
+
+include::reflexion_niklas.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+===  Reflexion - Vinh Nguyen
+
+include::reflexion_vinh.adoc[lines=1..1;4..-1,leveloffset=+1]
+
+===  Reflexion - Vitali Tichonow
+
+include::reflexion_vitali.adoc[lines=1..1;4..-1,leveloffset=+1]
+
