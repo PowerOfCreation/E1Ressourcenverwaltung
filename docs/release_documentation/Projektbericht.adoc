@@ -6,15 +6,15 @@
 :chapter-label:
 :figure-caption: Abbildung
 :table-caption: Tabelle
-:listing-caption: Listingasc
+:listing-caption: Listing
 :project-name: <Ressourcenverwaltung E01>
 
 = Projektbericht: {project-name}
 Nick Kemter <s82068@htw-dresden.de>; Justus Beck <s82023@htw-dresden.de>; Niklas Werner <s82076@htw-dresden.de>; Carl Kirchhoff <s82087@htw-dresden.de>; Aleksandra Tartz <s80433@htw-dresden.de>; Vitali Tichonow <s82591@htw-dresden.de>; Vinh Nguyen <s77261@htw-dresden.de>
 {localdatetime}
 
-include::planning.adoc[lines=1..1;4..-1,leveloffset=+1]
-include::implementation.adoc[lines=1..1;4..-1,leveloffset=+1]
+include::planning.adoc[leveloffset=+1]
+include::implementation.adoc[leveloffset=+1]
 include::results.adoc[lines=1..1;4..-1,leveloffset=+1]
 
 == Reflexion der Teammitglieder

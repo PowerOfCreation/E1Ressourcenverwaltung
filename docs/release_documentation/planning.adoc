@@ -1,8 +1,6 @@
 = Planung
 
-== Ausgangssituation in Software Engineering II
-
-=== Aufgabenstellung und Auftraggeber 
+== Aufgabenstellung und Auftraggeber 
 
 Im Rahmen des Moduls "Software Engineering II" haben wir die Aufgabe erhalten, eine Ressourcenverwaltung in Kalenderform für T-Systems MMS zu entwickeln. Unser Ansprechpartner in der Firma war Herr Sven Liebert und in der HTW Dresden waren es Herr Zirkelbach als Coach und Herr Prof. Anke als Dozent.
 
@@ -14,7 +12,7 @@ Feiertage und Betriebsferien sollen ebenfalls dargestellt werden. Für die Feier
 
 Es gibt die technische Voraussetzung, dass das System auf Docker und als Webanwendung betrieben werden kann. Andere Bedingungen sind nicht gegeben.
 
-===  Situation zum Semesterbeginn
+== Situation zum Semesterbeginn
 
 Unser Team hat bereits letztes Semester an diesem Projekt gearbeitet. Daher haben wir dank guter Vorarbeit eine Dokumentation, welche bereits auf einem guten Stand war und lediglich kleine Verbesserungen benötigte. 
 Mit Entwicklung der Anwendung haben wir im vorangegangenen Semester ebenfalls begonnen. Große Teile des Front-Ends waren auch schon funktional erstellt. Es fehlte z.B. noch die Seite für die Projekterstellung und der Feiertags-Import Funktion.
@@ -24,7 +22,7 @@ Unsere Arbeitsmoral war aufgrund guter Leistungen im vorangegangenen Semester zi
 
 Teamleiterin Frau Rubein hat uns, wie geplant, verlassen.
 
-===  Team und Rollen
+== Team und Rollen
 
 Unsere Rollen bzw. Verantwortlichkeiten wurden aus dem vorangegangenen Semester übernommen. Dort wurden diese so weit wie möglich nach bereits vorhandener Kompetenz vergeben. Dies trifft auf Herrn Werner, Herrn Beck, Herrn Tichonow und später auch auf Herrn Nguyen zu. Frau Rubein, Frau Tartz, Herr Kemter, Herrn Keil und Herr Kirchhoff mussten sich ihre Kompetenz erst erarbeiten und haben daher Rollen erhalten, welche mit ihren bisherigen Stärken und Interessen die größte Schnittmenge hatten. 
 
@@ -44,7 +42,7 @@ Aus den ursprünglichen acht Mitgliedern wurden im 2. Teil des Projekts noch sie
 | Vinh Nguyen | noch nicht Teil des Projekts | Implementation | s77261@htw-dresden.de
 |===
 
-===  Kommunikation und eingesetzte Tools
+== Kommunikation und eingesetzte Tools
 
 Unsere interne Teamkommunikation ist gleich geblieben.
 Für unseren wöchentlichen Gruppentreffen am Montagsabend verwendeten wir Discord, da es einfach zu benutzen war und wertvolle Funktionen hat, wie Bildschirmübertragung und einen simplen File-Upload.
@@ -55,7 +53,7 @@ In der zweiten Hälfte des Semesters haben wir Pull-Requests bei GitHub eingeset
 
 Im Vergleich zum vorherigen Semester wurde mit dem Themensteller über Discord via Privatnachrichten kommuniziert und nicht zusätzlich über E-Mail. Die Meetings fanden über den Discordserver im Sprachchat statt, wo häufig auch die Bildschirme übertragen wurden.
 
-===  Dokumentation und eingesetzte Tools 
+== Dokumentation und eingesetzte Tools 
 
 Unsere Dokumentation und Code wurde persistent auf GitHub gespeichert. 
 
@@ -63,20 +61,20 @@ Dort wurden auch die mit anderen Tools erstellten Grafiken hochgeladen. Diese Di
 
 Die Meetings mit Herrn Liebert wurden auf gemeinsamen Google Docs-Dokumenten vor- und nachbereitet, da diese von jedem Teammitglied parallel bearbeitet werden können. Ebenso haben wir bei Google Docs eine Excel-Tabelle verwendet, wo unsere ungefähren Arbeitszeiten auf Vertrauensbasis aufgeschrieben wurden, damit geschaut werden kann, dass jeder ungefähr gleich viel Zeit in das Projekt investiert.
 
-===  Techniken/Praktiken - Way of Working
+== Techniken/Praktiken - Way of Working
 
 Die Arbeitsweise haben wir nach dem Open Unified Process ausgerichtet. Das Team hat versucht, die vier Eigenschaften zu erfüllen und ebenfalls eigene Erfahrungen, sowie andere Praktiken einzubringen. Der Fokus wurde auf eine offene, direkte Kommunikation und eine learning-by-doing Mentalität gelegt. Die Projektstrategie haben wir an den Kunden und seine Bedürfnisse angepasst. Dadurch konnten wir sicherstellen, dass die Anforderungen erfüllt und die Vorschriften eingehalten werden.
 Es wurde in einwöchigen Iterationen gearbeitet, diese setzten ein hohes Maß an Eigenverantwortung und Selbstmanagement voraus.
 Der Ablauf setzte sich aus folgenden Punkten zusammen:
 
-==== Planung der Iteration
+=== Planung der Iteration
 
 Die Iterationsplanung erfolgte Kundenorientiert. Offene Aufgaben wurden nach Priorität geordnet und vorbereitet, draus entstandene Aufwandsabschätzung wurde gemeinsam im Team besprochen. Die Aufgaben wurden nach Fachkenntnis/Fähigkeiten über GitHub zugewiesen.
 
-==== Durchführen der Iteration
+=== Durchführen der Iteration
 
 Die Aufgaben wurden selbstständig abgearbeitet. Durch Pull Requests haben wir uns über Fortschritte oder Hindernisse informiert, diese dann überprüft und gegebenenfalls die Teamarbeit modifiziert, indem ein Problem zu zweit besprochen wurde. Konnte ein Problem nicht in kleineren Gruppen gelöst werden, wurde dies in einem Teammeeting besprochen und gemeinsam nach einer Lösung gesucht.
 
-==== Bewertung der Iteration
+=== Bewertung der Iteration
 
 In einem Teammeeting wurde die erledigte Aufgabe vorgestellt. Durch das Feedback der Teammitglieder konnten weitere Verbesserungen vorgenommen werden. In jeder Iteration wurde erfasst, welche Aufgaben fertiggestellt wurden oder noch offen blieben. Offene Aufgaben oder Ergänzungen wurden in die nächste Iteration übernommen. In solchen Fällen musste die Aufwandsabschätzung erneut bewertet werden.
