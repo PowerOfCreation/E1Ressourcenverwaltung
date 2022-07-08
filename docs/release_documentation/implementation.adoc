@@ -108,7 +108,7 @@ Die Auswahl der Abteilung während der Nutzererstellung wurde von Herrn Beck bee
 
 Die Passwortkriterien, sowie die Überprüfung der E-Mail Adresse, werden weiterhin von Herrn Tichonow bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/33[#33] & https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/36[#36])
 
-=== Problem
+=== Probleme
 Einige der bereits für die letzte Iteration vergebenen Aufgaben sind immer noch nicht abgeschlossen. Jedoch haben wir die Hoffnung, dass dies in der nächsten Iteration besser wird.
 
 == Iteration 11 (05.04.2022 - 11.04.2022)
@@ -150,7 +150,7 @@ Die Überprüfung des Passwortes und der E-Mail Adresse im Back-End fehlt weiter
 *UC 4*
 Die Projekterstellungsseite wurde nicht angefangen. Die Weiterleitung zu dieser von der Wochenansicht ist jedoch fertig. Dies wurde von Herrn Beck bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/32[#32])
 
-=== Problem 
+=== Probleme
 Es zeichnete sich ab, dass neben dem Fernbleiben von zwei Mitgliedern auch einige andere Teammitglieder eine nur geringe Beteiligung an den Aufgaben vorweisen werden. Daher drohte eine fallende Moral der anderen Mitgliedern. Dieser Umstand wurde im Teammeeting thematisiert und eine Besserung gefordert. Aber aufgrund fehlender Dringlichkeit haben wir vorerst von weiteren Maßnahmen abgesehen. 
 
 
@@ -202,7 +202,7 @@ Zunächst hat Herr Beck dafür eine neue Unterseite implementiert, in der neue P
 
 Die Dummy-Daten, welche erstellt werden sollten, wurden nicht eingefügt und das Issue wird in die nächste Woche verschoben. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/42[#42])
 
-=== Entscheidung 
+=== Entscheidungen
 Um die Produktivität einzelner Teammitglieder zu erhöhen, wurde die Iterationszeit auf 2 Wochen erhöht. Dadurch werden die Meetings ebenfalls aller zwei Wochen stattfinden. Wir erhoffen dadurch, dass so mehr Zeit für das Bearbeiten der Aufgaben übrig bleibt.
 Diese Entscheidung wurde getroffen, bevor Herr Nguyen unser Team verstärkt hat.
 
@@ -212,7 +212,7 @@ Herr Keil's Aufgabe aus Iteration 10 wurde nicht neu vergeben, da wir merkten, d
 
 Außerdem haben wir uns mit Herrn Zirkelbach getroffen und ein paar Kleinigkeiten erfragt (z.B. zu dem korrigierten Beleg) und unseren Fortschritt mit der Anwendung gezeigt. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/31[#31])
 
-=== Problem 
+=== Probleme
 Die bisher teilweise bemängelte Produktivität verbesserte sich im Gesamtbild spürbar, auch wenn das nicht auf jedes einzelne Teammitglied zurückgeführt werden konnte.
 
 Es ist unklar, wieso die Überprüfung des Passwortes und der E-Mail Adresse bzw. das Einfügen von Dummy-Daten in die Datenbank bereits seit mehreren Iterationen erfolglos bearbeitet wird. Verschiedene Hilfestellungen in Form von Websites, Tutorials oder das Angebot, jederzeit bei einem Gruppenmitglied um Hilfe fragen zu können, wurden gegeben.
@@ -261,14 +261,14 @@ Es werden nun alle Projekte angezeigt und die dazugehörigen Nutzer. Es gibt noc
 image::images/Projects_User.png[,350,]
 
 //wird nicht als bild gezeigt
-=== Problem 
+=== Probleme
 Bisher ist eine Verbesserung hinsichtlich der Produktivität noch ausbaufähig, auch wenn der Gesamtoutput durch Herr Nguyen gesteigert werden konnte.
 
 Herr Keil und Frau Tartz haben sich nach wie vor nicht an dem Projekt beteiligt und das Team auch weiterhin nicht über den aktuellen Stand selbstständig in Kenntnis gesetzt. Daher war es Herr Kemters Aufgabe diese Informationen einzuholen.
 
 Frau Tartz teilte mit, dass sie auf dem Weg der Besserung sei und sich in Zukunft wieder an dem Projekt beteiligen werde. Leider war festzustellen, dass Herr Keil weiterhin gesundheitlich bedingt verhindert war. Daher musste das Team auf ihn weiterhin verzichten. Des Weiteren wurde Herr Professor Anke über diese Situation in Kenntnis gesetzt.
 
-=== Entscheidung
+=== Entscheidungen
 Aufgrund des beschriebenen Problems mit dem Formatierungstool wurde beschlossen, das Tool nicht mehr zu verwenden und es wurde sich auf eine einheitliche Formatierung geeinigt. 
 
 Die Erhöhung der Iterationszeit auf zwei Wochen führte nicht zu der erwünschten Verbesserung, sondern eher zu einer weiteren Verschlechterung bzw. Stagnation der Produktivität. Da bei wöchentlichen Iterationen mehr Vorteile ersichtlich waren, wurden die folgenden Interationen wieder auf eine Woche verkürzt.
@@ -306,7 +306,7 @@ Mit Psalm hat Herrn Werner ein neues Tool eingefügt, welche eine statische Code
 === Qualitätssicherung
 Frau Tartz hat eine manuelle Überprüfung sämtlicher Funktionalitäten vorgenommen und hat dabei einen Fehler bei der Projekterstellung gefunden, welcher von Herrn Werner behoben wurde. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/65[#65])
 
-=== Entscheidung
+=== Entscheidungen
 Wir hatten schon länger kein Meeting mit unserem Themensteller Herrn Liebert. Dies hatte den Grund, dass wir die geforderten Use-Cases noch nicht umgesetzt hatten und wir erst mehr Fortschritt erzielen wollten. Ein Monat vor Projektübergabe und mit voranschreitenden Funktionen entschieden wir uns ein Meeting mit ihm auszumachen. Außerdem sollte besprochen werden, wie die Übergabe und das Installieren der Anwendung bei T-System MMS stattfinden soll. Das Meeting soll in der folgenden Woche stattfinden.
 
 Nachdem wir feststellten, dass das Arbeiten auf einer Branch zu häufigeren Merge-Konflikten führte und viele Bugs eingeschleust wurden, beschlossen wir unsere Arbeitsweise zu ändern. Das committen auf dem Hauptbranch ist ab sofort für alle Teammitglieder gesperrt und es wird nun mit Feature Branches und Pull Requests gearbeitet. Jeder Pull Request muss von einem Teammitglied genehmigt werden, bevor dieser gemerget werden kann. Auch gibt es nun eine statische Code-Analyse mit Psalm, welche bei jedem Pull Request ausgeführt wird. Dies vereinfachte die Qualitätssicherung und die Kommunikation über mögliche Verbesserungen.
@@ -396,7 +396,7 @@ Bei der Projekterstellung fehlte noch die Validierung der Nutzerdaten im Back-En
 Herr Kemter hat sich weiterhin mit Design-Verbesserungen beschäftigt und konnte die Projektverwaltung deutlich übersichtlicher gestalten. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/70[#70])
 //hier vllt nochmal ein zwei beispiele verlinken
 
-=== Entscheidung
+=== Entscheidungen
 Herr Keil konnte sich leider noch nicht an dem Projekt beteiligen. Daher haben wir entschieden diesen Sachverhalt nochmal Herrn Professor Anke darzulegen und ihm mitzuteilen, dass wir gegen eine Benotung von Herrn Keil sind. Wir begründeten diese Entscheidung damit, dass er keine Chance mehr hatte einen angemessenen Arbeitsanteil zu leisten. Von Herrn Professor Anke erfuhren wir, dass sich Herr Keil bereits in der Woche zuvor selbstständig abgemeldet hatte.
 
 Hinsichtlich der weiterhin unterschiedlichen Beteiligung einiger Teammitglieder, wurde sich für eine differenzierte Bewertung ausgesprochen. Wie extrem unsere Empfehlungen dafür ausfallen werden, sollte daran bemessen werden wie diese Teammitglieder in den restlichen Wochen sich am Projekt beteiligen werden.
@@ -482,7 +482,7 @@ Nachdem Herr Kemter bereits das Design deutlich verbessert hat und wir einige Ti
 *UC3*
 Das Use-Case 3 wurde um die Funktion zum Löschen eines Benutzers erweitert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/103[#103]) Bei der Implementierung stellte sich heraus, dass geklärt werden muss, wie mit Projektleitern umgegangen wird. Also ob auch alle Projekte und Status, die mit dem gelöschten Benutzer in Verbindung standen ebenfalls gelöscht werden. Sollten die Projekte gelöscht werden, müssten auch alle Status mit diesem Projekt löschen. Letzten Endes entschieden wir uns dazu, dass der Benutzer und das Projekt separat gelöscht werden müssen, um die Komplexität gering zu halten. Das Löschen von Projekten konnte noch nicht ganz abgeschlossen werden. Außerdem wurde das Programm um die Login-Funktionalität erweitert, um unbefugten Zugriff zu verhindern. Ist der Nutzer nicht angemeldet, so wird er auf die Login-Seite weitergeleitet und zum Login aufgefordert. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/91[#91]) Nach Erstellung eines neuen Projektes wird der Nutzer nun nicht mehr auf die Wochenansicht weitergeleitet, sondern zurück zur Projektverwaltung. Ebenfalls wird die Erfolgsmeldung auf der Projektverwaltungsseite mit angezeigt. Dies wurde von Herrn Werner bearbeitet. (https://github.com/PowerOfCreation/E1Ressourcenverwaltung/issues/83[#83]) 
 
-=== Problem und Entscheidung
+=== Probleme und Entscheidungen
 Das Teammeeting fand aufgrund von kurzfristigen Absagen bloß mit drei Personen statt. Aufgrund der Anwendungsabgabe und Dokumentation in zwei Wochen entschieden wir, dass Programmier-Aufgaben bloß noch bis zum folgenden Montag erledigt werden. Die restliche Zeit bis zur Abgabe am 22.6. sollte für Qualitätssicherung, Dokumentation und andere Dokumente verwendet werden. 
 
 Da noch nicht alle wichtigen Features, die durch Herrn Liebert gefordert wurden, zum Meeting abgeschlossen waren, sollten diese zuerst erledigt werden. Wir haben nun eine Priorisierung der Issues eingeführt, um zumindest die wichtigsten Features noch zu schaffen. Wenn mehr geschafft wird, dann kann noch mehr erledigt werden.
